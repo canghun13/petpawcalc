@@ -165,6 +165,7 @@ main { padding-top: 0; }
 }
 
 .nav-mobile a:hover { background: var(--cream-dark); color: var(--orange); }
+.nav-mobile a.active { background: var(--cream-dark); color: var(--orange); }
 
 /* ── FOOTER ── */
 .site-footer {
