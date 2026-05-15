@@ -1,0 +1,97 @@
+---
+layout: tool
+title: Dog Age Calculator — Convert Dog Years to Human Years
+description: Find out how old your dog is in human years. Based on size and breed, not the outdated multiply-by-7 rule. Free, instant results.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐶 Dog Age Calculator</h1>
+    <p>How old is your dog in human years? Enter their age and size below for a science-based result — the old "multiply by 7" rule isn't accurate.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="dog-age">Dog's Age (years)</label>
+      <input type="number" id="dog-age" min="0" max="25" step="0.5" placeholder="e.g. 3">
+    </div>
+    <div class="form-group">
+      <label for="dog-size">Dog's Size</label>
+      <select id="dog-size">
+        <option value="">Select size</option>
+        <option value="small">Small (under 20 lbs)</option>
+        <option value="medium">Medium (20–50 lbs)</option>
+        <option value="large">Large (50–90 lbs)</option>
+        <option value="giant">Giant (over 90 lbs)</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateDogAge()">Calculate Human Age →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-age"></h3>
+      <p id="result-desc"></p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚕️ This tool is for informational purposes only. Always consult your veterinarian for health advice specific to your pet.
+  </div>
+
+  <div style="margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Why the 7x Rule Is Wrong</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dogs age much faster in their early years and slower later on. A 1-year-old dog is roughly equivalent to a 15-year-old human, not a 7-year-old. Size also matters — large breeds age faster than small breeds.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7;">This calculator uses size-adjusted aging curves based on published veterinary research to give you a more accurate result.</p>
+  </div>
+</div>
+
+<script>
+function calculateDogAge() {
+  const age = parseFloat(document.getElementById('dog-age').value);
+  const size = document.getElementById('dog-size').value;
+  const resultBox = document.getElementById('result');
+  const resultAge = document.getElementById('result-age');
+  const resultDesc = document.getElementById('result-desc');
+
+  if (!age || age < 0 || !size) {
+    alert('Please enter your dog\'s age and select their size.');
+    return;
+  }
+
+  // Size-adjusted aging tables (approximate human year equivalents)
+  const tables = {
+    small:  [15,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80],
+    medium: [15,24,28,32,36,40,45,50,55,60,65,69,74,78,83,87],
+    large:  [15,24,28,32,36,41,47,53,59,65,71,77,83,89,95,101],
+    giant:  [15,24,28,32,38,45,53,62,71,80,89,98,107,116,125,134]
+  };
+
+  const table = tables[size];
+  let humanAge;
+
+  if (age <= 0.5) {
+    humanAge = Math.round(age * 18);
+  } else if (age >= table.length) {
+    const lastTwo = table[table.length - 1] - table[table.length - 2];
+    humanAge = table[table.length - 1] + Math.round((age - table.length + 1) * lastTwo);
+  } else {
+    const low = Math.floor(age);
+    const high = Math.ceil(age);
+    const frac = age - low;
+    humanAge = Math.round(table[low - 1] + frac * (table[high - 1] - table[low - 1]));
+  }
+
+  const stages = [
+    { max: 1, label: 'Puppy', desc: 'Still in the puppy stage — lots of energy and learning happening fast.' },
+    { max: 3, label: 'Young Adult', desc: 'Your dog is a young adult, full of energy and personality.' },
+    { max: 7, label: 'Adult', desc: 'Your dog is in their prime adult years.' },
+    { max: 10, label: 'Mature Adult', desc: 'Your dog is a mature adult. Regular vet checkups are important.' },
+    { max: Infinity, label: 'Senior', desc: 'Your dog is a senior. Extra care and more frequent vet visits are recommended.' }
+  ];
+
+  const stage = stages.find(s => age <= s.max);
+
+  resultAge.textContent = `Your dog is about ${humanAge} in human years`;
+  resultDesc.textContent = `Life stage: ${stage.label}. ${stage.desc}`;
+  resultBox.classList.add('show');
+}
+</script>

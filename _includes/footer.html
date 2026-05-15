@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="site-logo">PetPaw<span style="color:var(--orange-light)">Calc</span></a>
+      <p>Free calculators and tools for pet owners. Get real answers for your dog, cat, and more — no signup needed.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Tools</h4>
+      <a href="/tools/dog-age-calculator.html">Dog Age Calculator</a>
+      <a href="/tools/cat-age-calculator.html">Cat Age Calculator</a>
+      <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a>
+      <a href="/tools/dog-weight-calculator.html">Dog Weight Calculator</a>
+      <a href="/tools/annual-pet-cost-calculator.html">Annual Pet Cost Calculator</a>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="/blog/">Blog</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ site.time | date: "%Y" }} PetPawCalc. All rights reserved.</span>
+    <span>Made with 🐾 for pet owners</span>
+  </div>
+  <p class="footer-disclaimer">
+    PetPawCalc tools are for informational purposes only. Always consult your veterinarian for medical advice specific to your pet.
+  </p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMobile = document.getElementById('nav-mobile');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    navMobile.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    navMobile.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // Close mobile nav on link click
+  navMobile.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      navMobile.setAttribute('aria-hidden', true);
+    });
+  });
+</script>

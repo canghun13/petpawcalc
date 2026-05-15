@@ -1,0 +1,140 @@
+---
+layout: tool
+title: Dog Weight Calculator — Puppy Adult Weight Estimator
+description: Estimate how much your puppy will weigh as an adult, or check if your dog is at a healthy weight. Free and instant.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>⚖️ Dog Weight Calculator</h1>
+    <p>Estimate your puppy's adult weight, or check whether your adult dog is within a healthy weight range for their size.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="calc-type">What do you want to calculate?</label>
+      <select id="calc-type" onchange="toggleForm()">
+        <option value="puppy">Estimate my puppy's adult weight</option>
+        <option value="adult">Check my adult dog's healthy weight range</option>
+      </select>
+    </div>
+
+    <!-- Puppy form -->
+    <div id="puppy-form">
+      <div class="form-group">
+        <label for="puppy-age">Puppy's Current Age (weeks)</label>
+        <input type="number" id="puppy-age" min="4" max="52" placeholder="e.g. 16">
+      </div>
+      <div class="form-group">
+        <label for="puppy-weight">Puppy's Current Weight (lbs)</label>
+        <input type="number" id="puppy-weight" min="0.5" max="100" step="0.5" placeholder="e.g. 8">
+      </div>
+      <div class="form-group">
+        <label for="puppy-size">Expected Adult Size</label>
+        <select id="puppy-size">
+          <option value="">Select size</option>
+          <option value="toy">Toy (under 12 lbs)</option>
+          <option value="small">Small (12–25 lbs)</option>
+          <option value="medium">Medium (25–50 lbs)</option>
+          <option value="large">Large (50–100 lbs)</option>
+          <option value="giant">Giant (100+ lbs)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Adult form -->
+    <div id="adult-form" style="display:none;">
+      <div class="form-group">
+        <label for="adult-weight">Dog's Current Weight (lbs)</label>
+        <input type="number" id="adult-weight" min="1" max="300" step="0.5" placeholder="e.g. 45">
+      </div>
+      <div class="form-group">
+        <label for="adult-size">Dog's Size Category</label>
+        <select id="adult-size">
+          <option value="">Select size</option>
+          <option value="toy">Toy breed (under 12 lbs ideal)</option>
+          <option value="small">Small breed (12–25 lbs ideal)</option>
+          <option value="medium">Medium breed (25–50 lbs ideal)</option>
+          <option value="large">Large breed (50–100 lbs ideal)</option>
+          <option value="giant">Giant breed (100+ lbs ideal)</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateWeight()">Calculate →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-weight"></h3>
+      <p id="result-desc"></p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚕️ This tool is for informational purposes only. Always consult your veterinarian for advice on your dog's ideal weight.
+  </div>
+</div>
+
+<script>
+function toggleForm() {
+  const type = document.getElementById('calc-type').value;
+  document.getElementById('puppy-form').style.display = type === 'puppy' ? 'block' : 'none';
+  document.getElementById('adult-form').style.display = type === 'adult' ? 'block' : 'none';
+  document.getElementById('result').classList.remove('show');
+}
+
+function calculateWeight() {
+  const type = document.getElementById('calc-type').value;
+  const resultBox = document.getElementById('result');
+  const resultWeight = document.getElementById('result-weight');
+  const resultDesc = document.getElementById('result-desc');
+
+  if (type === 'puppy') {
+    const ageWeeks = parseFloat(document.getElementById('puppy-age').value);
+    const currentWeight = parseFloat(document.getElementById('puppy-weight').value);
+    const size = document.getElementById('puppy-size').value;
+
+    if (!ageWeeks || !currentWeight || !size) { alert('Please fill in all fields.'); return; }
+
+    // Growth completion weeks by size
+    const maturityWeeks = { toy: 32, small: 40, medium: 52, large: 72, giant: 84 };
+    const fullWeeks = maturityWeeks[size];
+    const estimatedAdult = Math.round((currentWeight / ageWeeks) * fullWeeks * 10) / 10;
+
+    resultWeight.textContent = `Estimated adult weight: ${estimatedAdult} lbs`;
+    resultDesc.textContent = `This is an estimate based on current weight at ${ageWeeks} weeks. Genetics and nutrition will also affect final size. Your vet can give a more precise prediction.`;
+
+  } else {
+    const weight = parseFloat(document.getElementById('adult-weight').value);
+    const size = document.getElementById('adult-size').value;
+
+    if (!weight || !size) { alert('Please fill in all fields.'); return; }
+
+    const ranges = {
+      toy:    [4, 12],
+      small:  [12, 25],
+      medium: [25, 50],
+      large:  [50, 100],
+      giant:  [100, 180]
+    };
+
+    const [low, high] = ranges[size];
+    let status, desc;
+
+    if (weight < low) {
+      status = 'Underweight';
+      desc = `Your dog may be underweight for their size category. Consider discussing their diet with your veterinarian.`;
+    } else if (weight > high) {
+      status = 'Overweight';
+      desc = `Your dog may be carrying extra weight for their size. Your vet can recommend a healthy weight loss plan.`;
+    } else {
+      status = 'Healthy Weight ✓';
+      desc = `Your dog appears to be within a healthy weight range for their size category. Keep up the good work!`;
+    }
+
+    resultWeight.textContent = status;
+    resultDesc.textContent = desc;
+  }
+
+  resultBox.classList.add('show');
+}
+</script>

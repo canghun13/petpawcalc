@@ -1,0 +1,30 @@
+title: PetPawCalc
+description: Free calculators and tools for pet owners. Dog age, cat calories, pet costs and more.
+url: "https://petpawcalc.com"
+baseurl: ""
+
+permalink: /blog/:slug/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "tools"
+    values:
+      layout: "tool"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

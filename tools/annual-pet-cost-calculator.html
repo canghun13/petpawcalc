@@ -1,0 +1,126 @@
+---
+layout: tool
+title: Annual Pet Cost Calculator — How Much Does a Pet Cost Per Year?
+description: Estimate the full yearly cost of owning a dog or cat — food, vet bills, grooming, insurance, and more. Free and instant.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>💰 Annual Pet Cost Calculator</h1>
+    <p>Wondering how much your pet really costs per year? Enter your situation below for a personalized estimate covering all the major expenses.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="pet-type">Pet Type</label>
+      <select id="pet-type">
+        <option value="">Select pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pet-size">Size</label>
+      <select id="pet-size">
+        <option value="">Select size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pet-age-stage">Life Stage</label>
+      <select id="pet-age-stage">
+        <option value="young">Young (under 3 years)</option>
+        <option value="adult">Adult (3–8 years)</option>
+        <option value="senior">Senior (8+ years)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="has-insurance">Do you have pet insurance?</label>
+      <select id="has-insurance">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="grooming">Grooming needs</label>
+      <select id="grooming">
+        <option value="low">Low (short coat, minimal grooming)</option>
+        <option value="medium">Medium (occasional professional grooming)</option>
+        <option value="high">High (regular professional grooming needed)</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateCost()">Estimate Annual Cost →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-total"></h3>
+      <div id="result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚕️ These are average estimates based on US national data. Actual costs vary by location, breed, and individual pet needs.
+  </div>
+</div>
+
+<script>
+function calculateCost() {
+  const petType  = document.getElementById('pet-type').value;
+  const size     = document.getElementById('pet-size').value;
+  const stage    = document.getElementById('pet-age-stage').value;
+  const insured  = document.getElementById('has-insurance').value;
+  const grooming = document.getElementById('grooming').value;
+
+  if (!petType || !size) { alert('Please select your pet type and size.'); return; }
+
+  // Base food costs per year
+  const foodCosts = {
+    dog: { small: 400, medium: 700, large: 1000 },
+    cat: { small: 350, medium: 400, large: 450 }
+  };
+
+  // Base vet costs (routine)
+  const vetBase = {
+    young:  { dog: 400, cat: 300 },
+    adult:  { dog: 500, cat: 350 },
+    senior: { dog: 900, cat: 700 }
+  };
+
+  // Grooming costs per year
+  const groomCosts = { low: 50, medium: 250, high: 600 };
+
+  // Supplies, toys, bedding
+  const supplyCosts = { dog: 300, cat: 200 };
+
+  // Insurance or vet emergency fund estimate
+  const insuranceCosts = {
+    yes: { dog: 600, cat: 400 },
+    no:  { dog: 0,   cat: 0 }
+  };
+
+  const food      = (foodCosts[petType] || foodCosts.dog)[size] || 600;
+  const vet       = (vetBase[stage] || vetBase.adult)[petType] || 500;
+  const groom     = groomCosts[grooming] || 150;
+  const supplies  = supplyCosts[petType] || 250;
+  const insurance = (insuranceCosts[insured] || insuranceCosts.no)[petType] || 0;
+
+  const total = food + vet + groom + supplies + insurance;
+  const low   = Math.round(total * 0.85);
+  const high  = Math.round(total * 1.2);
+
+  document.getElementById('result-total').textContent = `$${low.toLocaleString()} – $${high.toLocaleString()} per year`;
+
+  document.getElementById('result-breakdown').innerHTML = `
+    <table style="width:100%; border-collapse: collapse;">
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🍖 Food</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${food.toLocaleString()}</td></tr>
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🏥 Veterinary care</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${vet.toLocaleString()}</td></tr>
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">✂️ Grooming</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${groom.toLocaleString()}</td></tr>
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🧸 Supplies & toys</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${supplies.toLocaleString()}</td></tr>
+      ${insurance > 0 ? `<tr><td style="padding: 5px 0;">🛡️ Pet insurance</td><td style="text-align:right; padding: 5px 0;">~$${insurance.toLocaleString()}</td></tr>` : ''}
+    </table>
+  `;
+
+  document.getElementById('result').classList.add('show');
+}
+</script>

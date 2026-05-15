@@ -1,0 +1,23 @@
+---
+layout: default
+title: Pet Care Blog — PetPawCalc
+description: Evidence-based guides for pet owners. Dog nutrition, cat care, pet costs, and more.
+---
+
+<div style="max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px;">
+  <h1 class="section-title" style="margin-bottom: 8px;">Pet Care <em>Blog</em></h1>
+  <p class="section-sub">Practical, evidence-based guides for dog and cat owners.</p>
+
+  <div class="blog-grid" style="margin-top: 32px;">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-card-tag">{{ post.category }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <div class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }} · {{ post.read_time }} min read</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>

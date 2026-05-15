@@ -1,0 +1,73 @@
+---
+layout: tool
+title: Cat Age Calculator — Convert Cat Years to Human Years
+description: Find out how old your cat is in human years using the latest feline aging research. Free and instant — no signup needed.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐱 Cat Age Calculator</h1>
+    <p>Cats age very differently from humans — especially in the first two years. Enter your cat's age below to get an accurate human year equivalent.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="cat-age">Cat's Age (years)</label>
+      <input type="number" id="cat-age" min="0" max="30" step="0.5" placeholder="e.g. 5">
+    </div>
+    <button class="btn-calculate" onclick="calculateCatAge()">Calculate Human Age →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-age"></h3>
+      <p id="result-desc"></p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚕️ This tool is for informational purposes only. Always consult your veterinarian for health advice specific to your pet.
+  </div>
+
+  <div style="margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">How Cat Aging Works</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A cat's first year equals roughly 15 human years. Their second year adds about 9 more. After that, each cat year is approximately 4 human years.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7;">This calculator follows the guidelines developed by the American Association of Feline Practitioners (AAFP).</p>
+  </div>
+</div>
+
+<script>
+function calculateCatAge() {
+  const age = parseFloat(document.getElementById('cat-age').value);
+  const resultBox = document.getElementById('result');
+  const resultAge = document.getElementById('result-age');
+  const resultDesc = document.getElementById('result-desc');
+
+  if (!age || age < 0) {
+    alert('Please enter your cat\'s age.');
+    return;
+  }
+
+  let humanAge;
+  if (age <= 1) {
+    humanAge = Math.round(age * 15);
+  } else if (age <= 2) {
+    humanAge = 15 + Math.round((age - 1) * 9);
+  } else {
+    humanAge = 24 + Math.round((age - 2) * 4);
+  }
+
+  const stages = [
+    { max: 1,        label: 'Kitten',       desc: 'Still a kitten — growing rapidly and learning everything.' },
+    { max: 2,        label: 'Junior',        desc: 'Your cat is a junior, reaching full size and exploring their personality.' },
+    { max: 6,        label: 'Young Adult',   desc: 'A young adult cat in peak condition.' },
+    { max: 10,       label: 'Mature Adult',  desc: 'Your cat is mature. A good time to start annual senior screenings.' },
+    { max: 14,       label: 'Senior',        desc: 'Senior cat. More frequent vet checkups are recommended.' },
+    { max: Infinity, label: 'Super Senior',  desc: 'Super senior! Regular veterinary care is very important at this stage.' }
+  ];
+
+  const stage = stages.find(s => age <= s.max);
+
+  resultAge.textContent = `Your cat is about ${humanAge} in human years`;
+  resultDesc.textContent = `Life stage: ${stage.label}. ${stage.desc}`;
+  resultBox.classList.add('show');
+}
+</script>

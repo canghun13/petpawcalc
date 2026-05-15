@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">PetPaw<span>Calc</span></a>
+
+    <nav class="nav-desktop">
+      <a href="/tools/" {% if page.url contains '/tools/' %}class="active"{% endif %}>Tools</a>
+      <a href="/blog/" {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a>
+      <a href="/about.html" {% if page.url == '/about.html' %}class="active"{% endif %}>About</a>
+      <a href="/contact.html" {% if page.url == '/contact.html' %}class="active"{% endif %}>Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <a href="/tools/">Tools</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
