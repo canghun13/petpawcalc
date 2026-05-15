@@ -610,7 +610,6 @@ main { padding-top: 0; }
 @media (max-width: 768px) {
   .nav-desktop { display: none; }
   .hamburger { display: flex; }
-  .nav-mobile { display: flex; }
 
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
