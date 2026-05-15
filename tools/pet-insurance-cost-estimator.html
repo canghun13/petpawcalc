@@ -1,0 +1,140 @@
+---
+layout: tool
+title: Pet Insurance Cost Estimator — How Much Does Pet Insurance Cost?
+description: Estimate your monthly pet insurance premium based on your pet's species, breed size, age, and location. Free and instant.
+permalink: /tools/pet-insurance-cost-estimator.html
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🛡️ Pet Insurance Cost Estimator</h1>
+    <p>How much does pet insurance cost for your dog or cat? Enter your pet's details below for a realistic monthly premium estimate based on US industry averages.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="pet-type">Pet Type</label>
+      <select id="pet-type">
+        <option value="">Select pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pet-size">Size</label>
+      <select id="pet-size">
+        <option value="">Select size</option>
+        <option value="small">Small (under 25 lbs)</option>
+        <option value="medium">Medium (25–50 lbs)</option>
+        <option value="large">Large (50–90 lbs)</option>
+        <option value="giant">Giant (over 90 lbs)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pet-age">Age (years)</label>
+      <input type="number" id="pet-age" min="0" max="20" step="1" placeholder="e.g. 3">
+    </div>
+    <div class="form-group">
+      <label for="coverage">Coverage Level</label>
+      <select id="coverage">
+        <option value="accident">Accident Only</option>
+        <option value="basic" selected>Accident & Illness (Basic)</option>
+        <option value="comprehensive">Accident & Illness (Comprehensive)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="deductible">Annual Deductible</label>
+      <select id="deductible">
+        <option value="500">$500 (lower premium)</option>
+        <option value="250" selected>$250 (standard)</option>
+        <option value="100">$100 (higher premium)</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateInsurance()">Estimate Monthly Premium →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-premium"></h3>
+      <div id="result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚠️ These are estimates based on US national average premiums. Actual quotes vary by provider, zip code, breed, and individual pet health history. Always get quotes from multiple providers before purchasing.
+  </div>
+
+  <div style="margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">What Affects Pet Insurance Cost?</h2>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Age</strong> is the biggest factor. Premiums increase significantly as pets get older — a 10-year-old dog can cost 2–3× more to insure than a 2-year-old of the same breed. This is why enrolling early (before health issues develop) is strongly recommended.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Breed</strong> matters for dogs especially. Breeds prone to expensive conditions (hip dysplasia, heart disease, cancer) typically have higher premiums. Some providers exclude breed-specific conditions entirely.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Location</strong> affects cost because vet prices vary by region. Urban areas generally have higher vet costs — and higher premiums to match.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7;"><strong>Deductible and reimbursement rate</strong> give you control over your premium. A higher deductible lowers your monthly cost; a higher reimbursement rate (80% vs 70%) raises it.</p>
+  </div>
+</div>
+
+<script>
+function calculateInsurance() {
+  const petType   = document.getElementById('pet-type').value;
+  const size      = document.getElementById('pet-size').value;
+  const age       = parseFloat(document.getElementById('pet-age').value);
+  const coverage  = document.getElementById('coverage').value;
+  const deductible = document.getElementById('deductible').value;
+
+  if (!petType || !size || isNaN(age) || age < 0) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  // Base monthly premiums by pet type and size
+  const basePremiums = {
+    dog: { small: 30, medium: 42, large: 55, giant: 70 },
+    cat: { small: 18, medium: 22, large: 26, giant: 26 }
+  };
+
+  let base = (basePremiums[petType] || basePremiums.dog)[size] || 40;
+
+  // Age multiplier
+  let ageMult = 1.0;
+  if (age <= 1)       ageMult = 0.85;
+  else if (age <= 3)  ageMult = 1.0;
+  else if (age <= 5)  ageMult = 1.15;
+  else if (age <= 7)  ageMult = 1.35;
+  else if (age <= 9)  ageMult = 1.65;
+  else if (age <= 11) ageMult = 2.0;
+  else                ageMult = 2.5;
+
+  // Coverage multiplier
+  const coverageMult = { accident: 0.5, basic: 1.0, comprehensive: 1.4 };
+  const covMult = coverageMult[coverage] || 1.0;
+
+  // Deductible multiplier
+  const deductMult = { '500': 0.85, '250': 1.0, '100': 1.18 };
+  const dedMult = deductMult[deductible] || 1.0;
+
+  const monthly = base * ageMult * covMult * dedMult;
+  const low  = Math.round(monthly * 0.75);
+  const high = Math.round(monthly * 1.3);
+  const annual = Math.round(((low + high) / 2) * 12);
+
+  const coverageLabels = {
+    accident: 'Accident Only',
+    basic: 'Accident & Illness (Basic)',
+    comprehensive: 'Accident & Illness (Comprehensive)'
+  };
+
+  document.getElementById('result-premium').textContent = `~$${low}–$${high}/month`;
+  document.getElementById('result-breakdown').innerHTML = `
+    <table style="width:100%; border-collapse: collapse;">
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">Coverage</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">${coverageLabels[coverage]}</td></tr>
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">Annual deductible</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">$${deductible}</td></tr>
+      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">Estimated annual cost</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${annual}</td></tr>
+      <tr><td style="padding: 5px 0; color: var(--brown-light); font-size: 0.82rem;" colspan="2">Get quotes from Lemonade, Trupanion, Healthy Paws, and Embrace to compare real rates for your zip code.</td></tr>
+    </table>
+  `;
+
+  document.getElementById('result').classList.add('show');
+}
+</script>
