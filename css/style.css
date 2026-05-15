@@ -138,7 +138,7 @@ main { padding-top: 0; }
 .nav-mobile {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 64px;
   left: 0;
   right: 0;
