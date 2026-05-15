@@ -49,7 +49,6 @@
     }
   });
 
-  // Close mobile nav on link click
   navMobile.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
@@ -57,5 +56,14 @@
       hamburger.setAttribute('aria-expanded', false);
       navMobile.setAttribute('aria-hidden', true);
     });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      navMobile.setAttribute('aria-hidden', true);
+    }
   });
 </script>
