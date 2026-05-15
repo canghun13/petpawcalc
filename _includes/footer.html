@@ -35,10 +35,18 @@
   const navMobile = document.getElementById('nav-mobile');
 
   hamburger.addEventListener('click', () => {
-    const isOpen = hamburger.classList.toggle('open');
-    navMobile.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', isOpen);
-    navMobile.setAttribute('aria-hidden', !isOpen);
+    const isOpen = navMobile.classList.contains('open');
+    if (isOpen) {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      navMobile.setAttribute('aria-hidden', true);
+    } else {
+      hamburger.classList.add('open');
+      navMobile.classList.add('open');
+      hamburger.setAttribute('aria-expanded', true);
+      navMobile.setAttribute('aria-hidden', false);
+    }
   });
 
   // Close mobile nav on link click
