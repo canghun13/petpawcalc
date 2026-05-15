@@ -40,6 +40,8 @@ a:hover { color: var(--orange-dark); }
 
 img { max-width: 100%; display: block; }
 
+main { padding-top: 0; }
+
 /* ── HEADER ── */
 .site-header {
   background: var(--white);
@@ -140,14 +142,10 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--border);
   padding: 12px 24px 20px;
   gap: 2px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .nav-mobile.open {
-  max-height: 400px;
-  padding: 12px 24px 20px;
+  display: flex;
 }
 
 .nav-mobile a {
