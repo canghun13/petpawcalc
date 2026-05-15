@@ -19,10 +19,12 @@ defaults:
       path: "tools"
     values:
       layout: "tool"
+      permalink: /tools/:name.html
   - scope:
       path: ""
     values:
       layout: "default"
+      permalink: /:name.html
 
 exclude:
   - README.md

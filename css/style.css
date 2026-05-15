@@ -138,10 +138,17 @@ main { padding-top: 0; }
 .nav-mobile {
   display: none;
   flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
   background: var(--white);
   border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   padding: 12px 24px 20px;
   gap: 2px;
+  z-index: 99;
+  box-shadow: 0 8px 24px rgba(44,26,14,0.10);
 }
 
 .nav-mobile.open {
