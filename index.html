@@ -10,7 +10,7 @@ description: Free calculators for pet owners. Dog age, cat calories, annual pet 
   <p>Free calculators for dog and cat owners. Get real answers about age, nutrition, and costs — built for pet parents, not vets.</p>
   <div class="hero-stats">
     <div class="hero-stat">
-      <strong>5+</strong>
+      <strong>7+</strong>
       <span>Free tools</span>
     </div>
     <div class="hero-stat">
@@ -92,6 +92,14 @@ description: Free calculators for pet owners. Dog age, cat calories, annual pet 
       <p>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
+
+    <a href="/tools/dog-pregnancy-calculator.html" class="tool-card">
+      <div class="tool-card-icon">🐾</div>
+      <span class="tool-card-badge">New</span>
+      <h3>Dog Pregnancy Calculator</h3>
+      <p>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</p>
+      <span class="tool-card-link">Calculate now →</span>
+    </a>
   </div>
 </section>
 
@@ -100,7 +108,8 @@ description: Free calculators for pet owners. Dog age, cat calories, annual pet 
   <p class="section-sub">Guides to help you make better decisions for your pet.</p>
 
   <div class="blog-grid">
-    {% for post in site.posts limit:3 %}
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for post in sorted_posts limit:3 %}
     <a href="{{ post.url }}" class="blog-card">
       <div class="blog-card-body">
         <div class="blog-card-tag">{{ post.category }}</div>
@@ -110,5 +119,9 @@ description: Free calculators for pet owners. Dog age, cat calories, annual pet 
       </div>
     </a>
     {% endfor %}
+  </div>
+
+  <div style="text-align: center; margin-top: 36px;">
+    <a href="/blog/" style="display: inline-block; padding: 12px 32px; border: 2px solid var(--orange); color: var(--orange); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; transition: background 0.2s, color 0.2s;" onmouseover="this.style.background='var(--orange)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--orange)'">View all articles →</a>
   </div>
 </section>

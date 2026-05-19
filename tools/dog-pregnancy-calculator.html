@@ -1,0 +1,191 @@
+---
+layout: tool
+permalink: /tools/dog-pregnancy-calculator.html
+title: Dog Pregnancy Calculator — Due Date & Week-by-Week Timeline
+description: Enter your dog's mating date to get her estimated due date, delivery window, and a complete week-by-week pregnancy guide. Free, instant results.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐾 Dog Pregnancy Calculator</h1>
+    <p>Enter your dog's mating date to get her estimated due date and a week-by-week guide to what's happening — and what to prepare.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="mating-date">Mating Date</label>
+      <input type="date" id="mating-date">
+    </div>
+    <div class="form-group">
+      <label for="breed-size">Breed Size</label>
+      <select id="breed-size">
+        <option value="">Select size</option>
+        <option value="small">Small (under 20 lbs)</option>
+        <option value="medium">Medium (20–50 lbs)</option>
+        <option value="large">Large (50–90 lbs)</option>
+        <option value="giant">Giant (over 90 lbs)</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculatePregnancy()">Calculate Due Date →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-main"></h3>
+      <p id="result-window"></p>
+      <p id="result-week" style="margin-top: 8px; font-weight: 500;"></p>
+    </div>
+  </div>
+
+  <!-- Week-by-week timeline (shown after calc) -->
+  <div id="timeline-section" style="display:none; margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--brown); margin-bottom: 24px;">Week-by-Week <em>Guide</em></h2>
+    <div id="timeline"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides estimates based on average canine gestation (63 days). Actual delivery may vary by ±5 days. Always work with your veterinarian for accurate pregnancy monitoring.
+  </div>
+
+  <!-- Info section -->
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How Long Are Dogs Pregnant?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dog pregnancy (gestation) lasts an average of 63 days from the mating date, though the normal range is 58–68 days. Smaller breeds tend to deliver a little earlier; giant breeds a little later.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The pregnancy is divided into three trimesters of roughly 21 days each. Each trimester brings visible changes — from early behavioral shifts to a noticeably rounded belly by week 5, and active nesting behavior in the final weeks.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Signs Your Dog May Be Pregnant</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
+      <li>Decreased appetite or mild nausea in weeks 1–3</li>
+      <li>Nipple enlargement and darkening (week 3–4)</li>
+      <li>Increased affection or clinginess</li>
+      <li>Visible belly rounding by week 5</li>
+      <li>Nesting behavior and restlessness in the final week</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What to Prepare</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Around week 7, set up a <strong>whelping box</strong> — a quiet, warm, easy-to-clean space where your dog can give birth. Introduce her to it early so she feels comfortable.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7;">Schedule vet checkups at week 4 (ultrasound to confirm pregnancy) and week 7–8 (X-ray to count puppies). Have your vet's emergency number ready for the final week.</p>
+  </div>
+
+  <!-- CTA to blog post -->
+  <div class="post-cta" style="margin-top: 48px;">
+    <p>Want the full guide? Read: <a href="/blog/how-long-are-dogs-pregnant/">How Long Are Dogs Pregnant? A Complete Week-by-Week Guide →</a></p>
+  </div>
+</div>
+
+<script>
+const weeks = [
+  {
+    week: 1,
+    title: "Week 1 — Fertilization",
+    desc: "Fertilization occurs. Embryos begin dividing as they travel toward the uterus. No outward signs yet.",
+    care: "Continue normal feeding and exercise. No changes needed."
+  },
+  {
+    week: 2,
+    title: "Week 2 — Embryo Development",
+    desc: "Embryos implant in the uterine lining. Cells continue to divide and differentiate.",
+    care: "Some dogs show mild nausea or reduced appetite. Keep meals consistent."
+  },
+  {
+    week: 3,
+    title: "Week 3 — Implantation",
+    desc: "Embryos are now fully implanted. Nipples may start to enlarge and darken. Your dog may seem more affectionate.",
+    care: "A vet can detect pregnancy via blood test (relaxin hormone) from around day 21."
+  },
+  {
+    week: 4,
+    title: "Week 4 — Organ Formation",
+    desc: "Puppies' organs begin forming. A vet can confirm pregnancy via ultrasound and may be able to count fetuses. Belly may start to look slightly fuller.",
+    care: "Schedule your first vet visit this week. Begin transitioning to a high-quality pregnancy/puppy food if your vet recommends it."
+  },
+  {
+    week: 5,
+    title: "Week 5 — Rapid Growth",
+    desc: "Puppies grow rapidly and develop distinct features. Your dog's belly is now visibly rounder. Appetite increases significantly.",
+    care: "Increase food portions gradually (up to 1.5x normal by end of pregnancy). Fresh water always available."
+  },
+  {
+    week: 6,
+    title: "Week 6 — Puppies Taking Shape",
+    desc: "Puppies' coats and claws begin forming. Your dog's abdomen is noticeably enlarged. She may tire more easily.",
+    care: "Switch to several smaller meals per day rather than one large one. Limit strenuous exercise."
+  },
+  {
+    week: 7,
+    title: "Week 7 — Set Up the Whelping Box",
+    desc: "Puppies are nearly fully formed. You may feel movement in your dog's belly. Nesting behavior may start.",
+    care: "Set up the whelping box now and show it to your dog. Schedule an X-ray to count the puppies — this helps you know when delivery is complete."
+  },
+  {
+    week: 8,
+    title: "Week 8 — Final Preparations",
+    desc: "Puppies are fully developed and beginning to move into birth position. Your dog may be restless and seek out quiet spots.",
+    care: "Keep the whelping area warm and private. Watch for nesting, panting, and refusal to eat — signs labor is approaching."
+  },
+  {
+    week: 9,
+    title: "Week 9 — Birth",
+    desc: "Labor can begin any day from day 58 onward. A temperature drop below 99°F (37.2°C) typically means labor within 24 hours.",
+    care: "Take your dog's temperature twice daily. Have your vet's emergency number ready. Stay calm — most deliveries go smoothly."
+  }
+];
+
+function calculatePregnancy() {
+  const dateVal = document.getElementById('mating-date').value;
+  const size = document.getElementById('breed-size').value;
+
+  if (!dateVal || !size) {
+    alert('Please enter the mating date and select breed size.');
+    return;
+  }
+
+  const mating = new Date(dateVal);
+  const gestationDays = { small: 62, medium: 63, large: 64, giant: 65 }[size];
+  const due = new Date(mating);
+  due.setDate(due.getDate() + gestationDays);
+
+  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 58);
+  const latest = new Date(mating); latest.setDate(latest.getDate() + 68);
+
+  const fmt = d => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+  // Current week
+  const today = new Date();
+  const daysPregnant = Math.floor((today - mating) / (1000 * 60 * 60 * 24));
+  const currentWeek = Math.ceil(daysPregnant / 7);
+
+  document.getElementById('result-main').textContent = `Estimated due date: ${fmt(due)}`;
+  document.getElementById('result-window').textContent = `Delivery window: ${fmt(earliest)} – ${fmt(latest)}`;
+
+  if (daysPregnant >= 0 && currentWeek <= 9) {
+    document.getElementById('result-week').textContent = `Currently in Week ${currentWeek} of pregnancy (Day ${daysPregnant})`;
+  } else if (daysPregnant < 0) {
+    document.getElementById('result-week').textContent = `Mating date is in the future — ${Math.abs(daysPregnant)} days to go.`;
+  } else {
+    document.getElementById('result-week').textContent = `Due date has passed — congratulations on the new puppies! 🐾`;
+  }
+
+  document.getElementById('result').classList.add('show');
+
+  // Render timeline
+  const tl = document.getElementById('timeline');
+  tl.innerHTML = weeks.map(w => {
+    const isActive = w.week === currentWeek && daysPregnant >= 0;
+    const isPast = w.week < currentWeek && daysPregnant >= 0;
+    const weekStart = new Date(mating); weekStart.setDate(weekStart.getDate() + (w.week - 1) * 7);
+    const weekEnd = new Date(mating); weekEnd.setDate(weekEnd.getDate() + w.week * 7 - 1);
+
+    return `
+      <div style="display: flex; gap: 20px; margin-bottom: 24px; opacity: ${isPast ? '0.6' : '1'};">
+        <div style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: ${isActive ? 'var(--orange)' : isPast ? 'var(--border)' : 'var(--cream-dark)'}; color: ${isActive ? '#fff' : 'var(--brown)'}; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; margin-top: 2px;">W${w.week}</div>
+        <div style="flex: 1; background: ${isActive ? '#FFF7F3' : 'var(--white)'}; border: 1.5px solid ${isActive ? 'var(--orange)' : 'var(--border)'}; border-radius: var(--radius); padding: 16px 20px;">
+          <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${w.title} <span style="font-size: 0.78rem; font-weight: 400; color: var(--brown-light);">${fmt(weekStart)} – ${fmt(weekEnd)}</span></div>
+          <p style="color: var(--brown-mid); font-size: 0.88rem; line-height: 1.6; margin-bottom: 8px;">${w.desc}</p>
+          <p style="color: var(--orange); font-size: 0.85rem; line-height: 1.5;"><strong>Care tip:</strong> ${w.care}</p>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('timeline-section').style.display = 'block';
+  document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
