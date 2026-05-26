@@ -10,11 +10,13 @@ slug: puppy-weight-chart-by-breed-size
 
 Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.
 
-Here's what normal growth looks like by breed size, and how to tell if your puppy is developing well.
+Here's what normal growth looks like by breed size, how to estimate your dog's adult weight, and how to tell if your puppy is developing well.
 
 ## Why Breed Size Matters So Much
 
 A Chihuahua and a Great Dane are both puppies, but their growth trajectories are completely different. Small breeds reach their adult weight by around 8–10 months. Giant breeds are still growing at 18–24 months. Using the wrong chart for your dog's size will give you meaningless numbers.
+
+Beyond just timing, the risks associated with abnormal growth differ by size. For giant breeds, overfeeding during puppyhood is one of the primary risk factors for developmental orthopedic disease — conditions like hip dysplasia, elbow dysplasia, and osteochondrosis that can cause lifelong joint problems. The growth plate in a Great Dane puppy is under far more stress than in a Chihuahua puppy. Keeping large-breed puppies lean during growth is genuinely important.
 
 ## Puppy Weight Chart by Breed Size
 
@@ -92,6 +94,8 @@ Maturity ages by size:
 
 So a 10 lb medium-breed puppy at 16 weeks: (10 ÷ 16) × 52 = **~32.5 lbs adult weight**
 
+This formula is most accurate when used during the active growth phase (not the final few months before maturity, when growth slows significantly). For mixed-breed dogs, estimate size based on physical build and paw size if breed composition is unknown.
+
 <div class="post-cta">
   <h4>Try Our Dog Weight Calculator</h4>
   <p>Enter your puppy's current age and weight for an instant adult weight estimate.</p>
@@ -101,19 +105,43 @@ So a 10 lb medium-breed puppy at 16 weeks: (10 ÷ 16) × 52 = **~32.5 lbs adult 
 ## Signs Your Puppy's Growth Is Off Track
 
 **Possible underweight:**
-- Ribs, spine, or hip bones clearly visible
-- Low energy, poor coat condition
+- Ribs, spine, or hip bones clearly visible without pressing
+- Low energy, poor coat condition, decreased appetite
 - Falling significantly below the low end of the range for their size
+- Slow recovery from illness or stress
 
 **Possible overweight:**
 - Can't feel ribs without firm pressure
 - No visible waist when viewed from above
-- Waddling gait
+- Waddling gait or reluctance to exercise
+- Significantly above the high end of the range for their size
 
-Both extremes warrant a vet visit. For large and giant breeds especially, overfeeding during puppyhood can accelerate bone growth and increase the risk of joint problems later in life.
+Both extremes warrant a vet visit. For large and giant breeds especially, overfeeding during puppyhood can accelerate bone growth and increase the risk of joint problems later in life. The old idea that "a fat puppy is a healthy puppy" is genuinely harmful for large breeds.
+
+## Puppy Nutrition: What Actually Matters
+
+The label on the food bag matters more than the brand. Look for:
+
+**"Complete and balanced" statement**: This means the food meets AAFCO (Association of American Feed Control Officials) nutritional standards for the stated life stage.
+
+**"All life stages" or "Growth"**: Puppy food should be formulated for growth or all life stages. Adult food is not appropriate for puppies — it doesn't have the right nutrient ratios for development.
+
+**Large breed puppy formula**: For breeds expected to exceed 50 lbs, look specifically for large-breed puppy food. These formulas have controlled calcium and phosphorus levels designed to support slower, more even bone growth — reducing the risk of developmental orthopedic disease.
+
+**Avoid**: Grain-free diets for puppies unless specifically recommended by your vet. The FDA has investigated a potential link between grain-free diets and dilated cardiomyopathy in dogs, and the research is still ongoing.
+
+## When to Transition to Adult Food
+
+The timing depends on size:
+- **Toy and small breeds**: around 9–12 months
+- **Medium breeds**: around 12 months
+- **Large breeds**: around 12–18 months
+- **Giant breeds**: around 18–24 months
+
+Transition gradually over 7–10 days by mixing increasing amounts of the new food with the old. Abrupt switches commonly cause digestive upset — loose stools, gas, or vomiting — that has nothing to do with food quality.
 
 ## When to Stop Tracking Growth
 
-Once your puppy reaches their expected adult weight and isn't gaining anymore, the puppy phase is over nutritionally. Switch to an adult feeding guideline — but transition foods gradually to avoid digestive upset.
+Once your puppy reaches their expected adult weight and isn't gaining anymore, the puppy phase is over nutritionally. Weight shouldn't be completely ignored after this point — adult dogs can become overweight just as easily as humans — but the rapid growth phase that requires careful monitoring is behind you.
 
-*Always consult your veterinarian with concerns about your puppy's growth. Individual genetics play a large role, and these charts are averages — not guarantees.*
+*Always consult your veterinarian with concerns about your puppy's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific dog.*

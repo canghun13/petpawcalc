@@ -1,0 +1,209 @@
+---
+layout: tool
+permalink: /tools/dog-heat-cycle-calculator.html
+title: Dog Heat Cycle Calculator — Predict Next Heat & Fertile Window
+description: Enter your dog's last heat date and size to predict her next heat cycle, fertile window, and each stage of the estrous cycle. Free, instant results.
+---
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐾 Dog Heat Cycle Calculator</h1>
+    <p>Enter your dog's last heat date and size to estimate when her next heat will begin, her fertile window, and each stage of her cycle.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label>First Day of Last Heat Cycle</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="heat-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Month</option>
+          <option value="0">January</option><option value="1">February</option>
+          <option value="2">March</option><option value="3">April</option>
+          <option value="4">May</option><option value="5">June</option>
+          <option value="6">July</option><option value="7">August</option>
+          <option value="8">September</option><option value="9">October</option>
+          <option value="10">November</option><option value="11">December</option>
+        </select>
+        <select id="heat-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Day</option>
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+        </select>
+        <select id="heat-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Year</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dog-size-heat">Dog's Size</label>
+      <select id="dog-size-heat">
+        <option value="">Select size</option>
+        <option value="small">Small (under 20 lbs)</option>
+        <option value="medium">Medium (20–50 lbs)</option>
+        <option value="large">Large (50–90 lbs)</option>
+        <option value="giant">Giant (over 90 lbs)</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateHeatCycle()">Predict Next Heat →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <h3 id="result-next-heat"></h3>
+      <p id="result-fertile"></p>
+      <p id="result-cycle-end" style="margin-top: 6px;"></p>
+    </div>
+  </div>
+
+  <!-- Stage breakdown (shown after calc) -->
+  <div id="stages-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 20px;">Your Dog's Estimated Cycle Stages</h2>
+    <div id="stages-timeline"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides estimates based on average canine cycle lengths. Individual dogs vary significantly. Consult your veterinarian for accurate cycle tracking, especially for breeding purposes.
+  </div>
+
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How the Dog Heat Cycle Works</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Female dogs typically go into heat (estrus) every 6–8 months, though this varies by breed and individual dog. Small breeds may cycle more frequently — sometimes every 4–5 months. Giant breeds often cycle only once a year. Most dogs settle into their individual pattern by their second or third heat.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The complete canine reproductive cycle is called the estrous cycle and consists of four stages. Understanding each stage helps you anticipate your dog's behavior, plan around heat, and know when fertility is highest.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Four Stages of the Dog Estrous Cycle</h2>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Proestrus (Days 1–9, average)</strong>: The first visible stage of heat. Estrogen rises, the vulva swells, and a bloody vaginal discharge appears. Most dogs are not yet receptive to mating during this phase despite attracting male attention. Duration typically ranges from 3 to 17 days.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Estrus (Days 9–14, average)</strong>: The fertile window. Estrogen drops, progesterone rises, and ovulation occurs. The discharge often lightens in color. The dog becomes receptive to mating. This is the stage this calculator estimates as the "fertile window." Duration is typically 5–13 days.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Diestrus (Days 14–75, average)</strong>: The post-fertile phase. Whether pregnant or not, progesterone remains elevated for approximately 2 months. Pregnant dogs will have puppies during this phase. Non-pregnant dogs go through a "phantom pregnancy" hormonal state — some show nesting behavior or mammary development regardless.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Anestrus</strong>: The resting phase between cycles. Reproductive hormones are at baseline. No outward signs. This phase lasts until the next proestrus begins — typically 4–6 months for most dogs.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Signs Your Dog Is in Heat</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
+      <li>Swollen vulva</li>
+      <li>Bloody or straw-colored vaginal discharge</li>
+      <li>Increased urination (scent-marking behavior)</li>
+      <li>Attracting male dogs</li>
+      <li>Tail flagging (holding tail to the side when touched near the rump)</li>
+      <li>Restlessness or behavior changes</li>
+      <li>Increased affection toward people, or increased independence</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Managing Heat If You're Not Breeding</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If you're not planning to breed your dog, the best long-term solution is spaying. Dogs who are spayed before their first heat have significantly lower risk of mammary cancer and eliminate the risks of pyometra (a life-threatening uterine infection common in intact females).</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If your dog is not yet spayed, managing heat involves keeping her away from intact males (even brief contact can result in pregnancy), using dog diapers for discharge management indoors, and avoiding dog parks or off-leash areas during the estrus phase.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When to Track the Cycle With Your Vet</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If you are planning to breed your dog, calendar-based prediction alone is not sufficient for accurate timing. Vaginal cytology (microscope evaluation of vaginal cells) and progesterone blood tests provide far more precise fertility timing. These tests are typically done every 1–2 days during the heat cycle and can identify the optimal breeding window within 24–48 hours.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This calculator is best used as a planning tool — to anticipate when heat is likely to occur — rather than a substitute for veterinary-guided timing if breeding is the goal.</p>
+
+    <div class="post-cta">
+      <p>If mating occurs, use our <a href="/tools/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a> to estimate due date and track each week of gestation.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function formatDate(date) {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+}
+
+function addDays(date, days) {
+  const result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+function calculateHeatCycle() {
+  const month = document.getElementById('heat-month').value;
+  const day = document.getElementById('heat-day').value;
+  const year = document.getElementById('heat-year').value;
+  const size = document.getElementById('dog-size-heat').value;
+
+  if (month === '' || !day || !year || !size) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  const lastHeat = new Date(parseInt(year), parseInt(month), parseInt(day));
+
+  // Average cycle lengths by size (days)
+  const cycleLengths = {
+    small: 165,   // ~5.5 months
+    medium: 180,  // ~6 months
+    large: 195,   // ~6.5 months
+    giant: 240    // ~8 months
+  };
+
+  const cycleLength = cycleLengths[size];
+
+  // Next heat start
+  const nextHeat = addDays(lastHeat, cycleLength);
+
+  // Proestrus: days 1–9 of next heat
+  const proestrusEnd = addDays(nextHeat, 8);
+
+  // Estrus (fertile window): approx days 9–14
+  const fertileStart = addDays(nextHeat, 8);
+  const fertileEnd = addDays(nextHeat, 13);
+
+  // Heat cycle end (estrus phase ends ~day 18–21)
+  const heatEnd = addDays(nextHeat, 20);
+
+  // Display results
+  document.getElementById('result-next-heat').textContent = `Next heat estimated: ${formatDate(nextHeat)}`;
+  document.getElementById('result-fertile').textContent = `Fertile window: ${formatDate(fertileStart)} – ${formatDate(fertileEnd)}`;
+  document.getElementById('result-cycle-end').textContent = `Heat cycle ends approximately: ${formatDate(heatEnd)}`;
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').classList.add('show');
+
+  // Stage timeline
+  const stages = [
+    {
+      name: 'Proestrus',
+      emoji: '🔴',
+      start: nextHeat,
+      end: proestrusEnd,
+      desc: 'Heat begins. Swollen vulva, bloody discharge. Not yet receptive to mating, but attracting males.'
+    },
+    {
+      name: 'Estrus (Fertile Window)',
+      emoji: '🟡',
+      start: fertileStart,
+      end: fertileEnd,
+      desc: 'Peak fertility. Discharge lightens. Dog becomes receptive to mating. Ovulation occurs during this window.'
+    },
+    {
+      name: 'Heat Ends',
+      emoji: '🟢',
+      start: heatEnd,
+      end: null,
+      desc: 'Visible signs of heat resolve. Diestrus begins — progesterone remains elevated for ~2 months regardless of pregnancy.'
+    }
+  ];
+
+  const timelineEl = document.getElementById('stages-timeline');
+  timelineEl.innerHTML = stages.map(s => `
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; padding: 16px; background: var(--cream); border-radius: var(--radius); border-left: 3px solid var(--orange);">
+      <div style="font-size: 1.4rem; flex-shrink: 0; margin-top: 2px;">${s.emoji}</div>
+      <div>
+        <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${s.name}</div>
+        <div style="font-size: 0.88rem; color: var(--orange); font-weight: 500; margin-bottom: 6px;">
+          ${s.end ? `${formatDate(s.start)} – ${formatDate(s.end)}` : `~${formatDate(s.start)}`}
+        </div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.6;">${s.desc}</div>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('stages-section').style.display = 'block';
+  document.getElementById('stages-section').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

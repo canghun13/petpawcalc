@@ -61,4 +61,28 @@ Wet food tends to be more satisfying per calorie for most cats. It has higher mo
 
 If you're feeding exclusively dry food and your cat won't stop begging, adding even one wet meal per day can make a significant difference.
 
+## How Much Should Your Cat Actually Eat?
+
+General guidelines for indoor cats:
+
+| Life Stage | Daily Calories (per lb of body weight) |
+|------------|----------------------------------------|
+| Kitten (under 1 yr) | 45–55 calories/lb |
+| Young adult (1–3 yrs) | 25–35 calories/lb |
+| Adult (4–8 yrs) | 20–28 calories/lb |
+| Senior (9–12 yrs) | 20–25 calories/lb |
+| Super senior (13+) | Varies — monitor body condition |
+
+For a 10 lb adult cat, that's roughly 200–280 calories per day. Check the caloric density of your cat's food (listed in kcal/cup or kcal/can on the packaging) and do the math — you may find you've been underfeeding by 20–30% every day.
+
+Spayed and neutered cats should be at the lower end of any range. Outdoor cats or those with naturally high activity levels may need the higher end.
+
+## When to See a Vet
+
+If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's highly manageable when caught early.
+
+Other conditions that can increase appetite include diabetes, intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
+
+Constant hunger in a cat who's otherwise healthy and eating an appropriate amount is more likely a food quality issue than a medical one. But sudden changes in a cat who was previously satisfied with their normal amount are worth checking out.
+
 *This article is for informational purposes only. If your cat's hunger seems sudden or is accompanied by other symptoms, please consult your veterinarian.*

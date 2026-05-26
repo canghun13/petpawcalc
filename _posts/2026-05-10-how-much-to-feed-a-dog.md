@@ -75,4 +75,27 @@ If your dog is gaining unwanted weight, reduce by 10% and monitor for 2–3 week
 
 Feeding the right amount isn't complicated, but it does require knowing a few numbers and paying attention to your dog's body condition rather than just the clock. Start with a calorie target, translate it to serving size using your food's label, and adjust based on how your dog looks and feels.
 
+## Common Feeding Mistakes and How to Avoid Them
+
+**Following bag instructions too literally**: Feeding guides on dog food bags are typically calibrated for intact (unspayed/unneutered) dogs at moderate activity. Most household dogs are neutered and less active than average — they need 20–30% fewer calories than the bag suggests. Use the bag as a starting point, not a rule.
+
+**Not accounting for treats**: Treats can make up a significant portion of daily calories without being counted. A 10-calorie treat given 10 times a day is 100 extra calories — equivalent to 15% of a medium dog's daily intake. Count treats as part of the daily total and reduce meals accordingly.
+
+**Measuring by volume instead of weight**: A "cup" of kibble varies significantly in calorie density depending on the food. High-fat, calorie-dense kibbles can have 500+ kcal/cup; lighter foods 300–350 kcal/cup. For accuracy, measure by calories rather than volume.
+
+**Not adjusting as the dog ages**: A dog's calorie needs change at every life stage. The amount that was appropriate at age 2 is likely too much by age 8. Annual reassessment is worth building into your routine.
+
+**Feeding once a day**: Once-daily feeding works for some dogs, but most do better with two meals. It stabilizes energy, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals.
+
+## Breed-Specific Considerations
+
+Some breeds have unusual metabolic characteristics that affect how much they should eat:
+
+- **Labrador Retrievers** are notorious for obesity — they have a genetic mutation that affects fullness signaling. They need careful portion control.
+- **Greyhounds and Sighthounds** have lower body fat and different muscle composition — they often need more calories per pound than other large breeds.
+- **Brachycephalic breeds** (Bulldogs, Pugs, French Bulldogs) have lower exercise tolerance and often need fewer calories than their size suggests.
+- **Working and sporting breeds** (Border Collies, Huskies, hunting dogs in active use) may need dramatically more — up to 2–5× resting energy requirements.
+
+If your dog's breed has known metabolic quirks, discuss optimal feeding with your vet rather than relying solely on general guidelines.
+
 *This article is for informational purposes only. Please consult your veterinarian for dietary recommendations specific to your dog's health conditions and needs.*

@@ -103,4 +103,28 @@ Cats are cheaper than dogs — typically by $500–$2,000 per year depending on 
 
 But cost is rarely the deciding factor in choosing a pet. Dogs require more time, attention, and exercise. Cats are more independent. The better question is which type of pet fits your lifestyle — the money follows from that decision.
 
+## Costs That Are Easy to Underestimate
+
+A few categories consistently catch pet owners off guard, regardless of whether they have a dog or cat:
+
+**Dental care**: Both dogs and cats need periodic professional dental cleanings under anesthesia. Costs run $300–$800+ per cleaning. Cats are particularly prone to dental disease — some develop tooth resorption, a painful condition requiring extraction. Neglecting dental health in either species leads to more serious (and expensive) problems over time.
+
+**End-of-life care**: Euthanasia, cremation or burial, and any palliative care in a pet's final months can add $500–$3,000+ for both dogs and cats. It's uncomfortable to plan for, but worth knowing when budgeting long-term.
+
+**Behavioral issues**: A cat with anxiety who sprays indoors, or a dog with separation anxiety, can generate real costs in cleaning, property damage, and professional behavior consultation. These aren't rare situations.
+
+**Boarding and pet sitting**: This category varies enormously based on travel frequency. Dog boarding averages $40–$100/night; cat boarding $20–$50/night (many cats can be left at home with a daily check-in visit at lower cost). Owners who travel frequently can easily spend $1,000–$2,000/year on pet care while away.
+
+## The Time Cost
+
+Cost comparisons almost always focus on money, but time is a significant input for dogs especially. Dogs need daily walks, regular exercise, training reinforcement, and social interaction. A dog who isn't getting adequate exercise and stimulation may develop behavioral problems that generate their own costs.
+
+Cats are genuinely more time-independent — they don't need walks and can be left alone for a full work day without issue. This makes cats meaningfully easier to fit around a demanding schedule, even if the financial difference is smaller than many people assume.
+
+## Final Verdict
+
+Cats cost less and require less time. Dogs require more investment across both dimensions but offer different returns — more interactive companionship, trainability, and for some owners, a reason to exercise more regularly.
+
+Neither is inherently a better choice. The question is which fits your life, your schedule, and what you're looking for in a pet relationship. The money follows from that decision.
+
 *Cost estimates are based on US national averages as of 2026 and will vary by location, breed, and individual pet needs.*

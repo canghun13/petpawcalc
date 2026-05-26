@@ -85,4 +85,32 @@ Most adult dogs do well on two meals a day. For seniors, this stays the same —
 
 If your senior dog is losing muscle despite adequate calories, ask your vet about adding a lean protein source or a senior-specific supplement.
 
+## Common Senior Dog Feeding Mistakes
+
+**Not adjusting portions as the dog ages**: Many owners keep feeding the same amount they did when the dog was 4 or 5. A 10-year-old Labrador who gets the same cup and a half of food they got at age 3 will gain weight — and the consequences for aging joints are real. Reassess quantities annually or whenever you notice body condition changes.
+
+**Switching to senior food too early (or too late)**: Senior formulas are lower in calories but higher in fiber. Switching a young, active 7-year-old to senior food can leave them under-fueled. Waiting until a 9-year-old large breed dog is clearly overweight before switching is leaving nutrition on the table. Let body condition and your vet's assessment guide the timing, not age alone.
+
+**Ignoring muscle loss**: Weight can look normal on a scale while muscle mass declines. A senior dog who loses muscle around the hindquarters or spine may weigh the same as before — but they're less healthy. This is called sarcopenia, and it's addressed through adequate protein intake and appropriate exercise, not just calories.
+
+**Over-restricting calories in underweight seniors**: Not all senior dogs need fewer calories. Some older dogs — particularly those over 12, or those with conditions that affect nutrient absorption — actually need more food than before to maintain healthy weight. If your senior is losing weight despite regular feeding, a vet visit and possible diet change is warranted.
+
+## Hydration Matters More as Dogs Age
+
+Senior dogs are more prone to dehydration and kidney issues. If your older dog eats primarily dry food, consider adding warm water or low-sodium broth to their meals to increase moisture intake. Wet food naturally provides higher hydration and is often easier to chew for dogs with dental issues — both relevant concerns in senior dogs.
+
+Chronic low-grade dehydration contributes to kidney stress over time. It's a simple thing to address and often overlooked.
+
+## When to Talk to Your Vet About Diet
+
+A nutritional review with your veterinarian makes sense:
+
+- When your dog officially enters the "senior" life stage for their size
+- When you notice weight gain or loss of more than 10% of body weight
+- When body condition changes despite consistent feeding
+- When your dog develops a health condition (kidney disease, diabetes, joint disease, cancer) that has specific nutritional implications
+- Annually, as a routine part of their wellness exam
+
+Senior dogs with kidney disease in particular need careful dietary management — protein quality and phosphorus levels become important in ways that aren't addressed by standard senior formulas. This is a case where veterinary guidance (and possibly a prescription diet) replaces general guidelines entirely.
+
 *This guide is for informational purposes only. Always consult your veterinarian before making significant changes to your senior dog's diet, especially if they have existing health conditions.*
