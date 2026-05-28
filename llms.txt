@@ -1,0 +1,57 @@
+# PetPawCalc
+
+> Free calculators and guides for dog and cat owners in the US. PetPawCalc provides instant, research-backed answers about pet age, nutrition, weight, pregnancy, costs, and insurance — built for pet parents, not veterinarians.
+
+PetPawCalc is a free tool-first resource. Every calculator is designed to give practical, actionable output — not just information. All content is written for US pet owners and calibrated to current veterinary guidelines. No signup required for any tool.
+
+## Tools
+
+- [Dog Age Calculator](https://petpawcalc.com/tools/dog-age-calculator.html): Converts dog years to human years using size-adjusted aging curves. Accounts for the fact that large breeds age faster than small breeds, and that dogs age rapidly in their first two years.
+
+- [Cat Age Calculator](https://petpawcalc.com/tools/cat-age-calculator.html): Converts cat years to human years based on feline aging research. Distinguishes between the rapid development phase (years 1–2) and the more gradual aging of adult cats.
+
+- [Pet Food Calorie Calculator](https://petpawcalc.com/tools/pet-food-calorie-calculator.html): Calculates daily calorie needs for dogs and cats based on weight, age, neuter status, and activity level using the Resting Energy Requirement (RER) formula.
+
+- [Dog Weight Calculator](https://petpawcalc.com/tools/dog-weight-calculator.html): Estimates a puppy's adult weight based on current age and weight, with size-specific maturity timelines. Also helps assess whether an adult dog is at a healthy weight.
+
+- [Annual Pet Cost Calculator](https://petpawcalc.com/tools/annual-pet-cost-calculator.html): Estimates total annual cost of owning a dog or cat, broken down by category: food, vet care, grooming, insurance, supplies, and boarding.
+
+- [Pet Insurance Cost Estimator](https://petpawcalc.com/tools/pet-insurance-cost-estimator.html): Estimates monthly pet insurance premiums based on species, breed size, age, and US location. Covers accident-and-illness plans.
+
+- [Dog Pregnancy Calculator](https://petpawcalc.com/tools/dog-pregnancy-calculator.html): Calculates estimated due date and delivery window from mating date. Includes a week-by-week pregnancy development guide covering all 9 weeks of gestation.
+
+- [Dog Heat Cycle Calculator](https://petpawcalc.com/tools/dog-heat-cycle-calculator.html): Predicts next heat date and fertile window based on last heat date and breed size. Breaks down all four stages of the canine estrous cycle (proestrus, estrus, diestrus, anestrus) with estimated dates.
+
+## Blog
+
+- [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
+
+- [How Much Does a Dog Really Cost Per Year?](https://petpawcalc.com/blog/annual-cost-of-owning-a-dog): Full annual cost breakdown by category (food, vet, grooming, insurance, boarding) with ranges by dog size. Includes costs that commonly surprise new owners.
+
+- [How Much Should I Feed My Dog?](https://petpawcalc.com/blog/how-much-to-feed-a-dog): Explains how to calculate the right daily food amount using RER, with adjustments for life stage, activity level, and neuter status. Covers common feeding mistakes.
+
+- [How Much Should a Senior Dog Eat?](https://petpawcalc.com/blog/how-much-should-senior-dog-eat): Covers calorie and protein needs for aging dogs, when to transition to senior food, signs of under- and overfeeding, and the importance of muscle mass monitoring.
+
+- [Puppy Weight Chart by Breed Size](https://petpawcalc.com/blog/puppy-weight-chart-by-breed-size): Weight charts by breed size category (toy through giant) from 8 weeks to adulthood. Includes adult weight estimation formula and nutrition guidance for large-breed puppies.
+
+- [Why Is My Cat Always Hungry?](https://petpawcalc.com/blog/why-is-my-cat-always-hungry): Explains calorie needs by life stage, common reasons cats seem perpetually hungry (underfeeding, low-satiety food, medical causes), and how to assess whether intake is appropriate.
+
+- [How to Tell If Your Dog Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-dog-is-overweight): Three at-home body condition checks (rib test, waist check, profile view). Covers the Body Condition Score (BCS) scale and steps to take if a dog is overweight.
+
+- [The True Cost of Owning a Cat vs Dog](https://petpawcalc.com/blog/true-cost-cat-vs-dog-year-by-year): Year-by-year cost comparison across the full lifetime of a dog vs cat, broken down by category. Includes time cost and commonly underestimated expenses.
+
+- [How Often Should You Take Your Dog to the Vet?](https://petpawcalc.com/blog/how-often-vet-visits-dog-cost-by-age): Recommended vet visit frequency by life stage (puppy, adult, senior) with what each visit should cover and typical costs.
+
+- [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
+
+- [How Long Are Dogs Pregnant?](https://petpawcalc.com/blog/how-long-are-dogs-pregnant): 63-day gestation overview with week-by-week development guide. Covers what to expect each week and how to prepare for whelping.
+
+- [What to Feed a Pregnant Dog](https://petpawcalc.com/blog/what-to-feed-pregnant-dog): Trimester-by-trimester nutrition guide for pregnant dogs. Covers calorie increases, food type recommendations, supplements, and what to avoid.
+
+- [How to Tell If Your Dog Is Pregnant](https://petpawcalc.com/blog/how-to-tell-if-dog-is-pregnant): Early and later signs of dog pregnancy by week, how to distinguish from false pregnancy, and how veterinarians confirm pregnancy (palpation, ultrasound, relaxin test, X-ray).
+
+## About
+
+PetPawCalc is focused on a single niche: calculators and practical guides for US pet owners. All tools are free, require no account, and are designed to give immediately usable outputs. Content follows veterinary guidelines and includes disclaimers where appropriate. The site does not provide medical diagnoses or medication dosing.
+
+Contact: canghun13@naver.com
