@@ -22,6 +22,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Dog Heat Cycle Calculator](https://petpawcalc.com/tools/dog-heat-cycle-calculator.html): Predicts next heat date and fertile window based on last heat date and breed size. Breaks down all four stages of the canine estrous cycle (proestrus, estrus, diestrus, anestrus) with estimated dates.
 
+- [Dog Vet Visit Scheduler](https://petpawcalc.com/tools/dog-vet-visit-scheduler.html): Enter your dog's age, size, and last vet visit date to get a personalized next checkup date, urgency status, and a life-stage-specific visit agenda covering what to discuss with your vet.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -49,6 +51,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [What to Feed a Pregnant Dog](https://petpawcalc.com/blog/what-to-feed-pregnant-dog): Trimester-by-trimester nutrition guide for pregnant dogs. Covers calorie increases, food type recommendations, supplements, and what to avoid.
 
 - [How to Tell If Your Dog Is Pregnant](https://petpawcalc.com/blog/how-to-tell-if-dog-is-pregnant): Early and later signs of dog pregnancy by week, how to distinguish from false pregnancy, and how veterinarians confirm pregnancy (palpation, ultrasound, relaxin test, X-ray).
+
+- [Signs of Dog Labor: What to Expect Hour by Hour](https://petpawcalc.com/blog/signs-of-dog-labor): Hour-by-hour breakdown of dog labor — pre-labor signs, Stage 1 and Stage 2 labor, placenta delivery, and when to call the vet. Covers the temperature drop method and post-whelping monitoring.
+
+- [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Practical strategies for lowering lifetime vet costs — pet insurance timing, emergency funds, preventive care ROI, dental care, low-cost vaccine clinics, and when to use urgent care vs. the ER.
 
 ## About
 
