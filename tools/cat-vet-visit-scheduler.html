@@ -1,0 +1,340 @@
+---
+layout: tool
+permalink: /tools/cat-vet-visit-scheduler.html
+title: Cat Vet Visit Scheduler — When Is My Cat's Next Checkup?
+description: Enter your cat's age and last vet visit to get a personalized checkup schedule — with what to discuss at each visit. Free, instant results.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Vet Visit Scheduler",
+  "url": "https://petpawcalc.com/tools/cat-vet-visit-scheduler.html",
+  "description": "Enter your cat's age and last vet visit to get a personalized next checkup date and what to expect at each visit.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I take my cat to the vet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your cat's age. Kittens under 1 year need visits every 3–4 weeks for their vaccine series. Healthy adult cats (1–10 years) need an annual wellness exam. Senior cats (10+ years) benefit from checkups every 6 months. Cats with chronic conditions may need more frequent visits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens at a cat's annual wellness exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard annual wellness exam includes a full physical checkup (weight, temperature, heart, lungs, teeth, eyes, ears, skin, coat), rotating vaccines, and parasite prevention review. For cats over 10, bloodwork is typically recommended to check organ function, thyroid levels, and blood glucose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "At what age should cats start getting checkups every 6 months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most vets recommend twice-yearly exams for cats over 10 years old. Cats age faster than humans, and conditions like hyperthyroidism, kidney disease, and diabetes become more common after age 10. Earlier, more frequent visits may be recommended for cats with chronic health conditions."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🩺 Cat Vet Visit Scheduler</h1>
+    <p>Enter your cat's details and last vet visit to find out when their next checkup should be — and exactly what to bring up with your vet.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="cat-age-years">Cat's Age</label>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <input type="number" id="cat-age-years" min="0" max="25" step="1" placeholder="Years" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">yrs</span>
+        <input type="number" id="cat-age-months" min="0" max="11" step="1" placeholder="Months" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">mos</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cat-indoor">Indoor or Outdoor Cat?</label>
+      <select id="cat-indoor">
+        <option value="">Select lifestyle</option>
+        <option value="indoor">Indoor only</option>
+        <option value="outdoor">Outdoor or indoor/outdoor</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Last Vet Visit</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="last-visit-month-cat" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Month</option>
+          <option value="0">January</option><option value="1">February</option>
+          <option value="2">March</option><option value="3">April</option>
+          <option value="4">May</option><option value="5">June</option>
+          <option value="6">July</option><option value="7">August</option>
+          <option value="8">September</option><option value="9">October</option>
+          <option value="10">November</option><option value="11">December</option>
+        </select>
+        <select id="last-visit-year-cat" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Year</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cat-health-status">Any ongoing health conditions?</label>
+      <select id="cat-health-status">
+        <option value="healthy">No — generally healthy</option>
+        <option value="chronic">Yes — managing a chronic condition</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateCatVetSchedule()">Get My Cat's Schedule →</button>
+
+    <div class="result-box" id="cat-result" style="display:none;">
+      <h3 id="cat-result-next"></h3>
+      <p id="cat-result-status"></p>
+      <p id="cat-result-urgency" style="margin-top: 6px; font-weight: 600;"></p>
+    </div>
+  </div>
+
+  <!-- Visit agenda -->
+  <div id="cat-agenda-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 8px;">What to Bring Up at This Visit</h2>
+    <p style="color: var(--brown-mid); font-size: 0.9rem; margin-bottom: 20px;">Based on your cat's life stage — these are the topics worth raising with your vet.</p>
+    <div id="cat-agenda-list"></div>
+  </div>
+
+  <!-- Schedule timeline -->
+  <div id="cat-schedule-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 20px;">Your Cat's Recommended <em>Visit Schedule</em></h2>
+    <div id="cat-schedule-timeline"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This scheduler provides general guidelines based on your cat's life stage. Individual health needs vary. Always follow your veterinarian's specific recommendations for your cat.
+  </div>
+
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Vet Visit Frequency Changes as Cats Age</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats are notoriously good at hiding illness — a trait inherited from wild ancestors for whom showing weakness was dangerous. By the time most cats show visible signs of a health problem, the condition has often been developing for months. This makes routine vet visits more important for cats than for many other pets, even when everything seems fine.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Annual exams during adult years establish baseline values — kidney function, thyroid levels, weight, heart sounds — that become critical reference points as your cat ages. The difference between catching hyperthyroidism or kidney disease at an early stage versus a late one is dramatic in terms of both quality of life and treatment cost.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Cat Vet Visit Frequency by Life Stage</h2>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Kitten (0–12 months)</strong>: Every 3–4 weeks until the primary vaccine series is complete, typically around 16 weeks. Then a visit around 5–6 months for spay/neuter and a final kitten wellness check. More vet visits than any other life stage, but essential for establishing immunity and catching early developmental issues.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Young Adult (1–3 years)</strong>: Annual wellness exam. Vaccines rotate on 1 or 3-year schedules depending on the specific vaccine and your vet's protocol. Weight monitoring, dental health, and parasite prevention are the main focus.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Adult (3–10 years)</strong>: Annual wellness exam. Bloodwork every 2–3 years as a baseline check is increasingly recommended in this range. Outdoor cats and indoor/outdoor cats may need more frequent parasite checks and additional vaccines (FeLV, for example).</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Senior (10+ years)</strong>: Every 6 months. Semi-annual exams allow earlier detection of the conditions most common in older cats — hyperthyroidism (affects roughly 10% of cats over 10), chronic kidney disease, diabetes, dental disease, and hypertension. Bloodwork at every visit becomes standard at this stage.</p>
+
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Cats with chronic conditions</strong>: Frequency is determined by the condition being managed. Hyperthyroidism, kidney disease, and diabetes typically require visits every 3–4 months for monitoring and medication adjustment.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Indoor vs. Outdoor Cats: Does It Affect Vet Visits?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Indoor-only cats generally need fewer vaccines than outdoor cats — they're not exposed to FeLV (feline leukemia virus) or FIV through contact with other cats, and their parasite risk is lower. However, the core vaccine schedule (FVRCP, rabies) and annual wellness exams are still recommended for all cats regardless of lifestyle.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Outdoor and indoor/outdoor cats typically need additional protection: FeLV vaccine (especially if unvaccinated as kittens), more frequent fecal parasite testing, and closer monitoring for injuries, abscesses, and exposure to disease. The annual visit frequency stays the same, but the scope of each visit is broader.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How to Get the Most Out of Each Vet Visit</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat vet appointments move quickly, and cats are often stressed in the clinic — which can make the exam feel rushed. Coming prepared makes a significant difference. Note any changes since the last visit: appetite, water intake, litter box habits (frequency, consistency, any straining), energy level, grooming behavior, and sleep patterns.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For senior cats especially, changes in water intake are an important early signal — increased thirst is a classic symptom of kidney disease, hyperthyroidism, and diabetes. Tracking water consumption at home before a senior exam gives your vet useful information they can't get from the exam alone.</p>
+
+    <div class="post-cta">
+      <p>Wondering how much vet care costs per year? → <a href="/tools/annual-pet-cost-calculator.html">Try our Annual Pet Cost Calculator</a></p>
+    </div>
+
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Want to know how old your cat is in human years? → <a href="/tools/cat-age-calculator.html">Try our Cat Age Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+function formatDate(date) {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return `${months[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function addMonths(date, months) {
+  const result = new Date(date);
+  result.setMonth(result.getMonth() + months);
+  return result;
+}
+
+function getCatLifeStage(totalMonths) {
+  if (totalMonths < 12) return 'kitten';
+  if (totalMonths < 36) return 'young_adult';
+  if (totalMonths < 120) return 'adult';
+  return 'senior';
+}
+
+function getCatVisitInterval(stage, healthStatus) {
+  if (healthStatus === 'chronic') return 3;
+  switch(stage) {
+    case 'kitten': return 3;
+    case 'young_adult': return 12;
+    case 'adult': return 12;
+    case 'senior': return 6;
+  }
+}
+
+function getCatAgendaItems(stage, lifestyle, healthStatus) {
+  const base = [
+    { icon: '⚖️', title: 'Weight & Body Condition', desc: 'Ask your vet to assess body condition score. Even small weight changes in cats are meaningful — a 1 lb change in a 10 lb cat is a 10% shift.' },
+    { icon: '🦷', title: 'Dental Health', desc: 'Dental disease affects most cats by age 3. Ask about the current dental grade and whether a professional cleaning under anesthesia is recommended.' },
+    { icon: '💉', title: 'Vaccines Due', desc: 'Confirm which vaccines are due — FVRCP (every 1–3 years), rabies (every 1–3 years depending on state). Outdoor cats may also need FeLV.' },
+    { icon: '🐛', title: 'Parasite Prevention', desc: 'Review flea, tick, and heartworm prevention. Even indoor cats can be exposed to fleas via humans or other pets — prevention is easier than treatment.' },
+  ];
+
+  if (stage === 'kitten') {
+    base.push({ icon: '✂️', title: 'Spay/Neuter Timing', desc: 'Discuss the recommended age for spaying or neutering. Most vets recommend around 5–6 months, before the first heat cycle for females.' });
+    base.push({ icon: '🏠', title: 'Socialization & Environment', desc: 'The socialization window for kittens is short — through about 9 weeks. Discuss enrichment, litter training, and carrier comfort for easier future vet visits.' });
+  }
+
+  if (stage === 'adult' || stage === 'young_adult') {
+    base.push({ icon: '🩸', title: 'Baseline Bloodwork', desc: 'Consider running a baseline blood panel every 2–3 years even in healthy adult cats. Reference values taken now are essential context when something changes later.' });
+  }
+
+  if (lifestyle === 'outdoor') {
+    base.push({ icon: '🐾', title: 'FeLV/FIV Status', desc: 'Outdoor cats have ongoing exposure risk for feline leukemia and FIV. Confirm vaccination status and discuss whether a booster is appropriate.' });
+    base.push({ icon: '🔍', title: 'Fecal Parasite Test', desc: 'Outdoor cats have higher intestinal parasite exposure. Annual or semi-annual fecal testing is recommended.' });
+  }
+
+  if (stage === 'senior') {
+    base.push({ icon: '🩸', title: 'Full Bloodwork Panel', desc: 'Senior panels should include kidney values (BUN, creatinine, SDMA), thyroid (T4), liver enzymes, and blood glucose. Ask to see and keep the actual numbers.' });
+    base.push({ icon: '🫀', title: 'Blood Pressure Check', desc: 'Hypertension is common in senior cats, especially those with kidney disease or hyperthyroidism. It\'s quick to check and important to catch early.' });
+    base.push({ icon: '🧠', title: 'Cognitive & Behavior Changes', desc: 'Disorientation, nighttime vocalization, changes in sleep patterns, or decreased grooming can signal cognitive changes or pain. Mention even subtle shifts.' });
+    base.push({ icon: '💧', title: 'Water Intake', desc: 'Tell your vet if water consumption has increased — this is an early warning sign for kidney disease, hyperthyroidism, and diabetes in senior cats.' });
+  }
+
+  if (healthStatus === 'chronic') {
+    base.push({ icon: '📋', title: 'Condition Monitoring', desc: 'Bring a log of any changes in symptoms, appetite, water intake, litter box habits, or medication response since the last visit.' });
+  }
+
+  return base;
+}
+
+function calculateCatVetSchedule() {
+  const ageYears = parseInt(document.getElementById('cat-age-years').value) || 0;
+  const ageMonths = parseInt(document.getElementById('cat-age-months').value) || 0;
+  const lifestyle = document.getElementById('cat-indoor').value;
+  const lastMonth = document.getElementById('last-visit-month-cat').value;
+  const lastYear = document.getElementById('last-visit-year-cat').value;
+  const healthStatus = document.getElementById('cat-health-status').value;
+
+  if (!lifestyle || lastMonth === '' || !lastYear) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  const totalMonths = (ageYears * 12) + ageMonths;
+  const stage = getCatLifeStage(totalMonths);
+  const intervalMonths = getCatVisitInterval(stage, healthStatus);
+
+  const lastVisit = new Date(parseInt(lastYear), parseInt(lastMonth), 1);
+  const nextVisit = addMonths(lastVisit, intervalMonths);
+  const now = new Date();
+
+  const monthsUntilNext = (nextVisit.getFullYear() - now.getFullYear()) * 12 + (nextVisit.getMonth() - now.getMonth());
+
+  let urgencyText = '';
+  let urgencyColor = 'var(--orange)';
+
+  if (monthsUntilNext < 0) {
+    urgencyText = `⚠️ Overdue by ${Math.abs(monthsUntilNext)} month${Math.abs(monthsUntilNext) !== 1 ? 's' : ''} — time to schedule`;
+    urgencyColor = '#c0392b';
+  } else if (monthsUntilNext === 0) {
+    urgencyText = '📅 Due this month — schedule now';
+    urgencyColor = '#c0392b';
+  } else if (monthsUntilNext <= 2) {
+    urgencyText = `📅 Coming up in ${monthsUntilNext} month${monthsUntilNext !== 1 ? 's' : ''} — start looking for appointments`;
+  } else {
+    urgencyText = `✅ Next visit due in ${monthsUntilNext} months`;
+    urgencyColor = '#27ae60';
+  }
+
+  const stageLabels = {
+    kitten: 'Kitten — visits every 3–4 weeks until vaccines are complete',
+    young_adult: 'Young Adult — annual wellness exam recommended',
+    adult: 'Adult — annual wellness exam recommended',
+    senior: 'Senior — checkup every 6 months recommended'
+  };
+
+  const chronicNote = healthStatus === 'chronic' ? ' (every 3 months for cats with chronic conditions)' : '';
+
+  document.getElementById('cat-result-next').textContent = `Next visit: ${formatDate(nextVisit)}`;
+  document.getElementById('cat-result-status').textContent = stageLabels[stage] + chronicNote;
+  document.getElementById('cat-result-urgency').textContent = urgencyText;
+  document.getElementById('cat-result-urgency').style.color = urgencyColor;
+
+  document.getElementById('cat-result').style.display = 'block';
+  document.getElementById('cat-result').classList.add('show');
+
+  // Agenda
+  const agendaItems = getCatAgendaItems(stage, lifestyle, healthStatus);
+  const agendaEl = document.getElementById('cat-agenda-list');
+  agendaEl.innerHTML = agendaItems.map(item => `
+    <div style="display: flex; gap: 14px; margin-bottom: 16px; padding: 14px 16px; background: var(--cream); border-radius: var(--radius); border-left: 3px solid var(--orange);">
+      <div style="font-size: 1.3rem; flex-shrink: 0; margin-top: 2px;">${item.icon}</div>
+      <div>
+        <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${item.title}</div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.6;">${item.desc}</div>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('cat-agenda-section').style.display = 'block';
+
+  // Schedule timeline — next 3 visits
+  const scheduleItems = [];
+  for (let i = 0; i < 3; i++) {
+    const visitDate = addMonths(nextVisit, intervalMonths * i);
+    const visitStage = getCatLifeStage(totalMonths + (intervalMonths * i));
+    const visitLabels = {
+      kitten: 'Kitten wellness + vaccines',
+      young_adult: 'Annual wellness exam',
+      adult: 'Annual wellness exam',
+      senior: 'Semi-annual senior exam'
+    };
+    scheduleItems.push({ date: visitDate, label: visitLabels[visitStage] });
+  }
+
+  const scheduleEl = document.getElementById('cat-schedule-timeline');
+  scheduleEl.innerHTML = scheduleItems.map((item, i) => `
+    <div style="display: flex; gap: 16px; margin-bottom: 16px; padding: 14px 16px; background: ${i === 0 ? 'var(--cream)' : 'var(--white)'}; border-radius: var(--radius); border: 1.5px solid ${i === 0 ? 'var(--orange)' : 'var(--border)'};">
+      <div style="font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;">${i === 0 ? '📍' : '📅'}</div>
+      <div>
+        <div style="font-weight: 600; color: var(--brown); margin-bottom: 2px;">${formatDate(item.date)}${i === 0 ? ' — Next visit' : ''}</div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">${item.label}</div>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('cat-schedule-section').style.display = 'block';
+  document.getElementById('cat-agenda-section').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

@@ -24,6 +24,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Dog Vet Visit Scheduler](https://petpawcalc.com/tools/dog-vet-visit-scheduler.html): Enter your dog's age, size, and last vet visit date to get a personalized next checkup date, urgency status, and a life-stage-specific visit agenda covering what to discuss with your vet.
 
+- [Cat Vet Visit Scheduler](https://petpawcalc.com/tools/cat-vet-visit-scheduler.html): Enter your cat's age, lifestyle (indoor/outdoor), and last vet visit date to get a personalized next checkup date, urgency status, and a life-stage-specific visit agenda covering what to discuss with your vet.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -55,6 +57,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [Signs of Dog Labor: What to Expect Hour by Hour](https://petpawcalc.com/blog/signs-of-dog-labor): Hour-by-hour breakdown of dog labor — pre-labor signs, Stage 1 and Stage 2 labor, placenta delivery, and when to call the vet. Covers the temperature drop method and post-whelping monitoring.
 
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Practical strategies for lowering lifetime vet costs — pet insurance timing, emergency funds, preventive care ROI, dental care, low-cost vaccine clinics, and when to use urgent care vs. the ER.
+
+- [How Often Should Cats Go to the Vet? A Schedule by Age](https://petpawcalc.com/blog/how-often-vet-visits-cat): Recommended vet visit frequency for cats by life stage (kitten, adult, senior) with what each visit should cover, indoor vs. outdoor differences, and typical costs.
 
 ## About
 
