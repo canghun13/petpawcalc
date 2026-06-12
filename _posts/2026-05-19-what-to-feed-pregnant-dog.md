@@ -3,8 +3,8 @@ layout: post
 title: "What to Feed a Pregnant Dog: Nutrition Guide by Trimester"
 description: "What your pregnant dog eats directly affects her health and her puppies'. Here's exactly what to feed her — and what to avoid — at each stage of pregnancy."
 category: Dog Nutrition
-date: 2026-05-19
-read_time: 7
+date: 2026-06-12
+read_time: 10
 slug: what-to-feed-pregnant-dog
 ---
 
@@ -50,6 +50,52 @@ Don't be alarmed if she becomes pickier or eats inconsistently in the final days
 <div class="post-cta">
   Not sure how many calories your dog needs normally? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a>
 </div>
+
+---
+
+## Week-by-Week Feeding Schedule
+
+Most guides give vague trimester advice. Here's a more precise breakdown by week — because the difference between week 5 and week 8 matters more than most owners realize.
+
+| Week | Food | Meals/Day | Amount vs. Normal |
+|------|------|-----------|-------------------|
+| 1–3 | Current adult food | 2 | Normal portions |
+| 4 | Begin transitioning to puppy food | 2–3 | Normal to +10% |
+| 5 | Puppy food | 2–3 | +15–20% |
+| 6 | Puppy food | 3 | +25–30% |
+| 7 | Puppy food | 3 | +35–40% |
+| 8 | Puppy food | 3–4 | +50–75% |
+| 9 | Puppy food | 3–4 | Up to +100% (eat to appetite) |
+| Day before labor | Puppy food | Offer freely | She may refuse — normal |
+| Nursing weeks 1–2 | Puppy food | 3–4 | +50–100% |
+| Nursing weeks 3–4 (peak) | Puppy food | Free choice | Up to +200–300% |
+
+The jump from week 6 to week 8 is where most owners get caught off guard. Puppies gain about 75% of their birth weight in the final three weeks of pregnancy — the mother's calorie needs spike sharply during this window.
+
+---
+
+## How to Tell If Your Pregnant Dog Is Eating Enough
+
+Weight gain during pregnancy is expected, but the amount and pattern matter. A healthy pregnant dog should gain:
+
+- **Weeks 1–4**: Little to no weight gain (embryos are tiny)
+- **Weeks 5–9**: Gradual, steady gain
+- **By delivery**: 25–30% above her pre-pregnancy weight for a typical litter; more for large litters
+
+**Signs she may not be eating enough:**
+- Weight staying flat or dropping after week 5
+- Visible rib prominence despite feeding
+- Low energy and reluctance to move
+- Puppies born underweight (under 5% of expected breed weight at birth)
+
+**Signs she may be eating too much:**
+- Rapid, excessive weight gain in the first 4 weeks
+- Difficulty moving or lying down before week 7
+- Very large abdominal girth early in pregnancy
+
+The most reliable check is a body condition score (BCS) assessment at your week 4–5 vet visit. Ask your vet to walk you through the BCS scale so you can monitor her at home between appointments. The goal is BCS 4–5 on the standard 9-point scale throughout pregnancy — not dramatically heavier or lighter than her pre-pregnancy condition.
+
+If you're unsure whether her weight gain is on track, weigh her weekly at home using a bathroom scale (weigh yourself holding her, then subtract your own weight). Keep a simple log — it gives your vet useful data and helps you spot trends early.
 
 ---
 
@@ -108,9 +154,9 @@ Also avoid switching foods more than once during pregnancy — digestive stabili
 
 Water intake increases significantly during pregnancy, especially in the third trimester. Make sure fresh water is always available and change it frequently. Dehydration can affect both the mother's health and amniotic fluid levels.
 
-Some dogs are more motivated to drink if the water bowl is near their resting spot. If she seems to be drinking less than usual, try adding a small amount of low-sodium broth to her water or switching to wet food for a meal.
+A good rule of thumb: a pregnant dog should be drinking roughly 1 ounce of water per pound of body weight per day. A 50 lb dog should drink about 50 oz — that's over 6 cups daily. In late pregnancy, that number climbs further.
 
-A good rule of thumb: a pregnant dog should be drinking roughly 1 ounce of water per pound of body weight per day. A 50 lb dog should drink about 50 oz — that's over 6 cups daily.
+If she seems to be drinking less than usual, try adding a small amount of low-sodium broth to her water or switching to wet food for a meal.
 
 ---
 
@@ -135,24 +181,6 @@ In the 24–48 hours before delivery, most dogs lose their appetite and may refu
 Other pre-labor signs to watch for: drop in rectal temperature below 99°F (37.2°C), restlessness, nesting behavior, and panting. When you see these alongside food refusal, whelping is likely within 12–24 hours.
 
 After delivery, her appetite will return quickly. Have food and fresh water readily available in or near the whelping area so she can eat and drink without leaving her puppies.
-
----
-
-## Quick Reference: Feeding Timeline
-
-| Stage | Food | Amount |
-|-------|------|--------|
-| Weeks 1–4 | Quality adult food | Normal portions |
-| Weeks 4–5 | Transition to puppy food | Start increasing gradually |
-| Weeks 5–7 | Puppy food | +25–50% above normal |
-| Weeks 7–9 | Puppy food, 3–4 small meals | Up to 2x normal |
-| Day before labor | Puppy food | She may refuse — that's okay |
-| After whelping | Puppy food | Increase further for nursing |
-| Nursing peak | Puppy food, free choice | Up to 3–4x normal |
-
----
-
-A pregnant dog that's well-nourished will have an easier delivery and healthier puppies. Stick to quality food, adjust timing rather than adding supplements, and check in with your vet at weeks 4 and 7–8.
 
 <div class="post-cta">
   Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>

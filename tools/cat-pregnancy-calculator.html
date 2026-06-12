@@ -1,0 +1,264 @@
+---
+layout: tool
+permalink: /tools/cat-pregnancy-calculator.html
+title: Cat Pregnancy Calculator — Due Date & Week-by-Week Timeline
+description: Enter your cat's mating date to get her estimated due date, delivery window, and a complete week-by-week pregnancy guide. Free, instant results.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Pregnancy Calculator",
+  "url": "https://petpawcalc.com/tools/cat-pregnancy-calculator.html",
+  "description": "Calculate your cat's estimated due date and week-by-week pregnancy guide based on mating date.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long are cats pregnant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days. Most cats deliver between day 63 and day 67."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate my cat's due date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Count approximately 63–65 days from the mating date. This is an estimate — actual delivery can occur several days earlier or later. A veterinarian can provide a more precise estimate using ultrasound after day 20 or X-ray after day 42."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the signs that a cat is about to give birth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Within 24–48 hours of labor, most cats become restless, stop eating, and begin intense nesting behavior. They may vocalize more than usual and seek a quiet, enclosed space. Active contractions signal that birth is imminent."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐱 Cat Pregnancy Calculator</h1>
+    <p>Enter your cat's mating date to get her estimated due date and a week-by-week guide to what's happening — and what to prepare for kitten arrival.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label>Mating Date</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="mating-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Month</option>
+          <option value="0">January</option><option value="1">February</option>
+          <option value="2">March</option><option value="3">April</option>
+          <option value="4">May</option><option value="5">June</option>
+          <option value="6">July</option><option value="7">August</option>
+          <option value="8">September</option><option value="9">October</option>
+          <option value="10">November</option><option value="11">December</option>
+        </select>
+        <select id="mating-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Day</option>
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+        </select>
+        <select id="mating-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Year</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="breed-type">Breed Type</label>
+      <select id="breed-type">
+        <option value="">Select type</option>
+        <option value="domestic">Domestic / Mixed</option>
+        <option value="purebred">Purebred (e.g. Siamese, Persian, Maine Coon)</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculatePregnancy()">Calculate Due Date →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-main"></h3>
+      <p id="result-window"></p>
+      <p id="result-week" style="margin-top: 8px; font-weight: 500;"></p>
+    </div>
+  </div>
+
+  <!-- Week-by-week timeline -->
+  <div id="timeline-section" style="display:none; margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--brown); margin-bottom: 24px;">Week-by-Week <em>Guide</em></h2>
+    <div id="timeline"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides estimates based on average feline gestation (63–65 days). Actual delivery may vary by ±5 days. Always work with your veterinarian for accurate pregnancy monitoring and prenatal care.
+  </div>
+
+  <!-- Info section -->
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How Long Are Cats Pregnant?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days — cats have a wider natural variation than dogs. Most cats deliver between day 63 and day 67. If your cat hasn't delivered by day 70, contact your veterinarian.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The pregnancy is divided into roughly three stages. The first three weeks involve embryo development with few visible signs. Weeks four through six bring noticeable physical changes. The final weeks are focused on growth, nesting, and preparation for birth.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Signs Your Cat May Be Pregnant</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
+      <li>Nipple enlargement and pinking ("pinking up") around weeks 2–3</li>
+      <li>Mild nausea or reduced appetite in early weeks</li>
+      <li>Increased affection and vocalization</li>
+      <li>Visible belly rounding by week 4–5</li>
+      <li>Weight gain of 2–4 lbs over the pregnancy</li>
+      <li>Active nesting behavior in the final week</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What to Prepare</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Around week 6, set up a <strong>kittening box</strong> — a quiet, warm, private space lined with clean towels or newspaper. Introduce your cat to it early so she explores it on her own terms before labor begins.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Schedule a vet visit around week 4 for ultrasound confirmation and kitten count. An X-ray after day 42 gives a more accurate litter size count and helps you know when all kittens have been delivered.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7;">Switch to a high-quality kitten food or an "all life stages" formula from week 4 onward. This supports the rapid growth of kittens in the final weeks and sustains your cat through nursing.</p>
+  </div>
+
+  <!-- CTA to blog -->
+  <div class="post-cta" style="margin-top: 48px;">
+    <p>Want the full guide? Read: <a href="/blog/how-long-are-cats-pregnant/">How Long Are Cats Pregnant? A Complete Week-by-Week Guide →</a></p>
+  </div>
+</div>
+
+<script>
+const weeks = [
+  {
+    week: 1,
+    title: "Week 1 — Fertilization",
+    desc: "Fertilization occurs within 24–48 hours of mating. Embryos begin dividing as they travel to the uterus. No outward signs yet — your cat will behave completely normally.",
+    care: "Continue normal feeding and routine. No changes needed at this stage."
+  },
+  {
+    week: 2,
+    title: "Week 2 — Implantation",
+    desc: "Embryos implant in the uterine lining. Some cats show mild nausea or slight appetite changes. Still no visible physical signs.",
+    care: "If she seems off her food, offer smaller meals more frequently. Keep fresh water available."
+  },
+  {
+    week: 3,
+    title: "Week 3 — Pinking Up",
+    desc: "Nipples enlarge and turn a deeper pink — this 'pinking up' is one of the earliest reliable signs of pregnancy. A relaxin hormone blood test can confirm pregnancy from around day 21.",
+    care: "Book a vet appointment for around week 4. A vet can confirm pregnancy and give you a preliminary kitten count via ultrasound."
+  },
+  {
+    week: 4,
+    title: "Week 4 — Ultrasound Window",
+    desc: "Kittens' organs begin forming rapidly. Ultrasound can now confirm pregnancy and detect heartbeats. Your cat's belly may begin to look slightly fuller. Appetite typically increases.",
+    care: "Begin transitioning to a high-quality kitten food or 'all life stages' formula. Increase portion sizes gradually."
+  },
+  {
+    week: 5,
+    title: "Week 5 — Visible Growth",
+    desc: "Kittens are growing fast and developing distinct features. Your cat's belly is now clearly rounder. She may tire more easily and sleep more than usual.",
+    care: "Feed 3 small meals a day rather than 2 larger ones. Avoid rough play or situations that put pressure on her abdomen."
+  },
+  {
+    week: 6,
+    title: "Week 6 — Set Up the Kittening Box",
+    desc: "Kittens are developing fur and their skeletons are visible on X-ray. Your cat's abdomen is noticeably enlarged and she may begin showing early nesting interest.",
+    care: "Set up the kittening box and introduce your cat to it. An X-ray now gives an accurate kitten count — important for knowing when delivery is complete."
+  },
+  {
+    week: 7,
+    title: "Week 7 — Kittens Nearly Ready",
+    desc: "Kittens are almost fully formed. You may be able to feel or see movement through your cat's belly wall. Nesting behavior typically intensifies this week.",
+    care: "Keep the kittening area warm, quiet, and private. Restrict outdoor access if she's an indoor/outdoor cat."
+  },
+  {
+    week: 8,
+    title: "Week 8 — Final Preparations",
+    desc: "Kittens are fully developed and moving into birth position. Your cat may become restless, vocal, or seek out secluded spots. Milk may begin to appear in the nipples.",
+    care: "Stay close but give her space. Watch for nesting, panting, and refusal to eat — these signal that labor is approaching within 24–48 hours."
+  },
+  {
+    week: 9,
+    title: "Week 9 — Birth",
+    desc: "Labor can begin any day from day 58 onward. Most cats deliver between day 63 and 67. Active contractions and straining mean kittens are on the way.",
+    care: "Stay calm and nearby. Most deliveries proceed without intervention. Have your vet's number ready and contact them immediately if more than 2 hours pass between kittens, or if your cat strains hard for over 30 minutes without delivering."
+  }
+];
+
+function calculatePregnancy() {
+  const month = document.getElementById('mating-month').value;
+  const day = document.getElementById('mating-day').value;
+  const year = document.getElementById('mating-year').value;
+  const breed = document.getElementById('breed-type').value;
+
+  if (!month || !day || !year || !breed) {
+    alert('Please enter the mating date and select breed type.');
+    return;
+  }
+
+  const mating = new Date(parseInt(year), parseInt(month), parseInt(day));
+  const gestationDays = breed === 'purebred' ? 65 : 63;
+  const due = new Date(mating);
+  due.setDate(due.getDate() + gestationDays);
+
+  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 58);
+  const latest = new Date(mating); latest.setDate(latest.getDate() + 70);
+
+  const fmt = d => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+  const today = new Date();
+  const daysPregnant = Math.floor((today - mating) / (1000 * 60 * 60 * 24));
+  const currentWeek = Math.ceil(daysPregnant / 7);
+
+  document.getElementById('result-main').textContent = `Estimated due date: ${fmt(due)}`;
+  document.getElementById('result-window').textContent = `Delivery window: ${fmt(earliest)} – ${fmt(latest)}`;
+
+  if (daysPregnant >= 0 && currentWeek <= 9) {
+    document.getElementById('result-week').textContent = `Currently in Week ${currentWeek} of pregnancy (Day ${daysPregnant})`;
+  } else if (daysPregnant < 0) {
+    document.getElementById('result-week').textContent = `Mating date is in the future — ${Math.abs(daysPregnant)} days to go.`;
+  } else {
+    document.getElementById('result-week').textContent = `Due date has passed — congratulations on your new kittens! 🐾`;
+  }
+
+  document.getElementById('result').classList.add('show');
+
+  const tl = document.getElementById('timeline');
+  tl.innerHTML = weeks.map(w => {
+    const isActive = w.week === currentWeek && daysPregnant >= 0;
+    const isPast = w.week < currentWeek && daysPregnant >= 0;
+    const weekStart = new Date(mating); weekStart.setDate(weekStart.getDate() + (w.week - 1) * 7);
+    const weekEnd = new Date(mating); weekEnd.setDate(weekEnd.getDate() + w.week * 7 - 1);
+
+    return `
+      <div style="display: flex; gap: 20px; margin-bottom: 24px; opacity: ${isPast ? '0.6' : '1'};">
+        <div style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: ${isActive ? 'var(--orange)' : isPast ? 'var(--border)' : 'var(--cream-dark)'}; color: ${isActive ? '#fff' : 'var(--brown)'}; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; margin-top: 2px;">W${w.week}</div>
+        <div style="flex: 1; background: ${isActive ? '#FFF7F3' : 'var(--white)'}; border: 1.5px solid ${isActive ? 'var(--orange)' : 'var(--border)'}; border-radius: var(--radius); padding: 16px 20px;">
+          <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${w.title} <span style="font-size: 0.78rem; font-weight: 400; color: var(--brown-light);">${fmt(weekStart)} – ${fmt(weekEnd)}</span></div>
+          <p style="color: var(--brown-mid); font-size: 0.88rem; line-height: 1.6; margin-bottom: 8px;">${w.desc}</p>
+          <p style="color: var(--orange); font-size: 0.85rem; line-height: 1.5;"><strong>Care tip:</strong> ${w.care}</p>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('timeline-section').style.display = 'block';
+  document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>

@@ -26,6 +26,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Cat Vet Visit Scheduler](https://petpawcalc.com/tools/cat-vet-visit-scheduler.html): Enter your cat's age, lifestyle (indoor/outdoor), and last vet visit date to get a personalized next checkup date, urgency status, and a life-stage-specific visit agenda covering what to discuss with your vet.
 
+- [Cat Pregnancy Calculator](https://petpawcalc.com/tools/cat-pregnancy-calculator.html): Calculates estimated due date and delivery window from mating date. Includes a week-by-week pregnancy development guide covering all 9 weeks of feline gestation, with care tips for each stage.
+
+- [Cat Weight Calculator](https://petpawcalc.com/tools/cat-weight-calculator.html): Checks whether an adult cat is at a healthy weight based on breed type and sex, using breed-specific ranges. Also estimates a kitten's adult weight from current age and weight.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -59,6 +63,12 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Practical strategies for lowering lifetime vet costs — pet insurance timing, emergency funds, preventive care ROI, dental care, low-cost vaccine clinics, and when to use urgent care vs. the ER.
 
 - [How Often Should Cats Go to the Vet? A Schedule by Age](https://petpawcalc.com/blog/how-often-vet-visits-cat): Recommended vet visit frequency for cats by life stage (kitten, adult, senior) with what each visit should cover, indoor vs. outdoor differences, and typical costs.
+
+- [How Long Are Cats Pregnant?](https://petpawcalc.com/blog/how-long-are-cats-pregnant): Feline gestation overview with week-by-week development guide. Covers signs of pregnancy, what to prepare, and how to support your cat through delivery.
+
+- [Signs of Cat Labor: What to Expect](https://petpawcalc.com/blog/signs-of-cat-labor): Pre-labor signs, stage-by-stage breakdown of feline labor, kitten delivery, and when to contact a vet. Covers nesting behavior, contractions, and post-birth monitoring.
+
+- [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Healthy weight ranges by breed and sex, how to assess body condition score at home, and what to do if your cat is overweight or underweight.
 
 ## About
 

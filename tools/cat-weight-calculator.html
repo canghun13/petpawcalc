@@ -1,0 +1,284 @@
+---
+layout: tool
+permalink: /tools/cat-weight-calculator.html
+title: Cat Weight Calculator — Healthy Weight Check by Breed
+description: Check if your cat is at a healthy weight, or estimate how big your kitten will get. Based on breed type and body condition. Free and instant.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Weight Calculator",
+  "url": "https://petpawcalc.com/tools/cat-weight-calculator.html",
+  "description": "Check if your cat is at a healthy weight based on breed type, or estimate your kitten's adult size.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should a cat weigh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most adult domestic cats weigh between 8 and 12 lbs, but the healthy range varies significantly by breed. A healthy Siamese may weigh 6–10 lbs while a healthy Maine Coon can weigh 10–25 lbs. Body condition score is a more reliable indicator of healthy weight than a number on the scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I tell if my cat is overweight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run your fingers along your cat's sides with light pressure. You should feel each rib easily without pressing hard. From above, your cat should have a visible waist — a slight inward curve behind the ribs. If the waist is absent or the belly sags noticeably, your cat may be carrying excess weight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do kittens reach their full adult weight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most domestic cats reach their full adult weight by 12 months. Larger breeds like Maine Coons and Ragdolls may continue growing until 18–24 months. Males typically weigh 2–4 lbs more than females of the same breed."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>⚖️ Cat Weight Calculator</h1>
+    <p>Check whether your cat is at a healthy weight, or estimate how large your kitten will grow. Results are based on breed type and typical feline growth patterns.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="calc-type">What do you want to check?</label>
+      <select id="calc-type" onchange="toggleForm()">
+        <option value="adult">Check my adult cat's healthy weight</option>
+        <option value="kitten">Estimate my kitten's adult size</option>
+      </select>
+    </div>
+
+    <!-- Adult form -->
+    <div id="adult-form">
+      <div class="form-group">
+        <label for="adult-weight">Current Weight (lbs)</label>
+        <input type="number" id="adult-weight" min="1" max="30" step="0.5" placeholder="e.g. 11">
+      </div>
+      <div class="form-group">
+        <label for="adult-breed">Breed Type</label>
+        <select id="adult-breed">
+          <option value="">Select breed type</option>
+          <option value="small">Small breed (Siamese, Devon Rex, Cornish Rex)</option>
+          <option value="medium">Medium breed (Domestic shorthair / most mixed cats)</option>
+          <option value="large">Large breed (Norwegian Forest Cat, British Shorthair)</option>
+          <option value="xl">Extra large breed (Maine Coon, Ragdoll, Savannah)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="adult-sex">Sex</label>
+        <select id="adult-sex">
+          <option value="">Select sex</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Kitten form -->
+    <div id="kitten-form" style="display:none;">
+      <div class="form-group">
+        <label for="kitten-age">Kitten's Current Age (weeks)</label>
+        <input type="number" id="kitten-age" min="4" max="52" placeholder="e.g. 12">
+      </div>
+      <div class="form-group">
+        <label for="kitten-weight">Kitten's Current Weight (lbs)</label>
+        <input type="number" id="kitten-weight" min="0.1" max="15" step="0.1" placeholder="e.g. 2.5">
+      </div>
+      <div class="form-group">
+        <label for="kitten-breed">Expected Adult Size</label>
+        <select id="kitten-breed">
+          <option value="">Select expected size</option>
+          <option value="small">Small (6–10 lbs adult)</option>
+          <option value="medium">Medium (8–12 lbs adult)</option>
+          <option value="large">Large (10–18 lbs adult)</option>
+          <option value="xl">Extra large (12–25 lbs adult)</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateWeight()">Calculate →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-status"></h3>
+      <p id="result-range"></p>
+      <p id="result-desc" style="margin-top: 8px;"></p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    ⚕️ This tool provides general estimates based on typical feline weight ranges. Individual cats vary significantly by frame, muscle mass, and breed. Always consult your veterinarian to determine your cat's ideal weight.
+  </div>
+
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Why Cat Weight Varies So Much by Breed</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A healthy Siamese and a healthy Maine Coon are both "normal weight" — but they might differ by 10 lbs or more. This is why a single number like "the average cat weighs 10 lbs" is practically useless without breed context.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Breed weight ranges also differ significantly by sex. Male cats of most breeds outweigh females by 2–4 lbs on average. A 12 lb female Maine Coon is likely underweight; a 12 lb male Siamese is significantly overweight. Both calculations start with the same number but lead to very different conclusions.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">The Body Condition Score: More Reliable Than the Scale</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;">Vets use a Body Condition Score (BCS) on a 1–9 scale to assess weight, not just a number in pounds. BCS 4–5 is ideal. Here's a simple at-home assessment:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 16px;">
+      <li><strong>Rib check:</strong> Run flat hands along your cat's sides. You should feel each rib with light pressure — not see them, but not have to dig for them either.</li>
+      <li><strong>Waist check:</strong> View from above. Most cats at healthy weight show a slight inward taper behind the ribs. No visible waist often means excess weight.</li>
+      <li><strong>Belly tuck:</strong> View from the side. The belly should tuck slightly upward between the ribs and hind legs. A sagging belly or prominent belly pouch suggests excess fat.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">One important note for senior cats: muscle loss (sarcopenia) is common with age and can mask weight problems. A cat that has lost muscle may look lean or weigh less than before — while still carrying excess fat. The BCS assessment catches this better than scale weight alone.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Typical Healthy Weight Ranges by Breed</h2>
+
+    <div style="overflow-x: auto; margin-bottom: 24px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; color: var(--brown-mid);">
+        <thead>
+          <tr style="background: var(--cream-dark); color: var(--brown);">
+            <th style="padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--border);">Breed</th>
+            <th style="padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--border);">Female</th>
+            <th style="padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--border);">Male</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 14px;">Siamese</td>
+            <td style="padding: 10px 14px;">6–8 lbs</td>
+            <td style="padding: 10px 14px;">8–10 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--cream);">
+            <td style="padding: 10px 14px;">Domestic Shorthair / Mixed</td>
+            <td style="padding: 10px 14px;">8–10 lbs</td>
+            <td style="padding: 10px 14px;">10–12 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 14px;">Persian</td>
+            <td style="padding: 10px 14px;">7–10 lbs</td>
+            <td style="padding: 10px 14px;">9–12 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--cream);">
+            <td style="padding: 10px 14px;">British Shorthair</td>
+            <td style="padding: 10px 14px;">9–12 lbs</td>
+            <td style="padding: 10px 14px;">12–17 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 14px;">Norwegian Forest Cat</td>
+            <td style="padding: 10px 14px;">9–12 lbs</td>
+            <td style="padding: 10px 14px;">12–16 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--cream);">
+            <td style="padding: 10px 14px;">Ragdoll</td>
+            <td style="padding: 10px 14px;">10–15 lbs</td>
+            <td style="padding: 10px 14px;">15–20 lbs</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 14px;">Maine Coon</td>
+            <td style="padding: 10px 14px;">10–14 lbs</td>
+            <td style="padding: 10px 14px;">15–25 lbs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="post-cta">
+      <p>Want to know how much your cat should eat? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleForm() {
+  const type = document.getElementById('calc-type').value;
+  document.getElementById('adult-form').style.display = type === 'adult' ? 'block' : 'none';
+  document.getElementById('kitten-form').style.display = type === 'kitten' ? 'block' : 'none';
+  document.getElementById('result').classList.remove('show');
+}
+
+function calculateWeight() {
+  const type = document.getElementById('calc-type').value;
+  const resultBox = document.getElementById('result');
+  const resultStatus = document.getElementById('result-status');
+  const resultRange = document.getElementById('result-range');
+  const resultDesc = document.getElementById('result-desc');
+
+  if (type === 'adult') {
+    const weight = parseFloat(document.getElementById('adult-weight').value);
+    const breed = document.getElementById('adult-breed').value;
+    const sex = document.getElementById('adult-sex').value;
+
+    if (!weight || !breed || !sex) { alert('Please fill in all fields.'); return; }
+
+    // Healthy ranges [female_low, female_high, male_low, male_high]
+    const ranges = {
+      small:  [5, 8,  7, 10],
+      medium: [7, 10, 9, 12],
+      large:  [8, 12, 11, 17],
+      xl:     [10, 15, 14, 25]
+    };
+
+    const [fl, fh, ml, mh] = ranges[breed];
+    const low  = sex === 'female' ? fl : ml;
+    const high = sex === 'female' ? fh : mh;
+
+    let status, desc;
+    if (weight < low) {
+      status = 'Potentially Underweight';
+      desc = `At ${weight} lbs, your cat may be below the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Consider a vet visit to rule out underlying causes.`;
+    } else if (weight > high) {
+      status = 'Potentially Overweight';
+      desc = `At ${weight} lbs, your cat may be above the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Your vet can help assess their body condition and recommend a weight plan if needed.`;
+    } else {
+      status = 'Healthy Weight ✓';
+      desc = `At ${weight} lbs, your cat appears to be within the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Confirm with a body condition score check at your next vet visit.`;
+    }
+
+    resultStatus.textContent = status;
+    resultRange.textContent = `Healthy range for this breed/sex: ${low}–${high} lbs`;
+    resultDesc.textContent = desc;
+
+  } else {
+    const ageWeeks = parseFloat(document.getElementById('kitten-age').value);
+    const currentWeight = parseFloat(document.getElementById('kitten-weight').value);
+    const breed = document.getElementById('kitten-breed').value;
+
+    if (!ageWeeks || !currentWeight || !breed) { alert('Please fill in all fields.'); return; }
+
+    // Most cats reach adult weight around 52 weeks; larger breeds up to 72 weeks
+    const maturityWeeks = { small: 44, medium: 52, large: 60, xl: 72 };
+    const fullWeeks = maturityWeeks[breed];
+    const estimated = Math.round((currentWeight / ageWeeks) * fullWeeks * 10) / 10;
+
+    const adultRanges = {
+      small:  '6–10 lbs',
+      medium: '8–12 lbs',
+      large:  '10–18 lbs',
+      xl:     '12–25 lbs'
+    };
+
+    resultStatus.textContent = `Estimated adult weight: ${estimated} lbs`;
+    resultRange.textContent = `Typical adult range for this size: ${adultRanges[breed]}`;
+    resultDesc.textContent = `This estimate is based on your kitten's current growth rate at ${ageWeeks} weeks. Accuracy is best between 8 and 20 weeks. Genetics, sex, and nutrition will also affect final size.`;
+  }
+
+  resultBox.classList.add('show');
+}
+</script>
