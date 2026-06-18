@@ -3,7 +3,7 @@ layout: post
 title: "What to Feed a Pregnant Dog: Nutrition Guide by Trimester"
 description: "What your pregnant dog eats directly affects her health and her puppies'. Here's exactly what to feed her — and what to avoid — at each stage of pregnancy."
 category: Dog Nutrition
-date: 2026-06-12
+date: 2026-06-18
 read_time: 10
 slug: what-to-feed-pregnant-dog
 ---
@@ -132,6 +132,45 @@ Omega-3 fatty acids (DHA especially) support puppy brain and eye development. A 
 Unless your vet specifically recommends it, skip the supplements. A complete puppy food covers everything she needs. The supplement aisle may be tempting, but unnecessary additions can throw off the nutrient balance your dog is already getting from her food.
 
 ---
+
+## The Pregnant Dog Diet: What Actually Matters Most
+
+A lot of advice about pregnant dog nutrition focuses on quantity. Not enough focuses on what's actually in the food. Here's a breakdown of the nutrients that matter most — and how to check for them.
+
+### Key Nutrients for a Pregnant Dog's Diet
+
+| Nutrient | Why It Matters | Where to Find It |
+|----------|---------------|-----------------|
+| Protein (28–32% DM) | Builds puppy tissue; maintains mother's muscle | Named meat as first ingredient |
+| DHA (omega-3) | Puppy brain and eye development | Fish oil, salmon-based formulas |
+| Folic acid | Neural tube development in early pregnancy | Complete puppy formulas, leafy vegetables |
+| Iron | Prevents anemia; supports puppy blood development | Meat-based foods |
+| Calcium + Phosphorus (balanced) | Bone development — but must be in correct ratio | Complete formulas handle this; don't supplement |
+| Calories (energy density) | Fueling rapid puppy growth in weeks 7–9 | Puppy/all-life-stages food |
+
+The reason puppy food (rather than adult maintenance) is recommended for pregnant dogs: the AAFCO "growth and reproduction" standard ensures these nutrients are present in the correct amounts and ratios. Adult maintenance formulas aren't held to the same standard for reproduction.
+
+### How to Read a Dog Food Label for Pregnancy
+
+When choosing a food for your pregnant dog, look for these specific things on the label:
+
+**AAFCO statement**: Should say "complete and balanced for all life stages" or "for growth and reproduction." Adult maintenance formulas are not adequate.
+
+**First ingredient**: Should be a named animal protein — chicken, beef, salmon, turkey, lamb. Not "meat meal" or "poultry by-product" as the primary source.
+
+**Calcium level**: Should be between 1.0–1.8% on a dry matter basis. Above 2.5% is too high for a pregnant dog and increases eclampsia risk.
+
+**Calorie density**: Check the kcal/cup on the bag. Higher calorie density means smaller portions needed, which matters in late pregnancy when stomach capacity is limited.
+
+### Dry vs. Wet vs. Mixed: What Works Best
+
+**Dry kibble only**: Practical and cost-effective. Works well throughout pregnancy if it meets the AAFCO reproduction standard. Downside: lower moisture, which matters in late pregnancy.
+
+**Wet food only**: Higher moisture is beneficial, especially in the third trimester. Calorie density is lower per cup, so larger volumes may be needed. More expensive for large breeds.
+
+**Mixed (kibble + wet topper)**: Best of both. Dry kibble as the caloric base with a wet food topper increases palatability (helpful when she gets picky in late pregnancy) and adds hydration. This is what many experienced breeders use.
+
+**Raw diet**: If she's already on raw, discuss with your vet. Risk of bacterial contamination (Salmonella, Listeria) is real and can affect developing puppies. Many vets recommend switching to commercial cooked food for the duration of pregnancy.
 
 ## Foods to Avoid During Dog Pregnancy
 

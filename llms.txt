@@ -30,6 +30,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Cat Weight Calculator](https://petpawcalc.com/tools/cat-weight-calculator.html): Checks whether an adult cat is at a healthy weight based on breed type and sex, using breed-specific ranges. Also estimates a kitten's adult weight from current age and weight.
 
+- [Dog Quality of Life Calculator](https://petpawcalc.com/tools/dog-quality-of-life-calculator.html): Assesses a dog's quality of life across 7 categories using the veterinary HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad). Produces a scored summary with flags for urgent concerns. Designed for senior dogs and dogs with illness or chronic pain.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -69,6 +71,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [Signs of Cat Labor: What to Expect](https://petpawcalc.com/blog/signs-of-cat-labor): Pre-labor signs, stage-by-stage breakdown of feline labor, kitten delivery, and when to contact a vet. Covers nesting behavior, contractions, and post-birth monitoring.
 
 - [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Healthy weight ranges by breed and sex, how to assess body condition score at home, and what to do if your cat is overweight or underweight.
+
+- [How Much Does a Cat Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-cat-vet-visit-cost): Detailed cost breakdown for cat vet care — routine exams, vaccines, spay/neuter, bloodwork, dental cleanings, and emergency visits. Includes indoor vs. outdoor cost differences and ways to reduce costs.
 
 ## About
 
