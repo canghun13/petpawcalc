@@ -8,8 +8,22 @@ description: Free pet calculators for dog and cat owners. Dog age, cat age, pet 
   <h1 class="section-title" style="margin-bottom: 8px;">Pet <em>Calculators</em></h1>
   <p class="section-sub">All tools are free, instant, and require no signup.</p>
 
-  <div class="tools-grid" style="margin-top: 32px;">
-    <a href="/tools/dog-age-calculator.html" class="tool-card">
+  <!-- Search -->
+  <div style="margin: 32px 0 8px;">
+    <input
+      type="text"
+      id="tool-search"
+      placeholder="Search tools..."
+      oninput="filterTools()"
+      style="width: 100%; max-width: 480px; padding: 12px 18px; border: 1.5px solid var(--border); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown); outline: none; transition: border 0.2s;"
+      onfocus="this.style.borderColor='var(--orange)'"
+      onblur="this.style.borderColor='var(--border)'"
+    >
+  </div>
+  <p id="tool-search-count" style="font-size: 0.85rem; color: var(--brown-light); margin-bottom: 24px; min-height: 20px;"></p>
+
+  <div class="tools-grid" id="tools-grid" style="margin-top: 8px;">
+    <a href="/tools/dog-age-calculator.html" class="tool-card" data-title="dog age calculator" data-desc="find out how old your dog is in human years based on size and breed not the outdated 7x rule" data-tags="dog age years">
       <div class="tool-card-icon">🐶</div>
       <span class="tool-card-badge">Most Popular</span>
       <h3>Dog Age Calculator</h3>
@@ -17,70 +31,57 @@ description: Free pet calculators for dog and cat owners. Dog age, cat age, pet 
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/cat-age-calculator.html" class="tool-card">
+    <a href="/tools/cat-age-calculator.html" class="tool-card" data-title="cat age calculator" data-desc="convert your cat's age to human years using the latest feline aging research from the aafp" data-tags="cat age years">
       <div class="tool-card-icon">🐱</div>
       <h3>Cat Age Calculator</h3>
       <p>Convert your cat's age to human years using the latest feline aging research from the AAFP.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/pet-food-calorie-calculator.html" class="tool-card">
+    <a href="/tools/pet-food-calorie-calculator.html" class="tool-card" data-title="pet food calorie calculator" data-desc="find out exactly how many calories your dog or cat needs per day based on weight age and activity" data-tags="food calories nutrition feeding">
       <div class="tool-card-icon">🍖</div>
       <h3>Pet Food Calorie Calculator</h3>
       <p>Find out exactly how many calories your dog or cat needs per day based on weight, age, and activity.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/dog-weight-calculator.html" class="tool-card">
+    <a href="/tools/dog-weight-calculator.html" class="tool-card" data-title="dog weight calculator" data-desc="estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size" data-tags="dog weight puppy healthy">
       <div class="tool-card-icon">⚖️</div>
       <h3>Dog Weight Calculator</h3>
       <p>Estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/annual-pet-cost-calculator.html" class="tool-card">
+    <a href="/tools/cat-weight-calculator.html" class="tool-card" data-title="cat weight calculator" data-desc="check if your cat is at a healthy weight for their breed and sex or estimate how large your kitten will grow" data-tags="cat weight kitten healthy">
+      <div class="tool-card-icon">⚖️</div>
+      <span class="tool-card-badge">New</span>
+      <h3>Cat Weight Calculator</h3>
+      <p>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</p>
+      <span class="tool-card-link">Calculate now →</span>
+    </a>
+
+    <a href="/tools/annual-pet-cost-calculator.html" class="tool-card" data-title="annual pet cost calculator" data-desc="estimate the full yearly cost of owning a dog or cat food vet grooming insurance and more" data-tags="cost money annual budget">
       <div class="tool-card-icon">💰</div>
       <h3>Annual Pet Cost Calculator</h3>
       <p>Estimate the full yearly cost of owning a dog or cat — food, vet, grooming, insurance, and more.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/pet-insurance-cost-estimator.html" class="tool-card">
+    <a href="/tools/pet-insurance-cost-estimator.html" class="tool-card" data-title="pet insurance cost estimator" data-desc="estimate your monthly pet insurance premium based on your pet's species size age and coverage level" data-tags="insurance cost monthly premium">
       <div class="tool-card-icon">🛡️</div>
       <h3>Pet Insurance Cost Estimator</h3>
       <p>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/dog-pregnancy-calculator.html" class="tool-card">
+    <a href="/tools/dog-pregnancy-calculator.html" class="tool-card" data-title="dog pregnancy calculator" data-desc="enter your dog's mating date to get her estimated due date delivery window and week-by-week pregnancy guide" data-tags="dog pregnancy due date mating">
       <div class="tool-card-icon">🐾</div>
       <h3>Dog Pregnancy Calculator</h3>
       <p>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/dog-heat-cycle-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Dog Heat Cycle Calculator</h3>
-      <p>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-vet-visit-scheduler.html" class="tool-card">
-      <div class="tool-card-icon">🩺</div>
-      <h3>Dog Vet Visit Scheduler</h3>
-      <p>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/cat-vet-visit-scheduler.html" class="tool-card">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Vet Visit Scheduler</h3>
-      <p>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/cat-pregnancy-calculator.html" class="tool-card">
+    <a href="/tools/cat-pregnancy-calculator.html" class="tool-card" data-title="cat pregnancy calculator" data-desc="enter your cat's mating date to get her estimated due date delivery window and a week-by-week pregnancy guide" data-tags="cat pregnancy due date mating">
       <div class="tool-card-icon">🐱</div>
       <span class="tool-card-badge">New</span>
       <h3>Cat Pregnancy Calculator</h3>
@@ -88,14 +89,36 @@ description: Free pet calculators for dog and cat owners. Dog age, cat age, pet 
       <span class="tool-card-link">Calculate now →</span>
     </a>
 
-    <a href="/tools/cat-weight-calculator.html" class="tool-card">
-      <div class="tool-card-icon">⚖️</div>
-      <span class="tool-card-badge">New</span>
-      <h3>Cat Weight Calculator</h3>
-      <p>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</p>
+    <a href="/tools/dog-heat-cycle-calculator.html" class="tool-card" data-title="dog heat cycle calculator" data-desc="predict your dog's next heat fertile window and each stage of her estrous cycle based on her last heat date and size" data-tags="dog heat cycle estrus fertile">
+      <div class="tool-card-icon">🌡️</div>
+      <h3>Dog Heat Cycle Calculator</h3>
+      <p>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</p>
       <span class="tool-card-link">Calculate now →</span>
     </a>
-    <a href="/tools/dog-quality-of-life-calculator.html" class="tool-card">
+
+    <a href="/tools/cat-heat-cycle-calculator.html" class="tool-card" data-title="cat heat cycle calculator" data-desc="predict your cat's next heat fertile window and each stage of her estrous cycle based on her last heat date" data-tags="cat heat cycle estrus fertile in heat">
+      <div class="tool-card-icon">🌡️</div>
+      <span class="tool-card-badge">New</span>
+      <h3>Cat Heat Cycle Calculator</h3>
+      <p>Predict your cat's next heat, fertile window, and each stage of her estrous cycle — based on her last heat date.</p>
+      <span class="tool-card-link">Calculate now →</span>
+    </a>
+
+    <a href="/tools/dog-vet-visit-scheduler.html" class="tool-card" data-title="dog vet visit scheduler" data-desc="enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="dog vet visit checkup schedule">
+      <div class="tool-card-icon">🩺</div>
+      <h3>Dog Vet Visit Scheduler</h3>
+      <p>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
+      <span class="tool-card-link">Schedule now →</span>
+    </a>
+
+    <a href="/tools/cat-vet-visit-scheduler.html" class="tool-card" data-title="cat vet visit scheduler" data-desc="enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="cat vet visit checkup schedule">
+      <div class="tool-card-icon">🐱</div>
+      <h3>Cat Vet Visit Scheduler</h3>
+      <p>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
+      <span class="tool-card-link">Schedule now →</span>
+    </a>
+
+    <a href="/tools/dog-quality-of-life-calculator.html" class="tool-card" data-title="dog quality of life calculator" data-desc="assess your senior or ill dog's wellbeing across 7 key areas using the veterinary hhhhhmm scale track changes over time" data-tags="dog quality life senior paw score hhhhhmm wellbeing">
       <div class="tool-card-icon">🐾</div>
       <span class="tool-card-badge">New</span>
       <h3>Dog Quality of Life Calculator</h3>
@@ -103,4 +126,34 @@ description: Free pet calculators for dog and cat owners. Dog age, cat age, pet 
       <span class="tool-card-link">Assess now →</span>
     </a>
   </div>
+
+  <p id="no-tool-results" style="display:none; color: var(--brown-light); margin-top: 32px; font-size: 0.95rem;">No tools found. Try a different search term.</p>
 </div>
+
+<script>
+function filterTools() {
+  const query = document.getElementById('tool-search').value.toLowerCase().trim();
+  const cards = document.querySelectorAll('#tools-grid .tool-card');
+  let visible = 0;
+
+  cards.forEach(card => {
+    const title = card.dataset.title || '';
+    const desc = card.dataset.desc || '';
+    const tags = card.dataset.tags || '';
+    const match = !query || title.includes(query) || desc.includes(query) || tags.includes(query);
+    card.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+
+  const count = document.getElementById('tool-search-count');
+  const noResults = document.getElementById('no-tool-results');
+
+  if (query) {
+    count.textContent = `${visible} tool${visible !== 1 ? 's' : ''} found`;
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  } else {
+    count.textContent = '';
+    noResults.style.display = 'none';
+  }
+}
+</script>

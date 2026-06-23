@@ -3,14 +3,16 @@ layout: post
 title: "What to Feed a Pregnant Dog: Nutrition Guide by Trimester"
 description: "What your pregnant dog eats directly affects her health and her puppies'. Here's exactly what to feed her — and what to avoid — at each stage of pregnancy."
 category: Dog Nutrition
-date: 2026-06-18
-read_time: 10
+date: 2026-06-22
+read_time: 11
 slug: what-to-feed-pregnant-dog
 ---
 
-Feeding a pregnant dog isn't complicated — but getting it wrong can affect both the mother and her puppies. The good news: a few straightforward adjustments at the right times cover most of what she needs.
+What you feed a pregnant dog directly affects her health — and the birth weight, immune function, and development of every puppy in the litter.
 
-Here's what to feed your pregnant dog at each stage, and what to avoid.
+The good news: the changes are straightforward once you know the timing. Most owners make at least one of three common mistakes — feeding too much too early, not switching food at the right point, or supplementing calcium when they shouldn't.
+
+Here's exactly what to feed your pregnant dog at each stage, how much, and what to avoid.
 
 ---
 
@@ -223,6 +225,49 @@ After delivery, her appetite will return quickly. Have food and fresh water read
 
 <div class="post-cta">
   Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>
+</div>
+
+---
+
+## Quick Summary: What to Feed a Pregnant Dog
+
+If you want the short version before reading the full guide:
+
+- **Weeks 1–3**: Keep her current adult food. No changes needed yet.
+- **Week 4–5**: Switch gradually to puppy food or all-life-stages formula over 5–7 days.
+- **Weeks 5–9**: Increase portions gradually. By week 9, she may need up to 2x her normal intake.
+- **Nursing**: This is peak demand. Feed freely — up to 3–4x normal intake at peak nursing (weeks 2–4 postpartum).
+- **Supplements to avoid**: Calcium. Do not supplement calcium during pregnancy.
+- **Food to use**: High-quality puppy food or "all life stages" formula. AAFCO certified for growth and reproduction.
+
+---
+
+## Frequently Asked Questions
+
+**What is the best food to feed a pregnant dog?**
+A high-quality puppy food or a formula labeled "for all life stages" or "for growth and reproduction" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward.
+
+**Can I give my pregnant dog extra calcium?**
+No. Calcium supplementation during pregnancy is one of the most common and dangerous mistakes owners make. Excess calcium during pregnancy disrupts the hormonal mechanism the mother uses to mobilize calcium during labor, which increases the risk of eclampsia (milk fever) after delivery. If you're feeding a complete puppy food, she's already getting the right amount.
+
+**How much more should a pregnant dog eat?**
+Very little in the first trimester. By week 5–6, about 25–30% more than her pre-pregnancy intake. By weeks 8–9, up to 50–100% more. During peak nursing (weeks 2–4 postpartum), some mothers need 3–4x their pre-pregnancy daily calories depending on litter size.
+
+**What foods are dangerous for pregnant dogs?**
+Raw meat and raw eggs (bacterial contamination risk), liver in large amounts (excess vitamin A), grapes and raisins (toxic), xylitol (found in some peanut butters — highly toxic), and excess calcium supplements. The usual canine toxic foods all still apply.
+
+**Should I feed wet or dry food to a pregnant dog?**
+Either works if it meets AAFCO standards for growth/reproduction. Many breeders use high-quality dry kibble as the caloric base with a wet food topper in the third trimester for palatability and hydration. Pure wet food also works — just ensure calorie density is sufficient for late pregnancy needs.
+
+**Is it normal for a pregnant dog to lose her appetite before labor?**
+Yes. A drop in appetite 24–48 hours before whelping is completely normal and is one of the signs that labor is near. Don't try to force her to eat at this point. Her appetite returns quickly after delivery.
+
+<div class="post-cta">
+  Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>
+</div>
+
+<div class="post-cta">
+  Not sure how many calories your dog needs normally? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a>
 </div>
 
 ---
