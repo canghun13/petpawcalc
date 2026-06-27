@@ -3,8 +3,8 @@ layout: post
 title: "How Much Should I Feed My Dog? A Vet-Backed Guide"
 description: Overfeeding is the #1 nutrition mistake dog owners make. Here's how to calculate the right daily food amount for your dog's weight, age, and activity level.
 category: Dog Nutrition
-date: 2026-05-10
-read_time: 6
+date: 2026-06-27
+read_time: 8
 slug: how-much-to-feed-a-dog
 ---
 
@@ -61,6 +61,24 @@ Find the kcal/cup (or kcal/kg) on your dog food packaging. Divide your dog's dai
 
 ---
 
+## Daily Calorie Reference by Dog Size
+
+To skip the math, here's a practical reference for common dog weights. These assume a neutered adult at moderate activity:
+
+| Dog Weight | Daily Calories (approx.) |
+|------------|--------------------------|
+| 10 lbs (4.5 kg) | 290–350 kcal |
+| 20 lbs (9 kg) | 490–580 kcal |
+| 30 lbs (13.6 kg) | 660–780 kcal |
+| 40 lbs (18 kg) | 815–960 kcal |
+| 50 lbs (22.7 kg) | 960–1,130 kcal |
+| 70 lbs (31.8 kg) | 1,220–1,440 kcal |
+| 90 lbs (40.8 kg) | 1,460–1,720 kcal |
+
+Adjust down 10–20% for low-activity or overweight dogs, up 20–30% for very active dogs.
+
+---
+
 ## Practical Signs You're Feeding the Right Amount
 
 You don't need to count calories forever. Once you've established a baseline, use these physical checks every few weeks:
@@ -75,9 +93,9 @@ If your dog is gaining unwanted weight, reduce by 10% and monitor for 2–3 week
 
 ## Puppies and Seniors Need Different Approaches
 
-**Puppies** need more calories per pound than adults — typically 2–3× their adult maintenance needs during rapid growth. They should be fed 3–4 times daily until about 6 months, then transition to twice daily. Use a puppy-specific formula or one labeled "for all life stages" — these are calorie-dense and nutritionally complete for growth.
+**Puppies** need more calories per pound than adults — typically 2–3× their adult maintenance needs during rapid growth. They should be fed 3–4 times daily until about 6 months, then transition to twice daily. Use a puppy-specific formula or one labeled "for all life stages."
 
-Large and giant breed puppies are an exception: they benefit from controlled growth to protect developing joints. Use a large-breed puppy formula, which has adjusted calcium and phosphorus ratios designed to support steady (not too rapid) bone development.
+Large and giant breed puppies are an exception: they benefit from controlled growth to protect developing joints. Use a large-breed puppy formula, which has adjusted calcium and phosphorus ratios designed to support steady bone development.
 
 **Senior dogs** often need fewer calories as activity decreases, but protein needs stay high — and some seniors actually need more calories if they're losing muscle mass. Ask your vet which direction applies to your dog at each annual exam.
 
@@ -85,15 +103,13 @@ Large and giant breed puppies are an exception: they benefit from controlled gro
 
 ## Common Feeding Mistakes and How to Avoid Them
 
-**Following bag instructions too literally**: Feeding guides on dog food bags are typically calibrated for intact (unspayed/unneutered) dogs at moderate activity. Most household dogs are neutered and less active than average — they need 20–30% fewer calories than the bag suggests. Use the bag as a starting point, not a rule.
+**Following bag instructions too literally**: Feeding guides on dog food bags are typically calibrated for intact dogs at moderate activity. Most household dogs are neutered and less active than average — they need 20–30% fewer calories than the bag suggests.
 
 **Not accounting for treats**: Treats can make up a significant portion of daily calories without being counted. A 10-calorie treat given 10 times a day is 100 extra calories — equivalent to 15% of a medium dog's daily intake. Count treats as part of the daily total and reduce meals accordingly.
 
 **Measuring by volume instead of weight**: A "cup" of kibble varies significantly in calorie density depending on the food. High-fat, calorie-dense kibbles can have 500+ kcal/cup; lighter foods 300–350 kcal/cup. For accuracy, measure by calories rather than volume — use the food's calorie density and a kitchen scale.
 
-**Not adjusting as the dog ages**: A dog's calorie needs change at every life stage. The amount that was appropriate at age 2 is likely too much by age 8. Annual reassessment is worth building into your routine, ideally at each vet visit.
-
-**Feeding once a day**: Once-daily feeding works for some dogs, but most do better with two meals. It stabilizes energy levels, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals.
+**Not adjusting as the dog ages**: A dog's calorie needs change at every life stage. The amount that was appropriate at age 2 is likely too much by age 8. Annual reassessment is worth building into your routine.
 
 **Free-feeding**: Leaving food out all day makes it impossible to track intake and monitor appetite changes — one of the earliest signs of illness in dogs. Scheduled meals give you much better visibility into how your dog is actually eating.
 
@@ -101,49 +117,46 @@ Large and giant breed puppies are an exception: they benefit from controlled gro
 
 ## Breed-Specific Considerations
 
-Some breeds have unusual metabolic characteristics that affect how much they should eat:
-
 **Labrador Retrievers** are notorious for obesity — many carry a genetic mutation affecting the POMC gene, which disrupts normal fullness signaling. Labs will eat far past satiety if food is available. They need careful portion control and measured meals rather than free-feeding.
 
 **Greyhounds and Sighthounds** have lower body fat and different muscle composition — they often need more calories per pound than other large breeds and should look leaner than most dogs of similar size.
 
-**Brachycephalic breeds** (Bulldogs, Pugs, French Bulldogs) have lower exercise tolerance and often need fewer calories than their size suggests. They also tend toward obesity, so careful monitoring is important.
+**Brachycephalic breeds** (Bulldogs, Pugs, French Bulldogs) have lower exercise tolerance and often need fewer calories than their size suggests.
 
-**Working and sporting breeds** (Border Collies, Huskies, hunting dogs in active use) may need dramatically more — up to 2–5× resting energy requirements on high-activity days. The same dog may need very different amounts depending on season and work schedule.
-
-If your dog's breed has known metabolic quirks, discuss optimal feeding with your vet rather than relying solely on general guidelines.
+**Working and sporting breeds** (Border Collies, Huskies, hunting dogs in active use) may need dramatically more — up to 2–5× resting energy requirements on high-activity days.
 
 ---
 
 ## How to Transition Between Foods
 
-When you need to change your dog's food — whether switching brands, moving from puppy to adult food, or adjusting for a health condition — always do it gradually. A sudden switch can cause digestive upset, vomiting, or diarrhea.
+When you need to change your dog's food, always do it gradually. A sudden switch can cause digestive upset, vomiting, or diarrhea.
 
 A standard transition:
 - Days 1–2: 75% old food, 25% new food
-- Days 3–4: 50% old food, 50% new food
+- Days 3–4: 50/50
 - Days 5–6: 25% old food, 75% new food
 - Day 7+: 100% new food
 
-Dogs with sensitive stomachs may need an even slower transition — up to 2–3 weeks. If you see persistent loose stools after a full transition, the new food may not agree with your dog, or you may need to slow down further.
+Dogs with sensitive stomachs may need an even slower transition — up to 2–3 weeks.
 
 ---
 
-## Tracking Your Dog's Weight at Home
+## Frequently Asked Questions
 
-You don't need a vet scale to track your dog's weight. For most dogs, you can:
+**How many cups of food should I feed my dog per day?**
+There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 660–780 calories per day. If your food has 350 kcal/cup, that's about 2 cups per day. If it has 450 kcal/cup, that's about 1.5 cups. Always check the kcal/cup on the food bag, not just the "feeding guide."
 
-1. Step on your bathroom scale while holding your dog
-2. Step on the scale again without the dog
-3. Subtract to get your dog's weight
+**Is it better to feed my dog once or twice a day?**
+Twice a day is generally better for most dogs. It stabilizes energy levels, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals. Once-daily feeding works for some dogs but twice daily is the standard recommendation.
 
-For small dogs (under 15 lbs), a kitchen scale works better. Weigh monthly and keep a log. Weight trends are more useful than single measurements — a gradual upward trend over 3–4 months is worth addressing even before it becomes a significant problem.
+**How do I know if I'm overfeeding my dog?**
+The rib test is the most reliable check: run your fingers along your dog's sides with light pressure. You should feel the ribs easily without pressing hard. If you can't, your dog is likely overweight. A visible waist from above and a slight belly tuck from the side are also indicators of healthy weight.
 
-<div class="post-cta">
-  <h4>Estimate Your Annual Pet Food Costs</h4>
-  <p>Use our Annual Pet Cost Calculator to budget for food, vet care, and more throughout the year.</p>
-  <a href="/tools/annual-pet-cost-calculator.html">Calculate now →</a>
-</div>
+**Should I feed my dog more in winter?**
+Outdoor dogs and dogs that spend significant time in cold weather do need more calories to maintain body temperature. Strictly indoor dogs in climate-controlled homes generally don't need seasonal calorie adjustments unless their activity level changes significantly.
+
+**My dog always seems hungry — am I underfeeding?**
+Not necessarily. Dogs are opportunistic eaters and will often appear hungry even when fully fed. Check the rib test and body condition score first. If your dog is maintaining a healthy weight on their current diet, hunger signals alone don't indicate underfeeding. If they're losing weight despite eating, or if the body condition check suggests they're thin, increasing portions is appropriate.
 
 ---
 
