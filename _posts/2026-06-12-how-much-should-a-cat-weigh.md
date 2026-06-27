@@ -3,8 +3,8 @@ layout: post
 title: "How Much Should a Cat Weigh? Healthy Weight by Breed and Sex"
 description: "The average cat weight of 8–10 lbs doesn't apply to most cats. Here's how to find your cat's actual healthy weight based on breed, sex, and body condition."
 category: Cat Care
-date: 2026-06-12
-read_time: 7
+date: 2026-06-27
+read_time: 9
 slug: how-much-should-a-cat-weigh
 ---
 
@@ -139,5 +139,24 @@ For healthy adult cats, a weigh-in at each annual vet visit is sufficient. For c
 The easiest home method: weigh yourself on a bathroom scale, then weigh yourself holding your cat, and subtract. Most bathroom scales are accurate to within 0.5–1 lb, which is precise enough to track meaningful changes over time.
 
 A 10% change in body weight — in either direction — warrants a vet visit. For a 10 lb cat, that's a 1 lb change. For a 14 lb cat, it's 1.4 lbs. Small numbers, but meaningful signals.
+
+*This article is for informational purposes only. Consult your veterinarian before starting a weight loss program for your cat or if you have concerns about their weight.*
+
+## Frequently Asked Questions
+
+**How much should my cat weigh?**
+It depends on breed, sex, and individual frame — not a universal number. Domestic shorthair females typically weigh 8–10 lbs at a healthy weight; males 10–12 lbs. Siamese cats are lighter (6–10 lbs), while Maine Coons can be healthy at 15–25 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says.
+
+**Is my cat overweight if they weigh 15 lbs?**
+It depends entirely on breed. A 15 lb female domestic shorthair is overweight. A 15 lb male Maine Coon or Ragdoll may be perfectly healthy. Use the BCS physical check rather than scale weight alone — a large-framed cat can weigh 15 lbs and be lean, while a small-framed cat at 12 lbs may be overweight.
+
+**How can I tell if my cat is fat?**
+Run your fingers along your cat's sides with flat palms and light pressure. At a healthy weight, you should feel ribs easily — like the back of your hand. If you have to press firmly to feel the ribs, your cat is likely overweight. From above, look for a slight waist behind the ribs. From the side, the belly should tuck slightly upward rather than hanging level. A cat that fails two or three of these checks is likely carrying excess weight.
+
+**How do I help my cat lose weight safely?**
+Cat weight loss must be gradual — no more than 0.5–2% of body weight per week. Rapid weight loss can trigger hepatic lipidosis (fatty liver disease), which is potentially fatal. Reduce daily calories by 10–20% from maintenance levels, switch to a high-protein wet food (which is more satiating), measure portions precisely, and eliminate high-calorie treats. A vet-supervised weight loss plan is the safest approach for significantly overweight cats.
+
+**At what age do cats stop growing?**
+Most domestic cats reach their full adult weight by 12 months. Larger breeds are the exception: Maine Coons grow until 3–5 years, Ragdolls until 3–4 years, Norwegian Forest Cats until about 3 years. Males of most breeds take slightly longer to reach full size than females.
 
 *This article is for informational purposes only. Consult your veterinarian before starting a weight loss program for your cat or if you have concerns about their weight.*
