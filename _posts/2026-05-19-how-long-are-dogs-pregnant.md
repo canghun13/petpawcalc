@@ -3,7 +3,7 @@ layout: post
 title: "How Long Are Dogs Pregnant? A Week-by-Week Guide"
 description: "Dog pregnancy lasts about 63 days — but a lot happens in those 9 weeks. Here's what to expect each week and how to prepare for the birth."
 category: Dog Health
-date: 2026-05-19
+date: 2026-06-27
 read_time: 7
 slug: how-long-are-dogs-pregnant
 ---
