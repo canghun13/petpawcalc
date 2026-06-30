@@ -1,0 +1,276 @@
+---
+layout: tool
+permalink: /tools/pet-weight-calculator.html
+title: Pet Weight Calculator — Healthy Weight Check for Dogs & Cats
+description: Check if your dog or cat is at a healthy weight using breed-based ranges and a quick Body Condition Score check. Free, instant, no signup.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pet Weight Calculator",
+  "url": "https://petpawcalc.com/tools/pet-weight-calculator.html",
+  "description": "Check if your dog or cat is at a healthy weight using breed-based ranges and a Body Condition Score check.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a healthy weight for my pet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Healthy weight depends entirely on species, breed, and frame size — there's no single universal number. A healthy weight is best confirmed using a Body Condition Score (BCS) check alongside breed-typical weight ranges, rather than scale weight alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check my pet's Body Condition Score at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run your fingers along your pet's ribs with light pressure — you should feel them easily without pressing hard. From above, look for a visible waist behind the ribs. From the side, the belly should tuck up slightly rather than sag or hang level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is scale weight or Body Condition Score more accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Body Condition Score is generally more reliable because it accounts for frame size and muscle mass, which scale weight alone does not. Two pets can weigh the same number but have very different body conditions. Using both together gives the most complete picture."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>⚖️ Pet Weight Calculator</h1>
+    <p>Check whether your dog or cat is at a healthy weight using breed-based ranges, then confirm with a quick Body Condition Score check.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="species-select">What pet do you have?</label>
+      <select id="species-select" onchange="toggleSpecies()">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <!-- Dog form -->
+    <div id="dog-form" style="display:none;">
+      <div class="form-group">
+        <label for="dog-weight">Current Weight (lbs)</label>
+        <input type="number" id="dog-weight" min="1" max="220" step="0.5" placeholder="e.g. 45">
+      </div>
+      <div class="form-group">
+        <label for="dog-size">Breed Size Category</label>
+        <select id="dog-size">
+          <option value="">Select size category</option>
+          <option value="toy">Toy (expected adult under 12 lbs)</option>
+          <option value="small">Small (expected adult 12–25 lbs)</option>
+          <option value="medium">Medium (expected adult 25–50 lbs)</option>
+          <option value="large">Large (expected adult 50–100 lbs)</option>
+          <option value="giant">Giant (expected adult 100+ lbs)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Cat form -->
+    <div id="cat-form" style="display:none;">
+      <div class="form-group">
+        <label for="cat-weight">Current Weight (lbs)</label>
+        <input type="number" id="cat-weight" min="1" max="30" step="0.5" placeholder="e.g. 11">
+      </div>
+      <div class="form-group">
+        <label for="cat-breed">Breed Type</label>
+        <select id="cat-breed">
+          <option value="">Select breed type</option>
+          <option value="small">Small breed (Siamese, Devon Rex, Cornish Rex)</option>
+          <option value="medium">Medium breed (Domestic shorthair / most mixed cats)</option>
+          <option value="large">Large breed (Norwegian Forest Cat, British Shorthair)</option>
+          <option value="xl">Extra large breed (Maine Coon, Ragdoll, Savannah)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cat-sex">Sex</label>
+        <select id="cat-sex">
+          <option value="">Select sex</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" onclick="calculatePetWeight()">Check Weight →</button>
+
+    <div class="result-box" id="result">
+      <h3 id="result-status"></h3>
+      <p id="result-range"></p>
+      <p id="result-desc" style="margin-top: 8px;"></p>
+    </div>
+  </div>
+
+  <!-- BCS Check -->
+  <div class="tool-box" style="margin-top: 24px;">
+    <h3 style="font-family: var(--font-display); font-size: 1.15rem; color: var(--brown); margin-bottom: 12px;">Quick Body Condition Score Check</h3>
+    <p style="color: var(--brown-mid); font-size: 0.92rem; margin-bottom: 14px;">Scale weight alone can be misleading. Check these three things by hand for a more reliable read:</p>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--brown-mid); cursor: pointer;">
+        <input type="checkbox" id="bcs-rib" onchange="updateBCS()" style="margin-top: 3px;">
+        <span><strong>Ribs:</strong> I can feel ribs easily with light pressure, but they're not visibly prominent.</span>
+      </label>
+      <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--brown-mid); cursor: pointer;">
+        <input type="checkbox" id="bcs-waist" onchange="updateBCS()" style="margin-top: 3px;">
+        <span><strong>Waist:</strong> Viewed from above, there's a visible narrowing behind the ribs.</span>
+      </label>
+      <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--brown-mid); cursor: pointer;">
+        <input type="checkbox" id="bcs-tuck" onchange="updateBCS()" style="margin-top: 3px;">
+        <span><strong>Belly tuck:</strong> Viewed from the side, the belly tucks up slightly toward the hind legs.</span>
+      </label>
+    </div>
+    <p id="bcs-result" style="margin-top: 14px; font-size: 0.92rem; font-weight: 600; color: var(--orange); display:none;"></p>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 24px;">
+    ⚕️ This tool provides general estimates based on typical breed weight ranges. Individual pets vary by frame, muscle mass, and health status. Always consult your veterinarian to determine your pet's ideal weight.
+  </div>
+
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Why a Single "Average Weight" Doesn't Work</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">"The average dog weighs 50 lbs" or "the average cat weighs 10 lbs" are numbers that sound useful but rarely apply to any individual pet. A healthy Chihuahua and a healthy Great Dane share almost nothing in common except both being dogs. A healthy Siamese cat and a healthy Maine Coon can differ by 15 lbs or more.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Breed, frame size, sex, and age all shift what "healthy" looks like. That's why veterinarians rely on Body Condition Score — a hands-on, visual assessment — rather than scale weight in isolation.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">How to Use Both Numbers Together</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Scale weight tells you where your pet falls in a breed-typical range. Body Condition Score tells you whether that weight reflects healthy fat and muscle distribution, or whether something is off despite a "normal-looking" number.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A muscular dog and an overweight dog can weigh the same. A senior cat losing muscle while gaining fat may show no change on the scale at all. This is why the calculator above checks both — breed-based range first, then the BCS check to confirm.</p>
+
+    <div class="post-cta">
+      <p>Want a more detailed breakdown for your dog? → <a href="/tools/dog-weight-calculator.html">Use the Dog Weight Calculator</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Want a more detailed breakdown for your cat? → <a href="/tools/cat-weight-calculator.html">Use the Cat Weight Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleSpecies() {
+  const species = document.getElementById('species-select').value;
+  document.getElementById('dog-form').style.display = species === 'dog' ? 'block' : 'none';
+  document.getElementById('cat-form').style.display = species === 'cat' ? 'block' : 'none';
+  document.getElementById('result').classList.remove('show');
+}
+
+function calculatePetWeight() {
+  const species = document.getElementById('species-select').value;
+  const resultBox = document.getElementById('result');
+  const resultStatus = document.getElementById('result-status');
+  const resultRange = document.getElementById('result-range');
+  const resultDesc = document.getElementById('result-desc');
+
+  if (!species) { alert('Please select a pet type.'); return; }
+
+  if (species === 'dog') {
+    const weight = parseFloat(document.getElementById('dog-weight').value);
+    const size = document.getElementById('dog-size').value;
+    if (!weight || !size) { alert('Please fill in all fields.'); return; }
+
+    const ranges = {
+      toy: [3, 12],
+      small: [12, 25],
+      medium: [25, 50],
+      large: [50, 100],
+      giant: [100, 180]
+    };
+    const [low, high] = ranges[size];
+
+    let status, desc;
+    if (weight < low) {
+      status = 'Potentially Underweight';
+      desc = `At ${weight} lbs, this is below the typical adult range for this size category (${low}–${high} lbs). If your dog is still growing, this may be normal — otherwise, a vet check is worth considering.`;
+    } else if (weight > high) {
+      status = 'Potentially Overweight';
+      desc = `At ${weight} lbs, this is above the typical adult range for this size category (${low}–${high} lbs). Confirm with the Body Condition Score check below.`;
+    } else {
+      status = 'Within Typical Range ✓';
+      desc = `At ${weight} lbs, this falls within the typical adult range for this size category (${low}–${high} lbs). Confirm with the Body Condition Score check below for a fuller picture.`;
+    }
+    resultStatus.textContent = status;
+    resultRange.textContent = `Typical adult range for this size: ${low}–${high} lbs`;
+    resultDesc.textContent = desc;
+
+  } else {
+    const weight = parseFloat(document.getElementById('cat-weight').value);
+    const breed = document.getElementById('cat-breed').value;
+    const sex = document.getElementById('cat-sex').value;
+    if (!weight || !breed || !sex) { alert('Please fill in all fields.'); return; }
+
+    const ranges = {
+      small:  [5, 8,  7, 10],
+      medium: [7, 10, 9, 12],
+      large:  [8, 12, 11, 17],
+      xl:     [10, 15, 14, 25]
+    };
+    const [fl, fh, ml, mh] = ranges[breed];
+    const low  = sex === 'female' ? fl : ml;
+    const high = sex === 'female' ? fh : mh;
+
+    let status, desc;
+    if (weight < low) {
+      status = 'Potentially Underweight';
+      desc = `At ${weight} lbs, this is below the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Consider a vet visit to rule out underlying causes.`;
+    } else if (weight > high) {
+      status = 'Potentially Overweight';
+      desc = `At ${weight} lbs, this is above the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Confirm with the Body Condition Score check below.`;
+    } else {
+      status = 'Healthy Weight ✓';
+      desc = `At ${weight} lbs, this falls within the healthy range for a ${sex} of this breed type (${low}–${high} lbs). Confirm with the Body Condition Score check below.`;
+    }
+    resultStatus.textContent = status;
+    resultRange.textContent = `Healthy range for this breed/sex: ${low}–${high} lbs`;
+    resultDesc.textContent = desc;
+  }
+
+  resultBox.classList.add('show');
+}
+
+function updateBCS() {
+  const rib = document.getElementById('bcs-rib').checked;
+  const waist = document.getElementById('bcs-waist').checked;
+  const tuck = document.getElementById('bcs-tuck').checked;
+  const count = [rib, waist, tuck].filter(Boolean).length;
+  const resultEl = document.getElementById('bcs-result');
+
+  if (!rib && !waist && !tuck) {
+    resultEl.style.display = 'none';
+    return;
+  }
+
+  resultEl.style.display = 'block';
+  if (count === 3) {
+    resultEl.textContent = '✓ All three checks passed — likely a healthy body condition.';
+  } else if (count === 0) {
+    resultEl.textContent = 'None of these checks passed — likely carrying excess weight. Consider discussing with your vet.';
+  } else {
+    resultEl.textContent = `${count} of 3 checks passed — body condition may be borderline. Monitor over the next few weeks.`;
+  }
+}
+</script>
