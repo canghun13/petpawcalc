@@ -3,7 +3,7 @@ layout: post
 title: "How Much Should a Senior Dog Eat? A Calculator-Based Guide"
 description: Senior dogs need fewer calories but more protein. Here's how to calculate the right daily food amount for your aging dog based on weight and activity level.
 category: Dog Nutrition
-date: 2026-06-18
+date: 2026-07-04
 read_time: 11
 slug: how-much-should-senior-dog-eat
 ---
@@ -229,5 +229,16 @@ Muscle loss in seniors often shows first in the hindquarters and temporal muscle
 - [ ] Have you noticed increased water consumption (can signal diabetes or kidney changes)?
 
 Sudden changes in appetite, water intake, or energy warrant a vet visit — not just a diet adjustment. These can be early signs of conditions (thyroid disease, diabetes, kidney disease) that require diagnosis before dietary changes are made.
+
+## Frequently Asked Questions
+
+**How much should a senior dog eat per day?**
+Most senior dogs need roughly 20–30% fewer calories than they did as active adults. A 30 lb senior dog at low activity needs approximately 510–595 calories per day, depending on activity level. Use your dog's target weight (not necessarily current weight) and a senior activity multiplier of 1.2–1.4× their Resting Energy Requirement to calculate a personalized number.
+
+**Do senior dogs need less food or more food?**
+It depends on the individual dog. Most senior dogs need fewer total calories due to slowing metabolism and reduced activity. However, some dogs over 12 — especially those losing muscle mass — actually need more food, not less, to maintain a healthy weight. Body condition score, not age alone, should guide the decision.
+
+**What is the best food for a senior dog?**
+Look for a food with at least 25% protein on a dry matter basis, named meat sources as the first ingredient, and moderate calorie density appropriate for reduced activity. Avoid senior formulas that cut protein too aggressively — healthy senior dogs generally need to maintain or increase protein intake to preserve muscle mass, not reduce it.
 
 *This guide is for informational purposes only. Always consult your veterinarian before making significant changes to your senior dog's diet, especially if they have existing health conditions.*
