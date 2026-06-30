@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "What to Feed a Pregnant Dog: Nutrition Guide by Trimester"
-description: "What your pregnant dog eats directly affects her health and her puppies'. Here's exactly what to feed her — and what to avoid — at each stage of pregnancy."
+title: "What to Feed a Pregnant Dog: Complete Nutrition Guide by Week"
+description: "What to feed a pregnant dog week by week — from week 1 through nursing. Exact food types, portion increases, supplements to avoid, and a printable feeding schedule."
 category: Dog Nutrition
-date: 2026-06-22
+date: 2026-07-04
 read_time: 11
 slug: what-to-feed-pregnant-dog
 ---
@@ -13,6 +13,20 @@ What you feed a pregnant dog directly affects her health — and the birth weigh
 The good news: the changes are straightforward once you know the timing. Most owners make at least one of three common mistakes — feeding too much too early, not switching food at the right point, or supplementing calcium when they shouldn't.
 
 Here's exactly what to feed your pregnant dog at each stage, how much, and what to avoid.
+
+---
+
+## What to Feed a Pregnant Dog: The Short Answer
+
+If you only have a minute, here's what matters most:
+
+- **Weeks 1–3**: No change needed. Keep her current adult food.
+- **Weeks 4–5**: Switch gradually to puppy food or "all life stages" food (AAFCO certified for growth and reproduction).
+- **Weeks 5–9**: Increase portions gradually — by week 9 she may need up to 2x her pre-pregnancy amount, split into 3–4 smaller meals.
+- **Avoid**: Calcium supplements, raw meat/eggs, liver in large amounts, and any sudden food switches.
+- **After birth**: Keep her on puppy food through the entire nursing period — calorie needs peak even higher than during pregnancy.
+
+The rest of this guide covers the full detail behind each of these points.
 
 ---
 
