@@ -64,12 +64,6 @@ permalink: /tools/dog-quality-of-life-calculator.html
     <p>Rate your dog across 7 areas of wellbeing. Based on the HHHHHMM Scale used by veterinary professionals to assess quality of life in senior and ill dogs.</p>
   </div>
 
-  <div class="print-area">
-    <div class="print-header">
-      <span class="print-logo">🐾 PetPawCalc</span>
-      <span class="print-date" id="qol-print-date"></span>
-    </div>
-
   <div class="tool-box">
     <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 24px; line-height: 1.6;">
       For each category, choose the score that best describes your dog <strong>today</strong>. There are no right or wrong answers — honest observation is what matters.
@@ -246,6 +240,10 @@ permalink: /tools/dog-quality-of-life-calculator.html
     <button class="btn-calculate" onclick="calculateQoL()" id="calc-btn" style="margin-top: 8px;">Calculate Paw Score →</button>
 
     <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="qol-date"></span>
+      </div>
       <div id="score-display" style="text-align:center; margin-bottom: 16px;">
         <div style="font-size: 2.2rem; font-weight: 700; color: var(--orange);" id="total-score"></div>
         <div style="font-size: 0.9rem; color: var(--brown-mid);">out of 70</div>
@@ -256,7 +254,7 @@ permalink: /tools/dog-quality-of-life-calculator.html
       <h3 id="result-headline" style="margin-bottom: 8px;"></h3>
       <p id="result-summary" style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"></p>
       <div id="result-flags"></div>
-      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('qol-print-date')">🖨️ Save as PDF</button>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('qol-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -271,14 +269,12 @@ permalink: /tools/dog-quality-of-life-calculator.html
     </div>
   </div>
 
-  </div><!-- /print-area -->
-
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This tool is for informational purposes only and does not replace veterinary advice. Quality of life assessment is a conversation between you and your vet. If your dog is suffering, contact your veterinarian promptly.
   </div>
 
   <!-- Educational content -->
-  <div style="margin-top: 48px;">
+  <div class="no-print" style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What Is the Paw Score (HHHHHMM Scale)?</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The HHHHHMM Scale was developed by Dr. Alice Villalobos, a veterinary oncologist, as a practical framework for pet owners and veterinarians to evaluate quality of life in dogs facing serious illness, chronic pain, or end-of-life conditions. The acronym stands for Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, and More good days than bad.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Each category is scored from 1 to 10, for a maximum total of 70. A score of 35 or above is generally considered an acceptable quality of life — meaning most needs are being met and the dog has more positive experiences than suffering. Below 35, the balance tips, and the conversation about what more can be done — or whether continuing treatment is in the dog's best interest — becomes necessary.</p>
@@ -314,7 +310,7 @@ permalink: /tools/dog-quality-of-life-calculator.html
   border-bottom: 2px solid var(--orange);
 }
 .print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
-.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
 .pdf-btn {
   display: none;
   margin-top: 16px;
@@ -331,26 +327,28 @@ permalink: /tools/dog-quality-of-life-calculator.html
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+}
 </style>
 <style>
 @media print {
-  body * { visibility: hidden; }
-  .print-area, .print-area * { visibility: visible; }
-  .print-area {
-    position: fixed; top: 0; left: 0;
-    width: 100%; padding: 28px;
-    background: white; box-sizing: border-box;
-  }
-  .print-header { display: flex !important; }
-  .pdf-btn, #calc-btn, .qol-category,
-  .tool-box > p { display: none !important; }
-  .tool-box { background: none !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
-  .result-box { box-shadow: none !important; }
+  .qol-category, #calc-btn, .tool-box > p { display: none !important; }
 }
 </style>
 <script>
 function doPrint(dateId) {
-  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
 </script>
