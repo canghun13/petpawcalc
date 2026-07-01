@@ -64,6 +64,12 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     <p>Enter your dog's details and last vet visit to find out when their next checkup should be — and exactly what to bring up with your vet.</p>
   </div>
 
+  <div class="print-area">
+    <div class="print-header">
+      <span class="print-logo">🐾 PetPawCalc</span>
+      <span class="print-date" id="dv-print-date"></span>
+    </div>
+
   <div class="tool-box">
     <div class="form-group">
       <label for="dog-age-years">Dog's Age</label>
@@ -122,6 +128,7 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
       <h3 id="result-next"></h3>
       <p id="result-status"></p>
       <p id="result-urgency" style="margin-top: 6px; font-weight: 600;"></p>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('dv-print-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -137,6 +144,8 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 20px;">Your Dog's Recommended <em>Visit Schedule</em></h2>
     <div id="schedule-timeline"></div>
   </div>
+
+  </div><!-- /print-area -->
 
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This scheduler provides general guidelines based on your dog's life stage. Individual health needs vary. Always follow your veterinarian's specific recommendations for your dog.
@@ -168,6 +177,58 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     </div>
   </div>
 </div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 28px;
+    background: white; box-sizing: border-box;
+  }
+  .print-header { display: flex !important; }
+  .pdf-btn, .btn-calculate, .form-group, label,
+  select, input { display: none !important; }
+  .tool-box { background: none !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+  .result-box { box-shadow: none !important; }
+}
+</style>
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  window.print();
+}
+</script>
 
 <script>
 function formatDate(date) {
@@ -286,6 +347,7 @@ function calculateVetSchedule() {
 
   document.getElementById('result').style.display = 'block';
   document.getElementById('result').classList.add('show');
+  document.getElementById('pdf-btn').style.display = 'block';
 
   // Agenda
   const agendaItems = getAgendaItems(stage, size, healthStatus);
