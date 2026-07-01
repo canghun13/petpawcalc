@@ -105,9 +105,14 @@ permalink: /tools/pet-insurance-cost-estimator.html
     </div>
     <button class="btn-calculate" onclick="calculateInsurance()">Estimate Monthly Premium →</button>
 
-    <div class="result-box" id="result">
+    <div class="result-box print-area" id="result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="ins-print-date"></span>
+      </div>
       <h3 id="result-premium"></h3>
       <div id="result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('ins-print-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -127,6 +132,49 @@ permalink: /tools/pet-insurance-cost-estimator.html
     <p style="color: var(--brown-mid); line-height: 1.7;"><strong>Deductible and reimbursement rate</strong> give you control over your premium. A higher deductible lowers your monthly cost; a higher reimbursement rate (80% vs 70%) raises it.</p>
   </div>
 </div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 28px;
+    background: white; box-sizing: border-box;
+    box-shadow: none !important; border: none !important;
+  }
+  .print-header { display: flex !important; }
+  .pdf-btn { display: none !important; }
+}
+</style>
 
 <script>
 function calculateInsurance() {
@@ -189,5 +237,11 @@ function calculateInsurance() {
   `;
 
   document.getElementById('result').classList.add('show');
+  document.getElementById('pdf-btn').style.display = 'block';
+}
+
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  window.print();
 }
 </script>
