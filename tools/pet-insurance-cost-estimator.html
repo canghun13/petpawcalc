@@ -105,14 +105,14 @@ permalink: /tools/pet-insurance-cost-estimator.html
     </div>
     <button class="btn-calculate" onclick="calculateInsurance()">Estimate Monthly Premium →</button>
 
-    <div class="result-box print-area" id="result">
+    <div class="result-box" id="result">
       <div class="print-header">
         <span class="print-logo">🐾 PetPawCalc</span>
-        <span class="print-date" id="ins-print-date"></span>
+        <span class="print-date" id="ins-date"></span>
       </div>
       <h3 id="result-premium"></h3>
       <div id="result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
-      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('ins-print-date')">🖨️ Save as PDF</button>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('ins-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -120,7 +120,7 @@ permalink: /tools/pet-insurance-cost-estimator.html
     ⚠️ These are estimates based on US national average premiums. Actual quotes vary by provider, zip code, breed, and individual pet health history. Always get quotes from multiple providers before purchasing.
   </div>
 
-  <div style="margin-top: 40px;">
+  <div class="no-print" style="margin-top: 40px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">What Affects Pet Insurance Cost?</h2>
 
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Age</strong> is the biggest factor. Premiums increase significantly as pets get older — a 10-year-old dog can cost 2–3× more to insure than a 2-year-old of the same breed. This is why enrolling early (before health issues develop) is strongly recommended.</p>
@@ -143,7 +143,7 @@ permalink: /tools/pet-insurance-cost-estimator.html
   border-bottom: 2px solid var(--orange);
 }
 .print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
-.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
 .pdf-btn {
   display: none;
   margin-top: 16px;
@@ -160,24 +160,26 @@ permalink: /tools/pet-insurance-cost-estimator.html
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+}
 </style>
 <style>
-@media print {
-  body * { visibility: hidden; }
-  .print-area, .print-area * { visibility: visible; }
-  .print-area {
-    position: fixed; top: 0; left: 0;
-    width: 100%; padding: 28px;
-    background: white; box-sizing: border-box;
-    box-shadow: none !important; border: none !important;
-  }
-  .print-header { display: flex !important; }
-  .pdf-btn { display: none !important; }
-}
+@media print { .form-group, select, label { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
-  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
 </script>
