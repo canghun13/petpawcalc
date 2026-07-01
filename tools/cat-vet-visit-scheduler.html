@@ -207,7 +207,7 @@ description: Enter your cat's age and last vet visit to get a personalized check
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
-@media page{margin:20mm;}
+@page { margin: 20mm; }
 @media print {
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
@@ -228,7 +228,9 @@ description: Enter your cat's age and last vet visit to get a personalized check
   #cat-agenda-section, #cat-schedule-section,
   #breakdown-section { margin-top: 20px !important; }
   /* 페이지 안에서 잘리지 않게 */
-  .result-box, #breakdown-section > div { page-break-inside: avoid;}
+  .result-box, #breakdown-section > div { page-break-inside: avoid; }
+  #cat-agenda-list > div { margin-bottom: 8px !important; padding: 10px 12px !important; }
+  #cat-schedule-timeline > div { margin-bottom: 8px !important; }
 
 }
 </style>
