@@ -64,12 +64,6 @@ description: Enter your cat's age and last vet visit to get a personalized check
     <p>Enter your cat's details and last vet visit to find out when their next checkup should be — and exactly what to bring up with your vet.</p>
   </div>
 
-  <div class="print-area">
-    <div class="print-header">
-      <span class="print-logo">🐾 PetPawCalc</span>
-      <span class="print-date" id="cv-print-date"></span>
-    </div>
-
   <div class="tool-box">
     <div class="form-group">
       <label for="cat-age-years">Cat's Age</label>
@@ -123,10 +117,14 @@ description: Enter your cat's age and last vet visit to get a personalized check
     <button class="btn-calculate" onclick="calculateCatVetSchedule()">Get My Cat's Schedule →</button>
 
     <div class="result-box" id="cat-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="cv-date"></span>
+      </div>
       <h3 id="cat-result-next"></h3>
       <p id="cat-result-status"></p>
       <p id="cat-result-urgency" style="margin-top: 6px; font-weight: 600;"></p>
-      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('cv-print-date')">🖨️ Save as PDF</button>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('cv-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -143,13 +141,11 @@ description: Enter your cat's age and last vet visit to get a personalized check
     <div id="cat-schedule-timeline"></div>
   </div>
 
-  </div><!-- /print-area -->
-
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This scheduler provides general guidelines based on your cat's life stage. Individual health needs vary. Always follow your veterinarian's specific recommendations for your cat.
   </div>
 
-  <div style="margin-top: 48px;">
+  <div class="no-print" style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Vet Visit Frequency Changes as Cats Age</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats are notoriously good at hiding illness — a trait inherited from wild ancestors for whom showing weakness was dangerous. By the time most cats show visible signs of a health problem, the condition has often been developing for months. This makes routine vet visits more important for cats than for many other pets, even when everything seems fine.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Annual exams during adult years establish baseline values — kidney function, thyroid levels, weight, heart sounds — that become critical reference points as your cat ages. The difference between catching hyperthyroidism or kidney disease at an early stage versus a late one is dramatic in terms of both quality of life and treatment cost.</p>
@@ -194,7 +190,7 @@ description: Enter your cat's age and last vet visit to get a personalized check
   border-bottom: 2px solid var(--orange);
 }
 .print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
-.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
 .pdf-btn {
   display: none;
   margin-top: 16px;
@@ -211,26 +207,26 @@ description: Enter your cat's age and last vet visit to get a personalized check
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+}
 </style>
 <style>
-@media print {
-  body * { visibility: hidden; }
-  .print-area, .print-area * { visibility: visible; }
-  .print-area {
-    position: fixed; top: 0; left: 0;
-    width: 100%; padding: 28px;
-    background: white; box-sizing: border-box;
-  }
-  .print-header { display: flex !important; }
-  .pdf-btn, .btn-calculate, .form-group, label,
-  select, input { display: none !important; }
-  .tool-box { background: none !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
-  .result-box { box-shadow: none !important; }
-}
+@media print { .form-group, select, label, input { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
-  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
 </script>
