@@ -212,6 +212,20 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
   }
   .result-box  { box-shadow: none !important; }
   .print-header { display: flex !important; }
+
+  /* 빈 페이지 원인 제거 - 외부 래퍼 패딩/마진 초기화 */
+  @page { margin: 1.5cm; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  .tool-page, main, .main-content, .page-wrapper { 
+    padding: 0 !important; margin: 0 !important; height: auto !important;
+  }
+  /* 섹션 간격 축소 */
+  #agenda-section, #schedule-section,
+  #cat-agenda-section, #cat-schedule-section,
+  #breakdown-section { margin-top: 20px !important; }
+  /* 페이지 안에서 잘리지 않게 */
+  .result-box, #breakdown-section > div { page-break-inside: avoid; }
+
 }
 </style>
 <style>
