@@ -107,14 +107,14 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
     </div>
     <button class="btn-calculate" onclick="calculateCost()">Estimate Annual Cost →</button>
 
-    <div class="result-box print-area" id="result">
+    <div class="result-box" id="result">
       <div class="print-header">
         <span class="print-logo">🐾 PetPawCalc</span>
-        <span class="print-date" id="pc-print-date"></span>
+        <span class="print-date" id="pc-date"></span>
       </div>
       <h3 id="result-total"></h3>
       <div id="result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
-      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('pc-print-date')">🖨️ Save as PDF</button>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('pc-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -122,7 +122,7 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
     ⚕️ These are average estimates based on US national data. Actual costs vary by location, breed, and individual pet needs.
   </div>
 
-  <div style="margin-top: 40px;">
+  <div class="no-print" style="margin-top: 40px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">What Drives Pet Costs Up (and Down)</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Size</strong> is the single biggest cost driver for dogs. A large dog eats two to three times as much as a small dog, and many preventive medications (heartworm, flea/tick) are dosed by weight. Over a 12-year lifespan, the food cost difference between a 15 lb dog and a 90 lb dog can exceed $10,000.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Location</strong> affects veterinary costs significantly. Routine visits in major metro areas often run 40–60% higher than the same care in rural or mid-size markets. If you're budgeting carefully, it's worth calling a few local vets to get a sense of exam fees and vaccine costs in your area.</p>
@@ -150,7 +150,7 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   border-bottom: 2px solid var(--orange);
 }
 .print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
-.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
 .pdf-btn {
   display: none;
   margin-top: 16px;
@@ -167,24 +167,26 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+}
 </style>
 <style>
-@media print {
-  body * { visibility: hidden; }
-  .print-area, .print-area * { visibility: visible; }
-  .print-area {
-    position: fixed; top: 0; left: 0;
-    width: 100%; padding: 28px;
-    background: white; box-sizing: border-box;
-    box-shadow: none !important; border: none !important;
-  }
-  .print-header { display: flex !important; }
-  .pdf-btn { display: none !important; }
-}
+@media print { .form-group, select, label { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
-  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
 </script>
