@@ -167,7 +167,6 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
-@page { margin:0; margin: 50mm }
 @media print {
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
@@ -182,7 +181,7 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   /* 빈 페이지 원인 제거 - 외부 래퍼 패딩/마진 초기화 */
   html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
   body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
-  .tool-page { width:100%; margin: 0 !important; height: auto !important; }
+  .tool-page { max-width:none !important; margin: 0 !important; height: auto !important; }
   /* 섹션 간격 축소 */
   #agenda-section, #schedule-section,
   #cat-agenda-section, #cat-schedule-section,
