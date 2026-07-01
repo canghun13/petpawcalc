@@ -208,9 +208,10 @@ description: Enter your cat's age and last vet visit to get a personalized check
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
 
-@page { margin: 20mm; }
-
 @media print {
+  @page { 
+    margin: 20mm; 
+  }
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
   .post-cta, .disclaimer-box, .no-print        { display: none !important; }
@@ -222,7 +223,8 @@ description: Enter your cat's age and last vet visit to get a personalized check
   .print-header { display: flex !important; }
 
   /* 빈 페이지 원인 제거 - 외부 래퍼 패딩/마진 초기화 */
-  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  html { height: auto !important; }
+  body { height: auto !important; padding: 0 !important; margin: 20mm !important; }
   body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
   .tool-page { max-width:none !important; padding:0 !important; margin: 0 !important; height: auto !important; }
   /* 섹션 간격 축소 */
