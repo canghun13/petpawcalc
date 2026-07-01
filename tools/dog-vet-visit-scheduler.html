@@ -64,12 +64,6 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     <p>Enter your dog's details and last vet visit to find out when their next checkup should be — and exactly what to bring up with your vet.</p>
   </div>
 
-  <div class="print-area">
-    <div class="print-header">
-      <span class="print-logo">🐾 PetPawCalc</span>
-      <span class="print-date" id="dv-print-date"></span>
-    </div>
-
   <div class="tool-box">
     <div class="form-group">
       <label for="dog-age-years">Dog's Age</label>
@@ -125,10 +119,14 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     <button class="btn-calculate" onclick="calculateVetSchedule()">Get My Dog's Schedule →</button>
 
     <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="dv-date"></span>
+      </div>
       <h3 id="result-next"></h3>
       <p id="result-status"></p>
       <p id="result-urgency" style="margin-top: 6px; font-weight: 600;"></p>
-      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('dv-print-date')">🖨️ Save as PDF</button>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('dv-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -145,13 +143,11 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
     <div id="schedule-timeline"></div>
   </div>
 
-  </div><!-- /print-area -->
-
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This scheduler provides general guidelines based on your dog's life stage. Individual health needs vary. Always follow your veterinarian's specific recommendations for your dog.
   </div>
 
-  <div style="margin-top: 48px;">
+  <div class="no-print" style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Vet Visit Frequency Changes With Age</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A healthy 3-year-old dog and a healthy 9-year-old dog have very different needs from their veterinarian — even if neither is showing any symptoms. The reason is simple: the pace of change in an aging dog's body accelerates significantly after a certain point, and problems caught early cost less to treat and cause less suffering.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Annual exams during the adult years aren't just about vaccines. They establish baseline values — organ function, weight, heart and lung sounds — that become critical reference points when something changes later. A vet who sees a gradual upward trend in kidney values over three years can intervene far earlier than one seeing the same dog for the first time in crisis.</p>
@@ -188,7 +184,7 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
   border-bottom: 2px solid var(--orange);
 }
 .print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
-.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
 .pdf-btn {
   display: none;
   margin-top: 16px;
@@ -205,26 +201,26 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+}
 </style>
 <style>
-@media print {
-  body * { visibility: hidden; }
-  .print-area, .print-area * { visibility: visible; }
-  .print-area {
-    position: fixed; top: 0; left: 0;
-    width: 100%; padding: 28px;
-    background: white; box-sizing: border-box;
-  }
-  .print-header { display: flex !important; }
-  .pdf-btn, .btn-calculate, .form-group, label,
-  select, input { display: none !important; }
-  .tool-box { background: none !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
-  .result-box { box-shadow: none !important; }
-}
+@media print { .form-group, select, label, input { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
-  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
 </script>
