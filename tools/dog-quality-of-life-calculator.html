@@ -64,6 +64,12 @@ permalink: /tools/dog-quality-of-life-calculator.html
     <p>Rate your dog across 7 areas of wellbeing. Based on the HHHHHMM Scale used by veterinary professionals to assess quality of life in senior and ill dogs.</p>
   </div>
 
+  <div class="print-area">
+    <div class="print-header">
+      <span class="print-logo">🐾 PetPawCalc</span>
+      <span class="print-date" id="qol-print-date"></span>
+    </div>
+
   <div class="tool-box">
     <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 24px; line-height: 1.6;">
       For each category, choose the score that best describes your dog <strong>today</strong>. There are no right or wrong answers — honest observation is what matters.
@@ -250,6 +256,7 @@ permalink: /tools/dog-quality-of-life-calculator.html
       <h3 id="result-headline" style="margin-bottom: 8px;"></h3>
       <p id="result-summary" style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"></p>
       <div id="result-flags"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('qol-print-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
@@ -263,6 +270,8 @@ permalink: /tools/dog-quality-of-life-calculator.html
       </p>
     </div>
   </div>
+
+  </div><!-- /print-area -->
 
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This tool is for informational purposes only and does not replace veterinary advice. Quality of life assessment is a conversation between you and your vet. If your dog is suffering, contact your veterinarian promptly.
@@ -294,6 +303,60 @@ permalink: /tools/dog-quality-of-life-calculator.html
     </div>
   </div>
 </div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date { font-size: 0.8rem; color: var(--brown-mid); }
+
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 28px;
+    background: white; box-sizing: border-box;
+  }
+  .print-header { display: flex !important; }
+  .pdf-btn, #calc-btn, .qol-category,
+  .tool-box > p { display: none !important; }
+  .tool-box { background: none !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+  .result-box { box-shadow: none !important; }
+  #score-bar { transition: none !important; }
+}
+
+
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  window.print();
+}
+</script>
 
 <style>
 .qol-category {
@@ -488,6 +551,7 @@ function calculateQoL() {
 
   document.getElementById('result').style.display = 'block';
   document.getElementById('result').classList.add('show');
+  document.getElementById('pdf-btn').style.display = 'block';
 
   // Breakdown
   const breakdownEl = document.getElementById('breakdown-list');
