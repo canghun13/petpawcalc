@@ -37,8 +37,9 @@
     .post-body ul, .post-body ol { color: var(--brown-mid); padding-left: 22px; margin-bottom: 18px; }
     .post-body li { margin-bottom: 7px; line-height: 1.65; }
     .post-body a { color: var(--orange); text-decoration: underline; text-underline-offset: 2px; }
-    .post-body table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 8px 0 28px; font-size: 0.92rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
-    .post-body th { background: var(--cream-dark); color: var(--brown); font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--border); border-right: 1px solid var(--border); }
+    .post-body .table-wrapper { border-radius: var(--radius-sm); overflow-x: auto; border: 1px solid var(--border); margin: 8px 0 28px; }
+    .post-body table { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 0.92rem; background: var(--white); margin: 0; }
+    .post-body th { background: var(--cream-dark); color: var(--brown); font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--border); border-right: 1px solid var(--border); white-space: nowrap; }
     .post-body th:last-child { border-right: none; }
     .post-body td { color: var(--brown-mid); padding: 10px 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
     .post-body td:last-child { border-right: none; }
@@ -46,7 +47,6 @@
     .post-body tr:nth-child(even) td { background: var(--cream); }
     .post-body table strong { color: var(--brown); }
     @media (max-width: 600px) {
-      .post-body table { display: block; overflow-x: auto; white-space: nowrap; }
       .post-body th, .post-body td { padding: 8px 10px; font-size: 0.85rem; }
     }
     .post-cta { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 36px 0; }
@@ -112,5 +112,13 @@
     </div>
   </main>
   {% include footer.html %}
+<script>
+document.querySelectorAll('.post-body table').forEach(function(table) {
+  var wrapper = document.createElement('div');
+  wrapper.className = 'table-wrapper';
+  table.parentNode.insertBefore(wrapper, table);
+  wrapper.appendChild(table);
+});
+</script>
 </body>
 </html>
