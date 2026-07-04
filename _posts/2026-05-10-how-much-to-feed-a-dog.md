@@ -3,9 +3,21 @@ layout: post
 title: "How Much Should I Feed My Dog? A Vet-Backed Guide"
 description: Overfeeding is the #1 nutrition mistake dog owners make. Here's how to calculate the right daily food amount for your dog's weight, age, and activity level.
 category: Dog Nutrition
-date: 2026-06-27
+date: 2026-05-10
 read_time: 8
 slug: how-much-to-feed-a-dog
+faqs:
+  - q: "How many cups of food should I feed my dog per day?"
+    a: "There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 660–780 calories per day. If your food has 350 kcal/cup, that's about 2 cups per day. If it has 450 kcal/cup, that's about 1.5 cups. Always check the kcal/cup on the food bag, not just the \"feeding guide.\""
+  - q: "Is it better to feed my dog once or twice a day?"
+    a: "Twice a day is generally better for most dogs. It stabilizes energy levels, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals. Once-daily feeding works for some dogs but twice daily is the standard recommendation."
+  - q: "How do I know if I'm overfeeding my dog?"
+    a: "The rib test is the most reliable check: run your fingers along your dog's sides with light pressure. You should feel the ribs easily without pressing hard. If you can't, your dog is likely overweight. A visible waist from above and a slight belly tuck from the side are also indicators of healthy weight."
+  - q: "Should I feed my dog more in winter?"
+    a: "Outdoor dogs and dogs that spend significant time in cold weather do need more calories to maintain body temperature. Strictly indoor dogs in climate-controlled homes generally don't need seasonal calorie adjustments unless their activity level changes significantly."
+  - q: "My dog always seems hungry — am I underfeeding?"
+    a: "Not necessarily. Dogs are opportunistic eaters and will often appear hungry even when fully fed. Check the rib test and body condition score first. If your dog is maintaining a healthy weight on their current diet, hunger signals alone don't indicate underfeeding. If they're losing weight despite eating, or if the body condition check suggests they're thin, increasing portions is appropriate."
+
 ---
 
 More than half of US dogs are overweight or obese, according to the Association for Pet Obesity Prevention. The most common reason? Owners simply aren't sure how much to feed — and when in doubt, they feed a little more.
@@ -157,6 +169,12 @@ Outdoor dogs and dogs that spend significant time in cold weather do need more c
 
 **My dog always seems hungry — am I underfeeding?**
 Not necessarily. Dogs are opportunistic eaters and will often appear hungry even when fully fed. Check the rib test and body condition score first. If your dog is maintaining a healthy weight on their current diet, hunger signals alone don't indicate underfeeding. If they're losing weight despite eating, or if the body condition check suggests they're thin, increasing portions is appropriate.
+
+## Related Articles
+
+- [How Much Does a Dog Really Cost Per Year? A Complete Breakdown](/blog/annual-cost-of-owning-a-dog/)
+- [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
+- [How Much Should a Senior Dog Eat? A Calculator-Based Guide](/blog/how-much-should-senior-dog-eat/)
 
 ---
 

@@ -6,6 +6,17 @@ category: Cat Nutrition
 date: 2026-06-22
 read_time: 10
 slug: how-much-should-senior-cat-eat
+faqs:
+  - q: "How many calories does a senior cat need per day?"
+    a: "Most senior cats need between 200–280 calories per day, depending on weight and activity level. Overweight senior cats may need less; underweight or hyperthyroid cats may need more. Your vet can calculate an accurate target based on your cat's current body condition score."
+  - q: "Should senior cats eat wet or dry food?"
+    a: "Wet food is generally better for senior cats. It provides hydration, is easier to chew, and supports kidney function — a common concern in older cats. Dry food can be used as a supplement but shouldn't be the primary diet for most seniors."
+  - q: "Why is my senior cat always hungry?"
+    a: "Increased appetite in senior cats can be a sign of hyperthyroidism, diabetes, or intestinal disease — all of which become more common with age. If your cat's appetite has noticeably increased, a vet visit and bloodwork are warranted."
+  - q: "How often should I feed my senior cat?"
+    a: "Two to three meals per day works well for most senior cats. Smaller, more frequent meals are easier on their digestive system and help maintain stable blood sugar."
+  - q: "When should I switch my cat to senior food?"
+    a: "Most vets recommend transitioning to a senior formula around age 7–10, depending on the cat's health status. However, not all senior cats need senior-specific food — ask your vet at the annual exam." 
 ---
 
 Most cat owners feed their senior cat the same way they fed their adult cat — same food, same portions, same routine. It's understandable. The bag says "adult," the cat eats it, everything seems fine.
@@ -171,6 +182,30 @@ Senior cat nutrition is not complicated, but it does require more active attenti
 <div class="post-cta">
   Due for a vet visit? → <a href="/tools/cat-vet-visit-scheduler.html">Use the Cat Vet Visit Scheduler</a>
 </div>
+
+## Frequently Asked Questions
+
+**How many calories does a senior cat need per day?**
+Most senior cats need between 200–280 calories per day, depending on weight and activity level. Overweight senior cats may need less; underweight or hyperthyroid cats may need more. Your vet can calculate an accurate target based on your cat's current body condition score.
+
+**Should senior cats eat wet or dry food?**
+Wet food is generally better for senior cats. It provides hydration (cats are poor drinkers), is easier to chew, and supports kidney function — a common concern in older cats. Dry food can be used as a supplement but shouldn't be the primary diet for most seniors.
+
+**Why is my senior cat always hungry?**
+Increased appetite in senior cats can be a sign of hyperthyroidism, diabetes, or intestinal disease — all of which become more common with age. If your cat's appetite has noticeably increased, a vet visit and bloodwork are warranted.
+
+**How often should I feed my senior cat?**
+Two to three meals per day works well for most senior cats. Smaller, more frequent meals are easier on their digestive system and help maintain stable blood sugar — particularly important for diabetic cats.
+
+**When should I switch my cat to senior food?**
+Most vets recommend transitioning to a senior formula around age 7–10, depending on the cat's health status. However, not all senior cats need senior-specific food — some do better on high-quality adult food with modified portion sizes. Ask your vet at the annual exam.
+
+
+## Related Articles
+
+- [Why Is My Cat Always Hungry? Calorie Needs by Age Explained](/blog/why-is-my-cat-always-hungry/)
+- [How Much Should a Cat Weigh? Healthy Weight by Breed and Sex](/blog/how-much-should-a-cat-weigh/)
+- [How Often Should Cats Go to the Vet? A Schedule by Age](/blog/how-often-vet-visits-cat/)
 
 ---
 

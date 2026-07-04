@@ -3,9 +3,20 @@ layout: post
 title: "How Long Are Dogs Pregnant? A Week-by-Week Guide"
 description: "Dog pregnancy lasts about 63 days — but a lot happens in those 9 weeks. Here's what to expect each week and how to prepare for the birth."
 category: Dog Health
-date: 2026-06-27
+date: 2026-05-19
 read_time: 7
 slug: how-long-are-dogs-pregnant
+faqs:
+  - q: "How long are dogs pregnant in months?"
+    a: "Dog pregnancy lasts about 2 months — roughly 63 days from ovulation, which is a little over 9 weeks."
+  - q: "Can you tell if a dog is pregnant at 2 weeks?"
+    a: "Not reliably. At 2 weeks the embryos are still tiny and most tests won't show a positive result. A blood test for relaxin is accurate from around day 22–25, and an ultrasound can confirm pregnancy from day 25–30."
+  - q: "Do dogs show at 4 weeks pregnant?"
+    a: "Some dogs start to show a slight belly rounding around week 4–5, but it varies by litter size and the dog's own build. Weight gain and nipple changes are often the more noticeable early signs."
+  - q: "Can a dog be pregnant for only 50 days?"
+    a: "A pregnancy of 50 days would be premature and unlikely to produce viable puppies. Normal gestation is 58–68 days from ovulation. If your dog delivers before day 58, contact your vet immediately."
+  - q: "How many puppies can a dog have?"
+    a: "Litter size varies widely by breed — small breeds typically have 1–4 puppies, while large breeds can have 8–12 or more. An X-ray at week 7–8 gives the most accurate count before birth." 
 ---
 
 If your dog recently mated, you're probably wondering: how long until puppies? The short answer is about **63 days** — but knowing *what's happening* each week makes a big difference in how well you can care for her.
@@ -138,6 +149,30 @@ Call your vet immediately if:
 - The number of placentas doesn't match the number of puppies (retained placenta is a serious complication)
 
 Dog pregnancy and birth usually proceed without problems, but having your vet's number on hand — and knowing when to use it — is part of responsible preparation.
+
+## Frequently Asked Questions
+
+**How long are dogs pregnant in months?**
+Dog pregnancy lasts about 2 months — roughly 63 days from ovulation, which is a little over 9 weeks.
+
+**Can you tell if a dog is pregnant at 2 weeks?**
+Not reliably. At 2 weeks the embryos are still tiny and most tests won't show a positive result. A blood test for relaxin is accurate from around day 22–25, and an ultrasound can confirm pregnancy from day 25–30.
+
+**Do dogs show at 4 weeks pregnant?**
+Some dogs start to show a slight belly rounding around week 4–5, but it varies by litter size and the dog's own build. Weight gain and nipple changes are often the more noticeable early signs.
+
+**Can a dog be pregnant for only 50 days?**
+A pregnancy of 50 days would be premature and unlikely to produce viable puppies. Normal gestation is 58–68 days from ovulation. If your dog delivers before day 58, contact your vet immediately.
+
+**How many puppies can a dog have?**
+Litter size varies widely by breed — small breeds typically have 1–4 puppies, while large breeds can have 8–12 or more. An X-ray at week 7–8 gives the most accurate count before birth.
+
+
+## Related Articles
+
+- [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
+- [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
+- [Signs of Dog Labor: What to Expect Hour by Hour](/blog/signs-of-dog-labor/)
 
 ---
 

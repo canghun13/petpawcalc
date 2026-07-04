@@ -3,9 +3,21 @@ layout: post
 title: "Signs of Cat Labor: What to Expect Before, During, and After"
 description: How do you know when your cat is about to give birth? Here's a clear breakdown of pre-labor signs, the stages of feline labor, and when to call the vet.
 category: Cat Care
-date: 2026-06-27
+date: 2026-06-12
 read_time: 9
 slug: signs-of-cat-labor
+faqs:
+  - q: "How do I know when my cat is about to give birth?"
+    a: "The most reliable sign is a rectal temperature drop below 99°F (37.2°C), which typically precedes labor by 12–24 hours. Other signs in the final 24 hours include refusal to eat, intense restlessness and pacing, panting, increased vocalization, and obsessive nesting behavior. A small amount of clear or slightly bloody mucus discharge indicates the mucus plug has passed and active labor is approaching."
+  - q: "How long does cat labor last?"
+    a: "Stage 1 labor (cervical dilation, no visible pushing) lasts 2–12 hours, up to 24 hours for first-time mothers. Stage 2 (active delivery) varies by litter size — typically 1–4 hours for a small litter, up to 12+ hours for a large one. Kittens arrive every 15–60 minutes on average, with rest periods between deliveries."
+  - q: "What does a cat in labor look like?"
+    a: "During Stage 1: restless, panting, pacing, unable to settle, shivering, refusing food. During Stage 2: strong visible abdominal contractions (pushing), vocalization, and eventually a kitten in an amniotic sac. The mother breaks the sac, severs the cord, and licks the kitten vigorously to stimulate breathing. If she doesn't do this within about a minute, you'll need to assist."
+  - q: "When should I call the vet during cat labor?"
+    a: "Call immediately if: your cat strains hard for more than 30 minutes without producing a kitten, a kitten is partially visible but stuck for more than 10 minutes, more than 2 hours pass between kittens with no signs of voluntary rest, discharge is heavy green or dark before all kittens are born, or your cat becomes exhausted and stops pushing despite kittens remaining."
+  - q: "Do cats bleed during labor?"
+    a: "A small amount of blood-tinged mucus is normal just before and during delivery. After birth, reddish-brown lochia discharge is normal and continues for up to 3 weeks. Heavy bright red bleeding at any point — before, during, or after delivery — is not normal and requires immediate veterinary attention."
+
 ---
 
 Most cats give birth without any intervention and do an exceptional job managing the process on their own. But knowing what's normal — and what isn't — lets you be genuinely helpful when it counts and recognize the warning signs that need a vet.
@@ -150,3 +162,10 @@ Call immediately if: your cat strains hard for more than 30 minutes without prod
 A small amount of blood-tinged mucus is normal just before and during delivery. After birth, reddish-brown lochia discharge is normal and continues for up to 3 weeks. Heavy bright red bleeding at any point — before, during, or after delivery — is not normal and requires immediate veterinary attention.
 
 *This article is for informational purposes only. Always consult your veterinarian if you have concerns about your cat's labor or delivery.*
+
+## Related Articles
+
+- [How Long Are Cats Pregnant?](/blog/how-long-are-cats-pregnant/)
+- [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
+- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
+

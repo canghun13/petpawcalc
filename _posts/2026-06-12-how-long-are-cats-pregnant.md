@@ -3,9 +3,21 @@ layout: post
 title: "How Long Are Cats Pregnant? A Week-by-Week Guide"
 description: Cat pregnancy lasts about 63–65 days — but what's actually happening each week? Here's a complete guide to feline gestation from mating to birth.
 category: Cat Care
-date: 2026-06-27
+date: 2026-06-12
 read_time: 9
 slug: how-long-are-cats-pregnant
+faqs:
+  - q: "How long are cats pregnant?"
+    a: "Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days, though deliveries before day 60 carry risk for the kittens' survival. Most cats deliver between day 63 and day 67. If your cat hasn't given birth by day 70, contact your veterinarian."
+  - q: "How can I tell how far along my cat is?"
+    a: "The most reliable method is a veterinary ultrasound at week 3.5–4, which can confirm pregnancy and estimate gestational age from fetal size. An X-ray from week 6 onward shows fetal skeletons and provides an accurate kitten count. At home, the progression of physical signs — nipple pinking (week 3), visible belly rounding (week 5), mammary enlargement (week 8) — gives a rough estimate, but vet confirmation is more accurate."
+  - q: "What are the first signs of cat pregnancy?"
+    a: "The earliest reliable home indicator is \"pinking up\" — nipple enlargement and color change to a deeper pink — which typically appears around week 3. Some cats show mild nausea or reduced appetite in weeks 2–3. Visible abdominal rounding usually starts around week 5. Before these signs appear, most cats look and act completely normal."
+  - q: "Can a cat be pregnant and not show?"
+    a: "Yes, especially with small litters (1–2 kittens). A cat carrying a single kitten may not show obvious abdominal rounding until weeks 6–7. Behavioral changes (increased affection, more sleep, nesting) are often the first clues in these cases. A relaxin blood test or ultrasound can confirm pregnancy before physical signs are obvious."
+  - q: "What should I feed my pregnant cat?"
+    a: "From around week 4, transition gradually to a high-quality kitten food or a food labeled \"for all life stages\" (AAFCO certified for growth and reproduction). These are calorie-dense and nutritionally appropriate for pregnancy. Feed to appetite in the final weeks — her calorie needs increase significantly as kittens grow rapidly. Keep her on kitten food throughout the nursing period as well."
+
 ---
 
 Cat pregnancy moves fast. From mating to birth in roughly nine weeks, the changes your cat goes through — and the kittens' development inside her — happen on a compressed timeline compared to most mammals.
@@ -156,3 +168,10 @@ Yes, especially with small litters (1–2 kittens). A cat carrying a single kitt
 From around week 4, transition gradually to a high-quality kitten food or a food labeled "for all life stages" (AAFCO certified for growth and reproduction). These are calorie-dense and nutritionally appropriate for pregnancy. Feed to appetite in the final weeks — her calorie needs increase significantly as kittens grow rapidly. Keep her on kitten food throughout the nursing period as well.
 
 *This article is for informational purposes only. Always consult your veterinarian for guidance on your cat's pregnancy and delivery.*
+
+## Related Articles
+
+- [Signs of Cat Labor](/blog/signs-of-cat-labor/)
+- [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
+- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
+

@@ -3,9 +3,21 @@ layout: post
 title: "How Often Should Cats Go to the Vet? A Schedule by Age"
 description: Vet visit frequency for cats depends entirely on age. Here's the exact schedule vets recommend — from kitten vaccines to senior semi-annual exams.
 category: Cat Care
-date: 2026-06-27
+date: 2026-06-06
 read_time: 8
 slug: how-often-vet-visits-cat
+faqs:
+  - q: "How often do cats need to go to the vet?"
+    a: "Kittens need visits every 3–4 weeks during their first year for vaccines and spay/neuter. Healthy adult cats (1–10 years) need annual wellness exams. Senior cats (10+ years) benefit from twice-yearly exams because conditions like hyperthyroidism and kidney disease can develop and progress quickly at this stage."
+  - q: "Do indoor cats need annual vet visits?"
+    a: "Yes. Even indoor-only cats develop dental disease, gain weight, and are at risk for age-related conditions that annual exams catch early. Indoor cats may need fewer vaccines (no FeLV exposure), but the wellness exam, weight monitoring, and periodic bloodwork are still important."
+  - q: "What happens at a cat's annual vet visit?"
+    a: "A standard annual wellness exam includes a full physical assessment (weight, temperature, heart, lungs, teeth, eyes, ears, coat), vaccine boosters on the appropriate rotating schedule, a parasite prevention review, and a discussion of any behavioral or health changes you've noticed. For cats over 7, baseline bloodwork is often added."
+  - q: "At what age should a cat see the vet twice a year?"
+    a: "Most vets recommend twice-yearly exams starting at age 10. Some recommend starting at 7–8 for cats with risk factors (overweight, history of urinary issues, or breeds prone to kidney disease). The reason is that senior cats' health can change significantly in six months, and conditions caught at monitoring visits are far less costly to manage than those found after clinical signs develop."
+  - q: "How much does a cat vet visit cost per year?"
+    a: "For a healthy adult cat (ages 2–9), annual vet costs typically run $200–$500 including the exam, rotating vaccines, and parasite prevention. Senior cats add bloodwork and more frequent visits, bringing annual costs to $500–$1,000+. Dental cleanings, when needed, add $250–$600 and are billed separately."
+
 ---
 
 Cats are famously good at hiding illness — a survival instinct that makes routine vet visits more important, not less. By the time most cats show visible signs of a health problem, the condition has often been developing for months.
@@ -166,3 +178,10 @@ Most vets recommend twice-yearly exams starting at age 10. Some recommend starti
 For a healthy adult cat (ages 2–9), annual vet costs typically run $200–$500 including the exam, rotating vaccines, and parasite prevention. Senior cats add bloodwork and more frequent visits, bringing annual costs to $500–$1,000+. Dental cleanings, when needed, add $250–$600 and are billed separately.
 
 *This article is for informational purposes only. Always consult your veterinarian for guidance specific to your cat's individual health needs.*
+
+## Related Articles
+
+- [How Much Does a Cat Vet Visit Cost?](/blog/how-much-does-a-cat-vet-visit-cost/)
+- [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
+- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
+

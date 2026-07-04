@@ -6,6 +6,17 @@ category: Dog Health
 date: 2026-06-22
 read_time: 11
 slug: dog-quality-of-life-assessment
+faqs:
+  - q: "What is the HHHHHMM scale for dogs?"
+    a: "The HHHHHMM scale is a quality of life assessment developed by veterinary oncologist Dr. Alice Villalobos. It evaluates seven criteria: Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, and More Good Days than Bad, each scored 1–10, with a total of 70 possible points."
+  - q: "What score indicates poor quality of life in dogs?"
+    a: "On the HHHHHMM scale, a total score above 35 is generally considered acceptable quality of life. Scores below 35 suggest the dog may be suffering more than thriving, and end-of-life options should be discussed with a veterinarian."
+  - q: "How do I know when it's time to put my dog down?"
+    a: "There's no single answer, but consistent low quality of life scores, inability to eat or drink, unmanageable pain, loss of dignity, and more bad days than good are key indicators. A veterinarian can help you evaluate your dog's specific situation."
+  - q: "Can a dog's quality of life improve over time?"
+    a: "Yes, depending on the condition. Pain management, medication changes, dietary adjustments, and supportive care can meaningfully improve scores — especially in the Hurt, Hunger, and Mobility categories. Monthly assessments help track whether things are improving or declining."
+  - q: "Should I use quality of life assessment for a young sick dog?"
+    a: "Yes. Quality of life assessment is useful for any dog facing serious illness, injury, or chronic conditions — not just senior dogs. It helps owners and vets make objective decisions regardless of age." 
 ---
 
 Watching a dog age — or watching one go through illness — forces questions most owners aren't prepared for. Is she still comfortable? Is he having more good days than bad? Is this the right time?
@@ -156,6 +167,30 @@ What counts as a good moment is individual. For one dog, it's eating with enthus
 <div class="post-cta">
   <p>Track your dog's quality of life with our structured tool → <a href="/tools/dog-quality-of-life-calculator.html">Dog Quality of Life Calculator (HHHHHMM Scale)</a></p>
 </div>
+
+## Frequently Asked Questions
+
+**What is the HHHHHMM scale for dogs?**
+The HHHHHMM scale is a quality of life assessment developed by veterinary oncologist Dr. Alice Villalobos. It evaluates seven criteria: Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, and More Good Days than Bad, each scored 1–10, with a total of 70 possible points.
+
+**What score indicates poor quality of life in dogs?**
+On the HHHHHMM scale, a total score above 35 is generally considered acceptable quality of life. Scores below 35 suggest the dog may be suffering more than thriving, and end-of-life options should be discussed with a veterinarian.
+
+**How do I know when it's time to put my dog down?**
+There's no single answer, but consistent low quality of life scores, inability to eat or drink, unmanageable pain, loss of dignity, and more bad days than good are key indicators. A veterinarian can help you evaluate your dog's specific situation.
+
+**Can a dog's quality of life improve over time?**
+Yes, depending on the condition. Pain management, medication changes, dietary adjustments, and supportive care can meaningfully improve scores — especially in the Hurt, Hunger, and Mobility categories. Monthly assessments help track whether things are improving or declining.
+
+**Should I use quality of life assessment for a young sick dog?**
+Yes. Quality of life assessment is useful for any dog facing serious illness, injury, or chronic conditions — not just senior dogs. It helps owners and vets make objective decisions regardless of age.
+
+
+## Related Articles
+
+- [How Much Should a Senior Dog Eat? A Calculator-Based Guide](/blog/how-much-should-senior-dog-eat/)
+- [How Often Should You Take Your Dog to the Vet? A Cost Breakdown by Age](/blog/how-often-vet-visits-dog-cost-by-age/)
+- [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
 
 ---
 

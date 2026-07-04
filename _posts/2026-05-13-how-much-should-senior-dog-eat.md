@@ -3,9 +3,17 @@ layout: post
 title: "How Much Should a Senior Dog Eat? A Calculator-Based Guide"
 description: Senior dogs need fewer calories but more protein. Here's how to calculate the right daily food amount for your aging dog based on weight and activity level.
 category: Dog Nutrition
-date: 2026-07-04
+date: 2026-05-13
 read_time: 11
 slug: how-much-should-senior-dog-eat
+faqs:
+  - q: "How much should a senior dog eat per day?"
+    a: "Most senior dogs need roughly 20–30% fewer calories than they did as active adults. A 30 lb senior dog at low activity needs approximately 510–595 calories per day, depending on activity level. Use your dog's target weight (not necessarily current weight) and a senior activity multiplier of 1.2–1.4× their Resting Energy Requirement to calculate a personalized number."
+  - q: "Do senior dogs need less food or more food?"
+    a: "It depends on the individual dog. Most senior dogs need fewer total calories due to slowing metabolism and reduced activity. However, some dogs over 12 — especially those losing muscle mass — actually need more food, not less, to maintain a healthy weight. Body condition score, not age alone, should guide the decision."
+  - q: "What is the best food for a senior dog?"
+    a: "Look for a food with at least 25% protein on a dry matter basis, named meat sources as the first ingredient, and moderate calorie density appropriate for reduced activity. Avoid senior formulas that cut protein too aggressively — healthy senior dogs generally need to maintain or increase protein intake to preserve muscle mass, not reduce it."
+
 ---
 
 Most dog food bags have a feeding guide. Most of those guides are wrong for senior dogs.
@@ -242,3 +250,9 @@ It depends on the individual dog. Most senior dogs need fewer total calories due
 Look for a food with at least 25% protein on a dry matter basis, named meat sources as the first ingredient, and moderate calorie density appropriate for reduced activity. Avoid senior formulas that cut protein too aggressively — healthy senior dogs generally need to maintain or increase protein intake to preserve muscle mass, not reduce it.
 
 *This guide is for informational purposes only. Always consult your veterinarian before making significant changes to your senior dog's diet, especially if they have existing health conditions.*
+
+## Related Articles
+
+- [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
+- [How Often Should You Take Your Dog to the Vet? A Cost Breakdown by Age](/blog/how-often-vet-visits-dog-cost-by-age/)
+- [Dog Quality of Life: How to Assess Your Dog's Well-Being Honestly](/blog/dog-quality-of-life-assessment/)

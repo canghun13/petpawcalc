@@ -6,6 +6,18 @@ category: Cat Care
 date: 2026-07-04
 read_time: 9
 slug: how-to-tell-if-cat-is-overweight
+faqs:
+  - q: "How can I tell if my cat is overweight without a scale?"
+    a: "Use the three hands-on checks: the rib test (can you feel ribs with light pressure?), the waist check (visible narrowing from above?), and the belly check (slight upward tuck from the side, not a sagging or rounded belly?). A cat that fails two or three of these is likely carrying excess weight, regardless of what they weigh on a scale."
+  - q: "Is the saggy pouch on my cat's belly a sign they're fat?"
+    a: "Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, squishy fat pad (about the size of a kiwi) is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight."
+  - q: "How much weight should my cat lose per week?"
+    a: "No more than 0.5–2% of body weight per week. For a 14 lb cat, that's roughly 1–4 oz weekly. Faster weight loss risks triggering hepatic lipidosis (fatty liver disease), a potentially fatal condition unique to cats that can develop within days of inadequate calorie intake."
+  - q: "Why does my long-haired cat look fat but feel thin?"
+    a: "Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath."
+  - q: "Can I just feed my cat less to help them lose weight?"
+    a: "Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended."
+
 ---
 
 According to the Association for Pet Obesity Prevention, roughly 60% of domestic cats in the US are classified as overweight or obese. That means most owners looking at an overweight cat think they're looking at a normal one — because most of the cats around them are also carrying extra weight.
@@ -179,3 +191,10 @@ Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear
 Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended.
 
 *This article is for informational purposes only and is not a substitute for veterinary advice. If you're concerned about your cat's weight, consult your veterinarian before starting any weight management plan.*
+
+## Related Articles
+
+- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
+- [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
+- [How Much Should a Senior Cat Eat?](/blog/how-much-should-senior-cat-eat/)
+

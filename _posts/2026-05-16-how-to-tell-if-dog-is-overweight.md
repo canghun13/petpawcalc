@@ -3,9 +3,21 @@ layout: post
 title: "How to Tell If Your Dog Is Overweight (Without a Vet Visit)"
 description: Over half of US dogs are overweight. Here are three simple at-home checks to assess your dog's body condition — and what to do if they've gained too much.
 category: Dog Health
-date: 2026-06-27
+date: 2026-05-16
 read_time: 8
 slug: how-to-tell-if-dog-is-overweight
+faqs:
+  - q: "How can I tell if my dog is overweight at home?"
+    a: "Use the three-check method: the rib test (can you feel ribs with light pressure?), the waist check (visible narrowing from above?), and the belly tuck (upward tuck from the side?). A dog that fails two or three of these is likely overweight. The rib test is the most reliable single indicator."
+  - q: "What is a healthy weight for my dog?"
+    a: "Healthy weight varies significantly by breed and individual frame. Rather than a specific number, veterinarians use body condition score (BCS) — a hands-on assessment that evaluates fat coverage over the ribs, waist definition, and abdominal profile. A BCS of 4–5 out of 9 is ideal for most breeds."
+  - q: "My dog looks normal but I can't feel their ribs. Are they overweight?"
+    a: "If you have to press firmly to feel the ribs rather than feeling them easily with light pressure, your dog is likely overweight even if they look normal to you. Gradual weight gain is easy to normalize — most owners with overweight dogs think their dog looks fine. The rib test bypasses visual bias."
+  - q: "How much weight should my dog lose per week?"
+    a: "Safe weight loss for dogs is approximately 1–2% of body weight per week. For a 60 lb dog, that's about 0.5–1 lb per week. Faster loss risks nutritional deficiency and, in some dogs, muscle loss. Slower loss is fine — the goal is steady progress, not speed."
+  - q: "Can an overweight dog lose weight just from exercise?"
+    a: "Exercise helps but isn't enough on its own. Diet accounts for most of the calorie equation. An obese dog can't exercise enough to overcome a diet that's too high in calories. Diet reduction paired with gradual exercise increase is more effective than either alone."
+
 ---
 
 According to the Association for Pet Obesity Prevention, over 55% of dogs in the United States are classified as overweight or obese. That's more than half — and most owners don't realize it's happening until the weight is already a problem.
@@ -146,3 +158,10 @@ Safe weight loss for dogs is approximately 1–2% of body weight per week. For a
 Exercise helps but isn't enough on its own. Diet accounts for most of the calorie equation. An obese dog can't exercise enough to overcome a diet that's too high in calories. Diet reduction paired with gradual exercise increase is more effective than either alone.
 
 *This article is for informational purposes only and is not a substitute for veterinary advice. If you're concerned about your dog's weight, consult your veterinarian for a personalized assessment and weight management plan.*
+
+## Related Articles
+
+- [How Much Should a Dog Eat?](/blog/how-much-to-feed-a-dog/)
+- [Senior Dog Nutrition Guide](/blog/how-much-should-senior-dog-eat/)
+- [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
+

@@ -3,9 +3,21 @@ layout: post
 title: "Why Is My Cat Always Hungry? Calorie Needs by Age Explained"
 description: If your cat begs for food constantly, it might not be greed — it could be a calorie mismatch. Here's how cat hunger actually works and how much they really need.
 category: Cat Care
-date: 2026-06-27
+date: 2026-05-15
 read_time: 8
 slug: why-is-my-cat-always-hungry
+faqs:
+  - q: "Why does my cat act like it's starving even after eating?"
+    a: "The most common reasons: they finished their food too quickly and satiety signals haven't caught up, their food is low in protein and doesn't satisfy their carnivore biology, their daily calorie allotment is genuinely insufficient for their size or activity level, or they've learned that begging produces food regardless of hunger. Check the calorie math first — underfeeding is more common than owners realize."
+  - q: "How do I know if my cat is eating enough?"
+    a: "Monitor body weight monthly (weigh yourself holding your cat, then subtract). A cat maintaining stable weight on their current diet is eating enough calories. Pair that with the rib test — you should feel ribs easily with light pressure. Gradual weight loss despite normal eating is a vet issue."
+  - q: "Can a cat be hungry all the time due to medical reasons?"
+    a: "Yes. Hyperthyroidism, diabetes, intestinal parasites, and inflammatory bowel disease can all cause increased appetite. The red flag combination is: eating more than usual but losing weight. Any cat showing this pattern — eating ravenously but getting thinner — should see a vet promptly."
+  - q: "Is it normal for cats to beg for food?"
+    a: "Some level of food interest is normal, especially around meal times. Constant vocalization for food, food guarding, or begging intensifying significantly beyond what was normal for your cat are worth investigating. Start with the calorie check, then rule out medical causes if the behavior is new or worsening."
+  - q: "How many times a day should I feed my cat?"
+    a: "Most adult cats do well with 2 meals per day, though 3–4 smaller meals more closely matches their natural eating pattern and can reduce food-focused behavior. Kittens need 3–4 meals per day. Senior cats often do better with 3 smaller meals due to reduced stomach capacity."
+
 ---
 
 Cats have a reputation for being aloof, but when it comes to food, many owners deal with the opposite problem: a cat that acts like it's starving at all times. Meowing at the bowl, pacing, pawing at you before meals.
@@ -123,6 +135,12 @@ Some level of food interest is normal, especially around meal times. Constant vo
 
 **How many times a day should I feed my cat?**
 Most adult cats do well with 2 meals per day, though 3–4 smaller meals more closely matches their natural eating pattern and can reduce food-focused behavior. Kittens need 3–4 meals per day. Senior cats often do better with 3 smaller meals due to reduced stomach capacity.
+
+## Related Articles
+
+- [How Much Should a Cat Weigh? Healthy Weight by Breed and Sex](/blog/how-much-should-a-cat-weigh/)
+- [How Much Should a Senior Cat Eat? A Feeding Guide by Age and Weight](/blog/how-much-should-senior-cat-eat/)
+- [How Often Should Cats Go to the Vet? A Schedule by Age](/blog/how-often-vet-visits-cat/)
 
 ---
 

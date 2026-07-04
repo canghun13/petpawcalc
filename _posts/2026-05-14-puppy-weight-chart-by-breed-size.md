@@ -3,9 +3,21 @@ layout: post
 title: "Puppy Weight Chart by Breed Size: What's Normal at Every Age?"
 description: How much should your puppy weigh at 8, 12, or 16 weeks? Here's a breed-size weight chart, how to estimate adult weight, and how to tell if your puppy is growing on track.
 category: Dog Care
-date: 2026-06-27
+date: 2026-05-14
 read_time: 9
 slug: puppy-weight-chart-by-breed-size
+faqs:
+  - q: "How much should my puppy weigh at 8 weeks?"
+    a: "It depends entirely on breed size. Toy breeds (Chihuahua, Pomeranian) typically weigh 1–2.5 lbs at 8 weeks. Small breeds (Beagle, Shih Tzu) weigh 3–5 lbs. Medium breeds (Border Collie, Bulldog) weigh 5–10 lbs. Large breeds (Labrador, German Shepherd) weigh 8–16 lbs. Giant breeds (Great Dane, Mastiff) weigh 10–20 lbs."
+  - q: "How do I know if my puppy is at a healthy weight?"
+    a: "Use the rib check: run your fingers along your puppy's sides. You should feel the ribs easily with light pressure but they should not be visibly prominent. View from above — there should be a slight waist visible behind the ribs. These physical checks are more reliable than comparing to a chart, since individual variation within breed sizes is significant."
+  - q: "Can puppies be overweight?"
+    a: "Yes — and for large and giant breeds, overfeeding during puppyhood is a genuine health risk. Excess weight during rapid growth phases stresses developing joints and growth plates, increasing the risk of orthopedic conditions like hip dysplasia and elbow dysplasia. For small breeds, the main risk of puppy obesity is setting up habits that carry into adulthood."
+  - q: "When do puppies gain weight the fastest?"
+    a: "The fastest growth occurs in the first 6 months, with large breeds growing most rapidly between 3–6 months. After 6 months, growth continues but slows significantly. Giant breeds continue growing until 18–24 months, but the most rapid weight gain is concentrated in the first year."
+  - q: "What if my puppy isn't gaining weight?"
+    a: "A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out."
+
 ---
 
 Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.
@@ -186,3 +198,9 @@ The fastest growth occurs in the first 6 months, with large breeds growing most 
 A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out.
 
 *Always consult your veterinarian with concerns about your puppy's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific dog.*
+
+## Related Articles
+
+- [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
+- [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
+- [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)

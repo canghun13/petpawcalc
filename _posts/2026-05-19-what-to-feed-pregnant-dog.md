@@ -3,9 +3,21 @@ layout: post
 title: "What to Feed a Pregnant Dog: Complete Nutrition Guide by Week"
 description: "What to feed a pregnant dog week by week — from week 1 through nursing. Exact food types, portion increases, supplements to avoid, and a printable feeding schedule."
 category: Dog Nutrition
-date: 2026-07-04
+date: 2026-05-19
 read_time: 11
 slug: what-to-feed-pregnant-dog
+faqs:
+  - q: "What is the best food to feed a pregnant dog?"
+    a: "A high-quality puppy food or a formula labeled \"for all life stages\" or \"for growth and reproduction\" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward."
+  - q: "Can I give my pregnant dog extra calcium?"
+    a: "No. Calcium supplementation during pregnancy is one of the most common and dangerous mistakes owners make. Excess calcium during pregnancy disrupts the hormonal mechanism the mother uses to mobilize calcium during labor, which increases the risk of eclampsia (milk fever) after delivery. If you're feeding a complete puppy food, she's already getting the right amount."
+  - q: "How much more should a pregnant dog eat?"
+    a: "Very little in the first trimester. By week 5–6, about 25–30% more than her pre-pregnancy intake. By weeks 8–9, up to 50–100% more. During peak nursing (weeks 2–4 postpartum), some mothers need 3–4x their pre-pregnancy daily calories depending on litter size."
+  - q: "What foods are dangerous for pregnant dogs?"
+    a: "Raw meat and raw eggs (bacterial contamination risk), liver in large amounts (excess vitamin A), grapes and raisins (toxic), xylitol (found in some peanut butters — highly toxic), and excess calcium supplements. The usual canine toxic foods all still apply."
+  - q: "Should I feed wet or dry food to a pregnant dog?"
+    a: "Either works if it meets AAFCO standards for growth/reproduction. Many breeders use high-quality dry kibble as the caloric base with a wet food topper in the third trimester for palatability and hydration. Pure wet food also works — just ensure calorie density is sufficient for late pregnancy needs."
+
 ---
 
 What you feed a pregnant dog directly affects her health — and the birth weight, immune function, and development of every puppy in the litter.
@@ -283,6 +295,12 @@ Yes. A drop in appetite 24–48 hours before whelping is completely normal and i
 <div class="post-cta">
   Not sure how many calories your dog needs normally? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a>
 </div>
+
+## Related Articles
+
+- [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
+- [Signs of Dog Labor: What to Expect Hour by Hour](/blog/signs-of-dog-labor/)
+- [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
 
 ---
 
