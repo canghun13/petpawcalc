@@ -37,8 +37,8 @@
     .post-body ul, .post-body ol { color: var(--brown-mid); padding-left: 22px; margin-bottom: 18px; }
     .post-body li { margin-bottom: 7px; line-height: 1.65; }
     .post-body a { color: var(--orange); text-decoration: underline; text-underline-offset: 2px; }
-    .post-body .table-wrapper { border-radius: var(--radius-sm); overflow-x: auto; border: 1px solid var(--border); margin: 8px 0 28px; }
-    .post-body table { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 0.92rem; background: var(--white); margin: 0; }
+    .post-body .table-wrapper { border-radius: var(--radius-sm); overflow-x: auto; border: 1px solid var(--border); margin: 8px 0 28px; max-width: 100%; -webkit-overflow-scrolling: touch; }
+    .post-body table { width: auto; min-width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 0.92rem; background: var(--white); margin: 0; }
     .post-body th { background: var(--cream-dark); color: var(--brown); font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--border); border-right: 1px solid var(--border); white-space: nowrap; }
     .post-body th:last-child { border-right: none; }
     .post-body td { color: var(--brown-mid); padding: 10px 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
