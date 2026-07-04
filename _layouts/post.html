@@ -114,6 +114,9 @@
   {% include footer.html %}
 <script>
 document.querySelectorAll('.post-body table').forEach(function(table) {
+  var firstRow = table.querySelector('tr');
+  var cols = firstRow ? firstRow.children.length : 2;
+  if (cols > 2) table.style.minWidth = (cols * 160) + 'px';
   var wrapper = document.createElement('div');
   wrapper.className = 'table-wrapper';
   table.parentNode.insertBefore(wrapper, table);
