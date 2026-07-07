@@ -36,6 +36,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Pet Weight Calculator](https://petpawcalc.com/tools/pet-weight-calculator.html): Combined dog and cat weight checker. Lets users select species, then checks current weight against breed-typical ranges, plus an interactive 3-point Body Condition Score (BCS) self-check (ribs, waist, belly tuck). Links to the dedicated Dog Weight Calculator and Cat Weight Calculator for more detail.
 
+- [Dog Vaccination Schedule Calculator](https://petpawcalc.com/tools/dog-vaccination-schedule-calculator.html): Enter a dog's age and lifestyle (boarding/daycare, dog parks, outdoor/rural exposure) to get a personalized vaccine status list — core vaccines (DHPP, rabies) and lifestyle-driven non-core vaccines (Bordetella, leptospirosis, canine influenza) — flagged as due, upcoming, recommended, or up to date, with typical cost ranges per vaccine.
+
+- [Cat Vaccination Schedule Calculator](https://petpawcalc.com/tools/cat-vaccination-schedule-calculator.html): Enter a cat's age and lifestyle (indoor-only, indoor with other cats, outdoor access) to get a personalized vaccine status list — core vaccines (FVRCP, rabies) and lifestyle-driven FeLV recommendation — flagged as due, upcoming, recommended, or up to date, with typical cost ranges per vaccine.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.

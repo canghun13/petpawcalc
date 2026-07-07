@@ -1,0 +1,297 @@
+---
+layout: tool
+permalink: /tools/cat-vaccination-schedule-calculator.html
+title: Cat Vaccination Schedule Calculator — What Shots Are Due?
+description: Enter your cat's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered — with typical cost ranges. Free, instant results.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Vaccination Schedule Calculator",
+  "url": "https://petpawcalc.com/tools/cat-vaccination-schedule-calculator.html",
+  "description": "Enter your cat's age and lifestyle to get a personalized vaccine schedule showing which shots are due, upcoming, or already covered.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What vaccines does an indoor-only cat need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Even strictly indoor cats need core vaccines — FVRCP and rabies — since exposure can happen through open windows, other pets, or accidental escapes, and rabies is legally required in most areas. FeLV is generally only needed for cats with outdoor access or exposure to FeLV-positive cats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "At what age do kittens start vaccines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kittens typically start their FVRCP series at 6–8 weeks old, with follow-up doses every 3–4 weeks until at least 16 weeks. Rabies is usually given at 12–16 weeks, and FeLV testing/vaccination is often recommended in the same window for at-risk kittens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my cat need FeLV vaccine every year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FeLV vaccine schedules vary — an initial two-dose series is followed by a booster at one year, and then annual or every-other-year boosters depending on ongoing outdoor exposure. Indoor-only adult cats with no FeLV-positive housemates may not need continued boosters — ask your vet."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>💉 Cat Vaccination Schedule Calculator</h1>
+    <p>Enter your cat's age and lifestyle to see which vaccines are due now, coming up, or already covered — plus typical costs.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="kit-age-years">Cat's Age</label>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <input type="number" id="kit-age-years" min="0" max="25" step="1" placeholder="Years" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">yrs</span>
+        <input type="number" id="kit-age-months" min="0" max="11" step="1" placeholder="Months" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">mos</span>
+        <input type="number" id="kit-age-weeks" min="0" max="52" step="1" placeholder="Weeks" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">wks</span>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Under 1 year old? Just fill in months and/or weeks.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="kit-last-core">When was the last core vaccine round (FVRCP)?</label>
+      <select id="kit-last-core">
+        <option value="none">Never / just getting started</option>
+        <option value="lt1">Less than 1 year ago</option>
+        <option value="1to2">1–2 years ago</option>
+        <option value="gt2">More than 2 years ago / not sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="kit-lifestyle">Lifestyle</label>
+      <select id="kit-lifestyle">
+        <option value="indoor">Strictly indoor</option>
+        <option value="indoor_multi">Indoor, lives with other cats (some unknown history)</option>
+        <option value="outdoor">Outdoor access or exposure to outdoor cats</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateCatVaxSchedule()">Get My Cat's Vaccine Schedule →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="cvax-date"></span>
+      </div>
+      <h3 id="result-headline"></h3>
+      <p id="result-sub"></p>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('cvax-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- Vaccine list -->
+  <div id="vax-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 8px;">Your Cat's Vaccine Status</h2>
+    <p style="color: var(--brown-mid); font-size: 0.9rem; margin-bottom: 20px;">Based on age and lifestyle — confirm exact timing with your vet.</p>
+    <div id="vax-list"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general guidelines based on standard veterinary protocols (WSAVA / AAFP). Individual vaccine needs vary by region, health status, and vet judgment. Always confirm with your veterinarian.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Core vs. Non-Core Cat Vaccines</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Core vaccines</strong> are recommended for every cat, indoor or outdoor, because the diseases are common or severe enough to warrant protection regardless of lifestyle. These are FVRCP (feline viral rhinotracheitis, calicivirus, panleukopenia) and rabies, which is legally required in most areas.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>FeLV (feline leukemia)</strong> sits in a gray zone — it's considered core for kittens (since risk is highest early in life and exposure history is often unknown) but becomes non-core for adult indoor-only cats with no exposure to unknown-status cats. Outdoor cats or those living with FeLV-positive cats should stay on the FeLV vaccine schedule.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why "Indoor Only" Doesn't Mean "No Vaccines Needed"</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It's a common assumption that strictly indoor cats don't need much in the way of vaccination. In practice, indoor cats still need core vaccines. Rhinotracheitis and calicivirus are highly contagious respiratory viruses that can be carried in on clothing or by other pets, and panleukopenia (feline distemper) can survive on surfaces for a long time. Rabies exposure, while rare for indoor cats, is still possible through an accidental escape or an unvaccinated animal getting into the home — and it's the one vaccine where the legal requirement doesn't bend based on lifestyle.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Where lifestyle genuinely changes the calculation is with FeLV and other exposure-driven vaccines — that's where indoor-only status meaningfully reduces what's needed.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Adult Booster Schedules</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">After the kitten series and a one-year booster, many vets move FVRCP to a 3-year schedule for healthy adult cats. Rabies boosters follow local law and vaccine type — often 1 or 3 years. FeLV, when still indicated, typically follows an annual or every-other-year booster schedule depending on ongoing exposure risk.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If your cat's vaccine history is unknown — common with adopted or rescued cats — vets will often restart with a fresh series rather than assume partial protection, since there's no reliable way to confirm what was actually given previously.</p>
+
+    <div class="post-cta">
+      <p>Due for a wellness exam too? → <a href="/tools/cat-vet-visit-scheduler.html">Use the Cat Vet Visit Scheduler</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Want the full annual cost picture? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  #vax-section { margin-top: 20px !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function calculateCatVaxSchedule() {
+  const years = parseInt(document.getElementById('kit-age-years').value) || 0;
+  const months = parseInt(document.getElementById('kit-age-months').value) || 0;
+  const weeks = parseInt(document.getElementById('kit-age-weeks').value) || 0;
+  const lastCore = document.getElementById('kit-last-core').value;
+  const lifestyle = document.getElementById('kit-lifestyle').value;
+
+  const totalWeeks = (years * 52) + (months * 4.345) + weeks;
+  const isKitten = totalWeeks < 20;
+
+  const vaxItems = [];
+
+  if (isKitten) {
+    let status, note;
+    if (totalWeeks < 6) {
+      status = 'upcoming'; note = 'First FVRCP dose typically starts at 6–8 weeks.';
+    } else if (totalWeeks < 16) {
+      status = 'due'; note = 'Kittens need an FVRCP dose every 3–4 weeks until at least 16 weeks old.';
+    } else {
+      status = 'due'; note = 'The 16-week dose is the most important — it\'s given after maternal antibodies have faded enough for the vaccine to work.';
+    }
+    vaxItems.push({ name: 'FVRCP (Rhinotracheitis, Calicivirus, Panleukopenia)', core: true, status, note, cost: '$20–$40 per dose' });
+
+    if (totalWeeks < 12) {
+      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'First rabies shot typically given at 12–16 weeks, timing varies by state/local law.', cost: '$15–$30' });
+    } else {
+      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'First rabies shot is typically due now (12–16 week window) — check your local legal requirement.', cost: '$15–$30' });
+    }
+
+    if (lifestyle !== 'indoor') {
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: true, status: totalWeeks < 8 ? 'upcoming' : 'due', note: 'Recommended for kittens with any outdoor access or unknown exposure history — an initial series plus a one-year booster.', cost: '$25–$45 per dose' });
+    } else {
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'Often still given to kittens even if indoor-only, since future lifestyle isn\'t always predictable at this age. Discuss with your vet.', cost: '$25–$45 per dose' });
+    }
+  } else {
+    let fvrcpStatus, fvrcpNote;
+    if (lastCore === 'none') {
+      fvrcpStatus = 'due'; fvrcpNote = 'No record of a core series — start the kitten-style catch-up series with your vet.';
+    } else if (lastCore === 'lt1') {
+      fvrcpStatus = 'ok'; fvrcpNote = 'Given within the last year — likely still covered. Many vets move to a 3-year schedule after the first adult booster.';
+    } else if (lastCore === '1to2') {
+      fvrcpStatus = 'ok'; fvrcpNote = 'Likely still within a 3-year core schedule, but confirm with your vet\'s specific protocol.';
+    } else {
+      fvrcpStatus = 'due'; fvrcpNote = 'More than 2 years — due for a booster.';
+    }
+    vaxItems.push({ name: 'FVRCP (core)', core: true, status: fvrcpStatus, note: fvrcpNote, cost: '$20–$40' });
+    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Required by law in most areas — interval is 1 or 3 years depending on your local requirement and vaccine type.', cost: '$15–$30' });
+
+    if (lifestyle === 'outdoor') {
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'recommended', note: 'Recommended for cats with outdoor access — annual or every-other-year booster depending on ongoing exposure.', cost: '$25–$45' });
+    } else if (lifestyle === 'indoor_multi') {
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'Worth discussing if any housemate cats have unknown or FeLV-positive status.', cost: '$25–$45' });
+    } else {
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'ok', note: 'Strictly indoor adult cats with no FeLV-positive housemates typically don\'t need ongoing FeLV boosters — confirm with your vet.', cost: '—' });
+    }
+  }
+
+  const dueCount = vaxItems.filter(v => v.status === 'due').length;
+  document.getElementById('result-headline').textContent = isKitten
+    ? `Kitten vaccine series in progress`
+    : (dueCount > 0 ? `${dueCount} vaccine${dueCount !== 1 ? 's' : ''} due` : 'Vaccines look up to date');
+  document.getElementById('result-sub').textContent = isKitten
+    ? 'See the full series breakdown below.'
+    : 'See the detailed status for each vaccine below.';
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').classList.add('show');
+  document.getElementById('pdf-btn').style.display = 'block';
+
+  const statusStyles = {
+    due: { color: '#c0392b', bg: '#fdecea', label: 'Due now' },
+    upcoming: { color: '#e67e22', bg: '#fef3e6', label: 'Upcoming' },
+    recommended: { color: '#e67e22', bg: '#fef3e6', label: 'Recommended' },
+    consider: { color: 'var(--brown-mid)', bg: 'var(--cream)', label: 'Worth considering' },
+    ok: { color: '#27ae60', bg: '#eafaf1', label: 'Up to date' },
+  };
+
+  const vaxEl = document.getElementById('vax-list');
+  vaxEl.innerHTML = vaxItems.map(v => {
+    const s = statusStyles[v.status];
+    return `
+    <div style="display: flex; justify-content: space-between; gap: 14px; margin-bottom: 14px; padding: 14px 16px; background: ${s.bg}; border-radius: var(--radius); border-left: 3px solid ${s.color};">
+      <div>
+        <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${v.name} ${v.core ? '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(core)</span>' : '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(non-core)</span>'}</div>
+        <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">${v.note}</div>
+        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Typical cost: ${v.cost}</div>
+      </div>
+      <div style="flex-shrink:0; font-weight:700; color:${s.color}; font-size:0.85rem; white-space:nowrap;">${s.label}</div>
+    </div>
+  `;
+  }).join('');
+
+  document.getElementById('vax-section').style.display = 'block';
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

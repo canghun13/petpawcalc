@@ -1,0 +1,301 @@
+---
+layout: tool
+permalink: /tools/dog-vaccination-schedule-calculator.html
+title: Dog Vaccination Schedule Calculator — What Shots Are Due?
+description: Enter your dog's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered — with typical cost ranges. Free, instant results.
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Vaccination Schedule Calculator",
+  "url": "https://petpawcalc.com/tools/dog-vaccination-schedule-calculator.html",
+  "description": "Enter your dog's age and lifestyle to get a personalized vaccine schedule showing which shots are due, upcoming, or already covered.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What vaccines does a dog need every year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Core vaccines (DHPP and rabies) don't need to be given every year for most adult dogs — many vets use a 3-year schedule after the initial puppy series and first booster. Non-core vaccines like leptospirosis are typically annual if your dog is at risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "At what age do puppies start vaccines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puppies typically start their vaccine series at 6–8 weeks old, with follow-up doses every 3–4 weeks until at least 16 weeks. This spacing accounts for fading maternal antibodies, which can otherwise block the vaccine from working."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my indoor dog need non-core vaccines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on real exposure, not just whether your dog goes outside. Dogs who visit dog parks, boarding facilities, or groomers typically need Bordetella. Dogs in tick-heavy regions may benefit from a Lyme vaccine. A strictly indoor dog with no other-dog contact may need fewer non-core vaccines — ask your vet."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>💉 Dog Vaccination Schedule Calculator</h1>
+    <p>Enter your dog's age and lifestyle to see which vaccines are due now, coming up, or already behind them — plus typical costs.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="pup-age-years">Dog's Age</label>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <input type="number" id="pup-age-years" min="0" max="20" step="1" placeholder="Years" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">yrs</span>
+        <input type="number" id="pup-age-months" min="0" max="11" step="1" placeholder="Months" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">mos</span>
+        <input type="number" id="pup-age-weeks" min="0" max="52" step="1" placeholder="Weeks" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+        <span style="color: var(--brown-mid); font-size: 0.9rem;">wks</span>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Under 1 year old? Just fill in months and/or weeks.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="pup-last-core">When was the last core vaccine round (DHPP)?</label>
+      <select id="pup-last-core">
+        <option value="none">Never / just getting started</option>
+        <option value="lt1">Less than 1 year ago</option>
+        <option value="1to2">1–2 years ago</option>
+        <option value="gt2">More than 2 years ago / not sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pup-lifestyle">Lifestyle (select all that apply)</label>
+      <select id="pup-lifestyle" multiple style="height: 110px;">
+        <option value="boarding">Boarding, daycare, or grooming visits</option>
+        <option value="dogpark">Dog parks or off-leash areas</option>
+        <option value="outdoor">Hiking, camping, or rural/wooded areas</option>
+        <option value="none">Mostly indoors, no other-dog contact</option>
+      </select>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Hold Ctrl/Cmd to select more than one.</p>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateVaxSchedule()">Get My Dog's Vaccine Schedule →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="vax-date"></span>
+      </div>
+      <h3 id="result-headline"></h3>
+      <p id="result-sub"></p>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('vax-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- Vaccine list -->
+  <div id="vax-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 8px;">Your Dog's Vaccine Status</h2>
+    <p style="color: var(--brown-mid); font-size: 0.9rem; margin-bottom: 20px;">Based on age and lifestyle — confirm exact timing with your vet.</p>
+    <div id="vax-list"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general guidelines based on standard veterinary protocols (WSAVA / AAHA). Individual vaccine needs vary by region, health status, and vet judgment. Always confirm with your veterinarian.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Core vs. Non-Core Dog Vaccines</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Core vaccines</strong> are recommended for every dog regardless of lifestyle, because the diseases they prevent are common, severe, or spread easily. These are DHPP (distemper, hepatitis/adenovirus, parvovirus, parainfluenza) and rabies, which is legally required in most U.S. states.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Non-core vaccines</strong> are given based on real exposure risk — not just whether a dog "goes outside." Bordetella (kennel cough) matters for dogs in boarding, daycare, or grooming settings. Leptospirosis matters for dogs with exposure to wildlife, standing water, or rural areas. Lyme disease vaccine matters in tick-heavy regions. Canine influenza matters for dogs in high-density social settings.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Puppies Need Multiple Rounds</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Puppies are born with some immunity passed from their mother through colostrum — but that protection fades unpredictably somewhere between 6 and 16 weeks. A vaccine given too early can be neutralized by leftover maternal antibodies before it has a chance to work. That's why puppies get a series of doses every 3–4 weeks rather than one shot: it guarantees at least one dose lands after maternal immunity has faded enough for the vaccine to take hold.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The 16-week dose is considered the most important one for this reason. Skipping it — even if earlier doses were given on time — can leave a real gap in protection.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Adult Booster Schedules</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">After the puppy series and a one-year booster, many vets move core vaccines (DHPP) to a 3-year schedule for healthy adult dogs, based on research showing extended immunity. Rabies boosters follow local law — often every 1 or 3 years depending on the vaccine type and jurisdiction. Non-core vaccines are typically re-evaluated annually based on lifestyle, since exposure risk can change year to year.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Titer testing — a blood test measuring existing antibody levels — is an option some owners use to check whether a booster is actually needed before automatically re-vaccinating. It's not available or appropriate for every vaccine (notably not a substitute for legally required rabies boosters), so it's worth discussing with your vet rather than assuming it applies across the board.</p>
+
+    <div class="post-cta">
+      <p>Due for a wellness exam too? → <a href="/tools/dog-vet-visit-scheduler.html">Use the Dog Vet Visit Scheduler</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Want the full annual cost picture? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  #vax-section { margin-top: 20px !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function calculateVaxSchedule() {
+  const years = parseInt(document.getElementById('pup-age-years').value) || 0;
+  const months = parseInt(document.getElementById('pup-age-months').value) || 0;
+  const weeks = parseInt(document.getElementById('pup-age-weeks').value) || 0;
+  const lastCore = document.getElementById('pup-last-core').value;
+  const lifestyleSelect = document.getElementById('pup-lifestyle');
+  const lifestyle = Array.from(lifestyleSelect.selectedOptions).map(o => o.value);
+
+  const totalWeeks = (years * 52) + (months * 4.345) + weeks;
+  const isPuppy = totalWeeks < 20; // under ~4.5 months, still in primary series window
+
+  const vaxItems = [];
+
+  if (isPuppy) {
+    let status, note;
+    if (totalWeeks < 6) {
+      status = 'upcoming'; note = 'First DHPP dose typically starts at 6–8 weeks.';
+    } else if (totalWeeks < 16) {
+      status = 'due'; note = 'Puppies need a DHPP dose every 3–4 weeks until at least 16 weeks old.';
+    } else {
+      status = 'due'; note = 'The 16-week dose is the most important — it\'s given after maternal antibodies have faded enough for the vaccine to work.';
+    }
+    vaxItems.push({ name: 'DHPP (Distemper, Hepatitis, Parvovirus, Parainfluenza)', core: true, status, note, cost: '$20–$40 per dose' });
+
+    if (totalWeeks < 12) {
+      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'First rabies shot typically given at 12–16 weeks, timing varies by state law.', cost: '$15–$30' });
+    } else {
+      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'First rabies shot is typically due now (12–16 week window) — check your state\'s legal requirement.', cost: '$15–$30' });
+    }
+  } else {
+    // adult/senior logic
+    let dhppStatus, dhppNote;
+    if (lastCore === 'none') {
+      dhppStatus = 'due'; dhppNote = 'No record of a core series — start the puppy-style catch-up series with your vet.';
+    } else if (lastCore === 'lt1') {
+      dhppStatus = 'ok'; dhppNote = 'Given within the last year — likely still covered. Many vets move to a 3-year schedule after the first adult booster.';
+    } else if (lastCore === '1to2') {
+      dhppStatus = 'ok'; dhppNote = 'Likely still within a 3-year core schedule, but confirm with your vet\'s specific protocol.';
+    } else {
+      dhppStatus = 'due'; dhppNote = 'More than 2 years — due for a booster, or ask your vet about titer testing to check existing immunity first.';
+    }
+    vaxItems.push({ name: 'DHPP (core)', core: true, status: dhppStatus, note: dhppNote, cost: '$20–$40' });
+    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Required by law in most states — interval is 1 or 3 years depending on your local requirement and vaccine type.', cost: '$15–$30' });
+  }
+
+  // Non-core based on lifestyle
+  if (lifestyle.includes('boarding')) {
+    vaxItems.push({ name: 'Bordetella (kennel cough)', core: false, status: 'recommended', note: 'Recommended for dogs in boarding, daycare, or grooming settings — often required by these facilities.', cost: '$20–$35' });
+  }
+  if (lifestyle.includes('outdoor')) {
+    vaxItems.push({ name: 'Leptospirosis', core: false, status: 'recommended', note: 'Recommended for dogs exposed to standing water, wildlife, or rural/wooded areas.', cost: '$20–$30' });
+  }
+  if (lifestyle.includes('dogpark') || lifestyle.includes('boarding')) {
+    vaxItems.push({ name: 'Canine Influenza', core: false, status: 'consider', note: 'Worth discussing if your dog is frequently around unfamiliar dogs in group settings.', cost: '$25–$40' });
+  }
+  if (lifestyle.length === 0 || lifestyle.includes('none')) {
+    vaxItems.push({ name: 'Non-core vaccines', core: false, status: 'ok', note: 'Based on a mostly indoor lifestyle with limited other-dog contact, additional non-core vaccines may not be necessary — confirm with your vet.', cost: '—' });
+  }
+
+  const dueCount = vaxItems.filter(v => v.status === 'due').length;
+  document.getElementById('result-headline').textContent = isPuppy
+    ? `Puppy vaccine series in progress`
+    : (dueCount > 0 ? `${dueCount} vaccine${dueCount !== 1 ? 's' : ''} due` : 'Vaccines look up to date');
+  document.getElementById('result-sub').textContent = isPuppy
+    ? 'See the full series breakdown below.'
+    : 'See the detailed status for each vaccine below.';
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').classList.add('show');
+  document.getElementById('pdf-btn').style.display = 'block';
+
+  const statusStyles = {
+    due: { color: '#c0392b', bg: '#fdecea', label: 'Due now' },
+    upcoming: { color: '#e67e22', bg: '#fef3e6', label: 'Upcoming' },
+    recommended: { color: '#e67e22', bg: '#fef3e6', label: 'Recommended' },
+    consider: { color: 'var(--brown-mid)', bg: 'var(--cream)', label: 'Worth considering' },
+    ok: { color: '#27ae60', bg: '#eafaf1', label: 'Up to date' },
+  };
+
+  const vaxEl = document.getElementById('vax-list');
+  vaxEl.innerHTML = vaxItems.map(v => {
+    const s = statusStyles[v.status];
+    return `
+    <div style="display: flex; justify-content: space-between; gap: 14px; margin-bottom: 14px; padding: 14px 16px; background: ${s.bg}; border-radius: var(--radius); border-left: 3px solid ${s.color};">
+      <div>
+        <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${v.name} ${v.core ? '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(core)</span>' : '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(non-core)</span>'}</div>
+        <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">${v.note}</div>
+        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Typical cost: ${v.cost}</div>
+      </div>
+      <div style="flex-shrink:0; font-weight:700; color:${s.color}; font-size:0.85rem; white-space:nowrap;">${s.label}</div>
+    </div>
+  `;
+  }).join('');
+
+  document.getElementById('vax-section').style.display = 'block';
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
