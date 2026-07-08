@@ -7,6 +7,8 @@ date: 2026-05-19
 read_time: 11
 slug: what-to-feed-pregnant-dog
 faqs:
+  - q: "What's a good diet for a pregnant dog?"
+    a: "A complete puppy food or an \"all life stages\"/\"growth and reproduction\" formula meeting AAFCO standards, fed in gradually increasing amounts as pregnancy progresses. Avoid calcium supplements, raw meat, and standard adult maintenance food from week 4–5 onward — the calorie and nutrient density isn't sufficient for late pregnancy and nursing."
   - q: "What is the best food to feed a pregnant dog?"
     a: "A high-quality puppy food or a formula labeled \"for all life stages\" or \"for growth and reproduction\" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward."
   - q: "Can I give my pregnant dog extra calcium?"
@@ -269,6 +271,9 @@ If you want the short version before reading the full guide:
 ---
 
 ## Frequently Asked Questions
+
+**What's a good diet for a pregnant dog?**
+A complete puppy food or an "all life stages"/"growth and reproduction" formula meeting AAFCO standards, fed in gradually increasing amounts as pregnancy progresses. Avoid calcium supplements, raw meat, and standard adult maintenance food from week 4–5 onward — the calorie and nutrient density isn't sufficient for late pregnancy and nursing.
 
 **What is the best food to feed a pregnant dog?**
 A high-quality puppy food or a formula labeled "for all life stages" or "for growth and reproduction" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward.

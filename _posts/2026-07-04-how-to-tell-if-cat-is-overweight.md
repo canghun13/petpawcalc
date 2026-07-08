@@ -7,8 +7,12 @@ date: 2026-07-04
 read_time: 9
 slug: how-to-tell-if-cat-is-overweight
 faqs:
+  - q: "Is my cat fat?"
+    a: "The quickest way to check is the rib test: run your fingers along your cat's ribcage with light pressure. If you can't feel individual ribs at all, or have to press firmly to find them, your cat is likely overweight. Combine this with the waist check for a more reliable answer than the scale alone."
   - q: "How can I tell if my cat is overweight without a scale?"
     a: "Use the three hands-on checks: the rib test (can you feel ribs with light pressure?), the waist check (visible narrowing from above?), and the belly check (slight upward tuck from the side, not a sagging or rounded belly?). A cat that fails two or three of these is likely carrying excess weight, regardless of what they weigh on a scale."
+  - q: "How can I tell if my kitten is overweight?"
+    a: "Kittens should feel lean with ribs easily palpable, similar to adult cats, but growth spurts can make weight checks trickier to interpret. Ask your vet to plot your kitten's growth on a curve at each check-up rather than fixating on absolute weight alone."
   - q: "Is the saggy pouch on my cat's belly a sign they're fat?"
     a: "Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, squishy fat pad (about the size of a kiwi) is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight."
   - q: "How much weight should my cat lose per week?"
@@ -175,8 +179,14 @@ Your vet can confirm your at-home BCS assessment, rule out underlying conditions
 
 ## Frequently Asked Questions
 
+**Is my cat fat?**
+The quickest way to check is the rib test: run your fingers along your cat's ribcage with light pressure. If you can't feel individual ribs at all, or have to press firmly to find them, your cat is likely overweight. Combine this with the waist check (a visible narrowing behind the ribs when viewed from above) for a more reliable answer than the scale alone.
+
 **How can I tell if my cat is overweight without a scale?**
 Use the three hands-on checks: the rib test (can you feel ribs with light pressure?), the waist check (visible narrowing from above?), and the belly check (slight upward tuck from the side, not a sagging or rounded belly?). A cat that fails two or three of these is likely carrying excess weight, regardless of what they weigh on a scale.
+
+**How can I tell if my kitten is overweight?**
+Kittens should feel lean with ribs easily palpable, similar to adult cats, but growth spurts can make weight checks trickier to interpret. Rather than fixating on absolute weight, ask your vet to plot your kitten's growth on a curve at each check-up — a kitten tracking well above their expected curve for age and breed may be gaining too fast, which is worth addressing early rather than waiting until adulthood.
 
 **Is the saggy pouch on my cat's belly a sign they're fat?**
 Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, squishy fat pad (about the size of a kiwi) is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight.
