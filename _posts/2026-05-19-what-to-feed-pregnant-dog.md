@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "What to Feed a Pregnant Dog: Complete Nutrition Guide by Week"
-description: "What to feed a pregnant dog week by week — from week 1 through nursing. Exact food types, portion increases, supplements to avoid, and a printable feeding schedule."
+title: "What to Feed a Pregnant Dog: Complete Diet & Nutrition Guide by Week"
+description: "What to feed a pregnant dog week by week — the best diet, food types, portion increases, supplements to avoid, and a printable feeding schedule."
 category: Dog Nutrition
 date: 2026-05-19
 read_time: 11

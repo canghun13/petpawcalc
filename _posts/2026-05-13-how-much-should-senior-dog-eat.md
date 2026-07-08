@@ -7,6 +7,8 @@ date: 2026-05-13
 read_time: 11
 slug: how-much-should-senior-dog-eat
 faqs:
+  - q: "How much should I feed my senior dog?"
+    a: "Most senior dogs need roughly 20–30% fewer calories than they did as active adults, translated into a daily food amount based on their target weight and activity level. A 30 lb senior dog at low activity needs approximately 510–595 calories per day — check your food's kcal/cup to convert that into an exact serving size."
   - q: "How much should a senior dog eat per day?"
     a: "Most senior dogs need roughly 20–30% fewer calories than they did as active adults. A 30 lb senior dog at low activity needs approximately 510–595 calories per day, depending on activity level. Use your dog's target weight (not necessarily current weight) and a senior activity multiplier of 1.2–1.4× their Resting Energy Requirement to calculate a personalized number."
   - q: "Do senior dogs need less food or more food?"
@@ -239,6 +241,9 @@ Muscle loss in seniors often shows first in the hindquarters and temporal muscle
 Sudden changes in appetite, water intake, or energy warrant a vet visit — not just a diet adjustment. These can be early signs of conditions (thyroid disease, diabetes, kidney disease) that require diagnosis before dietary changes are made.
 
 ## Frequently Asked Questions
+
+**How much should I feed my senior dog?**
+Most senior dogs need roughly 20–30% fewer calories than they did as active adults, translated into a daily food amount based on their target weight and activity level. A 30 lb senior dog at low activity needs approximately 510–595 calories per day — check your food's kcal/cup to convert that into an exact serving size.
 
 **How much should a senior dog eat per day?**
 Most senior dogs need roughly 20–30% fewer calories than they did as active adults. A 30 lb senior dog at low activity needs approximately 510–595 calories per day, depending on activity level. Use your dog's target weight (not necessarily current weight) and a senior activity multiplier of 1.2–1.4× their Resting Energy Requirement to calculate a personalized number.
