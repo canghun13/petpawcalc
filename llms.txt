@@ -88,6 +88,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Three at-home body condition checks for cats (rib test, waist check, belly check), explains the primordial pouch and how it differs from excess fat, the 1-9 BCS scale, and a critical warning against crash dieting cats due to hepatic lipidosis risk.
 
+- [Puppy and Kitten Vaccination Schedule: The Complete Guide](https://petpawcalc.com/blog/puppy-kitten-vaccination-schedule): Week-by-week core vaccine timeline for puppies (DHPP, rabies) and kittens (FVRCP, rabies, FeLV), explains why multiple doses are needed (maternal antibody interference), non-core vaccines by lifestyle, adult booster schedules, and typical costs.
+
 ## About
 
 PetPawCalc is focused on a single niche: calculators and practical guides for US pet owners. All tools are free, require no account, and are designed to give immediately usable outputs. Content follows veterinary guidelines and includes disclaimers where appropriate. The site does not provide medical diagnoses or medication dosing.
