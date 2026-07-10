@@ -1,0 +1,246 @@
+---
+layout: tool
+title: Dog & Cat Dental Cleaning Cost Calculator
+description: Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia, bloodwork, and potential tooth extractions. Free and instant.
+permalink: /tools/dental-cleaning-cost-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dental Cleaning Cost Calculator",
+  "url": "https://petpawcalc.com/tools/dental-cleaning-cost-calculator.html",
+  "description": "Estimate the total cost of a professional dental cleaning for a dog or cat, including anesthesia, bloodwork, and potential extractions.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does dog teeth cleaning cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A routine dog dental cleaning under anesthesia typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does cat teeth cleaning cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A routine cat dental cleaning under anesthesia typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is anesthesia-free dental cleaning a cheaper alternative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anesthesia-free cleanings ($150–$350) only remove visible surface tartar and cannot clean below the gumline, where most periodontal disease actually lives. The AVMA, AAHA, and American Veterinary Dental College all oppose anesthesia-free cleaning as a substitute for a proper anesthetic dental, since it's cosmetic rather than medically effective."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🦷 Dental Cleaning Cost Calculator</h1>
+    <p>Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia, bloodwork, and possible extractions.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="dc-species">What pet do you have?</label>
+      <select id="dc-species" onchange="toggleDcSpecies()">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div id="dc-form" style="display:none;">
+      <div class="form-group">
+        <label for="dc-severity">Dental Condition (based on your vet's exam or grading)</label>
+        <select id="dc-severity">
+          <option value="mild">Mild — routine cleaning, no extractions expected</option>
+          <option value="moderate">Moderate — a few extractions likely</option>
+          <option value="severe">Severe — multiple extractions expected</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="dc-teeth-group" style="display:none;">
+        <label for="dc-teeth-count">Estimated Number of Teeth Needing Extraction</label>
+        <input type="number" id="dc-teeth-count" min="1" max="20" step="1" placeholder="e.g. 3">
+      </div>
+
+      <div class="form-group">
+        <label for="dc-bloodwork">Include pre-anesthetic bloodwork?</label>
+        <select id="dc-bloodwork">
+          <option value="yes">Yes (recommended, especially age 5+)</option>
+          <option value="no">No / already have recent results</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" id="dc-btn" onclick="calculateDental()" style="display:none;">Estimate Total Cost →</button>
+
+    <div class="result-box" id="dc-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="dc-date"></span>
+      </div>
+      <h3 id="dc-result-total"></h3>
+      <div id="dc-result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="dc-pdf-btn" onclick="doPrint('dc-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general cost estimates based on national averages. Actual pricing varies by location, clinic type, and your pet's specific dental findings, which are only confirmed once your vet examines the mouth and takes dental X-rays. Always request a written estimate before scheduling.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Extractions Drive the Final Bill</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A quoted "dental cleaning" price almost always assumes a routine cleaning with no extractions. In practice, dogs and cats with any meaningful dental disease often need one or more teeth removed once the vet can see below the gumline under anesthesia — something that isn't fully visible during a regular awake exam. Simple extractions run $150–$350 per tooth; more complex surgical extractions (multi-rooted teeth requiring bone removal) can run $300–$500 or more per tooth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This is why a $400 quote can become a $1,500+ final bill on the day of surgery — the estimate typically doesn't include extractions because the exact number isn't known until the vet is looking at dental X-rays with your pet already under anesthesia. Ask your vet to quote X-rays and likely extractions as a separate line item upfront so you aren't caught off guard.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Anesthesia Is Required</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A dog or cat's tooth is roughly 60% below the gumline, which is where most periodontal disease actually develops. Cleaning that area requires scaling and probing that no animal will tolerate while awake — anesthesia isn't optional padding on the bill, it's what makes a real cleaning possible at all. "Anesthesia-free" cleanings can only address visible surface tartar above the gumline and are considered cosmetic rather than medically effective by every major veterinary dental body (AVMA, AAHA, AVDC).</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Pre-anesthetic bloodwork exists to confirm it's safe to put your pet under — checking organ function before administering anesthesia drugs. It's often optional for young healthy pets but strongly recommended starting around age 5, when hidden organ issues become more common and more relevant to anesthesia risk.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How Often Is a Dental Cleaning Needed?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Most dogs and cats benefit from their first professional cleaning around 2–3 years of age, then every 1–3 years afterward depending on how quickly tartar builds up. Small breed dogs (Yorkies, Chihuahuas, Dachshunds) often need cleanings more frequently — sometimes annually — because their teeth are more crowded, which traps more plaque. Consistent at-home brushing can meaningfully extend the interval between professional cleanings, though it doesn't eliminate the need for them entirely.</p>
+
+    <div class="post-cta">
+      <p>Want the full breakdown of extraction pricing and anesthesia? → <a href="/blog/dog-cat-dental-cleaning-cost/">Read: Dog & Cat Dental Cleaning Cost — What to Expect</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Want the full annual cost picture? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function toggleDcSpecies() {
+  const species = document.getElementById('dc-species').value;
+  document.getElementById('dc-form').style.display = species ? 'block' : 'none';
+  document.getElementById('dc-btn').style.display = species ? 'block' : 'none';
+  document.getElementById('dc-result').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('dc-severity').addEventListener('change', function() {
+    document.getElementById('dc-teeth-group').style.display = this.value === 'mild' ? 'none' : 'block';
+  });
+});
+
+function calculateDental() {
+  const species = document.getElementById('dc-species').value;
+  const severity = document.getElementById('dc-severity').value;
+  const teethCount = parseInt(document.getElementById('dc-teeth-count').value) || (severity === 'moderate' ? 3 : severity === 'severe' ? 8 : 0);
+  const bloodwork = document.getElementById('dc-bloodwork').value;
+
+  let baseLow, baseHigh;
+  if (species === 'dog') { baseLow = 300; baseHigh = 700; }
+  else { baseLow = 300; baseHigh = 600; }
+
+  let extractLow = 0, extractHigh = 0;
+  if (severity !== 'mild' && teethCount > 0) {
+    extractLow = teethCount * 150;
+    extractHigh = teethCount * (severity === 'severe' ? 500 : 350);
+  }
+
+  let bloodLow = 0, bloodHigh = 0;
+  if (bloodwork === 'yes') { bloodLow = 50; bloodHigh = 120; }
+
+  const totalLow = baseLow + extractLow + bloodLow;
+  const totalHigh = baseHigh + extractHigh + bloodHigh;
+
+  document.getElementById('dc-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
+
+  let breakdown = `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Base cleaning (${species === 'dog' ? 'dog' : 'cat'})</span><span>$${baseLow}–$${baseHigh}</span></div>`;
+  if (bloodwork === 'yes') {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Pre-anesthetic bloodwork</span><span>$${bloodLow}–$${bloodHigh}</span></div>`;
+  }
+  if (severity !== 'mild' && teethCount > 0) {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Extractions (${teethCount} teeth est.)</span><span>$${extractLow.toLocaleString()}–$${extractHigh.toLocaleString()}</span></div>`;
+  }
+  document.getElementById('dc-result-breakdown').innerHTML = breakdown;
+
+  document.getElementById('dc-result').style.display = 'block';
+  document.getElementById('dc-result').classList.add('show');
+  document.getElementById('dc-pdf-btn').style.display = 'block';
+  document.getElementById('dc-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

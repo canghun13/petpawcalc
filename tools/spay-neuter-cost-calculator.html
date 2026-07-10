@@ -1,0 +1,277 @@
+---
+layout: tool
+title: Spay/Neuter Cost Calculator — Dog & Cat Surgery Cost Estimate
+description: Estimate the total cost of spaying or neutering your dog or cat, including surgery, pre-surgical bloodwork, pain medication, and optional extras. Free and instant.
+permalink: /tools/spay-neuter-cost-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Spay/Neuter Cost Calculator",
+  "url": "https://petpawcalc.com/tools/spay-neuter-cost-calculator.html",
+  "description": "Estimate the total cost of spaying or neutering a dog or cat, including surgery, bloodwork, pain medication, and optional extras.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to spay or neuter a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At a private veterinary clinic, spaying a dog typically costs $200–$700 and neutering costs $150–$450, with large breeds costing more due to increased anesthesia and surgical time. Low-cost clinics and shelters often charge $50–$150 for either procedure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to spay or neuter a cat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At a private veterinary clinic, spaying a cat typically costs $200–$400 and neutering costs $100–$250. Low-cost clinics and community programs frequently offer both procedures for $30–$100, sometimes less through subsidized voucher programs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is spay/neuter surgery covered by pet insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard accident-and-illness pet insurance plans typically do not cover spay/neuter surgery, since it's considered elective preventive care rather than an accident or illness. Some insurers offer it as part of an optional wellness add-on for an extra monthly fee."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>✂️ Spay/Neuter Cost Calculator</h1>
+    <p>Estimate the total cost of spaying or neutering your dog or cat, including surgery, bloodwork, and common extras.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="sn-species">What pet do you have?</label>
+      <select id="sn-species" onchange="toggleSnSpecies()">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div id="sn-dog-form" style="display:none;">
+      <div class="form-group">
+        <label for="sn-dog-sex">Procedure</label>
+        <select id="sn-dog-sex">
+          <option value="spay">Spay (female)</option>
+          <option value="neuter">Neuter (male)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sn-dog-weight">Dog's Weight (lbs)</label>
+        <input type="number" id="sn-dog-weight" min="1" max="220" step="1" placeholder="e.g. 45">
+      </div>
+    </div>
+
+    <div id="sn-cat-form" style="display:none;">
+      <div class="form-group">
+        <label for="sn-cat-sex">Procedure</label>
+        <select id="sn-cat-sex">
+          <option value="spay">Spay (female)</option>
+          <option value="neuter">Neuter (male)</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="sn-common-form" style="display:none;">
+      <div class="form-group">
+        <label for="sn-clinic-type">Clinic Type</label>
+        <select id="sn-clinic-type">
+          <option value="private">Private veterinary clinic</option>
+          <option value="lowcost">Low-cost / shelter-affiliated clinic</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sn-extras">Add-ons (select all that apply)</label>
+        <select id="sn-extras" multiple style="height: 90px;">
+          <option value="bloodwork">Pre-surgical bloodwork</option>
+          <option value="microchip">Microchip during surgery</option>
+          <option value="ecollar">E-collar / recovery cone</option>
+        </select>
+        <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Hold Ctrl/Cmd to select more than one.</p>
+      </div>
+    </div>
+
+    <button class="btn-calculate" id="sn-btn" onclick="calculateSpayNeuter()" style="display:none;">Estimate Total Cost →</button>
+
+    <div class="result-box" id="sn-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="sn-date"></span>
+      </div>
+      <h3 id="sn-result-total"></h3>
+      <div id="sn-result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="sn-pdf-btn" onclick="doPrint('sn-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general cost estimates based on national averages. Actual pricing varies significantly by location, clinic, and your pet's individual health. Always request a written estimate from your vet before scheduling surgery.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Spay Costs More Than Neuter</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Spaying (ovariohysterectomy) is abdominal surgery — the vet accesses and removes the ovaries, fallopian tubes, and uterus through an incision into the abdominal cavity. It requires more surgical time, more anesthesia, and a longer recovery. Neutering (castration) is simpler because the testicles are externally accessible, making the procedure faster with less invasive access. This difference in complexity is the main reason spay surgery consistently costs more than neuter surgery across nearly every clinic and region.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For dogs specifically, size adds another cost factor on top of the sex difference: larger dogs need more anesthesia by body weight and longer surgical time, so a spay for a 90 lb dog costs meaningfully more than the same procedure for a 15 lb dog.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Private Clinic vs. Low-Cost Clinic</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Low-cost and shelter-affiliated clinics can charge a fraction of private clinic prices — often 50-70% less — by using high-volume scheduling, streamlined processes, and nonprofit subsidies. They use the same surgical techniques and anesthesia protocols as full-service vets, but typically don't offer 24-hour monitoring or advanced diagnostics for complicated cases, and may have longer wait times for an appointment.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Organizations like the ASPCA, local humane societies, and Friends of Animals offer vouchers or fixed low-price certificates that can bring costs down further — often based on income eligibility or simply available to any pet owner in the service area.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What Can Add to the Cost</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Pre-surgical bloodwork ($50–$120) is often recommended, especially for pets over 5 years old, to confirm it's safe to administer anesthesia. Retained testicles (cryptorchidism) in male dogs and cats require a more invasive, more expensive surgery similar in cost to a spay, since the vet has to locate and remove testicles that haven't descended normally. A pet in heat or pregnant at the time of surgery typically incurs additional fees due to increased surgical complexity and bleeding risk.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Many vets combine spay/neuter with other procedures at the same visit — most commonly microchipping, since the pet is already under anesthesia and it eliminates a separate injection later.</p>
+
+    <div class="post-cta">
+      <p>Want the full timing and recovery guide? → <a href="/blog/spay-neuter-cost-and-timing/">Read: Spay or Neuter Your Pet — Cost, Timing, and What to Expect</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Want the full annual cost picture? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function toggleSnSpecies() {
+  const species = document.getElementById('sn-species').value;
+  document.getElementById('sn-dog-form').style.display = species === 'dog' ? 'block' : 'none';
+  document.getElementById('sn-cat-form').style.display = species === 'cat' ? 'block' : 'none';
+  document.getElementById('sn-common-form').style.display = species ? 'block' : 'none';
+  document.getElementById('sn-btn').style.display = species ? 'block' : 'none';
+  document.getElementById('sn-result').style.display = 'none';
+}
+
+function calculateSpayNeuter() {
+  const species = document.getElementById('sn-species').value;
+  const clinicType = document.getElementById('sn-clinic-type').value;
+  const extras = Array.from(document.getElementById('sn-extras').selectedOptions).map(o => o.value);
+
+  let low, high, procedureLabel;
+
+  if (species === 'dog') {
+    const sex = document.getElementById('sn-dog-sex').value;
+    const weight = parseFloat(document.getElementById('sn-dog-weight').value) || 45;
+    const sizeMultiplier = weight < 25 ? 1 : weight < 50 ? 1.15 : weight < 90 ? 1.35 : 1.6;
+
+    if (clinicType === 'private') {
+      if (sex === 'spay') { low = 200 * sizeMultiplier; high = 700 * sizeMultiplier; }
+      else { low = 150 * sizeMultiplier; high = 450 * sizeMultiplier; }
+    } else {
+      if (sex === 'spay') { low = 50; high = 150 * sizeMultiplier; }
+      else { low = 30; high = 100 * sizeMultiplier; }
+    }
+    procedureLabel = `Dog ${sex === 'spay' ? 'Spay' : 'Neuter'}`;
+  } else {
+    const sex = document.getElementById('sn-cat-sex').value;
+    if (clinicType === 'private') {
+      if (sex === 'spay') { low = 200; high = 400; }
+      else { low = 100; high = 250; }
+    } else {
+      low = 30; high = 100;
+    }
+    procedureLabel = `Cat ${sex === 'spay' ? 'Spay' : 'Neuter'}`;
+  }
+
+  let extrasLow = 0, extrasHigh = 0;
+  const extraLines = [];
+  if (extras.includes('bloodwork')) { extrasLow += 50; extrasHigh += 120; extraLines.push(['Pre-surgical bloodwork', '$50–$120']); }
+  if (extras.includes('microchip')) { extrasLow += 35; extrasHigh += 60; extraLines.push(['Microchip', '$35–$60']); }
+  if (extras.includes('ecollar')) { extrasLow += 10; extrasHigh += 25; extraLines.push(['E-collar', '$10–$25']); }
+
+  const totalLow = Math.round(low + extrasLow);
+  const totalHigh = Math.round(high + extrasHigh);
+
+  document.getElementById('sn-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
+
+  let breakdown = `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${procedureLabel} surgery${clinicType === 'lowcost' ? ' (low-cost clinic)' : ''}</span><span>$${Math.round(low)}–$${Math.round(high)}</span></div>`;
+  extraLines.forEach(([label, range]) => {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${label}</span><span>${range}</span></div>`;
+  });
+  document.getElementById('sn-result-breakdown').innerHTML = breakdown;
+
+  document.getElementById('sn-result').style.display = 'block';
+  document.getElementById('sn-result').classList.add('show');
+  document.getElementById('sn-pdf-btn').style.display = 'block';
+  document.getElementById('sn-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

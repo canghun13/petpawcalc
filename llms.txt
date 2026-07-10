@@ -40,6 +40,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Cat Vaccination Schedule Calculator](https://petpawcalc.com/tools/cat-vaccination-schedule-calculator.html): Enter a cat's age and lifestyle (indoor-only, indoor with other cats, outdoor access) to get a personalized vaccine status list — core vaccines (FVRCP, rabies) and lifestyle-driven FeLV recommendation — flagged as due, upcoming, recommended, or up to date, with typical cost ranges per vaccine.
 
+- [Spay/Neuter Cost Calculator](https://petpawcalc.com/tools/spay-neuter-cost-calculator.html): Select dog or cat, spay or neuter, clinic type (private vs. low-cost), and optional add-ons (bloodwork, microchip, e-collar) to get an instant total cost estimate. Accounts for dog size/weight as a cost multiplier.
+
+- [Dental Cleaning Cost Calculator](https://petpawcalc.com/tools/dental-cleaning-cost-calculator.html): Select dog or cat and estimated dental severity (mild/moderate/severe, with expected number of extractions) plus optional pre-anesthetic bloodwork, to get a total cost estimate covering base cleaning, bloodwork, and per-tooth extraction costs.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -89,6 +93,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Three at-home body condition checks for cats (rib test, waist check, belly check), explains the primordial pouch and how it differs from excess fat, the 1-9 BCS scale, and a critical warning against crash dieting cats due to hepatic lipidosis risk.
 
 - [Puppy and Kitten Vaccination Schedule: The Complete Guide](https://petpawcalc.com/blog/puppy-kitten-vaccination-schedule): Week-by-week core vaccine timeline for puppies (DHPP, rabies) and kittens (FVRCP, rabies, FeLV), explains why multiple doses are needed (maternal antibody interference), non-core vaccines by lifestyle, adult booster schedules, and typical costs.
+
+- [Spay or Neuter Your Pet: Cost, Timing, and What to Expect](https://petpawcalc.com/blog/spay-neuter-cost-and-timing): Covers spay vs. neuter cost differences by species and dog size, private vs. low-cost clinic pricing, factors that add to cost (cryptorchidism, being in heat), best age for the procedure, recovery timeline, and where to find low-cost or free programs.
+
+- [Dog and Cat Dental Cleaning Cost: What to Expect](https://petpawcalc.com/blog/dog-cat-dental-cleaning-cost): Explains why extractions (not the base cleaning) drive the final bill, why anesthesia is medically required rather than optional, why anesthesia-free cleanings are opposed by major veterinary bodies, typical cost breakdown, and how often cleanings are needed by breed.
 
 ## About
 
