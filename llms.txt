@@ -98,6 +98,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Dog and Cat Dental Cleaning Cost: What to Expect](https://petpawcalc.com/blog/dog-cat-dental-cleaning-cost): Explains why extractions (not the base cleaning) drive the final bill, why anesthesia is medically required rather than optional, why anesthesia-free cleanings are opposed by major veterinary bodies, typical cost breakdown, and how often cleanings are needed by breed.
 
+- [Pet Euthanasia: What It Costs and What to Expect](https://petpawcalc.com/blog/pet-euthanasia-cost-and-what-to-expect): A compassionate, practical overview covering typical costs (clinic vs. in-home, cremation options), what the procedure involves, whether to be present, and questions worth asking a vet in advance. Written in an informational, non-clinical tone given the sensitivity of the topic — no calculator, by design.
+
 ## About
 
 PetPawCalc is focused on a single niche: calculators and practical guides for US pet owners. All tools are free, require no account, and are designed to give immediately usable outputs. Content follows veterinary guidelines and includes disclaimers where appropriate. The site does not provide medical diagnoses or medication dosing.

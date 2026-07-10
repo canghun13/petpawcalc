@@ -191,6 +191,7 @@ Yes. Quality of life assessment is useful for any dog facing serious illness, in
 - [How Much Should a Senior Dog Eat? A Calculator-Based Guide](/blog/how-much-should-senior-dog-eat/)
 - [How Often Should You Take Your Dog to the Vet? A Cost Breakdown by Age](/blog/how-often-vet-visits-dog-cost-by-age/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
+- [Pet Euthanasia: What It Costs and What to Expect](/blog/pet-euthanasia-cost-and-what-to-expect/)
 
 ---
 
