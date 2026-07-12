@@ -7,6 +7,10 @@ date: 2026-05-26
 read_time: 8
 slug: how-to-tell-if-dog-is-pregnant
 faqs:
+  - q: "What are the signs of pregnancy in dogs?"
+    a: "The clearest early signs are nipple enlargement and darkening (usually week 3–4), followed by increased appetite, a rounding belly (week 5+), and behavioral changes like nesting or increased affection. These signs alone aren't conclusive — a vet exam via ultrasound or blood test is the only reliable confirmation."
+  - q: "How can I tell if my dog is pregnant without a vet visit?"
+    a: "At-home signs to watch for include nipple enlargement and darkening, increased appetite, weight gain, a rounding abdomen from week 5 onward, and behavioral changes like nesting. None of these confirm pregnancy on their own — they can also appear during a false pregnancy — so a vet visit is the only way to know for certain."
   - q: "How soon can you tell if a dog is pregnant?"
     a: "The earliest reliable physical sign is nipple enlargement and darkening (pinking up), which typically appears around weeks 3–4. Veterinary confirmation is possible from week 3.5–4 via ultrasound or from week 4–5 via a relaxin blood test. Behavioral changes (reduced appetite, increased affection) may appear earlier but are not reliable indicators on their own."
   - q: "Can a dog show pregnancy signs and not be pregnant?"
@@ -114,6 +118,12 @@ If you suspect your dog is pregnant, the most important first step is a vet appo
 If the pregnancy was unintended, your vet can also discuss the option of spaying while pregnant, which eliminates risks associated with whelping and ends the pregnancy.
 
 ## Frequently Asked Questions
+
+**What are the signs of pregnancy in dogs?**
+The clearest early signs are nipple enlargement and darkening (usually week 3–4), followed by increased appetite, a rounding belly (week 5+), and behavioral changes like nesting or increased affection. These signs alone aren't conclusive — a vet exam via ultrasound or blood test is the only reliable confirmation.
+
+**How can I tell if my dog is pregnant without a vet visit?**
+At-home signs to watch for include nipple enlargement and darkening, increased appetite, weight gain, a rounding abdomen from week 5 onward, and behavioral changes like nesting. None of these confirm pregnancy on their own — they can also appear during a false pregnancy — so a vet visit is the only way to know for certain.
 
 **How soon can you tell if a dog is pregnant?**
 The earliest reliable physical sign is nipple enlargement and darkening (pinking up), which typically appears around weeks 3–4. Veterinary confirmation is possible from week 3.5–4 via ultrasound or from week 4–5 via a relaxin blood test. Behavioral changes (reduced appetite, increased affection) may appear earlier but are not reliable indicators on their own.
