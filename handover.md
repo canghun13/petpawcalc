@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-12
+최종 갱신: 2026-07-12 (2차)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -57,14 +57,14 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 - `dog-cat-dental-cleaning-cost` — Dental 계산기 짝 콘텐츠
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
 
-### 계산기 툴 19개 (tools/)
+### 계산기 툴 20개 (tools/)
 연령: dog-age, cat-age
 체중: dog-weight, cat-weight, pet-weight(통합)
 발정/임신: dog-heat-cycle, cat-heat-cycle, dog-pregnancy, cat-pregnancy
 비용: annual-pet-cost, pet-insurance-cost-estimator, pet-food-calorie
 건강/방문: dog-vet-visit-scheduler, cat-vet-visit-scheduler, dog-quality-of-life(Paw Score)
-백신 (신규): dog-vaccination-schedule-calculator, cat-vaccination-schedule-calculator
-수술 비용 (신규): spay-neuter-cost-calculator, dental-cleaning-cost-calculator
+백신: dog-vaccination-schedule-calculator, cat-vaccination-schedule-calculator
+수술/케어 비용: spay-neuter-cost-calculator, dental-cleaning-cost-calculator, **pet-grooming-cost-calculator(신규, 7/12)**
 
 모든 신규 툴은 다음 공통 패턴을 따름:
 - front matter: `layout: tool`, `title`, `description`, `permalink`
@@ -108,6 +108,15 @@ GSC Performance 데이터(쿼리별 노출/순위)를 반복적으로 받아서,
 
 ### 세션 F — 2차 보강 (7/12, 이번 세션)
 GSC 7/12 데이터 확인 → 신규 콘텐츠 필요성 웹 검색으로 검증 → **"Dog Pregnancy Signs" 클러스터(13개 쿼리 변형)는 이미 강자들(Pets4Homes, Daily Paws, PetPace)이 있는 레드오션이라 새 글 대신 기존 `how-to-tell-if-dog-is-pregnant` 포스트 보강으로 처리** (자기잠식 방지). `dog-weight-calculator`도 adult 체중 체크 기능은 이미 있었는데 FAQ가 puppy 위주였던 걸 보강.
+
+### 세션 F — 2차 보강 (7/12, 오전)
+GSC 7/12 데이터 확인 → 신규 콘텐츠 필요성 웹 검색으로 검증 → **"Dog Pregnancy Signs" 클러스터(13개 쿼리 변형)는 이미 강자들(Pets4Homes, Daily Paws, PetPace)이 있는 레드오션이라 새 글 대신 기존 `how-to-tell-if-dog-is-pregnant` 포스트 보강으로 처리** (자기잠식 방지). `dog-weight-calculator`도 adult 체중 체크 기능은 이미 있었는데 FAQ가 puppy 위주였던 걸 보강.
+
+### 세션 G — Pet Grooming Cost Calculator 신규 (7/12, 오후)
+GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검색으로 grooming cost calculator 경쟁사(calculatorsfordogs.com, usecalcpro.com, calculatorian.com, tooliro.com, agentcalc.com) 다수 확인 → 수요 검증됨. 기존 19개 툴 grep 검색으로 중복 없음 확인 후 신규 제작.
+- `pet-grooming-cost-calculator.html`: dog/cat 통합, 사이즈(dog만)+coat type+grooming frequency 입력 → 연간 비용 추정 (전문 그루밍 + 홈케어 용품 비용 분리 표시)
+- `annual-pet-cost-calculator`, `dog-vet-visit-scheduler`에서 역링크 추가 (고아 페이지 방지 원칙 계속 적용)
+- 공통 파일 4종(index, tools/index, footer, llms.txt) 동기화, 오래된 "New" 배지(spay-neuter, dental) 정리하고 이번 신규분으로 이동
 
 ---
 
@@ -165,7 +174,7 @@ GSC 7/12 데이터 확인 → 신규 콘텐츠 필요성 웹 검색으로 검증
 
 ## 6. 다음에 확인해야 할 것 (Open Items)
 
+- Spay/Neuter, Dental Cleaning, **Pet Grooming(신규)** 계산기는 아직 GSC Performance에 노출 데이터가 없거나 부족(너무 최근) — 다음 데이터에서 첫 노출/순위 확인
 - 이번 세션에서 보강한 `how-to-tell-if-dog-is-pregnant`, `dog-weight-calculator`의 순위 변화를 다음 GSC 데이터로 확인
-- Spay/Neuter, Dental Cleaning 계산기(7/10 생성)는 아직 GSC Performance에 노출 데이터 없음(너무 최근) — 다음 데이터에서 첫 노출 여부 확인
 - `pet-euthanasia-cost-and-what-to-expect` 포스트는 영어 톤 검수를 사용자가 직접 하지 못한 상태("나 영어는 잘 몰라서 톤은 모르는데") — 필요시 재검토 여지 있음
 - Coverage 리포트의 "발견됨-미색인 38개"가 다음 데이터에서도 그대로면, Performance 데이터만으로는 안 보이는 다른 근본 원인이 있을 수 있으니 재점검 필요

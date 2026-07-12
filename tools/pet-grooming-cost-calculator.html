@@ -1,0 +1,259 @@
+---
+layout: tool
+title: Pet Grooming Cost Calculator — Dog & Cat Annual Grooming Budget
+description: Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you get them professionally groomed. Free and instant.
+permalink: /tools/pet-grooming-cost-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pet Grooming Cost Calculator",
+  "url": "https://petpawcalc.com/tools/pet-grooming-cost-calculator.html",
+  "description": "Estimate a dog or cat's annual grooming cost based on size, coat type, and professional grooming frequency.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does dog grooming cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single professional grooming session typically costs $40–$80 for small dogs, $50–$110 for medium dogs, $65–$150 for large dogs, and $80–$220 for giant breeds, depending on coat type and service level. Long or curly coats (Poodles, Doodles) can add 20–40% to these prices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does cat grooming cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional cat grooming typically costs $30–$70 per session for short-haired cats and $50–$100 for long-haired breeds, since most cats need grooming far less often than dogs — many short-haired cats never need a professional groomer at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I get my dog professionally groomed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Short-coated dogs typically need professional grooming every 8–12 weeks. Medium coats do well every 6–8 weeks. Long, curly, or double coats — especially Poodles, Doodles, and similar breeds — often need grooming every 4–6 weeks to prevent matting."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>✂️ Pet Grooming Cost Calculator</h1>
+    <p>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="gc-species">What pet do you have?</label>
+      <select id="gc-species" onchange="toggleGcSpecies()">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div id="gc-form" style="display:none;">
+      <div class="form-group" id="gc-size-group">
+        <label for="gc-size">Size</label>
+        <select id="gc-size">
+          <option value="small">Small (under 25 lbs)</option>
+          <option value="medium">Medium (25–50 lbs)</option>
+          <option value="large">Large (50–90 lbs)</option>
+          <option value="giant">Giant (90+ lbs)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="gc-coat">Coat Type</label>
+        <select id="gc-coat">
+          <option value="short">Short / smooth</option>
+          <option value="medium">Medium length</option>
+          <option value="long">Long or silky</option>
+          <option value="curly">Curly or double coat (Poodle, Doodle, etc.)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="gc-frequency">Professional Grooming Frequency</label>
+        <select id="gc-frequency">
+          <option value="4">Every 4 weeks (13x/year)</option>
+          <option value="6">Every 6 weeks (9x/year)</option>
+          <option value="8">Every 8 weeks (6.5x/year)</option>
+          <option value="12">Every 12 weeks (4x/year)</option>
+          <option value="0">Rarely/never — home grooming only</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" id="gc-btn" onclick="calculateGrooming()" style="display:none;">Estimate Annual Cost →</button>
+
+    <div class="result-box" id="gc-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="gc-date"></span>
+      </div>
+      <h3 id="gc-result-total"></h3>
+      <div id="gc-result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="gc-pdf-btn" onclick="doPrint('gc-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general cost estimates based on national averages. Actual pricing varies significantly by location, individual groomer, and your pet's specific coat condition and temperament.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Coat Type Matters More Than Size</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Size affects grooming cost, but coat type usually drives the bigger swing. A large short-coated dog like a Labrador is often cheaper to groom than a much smaller long-coated dog like a Shih Tzu, because coat maintenance — detangling, scissor work, de-matting — takes far more time than a quick bath and brush-out on a short coat. Curly and double coats (Poodles, Doodles, Huskies) are the most labor-intensive category, since they mat easily and require specific tools and techniques to groom safely.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Matting specifically can add a real surcharge on top of the base price — light matting around ears or armpits might add $15–$25, while heavy pelted matting requiring a full shave-down can add $35–$50 or more, since it takes significantly longer and is harder on the groomer's equipment.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Shop vs. Mobile Grooming</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Mobile grooming — where a groomer comes to you in a self-contained van — typically costs 20–60% more than the same service at a shop, since the groomer owns and operates expensive equipment and loses time driving between appointments. It's often worth the premium for senior or anxious pets who find car rides and shared waiting areas stressful, or for multi-pet households where the time savings offset the higher per-visit cost.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Professional Grooming vs. DIY</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">At-home grooming supplies (shampoo, slicker brush, nail clippers, de-shedding tools) typically cost $120–$360 per year depending on coat type, which is meaningfully cheaper than professional visits over a full year. The trade-off is time, skill, and the risk of injury from nail trims or matting removal done incorrectly — many owners land on a hybrid approach: professional grooming every 8–12 weeks paired with home maintenance brushing in between.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Skipping grooming entirely to save money often backfires financially — severe matting, overgrown nails, and untreated skin issues from poor coat maintenance frequently cost more in vet bills than consistent grooming would have cost in the first place.</p>
+
+    <div class="post-cta">
+      <p>Want the full annual cost picture across everything? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function toggleGcSpecies() {
+  const species = document.getElementById('gc-species').value;
+  document.getElementById('gc-form').style.display = species ? 'block' : 'none';
+  document.getElementById('gc-size-group').style.display = species === 'dog' ? 'block' : 'none';
+  document.getElementById('gc-btn').style.display = species ? 'block' : 'none';
+  document.getElementById('gc-result').style.display = 'none';
+}
+
+function calculateGrooming() {
+  const species = document.getElementById('gc-species').value;
+  const size = document.getElementById('gc-size').value;
+  const coat = document.getElementById('gc-coat').value;
+  const freqWeeks = parseInt(document.getElementById('gc-frequency').value);
+
+  const visitsPerYear = freqWeeks > 0 ? Math.round((52 / freqWeeks) * 10) / 10 : 0;
+
+  let baseLow, baseHigh;
+  if (species === 'dog') {
+    const sizeRanges = {
+      small:  [40, 80],
+      medium: [50, 110],
+      large:  [65, 150],
+      giant:  [80, 220],
+    };
+    [baseLow, baseHigh] = sizeRanges[size];
+  } else {
+    baseLow = 30; baseHigh = 70;
+  }
+
+  const coatMultiplier = { short: 1, medium: 1.15, long: 1.35, curly: 1.5 };
+  const mult = coatMultiplier[coat];
+  const visitLow = Math.round(baseLow * mult);
+  const visitHigh = Math.round(baseHigh * mult);
+
+  const annualLow = Math.round(visitLow * visitsPerYear);
+  const annualHigh = Math.round(visitHigh * visitsPerYear);
+
+  const supplyCosts = { short: 120, medium: 180, long: 300, curly: 280 };
+  const supplyCost = supplyCosts[coat];
+
+  const totalLow = annualLow + (freqWeeks === 0 ? supplyCost : Math.round(supplyCost * 0.4));
+  const totalHigh = annualHigh + (freqWeeks === 0 ? supplyCost * 1.5 : Math.round(supplyCost * 0.6));
+
+  document.getElementById('gc-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()} per year`;
+
+  let breakdown = '';
+  if (freqWeeks > 0) {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Professional grooming (${visitsPerYear}x/year, $${visitLow}–$${visitHigh}/visit)</span><span>$${annualLow.toLocaleString()}–$${annualHigh.toLocaleString()}</span></div>`;
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Home maintenance supplies</span><span>$${Math.round(supplyCost*0.4)}–$${Math.round(supplyCost*0.6)}</span></div>`;
+  } else {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Home grooming supplies only</span><span>$${supplyCost}–$${Math.round(supplyCost*1.5)}</span></div>`;
+  }
+  document.getElementById('gc-result-breakdown').innerHTML = breakdown;
+
+  document.getElementById('gc-result').style.display = 'block';
+  document.getElementById('gc-result').classList.add('show');
+  document.getElementById('gc-pdf-btn').style.display = 'block';
+  document.getElementById('gc-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

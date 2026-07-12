@@ -44,6 +44,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Dental Cleaning Cost Calculator](https://petpawcalc.com/tools/dental-cleaning-cost-calculator.html): Select dog or cat and estimated dental severity (mild/moderate/severe, with expected number of extractions) plus optional pre-anesthetic bloodwork, to get a total cost estimate covering base cleaning, bloodwork, and per-tooth extraction costs.
 
+- [Pet Grooming Cost Calculator](https://petpawcalc.com/tools/pet-grooming-cost-calculator.html): Select dog or cat, size (for dogs), coat type (short/medium/long/curly), and professional grooming frequency to get an annual grooming cost estimate covering both professional visits and home maintenance supplies.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
