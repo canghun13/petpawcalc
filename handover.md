@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-14 (세션 H)
+최종 갱신: 2026-07-14 (세션 I)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -48,23 +48,23 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 
 ---
 
-## 2. 현재 콘텐츠 자산 (2026-07-12 기준)
+## 2. 현재 콘텐츠 자산 (2026-07-14 기준)
 
-### 블로그 포스트 27개
-날짜순 전체 목록은 `_posts/` 참고. 최근 추가분(2026-07-10, 이번 세션들에서 신규):
-- `puppy-kitten-vaccination-schedule` — 백신 계산기 2개의 짝 콘텐츠
-- `spay-neuter-cost-and-timing` — Spay/Neuter 계산기 짝 콘텐츠
-- `dog-cat-dental-cleaning-cost` — Dental 계산기 짝 콘텐츠
+### 블로그 포스트 28개
+날짜순 전체 목록은 `_posts/` 참고. 최근 추가분:
+- `puppy-kitten-vaccination-schedule`, `spay-neuter-cost-and-timing`, `dog-cat-dental-cleaning-cost` — 각 계산기의 짝 콘텐츠 (7/10)
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
+- `cat-quality-of-life-assessment` — **신규(7/14, 세션 I)**. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
 
-### 계산기 툴 20개 (tools/)
+### 계산기 툴 21개 (tools/)
 연령: dog-age, cat-age
 체중: dog-weight, cat-weight, pet-weight(통합)
 발정/임신: dog-heat-cycle, cat-heat-cycle, dog-pregnancy, cat-pregnancy
 비용: annual-pet-cost, pet-insurance-cost-estimator, pet-food-calorie
-건강/방문: dog-vet-visit-scheduler, cat-vet-visit-scheduler, dog-quality-of-life(Paw Score)
+건강/방문: dog-vet-visit-scheduler, cat-vet-visit-scheduler
+삶의 질: dog-quality-of-life(Paw Score), **cat-quality-of-life(Paw Score) — 신규(7/14, 세션 I)**
 백신: dog-vaccination-schedule-calculator, cat-vaccination-schedule-calculator
-수술/케어 비용: spay-neuter-cost-calculator, dental-cleaning-cost-calculator, **pet-grooming-cost-calculator(신규, 7/12)**
+수술/케어 비용: spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator
 
 모든 신규 툴은 다음 공통 패턴을 따름:
 - front matter: `layout: tool`, `title`, `description`, `permalink`
@@ -72,6 +72,7 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 - PDF 저장 기능: `.print-area` 또는 `.result-box` + `doPrint()` JS 함수 + `@media print` CSS
 - `.post-cta` div로 관련 툴/블로그 상호 링크
 - `.disclaimer-box`, `.no-print`(교육 콘텐츠, 500단어 이상 권장)
+- **FAQ는 스키마뿐 아니라 본문에도 `<h2>Frequently Asked Questions</h2>` + h3/p로 가시화할 것** (세션 H에서 발견된 사각지대, 세션 I부터는 신규 제작 시 처음부터 반영)
 
 ---
 
@@ -129,6 +130,19 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 5. **신규 콘텐츠는 만들지 않기로 결정**: GSC 쿼리를 전수 분류한 결과 대부분 기존 27개 포스트+20개 tool로 이미 커버되고 있었고(위 1~3번은 보강), 나머지 미매칭 쿼리는 대부분 (a) 비영어권 쿼리, (b) "pet alliance calculator"/"fido score calculator"/"journeys home quality-of-life calculator" 같은 **경쟁사 브랜드명 검색**(대응 불가), (c) 노출 1~2회의 통계적 노이즈였음. 진짜 새로운 수요 클러스터는 발견되지 않음 — 이번 주는 순수 보강 위주.
 6. **Coverage 리포트**: "발견됨-미색인" 38개, 그대로 — 세션 F 때와 동일한 숫자. 여러 세션째 변화 없어 Coverage 리포트 갱신 지연이 의심되는 세션 F 가설이 유지됨. Performance 리포트의 차트(일별 노출) 기준으로는 7/8~7/11에 노출이 23→39→61→80으로 뚜렷하게 증가 중 — 실제로는 색인/트래픽이 진행되고 있는 것으로 보임.
 
+### 세션 I — "신규 할 만한 거 진짜 없냐"는 재확인 요청에 따른 재조사 (7/14, 같은 날 후속 세션)
+
+세션 H에서 "신규 콘텐츠 없음"으로 결론 냈던 걸 사용자가 재검증 요청 → 다시 파고든 결과 **사이트 자체의 구조적 비대칭을 발견**:
+
+- **모든 카테고리(연령/체중/발정/임신/백신/비용/vet-visit)는 dog·cat 페어로 존재하는데, Quality of Life(Paw Score)만 dog 전용이고 cat 버전이 없었음.** 세션 H에서는 GSC 쿼리 매칭에만 집중하느라 "사이트 자체 구조의 빈 자리"를 놓쳤던 것 — 신규 콘텐츠 판단 기준에 "GSC 쿼리 매칭"뿐 아니라 "우리 사이트 자체의 페어링 패턴 대비 빠진 게 있는지"도 포함해야 한다는 교훈.
+- 웹 검색으로 확인: HHHHHMM Scale(Villalobos)은 원래 dog/cat 공용으로 개발된 스케일이고, 실제로 Omnicalculator·Catster·VCA·Ask My Cats 등에서 "cat quality of life calculator"가 이미 존재함 — 즉 수요와 선례가 명확히 있고, 경쟁 강도도 (Omnicalculator 정도를 빼면) 소규모 사이트들 위주라 아주 심한 레드오션은 아님.
+- **신규 제작**: `tools/cat-quality-of-life-calculator.html` + `_posts/2026-07-14-cat-quality-of-life-assessment.md`. `dog-quality-of-life-calculator.html`/`dog-quality-of-life-assessment.md`와 완전히 동일한 구조(HHHHHMM 7개 카테고리, 스코어링 로직, PDF 저장)를 재사용하되, 힌트/본문 텍스트는 고양이 특화로 전부 새로 씀 — 특히 Hygiene 카테고리는 dog는 "청결 유지/욕창"이 핵심인데 cat은 "그루밍을 스스로 하는지 여부"가 핵심이라 완전히 다르게 작성(그루밍 중단이 고양이 쇠약의 초기 신호로 가장 유용), Mobility는 "산책"이 아니라 "점프·litter box 접근"으로, Happiness는 "숨는 행동"이 핵심 신호로.
+- **역링크(고아 페이지 방지) 4곳에 추가**: `dog-quality-of-life-calculator.html`(post-cta로 cat 버전 링크), `dog-quality-of-life-assessment.md`(Related Articles), `pet-euthanasia-cost-and-what-to-expect.md`(Related Articles), `how-much-should-senior-cat-eat.md`(Related Articles, dog 버전의 senior-dog-eat 포스트가 이미 dog QoL 링크 갖고 있던 것과 대칭 맞춤).
+- **공통 파일 4종 동기화 확인**: `index.html`·`tools/index.html`에 cat QoL 카드 추가 + New 배지를 이 카드로 이동(기존 dog-vaccination/cat-vaccination/pet-grooming의 오래된 New 배지 제거). `llms.txt`에 툴/블로그 항목 각 1개씩 추가. **`footer.html`은 원래 20개 툴 중 13개만 싣는 큐레이션된 목록이고 dog-quality-of-life도 애초에 없었어서, 대칭성 유지 차원에서 footer는 그대로 둠**(의도적 결정, 빠뜨린 게 아님). sitemap.xml은 `jekyll-sitemap` 플러그인이 자동 생성하는 정적 파일이 아니므로 손댈 필요 없음(세션 A 이전부터 확인된 사항).
+- **세션 H 이전 작업(tool FAQ 가시화)과의 연계**: 신규 cat 계산기는 처음부터 본문에 가시적 FAQ 섹션을 포함해서 제작 — 세션 H에서 발견한 "tools/는 스키마만 있고 본문에 안 보임" 문제를 신규 제작 시점부터 반복하지 않도록 반영함.
+
+**교훈**: "신규 콘텐츠 없음" 결론은 GSC 쿼리 매칭 관점에서만 봤을 때 맞았을 뿐, **사이트 자체 콘텐츠 구조를 페어/패턴 단위로 다시 훑어보는 별도의 체크가 필요**하다는 게 이번 세션의 핵심 교훈. 다음에 신규 콘텐츠 유무를 판단할 때는 (1) GSC 쿼리 미커버 클러스터 확인 + (2) **사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지 확인**, 이 두 가지를 모두 체크할 것.
+
 ---
 
 ## 4. GSC 색인 현황 (7/14 기준)
@@ -155,6 +169,7 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 ### 신규 콘텐츠(툴/블로그) 만들 때
 1. **기존 파일과 중복 체크 먼저** — `_posts/`, `tools/` 목록 grep해서 겹치는 주제 없는지 확인
 2. 웹 검색으로 키워드 경쟁 강도 확인 — 이미 강자 있는 레드오션이면 신규 글보다 기존 페이지 보강을 우선 고려
+2-1. **GSC 쿼리 매칭만으로 "신규 콘텐츠 없음"이라고 결론 내지 말 것 — 사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지도 별도로 확인할 것** (세션 I에서 Quality of Life가 dog만 있고 cat이 없던 걸 뒤늦게 발견한 사례 참고). `ls tools/ | grep -i cat`, `ls tools/ | grep -i dog` 등으로 카테고리별 페어 여부를 주기적으로 점검.
 3. 감정적으로 민감한 주제(안락사 등)는 계산기 형태가 적절한지 먼저 판단, 애매하면 사용자에게 먼저 물어볼 것
 4. 신규 파일 만들면:
    - front matter 패턴 기존 파일 그대로 따르기 (title/description/permalink 또는 slug/category/date/read_time/faqs)
@@ -189,9 +204,11 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 
 ## 6. 다음에 확인해야 할 것 (Open Items)
 
-- **최우선: 나머지 tool 페이지 14개에 가시적 FAQ 섹션 적용** (세션 H에서 6개만 처리함) — dog/cat-age-calculator, dog/cat-heat-cycle, dog/cat-pregnancy-calculator, dog/cat-vet-visit-scheduler, dog/cat-vaccination-schedule-calculator, annual-pet-cost-calculator, spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator. 패턴은 세션 H 커밋 참고 — 스키마 질문을 그대로 h3/p로 본문에 노출.
+- **최우선: 나머지 tool 페이지 13개에 가시적 FAQ 섹션 적용** (세션 H에서 6개, 세션 I에서 신규 제작한 cat-quality-of-life는 처음부터 반영 — 남은 건 dog/cat-age, dog/cat-heat-cycle, dog/cat-pregnancy-calculator, dog/cat-vet-visit-scheduler, dog/cat-vaccination-schedule-calculator, annual-pet-cost-calculator, spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator). 패턴은 세션 H 커밋 참고.
+- **신규 제작한 `cat-quality-of-life-calculator`/`cat-quality-of-life-assessment`의 첫 GSC 노출 확인** — "cat quality of life calculator", "paw score cat" 등 관련 쿼리가 잡히기 시작하는지 다음 데이터에서 확인.
 - **`what-to-feed-pregnant-dog`(101 노출) vs `how-to-tell-if-dog-is-pregnant`(54 노출) 자기잠식 의심 — GSC 웹 UI에서 두 URL 필터로 실제 쿼리 교차 확인 필요** (이번 zip 내보내기는 페이지×쿼리 교차표가 없어 이 세션에선 확정 불가). 겹치는 게 확인되면 what-to-feed 포스트의 증상 관련 서술을 줄이고 how-to-tell-if 포스트로 명확히 유도.
 - Spay/Neuter, Dental Cleaning, Pet Grooming 계산기는 아직 GSC Performance에 노출 데이터가 부족(너무 최근) — 다음 데이터에서 첫 노출/순위 확인
 - 세션 H에서 FAQ 가시화한 6개 tool(`pet-weight`, `cat-weight`, `pet-food-calorie`, `pet-insurance-cost-estimator`, `dog-weight`, `dog-quality-of-life`)의 다음 GSC 데이터에서 순위/노출 변화 확인
+- **다음에 신규 콘텐츠 여부를 판단할 때 사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지도 항상 재확인할 것** (세션 I 교훈, 체크리스트 5번 참고)
 - `pet-euthanasia-cost-and-what-to-expect` 포스트는 영어 톤 검수를 사용자가 직접 하지 못한 상태("나 영어는 잘 몰라서 톤은 모르는데") — 필요시 재검토 여지 있음
 - Coverage 리포트의 "발견됨-미색인 38개"가 세션 F(7/12)·세션 H(7/14) 2회 연속 완전히 동일한 숫자로 나옴 — 다음 데이터에서도 그대로면 Performance 데이터만으로는 안 보이는 다른 근본 원인이 있을 수 있으니 재점검 필요 (예: Coverage 리포트 자체가 이 사이트 규모에서는 갱신 주기가 매우 긴 것일 수도 있음)

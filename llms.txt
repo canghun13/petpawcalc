@@ -32,6 +32,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Dog Quality of Life Calculator](https://petpawcalc.com/tools/dog-quality-of-life-calculator.html): Assesses a dog's quality of life across 7 categories using the veterinary HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad). Produces a scored summary with flags for urgent concerns. Designed for senior dogs and dogs with illness or chronic pain.
 
+- [Cat Quality of Life Calculator](https://petpawcalc.com/tools/cat-quality-of-life-calculator.html): Assesses a cat's quality of life across the same 7-category veterinary HHHHHMM Scale, adapted with cat-specific behavioral cues (grooming habits, litter box access, hiding behavior) since cats mask illness and pain far more than dogs. Produces a scored summary with flags for urgent concerns. Designed for senior cats and cats with illness or chronic pain.
+
 - [Cat Heat Cycle Calculator](https://petpawcalc.com/tools/cat-heat-cycle-calculator.html): Predicts a cat's next heat date, fertile window, and each stage of the feline estrous cycle based on her last heat date and lifestyle (indoor/outdoor). Explains the difference between proestrus, estrus, and interestrus, and notes that cats are induced ovulators — ovulation only occurs if mating takes place.
 
 - [Pet Weight Calculator](https://petpawcalc.com/tools/pet-weight-calculator.html): Combined dog and cat weight checker. Lets users select species, then checks current weight against breed-typical ranges, plus an interactive 3-point Body Condition Score (BCS) self-check (ribs, waist, belly tuck). Links to the dedicated Dog Weight Calculator and Cat Weight Calculator for more detail.
@@ -91,6 +93,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [How Much Should a Senior Cat Eat?](https://petpawcalc.com/blog/how-much-should-senior-cat-eat): Calorie and protein needs for aging cats by weight, why senior cats often need more protein not less, wet vs. dry food considerations, feeding frequency, and how to monitor body condition in older cats.
 
 - [Dog Quality of Life: How to Assess Your Dog's Well-Being](https://petpawcalc.com/blog/dog-quality-of-life-assessment): Explains the HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad), how to score each category honestly, how to track trends over time, and what scores below 35 mean in practical terms.
+
+- [Cat Quality of Life: How to Assess Your Cat's Well-Being](https://petpawcalc.com/blog/cat-quality-of-life-assessment): Applies the same HHHHHMM Scale to cats, with cat-specific guidance on why quality-of-life assessment matters even more for cats (they mask pain and illness far better than dogs). Covers cat-specific signs for each category — reduced grooming, reluctance to jump, hiding — and how to use scores over time.
 
 - [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Three at-home body condition checks for cats (rib test, waist check, belly check), explains the primordial pouch and how it differs from excess fat, the 1-9 BCS scale, and a critical warning against crash dieting cats due to hepatic lipidosis risk.
 

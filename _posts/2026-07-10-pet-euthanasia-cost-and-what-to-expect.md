@@ -80,6 +80,7 @@ Most veterinary clinics welcome owners to be present, and many encourage it. If 
 ## Related Articles
 
 - [Dog Quality of Life: How to Assess Your Dog's Well-Being Honestly](/blog/dog-quality-of-life-assessment/)
+- [Cat Quality of Life: How to Assess Your Cat's Well-Being Honestly](/blog/cat-quality-of-life-assessment/)
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)
 
 ---
