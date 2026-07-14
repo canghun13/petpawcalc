@@ -193,6 +193,13 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - YAML front matter는 `yaml.safe_load()`로 파싱 검증
 - JSON-LD Schema는 `json.loads()`로 검증
 - 전부 검증 통과 후에만 commit
+- **아래 최종 QA는 매 세션 종료 전 기본으로 항상 수행할 것 — 사용자가 매번 요청 안 해도 알아서 할 것:**
+  - 신규/수정된 모든 파일의 링크(`/tools/...`, `/blog/...`)를 실제 존재하는 파일·slug와 전수 대조 (python으로 tools/ 파일 목록, `_posts/*.md`의 slug 목록 뽑아서 매칭)
+  - 신규 페이지가 있으면: `index.html`/`tools/index.html`의 tool-card 개수가 실제 `tools/*.html` 개수와 일치하는지, New 배지가 정확히 새 항목에만 있고 오래된 건 제거됐는지 확인
+  - permalink(`tools/*.html`)와 slug(`_posts/*.md`) 전체 중복 검사 (`grep -h "^permalink:" tools/*.html | sort | uniq -c`, slug도 동일)
+  - dog/cat 버전을 서로 복사해서 만든 경우, diff로 로직(JS)이 의도한 부분만 바뀌었는지, 복붙하다 남은 반대쪽 종(species) 단어가 실수로 남아있지 않은지 확인
+  - FAQ를 스키마+본문 양쪽에 넣은 경우 스키마 질문 리스트와 본문 h3 질문 리스트가 실제로 1:1 일치하는지 코드로 비교
+  - 이 QA를 하고 나서 결과를 대화에 요약해서 보여줄 것 — "다 했습니다"로 퉁치지 말고 뭘 어떻게 확인했는지 구체적으로 보고할 것
 
 ### 절대 하지 말 것
 - `@page` CSS를 `@media print` 안에 중첩 (무시됨, 최상위에 둘 것)
