@@ -219,6 +219,7 @@ No. Raw fish carries a bacterial contamination risk (Salmonella, Listeria) and c
 ## Related Articles
 
 - [How Long Are Cats Pregnant? A Week-by-Week Guide](/blog/how-long-are-cats-pregnant/)
+- [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/)
 - [Signs of Cat Labor: What to Expect](/blog/signs-of-cat-labor/)
 - [What to Feed a Pregnant Dog: Complete Diet & Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
 

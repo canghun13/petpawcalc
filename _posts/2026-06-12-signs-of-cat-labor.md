@@ -166,6 +166,7 @@ A small amount of blood-tinged mucus is normal just before and during delivery. 
 ## Related Articles
 
 - [How Long Are Cats Pregnant?](/blog/how-long-are-cats-pregnant/)
+- [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/)
 - [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](/blog/what-to-feed-pregnant-cat/)
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
 - [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)

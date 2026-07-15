@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-15 (세션 K)
+최종 갱신: 2026-07-15 (세션 L)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -50,12 +50,12 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 
 ## 2. 현재 콘텐츠 자산 (2026-07-15 기준)
 
-### 블로그 포스트 30개
+### 블로그 포스트 31개
 날짜순 전체 목록은 `_posts/` 참고. 최근 추가분:
 - `puppy-kitten-vaccination-schedule`, `spay-neuter-cost-and-timing`, `dog-cat-dental-cleaning-cost` — 각 계산기의 짝 콘텐츠 (7/10)
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
 - `cat-quality-of-life-assessment` — 세션 I. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
-- `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats` — **신규(7/15, 세션 K)**. dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용).
+- `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`(세션 K), `how-to-tell-if-cat-is-pregnant`(세션 L) — dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용). **이 세 페어링 빈 자리는 이번 세션 기준 모두 해소됨.**
 
 ### 계산기 툴 21개 (tools/)
 연령: dog-age, cat-age
@@ -63,9 +63,11 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 발정/임신: dog-heat-cycle, cat-heat-cycle, dog-pregnancy, cat-pregnancy
 비용: annual-pet-cost, pet-insurance-cost-estimator, pet-food-calorie
 건강/방문: dog-vet-visit-scheduler, cat-vet-visit-scheduler
-삶의 질: dog-quality-of-life(Paw Score), **cat-quality-of-life(Paw Score) — 신규(7/14, 세션 I)**
+삶의 질: dog-quality-of-life(Paw Score), cat-quality-of-life(Paw Score) — 세션 I 신규
 백신: dog-vaccination-schedule-calculator, cat-vaccination-schedule-calculator
 수술/케어 비용: spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator
+
+**tools/ 21개 전부 FAQ 본문 가시화 완료(세션 L 기준)** — dog/cat 페어링도 전부 완성 상태(비교/통합형 6개 제외 전부 페어 존재).
 
 모든 신규 툴은 다음 공통 패턴을 따름:
 - front matter: `layout: tool`, `title`, `description`, `permalink`
@@ -73,7 +75,7 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 - PDF 저장 기능: `.print-area` 또는 `.result-box` + `doPrint()` JS 함수 + `@media print` CSS
 - `.post-cta` div로 관련 툴/블로그 상호 링크
 - `.disclaimer-box`, `.no-print`(교육 콘텐츠, 500단어 이상 권장)
-- **FAQ는 스키마뿐 아니라 본문에도 `<h2>Frequently Asked Questions</h2>` + h3/p로 가시화할 것** (세션 H에서 발견된 사각지대, 세션 I부터는 신규 제작 시 처음부터 반영)
+- **FAQ는 스키마뿐 아니라 본문에도 `<h2>Frequently Asked Questions</h2>` + h3/p로 가시화할 것** (세션 H에서 발견된 사각지대, 세션 L 기준 기존 tool 전부 소급 적용 완료 + 신규 제작 시 처음부터 반영)
 
 ---
 
@@ -265,7 +267,7 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 2. 해당 쿼리가 이미 존재하는 페이지와 매칭되는지 확인 (대부분 매칭됨 — 신규 콘텐츠보다 보강이 우선)
 3. 페이지의 title/H1/FAQ에 **정확한 쿼리 문구가 그대로 박혀 있는지** 확인 — 없으면 추가 (세션 C의 반복된 패턴)
 4. front matter `faqs:` 배열과 본문 `## Frequently Asked Questions` 섹션 **양쪽 다** 동일하게 추가할 것 (Schema용 + 가시적 텍스트용)
-5. **tools/ 페이지는 FAQ가 스키마에만 있고 본문에 안 보이는 경우가 많음(세션 H에서 발견) — 보강 작업 시 항상 먼저 확인하고, 없으면 스키마 질문 그대로 `<h2>Frequently Asked Questions</h2>` + h3(질문)/p(답변) 페어로 본문에 노출시킬 것.** 새 주장을 만드는 게 아니라 이미 있는 스키마 텍스트를 화면에 노출만 시키는 작업이라 리스크가 낮음. 진행 상황: 21개 tool 중 15개 완료(세션 H 6개 + 세션 I 신규제작 1개 + 세션 J 7개), **남은 7개**: `cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler` — 전부 이미 색인된 페이지라 급하진 않지만 패턴 통일 차원에서 다음 세션에 마저 적용 권장.
+5. **tools/ 페이지는 FAQ가 스키마에만 있고 본문에 안 보이는 경우가 많았음(세션 H에서 발견) — 세션 K에서 전체 21개 tool 완료.** 보강 작업 시에도 여전히 이 패턴(스키마 질문 그대로 `<h2>Frequently Asked Questions</h2>` + h3/p 페어로 본문 노출)을 신규 tool 제작 시 처음부터 적용할 것 — 신규 tool은 항상 이렇게 만들어야 함(체크리스트 4번 참고).
 6. FAQ에 새 사실을 추가할 때는(예: "OO 계산기 있나요?" 류) **반드시 웹 검색으로 사실관계부터 확인** — 세션 H에서 "고양이는 BMI가 없다"고 쓸 뻔했다가 검색으로 FBMI 공식이 실제 존재함을 확인하고 정정한 사례 있음. 확신에 근거해 서술하지 말고 검색으로 검증할 것.
 
 ### 검증 습관
@@ -301,3 +303,31 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - **다음에 신규 콘텐츠 여부를 판단할 때 사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지도 항상 재확인할 것** (세션 I 교훈, 체크리스트 5번 참고). 세션 J에서는 191개 쿼리 전수 확인 결과 신규 클러스터 없음 재확인.
 - `pet-euthanasia-cost-and-what-to-expect` 포스트는 영어 톤 검수를 사용자가 직접 하지 못한 상태("나 영어는 잘 몰라서 톤은 모르는데") — 필요시 재검토 여지 있음.
 - **깨진 링크 전수 스캔은 매 세션 QA에 포함시킬 것** (세션 J에서 `how-much-does-a-cat-vet-visit-cost.md`의 `/blog/true-cost-cat-vs-dog/` 404 링크를 발견/수정함 — 슬러그가 파일명과 다른 포스트에서 발생한 실수였음). 방법: `_posts/*.md`의 실제 `slug:` 값과 `tools/*.html` 파일명을 모아서, 전체 파일에서 `/blog/xxx/`, `/tools/xxx.html` 패턴을 정규식으로 추출해 매칭 안 되는 것 찾기.
+
+---
+
+### 세션 L — "할 수 있는건 다하자": tool FAQ 가시화 전체 완료 + 블로그 페어링 3번째 빈 자리 발견/제작 (7/15, 세션 K 직후 연속)
+
+세션 K 직후 사용자가 "할 수 있는건 다하자"고 요청 → 밀려있던 작업들을 전부 정리:
+
+**1. tools/ FAQ 가시화 — 21개 전부 완료**
+세션 H(6개) + 세션 I(신규 제작 시 처음부터 반영, 1개) + 세션 J(7개)에 이어 마지막 남은 7개(`cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler`)에 동일 패턴 적용 완료. **이제 tools/ 21개 전부 스키마 FAQ가 본문에도 가시적으로 노출됨** — 세션 H에서 발견한 사각지대가 완전히 해소됨. 스키마 질문-본문 h3 1:1 매칭, div 개수 매칭 전부 코드로 검증 통과.
+- 이 과정에서 `dog-age-calculator.html`의 blog 링크(`/blog/dog-age-human-years`)에 **trailing slash가 빠져있던 걸 발견해 수정**(`/blog/dog-age-human-years/`) — 이전 링크 스캔 스크립트가 trailing slash를 필수로 요구하는 정규식이라 못 잡아냈던 사각지대. 이후 스캔 스크립트를 trailing slash 선택적으로 고쳐서 재검증.
+
+**2. 블로그 dog/cat 페어링 재점검 → 3번째 빈 자리 발견**
+세션 K에서 이미 2개(`what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`)를 채웠는데, 전체 슬러그를 다시 한 번 훑어본 결과 **`how-to-tell-if-dog-is-pregnant`(54 노출)의 cat 짝이 없었던 것도 발견**. `how-long-are-cats-pregnant`의 FAQ에 "첫 신호가 뭔가요" 정도만 부분적으로 있었을 뿐, dog 버전처럼 전용 페이지로 깊게 다룬 콘텐츠는 없었음.
+- 웹 검색으로 경쟁강도 확인: PetMD, Hill's, Purina, Blue Cross, Whisker 등 동일 수준의 경쟁자 존재 — dog 버전이 이미 이 경쟁권에서 54노출을 내고 있다는 게 진행 근거.
+- **신규 작성**: `_posts/2026-07-15-how-to-tell-if-cat-is-pregnant.md`. `how-to-tell-if-dog-is-pregnant.md` 구조를 그대로 따르되, 고양이 고유 사실을 웹 검색으로 검증 후 반영:
+  - **"Pinking up"**(니플이 분홍색으로 변하는 것)이 dog의 "nipple darkening"보다 더 뚜렷하고 이른(day 16-20) 신호
+  - **가성임신(pseudopregnancy)이 개보다 고양이에서 훨씬 드물고 증상도 약함** — Merck Veterinary Manual, PetMD, Vet Help Direct 등 다수 소스가 "uncommon/rare in cats" 명시(단, Vetster 1곳만 반대 의견을 냈으나 소수 의견으로 판단해 다수 컨센서스 채택). 원인 메커니즘도 다르게 서술(고양이는 유도배란 동물이라 비생식적 교미로 배란만 일어나도 가성임신 가능하다는 게 개와 다른 지점).
+  - 확인 시기도 dog와 다르게(고양이는 day 17-25 촉진, day 21+ 초음파, day 42+ X-ray — 개의 주차 단위와 다른 일수 단위로 정확히 구분해서 서술)
+- 역링크(고아 페이지 방지): `cat-pregnancy-calculator.html`(신규 post-cta), `how-long-are-cats-pregnant.md`·`signs-of-cat-labor.md`·`what-to-feed-pregnant-cat.md`(Related Articles), `how-to-tell-if-dog-is-pregnant.md`(Related Articles, 종간 교차링크).
+- `llms.txt` 동기화.
+
+**3. QA**: 신규 포스트 1개 + 수정 파일 전체 대상 — YAML 전수 검증(31개 포스트 전부 통과), slug 중복 없음, div 매칭, FAQ front matter-본문 1:1 매칭(6/6), **전체 저장소 링크 재스캔(trailing slash 유무 관계없이 매칭하도록 스크립트 개선 후 재실행, 깨진 링크 없음 확인)**.
+
+**세션 K+L 종합**: 이번 두 세션에서 블로그 dog/cat 페어링 빈 자리 3개(`what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`, `how-to-tell-if-cat-is-pregnant`)를 전부 채우고, tools/ FAQ 가시화도 21개 전부 완료. 사이트의 구조적 개선 작업(세션 H~L에 걸쳐 진행된 두 축: ①FAQ 가시성, ②dog/cat 페어링)이 이번 세션으로 사실상 마무리됨.
+
+**다음 세션에서 확인할 것**:
+- 이번 세션의 신규 3개 포스트(`what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`, `how-to-tell-if-cat-is-pregnant`)와 tool FAQ 가시화 7개의 다음 GSC 데이터에서 노출/색인 변화 확인
+- 블로그/tool의 dog/cat 페어링은 이제 거의 다 채워졌다고 판단됨 — 다음 신규 콘텐츠는 아마도 완전히 새로운 카테고리(현재 사이트에 없는 주제)를 찾아야 할 가능성이 높음. 다만 계산기(calculator) 카테고리는 세션 K에서 확인했듯 레드오션이 많으니, 신규 카테고리를 검토할 땐 웹 검색으로 경쟁강도부터 반드시 확인할 것.

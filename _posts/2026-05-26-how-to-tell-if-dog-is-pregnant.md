@@ -147,4 +147,5 @@ Yes, especially in early pregnancy and in dogs carrying small litters. A dog car
 - [How Long Are Dogs Pregnant?](/blog/how-long-are-dogs-pregnant/)
 - [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/)
 - [Signs of Dog Labor](/blog/signs-of-dog-labor/)
+- [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/)
 
