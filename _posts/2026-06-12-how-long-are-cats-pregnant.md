@@ -172,6 +172,7 @@ From around week 4, transition gradually to a high-quality kitten food or a food
 ## Related Articles
 
 - [Signs of Cat Labor](/blog/signs-of-cat-labor/)
+- [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](/blog/what-to-feed-pregnant-cat/)
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
 - [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
 

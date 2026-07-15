@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-15 (세션 J)
+최종 갱신: 2026-07-15 (세션 K)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -48,13 +48,14 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 
 ---
 
-## 2. 현재 콘텐츠 자산 (2026-07-14 기준)
+## 2. 현재 콘텐츠 자산 (2026-07-15 기준)
 
-### 블로그 포스트 28개
+### 블로그 포스트 30개
 날짜순 전체 목록은 `_posts/` 참고. 최근 추가분:
 - `puppy-kitten-vaccination-schedule`, `spay-neuter-cost-and-timing`, `dog-cat-dental-cleaning-cost` — 각 계산기의 짝 콘텐츠 (7/10)
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
-- `cat-quality-of-life-assessment` — **신규(7/14, 세션 I)**. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
+- `cat-quality-of-life-assessment` — 세션 I. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
+- `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats` — **신규(7/15, 세션 K)**. dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용).
 
 ### 계산기 툴 21개 (tools/)
 연령: dog-age, cat-age
@@ -183,6 +184,42 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 2. Coverage "발견됨/크롤링됨-미색인" 21개 → 다음 데이터에서 숫자가 계속 줄어드는지 확인(38→21 추세가 이어지는지). 안 줄어들면 개별 URL 재크롤 요청을 사용자에게 권유.
 3. `dog-pregnancy-calculator`/`cat-pregnancy-calculator`가 다음 데이터에서 색인되는지 우선 확인(수요가 명확한 페이지라 색인만 되면 바로 노출 기대).
 4. 세션 H의 미해결 이슈(`what-to-feed-pregnant-dog` vs `how-to-tell-if-dog-is-pregnant` 자기잠식 의심)는 이번에도 GSC UI 교차확인 없이는 미확정 — 여전히 열린 항목.
+
+### 세션 K — "확장을 안 하고 있다"는 사용자 피드백에 따른 신규 콘텐츠 재추진 (7/15, 세션 J 직후 후속)
+
+세션 J까지는 보강 위주였고, 사용자가 "주간 작업 때도 확장을 안 한 것 같다, 조금씩이라도 확장은 해야 한다"고 명확히 피드백함. 이에 따라 신규 콘텐츠 후보를 체계적으로 웹 검색하며 경쟁강도를 확인:
+
+**레드오션으로 판단해 보류한 후보들** (전부 웹 검색으로 경쟁사 확인 후 기각):
+- **Dog Exercise Calculator**: SpotOn, Sniffspot, PetMade, calculatorsfordogs.com, worldanimalfoundation, dogscalculators.com, vivaessencepet, petdrifts 등 8개 이상의 기존 사이트가 이미 장악 — 일부는 브랜드 인지도 높은 업체(SpotOn, Sniffspot). 레드오션.
+- **Pet Boarding Cost Calculator**: CalcBee, AgentCalc, FurCalc, dogvetexpert, petcostestimator, Yelp, formts.com 등 다수 — 마찬가지로 레드오션.
+- **Pet Food Toxicity Checker**: ToxiPets(앱), Safe Pet Treats(앱), dietpaw.com, dogscalculators.com의 "Dog Toxicity Calculator"(구체적 mg/kg 독성 임계값 제공) 등 이미 다수 존재. 게다가 이 유형(용량/독성 임계값 계산)은 **의료 안전 정보라 정확도·법적 리스크가 높아 이 사이트가 직접 만들 카테고리가 아니라고 판단** — 보류.
+- **Cat Age(년→인간나이) 블로그 글**: Daily Paws, litter-robot, catcalculator.com, holistapet, miniwebtool, PetMorph 등 매우 포화된 데다, 이미 사이트에 `cat-age-calculator` 툴이 있어 블로그로 또 만들면 자기잠식 우려 — 기각.
+
+**실제로 진행한 것 — GSC 쿼리가 아니라 "사이트 자체 dog/cat 페어링 빈 자리"를 다시 훑어서 발견한 진짜 기회**:
+사이트의 기존 27개 포스트를 dog/cat 페어 단위로 재점검한 결과, dog 전용으로만 있고 cat 짝이 없는 포스트 2개를 발견 (세션 I가 Quality of Life에서 썼던 방법론을 blog 포스트에도 적용):
+1. `what-to-feed-pregnant-dog`(101 노출, 사이트에서 두 번째로 노출 많은 페이지) — **cat 버전이 없었음**
+2. `how-to-reduce-vet-costs-for-dogs` — **cat 버전이 없었음**
+
+이 두 주제는 웹 검색으로 경쟁강도 확인한 결과 Hill's/VCA/Purina/Cats.com 같은 대형 사이트가 있긴 하지만, **dog 버전이 이미 같은 수준의 경쟁(Hill's/VCA/Purina 개 버전) 속에서도 101 노출을 기록하며 정상적으로 작동 중**이라 사이트의 콘텐츠 포맷(계산기 연계 + FAQ 스키마)이 이 정도 경쟁권에서는 통한다는 근거가 있음. "vet cost 절감" 주제는 오히려 개별 소규모 블로그(catsluvus.com 등) 위주라 경쟁이 상대적으로 낮음.
+
+**신규 작성**:
+- `_posts/2026-07-15-what-to-feed-pregnant-cat.md` — `what-to-feed-pregnant-dog` 구조를 그대로 따르되(주차별 급여표, FAQ 6개, 표 2개), 고양이 고유 사실을 웹 검색으로 확인 후 반영: **타우린**(개는 자체 합성 가능하지만 고양이는 불가 — 이게 "개밥을 고양이에게 주면 안 되는" 핵심 이유), **생선 날것 금지**(티아미나아제 효소가 비타민 B1 파괴), 이유기 급여 감량 프로토콜(VCA 기준 1일차 금식→2일차 25%→4~5일에 걸쳐 정상화, 고양이 특유의 유선염 방지 목적).
+- `_posts/2026-07-15-how-to-reduce-vet-costs-for-cats.md` — `how-to-reduce-vet-costs-for-dogs` 구조를 따르되, 고양이 특유의 보험료(개 평균 $55~62/월 vs 고양이 $28~32/월, 나이 들수록 개보다 가파르게 오름 — 웹 검색으로 NerdWallet/Pawlicy/Cats.com 등에서 수치 확인), 고양이가 아픈 걸 잘 숨기는 습성 때문에 정기 혈액검사가 특히 중요하다는 점, 고비용 품종(Maine Coon/Ragdoll/Persian/Scottish Fold 등 유전 질환), TNR 프로그램 등 고양이 고유 내용으로 채움.
+- 둘 다 세션 H/J 패턴 그대로 FAQ를 front matter(스키마용)와 본문(가시성용) 양쪽에 동일하게 작성, 1:1 매칭 코드로 검증 완료(6/6, 4/4 일치).
+
+**역링크(고아 페이지 방지) 추가**:
+- `what-to-feed-pregnant-cat` → `tools/cat-pregnancy-calculator.html`(신규 post-cta), `how-long-are-cats-pregnant.md`·`signs-of-cat-labor.md`(Related Articles), `what-to-feed-pregnant-dog.md`(Related Articles, 종간 교차링크)
+- `how-to-reduce-vet-costs-for-cats` → `tools/cat-vet-visit-scheduler.html`(신규 post-cta), `how-much-does-a-cat-vet-visit-cost.md`·`how-often-vet-visits-cat.md`(Related Articles), `how-to-reduce-vet-costs-for-dogs.md`(Related Articles, 종간 교차링크)
+
+**공통 파일 동기화**: `llms.txt`에 두 항목 추가(각각 관련 주제 근처에 배치). `index.html`/`tools/index.html`은 blog 포스트를 안 실으므로 수정 불필요(기존 패턴과 동일). `blog/index.html`은 Liquid 자동 순회라 손댈 필요 없음.
+
+**QA**: 두 신규 파일 + 수정된 6개 파일 전체 대상으로 — div open/close 매칭(수정된 tool 2개), YAML front matter 파싱 검증(전체 28→30개 포스트 전수), slug 중복 검사(전수, 중복 없음), 전체 저장소 링크 재스캔(신규 포스트 포함, 깨진 링크 없음), FAQ front matter-본문 1:1 매칭(6/6, 4/4) 전부 통과.
+
+**교훈**: "레드오션이라 신규 안 함"이라는 결론에 사용자가 동의하지 않을 수 있다는 걸 이번에 배움. 순수 계산기(calculator) 카테고리는 이 틈새 자체가 이미 많이 포화됐지만, **블로그 포스트(정보성 글)는 계산기보다 진입장벽이 낮고, 사이트 자체 구조의 dog/cat 페어링 빈 자리를 찾는 방법론(세션 I에서 시작)이 계산기뿐 아니라 블로그에도 그대로 적용 가능**하다는 게 이번 세션의 핵심 발견. 앞으로 "신규 콘텐츠 검토"를 할 때는 계산기 레드오션 여부만 보지 말고, **블로그 포스트 dog/cat 페어링 빈 자리도 항상 같이 훑을 것** (`grep "^slug:" _posts/*.md`로 전체 슬러그 뽑아서 dog/cat 대응 쌍이 있는지 눈으로 대조).
+
+**다음 세션에서 확인할 것 추가**:
+- 신규 작성한 `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`의 첫 GSC 노출 확인 (다음 zip에서 색인/노출 여부 체크)
+- 블로그 dog/cat 페어링을 이번에 2건 더 채웠지만, 전수 재점검은 아직 안 함 — 다음 세션에서 `_posts/*.md` slug 전체를 다시 한 번 dog/cat 페어로 교차 대조해서 놓친 게 더 있는지 확인 권장
 
 ---
 

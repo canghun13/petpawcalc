@@ -306,6 +306,7 @@ Yes. A drop in appetite 24–48 hours before whelping is completely normal and i
 - [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
 - [Signs of Dog Labor: What to Expect Hour by Hour](/blog/signs-of-dog-labor/)
 - [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
+- [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](/blog/what-to-feed-pregnant-cat/)
 
 ---
 
