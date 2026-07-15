@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-14 (세션 I)
+최종 갱신: 2026-07-15 (세션 J)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -143,11 +143,54 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 
 **교훈**: "신규 콘텐츠 없음" 결론은 GSC 쿼리 매칭 관점에서만 봤을 때 맞았을 뿐, **사이트 자체 콘텐츠 구조를 페어/패턴 단위로 다시 훑어보는 별도의 체크가 필요**하다는 게 이번 세션의 핵심 교훈. 다음에 신규 콘텐츠 유무를 판단할 때는 (1) GSC 쿼리 미커버 클러스터 확인 + (2) **사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지 확인**, 이 두 가지를 모두 체크할 것.
 
+### 세션 J — Coverage "크롤링됨/발견됨-미색인" 정밀 분석 + 미색인 tool 7개 FAQ 가시화 (7/15)
+
+사용자 요청: 새 GSC Performance/Coverage 내보내기(7/15) 확인 후, 특히 **"크롤링됨-현재 색인이 생성되지 않음"과 "발견됨-현재 색인이 생성되지 않음"** 두 카테고리를 꼼꼼히 분석. 신규 콘텐츠는 중복 체크 + 경쟁강도 웹 검색 후 판단. 대시보드/시각화 없이 텍스트로만 보고.
+
+**1. Coverage 수치 자체는 개선 중 — "그대로 38개"였던 세션 F/H 때와 다름**
+- 이번 Coverage 내보내기: 크롤링됨-미색인 6개, 발견됨-미색인 15개 (합계 21개) + 적절한 표준 태그 대체 페이지 1개(무해, 정상적인 canonical 처리) + 리디렉션 포함 3개(사용자 지시로 계속 무시).
+- 세션 F(7/12)·세션 H(7/14) 때는 "발견됨-미색인 38개"로 2세션 연속 동일했는데, 이번엔 **21개로 감소** — 실제로 색인이 진행되고 있다는 명확한 신호. "기다리면 된다"가 아니라 데이터로 확인된 진전.
+
+**2. Coverage 리포트는 URL 목록을 안 주기 때문에, Performance 페이지 목록과 대조해서 "미색인 추정 URL"을 직접 역산함**
+- 방법: 사이트 전체 URL(tools 21개+tools 인덱스, 포스트 28개, 홈/about/contact/privacy/disclaimer/blog 인덱스/tools 인덱스 = 총 56개) vs Performance `페이지.csv`에 노출이 잡힌 33개 URL을 diff.
+- **주의**: 포스트 URL을 파일명에서 바로 유추하면 안 됨 — 일부 포스트는 front matter `slug:`가 파일명과 다름(예: `true-cost-cat-vs-dog.md`의 실제 slug는 `true-cost-cat-vs-dog-year-by-year`). 반드시 `grep "^slug:"`로 실제 slug를 확인해서 URL을 만들 것. 이걸 놓치면 오탐이 남(이번 세션에서 실제로 한 번 오탐 냈다가 재검증해서 바로잡음).
+- 결과: 23개 URL이 Performance에 노출 0 (Coverage의 21개 미색인과 거의 일치, 소폭 오차는 GSC 집계 시점 차이로 추정) — tools 7개 + blog posts 16개.
+
+**3. 이 과정에서 진짜 버그 하나 발견 및 수정: 깨진 내부 링크**
+- `_posts/2026-06-18-how-much-does-a-cat-vet-visit-cost.md`가 `/blog/true-cost-cat-vs-dog/`로 링크 걸었는데, 실제 해당 포스트의 slug는 `true-cost-cat-vs-dog-year-by-year`라서 **404 링크**였음. `/blog/true-cost-cat-vs-dog-year-by-year/`로 수정.
+- 전체 저장소(_posts, tools, index, footer, llms.txt 등)에서 슬러그/파일명 불일치로 인한 깨진 링크를 파이썬으로 전수 스캔 — 이 1건 외에는 없음을 확인.
+
+**4. 미색인 tool 7개 — 원인 분석 및 FAQ 가시화 작업**
+- 미색인 tool: `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `dog-heat-cycle-calculator`, `dog-pregnancy-calculator`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator` — 전부 세션 H에서 발견한 "FAQ가 스키마에만 있고 본문에 안 보이는" 문제가 있었음(그리고 이 7개는 세션 H/I가 미처리로 남긴 14개 중 일부).
+- **단, FAQ 비가시성이 미색인의 유일한 원인은 아님** — 같은 문제를 가진 tool 7개(`cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler`)는 FAQ 미가시 상태에서도 이미 색인됨. 상관관계는 있지만 인과관계 단정은 보류.
+- **`dog-pregnancy-calculator`/`cat-pregnancy-calculator`가 특히 우선순위 높음**: "dog pregnancy diagnosis/confirmation/check/signs" 등 관련 쿼리 노출을 합치면 20회 이상 되는데, 정작 계산기 자체는 미색인. 이미 인기 포스트(`how-to-tell-if-dog-is-pregnant`, 80노출)에서 역링크도 걸려있어 내부링크 문제는 아님 — 순수하게 페이지 자체의 콘텐츠 품질/신선도 신호 문제로 판단, FAQ 가시화로 대응.
+- `annual-pet-cost-calculator`는 site: 검색으로 실제 미색인 확인, 경쟁 강도 웹서치 결과 calcuja.com/pawcalculator.com/petcalc.com/petcost-calculator.com/petcostestimator.com 등 콘텐츠량이 훨씬 많은 경쟁자가 다수 — 레드오션. 신규 페이지보다 기존 페이지 보강이 맞는 판단.
+- **작업**: 위 7개 tool 전부에 기존 FAQPage 스키마 질문/답변을 그대로 본문에 `<h2>Frequently Asked Questions</h2>` + h3/p 페어로 노출 (세션 H 패턴 그대로 재사용, 신규 주장 없음). 스키마 질문 리스트와 본문 h3 리스트를 코드로 1:1 대조해서 전부 일치 확인. div 개수도 파일별로 open/close 매칭 확인.
+- 이제 21개 tool 중 FAQ 가시화 완료 = 7(세션 H) + 1(세션 I, cat-quality-of-life는 신규 제작 시 처음부터 포함) + 7(세션 J) = **15개 완료, 6개 남음**(`cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler` — 정확히는 7개, 위 문단과 동일 리스트). 이 6~7개는 이미 색인된 페이지들이라 우선순위는 낮지만, 다음 세션에서 마저 처리 권장(패턴 재현이라 빠르게 끝남).
+
+**5. 미색인 blog 포스트 16개 — 대부분 "오래된 페이지가 아직 재크롤 안 된 것"으로 판단, 신규 보강 없이 관찰**
+- 16개 전부 세션 B(7/4~7/10)의 날짜조작 수정 **이전에 작성된 포스트**(5/1~6/18 사이, `cat-quality-of-life-assessment` 7/14 제외 — 이건 너무 최근이라 미색인이 당연함). 반면 6/22 이후 작성된 포스트 7개는 전부(100%) 색인됨.
+- 이 패턴은 세션 B에서 고친 "front matter 날짜가 파일명과 불일치"(조작 신호로 Google이 인식했을 가능성) 문제가, **레이아웃 차원에서 스키마를 넣어도 이미 한 번 안 좋게 평가받은 개별 URL은 Google이 알아서 재크롤하기 전까지 그대로 남는다**는 가설을 강하게 뒷받침함. Coverage 미색인 수가 38→21로 줄어든 것도 이 가설과 일치(Google이 순차적으로 재평가 중).
+- 이 16개는 다음 특징 확인: 전부 관련 계산기/타 포스트로부터 정상적인 역링크 있음(고아 페이지 아님), FAQ도 포스트 레이아웃 특성상 이미 본문에 가시적으로 있음(세션 B에서 전체 적용됨) — 즉 **온페이지 요인으로 설명되는 문제가 아니라 크롤 스케줄/신뢰도 누적 문제**로 판단, 이번 세션엔 콘텐츠 수정 안 함.
+- 다음 세션에서도 여전히 미색인이면(특히 `dog-age-human-years`처럼 5/1 작성 후 2.5개월째 미색인인 최고령 케이스), 그때는 GSC UI에서 "색인 생성 요청"을 사용자가 직접 눌러보는 것을 고려. 이건 에이전트가 GSC API 접근 권한이 없어 직접 할 수 없음 — 사용자에게 요청 필요.
+
+**6. GSC 쿼리 데이터(191개 전체 확인) — 신규 콘텐츠 클러스터 없음, 세션 H/I 결론과 동일**
+- 노출 3회 이상 쿼리는 전부 기존 27개 포스트+21개 tool로 커버됨. 4회 미만 쿼리는 비영어권/경쟁사 브랜드명/노이즈로 세션 H와 동일하게 분류.
+- **AdSense 수익화 관점 우선순위 판단**: 신규 콘텐츠보다 (a) 미색인 페이지 색인 유도(FAQ 가시화 등 온페이지 신호 강화)와 (b) 이미 노출 있는 페이지 순위 개선이 압도적으로 ROI가 높음 — 트래픽 자체가 아직 거의 없는 단계라 신규 페이지를 늘려봐야 같은 문제(미색인)가 반복될 뿐. 이 판단은 세션 H부터 계속 유지 중.
+
+**다음 세션 우선순위**:
+1. 나머지 tool 7개(`cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler`) FAQ 가시화 마무리 — 이미 색인된 페이지라 급하진 않지만 패턴 통일 차원에서 정리.
+2. Coverage "발견됨/크롤링됨-미색인" 21개 → 다음 데이터에서 숫자가 계속 줄어드는지 확인(38→21 추세가 이어지는지). 안 줄어들면 개별 URL 재크롤 요청을 사용자에게 권유.
+3. `dog-pregnancy-calculator`/`cat-pregnancy-calculator`가 다음 데이터에서 색인되는지 우선 확인(수요가 명확한 페이지라 색인만 되면 바로 노출 기대).
+4. 세션 H의 미해결 이슈(`what-to-feed-pregnant-dog` vs `how-to-tell-if-dog-is-pregnant` 자기잠식 의심)는 이번에도 GSC UI 교차확인 없이는 미확정 — 여전히 열린 항목.
+
 ---
 
-## 4. GSC 색인 현황 (7/14 기준)
+## 4. GSC 색인 현황 (7/15 기준)
 
-- **심각한 문제**: "발견됨-미색인" 38개, "크롤링됨-미색인" 3개, "리디렉션 포함 페이지" 3개(→ **사용자 지시로 무시**) — 세션 F(7/12) 때와 완전히 동일한 숫자. 2세션 연속 변화 없음 확인 — Coverage 리포트 자체가 갱신 지연이 있는 것으로 보이며, **실제 상태는 Performance 리포트(쿼리/페이지별 노출)가 더 정확한 지표**로 판단하고 있음.
+- **심각한 문제**: "발견됨-미색인" 15개, "크롤링됨-미색인" 6개(합계 21개), "적절한 표준 태그가 포함된 대체 페이지" 1개(무해, 정상 canonical), "리디렉션 포함 페이지" 3개(→ **사용자 지시로 계속 무시**).
+- **세션 F(7/12)·세션 H(7/14) 때 "발견됨-미색인 38개"로 2세션 연속 정체돼 있던 것이 이번엔 21개로 감소** — Coverage 리포트가 실제로 갱신되고 있고, 색인이 진행 중이라는 확실한 근거. "기다리면 된다"가 아니라 숫자로 확인됨(세션 J).
+- **Coverage는 URL 목록을 안 주므로, 사이트 전체 URL(56개) vs Performance `페이지.csv`에 노출이 잡힌 URL(33개)을 diff해서 미색인 추정 23개 URL을 역산함** (tool 7개 + blog 16개). Coverage의 21개와 근접 — 방법은 세션 J 항목 참고, **주의: 포스트 URL은 파일명이 아니라 front matter `slug:`로 만들 것** (하나 불일치 사례 있었음, 세션 J에서 발견 후 수정).
 - Performance 리포트 기준 일별 노출은 7/8(41) → 7/9(39) → 7/10(61) → 7/11(80)로 최근 뚜렷하게 증가 추세. 실제로 색인/트래픽이 진행되고 있다는 신호.
 - 사이트 전체가 아직 authority가 낮은 신생 사이트라 대부분의 쿼리가 30~90위권. 여전히 클릭이 거의 없음(2개월 누적 실질 클릭 1~2건 수준) — **수익화(AdSense) 관점에서 지금 단계의 최우선 순위는 신규 콘텐츠가 아니라 "이미 노출은 있는 페이지의 순위/CTR 개선"** (세션 H에서 이 판단으로 tool 페이지 FAQ 가시화 작업 진행).
 - **"petcalculators.xyz", 헝가리어/네덜란드어 등 비영어권 쿼리, "pet alliance calculator"/"fido score calculator" 등 경쟁사 브랜드 검색은 의도적으로 무시** — 온페이지로 해결 안 되는 authority/언어/브랜드 문제.
@@ -185,7 +228,7 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 2. 해당 쿼리가 이미 존재하는 페이지와 매칭되는지 확인 (대부분 매칭됨 — 신규 콘텐츠보다 보강이 우선)
 3. 페이지의 title/H1/FAQ에 **정확한 쿼리 문구가 그대로 박혀 있는지** 확인 — 없으면 추가 (세션 C의 반복된 패턴)
 4. front matter `faqs:` 배열과 본문 `## Frequently Asked Questions` 섹션 **양쪽 다** 동일하게 추가할 것 (Schema용 + 가시적 텍스트용)
-5. **tools/ 페이지는 FAQ가 스키마에만 있고 본문에 안 보이는 경우가 많음(세션 H에서 발견, 20개 중 14개 아직 미해결) — 보강 작업 시 항상 먼저 확인하고, 없으면 스키마 질문 그대로 `<h2>Frequently Asked Questions</h2>` + h3(질문)/p(답변) 페어로 본문에 노출시킬 것.** 새 주장을 만드는 게 아니라 이미 있는 스키마 텍스트를 화면에 노출만 시키는 작업이라 리스크가 낮음 — 이 패턴을 다음 세션에서 나머지 14개 tool에도 일괄 적용 권장.
+5. **tools/ 페이지는 FAQ가 스키마에만 있고 본문에 안 보이는 경우가 많음(세션 H에서 발견) — 보강 작업 시 항상 먼저 확인하고, 없으면 스키마 질문 그대로 `<h2>Frequently Asked Questions</h2>` + h3(질문)/p(답변) 페어로 본문에 노출시킬 것.** 새 주장을 만드는 게 아니라 이미 있는 스키마 텍스트를 화면에 노출만 시키는 작업이라 리스크가 낮음. 진행 상황: 21개 tool 중 15개 완료(세션 H 6개 + 세션 I 신규제작 1개 + 세션 J 7개), **남은 7개**: `cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler` — 전부 이미 색인된 페이지라 급하진 않지만 패턴 통일 차원에서 다음 세션에 마저 적용 권장.
 6. FAQ에 새 사실을 추가할 때는(예: "OO 계산기 있나요?" 류) **반드시 웹 검색으로 사실관계부터 확인** — 세션 H에서 "고양이는 BMI가 없다"고 쓸 뻔했다가 검색으로 FBMI 공식이 실제 존재함을 확인하고 정정한 사례 있음. 확신에 근거해 서술하지 말고 검색으로 검증할 것.
 
 ### 검증 습관
@@ -211,11 +254,13 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 
 ## 6. 다음에 확인해야 할 것 (Open Items)
 
-- **최우선: 나머지 tool 페이지 13개에 가시적 FAQ 섹션 적용** (세션 H에서 6개, 세션 I에서 신규 제작한 cat-quality-of-life는 처음부터 반영 — 남은 건 dog/cat-age, dog/cat-heat-cycle, dog/cat-pregnancy-calculator, dog/cat-vet-visit-scheduler, dog/cat-vaccination-schedule-calculator, annual-pet-cost-calculator, spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator). 패턴은 세션 H 커밋 참고.
+- **나머지 tool 7개 FAQ 가시화 마무리**: `cat-age`, `cat-heat-cycle`, `cat-vaccination-schedule`, `dental-cleaning-cost`, `dog-age`, `dog-vaccination-schedule`, `dog-vet-visit-scheduler`. 전부 이미 색인된 페이지라 우선순위는 낮음 — 패턴은 세션 H/J 커밋 참고, 스키마 질문 그대로 본문에 노출하면 됨(신규 리서치 불필요, 빠르게 끝남).
+- **미색인 tool 7개(세션 J에서 FAQ 가시화 완료 — `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `dog-heat-cycle-calculator`, `dog-pregnancy-calculator`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator`)의 다음 GSC 데이터에서 색인 여부 확인** — 특히 `dog-pregnancy-calculator`/`cat-pregnancy-calculator`는 수요가 이미 검증된 페이지라 색인만 되면 바로 노출 기대. FAQ 가시화가 실제로 색인에 영향 줬는지도 이걸로 검증 가능.
+- **Coverage "발견됨/크롤링됨-미색인" 21개(38→21로 감소 확인됨, 세션 J) → 다음 데이터에서도 계속 줄어드는지 확인**. 계속 줄면 자연 회복 중인 것, 정체되면 개별 URL별로 GSC UI에서 "색인 생성 요청"을 사용자가 직접 눌러보는 걸 권유(에이전트는 GSC API 권한이 없어 직접 요청 불가).
+- **미색인 blog 16개는 전부 세션 B 날짜조작 수정(7/4~7/10) 이전에 작성된 포스트(5/1~6/18)** — 6/22 이후 작성 포스트는 100% 색인됨. 온페이지 요인(FAQ, 역링크, 스키마)은 이미 정상이라 판단, 크롤 스케줄/신뢰도 누적 문제로 보고 이번엔 콘텐츠 수정 안 함. 다음 데이터에서도 그대로면(특히 5/1 작성 `dog-age-human-years`처럼 2.5개월 이상 정체된 케이스) 사용자가 GSC에서 직접 색인 요청 고려.
 - **신규 제작한 `cat-quality-of-life-calculator`/`cat-quality-of-life-assessment`의 첫 GSC 노출 확인** — "cat quality of life calculator", "paw score cat" 등 관련 쿼리가 잡히기 시작하는지 다음 데이터에서 확인.
-- **`what-to-feed-pregnant-dog`(101 노출) vs `how-to-tell-if-dog-is-pregnant`(54 노출) 자기잠식 의심 — GSC 웹 UI에서 두 URL 필터로 실제 쿼리 교차 확인 필요** (이번 zip 내보내기는 페이지×쿼리 교차표가 없어 이 세션에선 확정 불가). 겹치는 게 확인되면 what-to-feed 포스트의 증상 관련 서술을 줄이고 how-to-tell-if 포스트로 명확히 유도.
-- Spay/Neuter, Dental Cleaning, Pet Grooming 계산기는 아직 GSC Performance에 노출 데이터가 부족(너무 최근) — 다음 데이터에서 첫 노출/순위 확인
-- 세션 H에서 FAQ 가시화한 6개 tool(`pet-weight`, `cat-weight`, `pet-food-calorie`, `pet-insurance-cost-estimator`, `dog-weight`, `dog-quality-of-life`)의 다음 GSC 데이터에서 순위/노출 변화 확인
-- **다음에 신규 콘텐츠 여부를 판단할 때 사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지도 항상 재확인할 것** (세션 I 교훈, 체크리스트 5번 참고)
-- `pet-euthanasia-cost-and-what-to-expect` 포스트는 영어 톤 검수를 사용자가 직접 하지 못한 상태("나 영어는 잘 몰라서 톤은 모르는데") — 필요시 재검토 여지 있음
-- Coverage 리포트의 "발견됨-미색인 38개"가 세션 F(7/12)·세션 H(7/14) 2회 연속 완전히 동일한 숫자로 나옴 — 다음 데이터에서도 그대로면 Performance 데이터만으로는 안 보이는 다른 근본 원인이 있을 수 있으니 재점검 필요 (예: Coverage 리포트 자체가 이 사이트 규모에서는 갱신 주기가 매우 긴 것일 수도 있음)
+- **`what-to-feed-pregnant-dog`(101 노출) vs `how-to-tell-if-dog-is-pregnant`(54 노출) 자기잠식 의심 — GSC 웹 UI에서 두 URL 필터로 실제 쿼리 교차 확인 필요** (zip 내보내기는 페이지×쿼리 교차표가 없어 계속 미확정). 겹치는 게 확인되면 what-to-feed 포스트의 증상 관련 서술을 줄이고 how-to-tell-if 포스트로 명확히 유도.
+- 세션 H에서 FAQ 가시화한 6개 tool(`pet-weight`, `cat-weight`, `pet-food-calorie`, `pet-insurance-cost-estimator`, `dog-weight`, `dog-quality-of-life`)의 다음 GSC 데이터에서 순위/노출 변화 확인.
+- **다음에 신규 콘텐츠 여부를 판단할 때 사이트 자체의 dog/cat 페어링 등 구조적 패턴에 빠진 게 없는지도 항상 재확인할 것** (세션 I 교훈, 체크리스트 5번 참고). 세션 J에서는 191개 쿼리 전수 확인 결과 신규 클러스터 없음 재확인.
+- `pet-euthanasia-cost-and-what-to-expect` 포스트는 영어 톤 검수를 사용자가 직접 하지 못한 상태("나 영어는 잘 몰라서 톤은 모르는데") — 필요시 재검토 여지 있음.
+- **깨진 링크 전수 스캔은 매 세션 QA에 포함시킬 것** (세션 J에서 `how-much-does-a-cat-vet-visit-cost.md`의 `/blog/true-cost-cat-vs-dog/` 404 링크를 발견/수정함 — 슬러그가 파일명과 다른 포스트에서 발생한 실수였음). 방법: `_posts/*.md`의 실제 `slug:` 값과 `tools/*.html` 파일명을 모아서, 전체 파일에서 `/blog/xxx/`, `/tools/xxx.html` 패턴을 정규식으로 추출해 매칭 안 되는 것 찾기.

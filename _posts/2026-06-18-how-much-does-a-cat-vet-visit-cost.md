@@ -202,6 +202,6 @@ For a senior cat (8+ years), add bloodwork ($150–$300) and a possible dental c
 ## Related Articles
 
 - [How Often Should Cats Go to the Vet?](/blog/how-often-vet-visits-cat/)
-- [True Cost: Cat vs Dog](/blog/true-cost-cat-vs-dog/)
+- [True Cost: Cat vs Dog](/blog/true-cost-cat-vs-dog-year-by-year/)
 - [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
 
