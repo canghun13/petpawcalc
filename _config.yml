@@ -22,10 +22,6 @@ defaults:
     values:
       layout: "tool"
   - scope:
-      path: "checklists"
-    values:
-      layout: "checklist"
-  - scope:
       path: ""
     values:
       layout: "default"
