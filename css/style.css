@@ -434,6 +434,48 @@ main { padding-top: 0; }
 
 .tool-page-header p { color: var(--brown-mid); font-size: 1rem; }
 
+/* ── TABLE WRAPPER (global — used on both blog posts and tool pages) ── */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin: 8px 0 28px;
+}
+.table-wrapper table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.92rem;
+  background: var(--white);
+  margin: 0;
+}
+.table-wrapper th {
+  background: var(--cream-dark);
+  color: var(--brown);
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--border);
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+}
+.table-wrapper th:last-child { border-right: none; }
+.table-wrapper td {
+  color: var(--brown-mid);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.table-wrapper td:last-child { border-right: none; }
+.table-wrapper tr:last-child td { border-bottom: none; }
+.table-wrapper tr:nth-child(even) td { background: var(--cream); }
+.table-wrapper table strong { color: var(--brown); }
+@media (max-width: 600px) {
+  .table-wrapper th, .table-wrapper td { padding: 8px 10px; font-size: 0.85rem; }
+}
+
 .tool-box {
   background: var(--white);
   border: 1px solid var(--border);
