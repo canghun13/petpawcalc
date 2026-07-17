@@ -204,3 +204,4 @@ A puppy who fails to gain weight over 7–10 days in the first few months, or wh
 - [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
 - [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
 - [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
+- [Kitten Weight Chart by Age: What's Normal from Birth to 12 Months?](/blog/kitten-weight-chart-by-breed-size/)

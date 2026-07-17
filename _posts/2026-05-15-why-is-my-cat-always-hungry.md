@@ -141,6 +141,7 @@ Most adult cats do well with 2 meals per day, though 3–4 smaller meals more cl
 - [How Much Should a Cat Weigh? Healthy Weight by Breed and Sex](/blog/how-much-should-a-cat-weigh/)
 - [How Much Should a Senior Cat Eat? A Feeding Guide by Age and Weight](/blog/how-much-should-senior-cat-eat/)
 - [How Often Should Cats Go to the Vet? A Schedule by Age](/blog/how-often-vet-visits-cat/)
+- [Kitten Weight Chart by Age: What's Normal from Birth to 12 Months?](/blog/kitten-weight-chart-by-breed-size/)
 
 ---
 

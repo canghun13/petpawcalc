@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-15 (세션 L)
+최종 갱신: 2026-07-17 (세션 M)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -50,12 +50,13 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 
 ## 2. 현재 콘텐츠 자산 (2026-07-15 기준)
 
-### 블로그 포스트 31개
+### 블로그 포스트 32개
 날짜순 전체 목록은 `_posts/` 참고. 최근 추가분:
 - `puppy-kitten-vaccination-schedule`, `spay-neuter-cost-and-timing`, `dog-cat-dental-cleaning-cost` — 각 계산기의 짝 콘텐츠 (7/10)
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
 - `cat-quality-of-life-assessment` — 세션 I. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
-- `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`(세션 K), `how-to-tell-if-cat-is-pregnant`(세션 L) — dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용). **이 세 페어링 빈 자리는 이번 세션 기준 모두 해소됨.**
+- `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`(세션 K), `how-to-tell-if-cat-is-pregnant`(세션 L) — dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용). 이 세 페어링 빈 자리는 세션 L 기준 모두 해소됨.
+- `kitten-weight-chart-by-breed-size`(세션 M, 7/17) — 사이트에서 두 번째로 노출 많고 순위도 가장 좋은(9.66위, 29노출) 최고 성과 포스트 `puppy-weight-chart-by-breed-size`의 cat 짝이 없었던 걸 발견해 신규 제작. 자세한 내용은 세션 M 항목 참고.
 
 ### 계산기 툴 21개 (tools/)
 연령: dog-age, cat-age
@@ -331,3 +332,48 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 **다음 세션에서 확인할 것**:
 - 이번 세션의 신규 3개 포스트(`what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`, `how-to-tell-if-cat-is-pregnant`)와 tool FAQ 가시화 7개의 다음 GSC 데이터에서 노출/색인 변화 확인
 - 블로그/tool의 dog/cat 페어링은 이제 거의 다 채워졌다고 판단됨 — 다음 신규 콘텐츠는 아마도 완전히 새로운 카테고리(현재 사이트에 없는 주제)를 찾아야 할 가능성이 높음. 다만 계산기(calculator) 카테고리는 세션 K에서 확인했듯 레드오션이 많으니, 신규 카테고리를 검토할 땐 웹 검색으로 경쟁강도부터 반드시 확인할 것.
+
+### 세션 M — GSC 7/17 데이터 분석 + kitten weight chart 신규 + AI검색 대응 비교분석형 콘텐츠 보강 (7/17)
+
+사용자 요청 핵심: (1) 신규 GSC 내보내기 확인 후 신규/보강 작업 진행, (2) 신규 콘텐츠는 기존 파일과 중복 체크 + 웹 검색으로 키워드 경쟁 확인, 롱테일 키워드 전략 활용, (3) **최근 AI 검색은 도메인 권위보다 콘텐츠 자체(문제해결·비교분석 위주)가 중요하다는 트렌드를 반영**, (4) AdSense 수익화 관점에서 우선순위 판단, (5) 대시보드/시각화 없이 텍스트로만 보고.
+
+**1. GSC 데이터 분석 (5/13~7/15 누적, Coverage/Performance 둘 다 확인)**
+
+- **Coverage 미색인 수치가 세션 L(7/15) 대비 완전히 동일함 — 발견됨-미색인 15개 + 크롤링됨-미색인 6개 = 21개, 변화 없음.** 세션 J에서 38→21로 줄어든 이후 이번엔 정체. 세션 F·H 때 2세션 연속 정체(38개)됐던 패턴과 유사 — Coverage 리포트 자체의 집계 지연 가능성(세션 F 가설)과 실제 정체 가능성 둘 다 열어두고 다음 데이터에서 계속 지켜볼 것. Coverage 차트(일별 데이터)는 7/10일자까지만 찍혀있어 실시간성이 없는 건 여전함(색인생성됨 32, 세션 J 시점과 동일 — 이 차트 자체가 며칠 지연되는 구조로 보임).
+- **Performance 일별 노출 추이**: 7/11(80) → 7/12(58) → 7/13(103, 누적 최고치) → 7/14(53) → 7/15(69). 지난 세션까지의 뚜렷한 우상향(23→39→61→80)이 7/13 피크 이후 등락하는 패턴으로 바뀜 — 아직 우려할 수준은 아니지만(103 자체가 최고 기록), 계속 우상향이라고 단정하기보다 다음 데이터에서 추세 재확인 필요.
+- **클릭은 여전히 극소수**: 세션 동안 누적 클릭 4건(7/12, 7/14 각 1건 — 인과 특정 불가한 개별 클릭). 전체 사이트 클릭수가 통계적으로 유의미해지려면 아직 시간이 더 필요한 단계.
+- **`how-to-tell-if-dog-is-pregnant` 노출이 54 → 110으로 2배 이상 급증** (세션 L 이전 대비) — 세션 L에서 이 포스트로 역링크(`how-to-tell-if-cat-is-pregnant` 신규 제작 시 교차링크 추가)와 내부 연결이 강화된 시점과 일치. 다만 클릭은 여전히 0건, 평균 순위 75.57위로 아직 클릭 임계선까지는 거리가 있음.
+- **미해결로 계속 열려있는 이슈**: `what-to-feed-pregnant-dog`(101노출, 27위, 클릭 0)의 자기잠식 의심(세션 H부터 3세션째 미확정). 이번 세션에도 GSC UI 교차확인 없이는 확정 불가 — 열린 항목으로 유지.
+
+**2. 신규 콘텐츠 후보 탐색 — 사이트 구조 dog/cat 페어링 재점검**
+
+세션 K/L의 방법론(`grep "^slug:" _posts/*.md`로 전체 슬러그를 뽑아 dog/cat 페어 대조)을 이번에도 반복 적용한 결과, **`puppy-weight-chart-by-breed-size`의 cat 짝이 없다는 걸 발견**. 이 포스트는 사이트 전체에서 **두 번째로 노출이 많고(29회), 평균 순위는 사이트 전체 1위(9.66위)** — 가장 검증된 성과 패턴인데 cat 버전이 없는 구조적 빈틈이었음.
+
+- 웹 검색으로 "kitten weight chart" 경쟁강도 확인: Kinship, WALTHAM(수의사 검증 데이터, 권위 높음), Pawlicy, PupPilot, thepetcalculator.com(경쟁사 자체 cat weight 허브 보유), 그리고 AI 생성으로 보이는 저품질 사이트(siipet.com 2건, catacats.com) 다수 확인 — puppy 버전보다 확실히 포화된 니치. 다만 dog 버전이 같은 급의 경쟁(대형 브랜드 다수) 속에서도 사이트 최고 성과를 내고 있다는 근거가 있어, 포맷 자체(계산기 연계+FAQ+비교표)가 이 경쟁권에서 통한다고 판단해 진행.
+- **차별화 포인트(AI검색 대응 겸용)**: 단순 나이별 체중표만 있는 경쟁사 다수와 달리, (1) "1파운드=1개월" 같은 빠른 어림규칙, (2) 대형묘종(메인쿤/랙돌/노르웨이숲) vs 일반 잡종묘 성장 타임라인 **비교표**, (3) "왜 우리 새끼고양이가 체중이 안 느나요" **문제해결형 트러블슈팅 섹션**(정상 범위 vs 수의사 상담 필요 범위 구분)을 넣어 단순 정보 나열이 아닌 문제해결/비교분석 콘텐츠로 구성 — 이번 세션 사용자 지시(AI검색은 도메인 권위보다 콘텐츠 품질/실질 가치가 중요)를 신규 제작 시점부터 반영.
+- **신규 작성**: `_posts/2026-07-17-kitten-weight-chart-by-breed-size.md`. Birth~12개월 체중표, "1파운드=1개월" 규칙, 대형묘종 비교표, 트러블슈팅 섹션, FAQ 6개(front matter + 본문 1:1 매칭 검증 완료). 기존 `how-much-should-a-cat-weigh`(성묘 체중 가이드, BCS 중심)와 내용이 겹치지 않도록 확인 — 이쪽은 생후~12개월 성장 곡선이 주제라 별도 앵글로 확인됨.
+- **역링크(고아 페이지 방지)**: `puppy-weight-chart-by-breed-size.md`(Related Articles, 종간 교차링크), `how-much-should-a-cat-weigh.md`·`why-is-my-cat-always-hungry.md`(Related Articles), `cat-weight-calculator.html`·`cat-age-calculator.html`(신규 post-cta).
+- `llms.txt` 동기화 완료. `index.html`/`tools/index.html`은 blog 포스트를 안 실으므로 수정 불필요(기존 패턴과 동일).
+
+**3. AI검색 대응 — 기존 고노출 페이지에 비교분석형 콘텐츠 보강**
+
+사용자가 이번 세션에 명시한 "AI검색은 도메인 권위보다 콘텐츠 자체(문제해결·비교분석)가 중요하다"는 방향을 신규 제작뿐 아니라 **기존 페이지 보강에도 적용**. GSC 쿼리 중 `dog pregnancy diagnosis`(8노출)·`dog pregnancy confirmation`(7노출)·`dog pregnancy check`(7노출) 등 "확인/진단" 계열 쿼리가 상당한 볼륨으로 존재하는데, `dog-pregnancy-calculator`/`cat-pregnancy-calculator` 두 툴 모두 이 정확한 앵글(진단 방법 비교)을 다루는 섹션이 없었음(이번 세션 시작 시점 두 툴 다 여전히 GSC Performance 페이지 목록에 노출 자체가 안 잡히는 상태 — 세션 J에서 발견한 미색인 7개 tool에 포함됐던 페이지들).
+
+- **`dog-pregnancy-calculator.html`, `cat-pregnancy-calculator.html`에 "Pregnancy Confirmation and Diagnosis: Methods Compared" 비교표 섹션 신규 추가**: 촉진(palpation)/혈액검사(relaxin, dog만 해당)/초음파/X-ray 4가지(cat은 3가지, 고양이는 relaxin 혈액검사가 실무에서 잘 안 쓰임) 방법을 "가장 이른 신뢰 가능 시기 / 정확도 / 알 수 있는 정보" 축으로 비교. 신규 사실 주장이 아니라 두 페이지에 이미 흩어져 있던 정보(도입부의 "week 4 ultrasound", "week 7-8 X-ray" 등)를 명시적인 비교표로 재구성한 것이라 콘텐츠 리스크는 낮음.
+- 스키마 FAQ + 본문 가시적 FAQ 양쪽에 "How can I confirm or diagnose my dog's/cat's pregnancy?" 신규 질문 추가 — `diagnosis`/`confirm` 정확 문구가 페이지 텍스트에 없었던 걸 세션 C의 핵심 교훈(정확 문구 매칭)에 따라 채움. 스키마-본문 1:1 매칭 코드로 검증 완료(dog 4/4, cat 4/4).
+- **`what-to-feed-pregnant-dog`(101노출, 0클릭 이상신호)는 이번 세션엔 손대지 않기로 결정**: 313줄 분량으로 이미 트라이메스터별 상세 가이드, 주차별 급여표, 금지 음식표, 산후 급여 변화까지 매우 깊은 콘텐츠가 있어 추가 비교/문제해결 섹션을 얹어도 한계효용이 낮다고 판단. 0클릭의 원인이 콘텐츠 깊이 부족이 아니라 순위(27위, 아직 1페이지 밖) 자체 또는 자기잠식 의심(미확정, 세션 H부터 열린 이슈) 쪽에 더 가깝다고 보고, 콘텐츠 재작업보다 다음 세션에서 GSC UI 교차확인을 사용자에게 요청하는 쪽이 더 정확한 다음 스텝이라고 판단.
+
+**4. AdSense 수익화 관점 우선순위 판단 (사용자 요청)**
+
+- 사이트가 여전히 클릭 자체가 거의 없는 초기 단계(누적 클릭 한 자릿수)라, **신규 페이지 1개보다 이미 노출이 잡히는 페이지의 순위/클릭률 개선이 여전히 ROI가 높다**는 세션 H 이후의 판단을 유지. 이번 세션에 신규 콘텐츠(kitten weight chart)를 하나만 추가하고, 나머지 리소스는 이미 검증된 수요가 있는 두 페이지(dog/cat pregnancy calculator — 쿼리 노출 20회 이상, 색인만 되면 바로 트래픽 기대)의 콘텐츠 깊이를 높이는 데 집중한 것도 이 판단에 따른 것.
+- kitten weight chart는 "완전 신규 니치 개척"이 아니라 "이미 검증된 사이트 최고 성과 포맷(puppy 버전)의 반쪽을 채우는" 저위험 확장이라 우선순위를 높게 잡음 — 세션 K/L에서 확립된 "구조적 페어링 빈자리 = 저위험 신규 콘텐츠" 원칙을 계속 적용.
+- 비교/문제해결형 콘텐츠 보강은 AI 검색(예: ChatGPT/Perplexity류 답변엔진) 노출 가능성까지 고려한 선제 투자 성격 — 전통 SEO 순위 데이터로는 아직 효과 측정이 어려우므로(AI 검색 유입은 GSC에 잡히지 않음) 다음 세션에서도 GA 데이터의 referrer 쪽을 함께 볼 필요가 있음(현재 GA 데이터는 이번 세션에 별도로 받지 않아 미확인).
+
+**5. QA**: 신규 포스트 1개 + 수정 파일 6개(dog/cat-pregnancy-calculator, cat-weight-calculator, cat-age-calculator, puppy-weight-chart-by-breed-size, how-much-should-a-cat-weigh, why-is-my-cat-always-hungry, llms.txt) 전체 대상 — YAML 전수 검증(32개 포스트 전부 통과), slug/permalink 중복 없음, div 개수 매칭(4개 tool 파일 전부 open=close), table/tr 태그 매칭, JSON-LD 스키마 유효성(전체 tools 21개 재검증, 에러 없음), FAQ front matter-본문 1:1 매칭(신규 포스트 6/6, dog-pregnancy 4/4, cat-pregnancy 4/4), 전체 저장소 링크 재스캔(브로큰 링크 0건).
+
+**다음 세션에서 확인할 것**:
+- Coverage 미색인 21개가 다음 데이터에서도 정체면(2세션 연속), 개별 URL 재크롤 요청을 사용자에게 권유할 시점 — 계속 "며칠 더 보자"고 미루지 말 것.
+- `dog-pregnancy-calculator`/`cat-pregnancy-calculator`가 이번 콘텐츠 보강(비교표+FAQ) 이후 색인/노출되는지 최우선 확인 — 색인만 되면 이미 검증된 수요(20회 이상 노출 쿼리 클러스터)라 바로 트래픽 전환 기대.
+- 신규 `kitten-weight-chart-by-breed-size`의 첫 노출/색인 확인.
+- `what-to-feed-pregnant-dog` vs `how-to-tell-if-dog-is-pregnant` 자기잠식 의심은 4세션째 미확정 — 사용자에게 GSC UI 교차확인을 다시 한번 요청하거나, 계속 미확인이면 "확정 불가로 보류"로 공식 종결하는 것도 고려.
+- GA 데이터(referrer, AI 검색엔진발 유입 여부)를 다음 세션에 받아서 organic 검색 외 유입 채널 변화도 함께 볼 것 — 이번 세션엔 GSC만 받아 GA 쪽은 미확인 상태.

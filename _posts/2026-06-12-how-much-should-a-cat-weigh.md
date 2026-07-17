@@ -178,4 +178,5 @@ Most domestic cats reach their full adult weight by 12 months. Larger breeds are
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
 - [How Much Should a Senior Cat Eat?](/blog/how-much-should-senior-cat-eat/)
 - [How to Tell If Your Cat Is Overweight](/blog/how-to-tell-if-cat-is-overweight/)
+- [Kitten Weight Chart by Age: What's Normal from Birth to 12 Months?](/blog/kitten-weight-chart-by-breed-size/)
 

@@ -59,6 +59,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [How Much Should a Senior Dog Eat?](https://petpawcalc.com/blog/how-much-should-senior-dog-eat): Covers calorie and protein needs for aging dogs, when to transition to senior food, signs of under- and overfeeding, and the importance of muscle mass monitoring.
 
 - [Puppy Weight Chart by Breed Size](https://petpawcalc.com/blog/puppy-weight-chart-by-breed-size): Weight charts by breed size category (toy through giant) from 8 weeks to adulthood. Includes adult weight estimation formula and nutrition guidance for large-breed puppies.
+- [Kitten Weight Chart by Age](https://petpawcalc.com/blog/kitten-weight-chart-by-breed-size): Birth-to-12-month weight chart for kittens, the "1 pound per month" rule of thumb, and a comparison of typical domestic-shorthair growth vs. slow-maturing large breeds (Maine Coon, Ragdoll, Norwegian Forest Cat).
 
 - [Why Is My Cat Always Hungry?](https://petpawcalc.com/blog/why-is-my-cat-always-hungry): Explains calorie needs by life stage, common reasons cats seem perpetually hungry (underfeeding, low-satiety food, medical causes), and how to assess whether intake is appropriate.
 
