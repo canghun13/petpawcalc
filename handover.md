@@ -50,15 +50,16 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 
 ## 2. 현재 콘텐츠 자산 (2026-07-15 기준)
 
-### 블로그 포스트 32개
+### 블로그 포스트 33개
 날짜순 전체 목록은 `_posts/` 참고. 최근 추가분:
 - `puppy-kitten-vaccination-schedule`, `spay-neuter-cost-and-timing`, `dog-cat-dental-cleaning-cost` — 각 계산기의 짝 콘텐츠 (7/10)
 - `pet-euthanasia-cost-and-what-to-expect` — **계산기 없이 순수 정보글로만 작성** (아래 3번 항목 참고, 의도적 선택)
 - `cat-quality-of-life-assessment` — 세션 I. 사이트에서 유일하게 dog만 있고 cat이 없던 비대칭 항목을 발견해 제작. `dog-quality-of-life-assessment`와 완전히 동일한 HHHHHMM 스케일 구조지만, 고양이가 통증/질병을 숨기는 습성 때문에 그루밍 중단·점프 기피·litter box 회피 등 고양이 특화 신호로 새로 작성.
 - `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`(세션 K), `how-to-tell-if-cat-is-pregnant`(세션 L) — dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용). 이 세 페어링 빈 자리는 세션 L 기준 모두 해소됨.
-- `kitten-weight-chart-by-breed-size`(세션 M, 7/17) — 사이트에서 두 번째로 노출 많고 순위도 가장 좋은(9.66위, 29노출) 최고 성과 포스트 `puppy-weight-chart-by-breed-size`의 cat 짝이 없었던 걸 발견해 신규 제작. 자세한 내용은 세션 M 항목 참고.
+- `kitten-weight-chart-by-breed-size`(세션 M, 7/17) — 사이트에서 두 번째로 노출 많고 순위도 가장 좋은(9.66위, 29노출) 최고 성과 포스트 `puppy-weight-chart-by-breed-size`의 cat 짝이 없었던 걸 발견해 신규 제작.
+- `flea-tick-prevention-cost`(세션 M, 7/17) — **사이트에 전혀 없던 완전 신규 카테고리(구충제/기생충 예방 비용)**. 신규 계산기 `flea-tick-prevention-cost-calculator`의 짝 콘텐츠. 자세한 내용은 세션 M 6번 항목 참고.
 
-### 계산기 툴 21개 (tools/)
+### 계산기 툴 22개 (tools/)
 연령: dog-age, cat-age
 체중: dog-weight, cat-weight, pet-weight(통합)
 발정/임신: dog-heat-cycle, cat-heat-cycle, dog-pregnancy, cat-pregnancy
@@ -67,6 +68,7 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 삶의 질: dog-quality-of-life(Paw Score), cat-quality-of-life(Paw Score) — 세션 I 신규
 백신: dog-vaccination-schedule-calculator, cat-vaccination-schedule-calculator
 수술/케어 비용: spay-neuter-cost-calculator, dental-cleaning-cost-calculator, pet-grooming-cost-calculator
+**구충/예방 비용**: flea-tick-prevention-cost-calculator — 세션 M 신규, 사이트 최초의 "구충제/기생충 예방" 카테고리
 
 **tools/ 21개 전부 FAQ 본문 가시화 완료(세션 L 기준)** — dog/cat 페어링도 전부 완성 상태(비교/통합형 6개 제외 전부 페어 존재).
 
@@ -371,9 +373,34 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 
 **5. QA**: 신규 포스트 1개 + 수정 파일 6개(dog/cat-pregnancy-calculator, cat-weight-calculator, cat-age-calculator, puppy-weight-chart-by-breed-size, how-much-should-a-cat-weigh, why-is-my-cat-always-hungry, llms.txt) 전체 대상 — YAML 전수 검증(32개 포스트 전부 통과), slug/permalink 중복 없음, div 개수 매칭(4개 tool 파일 전부 open=close), table/tr 태그 매칭, JSON-LD 스키마 유효성(전체 tools 21개 재검증, 에러 없음), FAQ front matter-본문 1:1 매칭(신규 포스트 6/6, dog-pregnancy 4/4, cat-pregnancy 4/4), 전체 저장소 링크 재스캔(브로큰 링크 0건).
 
+**6. 사용자 추가 요청 — "GSC 데이터만 보면 기존 레퍼토리 안에서만 신규가 나온다, 카테고리 확장을 어서 해야 한다" 피드백에 따른 완전 신규 카테고리 추가**
+
+세션 M 1차 작업(위 1~5번)까지는 GSC 쿼리 보강 + 사이트 구조 dog/cat 페어링 빈자리 채우기 위주였음. 사용자가 이 방식 자체의 한계를 지적함 — GSC 데이터는 "우리가 이미 만든 콘텐츠 근처의 검색"만 보여주므로, 이 방식만 반복하면 사이트가 다루는 주제 범위 자체는 넓어지지 않고 계속 같은 카테고리 안에서만 맴돈다는 지적. 이에 따라 **사이트에 아예 없는 새 카테고리**를 웹 검색으로 발굴해 경쟁강도를 확인하는 작업을 추가로 진행.
+
+- **탈락시킨 후보들** (전부 웹 검색으로 경쟁강도 확인 후 기각):
+  - **강아지 성견 체중/사이즈 예측 계산기(Dog Size Predictor)**: Newtum, Pearson, Pawlicy, spiritdogtraining, calcviva, fourdogpaws, omnicalculator, puppygrowthcalculator.com(전용 사이트), yourpaws 등 매우 많은 기존 계산기 확인 — 이미 사이트의 `dog-weight-calculator`가 유사 기능(현재 나이/체중으로 성견 체중 추정)을 커버하고 있기도 해서 자기잠식 우려까지 겹쳐 기각.
+  - **반려동물 이름 생성기(Pet Name Generator)**: commentpicker, 4menearme, randomlists, namegeneratorfun, petdecorart, digitalkw, iluvtool, petnicki, 그리고 **직접 경쟁사인 pawcalculator.com**까지 이름 생성기를 운영 중 — 트래픽은 클 수 있으나 극도로 포화됐고, 사이트의 "수의학 기반 계산기" 포지셔닝과도 결이 달라(재미/네이밍 콘텐츠) 기각.
+  - **반려동물 기대수명 계산기(Life Expectancy Calculator)**: Newtum, worldanimalfoundation, omnicalculator, pawcalculator, thepetcalculator.com, dogscalculators.com, furcalc(NIH Dog Aging Project·VetCompass·AKC 데이터 인용, DVM 감수까지 명시)까지 — 데이터 권위 경쟁이 매우 치열한 레드오션이라 기각.
+  - **체중 감량/칼로리 결핍 계산기(Weight Loss Calculator)**: Association for Pet Obesity Prevention·World Pet Obesity Association(실제 수의사 단체) 및 thepetcalculator.com이 이미 深이 있는 전용 계산기 보유 — 권위 있는 경쟁자와 직접 부딪히는 영역이라 이번엔 보류(다음 후보군에 남겨둠, 아래 참고).
+- **선정: 벼룩·진드기 예방 비용 계산기(Flea & Tick Prevention Cost Calculator)** — 웹 검색 결과 이 주제는 **"계산기" 형태의 경쟁자가 거의 없고 대부분 정적 비용표/블로그 글(vetreceipt.com, spectrumcare.pet, 동물병원 블로그 등)뿐**이라는 걸 확인 — 인터랙티브 계산기 포맷 자체가 비어있는 진짜 저경쟁 틈새. 동시에 반려동물 예방접종/구충 비용이라는 실질적·반복적 지출(연 1회성 아닌 매달 발생)이라 검색 의도가 뚜렷하고, 사이트가 이미 검증한 "비용 계산기" 포맷(spay-neuter, dental, grooming과 동일 패턴)과 정확히 맞아떨어져 우선 선정.
+- **신규 제작**:
+  - `tools/flea-tick-prevention-cost-calculator.html` — dog/cat 통합, dog는 체중 구간별 배율(0.85~1.5x) 적용, 제품 유형 4종(basic topical / oral chewable / combo+heartworm / 8개월 collar) 선택 → 연간+월평균 비용 추정. 본문에 제품 유형 비교표, **"예방 비용 vs 방치했을 때 치료 비용" 비교 섹션**(벼룩 감염 가정치료 $50-200+, 개 심장사상충 치료 $500-1,000+ 및 고양이는 승인된 치료제 자체가 없음, 진드기매개질환 검사·치료 $250-525 — 전부 웹 검색으로 확인한 수치)을 넣어 이번 세션 AI검색 방향(비교분석·문제해결)을 처음부터 반영. FAQ 3개(스키마+본문 1:1 매칭 검증).
+  - `_posts/2026-07-17-flea-tick-prevention-cost.md` — 계산기 짝 콘텐츠. 제품유형별 비용표, 가격 편차 원인 분석(체중/묶음구매/브랜드vs제네릭/콤보vs단일), 예방 vs 치료 비용 비교, **"이미 감염됐다면?" 문제해결형 체크리스트**(동거 반려동물 동시치료·침구 세탁·진공청소·최소 3개월 지속 등), FAQ 6개(제네릭 안전성, 개 구충제를 고양이에 쓰면 안 되는 이유=퍼메트린 독성, 실내묘도 필요한 이유 등 롱테일 키워드 다수 포함).
+  - **롱테일 키워드 전략 반영**: 본문·FAQ에 "flea and tick prevention cost per month", "Frontline/Nexgard/Seresto/Revolution Plus" 등 구체 제품명, "generic flea medication", "indoor cat flea prevention", "dog flea medication on cat"(안전 경고 겸 검색 의도 대응) 등 세부 롱테일을 의도적으로 다수 배치 — 메인 키워드("flea tick calculator") 하나가 아니라 주변 롱테일 클러스터를 넓게 점거하는 전략.
+- **역링크(고아 페이지 방지) 6곳**: `annual-pet-cost-calculator.html`(신규 post-cta), `dog-cat-dental-cleaning-cost.md`·`spay-neuter-cost-and-timing.md`·`annual-cost-of-owning-a-dog.md`(Related Articles).
+- **공통 파일 4종 전부 동기화**: `index.html`·`tools/index.html`에 신규 tool-card 추가(New 배지를 `cat-quality-of-life-calculator`에서 이번 신규로 이동 — 세션 L 이후 배지가 오래 남아있던 걸 정리), `_includes/footer.html`의 Tools 목록에 추가(footer는 큐레이션 목록이지만 비용 계산기 계열은 이미 다수 포함돼 있어 동일 계열로 추가), `llms.txt`에 tool+blog 항목 각 1개씩 추가.
+- **QA 재실행**: 전체 포스트 33개(신규 포함) YAML 전수 통과, slug/permalink 중복 없음(tool 22개), 신규/수정 파일 div 매칭, JSON-LD 스키마 22개 tool 전수 재검증 에러 없음, flea-tick 스키마-본문 FAQ 1:1 매칭(3/3), 신규 포스트 FAQ 매칭(6/6), index.html/tools/index.html 카드 개수(22) = 실제 tool 파일 개수(22) 일치 확인, 전체 링크 재스캔 브로큰 0건.
+
+**다음 세션 신규 카테고리 후보 파이프라인** (경쟁강도 조사는 이번 세션에 완료, 진행은 보류):
+- **체중 감량/칼로리 결핍 계산기**: 권위 있는 수의사 단체(APOP, WPOA) 경쟁자가 있지만, 우리 사이트의 기존 `pet-food-calorie-calculator`(이미 색인·노출 있음)에 "감량 모드" 토글을 추가하는 확장형으로 접근하면 신규 페이지 리스크 없이 시도 가능 — 완전 신규 페이지보다 기존 계산기 확장을 권장.
+- **첫해 강아지/고양이 입양 비용 계산기(초기 셋업 비용, annual-pet-cost와 다른 앵글)**: 이번 세션엔 경쟁강도 조사를 하지 못함 — 다음 세션 후보.
+- 계속 레드오션인 카테고리(사이즈 예측/이름생성기/기대수명): 재검토 불필요, 계속 배제.
+
 **다음 세션에서 확인할 것**:
 - Coverage 미색인 21개가 다음 데이터에서도 정체면(2세션 연속), 개별 URL 재크롤 요청을 사용자에게 권유할 시점 — 계속 "며칠 더 보자"고 미루지 말 것.
 - `dog-pregnancy-calculator`/`cat-pregnancy-calculator`가 이번 콘텐츠 보강(비교표+FAQ) 이후 색인/노출되는지 최우선 확인 — 색인만 되면 이미 검증된 수요(20회 이상 노출 쿼리 클러스터)라 바로 트래픽 전환 기대.
 - 신규 `kitten-weight-chart-by-breed-size`의 첫 노출/색인 확인.
+- **신규 카테고리 `flea-tick-prevention-cost-calculator`/`flea-tick-prevention-cost`(포스트)의 첫 노출/색인 확인 — 사이트 최초의 완전 신규 카테고리라 GSC에 관련 쿼리("flea tick cost", "flea prevention calculator" 등)가 새로 잡히기 시작하는지가 카테고리 확장 전략이 통하는지 확인하는 첫 신호가 될 것.**
 - `what-to-feed-pregnant-dog` vs `how-to-tell-if-dog-is-pregnant` 자기잠식 의심은 4세션째 미확정 — 사용자에게 GSC UI 교차확인을 다시 한번 요청하거나, 계속 미확인이면 "확정 불가로 보류"로 공식 종결하는 것도 고려.
 - GA 데이터(referrer, AI 검색엔진발 유입 여부)를 다음 세션에 받아서 organic 검색 외 유입 채널 변화도 함께 볼 것 — 이번 세션엔 GSC만 받아 GA 쪽은 미확인 상태.
+- **다음 세션 신규 카테고리 후보**: pet-food-calorie-calculator에 "체중 감량 모드" 확장(APOP/WPOA 등 권위 있는 경쟁자 있지만 기존 계산기 확장이라 리스크 낮음), 첫해 입양 비용 계산기(경쟁강도 미조사, 다음 세션 후보). 사용자가 "GSC 데이터만으로는 레퍼토리 확장이 안 된다"고 명확히 피드백했으므로, **매 세션 GSC 보강과 별개로 최소 1개는 완전 신규 카테고리 후보를 웹 검색으로 발굴하는 걸 정례화할 것.**

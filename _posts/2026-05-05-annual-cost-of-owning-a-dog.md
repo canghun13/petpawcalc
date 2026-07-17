@@ -163,3 +163,4 @@ At minimum, $1,000–$2,000. This covers the majority of urgent care situations 
 - [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](/blog/dog-age-human-years/)
+- [Flea & Tick Prevention Cost for Dogs and Cats](/blog/flea-tick-prevention-cost/)

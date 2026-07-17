@@ -81,6 +81,7 @@ Most standard accident-and-illness pet insurance plans do not cover routine dent
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
 - [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
+- [Flea & Tick Prevention Cost for Dogs and Cats](/blog/flea-tick-prevention-cost/)
 
 ---
 

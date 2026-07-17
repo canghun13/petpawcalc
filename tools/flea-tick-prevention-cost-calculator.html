@@ -1,0 +1,302 @@
+---
+layout: tool
+title: Flea & Tick Prevention Cost Calculator — Annual Cost by Product Type
+description: Estimate your dog or cat's annual flea and tick prevention cost by product type — topical, oral chewable, combo (with heartworm), or collar. Free, instant results.
+permalink: /tools/flea-tick-prevention-cost-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Flea & Tick Prevention Cost Calculator",
+  "url": "https://petpawcalc.com/tools/flea-tick-prevention-cost-calculator.html",
+  "description": "Estimate the annual cost of flea and tick prevention for a dog or cat based on product type and pet size.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does flea and tick prevention cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most pet owners spend $120–$360 per year depending on product type. Basic topical products run $120–$180/year, oral chewables $170–$250/year, combination products that also cover heartworm $260–$360/year, and 8-month collars $85–$110/year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a flea and tick collar cheaper than monthly prevention?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, per year a collar like Seresto is usually the least expensive option ($85–$110/year), since one collar covers about 8 months. However, collars only cover fleas and ticks — they don't include heartworm prevention, which most vets recommend covering separately in heartworm-endemic areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does dog size affect flea and tick prevention cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Nearly all dog flea/tick products are dosed by weight, and larger dogs need a higher-dose (more expensive) version of the same product. A giant-breed dog can cost 30–50% more per year than a small dog on the identical product."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🦟 Flea & Tick Prevention Cost Calculator</h1>
+    <p>See what you'll actually pay per year for flea and tick prevention, based on your pet's species, size, and product type.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="ft-species">What pet do you have?</label>
+      <select id="ft-species" onchange="toggleFtSpecies()">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div id="ft-form" style="display:none;">
+      <div class="form-group" id="ft-weight-group">
+        <label for="ft-weight">Dog's Weight</label>
+        <select id="ft-weight">
+          <option value="small">Small (under 25 lbs)</option>
+          <option value="medium">Medium (25–50 lbs)</option>
+          <option value="large">Large (51–90 lbs)</option>
+          <option value="giant">Giant (over 90 lbs)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ft-product">Product Type</label>
+        <select id="ft-product">
+          <option value="topical">Basic topical (flea + tick only) — e.g. Frontline Plus</option>
+          <option value="chewable">Oral chewable (flea + tick only) — e.g. Nexgard, Bravecto</option>
+          <option value="combo">Combo (flea + tick + heartworm) — e.g. Simparica Trio, Revolution Plus</option>
+          <option value="collar">8-month collar (flea + tick only) — e.g. Seresto</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" id="ft-btn" onclick="calculateFleaTick()" style="display:none;">Estimate Annual Cost →</button>
+
+    <div class="result-box" id="ft-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="ft-date"></span>
+      </div>
+      <h3 id="ft-result-total"></h3>
+      <div id="ft-result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="ft-pdf-btn" onclick="doPrint('ft-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general cost estimates based on national averages for common products. Actual pricing varies by brand, retailer, and region. This is not a product recommendation — talk to your vet about which product matches your pet's actual parasite risk (indoor/outdoor access, local tick and heartworm prevalence, other pets in the household).
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Prevention Products Compared</h2>
+    <div class="table-wrapper" style="margin-bottom: 24px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Product type</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Covers</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Dosing</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Typical annual cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Basic topical</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Fleas, ticks</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Monthly, applied to skin</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$120–$180</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Oral chewable</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Fleas, ticks</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Monthly or every 3 months</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$170–$250</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Combo (+ heartworm)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Fleas, ticks, heartworm (± intestinal parasites)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Monthly</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$260–$360</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">8-month collar</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Fleas, ticks</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Replace ~1.5x per year</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$85–$110</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The cheapest option on paper (collar) doesn't cover heartworm, which is a separate and much larger financial and health risk in most of the U.S. — see the comparison below before choosing based on price alone.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Prevention Cost vs. Treatment Cost: Why Skipping It Rarely Saves Money</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It's tempting to skip prevention for an indoor pet or during colder months, but the cost comparison rarely favors that choice:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Flea infestation in the home</strong>: once fleas establish in carpet and furniture, expect $50–$200+ in home treatment products, sometimes a professional exterminator, plus vet treatment for the pet itself — commonly more than a full year of prevention.</li>
+      <li><strong>Heartworm treatment</strong> (dogs): there is no cheap fix once a dog is infected — treatment commonly runs $500–$1,000+ and involves painful injections, months of activity restriction, and real risk to the dog. There is no approved heartworm treatment for cats at all, which makes prevention the only real option for cats in heartworm areas.</li>
+      <li><strong>Tick-borne disease testing and treatment</strong>: a positive tick-borne disease test typically leads to $250–$525 in additional diagnostics and treatment — multiple years of prevention for the cost of one illness.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">In almost every scenario, a full year of even the most expensive prevention tier costs less than treating a single infestation or infection after the fact.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Which Product Type Should You Choose?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Choose a combo product</strong> if you live in an area with heartworm risk (most of the continental U.S.) and want one product covering everything — the most convenient and the most complete, at the highest price point.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Choose an oral chewable</strong> if your pet swims or bathes frequently (topicals can wash off) or you want a treat-like product that's easy to give — pair it with a separate heartworm-only preventive to keep costs down.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Choose a topical</strong> if cost is the main driver and your pet won't reliably eat a chewable — apply to skin, not fur, for it to absorb properly.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Choose a collar</strong> for the lowest annual cost and the least owner effort (no monthly reminders) — best paired with a separate heartworm preventive if you're in a risk area, since collars don't cover it.</p>
+
+    <div class="post-cta">
+      <p>Want the full annual cost picture across every category? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Also budgeting for a vet visit this year? → <a href="/tools/dog-vet-visit-scheduler.html">Check Your Dog's Vet Visit Schedule</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does flea and tick prevention cost per year?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most pet owners spend $120–$360 per year depending on product type. Basic topical products run $120–$180/year, oral chewables $170–$250/year, combination products that also cover heartworm $260–$360/year, and 8-month collars $85–$110/year.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is a flea and tick collar cheaper than monthly prevention?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, per year a collar like Seresto is usually the least expensive option ($85–$110/year), since one collar covers about 8 months. However, collars only cover fleas and ticks — they don't include heartworm prevention, which most vets recommend covering separately in heartworm-endemic areas.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does dog size affect flea and tick prevention cost?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Yes. Nearly all dog flea/tick products are dosed by weight, and larger dogs need a higher-dose (more expensive) version of the same product. A giant-breed dog can cost 30–50% more per year than a small dog on the identical product.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+</script>
+<script>
+function toggleFtSpecies() {
+  const species = document.getElementById('ft-species').value;
+  document.getElementById('ft-form').style.display = species ? 'block' : 'none';
+  document.getElementById('ft-btn').style.display = species ? 'block' : 'none';
+  document.getElementById('ft-result').style.display = 'none';
+  document.getElementById('ft-weight-group').style.display = species === 'dog' ? 'block' : 'none';
+}
+
+const ftBaseRanges = {
+  topical:  { low: 120, high: 180 },
+  chewable: { low: 170, high: 250 },
+  combo:    { low: 260, high: 360 },
+  collar:   { low: 85,  high: 110 }
+};
+
+const ftWeightMultiplier = {
+  small: 0.85,
+  medium: 1.0,
+  large: 1.25,
+  giant: 1.5
+};
+
+const ftProductLabels = {
+  topical: 'Basic topical',
+  chewable: 'Oral chewable',
+  combo: 'Combo (+ heartworm)',
+  collar: '8-month collar'
+};
+
+function calculateFleaTick() {
+  const species = document.getElementById('ft-species').value;
+  const product = document.getElementById('ft-product').value;
+  const weight = document.getElementById('ft-weight').value;
+
+  const base = ftBaseRanges[product];
+  const multiplier = species === 'dog' ? ftWeightMultiplier[weight] : 1.0;
+
+  const low = Math.round(base.low * multiplier);
+  const high = Math.round(base.high * multiplier);
+  const monthlyLow = Math.round(low / 12);
+  const monthlyHigh = Math.round(high / 12);
+
+  document.getElementById('ft-result-total').textContent = `$${low.toLocaleString()} – $${high.toLocaleString()} / year`;
+
+  let breakdown = `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Product type</span><span>${ftProductLabels[product]}</span></div>`;
+  if (species === 'dog') {
+    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Size adjustment</span><span>${weight.charAt(0).toUpperCase() + weight.slice(1)} dog</span></div>`;
+  }
+  breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Approx. per month</span><span>$${monthlyLow}–$${monthlyHigh}</span></div>`;
+  document.getElementById('ft-result-breakdown').innerHTML = breakdown;
+
+  document.getElementById('ft-result').style.display = 'block';
+  document.getElementById('ft-result').classList.add('show');
+  document.getElementById('ft-pdf-btn').style.display = 'block';
+  document.getElementById('ft-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

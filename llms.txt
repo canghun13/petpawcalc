@@ -48,6 +48,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Pet Grooming Cost Calculator](https://petpawcalc.com/tools/pet-grooming-cost-calculator.html): Select dog or cat, size (for dogs), coat type (short/medium/long/curly), and professional grooming frequency to get an annual grooming cost estimate covering both professional visits and home maintenance supplies.
 
+- [Flea & Tick Prevention Cost Calculator](https://petpawcalc.com/tools/flea-tick-prevention-cost-calculator.html): Select dog or cat, dog weight tier, and product type (basic topical, oral chewable, combo with heartworm, or 8-month collar) to get an instant annual and monthly cost estimate, plus a comparison of prevention cost vs. the cost of treating a flea infestation, heartworm, or tick-borne disease.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
@@ -68,6 +70,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 - [The True Cost of Owning a Cat vs Dog](https://petpawcalc.com/blog/true-cost-cat-vs-dog-year-by-year): Year-by-year cost comparison across the full lifetime of a dog vs cat, broken down by category. Includes time cost and commonly underestimated expenses.
 
 - [How Often Should You Take Your Dog to the Vet?](https://petpawcalc.com/blog/how-often-vet-visits-dog-cost-by-age): Recommended vet visit frequency by life stage (puppy, adult, senior) with what each visit should cover and typical costs.
+- [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Cost breakdown by product type (topical, chewable, combo, collar), why prices vary by dog size and brand, and a cost comparison of prevention vs. treating a flea infestation, heartworm, or tick-borne disease after the fact.
 
 - [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
 
