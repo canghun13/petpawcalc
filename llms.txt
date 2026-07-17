@@ -50,6 +50,14 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Flea & Tick Prevention Cost Calculator](https://petpawcalc.com/tools/flea-tick-prevention-cost-calculator.html): Select dog or cat, dog weight tier, and product type (basic topical, oral chewable, combo with heartworm, or 8-month collar) to get an instant annual and monthly cost estimate, plus a comparison of prevention cost vs. the cost of treating a flea infestation, heartworm, or tick-borne disease.
 
+## Checklists
+
+Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
+
+- [New Puppy Checklist](https://petpawcalc.com/checklists/new-puppy-checklist.html): Supplies, first vet visit, core vaccine series timing (6-16 weeks), socialization window (closes ~16 weeks), spay/neuter timing, and first-year budgeting.
+- [New Kitten Checklist](https://petpawcalc.com/checklists/new-kitten-checklist.html): Supplies, litter box setup (one per cat plus one extra), first vet visit, FeLV/FIV testing, core FVRCP vaccine series timing, toxic plant warnings (lilies), and first-year budgeting.
+- [New Rabbit Checklist](https://petpawcalc.com/checklists/new-rabbit-checklist.html): Housing space requirements, diet (unlimited hay + measured pellets), litter-safe products (never clumping cat litter), finding a rabbit-savvy vet, GI stasis emergency recognition, and the 8-12 year lifespan commitment. The site's first non-dog/cat content.
+
 ## Blog
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.

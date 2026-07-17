@@ -30,21 +30,26 @@
 
 ### 디렉토리 구조
 ```
-_config.yml          # baseurl, permalink(/blog/:slug/), 플러그인, defaults(레이아웃 매핑)
+_config.yml          # baseurl, permalink(/blog/:slug/), 플러그인, defaults(레이아웃 매핑 — posts/tools/checklists 경로별 지정)
 _layouts/
   default.html        # 공통 뼈대, canonical 태그 포함
   post.html           # 블로그 포스트 레이아웃 — Article+FAQPage Schema, 테이블 CSS(table-wrapper), canonical 전부 여기 있음
-  tool.html           # 계산기 툴 레이아웃
+  tool.html            # 계산기 툴 레이아웃
+  checklist.html       # 체크리스트 레이아웃(세션 M 신규) — 체크박스 localStorage 저장/진행률바/프린트 공용 JS가 여기 있음(개별 체크리스트 파일엔 JS 없이 마크업만)
 _includes/
   header.html, footer.html
-_posts/               # 블로그 포스트 27개 (2026-MM-DD-slug.md 형식)
-tools/                # 계산기 툴 20개 (개별 .html, front matter로 title/description/permalink 지정)
+_posts/               # 블로그 포스트 33개 (2026-MM-DD-slug.md 형식)
+tools/                # 계산기 툴 22개 (개별 .html, front matter로 title/description/permalink 지정)
   index.html           # 툴 전체 목록 페이지 (검색 가능)
+checklists/            # 체크리스트 3개(세션 M 신규) — tools/와 동일 패턴(front matter, permalink)
+  index.html           # 체크리스트 목록 페이지
 index.html             # 홈페이지 (툴 카드 전체 노출)
 blog/index.html        # 블로그 목록 (Liquid로 site.posts 자동 순회, 신규 포스트 추가해도 별도 수정 불필요)
 llms.txt               # LLM 크롤러용 사이트 요약 — 신규 콘텐츠 생성 시 반드시 동기화
+css/style.css           # 전역 스타일시트 — table-wrapper, checklist-* 등 여러 레이아웃이 공유하는 CSS는 반드시 여기(스코프 없이) 넣을 것. _layouts/post.html처럼 특정 레이아웃 안에 스코프해서 넣으면 다른 레이아웃(tool.html 등)에서 안 먹는 버그가 남(세션 M에서 실제로 발생, 아래 참고)
 CNAME                  # petpawcalc.com (정상 설정 확인됨)
 ```
+
 
 ---
 
@@ -58,6 +63,9 @@ CNAME                  # petpawcalc.com (정상 설정 확인됨)
 - `what-to-feed-pregnant-cat`, `how-to-reduce-vet-costs-for-cats`(세션 K), `how-to-tell-if-cat-is-pregnant`(세션 L) — dog 전용으로만 있던 포스트의 cat 짝을 채움(세션 I의 "dog/cat 페어링 빈 자리 점검" 방법론을 blog에도 적용). 이 세 페어링 빈 자리는 세션 L 기준 모두 해소됨.
 - `kitten-weight-chart-by-breed-size`(세션 M, 7/17) — 사이트에서 두 번째로 노출 많고 순위도 가장 좋은(9.66위, 29노출) 최고 성과 포스트 `puppy-weight-chart-by-breed-size`의 cat 짝이 없었던 걸 발견해 신규 제작.
 - `flea-tick-prevention-cost`(세션 M, 7/17) — **사이트에 전혀 없던 완전 신규 카테고리(구충제/기생충 예방 비용)**. 신규 계산기 `flea-tick-prevention-cost-calculator`의 짝 콘텐츠. 자세한 내용은 세션 M 6번 항목 참고.
+
+### 구조 변경 (세션 M, 7/17): "Checklists" 신규 최상위 섹션
+`Tools`/`Blog`에 이은 사이트의 **세 번째 콘텐츠 축**. `/checklists/` 경로, 전용 레이아웃(`_layouts/checklist.html`), nav에 탭 추가(`Tools | Checklists | Blog | About | Contact`). 인터랙티브 체크박스(localStorage로 진행상황 저장) + 인쇄/PDF 저장 기능. 자세한 배경과 콘텐츠 목록은 아래 "세션 M — 카테고리 확장" 항목 참고.
 
 ### 계산기 툴 22개 (tools/)
 연령: dog-age, cat-age
@@ -404,3 +412,49 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - `what-to-feed-pregnant-dog` vs `how-to-tell-if-dog-is-pregnant` 자기잠식 의심은 4세션째 미확정 — 사용자에게 GSC UI 교차확인을 다시 한번 요청하거나, 계속 미확인이면 "확정 불가로 보류"로 공식 종결하는 것도 고려.
 - GA 데이터(referrer, AI 검색엔진발 유입 여부)를 다음 세션에 받아서 organic 검색 외 유입 채널 변화도 함께 볼 것 — 이번 세션엔 GSC만 받아 GA 쪽은 미확인 상태.
 - **다음 세션 신규 카테고리 후보**: pet-food-calorie-calculator에 "체중 감량 모드" 확장(APOP/WPOA 등 권위 있는 경쟁자 있지만 기존 계산기 확장이라 리스크 낮음), 첫해 입양 비용 계산기(경쟁강도 미조사, 다음 세션 후보). 사용자가 "GSC 데이터만으로는 레퍼토리 확장이 안 된다"고 명확히 피드백했으므로, **매 세션 GSC 보강과 별개로 최소 1개는 완전 신규 카테고리 후보를 웹 검색으로 발굴하는 걸 정례화할 것.**
+
+### 세션 M (계속) — 버그 수정: tool 페이지 표 반응형 깨짐 (7/17)
+
+사용자가 `flea-tick-prevention-cost-calculator` 페이지 모바일 스크린샷을 보내며 표가 반응형으로 안 잘리고 깨진다고 리포트.
+
+**원인**: `.table-wrapper` 스타일(`overflow-x:auto` + `table min-width:480px` 등)이 `_layouts/post.html` 안에 `.post-body .table-wrapper`로 **블로그 포스트 레이아웃에만 스코프**돼 있었음. `tools/*.html`은 `_layouts/tool.html`(별도 레이아웃)을 쓰는데, 여기엔 이 스타일 자체가 아예 없어서 `class="table-wrapper"`를 붙여도 무용지물이었음. 세션 M 앞부분에서 `dog/cat-pregnancy-calculator`, `flea-tick-prevention-cost-calculator`에 비교표를 추가하면서 이 문제가 새로 생김(이전엔 tool 페이지에 표가 있는 파일 자체가 없어서 잠재해있던 버그가 이번에 처음 표면화됨).
+
+**수정**: `css/style.css`(전역 스타일시트)에 스코프 없는 `.table-wrapper` 규칙을 새로 추가. 블로그 포스트는 기존 `.post-body .table-wrapper`가 더 구체적이라 그대로 우선 적용(충돌 없음), tool 페이지는 이제 전역 규칙이 적용됨.
+
+**교훈(중요, 체크리스트 항목에도 반영)**: 여러 레이아웃(post/tool/checklist)이 공유해야 하는 CSS는 특정 레이아웃 파일 안에 스코프해서 넣지 말고 **반드시 `css/style.css`에 스코프 없이 넣을 것**. 이번 체크리스트 섹션 신규 제작 시에도 이 교훈을 바로 적용해서 `checklist-*` 관련 CSS를 전부 처음부터 `css/style.css`에 넣었음(아래 참고).
+
+### 세션 M (계속) — "카테고리 확장" 논의 및 실행: Checklists 신규 섹션 + 반려동물 종 확장 (7/17)
+
+**배경**: 세션 M 앞부분에서 신규 콘텐츠 후보를 웹 검색으로 탐색했으나(체중감량 계산기 등) 전부 GSC 쿼리 보강이나 기존 계산기 카테고리 안에서의 확장이었음. 사용자가 "GSC 데이터만 보면 기존 레퍼토리 안에서만 신규가 나온다", "카테고리 확장도 이제는 어서 해야 한다"고 명확히 피드백 — nav바(Tools/Blog/About/Contact) 스크린샷을 보여주며 **완전히 새로운 최상위 섹션**을 요청.
+
+**후보 조사 (웹 검색)**:
+- **품종(breed) 디렉토리/비교/선택 퀴즈 — 전부 기각**: 직접 경쟁사(calculatorsfordogs.com, thepetcalculator.com, dogscalculators.com)가 이미 품종별 200개+ 페이지와 품종 전용 계산기까지 만들어놨고, 품종 비교 도구도 breedfinder.org·dogell.com·breedlookup.com·omnipawhub.com·petzdaddy.com·mybreedmatch.com·breedtools.com에 **AKC 본사**까지 이미 다수 존재 — 이 시점에 진입하면 승산 없음. 이 조사 결과를 사용자에게 투명하게 공유하고 다른 방향 제안.
+- **체크리스트 — 선정**: "새 강아지/고양이 체크리스트" 자체는 검색량이 있지만 경쟁자 거의 전부가 AAHA·Banfield·Chewy·Kinship 같은 정적 블로그 글이거나 유료 다운로드(gumroad, littlebeasttreats)이고, **"체크박스 누르고 저장/출력하는 인터랙티브 웹 도구" 자체를 만든 곳은 거의 없음**(puppygrowthcalculator.com이 거의 유일한 예). 사이트가 이미 가진 PDF 저장(print) 패턴을 그대로 재사용할 수 있고, 기존 계산기 22개와 자연스럽게 상호링크되는 구조라 선정.
+- **Compare(비교 허브) — 조건부 보류**: 사용자가 "그 분야에 꼭 있어야 될 것" 관점에서 재고 요청 → 품종 성향(성격/미용/운동량) 비교는 여전히 레드오션이라 배제하되, **우리가 이미 데이터를 가진 "비용/실용" 축 비교**(품종별 연간비용, 보험 플랜, 사료 급여방식 비교 등 기존 계산기 데이터 재활용)로 스코프를 좁히면 승산 있다고 판단 — **이번 세션엔 시간 관계상 미착수, 다음 세션 우선순위로 넘김** (Checklists 하나를 제대로 만드는 데 집중, 두 개를 동시에 어설프게 만들지 않기 위한 판단 — 사용자가 "둘 다 퀄리티 떨어지면 안 된다"고 명시).
+- **종 확장(사용자 요청 "폭넓게 생각")**: 개·고양이 외 반려동물(토끼 등)도 고려해보라는 요청에 따라 웹 검색으로 "new rabbit checklist" 경쟁강도 확인 — 역시 정적 블로그/유료 다운로드뿐이고 인터랙티브 도구는 없음. 우리 직접 경쟁사(calculatorsfordogs 등)는 전부 개·고양이 전용이라 토끼는 진짜 블루오션. 계산기는 종별로 새로 만들려면 검증된 수치 데이터가 많이 필요해 리스크가 크지만, **체크리스트는 상대적으로 적은 리서치로 새 종을 다룰 수 있어 "종 확장의 첫 시도"로 적합한 포맷**이라고 판단.
+
+**인프라 구축 (신규)**:
+- `_layouts/checklist.html` — tool.html과 동일한 head/meta/analytics 구조 유지, `{{ content }}` 뒤에 **공용 JS**(체크박스 상태를 `localStorage`에 저장/복원, 진행률바 업데이트, reset, print) 추가. 이 JS는 `.checklist-page[data-checklist-id]`와 `.checklist-check[data-check-id]`만 있으면 어떤 체크리스트 페이지에서도 동일하게 작동 — **개별 체크리스트 파일엔 JS를 전혀 안 넣어도 됨**(재사용성을 위해 의도적으로 레이아웃에 공용 로직을 둠, tool 파일들이 매번 JS를 반복 작성하던 것과 다른 패턴).
+- `_config.yml`에 `path: "checklists"` → `layout: "checklist"` 기본값 scope 추가(tools와 동일 패턴).
+- `css/style.css`에 `.checklist-*` 전용 CSS 블록 신규 추가(진행률바, 커스텀 체크박스 — `appearance:none` + `::after` 체크마크로 직접 그려서 프린트 시에도 정상 렌더링되게 함, 프린트 미디어쿼리에서는 진행상태와 무관하게 항상 빈 체크박스로 인쇄되도록 처리 — "출력해서 직접 손으로 체크하는" 용도에 맞춤).
+- `_includes/header.html` nav에 "Checklists" 탭 추가 (Tools와 Blog 사이, 데스크톱+모바일 양쪽).
+- `_includes/footer.html`에 Checklists 컬럼 추가(4컬럼 그리드로 변경, `css/style.css`의 `.footer-inner` grid-template-columns도 `2fr 1fr 1fr` → `2fr 1fr 1fr 1fr`로 수정).
+
+**신규 콘텐츠 3개** (전부 `ItemList` + `FAQPage` 스키마, 진행률바, 프린트 버튼, 관련 tool 링크, 면책 문구 포함):
+1. `checklists/new-puppy-checklist.html` — 24개 항목(공급품 9 / 첫 동물병원 방문·건강 8 / 홈 준비·첫 달 루틴 5 / 예산 2), dog-vaccination-schedule-calculator·annual-pet-cost-calculator·spay-neuter-cost-calculator·puppy-weight-chart-by-breed-size로 상호링크.
+2. `checklists/new-kitten-checklist.html` — 23개 항목(공급품 9 / 첫 동물병원 방문·건강 7 / 홈 준비·첫 달 루틴 5 / 예산 2), cat-vaccination-schedule-calculator·annual-pet-cost-calculator·spay-neuter-cost-calculator·kitten-weight-chart-by-breed-size로 상호링크. 백신 스케줄(FVRCP)·FeLV/FIV 검사·백합 등 고양이 독성 식물 경고 등 고양이 고유 내용 반영.
+3. `checklists/new-rabbit-checklist.html` — **사이트 최초의 개·고양이 외 콘텐츠**, 21개 항목(주거/용품 9 / 동물병원 4 / 홈 준비·안전 4 / 핸들링·루틴 3 / 예산 1). 웹 검색으로 검증한 토끼 고유 사실 반영: GI stasis(장운동 정지, 12-24시간 무배변/무식욕이면 응급), 고양이용 응고형 리터 사용 금지(섭취 시 장폐색 위험), 최소 6x10ft 운동 공간, 80°F(27°C) 이하 온도 유지 필요(더위에 매우 취약), exotic/rabbit-savvy 수의사를 미리 찾아둬야 하는 이유(일반 동물병원 다수가 토끼 진료 안 함), 8-12년 수명(예상보다 긴 장기 커밋). 이 페이지는 사이트에 토끼 전용 계산기가 없어서 tool 링크는 넣지 않고 체크리스트 허브(`/checklists/`)로만 연결.
+4. `checklists/index.html` — 체크리스트 허브 페이지, `tools/index.html`과 동일한 `.tool-card` 스타일 재사용(신규 클래스 안 만들고 기존 패턴 재활용).
+
+**역링크(고아 페이지 방지) 5곳**: `dog-vaccination-schedule-calculator.html`(신규 post-cta → new-puppy-checklist), `cat-vaccination-schedule-calculator.html`(→ new-kitten-checklist), `annual-pet-cost-calculator.html`(→ 둘 다), `spay-neuter-cost-calculator.html`(→ 체크리스트 허브). `llms.txt`에 "## Checklists" 섹션 신규 추가(Tools와 Blog 사이, "Checklists는 Tools와 달리 개·고양이 외 종도 다룬다"는 설명 포함 — LLM이 이 구조적 차이를 인지하도록).
+
+**면책 사항**: 사용자가 "면책사항은 잘해놔야겠지, 알아서 잘하겠지 생각하고 있다"고 명시적으로 신뢰 표현 → 기존 tool 페이지와 동일한 `.disclaimer-box` 패턴을 3개 체크리스트 전부에 적용, 특히 토끼 체크리스트는 "일반 수의사가 아니라 rabbit-savvy 수의사의 안내를 대체하지 않는다"는 문구로 종 특이성까지 반영.
+
+**QA**: YAML 전수 검증(체크리스트 4개 파일 전부 통과), `_config.yml` YAML 유효성, JSON-LD(ItemList+FAQPage) 3개 파일 전부 유효성 검증 통과, div/label/span 태그 개수 매칭(3개 체크리스트 전부 일치), Liquid 태그(`{% %}`, `{{ }}`) 균형 확인(header.html, checklist.html), **FAQ 스키마-본문 1:1 매칭(3/3, 3/3, 3/3 전부 일치)**, **ItemList 스키마 항목수 vs 실제 체크박스 개수 매칭(24/24, 23/23, 21/21)**, 화면에 표시되는 "0 of N done" 초기 텍스트가 실제 체크박스 개수와 일치하는지 확인, 전체 저장소 링크 재스캔(체크리스트 포함, 브로큰 링크 0건).
+
+**다음 세션에서 확인할 것**:
+- Checklists 섹션의 첫 GSC 노출/색인 여부 — 완전히 새로운 URL 네임스페이스(`/checklists/`)라 색인 속도 자체가 관찰 포인트.
+- **Compare(비교) 허브를 다음 세션 우선순위로 진행** — 품종 성향 비교 아니라 비용/실용 축으로 스코프 좁혀서(품종별 연간비용, 보험 비교, 사료 급여방식 비교) 착수. 기존 계산기 데이터 재활용 가능한 것부터.
+- 체크리스트 3개 다음으로 후보군: 이사(반려동물과 이사), 여행, 시니어 반려동물, 응급상자 준비 체크리스트 등 — 사용자가 "폭넓게 생각해도 된다"고 했으니 종 확장(기니피그·잉꼬 등)도 계속 후보로 열어둘 것, 다만 매번 웹 검색으로 경쟁강도 확인 먼저.
+- localStorage 기반 진행률 저장은 브라우저/기기별로 분리 저장됨(동기화 안 됨) — 사용자가 여러 기기에서 확인하고 싶어할 경우 계정 시스템 없이는 한계가 있음을 인지해둘 것(별도 요청 없으면 현재 방식 유지).
+- **CSS 스코프 교훈(위 버그 수정 항목 참고)을 앞으로도 계속 지킬 것** — 새 레이아웃이나 새 컴포넌트를 만들 때 여러 페이지 타입에서 재사용될 가능성이 있다면 처음부터 `css/style.css`에 스코프 없이 넣을 것, 특정 레이아웃 파일 안에 스코프해서 나중에 재사용성 문제가 반복되지 않도록.
