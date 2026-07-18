@@ -434,7 +434,7 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - **종 확장(사용자 요청 "폭넓게 생각")**: 개·고양이 외 반려동물(토끼 등)도 고려해보라는 요청에 따라 웹 검색으로 "new rabbit checklist" 경쟁강도 확인 — 역시 정적 블로그/유료 다운로드뿐이고 인터랙티브 도구는 없음. 우리 직접 경쟁사(calculatorsfordogs 등)는 전부 개·고양이 전용이라 토끼는 진짜 블루오션. 계산기는 종별로 새로 만들려면 검증된 수치 데이터가 많이 필요해 리스크가 크지만, **체크리스트는 상대적으로 적은 리서치로 새 종을 다룰 수 있어 "종 확장의 첫 시도"로 적합한 포맷**이라고 판단.
 
 **인프라 구축 (신규)**:
-- `_layouts/checklist.html` — tool.html과 동일한 head/meta/analytics 구조 유지, `{{ content }}` 뒤에 **공용 JS**(체크박스 상태를 `localStorage`에 저장/복원, 진행률바 업데이트, reset, print) 추가. 이 JS는 `.checklist-page[data-checklist-id]`와 `.checklist-check[data-check-id]`만 있으면 어떤 체크리스트 페이지에서도 동일하게 작동 — **개별 체크리스트 파일엔 JS를 전혀 안 넣어도 됨**(재사용성을 위해 의도적으로 레이아웃에 공용 로직을 둠, tool 파일들이 매번 JS를 반복 작성하던 것과 다른 패턴).
+- `_layouts/checklist.html` — tool.html과 동일한 head/meta/analytics 구조 유지, 본문이 삽입되는 지점(content 변수 출력) 뒤에 **공용 JS**(체크박스 상태를 `localStorage`에 저장/복원, 진행률바 업데이트, reset, print) 추가. 이 JS는 `.checklist-page[data-checklist-id]`와 `.checklist-check[data-check-id]`만 있으면 어떤 체크리스트 페이지에서도 동일하게 작동 — **개별 체크리스트 파일엔 JS를 전혀 안 넣어도 됨**(재사용성을 위해 의도적으로 레이아웃에 공용 로직을 둠, tool 파일들이 매번 JS를 반복 작성하던 것과 다른 패턴).
 - `_config.yml`에 `path: "checklists"` → `layout: "checklist"` 기본값 scope 추가(tools와 동일 패턴).
 - `css/style.css`에 `.checklist-*` 전용 CSS 블록 신규 추가(진행률바, 커스텀 체크박스 — `appearance:none` + `::after` 체크마크로 직접 그려서 프린트 시에도 정상 렌더링되게 함, 프린트 미디어쿼리에서는 진행상태와 무관하게 항상 빈 체크박스로 인쇄되도록 처리 — "출력해서 직접 손으로 체크하는" 용도에 맞춤).
 - `_includes/header.html` nav에 "Checklists" 탭 추가 (Tools와 Blog 사이, 데스크톱+모바일 양쪽).
@@ -450,7 +450,7 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 
 **면책 사항**: 사용자가 "면책사항은 잘해놔야겠지, 알아서 잘하겠지 생각하고 있다"고 명시적으로 신뢰 표현 → 기존 tool 페이지와 동일한 `.disclaimer-box` 패턴을 3개 체크리스트 전부에 적용, 특히 토끼 체크리스트는 "일반 수의사가 아니라 rabbit-savvy 수의사의 안내를 대체하지 않는다"는 문구로 종 특이성까지 반영.
 
-**QA**: YAML 전수 검증(체크리스트 4개 파일 전부 통과), `_config.yml` YAML 유효성, JSON-LD(ItemList+FAQPage) 3개 파일 전부 유효성 검증 통과, div/label/span 태그 개수 매칭(3개 체크리스트 전부 일치), Liquid 태그(`{% %}`, `{{ }}`) 균형 확인(header.html, checklist.html), **FAQ 스키마-본문 1:1 매칭(3/3, 3/3, 3/3 전부 일치)**, **ItemList 스키마 항목수 vs 실제 체크박스 개수 매칭(24/24, 23/23, 21/21)**, 화면에 표시되는 "0 of N done" 초기 텍스트가 실제 체크박스 개수와 일치하는지 확인, 전체 저장소 링크 재스캔(체크리스트 포함, 브로큰 링크 0건).
+**QA**: YAML 전수 검증(체크리스트 4개 파일 전부 통과), `_config.yml` YAML 유효성, JSON-LD(ItemList+FAQPage) 3개 파일 전부 유효성 검증 통과, div/label/span 태그 개수 매칭(3개 체크리스트 전부 일치), Liquid 태그 균형 확인(header.html, checklist.html — 여는 태그와 닫는 태그 개수 매칭), **FAQ 스키마-본문 1:1 매칭(3/3, 3/3, 3/3 전부 일치)**, **ItemList 스키마 항목수 vs 실제 체크박스 개수 매칭(24/24, 23/23, 21/21)**, 화면에 표시되는 "0 of N done" 초기 텍스트가 실제 체크박스 개수와 일치하는지 확인, 전체 저장소 링크 재스캔(체크리스트 포함, 브로큰 링크 0건).
 
 **다음 세션에서 확인할 것**:
 - Checklists 섹션의 첫 GSC 노출/색인 여부 — 완전히 새로운 URL 네임스페이스(`/checklists/`)라 색인 속도 자체가 관찰 포인트.
@@ -458,3 +458,21 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - 체크리스트 3개 다음으로 후보군: 이사(반려동물과 이사), 여행, 시니어 반려동물, 응급상자 준비 체크리스트 등 — 사용자가 "폭넓게 생각해도 된다"고 했으니 종 확장(기니피그·잉꼬 등)도 계속 후보로 열어둘 것, 다만 매번 웹 검색으로 경쟁강도 확인 먼저.
 - localStorage 기반 진행률 저장은 브라우저/기기별로 분리 저장됨(동기화 안 됨) — 사용자가 여러 기기에서 확인하고 싶어할 경우 계정 시스템 없이는 한계가 있음을 인지해둘 것(별도 요청 없으면 현재 방식 유지).
 - **CSS 스코프 교훈(위 버그 수정 항목 참고)을 앞으로도 계속 지킬 것** — 새 레이아웃이나 새 컴포넌트를 만들 때 여러 페이지 타입에서 재사용될 가능성이 있다면 처음부터 `css/style.css`에 스코프 없이 넣을 것, 특정 레이아웃 파일 안에 스코프해서 나중에 재사용성 문제가 반복되지 않도록.
+
+### 세션 M (계속) — 🚨 실제 배포 장애: GitHub Pages 빌드 실패 + 원인 규명 (7/17)
+
+**사고 개요**: Checklists 신규 섹션 커밋(80fa9e1)을 push한 직후 GitHub Pages 빌드가 **실패**하기 시작했고, 몇 시간 동안(사용자가 "push에서 뭐가 문제가 생긴거 같은데"라고 알려줄 때까지) **petpawcalc.com이 이전 버전(구버전)으로 멈춰있는 상태**였음. `git push` 자체는 매번 성공했기 때문에(로컬 git 관점에서는 아무 에러 없음) 이전까지는 이 문제를 전혀 인지하지 못하고 있었음 — **매우 중요한 사각지대**.
+
+**원인**: `handover.md`가 **YAML front matter가 없는 순수 마크다운 파일**인데, GitHub Pages가 쓰는 Jekyll 환경에는 `jekyll-optional-front-matter` 플러그인이 항상 로드되어 있어서, front matter 없는 `.md` 파일도 자동으로 렌더링 가능한 "페이지"로 취급하고 **Liquid 템플릿 엔진으로 처리**해버림. 이번 세션에 handover.md의 QA 기록 부분에 문서화 목적으로 리터럴하게 적어둔 `{{ content }}`, `` `{% %}` ``(Liquid 태그 예시를 텍스트로 설명한 것)가 진짜 Liquid 문법으로 파싱 시도되면서, 특히 내용 없는 `{% %}`가 **Liquid 문법 오류**를 일으켜 전체 사이트 빌드가 크래시남. `README.md`/`Gemfile`/`Gemfile.lock`은 원래부터 `_config.yml`의 `exclude:` 목록에 있어서 안전했지만, **`handover.md`는 처음부터 이 목록에 빠져 있었던 게 근본 원인** — 지금까지는 단순히 handover.md 안에 우연히 `{{`나 `{%` 같은 문자열이 들어간 적이 없어서 문제가 드러나지 않았을 뿐, 잠재된 위험이었음.
+
+**진단 과정**: `git push`가 성공해도 실제 배포(GitHub Pages 빌드)가 실패할 수 있다는 걸 이번에 처음 확인 — **앞으로는 push 후 반드시 GitHub Pages 빌드 상태까지 확인할 것** (아래 "작업 방식" 섹션에 체크리스트로 추가함). 진단은 GitHub API(`/repos/{repo}/pages/builds/latest`, `/repos/{repo}/actions/runs`)로 최근 빌드의 `conclusion`이 `failure`인지 먼저 확인 → 실패한 job의 check-run annotation에서 에러 로그 일부 확인(단, annotation 메시지는 앞부분에서 잘려서 실제 에러 지점이 안 보이는 경우가 많음, 이번에도 그랬음) → 로그 전문은 Azure Blob Storage로 리다이렉트되는데 이 도메인은 에이전트의 네트워크 화이트리스트에 없어 접근 불가 → **결국 실제 push를 통한 이진 탐색(bisection)으로 원인을 좁힘**: 의심되는 변경사항을 하나씩 되돌리며 재푸시 → GitHub Pages 빌드 결과 확인을 반복(총 3라운드: `_config.yml` scope 되돌리기 → 여전히 실패 → 체크리스트 인프라 전체 제거 → 여전히 실패 → `handover.md`를 `exclude:`에 추가 → **성공**, 이걸로 확정).
+
+**부수적으로 확인된 사실**: 로컬 샌드박스에 `apt-get install jekyll` 등으로 **Jekyll 4.3.2를 설치해 로컬 빌드는 시도해봤지만 에러 없이 성공**해버림 — GitHub Pages는 `jekyll v3.10.0`을 정확히 고정해서 쓰는데(`github-pages` gem이 버전을 강제 고정), 로컬에는 rubygems.org 접근이 막혀 있어 동일 버전 설치가 불가능해 로컬 재현이 안 됐음. **로컬 Jekyll 빌드가 성공해도 GitHub Pages 빌드가 실패할 수 있다는 걸 인지할 것** — 완전히 신뢰할 수 있는 사전 검증 수단이 아님.
+
+**수정**: `_config.yml`의 `exclude:` 목록에 `handover.md` 추가(README.md/Gemfile과 동일하게 사이트 빌드에서 완전히 제외). 추가로 handover.md 본문에서 리터럴 `{{ }}`/`{% %}` 표현은 전부 우회 서술로 변경(방어적 조치 — exclude 처리로 이미 근본 해결됐지만, 혹시 나중에 exclude 목록에서 실수로 빠지더라도 재발하지 않도록).
+
+**다음 세션부터 반드시 지킬 것 (작업 방식에도 반영)**:
+1. **`git push` 성공 = 배포 성공이 아니다.** push 후 반드시 GitHub Pages 빌드 상태를 확인할 것 — `curl -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/canghun13/petpawcalc/pages/builds/latest`로 최신 빌드의 `status`/`error` 필드를 확인하거나, `/actions/runs?per_page=1`로 가장 최근 run의 `conclusion`이 `success`인지 확인. 매 세션 마지막 push 후 이 확인을 빠뜨리지 말 것.
+2. **front matter 없는 `.md` 파일을 새로 만들 때는 반드시 `_config.yml`의 `exclude:`에 추가할 것** (또는 front matter를 넣어 명시적으로 페이지로 관리할 것). 현재 exclude 목록: `README.md`, `handover.md`, `Gemfile`, `Gemfile.lock`. **`llms.txt`는 절대 exclude에 넣지 말 것** — `.txt` 확장자라 `jekyll-optional-front-matter` 플러그인의 대상이 아니라 애초에 안전하고(이번 사고와 무관), 무엇보다 `llms.txt`는 `petpawcalc.com/llms.txt`로 **공개 서빙되어야 하는 파일**이라 exclude에 넣으면 그 자체로 기능이 깨짐(실제로 이번에 실수로 넣었다가 바로 되돌림 — `.md` 확장자 파일과 `.txt` 확장자 파일을 혼동하지 말 것).
+3. **문서(handover.md 등) 안에 Liquid 문법 예시를 적을 때는 리터럴 `{{ }}`/`{% %}`를 절대 쓰지 말 것** — 코드가 아니라 설명 텍스트로 풀어 쓸 것 (예: "이중 중괄호 문법" 같은 서술로 대체). exclude 처리로 근본 해결됐지만 습관화할 것.
+4. **GH Pages는 Jekyll 3.10.0에 고정**돼 있고 로컬에서 동일 버전 재현이 안 됨(rubygems.org 네트워크 차단) — 로컬 빌드 성공을 과신하지 말 것. 의심스러운 변경은 실제 push 기반 이진 탐색이 가장 확실한 검증 수단임을 기억할 것.
