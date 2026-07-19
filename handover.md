@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-17 (세션 M)
+최종 갱신: 2026-07-20 (세션 N)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -476,3 +476,60 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 2. **front matter 없는 `.md` 파일을 새로 만들 때는 반드시 `_config.yml`의 `exclude:`에 추가할 것** (또는 front matter를 넣어 명시적으로 페이지로 관리할 것). 현재 exclude 목록: `README.md`, `handover.md`, `Gemfile`, `Gemfile.lock`. **`llms.txt`는 절대 exclude에 넣지 말 것** — `.txt` 확장자라 `jekyll-optional-front-matter` 플러그인의 대상이 아니라 애초에 안전하고(이번 사고와 무관), 무엇보다 `llms.txt`는 `petpawcalc.com/llms.txt`로 **공개 서빙되어야 하는 파일**이라 exclude에 넣으면 그 자체로 기능이 깨짐(실제로 이번에 실수로 넣었다가 바로 되돌림 — `.md` 확장자 파일과 `.txt` 확장자 파일을 혼동하지 말 것).
 3. **문서(handover.md 등) 안에 Liquid 문법 예시를 적을 때는 리터럴 `{{ }}`/`{% %}`를 절대 쓰지 말 것** — 코드가 아니라 설명 텍스트로 풀어 쓸 것 (예: "이중 중괄호 문법" 같은 서술로 대체). exclude 처리로 근본 해결됐지만 습관화할 것.
 4. **GH Pages는 Jekyll 3.10.0에 고정**돼 있고 로컬에서 동일 버전 재현이 안 됨(rubygems.org 네트워크 차단) — 로컬 빌드 성공을 과신하지 말 것. 의심스러운 변경은 실제 push 기반 이진 탐색이 가장 확실한 검증 수단임을 기억할 것.
+
+---
+
+### 세션 N — GSC 7/20 데이터 분석 + 체중감량 계산기 확장(기존 자산 강화) + 신규 카테고리 후보 2건 조사 (7/20, 주간 작업)
+
+사용자 요청 핵심: 밀린 주간 작업 진행. (1) 신규 GSC(Search Console + Analytics) 내보내기 확인 후 신규/보강 판단, (2) 신규 콘텐츠는 기존 파일 중복 체크 + 웹 검색 경쟁강도 확인 + 롱테일 키워드 전략, (3) AI검색은 도메인 권위보다 콘텐츠(문제해결·비교분석)가 중요하다는 트렌드를 신규뿐 아니라 보강에도 반영, (4) AdSense 수익화 관점 우선순위 판단, (5) 대시보드 없이 텍스트로만 보고, (6) 작업 후 handover.md 갱신 후 같이 push.
+
+**1. GSC 데이터 분석 (Coverage + Performance, 지난 3개월 누적 / GA는 6/22~7/19)**
+
+- **Coverage 미색인 수치가 세션 J(7/15) 이후 4개 데이터 포인트 연속 완전히 동일함 — 발견됨-미색인 15개 + 크롤링됨-미색인 6개 = 21개, 세션 J→L→M→이번 전부 21개로 변화 없음.** 세션 F·H 때 2세션 연속 정체(38개)됐던 것보다 훨씬 긴 정체 — 이번 세션부터는 "Coverage 리포트 집계 지연" 가설보다 "실제로 정체" 가능성에 무게를 두는 게 맞다고 판단. **사용자에게 개별 URL 재크롤 요청("색인 생성 요청" 버튼, GSC UI)을 적극 권유할 시점.** 에이전트는 GSC API 접근 권한이 없어 직접 요청 불가 — 아래 "미노출 URL" 목록 중 우선순위 높은 것부터 사용자가 직접 눌러보는 걸 권장.
+- **Performance 페이지별 노출 대조로 "미노출 추정 URL"을 다시 역산(방법은 세션 J와 동일, trailing slash 포함 매칭)**: 사이트 전체 URL 66개 중 Performance에 노출이 잡힌 건 35개, 나머지 31개가 미노출 추정. 이 중 체크리스트 3개+인덱스, `flea-tick-prevention-cost`(post+tool), `kitten-weight-chart-by-breed-size`는 전부 세션 M(7/17)에 만든 지 3일밖에 안 된 페이지라 미노출이 당연함 — 제외하고 보면:
+  - **세션 J에서 FAQ 가시화까지 마쳤던 미색인 tool 7개 중 5개가 이번에도 여전히 노출 0**: `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `dog-heat-cycle-calculator`, `dog-pregnancy-calculator`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator` — 이 중 온페이지 요인(FAQ 가시성)은 이미 다 고쳤는데도 세션 J(7/15)부터 지금까지 5일 이상 그대로. 특히 `dog-pregnancy-calculator`/`cat-pregnancy-calculator`는 세션 M에서 "진단방법 비교표"까지 추가했는데도 미노출 — **온페이지 콘텐츠 보강만으로는 안 되는 구간에 들어선 것으로 보이고, 위 Coverage 정체와 함께 재크롤 요청이 필요한 핵심 근거.**
+  - `cat-quality-of-life-calculator`(tool)도 미노출 — 짝 포스트 `cat-quality-of-life-assessment`는 노출 2건 있음(비대칭).
+  - blog 쪽 미노출은 대부분 세션 B 날짜조작 수정(7/10) 이전 작성 포스트라는 기존 가설과 일치하는 오래된 포스트들(`dog-age-human-years` 등) — 이 패턴은 세션 H/J 이후 변화 없음.
+- **Performance 쿼리 데이터의 새로운 신호 — "maine coon weight predictor"**: 세션 M에서 만든 `kitten-weight-chart-by-breed-size`(작성 3일 차) 관련 쿼리가 **벌써 17위·클릭 1건**으로 잡힘. 신생 페이지치고 이례적으로 빠른 반응이고, 정확 문구("weight predictor")가 페이지 본문에 없었던 걸 발견해 이번 세션에 보강함(아래 3번 참고) — 저경쟁 롱테일 하나가 실제로 통하기 시작한 첫 사례라 다음 세션에서 순위 변화를 꼭 확인할 것.
+- **`what-to-feed-pregnant-dog`(101노출대) 자기잠식 의심은 이번에도 미확정 — 세션 H부터 5세션째 열린 이슈.** GSC 웹 UI 페이지×쿼리 교차확인 없이는 계속 확정 불가. 사용자가 직접 GSC UI에서 두 URL을 필터링해 확인해주지 않는 한 이 항목은 계속 "보류"로 열어둘 수밖에 없음 — 다음에도 사용자가 대신 스크린샷 등으로 알려주지 않으면 "확정 불가로 공식 종결" 처리 권장(세션 M 마지막 항목에서 이미 이 옵션이 언급됐었음).
+
+**2. 신규 카테고리 후보 조사 (세션 M이 남긴 파이프라인 2건 웹 검색으로 마무리)**
+
+- **첫해 입양 비용 계산기 (annual-pet-cost-calculator와 다른 앵글) — 레드오션 확정, 기각**: 웹 검색 결과 CalcBee의 "Kitten First Year Cost Calculator" 전용 페이지, petcost-calculator.com(300+ 품종별 첫해/평생 비용 리포트), breedtools.com("Cost of Owning a Dog Calculator" — first year vs ongoing 브레이크다운 포함), calcuja.com(세션 I에서 이미 확인된 경쟁사, dog/cat/rabbit 첫해 비용까지 다룸) 등이 이미 이 앵글을 깊게 다루고 있음. 게다가 사이트에 이미 `annual-pet-cost-calculator`가 있어 첫해 비용 전용 신규 페이지는 자기잠식 위험도 있음 — 기각.
+- **체중감량/칼로리 결핍 계산기 — 세션 M 평가(권위 있는 경쟁자 있음)보다 더 포화된 것으로 재확인**: World Pet Obesity Association과 Association for Pet Obesity Prevention 둘 다 RER/MER 기반 체중감량 계산기·단계별(step-based) 감량 플랜 도구를 무료로 제공 중이고, Pet Nutrition Alliance도 수의사 전용 버전을 운영. 상업 경쟁사도 petcalorie.com(290+ 품종 DB, DVM 감수 명시)까지 가세 — **완전 신규 페이지로는 승산이 낮다는 세션 M의 판단이 재확인됨.**
+- **판단**: 신규 페이지 대신 세션 M이 제안했던 대로 **기존에 이미 노출·색인이 있는 `pet-food-calorie-calculator`를 체중감량 모드로 확장**하는 저위험 접근으로 진행(아래 3번). 새 URL을 만들지 않으니 위에서 확인한 "미노출 문제"에 페이지 하나를 더 얹는 리스크도 없음.
+
+**3. 실제 진행한 작업**
+
+- **`tools/pet-food-calorie-calculator.html` 체중감량 모드 신규 추가**(신규 페이지 아님, 기존 지표 있는 페이지 확장):
+  - "Goal" 선택(현재 체중 유지 / 체중 감량)을 추가, 감량 선택 시 목표/이상 체중 입력 필드가 나타나고 생애주기·활동량·중성화 필드는 숨겨짐(감량 계산은 목표체중 기반 RER 방식이라 해당 입력이 불필요 — 경쟁사인 WPOA/APOP가 실제로 쓰는 "목표체중 RER × 1.0" 방식을 그대로 채용, 웹 검색으로 확인한 공식).
+  - 결과에 안전한 감량 속도(개 월 3~5%, 고양이 월 1~2% — 복수 수의사 단체 소스로 확인) 기준 예상 소요 기간을 함께 표시.
+  - **AI검색 대응 콘텐츠 신규 추가(사용자 이번 세션 지시 반영)**: "Two Ways Vets Calculate Weight-Loss Calories" **비교표**(목표체중 RER 방식 vs 퍼센트 감량 방식, 각각 어떤 케이스에 맞는지), "Why Isn't My Pet Losing Weight?" **문제해결형 체크리스트**(간식 과다·타인 급여·오래된 체중값·정체기·갑상선저하증 등 원인별로 정리).
+  - FAQ 4개 신규(스키마+본문 1:1): "Is there a dog or cat weight loss calculator?", "How fast should my dog/cat lose weight safely?"(고양이는 hepatic lipidosis 위험 명시 — 웹 검색으로 확인한 사실), "Why isn't my pet losing weight even though I'm feeding less?".
+  - 헤더 문구·meta description에도 "weight-loss" 문구 반영(정확 문구 노출, 세션 C 교훈 적용).
+- **`dog-weight-calculator.html`/`cat-weight-calculator.html`에 "ideal weight calculator" 정확 문구 FAQ 각 1개 추가**: "ideal dog weight calculator"(8노출)·"ideal cat weight calculator"(1노출)·"dog ideal weight calculator"(2노출) 등 근접 변형 쿼리 합계 11노출에 대응, 정확 문구가 본문에 없었던 걸 보강(세션 C 패턴 재적용).
+- **`kitten-weight-chart-by-breed-size` 포스트에 "maine coon weight predictor" 정확 문구 FAQ 1개 추가**: 신생 페이지인데도 벌써 17위·클릭 1건 나온 쿼리라 우선순위 높게 판단, front matter `faqs:`와 본문 양쪽에 동일 질문("Is there a Maine Coon weight predictor?") 추가.
+  - **⚠️ 이 작업 중 실수 발생 및 즉시 수정**: str_replace로 FAQ 항목을 추가하면서 front matter를 닫는 `---` 구분자를 실수로 함께 지워버림(front matter가 안 닫혀서 YAML 파싱 자체가 깨지는 상태였음). **commit 전 QA 단계에서 발견해 바로 복구** — 실서비스에 반영된 적은 없음. **교훈: front matter 배열(`faqs:` 등) 끝부분에 str_replace로 새 항목을 추가할 때는 old_str/new_str에 뒤따르는 `---` 구분자까지 반드시 포함시킬 것 — 배열 마지막 항목 바로 뒤에 무엇이 오는지(닫는 `---`인지 다음 필드인지) 매번 확인 후 편집.** 세션 M의 Liquid 문법 배포 장애와는 다른 유형이지만, "handover.md 등 문서 편집 시 안전장치"뿐 아니라 "콘텐츠 파일의 YAML 편집 시에도 종결자 보존을 매번 명시적으로 확인할 것"을 체크리스트에 추가함(아래 5번 참고).
+
+**4. AdSense 수익화 관점 우선순위 판단**
+
+- 클릭 자체가 여전히 극소수인 단계라(사이트 전체 누적 클릭 한 자릿수 수준 유지), 이번 세션도 **"신규 페이지보다 이미 노출/색인 있는 자산 강화"** 원칙을 유지 — 실제로 신규 URL은 0개 추가(체중감량 모드는 기존 페이지 확장), 대신 이미 지표가 있는 3개 페이지(calorie calculator, dog/cat-weight-calculator, kitten-weight-chart)를 보강.
+- **Coverage 21개 정체가 4세션 연속 이어지는 것과, FAQ 가시화까지 마친 tool 5개가 여전히 미노출인 것은 온페이지 작업만으로는 더 이상 해결이 안 되는 구간에 들어섰다는 신호** — 다음 세션 최우선 순위는 콘텐츠 보강이 아니라 **사용자가 GSC UI에서 개별 URL 재크롤을 직접 요청하는 것**. 온페이지 보강은 계속하되, 이 부분은 콘텐츠로 해결할 수 있는 한계에 도달했다고 명확히 보고.
+- "maine coon weight predictor"처럼 신생 페이지의 롱테일 쿼리가 3일 만에 클릭까지 나온 사례는 **롱테일 전략이 실제로 작동하고 있다는 첫 정량적 근거** — 이런 신호가 나오면 해당 정확 문구를 즉시 본문에 반영해 강화하는 게(이번 세션에 한 것처럼) 신규 페이지 제작보다 훨씬 빠르고 리스크 낮은 ROI라는 걸 다음 세션에도 원칙으로 유지.
+
+**5. QA**
+
+- 전체 `_posts/*.md`(33개) + `tools/*.html`·`checklists/*.html`(27개) front matter YAML 파싱 전수 통과.
+- 수정 파일 3개(`pet-food-calorie-calculator`, `dog-weight-calculator`, `cat-weight-calculator`) JSON-LD FAQPage 스키마-본문 h3 1:1 매칭 코드로 확인(9/9, 5/5, 5/5), div 개수 매칭(15/15, 15/15, 18/18), table/tr/thead/tbody 태그 매칭(신규 비교표).
+- `kitten-weight-chart-by-breed-size` front matter 종결자 사고 발견 즉시 복구 후 재검증(YAML 파싱 성공, FAQ 스키마-본문 7/7 매칭 확인).
+- 전체 저장소(post+tool+checklist+index+header+footer+llms.txt) 링크 재스캔(trailing slash 무관 매칭) — 깨진 링크 0건.
+- slug/permalink 전체 중복 검사(포스트 33개, tool/checklist 25개) — 중복 없음.
+- `index.html`/`tools/index.html`의 tool-card 개수(22) = 실제 `tools/*.html` 파일 개수(22) 일치 확인 — 이번 세션은 신규 URL을 만들지 않았으므로 공통 파일(index/footer/llms.txt) 동기화 작업 자체가 불필요했음(고아 페이지 리스크 없음).
+
+**다음 세션에서 확인할 것**:
+- **Coverage 21개가 5번째 데이터에서도 그대로면, "관찰"이 아니라 사용자에게 개별 URL 재크롤 요청을 명확히 권유할 것** — 특히 `dog-pregnancy-calculator`/`cat-pregnancy-calculator`/`annual-pet-cost-calculator`/`cat-vet-visit-scheduler`/`dog-heat-cycle-calculator`/`pet-grooming-cost-calculator`/`spay-neuter-cost-calculator`/`cat-quality-of-life-calculator` 8개 tool 우선순위.
+- 이번 세션 보강한 3개 페이지(calorie calculator 체중감량모드, dog/cat-weight-calculator ideal weight FAQ, kitten-weight-chart maine coon predictor FAQ)의 다음 GSC 데이터에서 노출/순위 변화 확인.
+- "maine coon weight predictor" 순위가 17위에서 더 개선되는지, 그리고 이 신호가 "신생 페이지의 저경쟁 롱테일이 조기에 반응한다"는 가설을 뒷받침하는 재현 사례로 이어지는지 계속 관찰.
+- `what-to-feed-pregnant-dog` 자기잠식 의심(5세션째 미확정) — 사용자가 GSC UI 크로스 체크를 해줄 수 없다면 다음 세션에 "확정 불가로 보류 종결" 처리를 제안할 것.
+- GA 데이터(6/22~7/19)는 이번에 받았지만 신규/보강 판단에 직접 쓸 만한 신호는 없었음(활성 사용자 61명, 유입은 여전히 (direct)/pitchwall.co/Findly.tools 등 런칭 디렉토리 위주, organic은 bing 3명·google 2명 수준) — AI 검색엔진(ChatGPT/Perplexity 등)발 유입은 이번 GA 리포트의 소스/매체 목록에서 식별되지 않음(있었다면 referral로 잡혔을 것). 다음 세션에도 계속 확인 필요.
+- **문서/콘텐츠 파일 편집 시 종결자 보존 확인을 QA 체크리스트에 정식 추가**: front matter의 배열형 필드(`faqs:` 등) 끝에 새 항목을 str_replace로 추가할 때, old_str/new_str 양쪽에 뒤따르는 `---` 구분자(또는 다음 필드)까지 포함해서 편집 전후 구조가 그대로 보존되는지 diff로 확인할 것 — 이번 세션에 실제로 한 번 놓쳤다가 QA 단계에서 발견(3번 항목 참고).

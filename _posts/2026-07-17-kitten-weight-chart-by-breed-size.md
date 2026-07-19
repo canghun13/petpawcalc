@@ -19,6 +19,8 @@ faqs:
     a: "Yes, though it's less common than in adult cats. It usually happens with free-fed kittens on high-calorie kitten food who become sedentary indoor-only cats. Because kitten food is calorie-dense by design (to fuel rapid growth), it's worth switching to measured meals and monitoring body condition once a kitten is neutered or spayed, since metabolism typically slows afterward."
   - q: "When should I switch my kitten to adult cat food?"
     a: "Most kittens can transition to adult food around 10–12 months, once growth has mostly leveled off. Large breeds that are still actively growing at 12 months (Maine Coon, Ragdoll, and similar) often stay on kitten or all-life-stages food a few months longer — ask your vet if you're unsure whether your kitten's breed is still in an active growth phase."
+  - q: "Is there a Maine Coon weight predictor?"
+    a: "There's no precise formula for predicting an individual Maine Coon's adult weight, since genetics and litter size vary widely, but the large-breed comparison table above works as a rough weight predictor: Maine Coons stay well below a standard kitten chart through their first year, then keep growing for another 2–3 years to reach their typical adult range of 12–20 lbs (up to 25 lbs for some males)."
 
 ---
 
@@ -133,6 +135,9 @@ Yes, though it's less common than in adult cats. It usually happens with free-fe
 
 **When should I switch my kitten to adult cat food?**
 Most kittens can transition to adult food around 10–12 months, once growth has mostly leveled off. Large breeds that are still actively growing at 12 months (Maine Coon, Ragdoll, and similar) often stay on kitten or all-life-stages food a few months longer — ask your vet if you're unsure whether your kitten's breed is still in an active growth phase.
+
+**Is there a Maine Coon weight predictor?**
+There's no precise formula for predicting an individual Maine Coon's adult weight, since genetics and litter size vary widely, but the large-breed comparison table above works as a rough weight predictor: Maine Coons stay well below a standard kitten chart through their first year, then keep growing for another 2–3 years to reach their typical adult range of 12–20 lbs (up to 25 lbs for some males).
 
 *Always consult your veterinarian with concerns about your kitten's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific cat.*
 

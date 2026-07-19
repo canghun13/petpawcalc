@@ -2,7 +2,7 @@
 layout: tool
 permalink: /tools/pet-food-calorie-calculator.html
 title: Pet Food Calorie Calculator — How Much Should I Feed My Pet?
-description: Calculate how many calories your dog or cat needs per day based on weight, age, and activity level. Free and instant.
+description: Calculate how many calories your dog or cat needs per day based on weight, age, and activity level — or get a weight-loss calorie target. Free and instant.
 ---
 <script type="application/ld+json">
 {
@@ -69,6 +69,38 @@ description: Calculate how many calories your dog or cat needs per day based on 
         "@type": "Answer",
         "text": "Pet food bag guidelines are a starting point but are typically calibrated for intact dogs at moderate activity. Most household pets are neutered and less active, so they often need 20–30% fewer calories than the bag suggests. Adjust based on your pet's body condition."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a dog or cat weight loss calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — select \"Lose weight\" as the goal above and enter your pet's current and target weight. The calculator switches to the target-weight method used in veterinary weight-management plans: it calculates RER from the goal weight (not current weight) and uses that directly as the daily calorie target."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast should my dog lose weight safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veterinary obesity guidelines generally recommend dogs lose roughly 3–5% of body weight per month. Faster loss increases the risk of muscle loss and rebound weight gain, and any dog on a weight-loss plan should be rechecked by a vet every 2–4 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast should my cat lose weight safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cats should lose weight much more slowly than dogs — generally no more than about 1–2% of body weight per month. Rapid weight loss in cats can trigger hepatic lipidosis (fatty liver disease), a serious and potentially fatal condition, so cat weight-loss plans should always be supervised by a veterinarian."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my pet losing weight even though I'm feeding less?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common causes are uncounted treats or table scraps (should stay under 10% of daily calories), another household member also feeding the pet, an outdated current-weight number, or a weight-loss plateau that needs the calorie target recalculated. Medical causes like hypothyroidism (more common in dogs) can also slow weight loss and are worth ruling out with a vet if progress stalls for more than 4 weeks."
+      }
     }
   ]
 }
@@ -77,7 +109,7 @@ description: Calculate how many calories your dog or cat needs per day based on 
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🍖 Pet Food Calorie Calculator</h1>
-    <p>How much should you be feeding your pet? Enter their details below to get a daily calorie target based on their weight, age, and lifestyle.</p>
+    <p>How much should you be feeding your pet? Enter their details below to get a daily calorie target based on their weight, age, and lifestyle — or switch to weight-loss mode if your dog or cat needs to slim down.</p>
   </div>
 
   <div class="tool-box">
@@ -90,10 +122,21 @@ description: Calculate how many calories your dog or cat needs per day based on 
       </select>
     </div>
     <div class="form-group">
-      <label for="pet-weight">Weight (lbs)</label>
+      <label for="pet-weight">Current Weight (lbs)</label>
       <input type="number" id="pet-weight" min="1" max="200" step="0.5" placeholder="e.g. 25">
     </div>
     <div class="form-group">
+      <label for="goal">Goal</label>
+      <select id="goal" onchange="toggleGoalFields()">
+        <option value="maintain">Maintain current weight</option>
+        <option value="lose">Lose weight (weight management)</option>
+      </select>
+    </div>
+    <div class="form-group" id="target-weight-group" style="display:none;">
+      <label for="target-weight">Target / Ideal Weight (lbs)</label>
+      <input type="number" id="target-weight" min="1" max="200" step="0.5" placeholder="e.g. 20">
+    </div>
+    <div class="form-group" id="life-stage-group">
       <label for="life-stage">Life Stage</label>
       <select id="life-stage">
         <option value="">Select stage</option>
@@ -102,7 +145,7 @@ description: Calculate how many calories your dog or cat needs per day based on 
         <option value="senior">Senior (7+ years)</option>
       </select>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="activity-group">
       <label for="activity">Activity Level</label>
       <select id="activity">
         <option value="">Select activity level</option>
@@ -111,7 +154,7 @@ description: Calculate how many calories your dog or cat needs per day based on 
         <option value="high">High (very active, working dog)</option>
       </select>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="neuter-group">
       <label for="neuter">Spayed / Neutered?</label>
       <select id="neuter">
         <option value="yes">Yes</option>
@@ -145,6 +188,31 @@ description: Calculate how many calories your dog or cat needs per day based on 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">RER vs. MER: What's the Difference?</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">RER (Resting Energy Requirement) is the baseline used above — calories needed at rest. MER (Maintenance Energy Requirement) is RER multiplied by a life-stage/activity factor, which is what this calculator actually outputs as your pet's daily target. Veterinary nutritionists sometimes use RER alone as a reference point when discussing weight loss plans, since a controlled calorie deficit for a dog needing to lose weight is often calculated as a percentage below RER rather than MER.</p>
 
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Two Ways Vets Calculate Weight-Loss Calories</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Veterinary weight-management plans generally use one of two methods, and they can give noticeably different numbers:</p>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Method</th><th>How it works</th><th>Best for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Target-weight RER</strong> (used by this calculator)</td><td>Calculate RER from the goal weight, not current weight, and use it directly as the daily target — no extra multiplier</td><td>Pets that are significantly overweight; produces a larger, more conservative deficit</td></tr>
+        <tr><td><strong>Percentage reduction</strong></td><td>Cut current maintenance calories by 10–20% and reassess every 2–4 weeks</td><td>Pets that are only mildly over their ideal weight, where the target-weight method would cut calories too aggressively</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Neither method replaces a vet visit — a pet who needs to lose more than about 10–15% of their body weight should ideally start a weight-loss plan under veterinary supervision, especially cats.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Why Isn't My Pet Losing Weight?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If you've been feeding the calculated amount for a few weeks with no change on the scale, work through these before assuming the plan isn't working:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 24px; padding-left: 20px;">
+      <li><strong>Uncounted treats or table scraps</strong> — these should stay under 10% of total daily calories, and it's easy to underestimate how much they add up.</li>
+      <li><strong>Someone else is also feeding the pet</strong> — common in multi-person households; agree on one feeding chart everyone follows.</li>
+      <li><strong>The current-weight number is stale</strong> — reweigh at the start of a plan and again every 2–4 weeks, on the same scale, for accurate tracking.</li>
+      <li><strong>A normal plateau</strong> — weight loss often isn't linear; give it 3–4 full weeks before adjusting the target.</li>
+      <li><strong>An underlying medical cause</strong> — conditions like hypothyroidism (more common in dogs) can slow weight loss even on a calorie-appropriate diet. If progress stalls for over a month, it's worth a vet check.</li>
+    </ul>
+
     <div class="post-cta">
       <p>Learn more about feeding the right amount → <a href="/blog/how-much-to-feed-a-dog/">How Much Should I Feed My Dog?</a></p>
       <p style="margin-top: 8px;">Have a senior pet? → <a href="/blog/how-much-should-senior-dog-eat/">Senior Dog Feeding Guide</a> · <a href="/blog/how-much-should-senior-cat-eat/">Senior Cat Feeding Guide</a></p>
@@ -160,19 +228,78 @@ description: Calculate how many calories your dog or cat needs per day based on 
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How many calories does my cat need per day?</h3>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most adult indoor cats need around 20–30 calories per pound of body weight per day. A 10 lb neutered adult cat typically needs 200–250 calories daily. Kittens need more per pound, and senior cats may need adjustments based on health status.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I follow the feeding guidelines on the pet food bag?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Pet food bag guidelines are a starting point but are typically calibrated for intact dogs at moderate activity. Most household pets are neutered and less active, so they often need 20–30% fewer calories than the bag suggests. Adjust based on your pet's body condition.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Pet food bag guidelines are a starting point but are typically calibrated for intact dogs at moderate activity. Most household pets are neutered and less active, so they often need 20–30% fewer calories than the bag suggests. Adjust based on your pet's body condition.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is there a dog or cat weight loss calculator?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — select "Lose weight" as the goal above and enter your pet's current and target weight. The calculator switches to the target-weight method used in veterinary weight-management plans: it calculates RER from the goal weight (not current weight) and uses that directly as the daily calorie target.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How fast should my dog lose weight safely?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Veterinary obesity guidelines generally recommend dogs lose roughly 3–5% of body weight per month. Faster loss increases the risk of muscle loss and rebound weight gain, and any dog on a weight-loss plan should be rechecked by a vet every 2–4 weeks.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How fast should my cat lose weight safely?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats should lose weight much more slowly than dogs — generally no more than about 1–2% of body weight per month. Rapid weight loss in cats can trigger hepatic lipidosis (fatty liver disease), a serious and potentially fatal condition, so cat weight-loss plans should always be supervised by a veterinarian.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why isn't my pet losing weight even though I'm feeding less?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The most common causes are uncounted treats or table scraps (should stay under 10% of daily calories), another household member also feeding the pet, an outdated current-weight number, or a weight-loss plateau that needs the calorie target recalculated. Medical causes like hypothyroidism (more common in dogs) can also slow weight loss and are worth ruling out with a vet if progress stalls for more than 4 weeks.</p>
   </div>
 </div>
 
 <script>
+function toggleGoalFields() {
+  const isLoss = document.getElementById('goal').value === 'lose';
+  document.getElementById('target-weight-group').style.display = isLoss ? 'block' : 'none';
+  document.getElementById('life-stage-group').style.display = isLoss ? 'none' : 'block';
+  document.getElementById('activity-group').style.display = isLoss ? 'none' : 'block';
+  document.getElementById('neuter-group').style.display = isLoss ? 'none' : 'block';
+}
+
 function calculateCalories() {
   const petType  = document.getElementById('pet-type').value;
   const weightLb = parseFloat(document.getElementById('pet-weight').value);
+  const goal     = document.getElementById('goal').value;
+
+  if (!petType || !weightLb) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  if (goal === 'lose') {
+    const targetLb = parseFloat(document.getElementById('target-weight').value);
+    if (!targetLb || targetLb <= 0) {
+      alert('Please enter a target weight.');
+      return;
+    }
+    if (targetLb >= weightLb) {
+      alert('Target weight should be lower than current weight for a weight-loss plan.');
+      return;
+    }
+
+    const targetKg = targetLb * 0.453592;
+    // Target-weight RER method: calculate RER from the goal weight, use directly as daily target
+    const rer = 70 * Math.pow(targetKg, 0.75);
+    const dailyCalories = Math.round(rer);
+    const low  = Math.round(dailyCalories * 0.9);
+    const high = Math.round(dailyCalories * 1.05);
+
+    // Safe rate-of-loss estimate (vet guidance: dogs ~3-5%/month, cats ~1-2%/month)
+    const minPct = petType === 'dog' ? 0.03 : 0.01;
+    const maxPct = petType === 'dog' ? 0.05 : 0.02;
+    const toLose = weightLb - targetLb;
+    const monthsFast = (toLose / (weightLb * maxPct)).toFixed(1);
+    const monthsSlow = (toLose / (weightLb * minPct)).toFixed(1);
+
+    document.getElementById('result-calories').textContent = `${low}–${high} calories per day`;
+    document.getElementById('result-desc').textContent =
+      `Calculated from your ${petType}'s target weight of ${targetLb} lbs (the standard veterinary weight-loss method — not current weight). Losing ${toLose.toFixed(1)} lbs at a safe rate takes roughly ${monthsFast}–${monthsSlow} months. ` +
+      (petType === 'cat'
+        ? 'Cats must lose weight slowly and under veterinary supervision — rapid weight loss can trigger hepatic lipidosis (a serious liver condition).'
+        : 'Weigh monthly and check in with your vet if progress stalls for 3–4 weeks.');
+
+    document.getElementById('result').classList.add('show');
+    return;
+  }
+
   const stage    = document.getElementById('life-stage').value;
   const activity = document.getElementById('activity').value;
   const neuter   = document.getElementById('neuter').value;
 
-  if (!petType || !weightLb || !stage || !activity) {
+  if (!stage || !activity) {
     alert('Please fill in all fields.');
     return;
   }
