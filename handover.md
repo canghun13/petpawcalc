@@ -533,3 +533,17 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - `what-to-feed-pregnant-dog` 자기잠식 의심(5세션째 미확정) — 사용자가 GSC UI 크로스 체크를 해줄 수 없다면 다음 세션에 "확정 불가로 보류 종결" 처리를 제안할 것.
 - GA 데이터(6/22~7/19)는 이번에 받았지만 신규/보강 판단에 직접 쓸 만한 신호는 없었음(활성 사용자 61명, 유입은 여전히 (direct)/pitchwall.co/Findly.tools 등 런칭 디렉토리 위주, organic은 bing 3명·google 2명 수준) — AI 검색엔진(ChatGPT/Perplexity 등)발 유입은 이번 GA 리포트의 소스/매체 목록에서 식별되지 않음(있었다면 referral로 잡혔을 것). 다음 세션에도 계속 확인 필요.
 - **문서/콘텐츠 파일 편집 시 종결자 보존 확인을 QA 체크리스트에 정식 추가**: front matter의 배열형 필드(`faqs:` 등) 끝에 새 항목을 str_replace로 추가할 때, old_str/new_str 양쪽에 뒤따르는 `---` 구분자(또는 다음 필드)까지 포함해서 편집 전후 구조가 그대로 보존되는지 diff로 확인할 것 — 이번 세션에 실제로 한 번 놓쳤다가 QA 단계에서 발견(3번 항목 참고).
+
+### 세션 N (계속) — 사용자 리포트 버그 수정: cat-weight-calculator 품종별 체중표 모바일 반응형 깨짐 (7/20)
+
+세션 N 작업물 배포 직후 사용자가 396px 모바일 뷰 스크린샷으로 `cat-weight-calculator.html`의 "Typical Healthy Weight Ranges by Breed" 표가 반응형으로 안 잡힌다고 리포트.
+
+**원인**: 이 표는 세션 M에서 만들어 전역 적용한 `.table-wrapper` 클래스(`css/style.css`)를 쓰지 않고, 그보다 오래된 인라인 스타일(`padding: 10px 14px` 고정)로 만들어져 있었음 — **세션 M의 table-wrapper 전역 적용 작업(session M 항목 참고)이 `class="table-wrapper"`를 쓰는 표들만 대상으로 했기 때문에, 인라인 스타일로 따로 만들어진 이 레거시 표는 그 작업에서 완전히 누락됐던 것**. `.table-wrapper` 클래스에는 `@media (max-width: 600px)`에서 padding/font-size를 축소하는 규칙이 있는데 이 표엔 그게 없어서, 3컬럼(Breed/Female/Male) + 긴 텍스트("Domestic Shorthair / Mixed")가 좁은 화면에서 제대로 줄어들지 않고 깨짐.
+
+**수정**: 인라인 스타일을 전부 제거하고 공용 `.table-wrapper` 패턴(다른 페이지들과 동일)으로 교체.
+
+**부수 발견 (다음 세션 확인 필요)**: 전체 저장소를 `<table` 태그 기준으로 재스캔한 결과 같은 인라인 스타일 패턴(class="table-wrapper" 미사용)의 표가 `annual-pet-cost-calculator.html`, `pet-insurance-cost-estimator.html`에도 있음 — 단 이 둘은 JS로 동적 생성되는 **2컬럼(라벨+금액) result-box 내부 표**라 컬럼 수·텍스트 길이가 훨씬 짧고 현재까지 신고된 증상도 없음. `.table-wrapper` 클래스는 `min-width: 480px`를 강제하는데, 이 두 표가 들어가는 `result-box`는 `.tool-box`(`padding: 32px`) 안에 있어 모바일에서 480px보다 훨씬 좁은 게 거의 확실 — 그대로 적용하면 지금은 없는 불필요한 가로 스크롤바가 새로 생길 위험이 있어 이번엔 보류. **다음 세션에서 이 두 페이지도 실제 모바일 스크린샷으로 확인 후, 필요하면 `.table-wrapper`를 그대로 쓰지 말고 이 2컬럼 result 표 전용의 더 가벼운 반응형 규칙(예: 좁은 화면에서 padding만 줄이는 별도 클래스)을 만들 것.**
+
+**교훈(체크리스트에 반영)**: `.table-wrapper` 같은 공용 CSS 클래스를 "전체 적용 완료"로 표시할 때는 **`class="table-wrapper"` 문자열로 검색하지 말고 `<table` 태그 자체로 전수 검색**해야 함 — 클래스를 안 쓰고 인라인 스타일로 따로 만들어진 표는 클래스명 검색으로는 잡히지 않음(이번에 실제로 이렇게 놓친 사례). 앞으로 "표 관련 작업 완료" QA 항목에는 `class="table-wrapper"` 검색이 아니라 `<table` 태그 전수 검색 + 각각이 table-wrapper로 감싸져 있는지 확인하는 스크립트를 표준으로 쓸 것.
+
+**QA**: div(18/18), table/tr/thead/tbody/th/td 태그 매칭, JSON-LD 2개 유효성, FAQ 스키마-본문 1:1 매칭(5/5) 유지 확인, front matter YAML 파싱 통과. 커밋 → push → GitHub Pages 빌드 `built` 확인(에러 없음, 커밋 해시 일치).
