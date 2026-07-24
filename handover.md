@@ -586,3 +586,22 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - **사용자가 오늘 "기존 자산 롱테일도 다 할거다"라고 했는데 시간상 신규 클러스터까지만 진행함 — 다음 세션(또는 이어지는 대화)에서 기존 자산 롱테일 파고들기를 이어서 할 것.**
 - 훈련 클러스터에 동반 블로그 포스트(예: "Puppy Potty Training Timeline: How Long It Really Takes")를 페어링할지 검토 — 지금은 tool 페이지 자체에 비교/문제해결 콘텐츠를 충분히 넣어서 급하지 않지만, 다른 클러스터들처럼 tool+post 페어링이 사이트 관행이라 트래픽 보고 판단.
 - furcalc.com 등 위 경쟁사 목록은 앞으로 매 키워드 조사 세션마다 반복 체크할 것 — 확장 속도가 빨라서(관찰된 페이지들이 대부분 "Updated 2026-05-16" 근처로 최근 갱신됨) 몇 주 전엔 비어있던 자리가 금방 채워질 수 있음.
+
+---
+
+### 세션 O (계속) — 강아지 동반 블로그(Potty Training Regression) 추가, 고양이는 보류 (7/22)
+
+사용자가 "강아지 쪽은 할 수 있는 거 다 진행, 고양이는 강아지 끝나고 다시 보자"고 요청. 강아지 배변훈련 계산기의 롱테일 블로그 후보를 추가로 4개 조사:
+
+1. **Potty Training Regression** (4-6개월/7-9개월 재발) — **채택**. 경쟁자가 SpiritDog·Sniffspot·Woofz·Zigzag·AlphaPaws 같은 소규모 훈련서비스 블로그뿐이고 AKC/Chewy/WebMD급 대형 브랜드나 pet-calculator 경쟁사는 이 앵글을 다루지 않음.
+2. **품종별 하우스트레이닝 기간** ("how long by breed size") — 기각. SpiritDog, Vety, Rover, Chewy, Sniffspot, USServiceAnimals 등이 이미 두껍게 커버 + **우리 계산기 툴 자체 콘텐츠와도 내용이 겹쳐서** 블로그로 따로 만들 실익이 낮음.
+3. **흥분성/복종성 배뇨** (excited/submissive urination) — 기각. AKC, Chewy, WebMD, Preventive Vet, Four Paws, Pupford 등 대형 브랜드가 이미 장악. 애초에 하우스트레이닝 실패가 아니라 별개의 감정적 반응이라 우리 계산기 툴과의 연결성도 약함.
+4. **야간 배변훈련** ("sleep through the night") — 기각. Rover, Chewy, Beco, Bulldogology, Suburban K9, PiddlePatch 등이 이미 두껍게 커버.
+
+**신규 파일**: `_posts/2026-07-22-puppy-potty-training-regression.md` — 4-6개월/7-9개월 두 재발구간을 표로 구조화, 행동적 원인 vs 의학적 원인(UTI 등) 구분표, 6단계 리셋플랜, FAQ 6개. `puppy-potty-training-calculator.html`에서 이 포스트로, 포스트에서 계산기로 양방향 링크.
+
+**⚠️ 기술적 이슈 발견 (중요, 앞으로 블로그 포스트에 표 넣을 때마다 적용할 것)**: 처음에 표를 `<div class="table-wrapper">` + 마크다운 테이블 조합으로 넣었다가, QA 단계에서 **이 사이트의 kramdown 설정에 `markdown="1"` 속성이 없어서 raw HTML div 안의 마크다운 테이블이 처리 안 될 위험**을 발견함(`_config.yml`에 별도 kramdown 옵션 없음 = 기본값 사용, 기본값은 raw HTML 블록 내부를 마크다운으로 처리하지 않음). 기존 블로그 포스트(`flea-tick-prevention-cost.md`)를 확인해보니 전부 `table-wrapper` div 없이 **순수 마크다운 테이블만** 쓰고 있었음 — 이번 포스트도 동일하게 순수 마크다운 테이블로 바꿔서 회피함. **앞으로 블로그 포스트(`_posts/`)에 표를 넣을 때는 절대 `<div class="table-wrapper">`로 감싸지 말 것 — tool 페이지(`tools/`, HTML 파일)에서만 이 패턴을 쓸 것.** 만약 블로그에서도 반응형 표 스타일이 필요하다고 판단되면, 먼저 로컬에서 `markdown="1"` 속성 추가 후 실제 빌드로 검증하거나, 순수 HTML `<table>` 태그로 직접 작성하는 방식을 검토할 것 — 마크다운 문법을 raw div 안에 그대로 넣는 방식은 검증 없이 쓰지 말 것.
+
+**QA**: 전체 63개 파일 YAML 통과, JSON-LD 오류 0, slug 중복 없음(34개), front matter-본문 FAQ 1:1 매칭(6/6), 링크 재스캔 0건. 커밋 → push → GitHub Pages 빌드 `built` 확인.
+
+**다음(고양이)**: 사용자가 "강아지 끝나면 고양이 다시 보자"고 했음 — 이전에 조사한 3개 각도(리터박스 안써요/리터를 먹어요/나이든고양이 리터훈련)는 전부 Hepper/Best Friends/IAMS/Hill's/PetMD/Rover/Cats.com/Lemonade급 대형 브랜드가 장악한 상태라 재검토 필요. 고양이 전용으로 더 좁은 각도(예: 다마리 가정에서의 영역다툼형 리터박스 회피, 이사/이사 후 재훈련 등)를 다음에 조사할 것.
