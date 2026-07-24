@@ -84,6 +84,8 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [How Often Should You Take Your Dog to the Vet?](https://petpawcalc.com/blog/how-often-vet-visits-dog-cost-by-age): Recommended vet visit frequency by life stage (puppy, adult, senior) with what each visit should cover and typical costs.
 - [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Cost breakdown by product type (topical, chewable, combo, collar), why prices vary by dog size and brand, and a cost comparison of prevention vs. treating a flea infestation, heartworm, or tick-borne disease after the fact.
 
+- [Puppy Potty Training Regression: Why It Happens (and How to Fix It)](https://petpawcalc.com/blog/puppy-potty-training-regression): Explains the two predictable regression windows (4-6 months, tied to teething/adolescence, and 7-9 months, tied to adolescent boundary-testing), a behavioral-vs-medical decision table, and a step-by-step reset plan.
+
 - [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
 
 - [How Long Are Dogs Pregnant?](https://petpawcalc.com/blog/how-long-are-dogs-pregnant): 63-day gestation overview with week-by-week development guide. Covers what to expect each week and how to prepare for whelping.
