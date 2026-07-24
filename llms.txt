@@ -50,6 +50,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Flea & Tick Prevention Cost Calculator](https://petpawcalc.com/tools/flea-tick-prevention-cost-calculator.html): Select dog or cat, dog weight tier, and product type (basic topical, oral chewable, combo with heartworm, or 8-month collar) to get an instant annual and monthly cost estimate, plus a comparison of prevention cost vs. the cost of treating a flea infestation, heartworm, or tick-borne disease.
 
+- [Puppy Potty Training Calculator](https://petpawcalc.com/tools/puppy-potty-training-calculator.html): Enter a puppy's age, expected adult size, and training method (crate/pad/mixed) to get bladder-hold time (daytime and overnight), a full daily potty-break schedule, and an expected housetraining timeline by breed size (toy/small vs medium vs large/giant).
+
+- [Kitten Litter Training Timeline](https://petpawcalc.com/tools/kitten-litter-training-timeline.html): Enter a kitten's age in weeks and household cat count to get age-specific guidance — litter box size, clumping vs. non-clumping litter safety, and box count using the n+1 rule — plus troubleshooting for kittens not using the box.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
