@@ -96,8 +96,6 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How to Tell If Your Cat Is Underweight (and What to Do About It)](https://petpawcalc.com/blog/how-to-tell-if-cat-is-underweight): At-home checks for underweight cats, why weight loss in cats needs faster attention (hyperthyroidism, kidney disease, hepatic lipidosis risk), and a safe weight-gain plan.
 
-- [Titer Testing for Dogs and Cats: How It Works and What the Results Actually Mean](https://petpawcalc.com/blog/titer-testing-for-dogs-and-cats): What a titer test measures (antibody levels vs. cell-mediated immunity), why the practice grew out of research showing core vaccine immunity lasts longer than a year, how to read positive/negative/borderline results, the non-responder dog pattern, and where titer testing doesn't apply (rabies, most non-core vaccines).
-
 - [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
 
 - [How Long Are Dogs Pregnant?](https://petpawcalc.com/blog/how-long-are-dogs-pregnant): 63-day gestation overview with week-by-week development guide. Covers what to expect each week and how to prepare for whelping.
