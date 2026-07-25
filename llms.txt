@@ -54,6 +54,10 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Kitten Litter Training Timeline](https://petpawcalc.com/tools/kitten-litter-training-timeline.html): Enter a kitten's age in weeks and household cat count to get age-specific guidance — litter box size, clumping vs. non-clumping litter safety, and box count using the n+1 rule — plus troubleshooting for kittens not using the box.
 
+- [Raw Feeding Calculator](https://petpawcalc.com/tools/raw-feeding-calculator.html): Enter a dog or cat's weight, life stage, and raw feeding model (80/10/10 Prey Model Raw or 70/10/10+10% BARF for dogs) to get daily portions split into muscle meat, bone, and organ, plus an estimated monthly and annual cost based on meat price per pound.
+
+- [Pet Boarding Cost Calculator](https://petpawcalc.com/tools/pet-boarding-cost-calculator.html): Select facility type (kennel, pet hotel, luxury resort, in-home sitter), number of nights, add-ons, and whether travel falls on a major holiday to get an instant total cost estimate for boarding a dog or cat.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
@@ -85,6 +89,10 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Cost breakdown by product type (topical, chewable, combo, collar), why prices vary by dog size and brand, and a cost comparison of prevention vs. treating a flea infestation, heartworm, or tick-borne disease after the fact.
 
 - [Puppy Potty Training Regression: Why It Happens (and How to Fix It)](https://petpawcalc.com/blog/puppy-potty-training-regression): Explains the two predictable regression windows (4-6 months, tied to teething/adolescence, and 7-9 months, tied to adolescent boundary-testing), a behavioral-vs-medical decision table, and a step-by-step reset plan.
+
+- [How to Tell If Your Dog Is Underweight (and How to Help Them Gain Weight Safely)](https://petpawcalc.com/blog/how-to-tell-if-dog-is-underweight): At-home rib/waist/muscle-tone checks for underweight vs. naturally lean (sighthounds), common causes (underfeeding, dental pain, parasites, illness), and a safe gradual weight-gain plan.
+
+- [How to Tell If Your Cat Is Underweight (and What to Do About It)](https://petpawcalc.com/blog/how-to-tell-if-cat-is-underweight): At-home checks for underweight cats, why weight loss in cats needs faster attention (hyperthyroidism, kidney disease, hepatic lipidosis risk), and a safe weight-gain plan.
 
 - [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
 
