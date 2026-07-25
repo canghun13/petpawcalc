@@ -1,0 +1,259 @@
+---
+layout: tool
+title: Titer Test vs. Revaccination Cost Calculator — Dogs & Cats
+description: Compare the cost of titer testing (checking existing vaccine immunity) against standard revaccination over time for your dog or cat's core vaccines. Free and instant.
+permalink: /tools/titer-test-vs-revaccination-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Titer Test vs. Revaccination Cost Calculator",
+  "url": "https://petpawcalc.com/tools/titer-test-vs-revaccination-calculator.html",
+  "description": "Compare the total cost of titer testing versus standard revaccination for core dog and cat vaccines over a chosen number of years.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a titer test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A titer test is a blood test that measures antibody levels for a specific disease, showing whether a previous vaccine is still providing protection. If the titer comes back positive, it suggests your pet is still immune and doesn't need that vaccine repeated yet. If it comes back negative or low, most vets recommend revaccinating."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a titer test cheaper than revaccination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily — it depends on the result. A single titer test ($40–$200) often costs more upfront than a single vaccine booster ($20–$40). Titer testing only saves money over time if the results stay positive across multiple testing cycles, avoiding boosters your pet doesn't need. If a titer comes back negative, you've paid for both the test and the vaccine, which costs more than just revaccinating on schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a titer test instead of the rabies vaccine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most U.S. states and municipalities, no — rabies vaccination is a legal requirement regardless of titer results, since rabies is a public health concern, not just a pet health decision. Rabies titer testing exists mainly for international pet travel documentation, not as a substitute for legally required boosters. This calculator focuses on non-legally-mandated core vaccines (DHPP for dogs, FVRCP for cats) for this reason."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I titer test my dog or cat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vets who use titer testing as an alternative to automatic boosters commonly retest every 1-3 years, similar to a standard revaccination interval. Annual testing catches waning immunity earlier but costs more in cumulative testing fees; testing every 3 years (aligned with standard core vaccine duration) is the more budget-conscious approach many titer-testing vets use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do veterinary organizations recommend titer testing over revaccination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's mixed. The World Small Animal Veterinary Association (WSAVA) supports antibody testing to help determine duration of immunity for core vaccines in dogs. The AVMA takes a more cautious position, noting that the correlation between titer results and actual protection hasn't been fully established for every vaccine and species. Discuss with your vet whether titer testing makes sense for your specific pet, rather than assuming it's automatically the better or cheaper choice."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🩸 Titer Test vs. Revaccination Cost Calculator</h1>
+    <p>Compare the real cost of titer testing against standard revaccination for your dog or cat's core vaccines over time.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="tt-species">Pet Type</label>
+      <select id="tt-species">
+        <option value="dog">Dog (DHPP — distemper, hepatitis, parvovirus, parainfluenza)</option>
+        <option value="cat">Cat (FVRCP — rhinotracheitis, calicivirus, panleukopenia)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="tt-years">Years to Compare</label>
+      <input type="number" id="tt-years" min="1" max="15" step="1" placeholder="e.g. 6">
+    </div>
+    <div class="form-group">
+      <label for="tt-frequency">Titer Testing Frequency</label>
+      <select id="tt-frequency">
+        <option value="3">Every 3 years (matches standard revaccination interval)</option>
+        <option value="1">Every year (more cautious, catches waning immunity sooner)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="tt-pets">Number of Pets</label>
+      <input type="number" id="tt-pets" min="1" max="10" step="1" value="1">
+    </div>
+    <button class="btn-calculate" onclick="calculateTiter()">Compare Costs →</button>
+
+    <div class="result-box" id="tt-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="tt-date"></span>
+      </div>
+      <h3 id="tt-result-total"></h3>
+      <div id="tt-result-breakdown" style="margin-top: 14px; font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <button class="pdf-btn" id="tt-pdf-btn" onclick="doPrint('tt-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator compares cost only, not medical necessity. Rabies vaccination is legally required in most U.S. jurisdictions regardless of titer results — this tool covers non-legally-mandated core vaccines. Veterinary organizations are divided on how much weight to give titer results for determining actual protection; talk to your vet about whether titer testing fits your specific pet before switching from a standard vaccination schedule.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Titer Testing vs. Revaccination: What Vets Say</h2>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Organization</th><th>Position</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>WSAVA (World Small Animal Veterinary Association)</td><td>Supports antibody testing to help determine duration of immunity for core vaccines in dogs</td></tr>
+        <tr><td>AAHA (American Animal Hospital Association)</td><td>Recognizes antibody testing as useful for monitoring immunity in dogs</td></tr>
+        <tr><td>AAFP (American Association of Feline Practitioners)</td><td>Recommends defined revaccination intervals for cats over routine titer-based decisions</td></tr>
+        <tr><td>AVMA (American Veterinary Medical Association)</td><td>More cautious — notes the correlation between titers and actual protection isn't fully established for every vaccine and species</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">In short: there's no universal answer. Titer testing is a legitimate, vet-supported option for some pets and situations, but it isn't a settled "always better" choice — cost is only one factor to weigh alongside your vet's read on your individual pet.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Titer Testing Isn't Automatically Cheaper</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 24px; padding-left: 20px;">
+      <li><strong>A single titer test ($40–$200) usually costs more than a single vaccine booster ($20–$40).</strong> The savings only appear if you skip enough unnecessary boosters over time to offset the cumulative testing cost.</li>
+      <li><strong>A negative titer means you pay for both</strong> — the test and the vaccine you end up needing anyway.</li>
+      <li><strong>In-house tests (like VacciCheck) are cheaper than send-out lab titers</strong> ($45–$80 vs. up to $200), so where you get tested matters a lot to the math.</li>
+      <li><strong>Titer testing makes the most financial sense for pets who reliably stay immune</strong> for many years past the standard 3-year interval, since each "skipped" booster is where the real savings come from.</li>
+    </ul>
+
+    <div class="post-cta">
+      <p>Check your pet's full vaccine schedule → <a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a> · <a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Read the full vaccine timeline guide → <a href="/blog/puppy-kitten-vaccination-schedule/">Puppy & Kitten Vaccination Schedule</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is a titer test?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A titer test is a blood test that measures antibody levels for a specific disease, showing whether a previous vaccine is still providing protection. If the titer comes back positive, it suggests your pet is still immune and doesn't need that vaccine repeated yet. If it comes back negative or low, most vets recommend revaccinating.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is a titer test cheaper than revaccination?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not necessarily — it depends on the result. A single titer test ($40–$200) often costs more upfront than a single vaccine booster ($20–$40). Titer testing only saves money over time if the results stay positive across multiple testing cycles, avoiding boosters your pet doesn't need. If a titer comes back negative, you've paid for both the test and the vaccine, which costs more than just revaccinating on schedule.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I use a titer test instead of the rabies vaccine?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">In most U.S. states and municipalities, no — rabies vaccination is a legal requirement regardless of titer results, since rabies is a public health concern, not just a pet health decision. Rabies titer testing exists mainly for international pet travel documentation, not as a substitute for legally required boosters. This calculator focuses on non-legally-mandated core vaccines (DHPP for dogs, FVRCP for cats) for this reason.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I titer test my dog or cat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Vets who use titer testing as an alternative to automatic boosters commonly retest every 1-3 years, similar to a standard revaccination interval. Annual testing catches waning immunity earlier but costs more in cumulative testing fees; testing every 3 years (aligned with standard core vaccine duration) is the more budget-conscious approach many titer-testing vets use.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do veterinary organizations recommend titer testing over revaccination?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">It's mixed. The World Small Animal Veterinary Association (WSAVA) supports antibody testing to help determine duration of immunity for core vaccines in dogs. The AVMA takes a more cautious position, noting that the correlation between titer results and actual protection hasn't been fully established for every vaccine and species. Discuss with your vet whether titer testing makes sense for your specific pet, rather than assuming it's automatically the better or cheaper choice.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+const ttVaccineCost = 30; // midpoint of $20-40 DHPP/FVRCP
+const ttTiterCost = 60;   // midpoint of typical in-house $45-80 range
+
+function calculateTiter() {
+  const years = parseInt(document.getElementById('tt-years').value);
+  const freq = parseInt(document.getElementById('tt-frequency').value);
+  const pets = parseInt(document.getElementById('tt-pets').value) || 1;
+
+  if (!years || years <= 0) {
+    alert('Please enter the number of years to compare.');
+    return;
+  }
+
+  const revaxCycles = Math.ceil(years / 3);
+  const revaxTotal = revaxCycles * ttVaccineCost * pets;
+
+  const titerTests = Math.ceil(years / freq);
+  const titerBestCase = titerTests * ttTiterCost * pets;
+  const titerWorstCase = titerBestCase + (ttVaccineCost * pets); // one booster still needed at some point
+
+  document.getElementById('tt-result-total').textContent =
+    `Revax: $${revaxTotal.toLocaleString()}  vs.  Titer: $${titerBestCase.toLocaleString()}–$${titerWorstCase.toLocaleString()}`;
+
+  const cheaper = titerBestCase < revaxTotal ? 'Titer testing (best case)' : 'Standard revaccination';
+
+  document.getElementById('tt-result-breakdown').innerHTML = `
+    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Standard revaccination (every 3 yrs)</span><span>${revaxCycles} booster${revaxCycles>1?'s':''} · $${revaxTotal.toLocaleString()}</span></div>
+    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Titer testing — all results stay positive</span><span>${titerTests} test${titerTests>1?'s':''} · $${titerBestCase.toLocaleString()}</span></div>
+    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Titer testing — one booster still needed</span><span>$${titerWorstCase.toLocaleString()}</span></div>
+    <div style="display:flex; justify-content:space-between; padding: 6px 0;"><span>Cheaper if titers stay positive</span><span>${cheaper}</span></div>
+  `;
+
+  document.getElementById('tt-result').classList.add('show');
+  document.getElementById('tt-pdf-btn').style.display = 'block';
+  document.getElementById('tt-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

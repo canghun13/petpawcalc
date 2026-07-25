@@ -58,6 +58,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Pet Boarding Cost Calculator](https://petpawcalc.com/tools/pet-boarding-cost-calculator.html): Select facility type (kennel, pet hotel, luxury resort, in-home sitter), number of nights, add-ons, and whether travel falls on a major holiday to get an instant total cost estimate for boarding a dog or cat.
 
+- [Titer Test vs. Revaccination Cost Calculator](https://petpawcalc.com/tools/titer-test-vs-revaccination-calculator.html): Select species, years to compare, titer testing frequency, and number of pets to compare the total cost of standard core-vaccine revaccination against titer testing, showing both the best-case (all titers stay positive) and a scenario where one booster is still eventually needed.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
