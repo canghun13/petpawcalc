@@ -67,6 +67,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [New Puppy Checklist](https://petpawcalc.com/checklists/new-puppy-checklist.html): Supplies, first vet visit, core vaccine series timing (6-16 weeks), socialization window (closes ~16 weeks), spay/neuter timing, and first-year budgeting.
 - [New Kitten Checklist](https://petpawcalc.com/checklists/new-kitten-checklist.html): Supplies, litter box setup (one per cat plus one extra), first vet visit, FeLV/FIV testing, core FVRCP vaccine series timing, toxic plant warnings (lilies), and first-year budgeting.
 - [New Rabbit Checklist](https://petpawcalc.com/checklists/new-rabbit-checklist.html): Housing space requirements, diet (unlimited hay + measured pellets), litter-safe products (never clumping cat litter), finding a rabbit-savvy vet, GI stasis emergency recognition, and the 8-12 year lifespan commitment. The site's first non-dog/cat content.
+- [Pet Emergency Kit Checklist](https://petpawcalc.com/checklists/pet-emergency-kit-checklist.html): Disaster/evacuation preparedness for dogs and cats — documents (vaccination records, microchip, ownership proof), 3-7 day food/water/medication supply, carrier/leash/litter supplies, and an evacuation plan (pet-friendly hotels, out-of-area contact, rescue alert sticker). Universal, not species-specific.
 
 ## Blog
 
@@ -91,6 +92,8 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Cost breakdown by product type (topical, chewable, combo, collar), why prices vary by dog size and brand, and a cost comparison of prevention vs. treating a flea infestation, heartworm, or tick-borne disease after the fact.
 
 - [Puppy Potty Training Regression: Why It Happens (and How to Fix It)](https://petpawcalc.com/blog/puppy-potty-training-regression): Explains the two predictable regression windows (4-6 months, tied to teething/adolescence, and 7-9 months, tied to adolescent boundary-testing), a behavioral-vs-medical decision table, and a step-by-step reset plan.
+
+- [Cat Litter Training Regression: Why a Trained Cat Suddenly Stops](https://petpawcalc.com/blog/kitten-litter-training-regression): Explains why litter box use is instinctual (not taught) so regression signals a real change, common triggers (moving house, new litter, multi-cat conflict, post-spay/neuter litter texture change), a behavioral/environmental-vs-medical decision table centered on feline idiopathic cystitis (FIC) vs. UTI, and a step-by-step reset plan.
 
 - [How to Tell If Your Dog Is Underweight (and How to Help Them Gain Weight Safely)](https://petpawcalc.com/blog/how-to-tell-if-dog-is-underweight): At-home rib/waist/muscle-tone checks for underweight vs. naturally lean (sighthounds), common causes (underfeeding, dental pain, parasites, illness), and a safe gradual weight-gain plan.
 

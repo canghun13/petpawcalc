@@ -21,6 +21,8 @@ faqs:
     a: "Most kittens can transition to adult food around 10–12 months, once growth has mostly leveled off. Large breeds that are still actively growing at 12 months (Maine Coon, Ragdoll, and similar) often stay on kitten or all-life-stages food a few months longer — ask your vet if you're unsure whether your kitten's breed is still in an active growth phase."
   - q: "Is there a Maine Coon weight predictor?"
     a: "There's no precise formula for predicting an individual Maine Coon's adult weight, since genetics and litter size vary widely, but the large-breed comparison table above works as a rough weight predictor: Maine Coons stay well below a standard kitten chart through their first year, then keep growing for another 2–3 years to reach their typical adult range of 12–20 lbs (up to 25 lbs for some males)."
+  - q: "How big will my cat get?"
+    a: "For a typical domestic shorthair or mixed-breed kitten, the birth-to-12-month chart above gets you most of the way there — most land around 7–10 lbs as adults. If growth is still climbing well past 12 months instead of leveling off, check the large-breed comparison table above first, since Maine Coons, Ragdolls, Norwegian Forest Cats, and Siberians keep growing for 2–4 years and land much larger (12–20+ lbs)."
 
 ---
 
@@ -138,6 +140,9 @@ Most kittens can transition to adult food around 10–12 months, once growth has
 
 **Is there a Maine Coon weight predictor?**
 There's no precise formula for predicting an individual Maine Coon's adult weight, since genetics and litter size vary widely, but the large-breed comparison table above works as a rough weight predictor: Maine Coons stay well below a standard kitten chart through their first year, then keep growing for another 2–3 years to reach their typical adult range of 12–20 lbs (up to 25 lbs for some males).
+
+**How big will my cat get?**
+For a typical domestic shorthair or mixed-breed kitten, the birth-to-12-month chart above gets you most of the way there — most land around 7–10 lbs as adults. If growth is still climbing well past 12 months instead of leveling off, check the large-breed comparison table above first, since Maine Coons, Ragdolls, Norwegian Forest Cats, and Siberians keep growing for 2–4 years and land much larger (12–20+ lbs).
 
 *Always consult your veterinarian with concerns about your kitten's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific cat.*
 

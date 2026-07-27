@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-22 (세션 O)
+최종 갱신: 2026-07-27 (세션 P)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -663,3 +663,61 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 **최종 교훈**: "계산기가 무경쟁이니 동반 블로그도 무경쟁일 것"이라는 가정은 틀렸다 — **툴(계산기/인터랙티브 기능)의 경쟁도와 그 주제에 대한 편집 콘텐츠(설명글)의 경쟁도는 완전히 별개로 확인해야 한다.** 같은 주제라도 포맷이 다르면(계산기 vs 설명글) 경쟁 구도가 딴판일 수 있음 — 이번처럼 계산기는 비어있어도 그 주제의 "설명 콘텐츠"는 이미 대형 수의학 매체·협회가 공식 문서로 꽉 채워놓은 경우가 있음. **모든 신규 클러스터가 반드시 "계산기+블로그" 페어링이어야 하는 건 아니다** — 툴 자체 페이지 콘텐츠(FAQ+비교표)로 충분한 깊이가 나오면 블로그 없이 단독으로 두는 것도 정상적인 선택지. 다음부터는 동반 블로그를 만들지 여부를 "관행이니까 무조건"이 아니라, 그 블로그 각도의 경쟁도를 별도로 확인한 후 결정할 것.
 
 **오늘(세션 O) 최종 페이지 수**: tools 27 + posts 36 + checklists 3 = 66페이지. 신규 순증: 훈련계산기2(강아지 배변훈련, 고양이 리터훈련) + 동반블로그1(퇴행) + 저체중포스트2(개/고양이) + 생식계산기1 + 펫보딩계산기1 + 타이터계산기1 = 총 8개 신규 페이지 확정 게시(타이터 동반블로그는 철회로 최종 미게시).
+
+---
+
+### 세션 P — GSC/GA 7/27 데이터 분석 + 고양이 리터훈련 퇴행 포스트 + 신규 카테고리 "펫 비상 대비 키트 체크리스트" (7/27, 주간 작업)
+
+사용자 요청 핵심: 밀린 주간 작업. 첨부된 Coverage/Performance(GSC) zip + Analytics(GA) CSV 확인 후 신규/보강 판단. 신규 콘텐츠는 기존 파일 중복 체크 + 웹 검색 경쟁강도 확인 + 롱테일 전략. 신규·보강 둘 다 AI검색 대응(문제해결·비교분석 콘텐츠) 반영. AdSense 수익화 관점 우선순위. 대시보드 없이 텍스트 분석만. 작업 후 handover.md 갱신 후 push. 화면 깨짐 확인이 꼭 필요한 페이지만 링크로 제공.
+
+**1. GSC 데이터 분석 (Coverage + Performance, 지난 3개월 누적 / GA는 6/29~7/26)**
+
+- **Coverage 미색인 수치가 세션 J(7/15)부터 지금까지 사실상 계속 21개(발견됨-미색인 15 + 크롤링됨-미색인 6)로 정체** — 세션 J→L→M→N→이번까지 사실상 5개 데이터 포인트 연속 21개. 세션 N에서 이미 "정체로 판단, 재크롤 요청 권유 시점"이라고 결론 냈던 것이 이번에도 그대로 유지됨. **사용자에게 GSC UI에서 개별 URL "색인 생성 요청"을 직접 눌러볼 것을 다시 한번 명확히 권한다** — 에이전트는 GSC API 접근 권한이 없어 대신 요청 불가.
+- **하지만 완전히 정체된 것만은 아님 — `dog-pregnancy-calculator`가 드디어 색인되어 처음으로 노출 데이터에 등장 (63노출, 평균순위 54.71).** 세션 J(7/15)부터 5세션 이상 미색인 상태였던 페이지가 세션 M에서 추가한 "임신 진단방법 비교표"+FAQ 보강 이후 결국 색인된 것으로 보임 — 온페이지 보강이 시간차를 두고 효과를 낸 사례로 볼 수 있어, "재크롤 요청 필요"와 "보강이 결국 통했다"는 두 신호가 동시에 존재하는 상황.
+- **비대칭 발견 — `cat-pregnancy-calculator`는 dog 버전과 완전히 동일한 보강(비교표+FAQ)을 세션 M에서 동시에 받았는데도 여전히 노출 0.** 두 페이지가 받은 온페이지 처리가 동일한데 결과가 갈렸다는 건 순수 크롤/색인 우선순위 문제일 가능성이 높음 — 다음 세션에서 재크롤 요청 시 `cat-pregnancy-calculator`를 최우선으로 삼을 것.
+- **Performance 페이지별 노출 대조로 미노출 URL 재역산(방법은 세션 J/N과 동일)**: 사이트 전체 74개 URL 중 41개가 노출 있음(35→41로 증가), 미노출 32개. 이 중 상당수는 세션 O(7/22)에 만든 지 5일밖에 안 된 신규 페이지라 당연히 미노출(훈련계산기2, 생식계산기, 펫보딩계산기, 타이터계산기, 저체중포스트2, 퇴행포스트, 체크리스트2개) — 제외하고 보면:
+  - 세션 J 때부터 미색인이던 tool 7개 중 `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator`, `cat-quality-of-life-calculator` 6개는 여전히 노출 0(12일 이상 정체). `dog-heat-cycle-calculator`는 이번에 노출 8건으로 확인되어 이미 회복됨.
+  - blog 쪽 미노출은 여전히 세션 B 날짜조작 수정(7/10) 이전 작성 포스트 위주(`dog-age-human-years`, `how-long-are-cats-pregnant`, `signs-of-cat-labor` 등)로 기존 가설과 일치. `how-to-reduce-vet-costs-for-cats`(7/15 작성, 12일차)도 아직 미노출 — 살짝 오래 걸리는 편이라 다음 세션에서 계속 관찰.
+- **정확 문구 점검**: GSC 쿼리 397개 전수 확인 결과, "paw score calculator"(22노출), "cat dental cleaning cost"(25노출+"cat teeth cleaning cost" 12노출), "dog heat cycle calculator"(8노출), "how to tell if your kitten is overweight"(8노출) 등은 이미 페이지 본문에 정확 문구가 존재함을 확인(추가 조치 불필요) — 다만 **"how big will my cat get calculator"(5노출, 94.8위)는 사이트 어디에도 없던 문구**라 `kitten-weight-chart-by-breed-size` 포스트에 신규 FAQ로 추가함(front matter+본문 양쪽, 세션 C 패턴).
+- 쿼리 테이블 자체의 클릭 합계(1건, "maine coon weight predictor")가 페이지 테이블의 클릭 합계(4건)보다 적음 — GSC가 저노출 쿼리를 개인정보 보호 목적으로 일부 익명화/생략하는 것으로 추정, 특이사항 아님.
+- **GA(6/29~7/26)**: 활성 사용자 74명. 유입은 여전히 (direct) 59명 압도적, pitchwall.co/Findly.tools 등 런칭 디렉토리 위주, organic은 bing 3·google 2·yahoo 1. AI 검색엔진(ChatGPT/Perplexity 등)발 유입은 이번에도 소스/매체 목록에서 식별 안 됨 — 계속 관찰 필요.
+
+**2. 신규 콘텐츠 후보 검토 (웹 검색으로 경쟁강도 확인)**
+
+- **기각**: `how-much-to-feed-a-cat`(dog의 `how-much-to-feed-a-dog`과 페어링 빈자리이긴 하나, PetMD·APOP·thepetcalculator.com 등 강력한 기존 계산기/권위 콘텐츠 다수 + 이미 사이트에 `pet-food-calorie-calculator`가 동일 니즈를 계산기로 커버 중이라 중복 리스크, 게다가 dog 버전 자체도 현재 미노출 상태라 "검증된 포맷" 근거가 약함), `why-is-my-dog-always-hungry`(cat의 `why-is-my-cat-always-hungry` 페어링 빈자리, 그러나 JustFoodforDogs·GreatPetCare·IAMS·DogFoodAdvisor·Waggle 등 대형 브랜드가 이미 두껍게 장악), 고양이 리터박스 회피 일반 주제(`cat not using litter box` — Cats.com·Chewy·Petco·Litter-Robot·alleycat.org 등 대형 브랜드 다수, 세션 O에서 이미 기각된 것과 동일 결론 재확인), 강아지/고양이 물 섭취량 계산기(worldanimalfoundation·omnicalculator·ratedcalculator·Nom Nom·ctrlcalculator 등 9곳 이상의 기존 계산기 확인, furcalc 외에도 훨씬 포화됨).
+- **채택 1 — 신규 포스트 `kitten-litter-training-regression`**: 세션 O의 `kitten-litter-training-timeline` 계산기(신규 카테고리)의 동반 블로그가 없었던 빈자리를 채움. 강아지 쪽은 이미 `puppy-potty-training-regression`으로 계산기+블로그 페어링이 완성돼 있었는데 고양이 쪽만 없었음(세션 O가 "고양이는 나중에" 라고 명시적으로 미룬 항목). 웹 검색으로 좁혀서 확인(일반 "리터박스 회피"가 아니라 "이미 훈련됐던 고양이가 갑자기 회귀"라는 좁은 앵글) — Cats.com 관련 글 1건, Kitten Lady·Integricare·tinyinherbox.com 등 소규모 블로그/전문가 사이트 위주로 대형 브랜드 독점이 아님을 확인 후 진행.
+  - 개와 다른 점을 정확히 반영(웹 검색으로 사실 확인): 고양이는 배변훈련이 학습이 아니라 본능이라 회귀 시 "훈련 실패"가 아니라 "환경 변화 신호"로 프레이밍을 다르게 함. 중성화 수술 후 절개부위 보호 목적으로 신문지 조각/비클럼핑 리터로 임시 교체를 권장하는 관행(여러 동물병원 소스로 확인) 반영. 의학적 원인은 개의 UTI 프레임이 아니라 **고양이 특발성 방광염(FIC, Feline Idiopathic Cystitis)**이 실제로는 UTI보다 훨씬 흔한 원인이라는 걸 MSPCA·BluePearl·International Cat Care·Hill's 등 복수 수의학 소스로 확인해 정확히 반영 — 수컷 고양이의 요도폐쇄 응급 경고도 포함.
+  - `kitten-litter-training-timeline.html` ↔ 신규 포스트 양방향 링크, `puppy-potty-training-regression.md`에도 종간 교차링크 추가(dog↔cat 페어링 관행 유지).
+- **채택 2 — 신규 체크리스트 `checklists/pet-emergency-kit-checklist.html`**: 세션 M이 남긴 다음 체크리스트 후보 파이프라인("이사/여행/시니어/응급상자 준비") 중 하나를 웹 검색으로 검증 후 진행. Red Cross·ASPCA·CDC·Best Friends·Ready.gov·Pawlicy 등 정적 체크리스트/PDF는 매우 많지만 **체크박스 누르고 진행률 저장하는 인터랙티브 웹 도구는 검색 결과에 전혀 없음** — 세션 M의 New Puppy/Kitten/Rabbit Checklist와 정확히 동일한 패턴의 빈 니치. 개·고양이 공용(종 구분 없이 하나의 체크리스트, 필요한 항목만 종별 표기 — new-rabbit-checklist처럼 단독 페이지가 아니라 auto-pet-cost-calculator처럼 통합형)으로 제작. 문서/ID·식량+물+투약·용품/컴포트·계획+연습 4개 섹션, 20개 항목, FAQ 6개(공식 재난 대비 기관 가이드라인을 종합해 근거 확보 — 3~7일 분 권장량, 반려동물 동반 불가 대피소가 많다는 점, 안전 스티커, 중성화 수술과 무관하게 항상 정확 사실 위주로 서술).
+  - 역링크(고아 페이지 방지): `annual-pet-cost-calculator.html`(신규 post-cta), `checklists/new-puppy-checklist.html`, `checklists/new-kitten-checklist.html`(각각 post-cta 추가) — 3곳에서 신규 체크리스트로 연결.
+  - 공통 파일 동기화: `checklists/index.html`(카드 추가, New 배지를 신규 항목으로 이동), `_includes/footer.html`(Checklists 컬럼에 링크 추가), `llms.txt`(Checklists 섹션에 항목 추가).
+
+**3. AI검색 대응(문제해결·비교분석) 반영**
+
+- 신규 포스트(`kitten-litter-training-regression`)에 행동적/환경적 원인 vs 의학적 원인 **비교표**, 흔한 유발요인 6가지 **비교표**(원인/실제상황/해결법), 단계별 **리셋플랜**을 처음부터 포함 — 세션 M부터 이어지는 방향을 신규 제작 시점부터 반영.
+- 기존 페이지 보강은 정확 문구 FAQ 1건 추가(`kitten-weight-chart-by-breed-size`의 "how big will my cat get?") 외에는 이번 세션엔 진행하지 않음 — GSC 쿼리 전수 확인 결과 대부분 이미 정확 문구가 커버돼 있었고, 신규 콘텐츠 제작에 리소스를 집중하는 게 이번 세션의 우선순위 판단이었음(아래 4번 참고).
+
+**4. AdSense 수익화 관점 우선순위 판단**
+
+- Coverage 정체(21개, 5데이터포인트 연속)와 `dog-pregnancy-calculator`가 결국 색인된 사례가 공존하는 상황 — 온페이지 보강은 계속 유효하지만, **지금 가장 확실한 다음 액션은 콘텐츠가 아니라 사용자가 GSC UI에서 개별 URL(특히 `cat-pregnancy-calculator`)에 색인 생성을 요청하는 것**이라고 명확히 판단.
+- 신규 콘텐츠 2건(포스트 1 + 체크리스트 1)은 둘 다 "이미 검증된 사이트 자체 포맷(페어링 완성/체크리스트 인터랙티브 도구)의 빈자리를 채우는" 저위험 확장이라 우선순위를 높게 잡음 — 완전히 새로운 카테고리 개척보다 리스크가 낮음.
+- 트래픽/클릭이 여전히 극소수인 단계라 화려한 신규 시도보다 "사이트가 이미 증명한 패턴의 빈자리 채우기"를 이번 세션의 핵심 원칙으로 유지.
+
+**5. QA**
+- 전체 `_posts`(37개)+`tools`+`checklists`(31개) front matter YAML 전수 통과.
+- 신규 체크리스트 JSON-LD(ItemList 20개 항목=실제 체크박스 20개, FAQPage 6개=본문 h3 6개) 1:1 매칭 코드로 확인, div(13/13)·label(20/20) 개수 매칭.
+- 신규 포스트 FAQ front matter-본문 1:1 매칭(6/6), 마크다운 테이블에 `table-wrapper` div를 쓰지 않음(세션 O의 kramdown 교훈 준수 확인).
+- `kitten-weight-chart-by-breed-size` FAQ 추가 후 YAML 재검증(8개 FAQ 정상 파싱, front matter 종결자 `---` 보존 확인 — 세션 N의 실수 재발 방지 체크리스트 항목 적용).
+- 전체 저장소 링크 재스캔(신규 파일 포함) — 브로큰 링크 0건(정규식 오탐 1건은 `llms.txt`의 일반 문장 내 `/checklists/.`로 확인, 실제 문제 아님).
+- slug 중복 없음(37개), permalink 중복 없음(31개).
+- `index.html`/`tools/index.html` tool-card 27개 = 실제 tool 파일 27개 일치(이번 세션 신규 tool 없음). `checklists/index.html` 카드 4개 = 실제 checklist 파일 4개 일치.
+
+**오늘(세션 P) 최종 페이지 수**: tools 27 + posts 37 + checklists 4 = 68페이지. 신규 순증 2개(고양이 리터훈련 퇴행 포스트, 펫 비상 대비 키트 체크리스트).
+
+**다음 세션에서 확인할 것**:
+- **Coverage 21개 정체가 6번째 데이터에서도 유지되면 재크롤 요청을 더 강하게 재권유할 것 — 특히 `cat-pregnancy-calculator`(dog 버전과 동일 보강인데 결과가 갈린 비대칭 사례) 최우선.**
+- 신규 2개 페이지(`kitten-litter-training-regression`, `pet-emergency-kit-checklist`)의 첫 GSC 노출/색인 확인.
+- `kitten-weight-chart-by-breed-size`에 추가한 "how big will my cat get" FAQ가 다음 데이터에서 관련 쿼리 노출/순위에 변화를 주는지 확인.
+- `dog-pregnancy-calculator`가 색인된 것처럼, 세션 J 때부터 미노출이던 나머지 tool 6개(`annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator`, `cat-quality-of-life-calculator`)도 시간차를 두고 자연 회복되는지 계속 관찰(재크롤 요청과 별개로).
+- GA 데이터에서 AI 검색엔진(ChatGPT/Perplexity 등)발 유입이 referral로 잡히는지 계속 확인 — 이번에도 식별 안 됨.
+- `what-to-feed-pregnant-dog` 자기잠식 의심은 이번 세션엔 다루지 않음 — 여전히 열린 항목(세션 H부터 6세션째 미확정), 사용자가 GSC UI 교차확인을 해줄 수 없다면 다음엔 공식 종결 처리 고려.

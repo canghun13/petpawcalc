@@ -103,3 +103,4 @@ Yes. Puppies lose their baby teeth and grow adult teeth mostly between 4 and 6 m
 - [Puppy Potty Training Calculator](/tools/puppy-potty-training-calculator.html)
 - [New Puppy Checklist](/checklists/new-puppy-checklist.html)
 - [Puppy Weight Chart by Breed Size](/blog/puppy-weight-chart-by-breed-size/)
+- [Cat Litter Training Regression: Why a Trained Cat Suddenly Stops](/blog/kitten-litter-training-regression/)
