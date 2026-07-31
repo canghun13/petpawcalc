@@ -1,0 +1,442 @@
+---
+layout: tool
+title: Spay/Neuter Recovery Timeline — Cone, Incision Check & Activity Calendar
+description: Enter your dog or cat's surgery date to get a personalized recovery calendar with actual dates — when the cone typically comes off, when activity restrictions lift, and daily incision-check reminders. Free and instant.
+permalink: /tools/spay-neuter-recovery-timeline.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Spay/Neuter Recovery Timeline Calculator",
+  "url": "https://petpawcalc.com/tools/spay-neuter-recovery-timeline.html",
+  "description": "Enter a spay or neuter surgery date to get a personalized recovery calendar with actual dates for incision checks, cone removal, and activity restriction.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does a dog or cat need to wear the cone after spay/neuter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most vets recommend keeping the cone (E-collar) on for the full recovery window rather than removing it once the incision looks closed — typically 10-14 days for dogs and 7-14 days for cats depending on the procedure. A spay (abdominal surgery) generally needs the cone longer than a neuter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I take the cone off once the incision looks healed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The visible skin can close by around day 7 while the tissue underneath is still healing for another week or more. A few minutes of licking at that stage can reopen the incision or introduce bacteria, even though it looked fine moments earlier. The cone is protecting healing you can't see, not just the surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my male cat need a special litter after neutering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cat neuters usually leave a small, open scrotal incision without external sutures, so standard clumping or dusty litter can stick to the wound or irritate it. Vets commonly recommend shredded paper or non-clumping pellets for about 5-14 days after surgery, until the incision has closed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is spay recovery longer than neuter recovery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for both dogs and cats. Spaying is abdominal surgery (removing the ovaries and typically the uterus) while neutering only requires accessing the externally located testicles, so spay recovery generally involves a longer activity restriction and sometimes a longer cone period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's normal vs. what needs a vet call after spay/neuter surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mild swelling, slight redness, or a small amount of bruising in the first few days is normal and usually improves daily. Call your vet if you see pus or discharge, a foul odor, the incision separating or gaping open, swelling that keeps growing rather than shrinking, or your pet seems lethargic, won't eat, or is in obvious pain."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🩹 Spay/Neuter Recovery Timeline</h1>
+    <p>Enter your pet's surgery date to get a personalized recovery calendar — actual dates for daily incision checks, when the cone typically comes off, and when activity restrictions usually lift.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label>Surgery Date</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="srt-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Month</option>
+          <option value="0">January</option><option value="1">February</option>
+          <option value="2">March</option><option value="3">April</option>
+          <option value="4">May</option><option value="5">June</option>
+          <option value="6">July</option><option value="7">August</option>
+          <option value="8">September</option><option value="9">October</option>
+          <option value="10">November</option><option value="11">December</option>
+        </select>
+        <select id="srt-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Day</option>
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+        </select>
+        <select id="srt-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Year</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="srt-species">Species</label>
+      <select id="srt-species">
+        <option value="">Select a pet</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="srt-sex">Procedure</label>
+      <select id="srt-sex">
+        <option value="spay">Spay (female)</option>
+        <option value="neuter">Neuter (male)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="srt-age">Age Group</label>
+      <select id="srt-age">
+        <option value="young">Puppy/kitten (under 1 year)</option>
+        <option value="adult">Adult</option>
+        <option value="senior">Senior</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateRecoveryTimeline()">Get My Recovery Calendar →</button>
+
+    <div class="result-box" id="srt-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="srt-date"></span>
+      </div>
+      <h3 id="srt-result-title"></h3>
+      <p id="srt-result-note" style="margin-top: 4px; font-size: 0.88rem;"></p>
+      <div id="srt-timeline" style="margin-top: 16px;"></div>
+      <button class="pdf-btn" id="srt-pdf-btn" onclick="doPrintSrt('srt-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calendar shows commonly cited recovery windows, not a diagnosis or a substitute for your vet's specific discharge instructions. Your vet's guidance for your individual pet always takes priority over these general estimates.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Normal vs. Call the Vet: Incision Checklist</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Check the incision once or twice a day during the recovery window. Most of what you'll see is completely normal — here's how to tell the difference from something that needs a call.</p>
+    <div class="table-wrapper" style="margin-bottom: 24px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Normal (keep monitoring)</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Call your vet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Slight redness or pink color along the incision line</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Pus, cloudy, or foul-smelling discharge</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Mild swelling or bruising that improves day by day</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Swelling that keeps growing instead of shrinking</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Small scab or dried discharge right at the incision edge</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">The incision edges separating or gaping open</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Reduced appetite or low energy for the first 24-48 hours</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Not eating or drinking beyond 48 hours, or visible pain/crying</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">A little grogginess the evening of surgery</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Vomiting, diarrhea, or a swollen belly beyond the surgery site</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why You Can't Take the Cone Off Early</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the single most common recovery mistake. The visible skin often looks closed by around day 7, but the tissue layers underneath are still knitting together for a week or more beyond that. A few minutes of licking at day 7 — when everything looks fine — can reopen the incision or introduce bacteria that wasn't a risk the day before.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Licking is also not the soothing behavior it looks like — it actively delays healing and is one of the most common causes of a reopened incision or infection requiring a second vet visit. Keep the cone on for the full window your vet recommends, even on days the incision looks perfect.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Cone vs. Recovery Suit</h2>
+    <div class="table-wrapper" style="margin-bottom: 16px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);"></th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Cone (E-collar)</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Recovery suit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Protection</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Most reliable — physically blocks reaching the incision</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Good for most pets, but a determined licker can sometimes still reach through fabric</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Airflow to incision</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Full airflow — nothing touches the site</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Less airflow, which can be a problem in humid climates or if the incision needs to stay dry</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Comfort/stress</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Bumps into doorways and furniture; some pets adjust within a day or two</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Usually less stressful and easier to eat/drink/navigate in</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Best for</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Persistent lickers, or any time the incision needs guaranteed protection</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Calmer pets, or as a supplement when the cone comes off briefly for meals (with supervision)</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Ask your vet before switching to a suit instead of a cone — for some incision locations and some pets, the cone is the only option that reliably works.</p>
+
+    <div class="post-cta">
+      <p>Not sure what the surgery itself will cost? → <a href="/tools/spay-neuter-cost-calculator.html">Try the Spay/Neuter Cost Calculator</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Want the full timing and cost breakdown? → <a href="/blog/spay-neuter-cost-and-timing/">Read: Spay or Neuter Your Pet — Cost, Timing, and What to Expect</a></p>
+    </div>
+    <div class="post-cta">
+      <p>Bringing a new puppy or kitten home soon? → <a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a> · <a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does a dog or cat need to wear the cone after spay/neuter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most vets recommend keeping the cone (E-collar) on for the full recovery window rather than removing it once the incision looks closed — typically 10-14 days for dogs and 7-14 days for cats depending on the procedure. A spay (abdominal surgery) generally needs the cone longer than a neuter.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why can't I take the cone off once the incision looks healed?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The visible skin can close by around day 7 while the tissue underneath is still healing for another week or more. A few minutes of licking at that stage can reopen the incision or introduce bacteria, even though it looked fine moments earlier. The cone is protecting healing you can't see, not just the surface.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my male cat need a special litter after neutering?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat neuters usually leave a small, open scrotal incision without external sutures, so standard clumping or dusty litter can stick to the wound or irritate it. Vets commonly recommend shredded paper or non-clumping pellets for about 5-14 days after surgery, until the incision has closed.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is spay recovery longer than neuter recovery?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, for both dogs and cats. Spaying is abdominal surgery (removing the ovaries and typically the uterus) while neutering only requires accessing the externally located testicles, so spay recovery generally involves a longer activity restriction and sometimes a longer cone period.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What's normal vs. what needs a vet call after spay/neuter surgery?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Mild swelling, slight redness, or a small amount of bruising in the first few days is normal and usually improves daily. Call your vet if you see pus or discharge, a foul odor, the incision separating or gaping open, swelling that keeps growing rather than shrinking, or your pet seems lethargic, won't eat, or is in obvious pain.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label { display: none !important; } }
+</style>
+<script>
+function doPrintSrt(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+const RECOVERY_PROFILES = {
+  dog_neuter: {
+    label: "Dog Neuter",
+    incisionCheckEndDay: 10,
+    coneRange: [10, 14],
+    activityRange: [10, 14],
+    litterRange: null,
+    note: "Neuter is less invasive than spay — the testicles are externally accessible, so recovery is generally faster."
+  },
+  dog_spay: {
+    label: "Dog Spay",
+    incisionCheckEndDay: 14,
+    coneRange: [14, 14],
+    activityRange: [14, 21],
+    litterRange: null,
+    note: "Spay is abdominal surgery, so expect a longer, stricter recovery than a neuter."
+  },
+  cat_neuter: {
+    label: "Cat Neuter",
+    incisionCheckEndDay: 7,
+    coneRange: [7, 10],
+    activityRange: [7, 10],
+    litterRange: [5, 14],
+    note: "Usually the simplest of the four procedures — a small scrotal incision, often with no external sutures."
+  },
+  cat_spay: {
+    label: "Cat Spay",
+    incisionCheckEndDay: 10,
+    coneRange: [10, 14],
+    activityRange: [10, 14],
+    litterRange: [5, 14],
+    note: "More involved than a neuter (abdominal surgery), but generally a faster recovery than a dog spay."
+  }
+};
+
+function addDays(date, days) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + days);
+  return d;
+}
+
+function fmtDate(d) {
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function buildTimelineItems(surgeryDate, profile) {
+  const items = [];
+
+  items.push({
+    label: "Day 0 — Surgery Day",
+    dateLabel: fmtDate(surgeryDate),
+    desc: "Expect grogginess from anesthesia. Offer water first, then a small meal (about half the normal portion) that evening if your vet approves.",
+    startDay: 0, endDay: 0
+  });
+
+  items.push({
+    label: `Days 1–${profile.incisionCheckEndDay} — Daily Incision Checks`,
+    dateLabel: `${fmtDate(addDays(surgeryDate, 1))} – ${fmtDate(addDays(surgeryDate, profile.incisionCheckEndDay))}`,
+    desc: "Look at the incision once or twice a day. See the comparison table below for what's normal vs. what needs a vet call.",
+    startDay: 1, endDay: profile.incisionCheckEndDay
+  });
+
+  if (profile.litterRange) {
+    items.push({
+      label: `Days 1–${profile.litterRange[1]} (typically ${profile.litterRange[0]}–${profile.litterRange[1]} days) — Use Shredded Paper or Non-Clumping Litter`,
+      dateLabel: `Until around ${fmtDate(addDays(surgeryDate, profile.litterRange[0]))} – ${fmtDate(addDays(surgeryDate, profile.litterRange[1]))}`,
+      desc: "Protects the incision from litter dust and granules. Transition back to your regular litter gradually once your vet confirms the incision has closed.",
+      startDay: 1, endDay: profile.litterRange[1]
+    });
+  }
+
+  items.push({
+    label: `Around Day ${profile.coneRange[0]}${profile.coneRange[1] !== profile.coneRange[0] ? '–' + profile.coneRange[1] : ''} — Cone Likely Comes Off`,
+    dateLabel: `${fmtDate(addDays(surgeryDate, profile.coneRange[0]))}${profile.coneRange[1] !== profile.coneRange[0] ? ' – ' + fmtDate(addDays(surgeryDate, profile.coneRange[1])) : ''} (confirm with your vet first)`,
+    desc: "Don't remove the cone early just because the incision looks closed — see 'Why You Can't Take the Cone Off Early' below.",
+    startDay: profile.coneRange[0], endDay: profile.coneRange[1]
+  });
+
+  items.push({
+    label: `Around Day ${profile.activityRange[0]}${profile.activityRange[1] !== profile.activityRange[0] ? '–' + profile.activityRange[1] : ''} — Activity Restrictions Typically Lift`,
+    dateLabel: `${fmtDate(addDays(surgeryDate, profile.activityRange[0]))}${profile.activityRange[1] !== profile.activityRange[0] ? ' – ' + fmtDate(addDays(surgeryDate, profile.activityRange[1])) : ''} (confirm with your vet first)`,
+    desc: "Running, jumping, and stairs can typically resume once your vet clears it — usually around this window, longer for spays.",
+    startDay: profile.activityRange[0], endDay: profile.activityRange[1]
+  });
+
+  return items;
+}
+
+function calculateRecoveryTimeline() {
+  const month = document.getElementById('srt-month').value;
+  const day = document.getElementById('srt-day').value;
+  const year = document.getElementById('srt-year').value;
+  const species = document.getElementById('srt-species').value;
+  const sex = document.getElementById('srt-sex').value;
+  const ageGroup = document.getElementById('srt-age').value;
+
+  if (!month || !day || !year || !species) {
+    alert('Please enter the surgery date and select a species.');
+    return;
+  }
+
+  const surgeryDate = new Date(parseInt(year), parseInt(month), parseInt(day));
+  const key = `${species}_${sex}`;
+  const profile = RECOVERY_PROFILES[key];
+
+  document.getElementById('srt-result-title').textContent = `${profile.label} Recovery Calendar`;
+
+  let ageNote = "";
+  if (ageGroup === 'young') {
+    ageNote = " Puppies and kittens often bounce back quickly but are also the hardest to keep calm — extra supervision during the activity restriction window matters more than the exact day count.";
+  } else if (ageGroup === 'senior') {
+    ageNote = " Senior pets or those with other health conditions sometimes need a longer recovery — ask your vet whether to extend these windows for your pet specifically.";
+  }
+  document.getElementById('srt-result-note').textContent = profile.note + ageNote;
+
+  const items = buildTimelineItems(surgeryDate, profile);
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const daysSince = Math.floor((today - surgeryDate) / (1000 * 60 * 60 * 24));
+
+  const tl = document.getElementById('srt-timeline');
+  tl.innerHTML = items.map(item => {
+    const isActive = daysSince >= item.startDay && daysSince <= item.endDay;
+    const isPast = daysSince > item.endDay;
+    return `
+      <div style="display: flex; gap: 14px; margin-bottom: 16px; opacity: ${isPast ? '0.55' : '1'};">
+        <div style="flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; background: ${isActive ? 'var(--orange)' : 'var(--border)'}; margin-top: 7px;"></div>
+        <div style="flex: 1; background: ${isActive ? '#FFF7F3' : 'var(--white)'}; border: 1.5px solid ${isActive ? 'var(--orange)' : 'var(--border)'}; border-radius: var(--radius); padding: 12px 16px;">
+          <div style="font-weight: 600; color: var(--brown); font-size: 0.92rem;">${item.label}</div>
+          <div style="font-size: 0.8rem; color: var(--brown-light); margin-bottom: 4px;">${item.dateLabel}</div>
+          <p style="color: var(--brown-mid); font-size: 0.85rem; line-height: 1.55;">${item.desc}</p>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('srt-result').classList.add('show');
+  document.getElementById('srt-pdf-btn').style.display = 'block';
+  document.getElementById('srt-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

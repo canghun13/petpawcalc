@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-27 (세션 P)
+최종 갱신: 2026-07-27 (세션 Q)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -721,3 +721,44 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - `dog-pregnancy-calculator`가 색인된 것처럼, 세션 J 때부터 미노출이던 나머지 tool 6개(`annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `cat-vet-visit-scheduler`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator`, `cat-quality-of-life-calculator`)도 시간차를 두고 자연 회복되는지 계속 관찰(재크롤 요청과 별개로).
 - GA 데이터에서 AI 검색엔진(ChatGPT/Perplexity 등)발 유입이 referral로 잡히는지 계속 확인 — 이번에도 식별 안 됨.
 - `what-to-feed-pregnant-dog` 자기잠식 의심은 이번 세션엔 다루지 않음 — 여전히 열린 항목(세션 H부터 6세션째 미확정), 사용자가 GSC UI 교차확인을 해줄 수 없다면 다음엔 공식 종결 처리 고려.
+
+---
+
+### 세션 Q — 신규 클러스터 발굴(별도 대화에서 기획) 후 실행: 회복 캘린더 + 보험 대기기간 트래커 (7/27, 세션 P 직후)
+
+**배경**: 사용자가 세션 P 직후 별도 채팅에서 "기획만 담당하고 코드/커밋/푸시는 하지 마라"는 조건으로 신규 클러스터 후보를 대량 발굴하도록 요청. 그 채팅에서 12개 신규 아이디어(S급 4개, A급 4개, B급 4개)를 웹 검색 경쟁조사 완료 후 실행 프롬프트 형태로 정리해 전달함. 이번 세션은 그 중 **배치 1(S급 2개)**을 사용자가 그대로 복사해 지시한 것을 실행.
+
+**1. 신규 도구 2개 제작**
+
+- **`tools/spay-neuter-recovery-timeline.html`**: 수술 날짜+종+성별+나이대 입력 → 실제 날짜가 박힌 회복 캘린더(절개부위 확인 기간/콘 제거 예상일/활동제한 해제 예상일, 고양이 수컷은 리터 교체 기간 별도). 4개 프로필(개 중성화/개 스페이/고양이 중성화/고양이 스페이)로 구분, 스페이가 중성화보다 더 긴 회복기간(활동제한 14-21일 vs 10-14일)을 반영 — Concordia Pet Care 등 복수 소스로 확인. 고양이 중성화는 절개부위가 봉합사 없이 노출돼 있어 리터 더스트 자극 위험 때문에 신문지/비클럼핑 리터를 5-14일 권장(SNAP, Toby Project, LifeLine Animal Project 등 다수 동물병원/구조단체 출처로 확인, 출처마다 4일~14일로 편차가 있어 범위로 제시).
+  - **필수 콘텐츠**: "정상 vs 즉시 병원 연락" 비교표, "콘을 일찍 벗기면 안 되는 이유"(7일차에 겉만 아물어도 재개방 위험) 문제해결 섹션, 콘 vs 리커버리슈트 비교표.
+  - **안전**: 투약/용량 정보는 전혀 다루지 않음 — 일정과 관찰 포인트만.
+  - 오늘 날짜(현재 진행 단계)를 하이라이트하는 타임라인 카드 UI를 `dog-pregnancy-calculator`의 주차별 타임라인 패턴에서 재사용.
+- **`tools/pet-insurance-waiting-period-tracker.html`**: 보험 효력 시작일+사고/질병/정형외과 대기기간(드롭다운 선택) 입력 → 각 보장 시작 실제 날짜 산출. 특정 보험사 추천/순위 없이 업계 일반 범위(사고 0-15일, 질병 14-30일, 정형외과 6-12개월 또는 30일 또는 질병과 통합)만 중립적으로 제시.
+  - **필수 콘텐츠**: 대기기간 유형별 비교표, "대기기간 중 증상이 나타나면 기존질환으로 영구 제외될 수 있다"는 핵심 함정을 문제해결 섹션으로 명확히 서술, 보험사 갈아타면 대기기간이 리셋된다는 점 별도 섹션으로 명시.
+- **node로 두 계산기의 날짜 산출 로직을 직접 실행해 검증**: `spay-neuter-recovery-timeline`은 4개 프로필 전부(개 중성화/스페이, 고양이 중성화/스페이) 콘 제거일·활동제한 해제일·리터교체 종료일이 FAQ/본문에 쓴 일수(10-14일, 14-21일, 5-14일 등)와 정확히 일치하는 실제 날짜로 계산됨을 확인. `pet-insurance-waiting-period-tracker`는 3개 시나리오(사고0/질병14/정형외과=질병과동일, 사고15/질병30/정형외과180일, 사고2/질병21/정형외과365일)로 날짜 산출 검증, 웰니스는 항상 효력일과 동일(즉시 보장) 확인.
+
+**2. 역링크(양방향, 고아 페이지 방지)**
+
+- `spay-neuter-recovery-timeline` ↔ `spay-neuter-cost-calculator`(양방향), ↔ `spay-neuter-cost-and-timing` 블로그 포스트(Related Articles에 추가), `new-puppy-checklist`/`new-kitten-checklist`에서 신규 링크 추가.
+- `pet-insurance-waiting-period-tracker` ↔ `pet-insurance-cost-estimator`(양방향, 기존 대기기간 언급 문단 바로 아래에 삽입), ↔ `annual-pet-cost-calculator`(양방향).
+- `annual-pet-cost-calculator`에는 두 신규 도구 모두 링크 추가(비용 계산기 허브 성격이라 신규 확장 시 항상 여기부터 연결하는 관행 유지).
+
+**3. 공통 파일 4종 동기화**: `index.html`(카드 2개 추가), `tools/index.html`(검색용 data-title/desc/tags 속성 포함 카드 2개 추가), `_includes/footer.html`(Tools 컬럼에 2개 추가, 큐레이션 목록이지만 spay-neuter/insurance 계열은 이미 있어 동일 계열로 추가), `llms.txt`(Tools 섹션에 2개 항목 추가). New 배지를 `titer-test-vs-revaccination-calculator`에서 신규 2개로 이동.
+
+**4. QA**
+- 전체 `_posts`(37개)+`tools`+`checklists`(35개, index 2개 포함) front matter YAML 전수 통과.
+- JSON-LD 스키마(WebApplication+FAQPage) 신규 2개 파일 유효성 검증 통과, FAQ 스키마-본문 h3 1:1 매칭(5/5, 5/5).
+- div 개수 매칭: 신규 2개(23/23, 19/19) + 역링크 추가로 수정된 기존 5개 파일(spay-neuter-cost-calculator, pet-insurance-cost-estimator, annual-pet-cost-calculator, new-puppy-checklist, new-kitten-checklist) 전부 짝 맞음.
+- table/tr/thead/tbody 태그 매칭(신규 2개 전부).
+- **JS 계산 로직을 node로 직접 실행해 검증**(세션 O에서 도입한 표준 QA 단계) — 4개 회복 프로필 + 3개 보험 시나리오 전부 본문에 명시한 수치와 실제 계산된 날짜가 정확히 일치함을 확인. `node --check`로 두 파일의 임베디드 JS 문법 오류 없음도 별도 확인.
+- 전체 저장소 링크 재스캔(신규 파일 포함) — 브로큰 링크 0건.
+- slug 중복 없음(37개), permalink 중복 없음(33개, index 제외).
+- `index.html`/`tools/index.html` tool-card 개수(29) = 실제 tool 파일 개수(29) 일치. `checklists/index.html` 카드 개수(4) = 실제 checklist 파일 개수(4) 일치.
+
+**오늘(세션 Q) 최종 페이지 수**: tools 29 + posts 37 + checklists 4 = 70페이지. 신규 순증 2개(`spay-neuter-recovery-timeline`, `pet-insurance-waiting-period-tracker`).
+
+**다음 세션에서 확인할 것**:
+- 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
+- **별도 채팅에서 발굴한 12개 후보 중 배치 1(S급 2개, 오늘 완료)을 제외한 나머지 — 배치 2(품종별 중성화 시기 비교 도구, 강아지 사회화 창 트래커), 배치 3(기니피그 체크리스트, 고양이 합사 타임라인), 배치 4(해외 이동 타임라인, 구충 스케줄) — 를 다음 세션들에서 순서대로 진행할 것.** 배치 2·4는 건강/규제 정보라 추론 강도를 높게 유지하고 표현 수위(연구 인용 vs 권고 단정 구분, 국가별 단정 금지)에 특히 주의할 것 — 실행 프롬프트에 이미 구체적으로 명시돼 있음.
+- Coverage 21개 미색인 정체는 이번 세션엔 다루지 않음(별도 채팅에서 이미 세션 P가 분석) — 여전히 `cat-pregnancy-calculator` 등 개별 URL 재크롤 요청이 사용자 액션으로 남아있는 상태.
