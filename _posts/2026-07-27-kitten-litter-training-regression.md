@@ -100,5 +100,6 @@ The standard guidance is one litter box per cat, plus one extra, placed in separ
 ## Related Articles
 
 - [Kitten Litter Training Timeline Calculator](/tools/kitten-litter-training-timeline.html)
+- [Cat Introduction Timeline](/tools/cat-introduction-timeline.html)
 - [New Kitten Checklist](/checklists/new-kitten-checklist.html)
 - [Puppy Potty Training Regression: Why It Happens (and How to Fix It)](/blog/puppy-potty-training-regression/)

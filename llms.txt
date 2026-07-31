@@ -66,6 +66,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Neuter Timing by Breed & Size](https://petpawcalc.com/tools/neuter-timing-by-breed-size.html): Select a dog breed (21 entries: 5 mixed-breed weight categories plus 16 individually studied breeds) and sex to see a summary of what UC Davis (Hart et al., 2020/2024) research reported on joint disorder and cancer risk by neutering age — framed strictly as "what the study found," not a recommendation, with a fixed vet-consult notice on every result. Includes a weight-category risk table and a traditional-6-month-vs-research-based comparison table.
 
+- [Cat Introduction Timeline](https://petpawcalc.com/tools/cat-introduction-timeline.html): Enter an introduction start date, new cat type (kitten/adult), and resident cat details to get a 6-stage timeline (separate room, scent exchange, feeding near the door, site swapping, visual contact, supervised face-to-face) with date ranges plus "move forward when" / "go back if" signs for each stage. Explicitly frames dates as typical ranges, not a fixed schedule. Includes a kitten-vs-adult-introduction comparison table and a smooth-signs-vs-warning-signs table.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
@@ -76,6 +78,8 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [Pet Emergency Kit Checklist](https://petpawcalc.com/checklists/pet-emergency-kit-checklist.html): Disaster/evacuation preparedness for dogs and cats — documents (vaccination records, microchip, ownership proof), 3-7 day food/water/medication supply, carrier/leash/litter supplies, and an evacuation plan (pet-friendly hotels, out-of-area contact, rescue alert sticker). Universal, not species-specific.
 
 - [Puppy Socialization Checklist](https://petpawcalc.com/checklists/puppy-socialization-checklist.html): 26 items across people, sounds, surfaces/floors, transport, handling (paws/ears/mouth), other animals, and environments. Enter the puppy's birthdate for a live countdown to the end of the critical 16-week socialization window. Includes an AVSAB-sourced section on why socialization shouldn't wait for full vaccination, paired with safety caveats (avoid dog parks/pet stores; favor controlled settings).
+
+- [New Guinea Pig Checklist](https://petpawcalc.com/checklists/new-guinea-pig-checklist.html): The site's third non-dog/cat checklist. 20 items covering cage size (7.5 sq ft minimum for one, 10.5+ preferred for a pair), never-alone social housing requirement (legally mandated in some countries), vitamin C (can't be synthesized, unlike most mammals), alfalfa-only-under-6-months hay rule, cedar/pine bedding and wire-flooring hazards, and a 5-7 year lifespan commitment.
 
 ## Blog
 

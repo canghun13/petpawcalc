@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-27 (세션 R)
+최종 갱신: 2026-07-27 (세션 S)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -818,3 +818,64 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - **배치 3(기니피그 체크리스트, 고양이 합사 타임라인), 배치 4(해외 이동 타임라인, 구충 스케줄 — ⚠️ 둘 다 건강/규제 정보라 추론 강도 높게 유지할 것)를 다음 세션들에서 순서대로 진행할 것.**
 - `_layouts/checklist.html`에 추가한 범용 카운트다운 기능은 이번 체크리스트 하나에만 쓰였음 — 다음에 나이-구간 기반 체크리스트(예: 배치3의 고양이 합사 타임라인은 체크리스트가 아니라 도구라 해당 없음)를 만들 때 동일 패턴(`data-window-days` 속성)으로 재사용 가능하다는 걸 기억할 것.
 - 도구A(`neuter-timing-by-breed-size`)는 건강 정보 민감도가 높은 페이지라, 실제 배포 후 혹시 사용자나 방문자로부터 "권고처럼 읽힌다"는 피드백이 오면 프레이밍 문구를 추가로 완화할 준비할 것.
+
+---
+
+### 세션 S — 배치 3 실행: 기니피그 체크리스트 + 고양이 합사 타임라인 도구 (7/27, 세션 R 직후)
+
+**배경**: 별도 채팅에서 발굴한 12개 후보 중 배치 3("기존 패턴 복제라 빠르게 끝난다"는 사용자 설명대로 진행)을 그대로 지시받음. `new-rabbit-checklist.html`을 구조 템플릿으로 삼고, 기니피그 고유 사실은 전부 웹서치로 검증 후 반영.
+
+**1. 사전 리서치 (웹서치로 사실 확인)**
+
+- 기니피그 케이지 최소 면적: Humane Society 기준 1마리 7.5 sq ft, 2마리 이상은 10.5 sq ft 이상 권장(대부분의 펫샵 케이지는 4-6 sq ft로 훨씬 미달) — 사용자 브리핑 수치와 정확히 일치 확인.
+- 비타민C: 인간과 마찬가지로 L-굴로노락톤 산화효소가 없어 자체 합성 불가, 하루 10-30mg 필요, 신선 채소(특히 파프리카)가 물에 타는 첨가제보다 훨씬 신뢰도 높음(빛에 몇 시간 내 분해) — PetMD, Merck Veterinary Manual, guinealynx.info 등 복수 소스로 교차 확인.
+- 사회적 동물 단독사육 비권장 + 스위스는 실제로 법적 의무(2008년 동물보호법, Animal Protection Ordinance)로 명문화돼 있음을 다수 소스(FSVO 공식 확인 포함)로 검증.
+- 알팔파는 생후 6개월 미만/임신·수유 중만, 이후 성체는 티모시/오차드 그라스로 전환(칼슘 과다로 인한 방광/신장결석 위험) — 다수 수의학 소스 일치.
+- 삼나무(cedar)·소나무(pine) 베딩 금지(페놀 화합물로 호흡기+간 문제), 와이어 바닥 금지(bumblefoot 발쪽 염증) — PetMD, Kaytee, wheekcare.org 등으로 확인.
+- 수명 5-7년(우수한 관리 시 8년+) — 확인.
+
+**2. 신규 체크리스트 A — `checklists/new-guinea-pig-checklist.html`**
+
+- 사이트 세 번째 비(非)개·고양이 콘텐츠(토끼에 이은 두 번째 확장). `new-rabbit-checklist.html`을 구조 템플릿으로 그대로 복제(스키마 2종, 진행률바, 프린트, disclaimer, 본문 FAQ 패턴).
+- 항목 20개, 6개 섹션(Housing & Supplies 7 / Companionship 2 / Vet Care 3 / Home Prep & Safety 3 / Handling & Routine 3 / Budget & Planning 2).
+- **토끼 체크리스트에 없던 차별화 각도(사용자 지시 반영)**: Companionship 섹션을 별도로 신설해 "단독 사육 비권장 + 스위스 법적 의무" 항목을 명시적으로 넣음 — 토끼는 이 각도가 없었던 지점.
+- 전용 계산기가 없으므로 tool 링크 대신 `/checklists/` 허브만 안내(사용자 지시대로 도구 링크 생략).
+- FAQ 6개, 스키마+본문 1:1.
+- QA: ItemList 20개 = 실제 체크박스 20개 일치, FAQ 6/6 매칭, div(15/15)·label(20/20) 균형.
+
+**3. 신규 도구 B — `tools/cat-introduction-timeline.html`**
+
+- 입력: 합사 시작일(월/일/년) / 새 고양이 유형(새끼·성묘) / 기존 고양이 나이대(새끼·성체·시니어) / 기존 고양이 마릿수(1/2/3+).
+- 출력: 6단계 타임라인(격리방 → 냄새교환 → 문 사이 급여 → 영역교환(site swapping) → 시각접촉 → 감독하 대면), 각 단계마다 "다음 단계로 넘어가도 되는 신호"/"한 단계 되돌려야 하는 신호"를 고정 텍스트로 표시.
+- **핵심 원칙 반영(사용자 지시)**: 날짜는 고정값이 아니라 시작일 기준 day-range(예: 격리방 day0-7)로 계산해 "빠르면 O월 O일 ~ 늦으면 O월 O일"로 표시, 결과창 하단에 "이건 전형적 범위이지 고정 일정이 아니다 — 고양이 속도에 맞춰라, 서두르는 게 합사 실패의 가장 흔한 원인이다" 경고문을 항상 고정 노출.
+- 새끼고양이 합사(더 빠른 편, day 0-21)와 성묘 합사(더 느린 편, day 0-42, 완전한 우정은 6-12개월 걸릴 수 있음)를 별도 PACE 데이터셋으로 분리해 정확히 다른 범위 적용 — 웹서치로 "새끼고양이가 대체로 덜 위협적으로 인식돼 더 빠르게 진행되지만 기존 고양이가 시니어면 오히려 더 오래 걸릴 수 있다"는 소견 확인 후 반영.
+- 비교표 2개: 새끼고양이 합사 vs 성묘 합사(속도/주요 리스크/도움되는 것/우정까지 걸리는 시간), 순조로운 신호 vs 경고 신호.
+- **문제해결 섹션**: 하악질·하울링·리터박스 회피가 나타났을 때 "마지막으로 평온했던 단계로 되돌아가라"는 원칙 설명 + 이번 세션 이전에 만든 `kitten-litter-training-regression` 포스트로 연결(사용자 지시대로).
+- n+1 리터박스 규칙은 `kitten-litter-training-timeline`과 중복이라 간단히 언급 후 링크로 넘김(사용자 지시대로).
+- FAQ 6개, 스키마+본문 1:1.
+- QA: node로 PACE 데이터 객체의 날짜 계산 로직 검증(새끼고양이/성묘 두 시나리오 각 6단계, 시작일 2026-07-31 기준 계산 결과가 코드에 명시한 day-range와 정확히 일치함을 확인), `node --check`로 JS 문법 오류 없음 확인.
+
+**4. 역링크(양방향, 지시사항 그대로 이행)**
+
+- `kitten-litter-training-timeline` ↔ `cat-introduction-timeline` (양방향).
+- `kitten-litter-training-regression` 포스트 ↔ `cat-introduction-timeline` (양방향, Related Articles에 추가).
+- `new-kitten-checklist` → `cat-introduction-timeline`.
+- `/checklists/` 허브(`checklists/index.html`) → `new-guinea-pig-checklist` 카드 추가.
+
+**5. 공통 파일 동기화**: 체크리스트는 `checklists/index.html`(카드 추가, New배지 이동) + `_includes/footer.html`(Checklists 컬럼) + `llms.txt`(Checklists 섹션). 도구는 `index.html`(카드 추가, New배지 이동) + `tools/index.html`(검색용 data속성 포함 카드 추가) + `_includes/footer.html`(Tools 컬럼) + `llms.txt`(Tools 섹션).
+
+**6. QA(전수)**
+- 전체 `_posts`(37개)+`tools`+`checklists`(76개 파일) front matter YAML 전수 통과.
+- JSON-LD 오류 0건, FAQ 스키마-본문 1:1 매칭(체크리스트A 6/6, 도구B 6/6).
+- slug 중복 없음(37개), permalink 중복 없음(37개, index 제외).
+- 전체 링크 재스캔 — 브로큰 링크 0건.
+- tool-card 개수: `index.html`/`tools/index.html` 31개 = 실제 tool 파일 31개 일치. `checklists/index.html` 카드 6개 = 실제 checklist 파일 6개 일치.
+- div 균형: 역링크 추가로 수정한 기존 파일(kitten-litter-training-timeline, new-kitten-checklist, checklists/index.html, index.html, tools/index.html) 전부 짝 맞음.
+
+**오늘(세션 S) 최종 페이지 수**: tools 31 + posts 37 + checklists 6 = 74페이지. 신규 순증 2개(`new-guinea-pig-checklist`, `cat-introduction-timeline`).
+
+**다음 세션에서 확인할 것**:
+- 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
+- **배치 4(해외 이동 타임라인, 구충 스케줄)만 남았음 — ⚠️ 둘 다 건강/규제 정보라 추론 강도 높게 유지할 것. 특히 해외 이동 타임라인은 국가별 요건을 단정하지 말고 "등급(tier)" 추상화로만 다뤄야 한다는 지시가 있었음.**
+- 구충 스케줄 계산기는 사용자 지시에 따라 "기존 백신 계산기와 너무 겹친다고 판단되면 새 URL 대신 기존 계산기 확장"도 선택지로 열려 있음 — 진행 시 이 판단부터 먼저 내리고 근거를 보고할 것.
+- 이번 세션으로 별도 채팅에서 발굴한 12개 후보(S급4+A급4+B급4) 중 배치1·2·3(총 8개, S급4+A급4)이 전부 완료됨. 배치4(B급 중 2개)만 남음.
