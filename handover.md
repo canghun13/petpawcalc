@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-07-27 (세션 Q)
+최종 갱신: 2026-07-27 (세션 R)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -762,3 +762,59 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
 - **별도 채팅에서 발굴한 12개 후보 중 배치 1(S급 2개, 오늘 완료)을 제외한 나머지 — 배치 2(품종별 중성화 시기 비교 도구, 강아지 사회화 창 트래커), 배치 3(기니피그 체크리스트, 고양이 합사 타임라인), 배치 4(해외 이동 타임라인, 구충 스케줄) — 를 다음 세션들에서 순서대로 진행할 것.** 배치 2·4는 건강/규제 정보라 추론 강도를 높게 유지하고 표현 수위(연구 인용 vs 권고 단정 구분, 국가별 단정 금지)에 특히 주의할 것 — 실행 프롬프트에 이미 구체적으로 명시돼 있음.
 - Coverage 21개 미색인 정체는 이번 세션엔 다루지 않음(별도 채팅에서 이미 세션 P가 분석) — 여전히 `cat-pregnancy-calculator` 등 개별 URL 재크롤 요청이 사용자 액션으로 남아있는 상태.
+
+---
+
+### 세션 R — 배치 2 실행: 품종별 중성화 시기 비교 도구 + 강아지 사회화 체크리스트 (7/27, 세션 Q 직후)
+
+**배경**: 별도 채팅에서 발굴한 12개 후보 중 배치 2(건강/규제 정보, 추론 강도 높게 유지 지시)를 사용자가 그대로 지시. 표현 수위(연구 인용 vs 권고 단정 구분)를 특히 신경써서 진행.
+
+**1. 사전 리서치 (웹서치로 원문/AKC 요약 검증)**
+
+- UC Davis Hart et al. 연구 계열 전체를 웹서치로 재확인: 2020년 35개 품종 연구(Frontiers in Veterinary Science), 별도의 믹스견 5개 체급 연구, 2024년 5개 대형견종 추가 연구(German Shorthaired/Wirehaired Pointer, Mastiff, Newfoundland, Rhodesian Ridgeback, Siberian Husky). 각 품종별 정확한 수치(예: Golden Retriever 암컷 — 어느 나이에 중성화해도 암 위험 2-4배 증가/Labrador 수컷 관절질환 22% vs 8%, 암컷 33% vs 10%/German Shepherd 수컷 33% vs 2%, 암컷 29% vs 9%+요실금 7% vs 0%/Boston Terrier 수컷만 암 위험 증가, 암컷은 표준 6개월 중성화도 위험 증가 없음/Shih Tzu는 반대로 암컷만 암 위험/Great Dane·Irish Wolfhound는 어느 나이든 관절질환 위험 증가 없음/Doberman 수컷은 관절질환 유의차 없음, 암 발생 경향(비유의)/Shetland Sheepdog 암컷은 오히려 24개월 이후로 늦추면 요실금 위험 증가라는 반대 방향 소견)를 원문·2차 요약 교차 확인 후 반영.
+- AVSAB(American Veterinary Society of Animal Behavior)의 강아지 사회화 공식 입장문 확인: "완전 백신 접종 전에 사회화를 시작하는 것이 표준진료여야 한다"는 명시적 입장, 7-8주부터 시작 가능(1차 접종 7일 경과 + 첫 구충 전제), 3세 미만 개의 사망원인 1위가 감염병이 아니라 행동문제라는 근거, 단 개공원/펫샵 등 고위험 장소는 피하고 통제된 환경 위주로 진행해야 한다는 안전조건까지 정확히 확인.
+
+**2. 신규 도구 A — `tools/neuter-timing-by-breed-size.html`**
+
+- 입력: 체급(믹스견/미등재품종용 5단계: 소형<10kg/중형10-19kg/표준20-29kg/대형30-39kg/초대형40kg+) 또는 개별 연구된 품종 16개(Golden Retriever, Labrador Retriever, German Shepherd Dog, Doberman Pinscher, Boston Terrier, Shih Tzu, Great Dane, Irish Wolfhound, Maltese, Chihuahua, Shetland Sheepdog, German Shorthaired/Wirehaired Pointer, Mastiff, Newfoundland, Rhodesian Ridgeback, Siberian Husky) — 총 21개 그룹 × 성별.
+- **프레이밍 원칙을 코드/문구 양쪽에 강제 적용**: 모든 결과 문구를 "the study found/reported"로 시작(우리 권고 아님), 결과창 하단에 고정 경고박스("이건 연구 요약이지 PetPawCalc의 권고가 아니다, 수의사와 최종 결정할 것") 항상 노출 — JS 조건부 표시가 아니라 결과 렌더링 시 항상 포함되도록 구현.
+- **선택적 인용 금지 원칙 반영**: 소형견 대부분 무위험 + Great Dane·Irish Wolfhound(초대형인데도 무위험, 예외) + Boston Terrier·Shih Tzu(소형인데 성별 특이적 암 위험, 반대 예외) + Golden Retriever 암컷(모든 연령에서 위험 지속, 가장 강한 반례) + Shetland Sheepdog 암컷(늦게 중성화가 오히려 위험 증가, 방향이 반대인 소견) 등 상반되는 방향의 소견을 전부 포함해 균형 확보.
+- **개체군 관리 근거 존중**: "전통적 6개월 권고 vs 연구 기반 관점" 비교표 뒤에 별도 문단으로 "두 관점 다 틀린 게 아니다 — 보호소/구조단체는 재입양 후 재방문을 보장할 수 없어 조기중성화가 여전히 합리적 근거를 가진다"는 문장을 명시적으로 포함(과잉번식 방지 근거를 깎아내리지 말라는 지시 반영).
+- 비교표 2개: 체급별×성별 위험 프로파일(믹스견 연구 기준), 전통적 6개월 권고 vs 연구 기반 관점.
+- FAQ 6개, 스키마+본문 1:1.
+- QA: 21개 드롭다운 옵션 = NEUTER_DATA 객체 키 21개 100% 일치(양방향 diff 0건), 각 항목 label/male/female 필드 전부 존재(node로 검증), JSON-LD·div·table·tr·optgroup·select 태그 전부 짝 맞음.
+
+**3. 신규 체크리스트 B — `checklists/puppy-socialization-checklist.html`**
+
+- 항목 26개, 7개 카테고리(사람 유형4/소리4/표면·바닥4/이동수단3/핸들링4/다른 동물3/환경4), 각 항목에 "왜 필요한지" 한 줄 설명 포함.
+- **추가 기능(생년월일 → 16주 창 카운트다운)을 개별 파일 JS가 아니라 `_layouts/checklist.html`(공용 레이아웃)에 범용 기능으로 추가**: `#checklist-age-input`(date, `data-window-days` 속성) + `#checklist-countdown-result` 요소가 있으면 자동으로 작동하는 제네릭 로직으로 구현 — 특정 체크리스트에 종속되지 않아 향후 다른 나이-구간 체크리스트에도 재사용 가능. 기존 체크리스트(new-puppy/new-kitten/new-rabbit/pet-emergency-kit)는 해당 요소가 없어 이 코드 블록이 조건부로 스킵됨 → 기존 페이지 영향 없음 확인.
+- `css/style.css`에 `.checklist-countdown`/`.checklist-countdown-active`/`.checklist-countdown-closed` 스타일 추가.
+- **핵심 차별화 섹션 "Do I Need to Wait Until Vaccines Are Complete?"**: AVSAB 입장을 정확히 인용(7-8주부터 가능, 1차 접종 7일 경과+구충 전제) + 안전조건(개공원/펫샵 등 고위험 장소 회피, 통제된 환경 우선)을 같은 문단 안에 반드시 함께 명시 — 위험 완화 조건 없이 "빨리 시작하라"는 메시지만 단독으로 나가지 않도록 프레이밍.
+- FAQ 6개(백신 전 사회화 가능 여부/critical window 정의/16주 지나면 늦었는지/안전한 장소/스트레스 신호 구분법/퍼피클래스 백신요건).
+- QA: ItemList 26개 = 실제 체크박스 26개 일치, FAQ 스키마-본문 6/6 매칭, div(21/21)·label(27/27, DOB input용 label 1개 포함해 정상) 균형, 카운트다운 날짜 로직 node로 검증(생후 56일 시점 16주 창 잔여일수 56일로 정확히 계산됨 등 3개 시나리오 확인).
+
+**4. 역링크(양방향, 지시사항 그대로 이행)**
+
+- `dog-vaccination-schedule-calculator` ↔ `puppy-socialization-checklist` (양방향).
+- `new-puppy-checklist` → 체크리스트 B, `puppy-potty-training-calculator` → 체크리스트 B.
+- `spay-neuter-cost-calculator` ↔ `neuter-timing-by-breed-size` (양방향), `spay-neuter-cost-and-timing` 블로그 포스트 Related Articles에도 추가.
+
+**5. 공통 파일 동기화**: `index.html`(도구A 카드 추가, New배지 이동), `tools/index.html`(검색용 data속성 포함 카드 추가), `checklists/index.html`(체크리스트B 카드 추가, New배지 이동), `_includes/footer.html`(양쪽 컬럼에 항목 추가), `llms.txt`(Tools/Checklists 섹션 각각 항목 추가).
+
+**6. QA(전수)**
+- 전체 `_posts`(37개)+`tools`+`checklists`(74개 파일) front matter YAML 전수 통과.
+- JSON-LD 오류 0건, FAQ 스키마-본문 1:1 매칭(6/6 도구A, 6/6 체크리스트B).
+- slug 중복 없음(37개), permalink 중복 없음(35개, index 제외).
+- 전체 링크 재스캔 — 브로큰 링크 0건.
+- tool-card 개수: `index.html`/`tools/index.html` 30개 = 실제 tool 파일 30개 일치. `checklists/index.html` 카드 5개 = 실제 checklist 파일 5개 일치.
+- div 균형: 역링크 추가로 수정한 기존 파일(dog-vaccination-schedule-calculator, new-puppy-checklist, puppy-potty-training-calculator, spay-neuter-cost-calculator, index.html, tools/index.html, checklists/index.html) 전부 짝 맞음. `_layouts/checklist.html`에서 div 개수 불일치가 감지됐으나 확인 결과 JS 주석 안의 예시 텍스트("Each checklist page provides: <div ...")가 정규식에 걸린 오탐임을 확인(실제 HTML 태그 아님, 실제 문제 없음).
+- 신규 도구A 21개 드롭다운 옵션 = NEUTER_DATA 객체 21개 키 완전 일치(diff 0), 각 항목 label/male/female 필드 결측 0건.
+- `node --check`로 신규 2개 파일 + 레이아웃 수정분의 임베디드 JS 문법 오류 없음 확인. 카운트다운 날짜 계산 로직 node 시뮬레이션으로 정확성 검증.
+
+**오늘(세션 R) 최종 페이지 수**: tools 30 + posts 37 + checklists 5 = 72페이지. 신규 순증 2개(`neuter-timing-by-breed-size`, `puppy-socialization-checklist`).
+
+**다음 세션에서 확인할 것**:
+- 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
+- **배치 3(기니피그 체크리스트, 고양이 합사 타임라인), 배치 4(해외 이동 타임라인, 구충 스케줄 — ⚠️ 둘 다 건강/규제 정보라 추론 강도 높게 유지할 것)를 다음 세션들에서 순서대로 진행할 것.**
+- `_layouts/checklist.html`에 추가한 범용 카운트다운 기능은 이번 체크리스트 하나에만 쓰였음 — 다음에 나이-구간 기반 체크리스트(예: 배치3의 고양이 합사 타임라인은 체크리스트가 아니라 도구라 해당 없음)를 만들 때 동일 패턴(`data-window-days` 속성)으로 재사용 가능하다는 걸 기억할 것.
+- 도구A(`neuter-timing-by-breed-size`)는 건강 정보 민감도가 높은 페이지라, 실제 배포 후 혹시 사용자나 방문자로부터 "권고처럼 읽힌다"는 피드백이 오면 프레이밍 문구를 추가로 완화할 준비할 것.

@@ -101,6 +101,52 @@
       };
 
       applyState();
+
+      // Optional: age-window countdown (opt-in per checklist page).
+      // A checklist page can add <input type="date" id="checklist-age-input" data-window-days="112">
+      // plus <div id="checklist-countdown-result"></div> to get a generic "days left in window" countdown.
+      // This is generic/reusable so individual checklist pages never need their own <script>.
+      const dobInput = document.getElementById('checklist-age-input');
+      if (dobInput) {
+        const windowDays = parseInt(dobInput.getAttribute('data-window-days') || '0', 10);
+        const countdownEl = document.getElementById('checklist-countdown-result');
+        const dobStorageKey = storageKey + ':dob';
+
+        function fmtCountdownDate(d) {
+          return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        }
+
+        function updateCountdown() {
+          const val = dobInput.value;
+          if (!val || !countdownEl) {
+            if (countdownEl) countdownEl.innerHTML = '';
+            return;
+          }
+          const dob = new Date(val + 'T00:00:00');
+          const today = new Date();
+          today.setHours(0, 0, 0, 0);
+          const windowEnd = new Date(dob);
+          windowEnd.setDate(windowEnd.getDate() + windowDays);
+          const daysLeft = Math.ceil((windowEnd - today) / (1000 * 60 * 60 * 24));
+
+          if (daysLeft > 0) {
+            countdownEl.innerHTML = `<strong>${daysLeft} day${daysLeft === 1 ? '' : 's'} left</strong> in the critical socialization window — it closes on ${fmtCountdownDate(windowEnd)}.`;
+            countdownEl.className = 'checklist-countdown checklist-countdown-active';
+          } else {
+            countdownEl.innerHTML = `The critical socialization window closed on ${fmtCountdownDate(windowEnd)}. Continued exposure is still valuable — see the FAQ below.`;
+            countdownEl.className = 'checklist-countdown checklist-countdown-closed';
+          }
+          try { localStorage.setItem(dobStorageKey, val); } catch (e) { /* ignore */ }
+        }
+
+        try {
+          const savedDob = localStorage.getItem(dobStorageKey);
+          if (savedDob) dobInput.value = savedDob;
+        } catch (e) { /* ignore */ }
+
+        dobInput.addEventListener('change', updateCountdown);
+        updateCountdown();
+      }
     })();
   </script>
 </body>

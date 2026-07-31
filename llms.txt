@@ -64,6 +64,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Pet Insurance Waiting Period Tracker](https://petpawcalc.com/tools/pet-insurance-waiting-period-tracker.html): Enter a policy's effective date and its accident/illness/orthopedic waiting periods to see the exact calendar dates each coverage type begins. Covers the pre-existing-condition trap (symptoms during the waiting period can be excluded permanently) and explains that switching insurers resets all waiting periods.
 
+- [Neuter Timing by Breed & Size](https://petpawcalc.com/tools/neuter-timing-by-breed-size.html): Select a dog breed (21 entries: 5 mixed-breed weight categories plus 16 individually studied breeds) and sex to see a summary of what UC Davis (Hart et al., 2020/2024) research reported on joint disorder and cancer risk by neutering age — framed strictly as "what the study found," not a recommendation, with a fixed vet-consult notice on every result. Includes a weight-category risk table and a traditional-6-month-vs-research-based comparison table.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
@@ -72,6 +74,8 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [New Kitten Checklist](https://petpawcalc.com/checklists/new-kitten-checklist.html): Supplies, litter box setup (one per cat plus one extra), first vet visit, FeLV/FIV testing, core FVRCP vaccine series timing, toxic plant warnings (lilies), and first-year budgeting.
 - [New Rabbit Checklist](https://petpawcalc.com/checklists/new-rabbit-checklist.html): Housing space requirements, diet (unlimited hay + measured pellets), litter-safe products (never clumping cat litter), finding a rabbit-savvy vet, GI stasis emergency recognition, and the 8-12 year lifespan commitment. The site's first non-dog/cat content.
 - [Pet Emergency Kit Checklist](https://petpawcalc.com/checklists/pet-emergency-kit-checklist.html): Disaster/evacuation preparedness for dogs and cats — documents (vaccination records, microchip, ownership proof), 3-7 day food/water/medication supply, carrier/leash/litter supplies, and an evacuation plan (pet-friendly hotels, out-of-area contact, rescue alert sticker). Universal, not species-specific.
+
+- [Puppy Socialization Checklist](https://petpawcalc.com/checklists/puppy-socialization-checklist.html): 26 items across people, sounds, surfaces/floors, transport, handling (paws/ears/mouth), other animals, and environments. Enter the puppy's birthdate for a live countdown to the end of the critical 16-week socialization window. Includes an AVSAB-sourced section on why socialization shouldn't wait for full vaccination, paired with safety caveats (avoid dog parks/pet stores; favor controlled settings).
 
 ## Blog
 

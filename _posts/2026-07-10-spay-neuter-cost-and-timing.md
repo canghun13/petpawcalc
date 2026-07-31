@@ -85,6 +85,7 @@ Yes — many communities have low-cost or free spay/neuter programs through the 
 ## Related Articles
 
 - [Spay/Neuter Recovery Timeline Calculator](/tools/spay-neuter-recovery-timeline.html)
+- [Neuter Timing by Breed & Size — What the Research Found](/tools/neuter-timing-by-breed-size.html)
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)
 - [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
