@@ -261,3 +261,4 @@ Look for a food with at least 25% protein on a dry matter basis, named meat sour
 - [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
 - [How Often Should You Take Your Dog to the Vet? A Cost Breakdown by Age](/blog/how-often-vet-visits-dog-cost-by-age/)
 - [Dog Quality of Life: How to Assess Your Dog's Well-Being Honestly](/blog/dog-quality-of-life-assessment/)
+- [Senior Pet Care Checklist](/checklists/senior-pet-care-checklist.html)

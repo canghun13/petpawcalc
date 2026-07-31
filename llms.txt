@@ -74,6 +74,8 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [New Baby Pet Prep Timeline](https://petpawcalc.com/tools/new-baby-pet-prep-timeline.html): Enter a due date, pet species (dog/cat), and current behavior-concern status to get a reverse-calculated prep timeline (behavior foundation at ~4 months out, sound desensitization at ~3 months, gear practice/resource access review at ~2 months, carrying rehearsal/handling familiarization at ~1 month, scent exposure at the due date, first meeting a few days after homecoming). Species-specific content — dog track covers stroller/gear practice, cat track covers resource-access and vertical-space protection instead. Fixed supervision warning shown in the result. Includes a dog-vs-cat prep comparison table.
 
+- [Puppy Teething Timeline](https://petpawcalc.com/tools/puppy-teething-timeline.html): Enter a puppy's age in months/weeks to see their current teething stage (toothless → baby teeth erupting → full 28-tooth baby set → baby teeth falling out → adult teeth erupting → adult molars → complete 42-tooth adult set) and what's next. Flags when it's time to start checking for retained baby teeth (from ~4 months old) with a dedicated section explaining why removal is often coordinated with spay/neuter surgery under the same anesthesia. Includes a safe-chews-vs-avoid comparison table and links the chewing-spike period to the existing potty-training-regression post.
+
 ## Checklists
 
 Interactive, printable checklists at https://petpawcalc.com/checklists/. Each has checkboxes that save progress in the browser (localStorage) and a print/PDF view. Unlike the Tools section (dog/cat only), Checklists cover a wider range of companion animals.
@@ -86,6 +88,8 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [Puppy Socialization Checklist](https://petpawcalc.com/checklists/puppy-socialization-checklist.html): 26 items across people, sounds, surfaces/floors, transport, handling (paws/ears/mouth), other animals, and environments. Enter the puppy's birthdate for a live countdown to the end of the critical 16-week socialization window. Includes an AVSAB-sourced section on why socialization shouldn't wait for full vaccination, paired with safety caveats (avoid dog parks/pet stores; favor controlled settings).
 
 - [New Guinea Pig Checklist](https://petpawcalc.com/checklists/new-guinea-pig-checklist.html): The site's third non-dog/cat checklist. 20 items covering cage size (7.5 sq ft minimum for one, 10.5+ preferred for a pair), never-alone social housing requirement (legally mandated in some countries), vitamin C (can't be synthesized, unlike most mammals), alfalfa-only-under-6-months hay rule, cedar/pine bedding and wire-flooring hazards, and a 5-7 year lifespan commitment.
+
+- [Senior Pet Care Checklist](https://petpawcalc.com/checklists/senior-pet-care-checklist.html): 19 items for dogs and cats covering vet screening (twice-yearly visits, senior blood panel components by name only, dental and joint assessment as commonly under-diagnosed conditions), home comfort changes (non-slip flooring, ramps, orthopedic beds, lower-entry litter boxes), bidirectional weight monitoring, and behavioral observation (new confusion, disorientation, or house-soiling framed as "log and mention to your vet," not a diagnostic tool). Deliberately frames aging as a normal life stage, not a disease, and excludes euthanasia/end-of-life content, which is covered elsewhere on the site.
 
 ## Blog
 

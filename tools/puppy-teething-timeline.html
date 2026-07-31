@@ -1,0 +1,301 @@
+---
+layout: tool
+title: Puppy Teething Timeline — What Stage Is My Puppy In?
+description: Enter your puppy's age to see their current teething stage and what's coming next — from first baby teeth to a full adult set, plus what to know about retained baby teeth. Free and instant.
+permalink: /tools/puppy-teething-timeline.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Puppy Teething Timeline",
+  "url": "https://petpawcalc.com/tools/puppy-teething-timeline.html",
+  "description": "Enter a puppy's age to see their current teething stage and what stage is coming next, from first baby teeth through a full adult set.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When do puppies start teething?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby (deciduous) teeth begin erupting around 2-3 weeks old, starting with the incisors and canines. By 6-8 weeks old, most puppies have a full set of 28 baby teeth - which is also around the age most puppies go home with a new owner, so many people never see the very first stage happen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do puppies lose their baby teeth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby teeth typically start falling out around 12-16 weeks old (3-4 months), beginning with the incisors, as permanent teeth push up underneath them. The permanent canines and premolars follow over the next couple of months, and the adult molars - which have no baby-tooth equivalent - come in last, usually complete by 5-7 months old with a full set of 42 adult teeth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are retained baby teeth and why do they matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A retained baby tooth is one that doesn't fall out even after the permanent tooth has erupted nearby, most common in small and toy breeds. It can crowd the adult tooth into poor alignment, trap food and tartar between the two teeth, and lead to gum disease if left in place - waiting to see if it falls out on its own isn't the recommended approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are retained baby teeth removed during spay or neuter surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, yes. Many vets check for retained baby teeth at a spay/neuter pre-surgical exam and remove any that are present during the same anesthesia, since the timing (typically 5-7 months old) commonly overlaps with when retained teeth become apparent. This avoids putting a puppy under anesthesia twice for two separate, unrelated procedures - worth asking your vet about at the pre-surgery visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's safe for a teething puppy to chew?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Softer, more flexible chew toys designed for teething puppies are generally safer than very hard options - something that doesn't bend or dent slightly under firm thumbnail pressure is often too hard and can fracture a puppy's teeth, which are more brittle than adult teeth. Frozen options (like a wet washcloth frozen and given cold) can also help soothe sore gums. Always supervise chewing and check with your vet about specific product recommendations for your puppy's size and chewing style."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🦷 Puppy Teething Timeline</h1>
+    <p>Enter your puppy's age to see their current teething stage, what's coming next, and whether it's time to start checking for retained baby teeth.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label>Puppy's Age</label>
+      <div style="display: flex; gap: 8px;">
+        <div style="flex: 1;">
+          <input type="number" id="ptt-age-months" min="0" max="24" placeholder="0" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <span style="font-size: 0.78rem; color: var(--brown-mid);">months</span>
+        </div>
+        <div style="flex: 1;">
+          <input type="number" id="ptt-age-weeks" min="0" max="52" placeholder="0" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <span style="font-size: 0.78rem; color: var(--brown-mid);">weeks</span>
+        </div>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Under 1 month? Just fill in weeks. Enter your puppy's total age using either or both fields.</p>
+    </div>
+    <button class="btn-calculate" onclick="calculateTeething()">Show My Puppy's Teething Stage →</button>
+
+    <div class="result-box" id="ptt-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="ptt-date"></span>
+      </div>
+      <h3 id="ptt-result-title"></h3>
+      <p id="ptt-result-desc" style="margin-top: 8px; font-size: 0.9rem; color: var(--brown-mid); line-height: 1.6;"></p>
+      <div id="ptt-next-stage" style="margin-top: 14px; padding: 12px 14px; background: var(--cream-dark); border-radius: var(--radius); font-size: 0.88rem; color: var(--brown); line-height: 1.6;"></div>
+      <div id="ptt-retained-note" style="margin-top: 14px; padding: 12px 14px; background: #FFF7F3; border: 1.5px solid var(--orange); border-radius: var(--radius); font-size: 0.85rem; color: var(--brown); line-height: 1.6; display: none;"></div>
+      <button class="pdf-btn" id="ptt-pdf-btn" onclick="doPrintPtt('ptt-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool provides general timing based on typical development and isn't a substitute for a veterinary dental exam, especially if you notice retained teeth, bleeding, or signs of pain.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Retained Baby Teeth: What to Check For</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Once your puppy's adult teeth start coming in — usually starting around 4 months old — it's worth glancing at their mouth periodically. A retained baby tooth is one that doesn't fall out even after the permanent tooth has erupted right next to it, most common in small and toy breeds. Left in place, it can crowd the adult tooth into poor alignment, trap food and tartar in the gap between the two teeth, and lead to gum disease.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>This is genuinely useful to know before scheduling a spay or neuter.</strong> Many vets check for retained baby teeth at the pre-surgical exam and remove any that are present during the same anesthesia — since spay/neuter timing (commonly 5-7 months old) often overlaps with when retained teeth become obvious, this avoids a second, separate anesthesia event just for tooth extraction. Ask about it when you book the surgery rather than after.</p>
+
+    <div class="post-cta">
+      <p>Estimate the surgery cost → <a href="/tools/spay-neuter-cost-calculator.html">Spay/Neuter Cost Calculator</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Already scheduled it? → <a href="/tools/spay-neuter-recovery-timeline.html">Get a recovery calendar</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Wondering about the right age for your breed? → <a href="/tools/neuter-timing-by-breed-size.html">See What the Research Found by Breed & Size</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Safe Chew Toys vs. What to Avoid</h2>
+    <div class="table-wrapper" style="margin-bottom: 24px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Generally safer</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Use caution or avoid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Soft, flexible rubber chew toys made for teething puppies</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Anything that doesn't bend or dent slightly under firm thumbnail pressure</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">A clean, damp washcloth frozen for a cold, soothing chew</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Real bones, antlers, or hooves — a common cause of fractured baby teeth</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Appropriately sized soft chew toys with some give</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Ice cubes — popular myth, but hard enough to crack teething teeth</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Supervised chewing sessions</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Unsupervised access to anything not specifically vet-approved for puppies</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A puppy's baby teeth are more brittle than adult teeth, so a fractured tooth is a real risk with anything too hard — a small chip can expose the sensitive inner layers and lead to pain or infection. When in doubt, ask your vet about specific product recommendations for your puppy's size and chewing style rather than guessing.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">When Chewing Spikes and Potty Training Regression Overlap</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The heaviest chewing phase — roughly 3 to 6 months old, as baby teeth fall out and adult teeth erupt — commonly overlaps with one of the two predictable potty training regression windows. If your previously reliable puppy suddenly seems to be having more accidents around the same time chewing ramps up, it's not necessarily a coincidence. → <a href="/blog/puppy-potty-training-regression/">Read: Puppy Potty Training Regression — Why It Happens</a></p>
+
+    <div class="post-cta">
+      <p>Check what vaccines are due at the same age → <a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Still working on housetraining? → <a href="/tools/puppy-potty-training-calculator.html">Puppy Potty Training Calculator</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Curious what a dental cleaning costs down the road? → <a href="/tools/dental-cleaning-cost-calculator.html">Dental Cleaning Cost Calculator</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Just brought your puppy home? → <a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do puppies start teething?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Baby (deciduous) teeth begin erupting around 2-3 weeks old, starting with the incisors and canines. By 6-8 weeks old, most puppies have a full set of 28 baby teeth - which is also around the age most puppies go home with a new owner, so many people never see the very first stage happen.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do puppies lose their baby teeth?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Baby teeth typically start falling out around 12-16 weeks old (3-4 months), beginning with the incisors, as permanent teeth push up underneath them. The permanent canines and premolars follow over the next couple of months, and the adult molars - which have no baby-tooth equivalent - come in last, usually complete by 5-7 months old with a full set of 42 adult teeth.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are retained baby teeth and why do they matter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A retained baby tooth is one that doesn't fall out even after the permanent tooth has erupted nearby, most common in small and toy breeds. It can crowd the adult tooth into poor alignment, trap food and tartar between the two teeth, and lead to gum disease if left in place - waiting to see if it falls out on its own isn't the recommended approach.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Are retained baby teeth removed during spay or neuter surgery?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often, yes. Many vets check for retained baby teeth at a spay/neuter pre-surgical exam and remove any that are present during the same anesthesia, since the timing (typically 5-7 months old) commonly overlaps with when retained teeth become apparent. This avoids putting a puppy under anesthesia twice for two separate, unrelated procedures - worth asking your vet about at the pre-surgery visit.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What's safe for a teething puppy to chew?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Softer, more flexible chew toys designed for teething puppies are generally safer than very hard options - something that doesn't bend or dent slightly under firm thumbnail pressure is often too hard and can fracture a puppy's teeth, which are more brittle than adult teeth. Frozen options (like a wet washcloth frozen and given cold) can also help soothe sore gums. Always supervise chewing and check with your vet about specific product recommendations for your puppy's size and chewing style.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, input, label { display: none !important; } }
+</style>
+<script>
+function doPrintPtt(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+// Stage boundaries in total weeks of age, based on typical canine teething development.
+const TEETHING_STAGES = [
+  { maxWeeks: 2, name: "Toothless", desc: "Newborn puppies are born without teeth and rely entirely on nursing." },
+  { maxWeeks: 6, name: "Baby Teeth Erupting", desc: "Baby (deciduous) teeth are coming in, starting with the incisors and canines, followed by the premolars." },
+  { maxWeeks: 12, name: "Full Set of Baby Teeth (28)", desc: "Most puppies have all 28 baby teeth in by now. This is also around the age many puppies go home with a new owner." },
+  { maxWeeks: 16, name: "Baby Teeth Starting to Fall Out", desc: "Baby teeth begin falling out, usually starting with the incisors, as permanent teeth push up underneath them. Increased chewing and mild drooling are common." },
+  { maxWeeks: 26, name: "Adult Teeth Erupting", desc: "Permanent incisors, canines, and premolars are actively coming in. This is the heaviest chewing phase - keep an eye out for retained baby teeth during this window." },
+  { maxWeeks: 30, name: "Adult Molars Erupting - Nearing a Complete Set", desc: "The adult molars, which have no baby-tooth equivalent, are coming in last. Most puppies are close to their full 42-tooth adult set." },
+  { maxWeeks: Infinity, name: "Teething Should Be Complete (42 Adult Teeth)", desc: "By this age, teething is typically finished. If you notice any tooth that still looks like a smaller baby tooth, it's worth a vet check for a retained baby tooth." }
+];
+
+function calculateTeething() {
+  const months = parseInt(document.getElementById('ptt-age-months').value) || 0;
+  const weeks = parseInt(document.getElementById('ptt-age-weeks').value) || 0;
+  const totalWeeks = (months * 4.345) + weeks;
+
+  if (totalWeeks <= 0 && !document.getElementById('ptt-age-months').value && !document.getElementById('ptt-age-weeks').value) {
+    alert("Please enter your puppy's age in months and/or weeks.");
+    return;
+  }
+
+  let currentStage = TEETHING_STAGES[TEETHING_STAGES.length - 1];
+  let nextStage = null;
+  for (let i = 0; i < TEETHING_STAGES.length; i++) {
+    if (totalWeeks < TEETHING_STAGES[i].maxWeeks) {
+      currentStage = TEETHING_STAGES[i];
+      nextStage = TEETHING_STAGES[i + 1] || null;
+      break;
+    }
+  }
+
+  document.getElementById('ptt-result-title').textContent = `Current Stage: ${currentStage.name}`;
+  document.getElementById('ptt-result-desc').textContent = currentStage.desc;
+
+  const nextEl = document.getElementById('ptt-next-stage');
+  if (nextStage) {
+    nextEl.innerHTML = `<strong>Coming next:</strong> ${nextStage.name} — ${nextStage.desc}`;
+    nextEl.style.display = 'block';
+  } else {
+    nextEl.style.display = 'none';
+  }
+
+  const retainedEl = document.getElementById('ptt-retained-note');
+  if (totalWeeks >= 16) {
+    retainedEl.innerHTML = `⚠️ <strong>This is a good age to start checking for retained baby teeth</strong> — a baby tooth still in place next to an erupted adult tooth. See the section below, especially if a spay/neuter is coming up.`;
+    retainedEl.style.display = 'block';
+  } else {
+    retainedEl.style.display = 'none';
+  }
+
+  document.getElementById('ptt-result').classList.add('show');
+  document.getElementById('ptt-pdf-btn').style.display = 'block';
+  document.getElementById('ptt-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

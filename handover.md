@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-01 (세션 U)
+최종 갱신: 2026-08-01 (세션 V)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -998,4 +998,52 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
 - **별도 채팅에서 발굴한 배치 2(시니어 케어 체크리스트, 강아지 유치 타임라인 — 둘 다 추론 강도 High 필수), 배치 3(펫보험 청구 환급액 계산기, 반려동물 동반 이사 체크리스트), 배치 4(치아 홈케어/두 번째 반려동물 비용/크레이트 훈련/햄스터 체크리스트 — 이 배치는 만들기 전에 "만들지 말지"부터 판단해야 함)를 순서대로 진행할 것.**
 - 이번에 세운 새 QA 표준(모든 스크립트 블록 전수 검사, 아포스트로피 축약형 금지, no-print 스캔)을 다음 세션들에도 계속 유지할 것 — handover.md의 "작업 방식" 섹션에 정식 반영을 고려.
+- Coverage 21개 미색인 이슈는 이번 세션에도 다루지 않음 — 계속 열린 상태.
+
+---
+
+### 세션 V — 배치 2 실행: 시니어 반려동물 케어 체크리스트 + 강아지 유치 타임라인 (8/1, 세션 U 직후)
+
+**배경**: 별도 채팅에서 발굴한 12개 후보 중 배치 2. 사용자가 "시니어는 건강·정서 민감 영역이라 표현 수위 판단이 계속 필요하다"며 추론 강도를 명시적으로 높게 유지하라고 지시.
+
+**1. 신규 체크리스트 A — `checklists/senior-pet-care-checklist.html`**
+
+- **프레이밍 원칙을 문구 전체에 엄격 적용**: "노화는 질병이 아니라 정상적인 생애 전환기"라는 톤을 헤더·디스클레이머·FAQ 전체에 일관 반영, 겁주는 표현 배제. 진단·투약·용량은 전혀 다루지 않고 "관찰 후 수의사에게 물어볼 것" 수준으로만 서술. **안락사·임종 콘텐츠는 명시적으로 배제**(기존 QoL 계산기+euthanasia 포스트 영역으로 남겨둠) — 작성 후 "euthaniz/dosage/mg per kg" 등 금지어 전수 스캔으로 0건 확인.
+- 웹서치로 확인한 사실: 체급별 시니어 진입 연령(소형 10-12세/중형 8-10/대형 6-8/초대형 5-6, 고양이 대략 10-12 — 사용자 브리핑과 일치), 시니어 검진 연 2회(VCA·AAHA 등 다수 소스), 시니어 혈액검사 패널 구성(CBC·화학패널·요검사·T4 갑상선검사, ± 혈압측정) — **항목명만 나열, 수치 해석·정상범위는 전혀 다루지 않음**, 관절염·치과질환이 "그냥 노화"로 가장 흔히 오인/과소진단되는 2대 질환이라는 점 복수 소스로 확인.
+- **인지기능장애(DISHA)는 의도적으로 "관찰 항목" 수준으로만 축소**: DISHA 5개 범주(방향감각상실·상호작용변화·수면주기변화·배변실수·활동량변화)를 웹서치로 정확히 확인했지만, 사용자 지시("진단 도구로 만들지 마라")에 따라 **자가 채점 체크리스트나 프레임워크로 구조화하지 않고**, 체크리스트 항목 1개("새로운 혼란·방향감각상실·배변실수 기록해서 수의사에게 공유")와 FAQ 답변 1개로만 가볍게 다룸 — 진단 도구처럼 보이지 않도록 의도적으로 얕게 처리.
+- 개·고양이 공용 통합형(기존 `pet-emergency-kit-checklist.html` 패턴). 항목 19개, 6개 섹션(Understanding Your Senior Pet 2 / Vet Care & Screening 4 / Home & Mobility 5 / Nutrition 2 / Mental & Behavioral Wellness 3 / Comfort & Daily Life 3). FAQ 6개, 스키마+본문 1:1.
+
+**2. 신규 도구 B — `tools/puppy-teething-timeline.html`**
+
+- 입력: 강아지 나이(개월/주). 출력: 현재 유치 단계 + 다음 단계. 웹서치로 확인한 7단계 경계값을 코드에 정확히 반영(2주 유치 맹출 시작/6-8주 유치 28개 완성/12-16주 탈락 시작/16-26주 영구치 맹출/26-30주 영구 어금니/30주+ 완성) — node로 여러 주령값 대입해 경계값 전부 검증.
+- **잔존유치 섹션**: 4개월(16주)부터 확인 시작 권고, 중성화 수술(통상 5-7개월)과 시기가 겹쳐 같은 마취 중에 발치하는 경우가 많다는 실용적 조언을 웹서치로 정확히 확인 후 반영 — spay-neuter-cost-calculator/spay-neuter-recovery-timeline/neuter-timing-by-breed-size 3개 도구로 연결.
+- 씹기 폭증 시기(3-6개월)가 배변훈련 퇴행 시기와 겹친다는 점 → `puppy-potty-training-regression` 포스트로 연결.
+- 안전한 씹을거리 vs 피할 것 비교표 — 특정 제품명 없이 "엄지손톱으로 눌렀을 때 살짝 눌리는 정도" 같은 일반 기준으로만 서술(사용자 지시 반영).
+- FAQ 5개, 스키마+본문 1:1.
+
+**3. 역링크(양방향, 지시사항 그대로 이행)**
+- 체크리스트A ↔ `dog-quality-of-life-calculator`, ↔ `cat-quality-of-life-calculator`(기존 post-cta 카드 패턴에 맞춰 추가).
+- 체크리스트A ↔ `dog-vet-visit-scheduler`, `cat-vet-visit-scheduler`(연 2회 검진 접점).
+- 체크리스트A ↔ 시니어 급여 포스트 2개(`how-much-should-senior-dog-eat`, `how-much-should-senior-cat-eat` — slug 직접 확인 후 정확한 링크로 연결).
+- 도구B ↔ `dog-vaccination-schedule-calculator`, ↔ `puppy-potty-training-calculator`, ↔ `dental-cleaning-cost-calculator`, → `new-puppy-checklist`.
+
+**4. 공통 파일 동기화 — QA 과정에서 누락 발견 후 수정**
+- 처음 QA에서 tool-card 개수 불일치(34=34 vs 실제 35개)를 발견 — `index.html`/`tools/index.html`에 `puppy-teething-timeline` 카드 추가를 빠뜨렸던 것을 확인 후 즉시 수정. `checklists/index.html`도 동일하게 `senior-pet-care-checklist` 카드 누락을 발견해 수정. **이 실수는 "공통파일 동기화를 QA 이전에 끝냈다고 착각하고 QA를 돌린 것"이 원인 — 다음 세션은 공통파일 동기화 직후 반드시 카드 개수부터 재확인할 것.**
+- `_includes/footer.html`(Tools/Checklists 컬럼 각각), `llms.txt`(Tools/Checklists 섹션 각각) 정상 반영.
+
+**5. QA(전수, 지난 세션 표준 3가지 전부 적용 + 이번 세션에서 Rule B 정밀도 개선)**
+- **Rule A(모든 스크립트 블록 전수 검사)**: 81개 파일 50개 스크립트 블록 전부 `node --check` 통과, 0건 오류.
+- **Rule B(아포스트로피 축약형 스캔) — 이번 세션에서 탐지 로직을 라인 단위로 정밀화**: 1차 스캔은 정규식이 여러 줄에 걸쳐 과도하게 매칭돼 오탐이 많았음(세션 U에서 이미 지적된 문제가 재발) → 라인 단위 스캔으로 교정. 교정 후에도 기존 파일(`dog/cat-quality-of-life-calculator`, `dog/cat-vaccination-schedule-calculator`, `dog/cat-vet-visit-scheduler`, `dog/cat-age-calculator`) 여러 곳에서 `it\'s`, `dog\'s` 같은 **단일 백슬래시로 정상 이스케이프된 기존 패턴**이 걸렸으나, Rule A가 이미 해당 스크립트 블록 전부를 오류 없이 통과시켰다는 사실로 안전함을 재확인 — 이번 세션에 새로 만든 파일 2개는 이 패턴이 전혀 없음(전부 큰따옴표 문자열 사용).
+- **Rule C(no-print 스캔)**: 0건.
+- YAML 81개 파일 통과, JSON-LD 0오류, FAQ 스키마-본문 1:1(체크리스트A 6/6, 도구B 5/5), slug 중복 없음(37개), permalink 중복 없음(42개), 링크 재스캔 0건 깨짐.
+- **최종 tool-card/checklist-card 개수 일치 재확인**: `index.html`/`tools/index.html` 35=35=35, `checklists/index.html` 7=7.
+- div 균형: 신규 2개 + 역링크 수정한 기존 9개 파일 전부 짝 맞음.
+- 유치 단계 경계값 node 시뮬레이션 검증(0/1/2/3/5/7/8/10/12~52주 대입, 전부 사용자 브리핑 수치와 일치).
+
+**오늘(세션 V) 최종 페이지 수**: tools 35 + posts 37 + checklists 7 = 79페이지. 신규 순증 2개(`senior-pet-care-checklist`, `puppy-teething-timeline`).
+
+**다음 세션에서 확인할 것**:
+- 오늘 만든 신규 2개의 GSC 노출/색인 여부 확인(최소 1-2주 필요).
+- **별도 채팅에서 발굴한 배치 3(펫보험 청구 환급액 계산기, 반려동물 동반 이사 체크리스트), 배치 4(치아 홈케어/두 번째 반려동물 비용/크레이트 훈련/햄스터 체크리스트 — "만들지 말지"부터 판단 필요)를 순서대로 진행할 것.**
+- **공통파일 동기화 직후 tool-card/checklist-card 개수를 바로 재확인하는 습관을 들일 것** — 이번 세션에 실제로 누락이 있었고 QA에서 잡아냈지만, 애초에 순서를 "동기화 → 개수확인"으로 명확히 분리했으면 두 번 작업할 필요가 없었음.
 - Coverage 21개 미색인 이슈는 이번 세션에도 다루지 않음 — 계속 열린 상태.

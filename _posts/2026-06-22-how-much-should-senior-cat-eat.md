@@ -207,6 +207,7 @@ Most vets recommend transitioning to a senior formula around age 7–10, dependi
 - [How Much Should a Cat Weigh? Healthy Weight by Breed and Sex](/blog/how-much-should-a-cat-weigh/)
 - [How Often Should Cats Go to the Vet? A Schedule by Age](/blog/how-often-vet-visits-cat/)
 - [Cat Quality of Life: How to Assess Your Cat's Well-Being Honestly](/blog/cat-quality-of-life-assessment/)
+- [Senior Pet Care Checklist](/checklists/senior-pet-care-checklist.html)
 
 ---
 
