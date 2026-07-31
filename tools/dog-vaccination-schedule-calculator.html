@@ -2,7 +2,7 @@
 layout: tool
 permalink: /tools/dog-vaccination-schedule-calculator.html
 title: Dog Vaccination Schedule Calculator — What Shots Are Due?
-description: Enter your dog's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered — with typical cost ranges. Free, instant results.
+description: Enter your dog's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered — plus a CAPC-based deworming schedule. Free, instant results.
 ---
 <script type="application/ld+json">
 {
@@ -52,6 +52,46 @@ description: Enter your dog's age and lifestyle to see which core and non-core v
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends on real exposure, not just whether your dog goes outside. Dogs who visit dog parks, boarding facilities, or groomers typically need Bordetella. Dogs in tick-heavy regions may benefit from a Lyme vaccine. A strictly indoor dog with no other-dog contact may need fewer non-core vaccines — ask your vet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should puppies be dewormed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per CAPC guidelines, puppies should be dewormed starting at 2 weeks old, repeated every 2 weeks until about 8 weeks (2 months), then monthly until 6 months old, then quarterly as an adult. This schedule targets the parasite life cycle, not just a single treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't one deworming treatment finish the job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single dose kills adult worms present at that moment but doesn't reach eggs or larvae still migrating through other tissue. Those immature parasites mature and return to the intestine over the following one to two weeks, which is why repeated doses on a schedule — not a single treatment — are needed to fully break the cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can worms in dogs spread to humans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — roundworms are zoonotic and can transfer to people, most commonly through accidental contact with contaminated soil or surfaces. Children are at particular risk if they play in areas where an infected pet has defecated, which is part of why consistent deworming and prompt cleanup both matter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do adult dogs still need regular deworming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — CAPC recommends treating adult dogs with a broad-spectrum dewormer at least four times a year, alongside fecal exams at least twice a year to confirm what parasites, if any, are actually present. Many dogs on a monthly heartworm/flea/tick preventive that also covers intestinal parasites are effectively covered more often than the quarterly minimum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I determine my dog's exact dewormer dosage from an online calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — dosage depends on your dog's weight, the specific product, and your vet's judgment about your dog's individual parasite risk, so it should always come from your veterinarian rather than a general online tool. This calculator covers timing and intervals only."
       }
     }
   ]
@@ -119,6 +159,13 @@ description: Enter your dog's age and lifestyle to see which core and non-core v
     <div id="vax-list"></div>
   </div>
 
+  <div class="tool-box" style="margin-top: 32px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--brown); margin-bottom: 8px;">🪱 Deworming Schedule</h2>
+    <p style="color: var(--brown-mid); font-size: 0.9rem; margin-bottom: 16px;">Uses the same age you entered above (CAPC guidelines) — dates and interval, not medication dosages.</p>
+    <button class="btn-calculate" onclick="calculateDewormSchedule()">Get My Dog's Deworming Schedule →</button>
+    <div id="deworm-list" style="margin-top: 16px;"></div>
+  </div>
+
   <div class="disclaimer-box" style="margin-top: 40px;">
     ⚕️ This calculator provides general guidelines based on standard veterinary protocols (WSAVA / AAHA). Individual vaccine needs vary by region, health status, and vet judgment. Always confirm with your veterinarian.
   </div>
@@ -136,12 +183,26 @@ description: Enter your dog's age and lifestyle to see which core and non-core v
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">After the puppy series and a one-year booster, many vets move core vaccines (DHPP) to a 3-year schedule for healthy adult dogs, based on research showing extended immunity. Rabies boosters follow local law — often every 1 or 3 years depending on the vaccine type and jurisdiction. Non-core vaccines are typically re-evaluated annually based on lifestyle, since exposure risk can change year to year.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Titer testing — a blood test measuring existing antibody levels — is an option some owners use to check whether a booster is actually needed before automatically re-vaccinating. It's not available or appropriate for every vaccine (notably not a substitute for legally required rabies boosters), so it's worth discussing with your vet rather than assuming it applies across the board.</p>
 
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Deworming Takes More Than One Dose</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A single deworming treatment kills the adult worms living in the intestines at that moment — but it doesn't reach eggs or larvae that are still migrating through other tissue (lungs, liver, muscle) or haven't hatched yet. Over the following one to two weeks, those immature parasites mature and move back into the intestine, which is exactly why the CAPC (Companion Animal Parasite Council) schedule repeats every 2 weeks during early puppyhood and kittenhood — it's timed to catch each new wave before it can reproduce again.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Puppies can also be born already infected — roundworm larvae can reactivate in a pregnant dog and cross the placenta — which is why the CAPC schedule for puppies starts as early as 2 weeks old, before any outdoor exposure has even happened. Kittens don't share this transplacental route, only transmission through nursing, which is part of why kitten schedules commonly start about a week later than puppy schedules.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Roundworms and Human Health</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Roundworms are zoonotic — they can transfer to people, most commonly through accidental ingestion of contaminated soil or surfaces, and children playing in yards where a pet has defecated are at particular risk. Consistent deworming on schedule, plus prompt cleanup of feces, protects your household as well as your pet.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Pair Deworming With Fecal Exams</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">CAPC recommends fecal examinations at least twice a year for adult dogs (more often for puppies or higher-risk lifestyles), separate from routine deworming itself. A fecal exam identifies which parasites, if any, are actually present, which helps your vet confirm the deworming schedule is working rather than assuming it is. This calculator covers dates and intervals only — your vet will determine the specific product and dose appropriate for your dog's weight and health.</p>
+
     <div class="post-cta">
       <p>Want the full timeline explained? → <a href="/blog/puppy-kitten-vaccination-schedule/">Read the Complete Puppy Vaccination Schedule Guide</a></p>
     </div>
 
     <div class="post-cta">
       <p>Wondering if you need to wait for socialization too? → <a href="/checklists/puppy-socialization-checklist.html">Puppy Socialization Checklist</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Also budgeting for flea/tick and heartworm prevention? → <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Prevention Cost Calculator</a></p>
     </div>
 
     <div class="post-cta">
@@ -166,7 +227,17 @@ description: Enter your dog's age and lifestyle to see which core and non-core v
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">At what age do puppies start vaccines?</h3>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Puppies typically start their vaccine series at 6–8 weeks old, with follow-up doses every 3–4 weeks until at least 16 weeks. This spacing accounts for fading maternal antibodies, which can otherwise block the vaccine from working.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does my indoor dog need non-core vaccines?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">It depends on real exposure, not just whether your dog goes outside. Dogs who visit dog parks, boarding facilities, or groomers typically need Bordetella. Dogs in tick-heavy regions may benefit from a Lyme vaccine. A strictly indoor dog with no other-dog contact may need fewer non-core vaccines — ask your vet.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on real exposure, not just whether your dog goes outside. Dogs who visit dog parks, boarding facilities, or groomers typically need Bordetella. Dogs in tick-heavy regions may benefit from a Lyme vaccine. A strictly indoor dog with no other-dog contact may need fewer non-core vaccines — ask your vet.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should puppies be dewormed?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Per CAPC guidelines, puppies should be dewormed starting at 2 weeks old, repeated every 2 weeks until about 8 weeks (2 months), then monthly until 6 months old, then quarterly as an adult. This schedule targets the parasite life cycle, not just a single treatment.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why can't one deworming treatment finish the job?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A single dose kills adult worms present at that moment but doesn't reach eggs or larvae still migrating through other tissue. Those immature parasites mature and return to the intestine over the following one to two weeks, which is why repeated doses on a schedule — not a single treatment — are needed to fully break the cycle.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can worms in dogs spread to humans?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — roundworms are zoonotic and can transfer to people, most commonly through accidental contact with contaminated soil or surfaces. Children are at particular risk if they play in areas where an infected pet has defecated, which is part of why consistent deworming and prompt cleanup both matter.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do adult dogs still need regular deworming?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — CAPC recommends treating adult dogs with a broad-spectrum dewormer at least four times a year, alongside fecal exams at least twice a year to confirm what parasites, if any, are actually present. Many dogs on a monthly heartworm/flea/tick preventive that also covers intestinal parasites are effectively covered more often than the quarterly minimum.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I determine my dog's exact dewormer dosage from an online calculator?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">No — dosage depends on your dog's weight, the specific product, and your vet's judgment about your dog's individual parasite risk, so it should always come from your veterinarian rather than a general online tool. This calculator covers timing and intervals only.</p>
   </div>
 </div>
 
@@ -322,5 +393,39 @@ function calculateVaxSchedule() {
 
   document.getElementById('vax-section').style.display = 'block';
   document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function calculateDewormSchedule() {
+  const years = parseInt(document.getElementById('pup-age-years').value) || 0;
+  const months = parseInt(document.getElementById('pup-age-months').value) || 0;
+  const weeks = parseInt(document.getElementById('pup-age-weeks').value) || 0;
+  const totalWeeks = (years * 52) + (months * 4.345) + weeks;
+
+  let phase, note;
+  if (totalWeeks < 2) {
+    phase = 'Not started yet';
+    note = 'First deworming treatment typically starts around 2 weeks old, per CAPC guidelines — before any outdoor exposure, since roundworm larvae can pass from mother to puppy before birth.';
+  } else if (totalWeeks < 8) {
+    phase = 'Every-2-weeks phase (2-8 weeks old)';
+    note = 'Puppies in this window are typically dewormed every 2 weeks. Each dose targets adult worms; the 2-week spacing catches the next generation as it matures.';
+  } else if (totalWeeks < 26) {
+    phase = 'Monthly phase (2-6 months old)';
+    note = 'Puppies in this window commonly move to a monthly deworming schedule until about 6 months old.';
+  } else {
+    phase = 'Adult maintenance (6+ months old)';
+    note = 'CAPC recommends adult dogs be treated at least quarterly (every 3 months) with a broad-spectrum dewormer, paired with a fecal exam at least twice a year. Many dogs on a monthly heartworm/flea/tick combination product are effectively covered more often than this minimum.';
+  }
+
+  const dewormEl = document.getElementById('deworm-list');
+  dewormEl.innerHTML = `
+    <div style="padding: 14px 16px; background: #FFF7F3; border-radius: var(--radius); border-left: 3px solid var(--orange); margin-bottom: 10px;">
+      <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${phase}</div>
+      <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">${note}</div>
+    </div>
+    <div style="padding: 14px 16px; background: var(--cream-dark); border-radius: var(--radius); border-left: 3px solid var(--brown-light);">
+      <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">Fecal Exam</div>
+      <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">Recommended at least twice a year for adult dogs (more often for puppies or higher-risk lifestyles) to confirm which parasites, if any, are present.</div>
+    </div>
+  `;
 }
 </script>

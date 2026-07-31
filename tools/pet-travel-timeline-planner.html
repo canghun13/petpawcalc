@@ -1,0 +1,378 @@
+---
+layout: tool
+title: Pet Travel Timeline Planner — Reverse-Calculate Your Prep Schedule
+description: Enter your departure date and destination tier to get a reverse-calculated timeline for microchip, rabies vaccination, antibody testing, and health certificate deadlines. Free planning aid — always confirm with USDA APHIS and your destination.
+permalink: /tools/pet-travel-timeline-planner.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pet Travel Timeline Planner",
+  "url": "https://petpawcalc.com/tools/pet-travel-timeline-planner.html",
+  "description": "Enter a departure date and destination tier to get a reverse-calculated pet travel preparation timeline covering microchip, rabies vaccination, antibody testing, and health certificate milestones.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does the microchip have to come before the rabies vaccine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many destinations only accept a rabies vaccination as valid for entry if it was administered on or after the day the microchip was implanted and scanned — the microchip and vaccine record need to be linked. A rabies vaccine given before the chip is often treated as if it doesn't count at all, meaning your pet may need to be re-vaccinated and wait out the full waiting period again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a rabies antibody (titer/FAVN) test add to the timeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often months, not weeks. The blood draw typically can't happen until at least 30 days after the rabies vaccination, lab turnaround commonly runs 2-6 weeks, and many rabies-free destinations then require a waiting period after a passing result — commonly 30-90 days for some destinations and up to 180 days (6 months) for others like Australia, New Zealand, and Japan. Once you add the vaccine wait and lab time on top of that waiting period, starting the whole process 6-9 months before travel is a common recommendation for the strictest destinations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the health certificate valid for such a short time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many destinations require the certificate to be issued and USDA-endorsed shortly before travel — commonly within about 10 days of arrival — specifically so the health information reflects your pet's condition close to departure, not weeks earlier. This means the exam and endorsement have to happen near the very end of your prep timeline, not early on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can any veterinarian complete my pet's international health certificate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The health certificate must be completed by a USDA-accredited veterinarian and then submitted to USDA APHIS for endorsement, typically through the Veterinary Export Health Certification System (VEHCS). A vet without USDA accreditation cannot complete this step, so confirming your vet's accreditation status early avoids a last-minute scramble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a destination \"tier\" in this tool, and why doesn't it name specific countries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Requirements vary by destination and change over time, so this tool groups destinations into three general tiers by typical rabies-related requirements (no antibody test needed, antibody test with a shorter wait, or antibody test with a longer wait as a rabies-free region) rather than listing specific countries. Always confirm your specific destination's current requirements on the official USDA APHIS pet travel pages, since rules can differ even within a tier and change without notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a milestone date this tool calculates has already passed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That means your current departure date may not be realistic for the requirements involved — contact a USDA-accredited veterinarian right away to discuss whether your destination's exact windows still allow travel on time, or whether you should look at delaying departure. This is a planning aid, not a guarantee, and earlier is always safer than later with international pet travel paperwork."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>✈️ Pet Travel Timeline Planner</h1>
+    <p>Enter your departure date and destination tier to get a reverse-calculated prep timeline — microchip, rabies vaccination, antibody testing if required, and the health certificate window.</p>
+  </div>
+
+  <div style="background: #FFF3E8; border: 1.5px solid var(--orange); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 24px; font-size: 0.88rem; color: var(--brown); line-height: 1.6;">
+    ⚠️ <strong>Always confirm actual requirements with your destination country's government and the official USDA APHIS pet travel pages.</strong> This tool is a planning aid only, not a substitute for official guidance.
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label>Planned Departure Date</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="ptp-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Month</option>
+          <option value="0">January</option><option value="1">February</option>
+          <option value="2">March</option><option value="3">April</option>
+          <option value="4">May</option><option value="5">June</option>
+          <option value="6">July</option><option value="7">August</option>
+          <option value="8">September</option><option value="9">October</option>
+          <option value="10">November</option><option value="11">December</option>
+        </select>
+        <select id="ptp-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Day</option>
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+        </select>
+        <select id="ptp-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="">Year</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="ptp-tier">Destination Tier</label>
+      <select id="ptp-tier">
+        <option value="1">Tier 1 — No rabies antibody test required (most destinations)</option>
+        <option value="2">Tier 2 — Rabies antibody (FAVN) test required, moderate wait after result</option>
+        <option value="3">Tier 3 — Rabies-free region, antibody test required with the longest wait after result</option>
+      </select>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Not sure which tier applies? Check the official USDA APHIS pet travel page for your specific destination.</p>
+    </div>
+    <div class="form-group">
+      <label for="ptp-microchip">Is your pet already microchipped?</label>
+      <select id="ptp-microchip">
+        <option value="no">Not yet</option>
+        <option value="yes">Yes, already implanted</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="ptp-rabies">Rabies vaccine already current — and given on or after the microchip date?</label>
+      <select id="ptp-rabies">
+        <option value="no">No / not sure</option>
+        <option value="yes">Yes</option>
+      </select>
+      <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">If the rabies vaccine was given before the microchip, it typically doesn't count — select "No" if that's the case.</p>
+    </div>
+    <button class="btn-calculate" onclick="calculateTravelTimeline()">Show My Prep Timeline →</button>
+
+    <div class="result-box" id="ptp-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="ptp-date"></span>
+      </div>
+      <h3 id="ptp-result-title"></h3>
+      <div id="ptp-timeline" style="margin-top: 14px;"></div>
+      <div style="margin-top: 16px; padding: 12px 14px; background: #FFF7F3; border: 1.5px solid var(--orange); border-radius: var(--radius); font-size: 0.85rem; color: var(--brown); line-height: 1.6;">
+        ⚠️ <strong>Always confirm actual requirements with your destination country's government and the official USDA APHIS pet travel pages.</strong> This tool is a planning aid only.
+      </div>
+      <button class="pdf-btn" id="ptp-pdf-btn" onclick="doPrintPtp('ptp-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool provides general planning estimates based on commonly cited timeframes and is not official guidance. Exact requirements vary by destination and change over time — confirm everything with USDA APHIS (aphis.usda.gov/pet-travel) and your destination's government before finalizing travel plans.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Microchip-Before-Rabies-Vaccine Trap</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the single most common paperwork mistake in pet travel prep. Many destinations require the microchip to be implanted and scanned <em>before</em> the rabies vaccine is given — the two records need to be linked. If the vaccine was administered first, it's frequently treated as if it doesn't count for entry purposes at all.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The fix, if this has already happened, is usually a full re-vaccination after the chip is placed — which restarts any waiting period from zero. This is exactly why the order matters so much, and why it's worth double-checking with your vet before any rabies shot is given if travel is even a possibility.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why the Antibody Test Can Add Months</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A rabies antibody test (often called a FAVN test) doesn't just confirm your pet got vaccinated — it measures whether the vaccine actually produced enough antibodies. That means the blood draw has to wait until the immune response has developed (commonly at least 30 days after vaccination), the lab itself typically takes 2-6 weeks to return results, and then many rabies-free destinations require an additional waiting period after a passing result before your pet is actually eligible to travel — commonly 30-90 days for some destinations, and up to 180 days (6 months) for others.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Stack those together and it's easy to see how a seemingly simple blood test can add three to six months (or more) to a travel timeline. Starting this process the moment international travel becomes a real possibility — not once flights are booked — is the difference between a smooth process and a missed departure.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Health Certificate's Short Shelf Life</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Unlike the rabies vaccine or antibody test, the international health certificate is meant to reflect your pet's condition right before travel — many destinations require it to be issued and USDA-endorsed within about 10 days of arrival. That means this step happens last, close to your departure date, not early in the process. Confirm your vet's USDA accreditation and their typical turnaround for certificate submission well ahead of time, since this narrow window leaves little room for delays.</p>
+
+    <div class="post-cta">
+      <p>Considering the antibody test route? → <a href="/tools/titer-test-vs-revaccination-calculator.html">Compare Titer Test vs. Revaccination Cost</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does the microchip have to come before the rabies vaccine?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Many destinations only accept a rabies vaccination as valid for entry if it was administered on or after the day the microchip was implanted and scanned — the microchip and vaccine record need to be linked. A rabies vaccine given before the chip is often treated as if it doesn't count at all, meaning your pet may need to be re-vaccinated and wait out the full waiting period again.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does a rabies antibody (titer/FAVN) test add to the timeline?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often months, not weeks. The blood draw typically can't happen until at least 30 days after the rabies vaccination, lab turnaround commonly runs 2-6 weeks, and many rabies-free destinations then require a waiting period after a passing result — commonly 30-90 days for some destinations and up to 180 days (6 months) for others like Australia, New Zealand, and Japan. Once you add the vaccine wait and lab time on top of that waiting period, starting the whole process 6-9 months before travel is a common recommendation for the strictest destinations.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why is the health certificate valid for such a short time?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Many destinations require the certificate to be issued and USDA-endorsed shortly before travel — commonly within about 10 days of arrival — specifically so the health information reflects your pet's condition close to departure, not weeks earlier. This means the exam and endorsement have to happen near the very end of your prep timeline, not early on.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can any veterinarian complete my pet's international health certificate?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">No. The health certificate must be completed by a USDA-accredited veterinarian and then submitted to USDA APHIS for endorsement, typically through the Veterinary Export Health Certification System (VEHCS). A vet without USDA accreditation cannot complete this step, so confirming your vet's accreditation status early avoids a last-minute scramble.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is a destination "tier" in this tool, and why doesn't it name specific countries?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Requirements vary by destination and change over time, so this tool groups destinations into three general tiers by typical rabies-related requirements (no antibody test needed, antibody test with a shorter wait, or antibody test with a longer wait as a rabies-free region) rather than listing specific countries. Always confirm your specific destination's current requirements on the official USDA APHIS pet travel pages, since rules can differ even within a tier and change without notice.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if a milestone date this tool calculates has already passed?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">That means your current departure date may not be realistic for the requirements involved — contact a USDA-accredited veterinarian right away to discuss whether your destination's exact windows still allow travel on time, or whether you should look at delaying departure. This is a planning aid, not a guarantee, and earlier is always safer than later with international pet travel paperwork.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label { display: none !important; } }
+</style>
+<script>
+function doPrintPtp(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+function subtractDays(date, days) {
+  const d = new Date(date);
+  d.setDate(d.getDate() - days);
+  return d;
+}
+
+function fmtDatePtp(d) {
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// Representative day-offsets before departure, based on commonly cited figures.
+// These are illustrative planning windows, not authoritative per-country requirements.
+const TIER_PROFILES = {
+  1: {
+    label: "Tier 1 (no antibody test)",
+    healthCertDaysBefore: 10,
+    rabiesDaysBefore: 30,
+    hasAntibodyTest: false
+  },
+  2: {
+    label: "Tier 2 (antibody test, moderate wait)",
+    healthCertDaysBefore: 10,
+    labTurnaroundDays: 30,
+    postResultWaitDays: 90,
+    bloodDrawAfterVaccineDays: 30,
+    hasAntibodyTest: true
+  },
+  3: {
+    label: "Tier 3 (antibody test, longest wait — rabies-free region)",
+    healthCertDaysBefore: 10,
+    labTurnaroundDays: 30,
+    postResultWaitDays: 180,
+    bloodDrawAfterVaccineDays: 30,
+    hasAntibodyTest: true
+  }
+};
+
+function calculateTravelTimeline() {
+  const month = document.getElementById('ptp-month').value;
+  const day = document.getElementById('ptp-day').value;
+  const year = document.getElementById('ptp-year').value;
+  const tier = document.getElementById('ptp-tier').value;
+  const hasMicrochip = document.getElementById('ptp-microchip').value === 'yes';
+  const hasRabies = document.getElementById('ptp-rabies').value === 'yes';
+
+  if (!month || !day || !year) {
+    alert('Please enter your planned departure date.');
+    return;
+  }
+
+  const departureDate = new Date(parseInt(year), parseInt(month), parseInt(day));
+  const profile = TIER_PROFILES[tier];
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  document.getElementById('ptp-result-title').textContent = `Prep Timeline — ${profile.label}`;
+
+  const milestones = [];
+
+  // Health certificate + USDA endorsement (last step, all tiers)
+  milestones.push({
+    name: "Health Certificate Exam & USDA Endorsement",
+    date: subtractDays(departureDate, profile.healthCertDaysBefore),
+    desc: "Exam by a USDA-accredited vet, submitted for USDA APHIS endorsement (commonly via VEHCS). Many destinations require this within about 10 days of arrival, so it happens last."
+  });
+
+  if (profile.hasAntibodyTest) {
+    const resultEligibleDate = subtractDays(departureDate, profile.healthCertDaysBefore);
+    const bloodDrawDate = subtractDays(resultEligibleDate, profile.labTurnaroundDays + profile.postResultWaitDays);
+    const rabiesDate = subtractDays(bloodDrawDate, profile.bloodDrawAfterVaccineDays);
+    const microchipDate = rabiesDate;
+
+    milestones.push({
+      name: "Waiting Period After Passing Antibody Test Result",
+      date: subtractDays(departureDate, profile.healthCertDaysBefore + profile.postResultWaitDays),
+      desc: `Many destinations in this tier require roughly ${profile.postResultWaitDays} days between a passing result and eligible travel. Confirm your destination's exact figure.`
+    });
+    milestones.push({
+      name: "Antibody (FAVN) Test Blood Draw",
+      date: bloodDrawDate,
+      desc: `Blood draw at least ${profile.bloodDrawAfterVaccineDays} days after the rabies vaccine. Lab turnaround commonly runs ~${profile.labTurnaroundDays} days (can range 2-6 weeks).`
+    });
+    milestones.push({
+      name: hasRabies ? "Rabies Vaccine (already current)" : "Rabies Vaccination",
+      date: rabiesDate,
+      desc: hasRabies ? "Marked as already done — confirm it was given on or after your pet's microchip date." : "Must be administered on or after the microchip date — never before."
+    });
+    milestones.push({
+      name: hasMicrochip ? "Microchip (already implanted)" : "Microchip Implantation",
+      date: microchipDate,
+      desc: hasMicrochip ? "Marked as already done." : "Must happen before the rabies vaccine — this order cannot be reversed."
+    });
+  } else {
+    const rabiesDate = subtractDays(departureDate, profile.healthCertDaysBefore + profile.rabiesDaysBefore);
+    milestones.push({
+      name: hasRabies ? "Rabies Vaccine (already current)" : "Rabies Vaccination",
+      date: rabiesDate,
+      desc: hasRabies ? "Marked as already done — confirm it was given on or after your pet's microchip date." : `A first-time rabies vaccine commonly needs about ${profile.rabiesDaysBefore} days before travel to satisfy waiting-period requirements.`
+    });
+    milestones.push({
+      name: hasMicrochip ? "Microchip (already implanted)" : "Microchip Implantation",
+      date: rabiesDate,
+      desc: hasMicrochip ? "Marked as already done." : "Must happen before the rabies vaccine — this order cannot be reversed."
+    });
+  }
+
+  // Sort earliest first
+  milestones.sort((a, b) => a.date - b.date);
+
+  const tl = document.getElementById('ptp-timeline');
+  tl.innerHTML = milestones.map(m => {
+    const isPast = m.date < today;
+    return `
+      <div style="display: flex; gap: 14px; margin-bottom: 16px;">
+        <div style="flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; background: ${isPast ? '#c0392b' : 'var(--orange)'}; margin-top: 7px;"></div>
+        <div style="flex: 1; background: ${isPast ? '#FDEDEC' : 'var(--white)'}; border: 1.5px solid ${isPast ? '#c0392b' : 'var(--border)'}; border-radius: var(--radius); padding: 12px 16px;">
+          <div style="font-weight: 600; color: var(--brown); font-size: 0.92rem;">${m.name}</div>
+          <div style="font-size: 0.8rem; color: ${isPast ? '#c0392b' : 'var(--brown-light)'}; margin-bottom: 4px;">${fmtDatePtp(m.date)}${isPast ? ' — ⚠️ this date has already passed' : ''}</div>
+          <p style="color: var(--brown-mid); font-size: 0.85rem; line-height: 1.55;">${m.desc}</p>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('ptp-result').classList.add('show');
+  document.getElementById('ptp-pdf-btn').style.display = 'block';
+  document.getElementById('ptp-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
