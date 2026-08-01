@@ -1,0 +1,307 @@
+---
+layout: tool
+title: Dog Heat Safety Calculator — Is It Too Hot to Walk Your Dog?
+description: Enter the temperature, humidity, and your dog's individual risk factors to get a safety rating and recommended max walk time. Free and instant.
+permalink: /tools/dog-heat-safety-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Heat Safety Calculator",
+  "url": "https://petpawcalc.com/tools/dog-heat-safety-calculator.html",
+  "description": "Enter temperature, humidity, and a dog's individual risk factors (head shape, age, weight, health conditions, activity level) to get a heat safety rating and recommended maximum walk duration.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the 150 rule for dog heat safety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a quick heat-index rule some veterinarians recommend: add the temperature in Fahrenheit to the humidity percentage, and if the total is 150 or higher, avoid outdoor exercise with your dog. For example, 85°F combined with 70% humidity adds up to 155, which crosses that threshold even though 85°F alone might not seem extreme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does humidity matter as much as temperature?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dogs cool themselves primarily by panting, which relies on evaporation. High humidity means the air is already holding more moisture, so evaporation slows down and panting becomes far less effective at shedding heat. A humid 80°F day can pose more heat risk than a dry 85°F day for exactly this reason — never rely on temperature alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if the pavement is too hot for my dog's paws?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Press the back of your hand firmly onto the pavement and hold it there for 7 seconds. If it's too hot for you to comfortably keep your hand there for the full 7 seconds, it's too hot for your dog's paw pads too. Asphalt and dark pavement can run 40-60°F hotter than the air temperature on a sunny day, so this test matters even when the air temperature itself seems reasonable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the early signs of heatstroke in dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excessive panting that doesn't slow with rest, bright red or pale gums, thick sticky drool, a tongue that looks wide and flat with the end curling up (sometimes called \"spooning\"), and reluctance or refusal to keep walking are all early warning signs. Collapse, vomiting, or disorientation mean it's already an emergency — get to a vet immediately rather than waiting to see if it improves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do cooling vests actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evaporative cooling vests work well in dry heat, since they rely on water evaporating off the fabric to pull heat away from the body. In high humidity, though, that evaporation can't happen effectively, and the vest can end up as a damp, heat-trapping layer instead of a cooling one — so check the humidity, not just the temperature, before relying on one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some breeds need a lower heat threshold than others?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brachycephalic (flat-faced) breeds like Bulldogs, Pugs, and Boxers have airways that are less efficient at panting, which is a dog's main cooling mechanism — so they overheat at temperatures healthier-airway breeds tolerate fine. Senior dogs, overweight dogs, and dogs with heart or respiratory conditions also have reduced heat tolerance for their own separate reasons, which is why an individual risk profile matters more than a single breed-blind temperature chart."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🌡️ Dog Heat Safety Calculator</h1>
+    <p>Enter today's conditions and your dog's individual risk factors to get a safety rating and recommended max walk time — not just a generic temperature chart.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="dhs-temp">Temperature (°F)</label>
+      <input type="number" id="dhs-temp" min="-20" max="130" placeholder="e.g. 85" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="dhs-humidity">Humidity (%)</label>
+      <input type="number" id="dhs-humidity" min="0" max="100" placeholder="e.g. 60" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="dhs-headshape">Head Shape</label>
+      <select id="dhs-headshape">
+        <option value="normal">Normal (most breeds)</option>
+        <option value="brachy">Brachycephalic / flat-faced (Bulldog, Pug, Boxer, etc.)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dhs-age">Age Group</label>
+      <select id="dhs-age">
+        <option value="adult">Adult</option>
+        <option value="young">Puppy</option>
+        <option value="senior">Senior</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dhs-weight">Body Condition</label>
+      <select id="dhs-weight">
+        <option value="normal">Normal weight</option>
+        <option value="overweight">Overweight</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dhs-condition">Underlying Health Condition</label>
+      <select id="dhs-condition">
+        <option value="none">None known</option>
+        <option value="heart_resp">Heart or respiratory condition</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dhs-activity">Planned Activity Level</label>
+      <select id="dhs-activity">
+        <option value="light">Light — short potty break</option>
+        <option value="normal" selected>Normal — regular walk</option>
+        <option value="vigorous">Vigorous — run, hike, fetch</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateHeatSafety()">Check Heat Safety →</button>
+
+    <div class="result-box" id="dhs-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="dhs-date"></span>
+      </div>
+      <h3 id="dhs-result-title"></h3>
+      <div id="dhs-result-body" style="margin-top: 12px;"></div>
+      <button class="pdf-btn" id="dhs-pdf-btn" onclick="doPrintDhs('dhs-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool provides a general safety estimate, not a guarantee. Every dog is different, and conditions like direct sun, wind, and pavement type change real risk beyond what a calculator can capture. If you suspect heatstroke, treat it as an emergency and contact your vet immediately.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The 7-Second Pavement Test</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Air temperature alone doesn't tell you what your dog's paws are dealing with. Press the back of your hand firmly onto the pavement and hold it there for a full 7 seconds. If you have to pull away before the 7 seconds are up because it's too hot to bear, it's too hot for your dog's paw pads.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This matters even on days that don't feel extreme — dark asphalt and concrete can run <strong>40-60°F hotter than the surrounding air</strong> in direct sun. A "mild" 75°F afternoon can mean pavement well over 110°F. When in doubt, route your walk over grass or shaded dirt paths instead.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Early Heatstroke Signs to Watch For</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Catching this early matters — progression from early signs to a genuine emergency can happen in minutes. Watch for excessive panting that doesn't slow with rest, bright red or unusually pale gums, thick and sticky drool, a tongue that looks wide and flat with the tip curling upward, and reluctance to keep moving.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>If you see these signs: move to shade or air conditioning immediately, apply room-temperature water (not ice-cold) to the paw pads, groin, armpits, and neck, and get to a vet right away.</strong> Don't wait to see if your dog improves on their own before seeking care.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Never Leave a Dog in a Parked Car</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Even on a day that feels mild, a parked car heats up fast. On a 70°F day, interior temperatures can exceed 100°F in about 20 minutes — cracked windows barely slow this down. This is one of the most preventable causes of fatal heatstroke in dogs.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Do Cooling Vests Actually Help?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Evaporative cooling vests work by pulling heat away from the body as water evaporates off the fabric — but that only works in dry conditions. In high humidity, the water can't evaporate efficiently, and the vest can trap heat against your dog's body instead of removing it. Check the humidity before relying on one, not just the temperature.</p>
+
+    <div class="post-cta">
+      <p>Senior dog especially heat-sensitive? → <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Due for a wellness exam? → <a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is the 150 rule for dog heat safety?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It's a quick heat-index rule some veterinarians recommend: add the temperature in Fahrenheit to the humidity percentage, and if the total is 150 or higher, avoid outdoor exercise with your dog. For example, 85°F combined with 70% humidity adds up to 155, which crosses that threshold even though 85°F alone might not seem extreme.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does humidity matter as much as temperature?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dogs cool themselves primarily by panting, which relies on evaporation. High humidity means the air is already holding more moisture, so evaporation slows down and panting becomes far less effective at shedding heat. A humid 80°F day can pose more heat risk than a dry 85°F day for exactly this reason — never rely on temperature alone.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I know if the pavement is too hot for my dog's paws?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Press the back of your hand firmly onto the pavement and hold it there for 7 seconds. If it's too hot for you to comfortably keep your hand there for the full 7 seconds, it's too hot for your dog's paw pads too. Asphalt and dark pavement can run 40-60°F hotter than the air temperature on a sunny day, so this test matters even when the air temperature itself seems reasonable.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the early signs of heatstroke in dogs?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Excessive panting that doesn't slow with rest, bright red or pale gums, thick sticky drool, a tongue that looks wide and flat with the end curling up (sometimes called "spooning"), and reluctance or refusal to keep walking are all early warning signs. Collapse, vomiting, or disorientation mean it's already an emergency — get to a vet immediately rather than waiting to see if it improves.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do cooling vests actually work?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Evaporative cooling vests work well in dry heat, since they rely on water evaporating off the fabric to pull heat away from the body. In high humidity, though, that evaporation can't happen effectively, and the vest can end up as a damp, heat-trapping layer instead of a cooling one — so check the humidity, not just the temperature, before relying on one.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why do some breeds need a lower heat threshold than others?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Brachycephalic (flat-faced) breeds like Bulldogs, Pugs, and Boxers have airways that are less efficient at panting, which is a dog's main cooling mechanism — so they overheat at temperatures healthier-airway breeds tolerate fine. Senior dogs, overweight dogs, and dogs with heart or respiratory conditions also have reduced heat tolerance for their own separate reasons, which is why an individual risk profile matters more than a single breed-blind temperature chart.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, input, label { display: none !important; } }
+</style>
+<script>
+function doPrintDhs(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+// Risk-factor penalties added to the base temp+humidity heat index score.
+const DHS_PENALTIES = {
+  headshape: { normal: 0, brachy: 30 },
+  age: { adult: 0, young: 5, senior: 15 },
+  weight: { normal: 0, overweight: 15 },
+  condition: { none: 0, heart_resp: 20 },
+  activity: { light: 0, normal: 5, vigorous: 15 }
+};
+
+function calculateHeatSafety() {
+  const temp = parseFloat(document.getElementById('dhs-temp').value);
+  const humidity = parseFloat(document.getElementById('dhs-humidity').value);
+  const headshape = document.getElementById('dhs-headshape').value;
+  const age = document.getElementById('dhs-age').value;
+  const weight = document.getElementById('dhs-weight').value;
+  const condition = document.getElementById('dhs-condition').value;
+  const activity = document.getElementById('dhs-activity').value;
+
+  if (isNaN(temp) || isNaN(humidity)) {
+    alert('Please enter both temperature and humidity.');
+    return;
+  }
+
+  const baseIndex = temp + humidity;
+  const penalty = DHS_PENALTIES.headshape[headshape] + DHS_PENALTIES.age[age] +
+                   DHS_PENALTIES.weight[weight] + DHS_PENALTIES.condition[condition] +
+                   DHS_PENALTIES.activity[activity];
+  const adjustedIndex = baseIndex + penalty;
+
+  let rating, color, maxTime, advice;
+  if (adjustedIndex < 100) {
+    rating = "Safe"; color = "#2f7d4f";
+    maxTime = "Normal walk duration is fine";
+    advice = "Conditions look reasonable for your dog's profile. Still bring water on longer outings and check the pavement if it's sunny.";
+  } else if (adjustedIndex < 150) {
+    rating = "Caution"; color = "#b58a00";
+    maxTime = "Limit to about 20-30 minutes";
+    advice = "Stick to shaded routes, avoid the midday sun, bring water, and watch for early signs of overheating. Morning or evening walks are safer than midday right now.";
+  } else if (adjustedIndex < 200) {
+    rating = "Danger"; color = "var(--orange)";
+    maxTime = "Limit to brief 5-10 minute potty breaks only";
+    advice = "Skip exercise and recreational walks. Keep any necessary outdoor time short, shaded, and on cool surfaces. Prioritize indoor activities instead.";
+  } else {
+    rating = "Extreme Danger"; color = "#c0392b";
+    maxTime = "Avoid outdoor activity entirely";
+    advice = "Even short exposure carries real heatstroke risk for a dog with this risk profile. Keep your dog indoors with access to cool air, and stick to swift, shaded potty breaks only.";
+  }
+
+  document.getElementById('dhs-result-title').innerHTML = `<span style="color:${color};">${rating}</span>`;
+  document.getElementById('dhs-result-body').innerHTML = `
+    <div style="padding: 12px 14px; background: var(--cream-dark); border-radius: var(--radius); margin-bottom: 12px;">
+      <div style="font-size: 0.85rem; color: var(--brown-mid); margin-bottom: 4px;">Heat index (temp + humidity): <strong>${baseIndex}</strong> · Adjusted for this dog's risk factors: <strong>${adjustedIndex}</strong></div>
+      <div style="font-weight: 600; color: var(--brown);">${maxTime}</div>
+    </div>
+    <p style="color: var(--brown-mid); font-size: 0.9rem; line-height: 1.6;">${advice}</p>
+  `;
+
+  document.getElementById('dhs-result').classList.add('show');
+  document.getElementById('dhs-pdf-btn').style.display = 'block';
+  document.getElementById('dhs-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
