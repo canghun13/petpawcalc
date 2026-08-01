@@ -44,7 +44,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Spay/Neuter Cost Calculator](https://petpawcalc.com/tools/spay-neuter-cost-calculator.html): Select dog or cat, spay or neuter, clinic type (private vs. low-cost), and optional add-ons (bloodwork, microchip, e-collar) to get an instant total cost estimate. Accounts for dog size/weight as a cost multiplier.
 
-- [Dental Cleaning Cost Calculator](https://petpawcalc.com/tools/dental-cleaning-cost-calculator.html): Select dog or cat and estimated dental severity (mild/moderate/severe, with expected number of extractions) plus optional pre-anesthetic bloodwork, to get a total cost estimate covering base cleaning, bloodwork, and per-tooth extraction costs.
+- [Dental Cleaning Cost Calculator](https://petpawcalc.com/tools/dental-cleaning-cost-calculator.html): Select dog or cat and estimated dental severity (mild/moderate/severe, with expected number of extractions) plus optional pre-anesthetic bloodwork, to get a total cost estimate covering base cleaning, bloodwork, and per-tooth extraction costs. Also includes a "Home Care Between Cleanings" section covering brushing frequency guidance and the VOHC (Veterinary Oral Health Council) seal for evaluating dental chews/diets/water additives, plus existing anesthesia-free-cleaning-limitations content (AVMA/AAHA/AVDC oppose it as cosmetic-only, doesn't reach below the gumline).
 
 - [Pet Grooming Cost Calculator](https://petpawcalc.com/tools/pet-grooming-cost-calculator.html): Select dog or cat, size (for dogs), coat type (short/medium/long/curly), and professional grooming frequency to get an annual grooming cost estimate covering both professional visits and home maintenance supplies.
 
