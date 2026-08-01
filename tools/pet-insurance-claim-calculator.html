@@ -1,0 +1,386 @@
+---
+layout: tool
+title: Pet Insurance Claim Calculator — Annual vs. Per-Incident Deductible
+description: Enter your claim amount, deductible, and reimbursement rate to see your expected payout — plus a side-by-side comparison of annual vs. per-incident deductibles for a recurring condition. Free and instant.
+permalink: /tools/pet-insurance-claim-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pet Insurance Claim Calculator",
+  "url": "https://petpawcalc.com/tools/pet-insurance-claim-calculator.html",
+  "description": "Enter a claim amount, deductible, deductible type, and reimbursement rate to calculate expected pet insurance reimbursement, out-of-pocket cost, and remaining annual limit, plus a multi-year comparison of annual vs. per-incident deductibles.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between an annual deductible and a per-incident deductible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An annual deductible is paid once per policy year and applies to all claims that year, no matter how many different conditions come up. A per-incident (often called per-condition or lifetime per-condition) deductible is paid once for a specific diagnosed condition, and typically never again for that same condition for the life of the policy — but a completely different, unrelated condition would trigger its own separate deductible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which deductible type is better for a chronic condition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a single ongoing chronic condition, a per-incident (lifetime per-condition) deductible is usually cheaper over time, since you pay that deductible once and then only pay the co-pay percentage on treatment for that condition every year after. With an annual deductible, you pay the full deductible again every time the policy renews, even for the same ongoing condition — which adds up significantly over several years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are per-incident deductibles common in pet insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're less common than they used to be — most insurers have standardized on annual deductibles, and only a handful (Trupanion is the best-known example) still offer a true per-condition lifetime deductible structure. If a per-incident deductible matters to you, confirm directly with the insurer how their specific plan defines and applies it, since terminology varies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is an annual deductible ever the better choice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — if your pet develops several unrelated conditions over time rather than one ongoing chronic issue, an annual deductible can be simpler and cheaper, since a single deductible payment covers everything that policy year regardless of how many different problems come up. A per-incident structure means each new, unrelated condition triggers its own fresh deductible, which can add up quickly with an unlucky year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my annual limit reset every policy year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, typically. Most pet insurance annual limits (sometimes called payout caps) reset at each policy renewal, similar to how a deductible resets, though limit structures vary by insurer — some plans offer no annual limit at all. Once you've reached your annual limit for the year, further claims that year usually aren't reimbursed, so it's worth tracking how much of your limit remains as the year goes on."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🧾 Pet Insurance Claim Calculator</h1>
+    <p>Enter your claim details to see your expected reimbursement — then see how an annual deductible and a per-incident deductible compare over several years for a recurring condition.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="pic-claim">Claim Amount ($)</label>
+      <input type="number" id="pic-claim" min="0" placeholder="e.g. 1200" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="pic-deductible">Deductible ($)</label>
+      <select id="pic-deductible">
+        <option value="100">$100</option>
+        <option value="250" selected>$250</option>
+        <option value="500">$500</option>
+        <option value="750">$750</option>
+        <option value="1000">$1,000</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pic-deductible-type">Deductible Type</label>
+      <select id="pic-deductible-type">
+        <option value="annual">Annual (resets each policy year)</option>
+        <option value="incident">Per-Incident / Per-Condition (paid once per condition, for its lifetime)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pic-already-met">Deductible Already Met This Year/Condition ($)</label>
+      <input type="number" id="pic-already-met" min="0" value="0" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="pic-reimbursement">Reimbursement Rate</label>
+      <select id="pic-reimbursement">
+        <option value="0.7">70%</option>
+        <option value="0.8" selected>80%</option>
+        <option value="0.9">90%</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pic-annual-limit">Remaining Annual Limit This Year ($)</label>
+      <select id="pic-annual-limit">
+        <option value="5000">$5,000</option>
+        <option value="10000" selected>$10,000</option>
+        <option value="15000">$15,000</option>
+        <option value="unlimited">Unlimited</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateClaim()">Calculate My Reimbursement →</button>
+
+    <div class="result-box" id="pic-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="pic-date"></span>
+      </div>
+      <h3>Your Estimated Reimbursement</h3>
+      <div id="pic-result-breakdown" style="margin-top: 14px; font-size: 0.9rem;"></div>
+      <button class="pdf-btn" id="pic-pdf-btn" onclick="doPrintPic('pic-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This is a general estimate, not a quote from any insurer. Actual reimbursement depends on your specific policy's terms, exclusions, and how your insurer defines and applies deductibles — always confirm details with your provider.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Annual vs. Per-Incident: A Recurring Condition Over 5 Years</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is where the two deductible types diverge the most. Using the claim amount, deductible, and reimbursement rate above, here's what a pet with the <strong>same condition recurring every year for 5 years</strong> would cost you out of pocket under each structure.</p>
+    <button class="btn-calculate" onclick="calculateChronicComparison()" style="margin-bottom: 20px;">Show the 5-Year Comparison →</button>
+    <div id="pic-chronic-result"></div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 32px;">Why Per-Incident Often Wins for a Single Chronic Condition</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">With an annual deductible, you pay the full deductible again every time your policy renews — even if it's the exact same ongoing condition, like diabetes or a thyroid disorder, being treated year after year. With a true per-incident (lifetime per-condition) deductible, you pay that deductible <strong>once</strong> for the diagnosed condition, and every claim related to it afterward — for the life of the policy — only costs you the co-pay percentage, with no deductible standing in the way again.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The catch: this only helps if your pet's issues stay limited to that one condition. A completely new, unrelated diagnosis triggers a brand-new deductible under a per-incident structure — so an unlucky pet with several different problems over the years can end up paying more deductibles overall than they would have under a single annual deductible that covers everything each policy year regardless of cause.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Which Structure Fits Which Situation</h2>
+    <div class="table-wrapper" style="margin-bottom: 24px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Situation</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Likely cheaper structure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">One ongoing chronic condition (e.g., diabetes, hypothyroidism)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Per-incident / per-condition</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Generally healthy pet, occasional unrelated accidents/illnesses</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Annual</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Multiple different chronic conditions over time</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Annual (each new condition resets a per-incident deductible)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Unsure / can't predict your pet's future health</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Annual — the more predictable, widely available default</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Most insurers today only offer annual deductibles, so this comparison mainly matters if you're specifically evaluating an insurer (like Trupanion) that offers a true per-condition lifetime deductible as an alternative.</p>
+
+    <div class="post-cta">
+      <p>Not sure what premiums would cost first? → <a href="/tools/pet-insurance-cost-estimator.html">Pet Insurance Cost Estimator</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Already have a policy? → <a href="/tools/pet-insurance-waiting-period-tracker.html">See exactly when each type of coverage kicks in</a></p>
+    </div>
+    <div class="post-cta" style="margin-top: 16px;">
+      <p>Want the full first-year cost picture? → <a href="/tools/annual-pet-cost-calculator.html">Annual Pet Cost Calculator</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What's the difference between an annual deductible and a per-incident deductible?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">An annual deductible is paid once per policy year and applies to all claims that year, no matter how many different conditions come up. A per-incident (often called per-condition or lifetime per-condition) deductible is paid once for a specific diagnosed condition, and typically never again for that same condition for the life of the policy — but a completely different, unrelated condition would trigger its own separate deductible.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Which deductible type is better for a chronic condition?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">For a single ongoing chronic condition, a per-incident (lifetime per-condition) deductible is usually cheaper over time, since you pay that deductible once and then only pay the co-pay percentage on treatment for that condition every year after. With an annual deductible, you pay the full deductible again every time the policy renews, even for the same ongoing condition — which adds up significantly over several years.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Are per-incident deductibles common in pet insurance?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">They're less common than they used to be — most insurers have standardized on annual deductibles, and only a handful (Trupanion is the best-known example) still offer a true per-condition lifetime deductible structure. If a per-incident deductible matters to you, confirm directly with the insurer how their specific plan defines and applies it, since terminology varies.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is an annual deductible ever the better choice?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — if your pet develops several unrelated conditions over time rather than one ongoing chronic issue, an annual deductible can be simpler and cheaper, since a single deductible payment covers everything that policy year regardless of how many different problems come up. A per-incident structure means each new, unrelated condition triggers its own fresh deductible, which can add up quickly with an unlucky year.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does my annual limit reset every policy year?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Yes, typically. Most pet insurance annual limits (sometimes called payout caps) reset at each policy renewal, similar to how a deductible resets, though limit structures vary by insurer — some plans offer no annual limit at all. Once you've reached your annual limit for the year, further claims that year usually aren't reimbursed, so it's worth tracking how much of your limit remains as the year goes on.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, input, label { display: none !important; } }
+</style>
+<script>
+function doPrintPic(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+  window.print();
+}
+
+function calculateClaim() {
+  const claim = parseFloat(document.getElementById('pic-claim').value);
+  const deductible = parseFloat(document.getElementById('pic-deductible').value);
+  const alreadyMet = parseFloat(document.getElementById('pic-already-met').value) || 0;
+  const rate = parseFloat(document.getElementById('pic-reimbursement').value);
+  const limitRaw = document.getElementById('pic-annual-limit').value;
+  const limit = limitRaw === 'unlimited' ? Infinity : parseFloat(limitRaw);
+
+  if (!claim || claim <= 0) {
+    alert('Please enter a claim amount.');
+    return;
+  }
+
+  const remainingDeductible = Math.max(0, deductible - alreadyMet);
+  let reimbursement, outOfPocket, deductibleAppliedThisClaim;
+
+  if (claim <= remainingDeductible) {
+    reimbursement = 0;
+    outOfPocket = claim;
+    deductibleAppliedThisClaim = claim;
+  } else {
+    const afterDeductible = claim - remainingDeductible;
+    reimbursement = afterDeductible * rate;
+    reimbursement = Math.min(reimbursement, limit);
+    outOfPocket = claim - reimbursement;
+    deductibleAppliedThisClaim = remainingDeductible;
+  }
+
+  const remainingLimit = limit === Infinity ? Infinity : Math.max(0, limit - reimbursement);
+  const remainingDeductibleAfter = Math.max(0, remainingDeductible - deductibleAppliedThisClaim);
+
+  const fmt = n => n === Infinity ? 'Unlimited' : ('$' + n.toLocaleString(undefined, {maximumFractionDigits: 2}));
+
+  const rows = [
+    { label: 'Estimated Reimbursement', value: fmt(reimbursement) },
+    { label: 'Your Out-of-Pocket Cost', value: fmt(outOfPocket) },
+    { label: 'Remaining Deductible (this year/condition)', value: fmt(remainingDeductibleAfter) },
+    { label: 'Remaining Annual Limit After This Claim', value: fmt(remainingLimit) }
+  ];
+
+  let html = '';
+  rows.forEach(r => {
+    html += `<div style="display:flex; justify-content:space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
+      <div><strong>${r.label}</strong></div>
+      <div style="text-align:right; white-space:nowrap; margin-left: 12px;">${r.value}</div>
+    </div>`;
+  });
+
+  document.getElementById('pic-result-breakdown').innerHTML = html;
+  document.getElementById('pic-result').classList.add('show');
+  document.getElementById('pic-pdf-btn').style.display = 'block';
+  document.getElementById('pic-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function calculateChronicComparison() {
+  const claim = parseFloat(document.getElementById('pic-claim').value);
+  const deductible = parseFloat(document.getElementById('pic-deductible').value);
+  const rate = parseFloat(document.getElementById('pic-reimbursement').value);
+
+  if (!claim || claim <= 0) {
+    alert('Please enter a claim amount above first.');
+    return;
+  }
+
+  const years = 5;
+  let annualTotalOOP = 0;
+  let incidentTotalOOP = 0;
+  let rows = '';
+
+  for (let y = 1; y <= years; y++) {
+    // Annual deductible: full deductible paid every year (if claim covers it)
+    const annualDedApplied = Math.min(deductible, claim);
+    const annualAfterDed = Math.max(0, claim - deductible);
+    const annualReimbursement = annualAfterDed * rate;
+    const annualOOP = claim - annualReimbursement;
+    annualTotalOOP += annualOOP;
+
+    // Per-incident: deductible paid only in year 1, then just the co-pay every year after
+    let incidentOOP;
+    if (y === 1) {
+      const incidentAfterDed = Math.max(0, claim - deductible);
+      const incidentReimbursement = incidentAfterDed * rate;
+      incidentOOP = claim - incidentReimbursement;
+    } else {
+      const incidentReimbursement = claim * rate;
+      incidentOOP = claim - incidentReimbursement;
+    }
+    incidentTotalOOP += incidentOOP;
+
+    rows += `<tr>
+      <td style="padding: 8px 12px; border: 1px solid var(--border);">Year ${y}</td>
+      <td style="padding: 8px 12px; border: 1px solid var(--border);">$${annualOOP.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+      <td style="padding: 8px 12px; border: 1px solid var(--border);">$${incidentOOP.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+    </tr>`;
+  }
+
+  const savings = annualTotalOOP - incidentTotalOOP;
+  const savingsText = savings > 0
+    ? `Per-incident saves an estimated <strong>$${savings.toLocaleString(undefined,{maximumFractionDigits:0})}</strong> over ${years} years for this recurring claim amount.`
+    : `In this scenario the two structures land close to the same total, or annual comes out slightly ahead — the gap grows with a higher deductible or more years.`;
+
+  document.getElementById('pic-chronic-result').innerHTML = `
+    <div class="table-wrapper" style="margin-top: 12px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 8px 12px; border: 1px solid var(--border);">Year</th>
+          <th style="text-align:left; padding: 8px 12px; border: 1px solid var(--border);">Annual Deductible: Out-of-Pocket</th>
+          <th style="text-align:left; padding: 8px 12px; border: 1px solid var(--border);">Per-Incident: Out-of-Pocket</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+      <tfoot>
+        <tr style="font-weight: 600; background: var(--cream-dark);">
+          <td style="padding: 8px 12px; border: 1px solid var(--border);">5-Year Total</td>
+          <td style="padding: 8px 12px; border: 1px solid var(--border);">$${annualTotalOOP.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+          <td style="padding: 8px 12px; border: 1px solid var(--border);">$${incidentTotalOOP.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+        </tr>
+      </tfoot>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); font-size: 0.88rem; line-height: 1.6; margin-top: 10px;">${savingsText} This assumes the exact same condition and claim amount recurring every year — a genuinely unrelated new condition would reset a per-incident deductible.</p>
+  `;
+}
+</script>
