@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-02 (세션 AA)
+최종 갱신: 2026-08-07 (세션 AB — 분석 전용)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1299,3 +1299,144 @@ GSC 쿼리에는 아직 안 잡히지만(=진짜 블라인드 스팟), 웹 검�
 - **신규 클러스터 후보가 전부 소진됐으므로, 다음에 신규 콘텐츠가 필요하면 다시 처음부터 웹서치 기반 후보 발굴부터 시작해야 함.**
 - **기각 후보 갱신**: "다묘/다견 가정 자원 배치 계산기"(기존 kitten-litter-training-timeline에 핵심 기능 이미 존재), "반려동물 투약 스케줄 트래커"(제품 포맷 자체가 정적 웹사이트와 안 맞음, 전용 앱 7곳+)가 기각 목록에 새로 추가됨 — 다음 세션은 이 2개를 재조사하지 말 것.
 - Coverage 21개 미색인 이슈는 이번 세션에도 다루지 않음 — 계속 열린 상태.
+
+---
+
+### 세션 AB — GSC/GA 8/7 데이터 분석 (분석 전용 세션, 코드 작업 없음) + 🔴 수익화 정책 전환 기록 (8/7, 주간 작업)
+
+**이 세션은 Opus가 분석만 하고, 실제 콘텐츠 작업은 Sonnet이 별도 프롬프트로 수행하도록 사용자가 지시함.** 따라서 이 항목은 "무엇을 했다"가 아니라 **"다음 작업자가 무엇을 어떤 근거로 해야 하는가"**를 남기는 기록임.
+
+---
+
+#### 🔴 0. 수익화 정책 전환 (사용자 명시 지시, 앞으로 모든 세션에 계속 적용할 것)
+
+**우리는 더 이상 Google AdSense에 의존하지 않는다.** 사용자가 이번 세션에 명확히 지시한 내용을 그대로 옮김:
+
+- **AdSense는 여러 수익화 수단 중 하나일 뿐이다.** 제휴(affiliate) 광고든 다른 광고 네트워크든, 수익이 되는 것이면 전부 검토·도입 대상이다.
+- **AdSense 게재 신청이 탈락했을 경우, 재심사를 넣을지 말지는 Opus가 판단한다.** 자동으로 재신청하는 게 정답이 아니며, 그 시점의 트래픽·콘텐츠 상태를 보고 "지금 재심사가 통과 가능성이 있는가 / 그 시간에 다른 걸 하는 게 나은가"를 판단해 사용자에게 권고할 것. 다른 제휴사·광고사에 탈락한 경우도 동일하게 판단할 것.
+- **AdSense보다 다른 제휴/광고가 이득이라고 판단되면, 그 방향을 사용자에게 적극적으로 추천할 것.** 사용자는 "AdSense 승인"을 목표로 삼고 있지 않다. 목표는 수익 그 자체다.
+- 즉, 앞으로 "AdSense 수익화 관점에서 우선순위 판단"이라고 쓰여 있던 기존 세션들의 표현은 **"수익화(수단 무관) 관점에서 우선순위 판단"**으로 읽을 것.
+
+**현재 수익화 상태(8/7 기준 실측)**:
+- `_layouts/`(default/tool/checklist/post) 4개 전부에 AdSense 검증 스크립트(`ca-pub-5592663499707350`)만 삽입돼 있고, **실제 광고 유닛은 하나도 없음.** 즉 현재 사이트 수익은 사실상 $0.
+- 제휴 링크도 0건(전체 저장소 스캔 결과 Amazon/Chewy/Impact/ShareASale 등 제휴 코드 전무). 본문에 언급된 Chewy Pharmacy·1-800-PetMeds 등은 전부 비제휴 일반 언급.
+- 즉 **수익화는 아직 "시작조차 안 한 상태"**라는 게 정확한 진단.
+
+**Opus의 수익화 방향 판단 (근거는 아래 1번 데이터 참고)**:
+1. **디스플레이 광고(AdSense 포함)는 지금 단계에서 의미 있는 수익원이 될 수 없다.** 3개월 누적 클릭 9건, GA 월간 활성 사용자 100명 수준. 이 트래픽에 디스플레이 광고를 붙여도 월 수익은 사실상 0원. AdSense 승인 여부에 리소스를 쓰는 것 자체가 지금은 우선순위가 낮다.
+2. **이 사이트에 맞는 1순위 수익 모델은 펫보험 제휴(affiliate)다.** 근거: (a) 펫 니치에서 EPC가 가장 높은 카테고리이며 CPL(리드당 과금) 구조가 많아 구매 전환까지 안 가도 수익이 발생함 — 웹서치 확인 결과 Lemonade 약 $25/리드, The Swiftest(비교 플랫폼) 약 $125/전환, Embrace 약 $5/리드 수준으로 편차가 크므로 **반드시 여러 프로그램을 비교해서 고를 것**(Embrace처럼 낮은 곳도 있음). (b) 우리 사이트는 이미 보험 전용 도구를 **3개** 갖고 있음(`pet-insurance-cost-estimator`, `pet-insurance-waiting-period-tracker`, `pet-insurance-claim-calculator`) — 계산기 결과 화면은 검색 의도가 가장 상업적인 지점이라 제휴 CTA를 붙이기에 최적. (c) 경쟁사들도 이미 이 패턴을 쓰고 있음(예: 조사 중 확인된 ourpetgroomer.com은 안락사 비용 글 안에 보험 견적 제휴 CTA를 삽입 중).
+3. **2순위는 비용 계산기 클러스터에 붙는 커머스 제휴** — `flea-tick-prevention-cost-calculator`(Chewy/PetMeds/Amazon), `pet-boarding-cost-calculator`(Rover/TrustedHousesitters), `raw-feeding-calculator`, `new-puppy/kitten-checklist`(Chewy·Amazon 스타터 리스트). 단가는 보험보다 낮지만 우리 콘텐츠와 자연스럽게 붙음.
+4. **디스플레이 광고를 굳이 지금 넣는다면 AdSense보다 Ezoic 계열이 합리적** — 웹서치 확인: Ezoic은 트래픽 최소 요건이 사실상 없음(권장 월 1,000방문), Journey by Mediavine은 월 10,000세션, Monumetric 월 10,000PV, Mediavine 본판 50,000세션, Raptive 100,000PV. **다만 Mediavine/Raptive/Monumetric(체험 후)은 독점(exclusivity) 계약이라 나중에 갈아탈 때 제약이 생김** — 지금 서두를 이유가 전혀 없고, 트래픽이 월 10,000세션대에 올라온 뒤 비교하는 게 맞음.
+5. **결론적으로 사용자에게 권고할 것**: ① AdSense 재심사에 매달리지 말 것(승인돼도 지금 트래픽에선 수익 무의미), ② 대신 **펫보험 제휴 프로그램 2~3곳에 지금 신청**할 것(Impact/ShareASale/CJ 경유가 많음, 승인에 시간이 걸리므로 트래픽이 오기 전에 미리 신청해두는 게 맞음), ③ Amazon Associates도 병행 신청(180일 내 매출 발생 요건이 있으니 트래픽 상승 시점에 맞춰 신청 타이밍 조율), ④ 디스플레이 광고 네트워크 비교는 월 10,000세션 도달 후로 미룰 것.
+
+**제휴 도입 시 기술적 준비사항(다음 작업 세션이 실행할 것)**:
+- `/affiliate-disclosure.html` 신규 페이지 필요(FTC 요건). 기존 `disclaimer.html`/`privacy-policy.html`과 동일 패턴으로 제작하고 footer에 링크.
+- 제휴 링크는 반드시 `rel="sponsored nofollow" target="_blank"` 적용.
+- **재사용 가능한 CTA include를 만들 것**(`_includes/affiliate-cta.html` 등) — 계산기 페이지마다 하드코딩하면 프로그램 교체 시 30개 파일을 다 고쳐야 함.
+- **프로그램 승인 전에 placeholder 링크를 라이브로 올리지 말 것** — 깨진 링크/빈 CTA는 그 자체로 품질 신호를 깎음. 인프라만 만들어두고 링크는 승인 후 채울 것.
+- 제휴 CTA는 `no-print` 클래스를 붙일 것(PDF 저장 기능이 사이트 핵심 UX라 인쇄물에 광고가 들어가면 안 됨).
+
+---
+
+#### 1. GSC 데이터 분석 (3개월 누적, ~8/4까지) — 🎉 5세션째 정체가 드디어 깨짐
+
+**(1) 색인 정체가 해소됨 — 세션 J(7/15)~AA(8/2) 내내 21개로 못 박혀 있던 미색인 수치가 처음으로 움직임**
+- 발견됨-미색인 **15 → 9**, 크롤링됨-미색인 **6 → 8**, 합계 **21 → 17**.
+- 두 항목 모두 유효성 검사 상태가 "시작됨"으로 바뀜(이전엔 "시작되지 않음") — Google이 실제로 재평가 중이라는 신호.
+- Coverage 차트의 **색인 생성됨이 32 → 58로 급증**(7/11자 데이터 기준), 색인 안 됨은 25 → 22.
+- **결론: 여러 세션 동안 권고해온 "사용자가 GSC UI에서 개별 URL 재크롤 요청"은 이제 급하지 않다.** 자연 회복이 확인됨. 다음 데이터에서 17개가 더 줄어드는지만 관찰하면 됨.
+
+**(2) 노출 추이가 명확한 변곡점을 지남 — 이게 이번 데이터의 가장 중요한 발견**
+- 최근 14일 노출 **1,864** vs 직전 14일 **911** → **2.05배**.
+- 일별 노출: 7/16(49) → 7/24(70) → 7/31(197) → 8/1(205) → 8/4(146). 7월 중순 50~80/일에서 8월 초 145~205/일로 올라섬.
+- **평균 게재 순위가 66.9위(7/11) → 24.4위(8/4)로 급격히 개선.** 이건 개별 페이지 몇 개가 아니라 사이트 전체 권위가 올라가고 있다는 신호.
+- 3개월 누적: 노출 3,180 / 클릭 9 / 평균 43.75위. 클릭은 여전히 적지만 세션 P 때(누적 4건)보다는 증가.
+- **해석: 세션 O~AA에 걸쳐 만든 신규 페이지 15개 + 색인 진행이 동시에 효과를 내기 시작한 것으로 보임. "페이지 수를 늘려야 한다"는 사용자의 세션 O 판단이 데이터로 검증된 셈.**
+
+**(3) 페이지 커버리지: 사이트 93개 URL 중 66개가 노출 있음(세션 P 때 74개 중 41개 → 크게 개선). 노출 0인 27개는:**
+- 세션 Y~AA(8/1~8/2) 신규 4개는 만든 지 5일이라 당연(`dog-car-anxiety-desensitization-planner`, `dog-heat-safety-calculator`, `post-surgery-recovery-checklist`, `new-baby-pet-prep-timeline`, `dog-introduction-timeline`).
+- **장기 정체 tool 5개는 여전히 노출 0**: `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `pet-grooming-cost-calculator`, `spay-neuter-cost-calculator`, `flea-tick-prevention-cost-calculator`, `raw-feeding-calculator`, `titer-test-vs-revaccination-calculator`. **특히 `cat-pregnancy-calculator`는 dog 버전이 이번에 171노출로 살아난 것과 대비되는 비대칭이 계속 유지 중** — dog 버전과 동일한 보강을 받았는데도 결과가 갈림. 다음 데이터에서도 0이면 이 URL 하나만 사용자에게 재크롤 요청 권유.
+- 체크리스트 5개(`new-puppy`, `new-kitten`, `post-surgery-recovery`, `puppy-socialization`, `senior-pet-care`)가 전부 노출 0 — **`/checklists/` 네임스페이스 전체가 색인이 느린 패턴이 있는지 다음 데이터에서 확인할 것.** 반면 `pet-emergency-kit-checklist`, `new-rabbit-checklist`, `new-guinea-pig-checklist`, `moving-with-pets-checklist`는 노출이 잡힘(즉 네임스페이스 문제는 아니고 개별 URL 문제일 가능성이 높음).
+- 오래된 blog 미노출 11개는 기존 가설(세션 B 날짜조작 수정 이전 작성분)과 계속 일치.
+
+**(4) 신규 이슈 1건: Coverage에 "찾을 수 없음(404)" 1개가 처음 등장**
+- 저장소 전체 내부 링크 스캔 결과 깨진 링크 0건 — 즉 사이트 내부에서 링크를 거는 404는 없음.
+- **세션 O에서 삭제한 `/blog/titer-testing-for-dogs-and-cats/`가 원인으로 거의 확실**(Google이 예전에 크롤한 URL을 기억하고 재방문한 것). **조치 불필요** — 의도적으로 삭제한 페이지이고, 404를 반환하는 게 정상적인 처리임. 다음 세션에서 이 항목을 보고 불필요하게 파지 말 것.
+
+---
+
+#### 2. 🔑 최우선 보강 대상 — "정확 문구 미매칭" 클러스터 (세션 C 패턴, 이번이 역대 최대 규모)
+
+GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklists + index + llms.txt)와 **정확 문구(exact contiguous phrase) 기준으로 자동 대조**한 결과, **노출 3회 이상인데 사이트 어디에도 그 문구가 없는 쿼리가 90개** 나옴. 비영어권/경쟁사 브랜드명을 빼고 실제 대응 가능한 것만 클러스터로 묶으면 아래와 같음. **순서는 수익화 ROI 기준으로 정렬했으며, 위에서부터 처리할 것.**
+
+**클러스터 A — 저체중(underweight): 사이트 전체에서 1페이지에 가장 가까움. 최우선.**
+- 관련 쿼리 합계 약 105노출, 순위 **25~42위**(사이트 평균 43.75위보다 훨씬 좋음).
+- 대상 페이지: `_posts/2026-07-22-how-to-tell-if-cat-is-underweight.md`(80노출·34.1위), `_posts/2026-07-22-how-to-tell-if-dog-is-underweight.md`(75노출·40.5위).
+- **없는 정확 문구(cat)**: "is my cat underweight"(23노출·27.9위), "how to know if my cat is underweight"(6·40.2), "how to tell if cat is underweight"(5·41.6), "how do i know if my cat is underweight"(4·34.5), "how to tell if a cat is underweight"(3·25.7).
+- **없는 정확 문구(dog)**: "is my dog underweight"(16·35.5), "dog underweight"(3·38.3), "underweight dogs"(3·40.0).
+- 참고: "underweight dog"(29노출)·"underweight cat"(11노출)은 이미 매칭됨 — 즉 **의문형("is my ~") 표현만 통째로 빠져 있는 상태**. FAQ 질문을 의문형 그대로 추가하는 게 정확히 맞는 처방.
+
+**클러스터 B — 개 임신/출산예정일 계산기: 페이지가 이번에 새로 색인됐고(171노출·49.5위) 미매칭 쿼리가 가장 많음.**
+- 대상: `tools/dog-pregnancy-calculator.html`. 페이지에 "gestation"·"due date"라는 낱말은 있으나 **쿼리 문구 그대로(계산기 단어 포함)는 하나도 없음**.
+- 없는 정확 문구(합계 약 90노출): "dog due date calculator"(7), "dog gestation calculator"(6), "dog pregnancy estimator"(6), "dog calendar for pregnancy"(6), "calculator dog pregnancy"(5), "canine gestation period calculator"(4), "canine gestation calculator"(4), "dog gestation period calculator"(4), "dog due date estimator"(4), "gestation of a dog calculator"(4), "dog breeding calculator"(4), "puppy due date calculator"(3), "doggie due date calculator"(3), "canine pregnancy calculator"(3), "dog ovulation calculator"(3).
+- **또한 "dog pregnancy diagnosis"(8)·"dog pregnancy confirmation"(7)·"dog pregnancy check"(7)도 여전히 미매칭** — 세션 M에서 이 쿼리들을 노리고 FAQ를 추가했지만 실제 작성된 문구가 "How can I confirm or diagnose my dog's pregnancy?"였음. **교훈: 쿼리 대응 FAQ를 쓸 때 의미만 맞추지 말고 쿼리 문자열 그 자체를 문장 안에 그대로 박아 넣을 것.** (예: "...is often called a dog pregnancy diagnosis or dog pregnancy confirmation.")
+- `cat-pregnancy-calculator`에도 동일 패턴(canine→feline)으로 미리 적용해둘 것(현재 미색인이지만 색인되면 바로 대응됨).
+
+**클러스터 C — 고양이 성묘 크기 예측: 검색 의도와 우리 페이지 배치가 어긋나 있음(구조적 문제).**
+- "how big will my cat get calculator"(10노출·86위), "cat size calculator"(3·71.7), "cat bmi calculator"(5·72.6), "cat calculator"(23·74.2), "maine coon weight predictor"(1노출·17위 — **사이트 9클릭 중 1건이 나온 유일한 쿼리**).
+- **`tools/cat-weight-calculator.html`에 이미 "Estimate my kitten's adult size" 모드가 실제로 구현돼 있는데, title/description/H1 어디에도 "how big will my cat get"·"size calculator"·"predictor" 문구가 없음.** 그래서 계산기 의도 쿼리인데 계산기(39.4위)가 아니라 블로그 차트 글(`kitten-weight-chart-by-breed-size`, 14.4위)이 대신 잡히고 있음.
+- 처방: **cat-weight-calculator의 title/description/H1 서브카피/FAQ에 위 문구들을 반영**해 계산기 쪽으로 의도를 돌릴 것. 블로그 글은 그대로 두되 계산기로 가는 링크 문구를 위 표현으로 바꿀 것.
+
+**클러스터 D — 안락사 비용: 사이트 2번째 고노출 페이지인데 순위가 최악(250노출·82.6위·0클릭).**
+- 미매칭 쿼리: "cat euthanasia cost"(22·72.8), "cost of euthanizing a cat"(18·88), "how much does it cost to put a dog to sleep"(12·93.2), "how much does it cost to put a cat down"(6·89.8), "vet euthanasia cost"(4), "euthanasia cost dog"(3). ("euthanasia cost" 21노출은 매칭됨)
+- 대상 `_posts/2026-07-10-pet-euthanasia-cost-and-what-to-expect.md`는 **본문 88줄로 매우 얇고, 종(개/고양이) 구분 비용표가 아예 없음.** 반면 쿼리는 명확히 개/고양이가 갈림.
+- 웹서치로 확인한 경쟁 지형: MetLife Pet, Pawlicy Advisor, CodaPet, funeral.com 등 대형/전문 사이트가 장악. 다만 이들도 **비용 구간을 표로 명확히 제시하는 게 공통 포맷**이고 우리 페이지엔 그게 없음.
+- 처방: **신규 페이지로 쪼개지 말고 기존 글 보강**(안락사는 세션 E에서 "계산기 만들지 않는다"고 결정한 민감 주제 — 이 원칙은 계속 유지). 종별·장소별(동물병원/왕진/보호소) 비용 비교표 + 화장 비용 별도 표 + 위 정확 문구를 담담한 톤으로 추가. **톤은 절대 상업적으로 바꾸지 말 것** — 이 페이지에는 제휴 CTA도 넣지 않는 게 맞다고 판단함(사용자가 다르게 판단하면 그때 재논의).
+
+**클러스터 E — 나머지 정확 문구 단건 보강(각 1~2줄 FAQ면 끝남)**
+- "pet calorie calculator"(17·78.5) → `tools/pet-food-calorie-calculator.html` (※ "pet nutrition alliance ~"류는 경쟁사 브랜드명이므로 무시)
+- "pregnant cat diet"(17·50.8), "best food for pregnant cat"(3), "cat food for pregnant cats"(3), "what should pregnant cats eat"(3) → `_posts/2026-07-15-what-to-feed-pregnant-cat.md`
+- "dog adult weight calculator"(16·56), "dog weight calculator by age"(8), "weight calculator for dogs"(6), "calculator dog weight"(6), "weight calculator dog"(5), "calculate dog weight"(4) → `tools/dog-weight-calculator.html`
+- "pet insurance estimate"(15·83.1), "dog insurance estimate"(10·83.2), "pet insurance cost calculator"(5), "pet insurance cost estimate"(3), "puppy insurance cost calculator"(3) → `tools/pet-insurance-cost-estimator.html` **(보험 클러스터 = 제휴 수익 1순위 페이지라 우선순위를 높게 볼 것)**
+- "how long does pet insurance take to kick in"(5·69.2) → `tools/pet-insurance-waiting-period-tracker.html` **(동일, 제휴 연결 페이지)**
+- "how to tell if your kitten is overweight"(8·46.9), "how to tell if my cat is overweight"(5), "how to tell if your cat is fat"(5), "how to know if your cat is fat"(4), "how can you tell if your cat is overweight"(4) → `_posts/...how-to-tell-if-cat-is-overweight.md`
+- "quality of life calculator dog"(6), "senior dog quality of life calculator"(4), "dog quality of life scale calculator"(3), "what is a paw score"(3·48.3) → `tools/dog-quality-of-life-calculator.html` (※ "quality of life calculator" 30노출·"paw score calculator" 37노출은 이미 매칭됨 — 순위(91.7/37.0)가 문제)
+- "how much is flea and tick prevention for dogs"(5·**27.8위**), "how much is flea prevention for dogs"(5·31.0) → `_posts/2026-07-17-flea-tick-prevention-cost.md` **(212노출·11.0위로 사이트 최고 순위 페이지 — 여기서 클릭이 나와야 함)**
+- "potty training regression puppy"(9·58.6) → `_posts/2026-07-22-puppy-potty-training-regression.md` (어순만 뒤집힌 변형)
+- "litter training kittens problems"(5·31.6) → `_posts/...kitten-litter-training-regression.md`
+- "how long does it take for cats to get used to each other"(4·66) + "how long does it take cats to get used to each other"(3·63) → `tools/cat-introduction-timeline.html` (세션 S 신규인데 벌써 노출 잡힘)
+- "dog heat cycle calendar"(4·58) → `tools/dog-heat-cycle-calculator.html`
+- "cat dental work cost"(3), "dog dental cleaning cost"(4) → `_posts/2026-07-10-dog-cat-dental-cleaning-cost.md`
+- "pet age calculator"(4·51.5) → `tools/index.html` 또는 dog/cat-age-calculator
+- "how to tell if a dog is pregnant"(5·66.2), "signs your dog is pregnant"(3), "dog pregnancy symptoms"(3), "canine pregnancy symptoms"(3) → `_posts/...how-to-tell-if-dog-is-pregnant.md`
+- **무시할 것**: 헝가리어/노르웨이어/터키어/러시아어 쿼리, "pet alliance ~"·"pet nutrition alliance ~"(경쟁사 브랜드), "p e t calculator"(오타성 노이즈).
+
+---
+
+#### 3. CTR 문제 진단 — 지금 단계에선 "title 손보기"가 답이 아님
+
+노출 상위 4개 페이지: `kitten-weight-chart`(348노출·14.4위·CTR 0.29%), `pet-euthanasia-cost`(250·82.6·0%), `flea-tick-prevention-cost`(212·11.0·0.47%), `puppy-weight-chart`(179·11.6·1.12%).
+- 11~14위는 대부분 **검색 2페이지 상단**이라 CTR이 원래 1% 안팎으로 낮음. 즉 CTR이 낮은 근본 원인은 title 카피가 아니라 **순위 자체가 아직 1페이지가 아니기 때문**.
+- 따라서 이번 라운드는 title/description 재작성에 시간을 쓰지 말고, **위 2번의 정확 문구 매칭(= 순위를 10위 안으로 밀어올리는 작업)에 리소스를 집중하는 게 맞다.** title 최적화는 이 페이지들이 top 10에 진입한 뒤에 하는 게 순서.
+- 유일한 예외가 클러스터 C(cat-weight-calculator) — 이건 CTR 문제가 아니라 **검색 의도와 페이지 배치가 어긋난 구조 문제**라 title/description 수정이 정확한 처방임.
+
+---
+
+#### 4. 신규 콘텐츠 판단 — 이번 주는 신규 URL 0개를 권고함
+
+- 사이트는 이미 93 URL(tools 39 + posts 37 + checklists 9 + 정적/인덱스). 그중 **27개가 아직 노출 0**. 여기에 새 URL을 더하면 같은 문제(미색인·무노출)를 반복할 뿐임.
+- 반면 위 2번 정확 문구 클러스터는 **이미 노출이 잡혀 있는 페이지의 순위를 올리는 작업**이라 ROI가 압도적으로 높음(특히 클러스터 A는 25~42위로 1페이지 코앞).
+- 웹서치로 확인한 경쟁 지형에도 새로 뚫린 자리는 안 보임(안락사 비용은 MetLife/Pawlicy/CodaPet 등이 장악, 나머지 미매칭 쿼리는 전부 기존 페이지로 커버 가능).
+- **단, 세션 O의 "페이지 수가 곧 생존"이라는 사용자 판단은 여전히 유효함.** 이번 주만 신규를 쉬는 것이지 확장을 중단하자는 뜻이 아님. 이번 데이터가 보여준 노출 2배 성장은 세션 O~AA의 페이지 확장이 만든 결과이므로, **다음 주에는 다시 신규 클러스터 발굴(별도 기획 대화 방식)을 재개할 것.**
+
+---
+
+#### 5. 다음 세션에서 확인할 것
+
+- 이번에 지시한 정확 문구 보강(클러스터 A~E) 이후 해당 쿼리들의 순위 변화 — **특히 클러스터 A(저체중, 25~42위)가 실제로 1페이지에 진입하는지가 "정확 문구 매칭" 방법론의 최대 검증 사례가 될 것.**
+- 미색인 17개가 더 줄어드는지(21→17 추세 지속 여부). `cat-pregnancy-calculator`가 다음에도 노출 0이면 그 URL만 재크롤 요청 권유.
+- 체크리스트 5개(`new-puppy`/`new-kitten`/`post-surgery-recovery`/`puppy-socialization`/`senior-pet-care`) 노출 여부 — 같은 네임스페이스의 다른 체크리스트는 노출이 잡히므로 개별 URL 문제로 추정.
+- 노출 추세가 2배 성장을 이어가는지(최근 14일 1,864). 이어지면 월 10,000세션 도달 시점을 역산해 디스플레이 광고 네트워크 비교 시점을 잡을 것.
+- **제휴 프로그램 신청 진행 상황을 사용자에게 확인할 것** — 승인이 나면 그때 `_includes/affiliate-cta.html` + `/affiliate-disclosure.html` 작업을 실행.
+- GA(7/10~8/6): 활성 사용자 100명, 여전히 (direct) 76명이 압도적이고 organic은 bing 7·google 6·yahoo 2 수준. **`pitchwall.co` referral 세션 10건이 처음 잡힘.** AI 검색엔진(ChatGPT/Perplexity)발 유입은 이번에도 식별 안 됨(`copilot.com` 1건이 유일한 근접 사례) — 계속 관찰.
+
