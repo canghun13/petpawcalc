@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-07 (세션 AC — 클러스터 A~E 보강 완료)
+최종 갱신: 2026-08-07 (세션 AD — 클러스터 D 완료, A~E 전체 완료)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1496,3 +1496,40 @@ GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklis
 - 클러스터 B의 `cat-pregnancy-calculator` 선제 보강이 색인 이후 실제 노출로 이어지는지 확인.
 - 세션 AB가 제시한 수익화 정책 전환(AdSense 비의존, 제휴 우선) 관련 액션 아이템은 이번 세션에서 다루지 않음 — 사용자의 제휴 프로그램 신청 진행 여부를 다음 세션에서 확인할 것.
 - 이번 세션은 코드/커밋까지 전부 완료(세션 AB는 분석만 하고 커밋 없이 종료했었음) — push 후 GitHub Pages 빌드 상태 Actions API로 확인 필수(아래 커밋 직후 확인 예정).
+
+---
+
+### 세션 AD — 세션 AB 클러스터 D 실행: 안락사 비용 포스트 보강 (8/7, Sonnet 작업)
+
+`_posts/2026-07-10-pet-euthanasia-cost-and-what-to-expect.md`(250노출·82.6위·0클릭, 사이트 2번째 고노출 페이지) 보강. 세션 AB가 명시한 5가지 주의사항(계산기 폼 금지·신규 페이지 분리 금지·상업적 톤 금지·제휴 CTA 금지·비용 수치 복수 소스 교차검증) 전부 준수.
+
+**웹서치로 교차검증한 비용 데이터** (Petworks, Webvet, PetMD, CareCredit, CodaPet, funeral.com, thevetdesk, ourpetgroomer, memorials.com, petcremation.org, animalaftercare.com, petcremationplace.com 등 10곳 이상 교차 확인):
+
+- **개, 병원(clinic)**: $50–$300, 평균 $125–$150 근처로 수렴(CareCredit $126, PetMD $120–130, 다수 소스 $100–$300 범위 일치)
+- **개, 왕진(in-home)**: $250–$750, 평균 $400–$450 근처(CareCredit $410, PetMD ~$450, Petworks $250–450)
+- **고양이, 병원**: $50–$300, 평균은 개보다 낮은 편($75–$150 — funeral.com 국가평균 $76, 체구가 작아 약물량·시술시간이 적기 때문)
+- **고양이, 왕진**: $250–$600, 평균 $350–$450(ourpetgroomer, funeral.com)
+- **보호소/비영리 클리닉**: $35–$100, 일부 무료/슬라이딩스케일(CodaPet, ourpetgroomer)
+- **화장(개/고양이 공용 아닌 무게별 분리)**: 공동화장(ashes 미반환) $50–$150(체구 무관 거의 균일), 개별/사설화장(ashes 반환)은 체구별로 고양이 $75–$250, 소형견 $100–$200, 중형견 $150–$300, 대형/초대형견 $250–$500+(memorials.com, petcremation.org, animalaftercare.com, petcremationplace.com 등 다수 교차 확인, 지역별 20~40% 편차 있음도 명시)
+
+**구조 변경**:
+- 기존 "What It Typically Costs" 섹션의 단일 두루뭉술 서술($50–$150)을 **종별×장소별 비교표**(개/고양이 × 병원/왕진/보호소)로 교체.
+- **신규 섹션 "Cremation and Aftercare Costs"** 추가 — 공동화장 vs 사설화장 개념 설명 + **종별·체중별 화장비용 비교표**(고양이/소형견/중형견/대형견 × 공동/사설).
+- "Where It Can Happen" 섹션에 보호소/비영리 클리닉 옵션 한 문장 추가(비용표와 정합성 맞춤).
+- 나머지 섹션(프로세스 설명, 입회 여부, 사전 질문 체크리스트, "혼자 결정할 필요 없다" 마무리 문단)은 원문 그대로 유지 — 톤이 이미 담담했고 손댈 이유 없음.
+
+**클러스터 D 정확 문구 6개 전부 반영** (신규 FAQ 3개 + 기존 FAQ 2개 재작성):
+- "cat euthanasia cost", "cost of euthanizing a cat" → 신규 FAQ "How much does cat euthanasia cost?"
+- "how much does it cost to put a dog to sleep", "how much does it cost to put a cat down" → 신규 FAQ
+- "vet euthanasia cost", "euthanasia cost dog" → 신규 FAQ
+- 기존 FAQ 2개("How much does it cost to euthanize a pet?", "Is in-home euthanasia more expensive than at a clinic?")는 새 비교표 수치와 일치하도록 재작성(기존 $50–$150 단일 수치가 새 $50–$300 범위와 충돌하는 걸 방지 — 내부 일관성 확보).
+
+**계산기 미추가 원칙 재확인**: 본문 어디에도 입력 폼/버튼 없음. "You Don't Have to Figure This Out Alone" 문단의 "no calculator or article can make for you" 문구도 그대로 유지 — 오히려 이 원칙을 스스로 재확인하는 문장이라 삭제하지 않음.
+
+**제휴 CTA 미추가 확인**: 본문 전체에 `affiliate`/`sponsored` 마커 없음, 특정 보험사·크레마토리 업체명 언급 없음(중립적 "many humane societies and nonprofit clinics" 같은 일반 표현만 사용). 기존에 있던 "Does pet insurance cover euthanasia?" FAQ는 순수 정보성 문항이라 그대로 유지(제휴 링크 아님).
+
+**QA**: YAML 파싱 통과(FAQ 5→8개), front matter `faqs:`—본문 FAQ 1:1 매칭(8/8), 마크다운 테이블 2개는 세션 O의 kramdown 교훈대로 `table-wrapper` div 없이 순수 마크다운으로 작성(그렙으로 확인, 0건), 전체 저장소 링크 재스캔 0건 깨짐, slug 중복 없음(37개), div 개수 0=0(이 포스트는 원래 CTA div가 없는 순수 텍스트 글이라 정상). read_time 8→10(신규 테이블 2개 포함해 분량 약 2배 증가, 사이트 관행 워드/분 비율로 역산해 설정).
+
+**다음 세션에서 확인할 것**:
+- 이 포스트의 다음 GSC 데이터에서 82.6위였던 평균 순위가 개선되는지, 특히 "cat euthanasia cost"(22노출·72.8위)·"cost of euthanizing a cat"(18노출·88위) 같은 근접 쿼리들의 순위 변화 확인 — 클릭 0건이 이어지고 있는 페이지라 CTR 개선 여부도 함께 볼 것.
+- 클러스터 D는 이걸로 완료. 세션 AB가 제시한 클러스터 A~E 전부 처리 완료(A~C+E는 세션 AC, D는 이번 세션).
