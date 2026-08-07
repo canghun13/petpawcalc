@@ -21,6 +21,8 @@ faqs:
     a: "Rarely. The first week after mating, fertilized eggs are still traveling to the uterus and haven't implanted. Most dogs show no external signs at this stage. Very subtle behavioral changes may occur in some dogs (increased affection or restlessness), but these are not reliable pregnancy indicators."
   - q: "Can a dog be pregnant and not show?"
     a: "Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know."
+  - q: "How to tell if a dog is pregnant: what are the signs?"
+    a: "How to tell if a dog is pregnant comes down to watching for the classic canine pregnancy symptoms: appetite changes, nipple enlargement and darkening, abdominal enlargement, and behavioral changes like nesting. If you've searched signs your dog is pregnant or dog pregnancy symptoms, these are the same indicators described throughout this guide."
 
 ---
 
@@ -139,6 +141,9 @@ Rarely. The first week after mating, fertilized eggs are still traveling to the 
 
 **Can a dog be pregnant and not show?**
 Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know.
+
+**How to tell if a dog is pregnant: what are the signs?**
+How to tell if a dog is pregnant comes down to watching for the classic canine pregnancy symptoms: appetite changes, nipple enlargement and darkening, abdominal enlargement, and behavioral changes like nesting. If you've searched signs your dog is pregnant or dog pregnancy symptoms, these are the same indicators described throughout this guide.
 
 *This article is for informational purposes only. Always consult your veterinarian for guidance specific to your dog's health, reproductive history, and individual situation.*
 

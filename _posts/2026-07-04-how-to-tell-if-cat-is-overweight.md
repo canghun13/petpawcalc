@@ -21,6 +21,8 @@ faqs:
     a: "Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath."
   - q: "Can I just feed my cat less to help them lose weight?"
     a: "Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended."
+  - q: "How can you tell if your cat is overweight or fat?"
+    a: "How can you tell if your cat is overweight comes down to the same rib and waist check used throughout this guide — if you're specifically wondering how to tell if your cat is fat or how to tell if my cat is overweight, look for ribs you can't easily feel and a missing waist tuck from above. The same check works for kittens too: how to tell if your kitten is overweight uses the identical rib-and-waist test, just compared against a faster-growing baseline. In short, how to know if your cat is fat is about feel (ribs, waist), not the number on a scale."
 
 ---
 
@@ -199,6 +201,9 @@ Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear
 
 **Can I just feed my cat less to help them lose weight?**
 Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended.
+
+**How can you tell if your cat is overweight or fat?**
+How can you tell if your cat is overweight comes down to the same rib and waist check used throughout this guide — if you're specifically wondering how to tell if your cat is fat or how to tell if my cat is overweight, look for ribs you can't easily feel and a missing waist tuck from above. The same check works for kittens too: how to tell if your kitten is overweight uses the identical rib-and-waist test, just compared against a faster-growing baseline. In short, how to know if your cat is fat is about feel (ribs, waist), not the number on a scale.
 
 *This article is for informational purposes only and is not a substitute for veterinary advice. If you're concerned about your cat's weight, consult your veterinarian before starting any weight management plan.*
 

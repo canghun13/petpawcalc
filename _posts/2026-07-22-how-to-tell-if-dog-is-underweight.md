@@ -19,6 +19,8 @@ faqs:
     a: "With a consistent, appropriate calorie increase and no underlying medical issue, most dogs show visible improvement within 3-4 weeks and reach a healthy body condition within 2-3 months. Weigh weekly rather than daily to track a real trend, since day-to-day weight can fluctuate with hydration and stomach contents."
   - q: "Are some dog breeds naturally underweight-looking?"
     a: "Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass."
+  - q: "Is my dog underweight?"
+    a: "Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above)."
 ---
 
 Most dog-weight content out there is about the opposite problem — helping an overweight dog slim down. But being underweight carries its own real risks: reduced energy, a weaker immune system, and in many cases, it's the first visible sign of an underlying illness rather than just "not eating enough." Here's how to tell the difference between a naturally lean dog and one that actually needs to gain weight, and how to help safely.
@@ -88,6 +90,9 @@ With a consistent, appropriate calorie increase and no underlying medical issue,
 
 **Are some dog breeds naturally underweight-looking?**
 Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass.
+
+**Is my dog underweight?**
+Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above).
 
 ## Related Articles
 

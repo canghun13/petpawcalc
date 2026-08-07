@@ -19,6 +19,10 @@ faqs:
     a: "Once your vet has ruled out or is treating an underlying cause, offer more frequent, smaller meals (cats often eat better with 3-4 small meals than 1-2 large ones), consider a calorie-dense or recovery-formula food with your vet's guidance, and warm wet food slightly to make it more aromatic and appealing for a cat with a reduced appetite. Avoid a sudden large increase in portion size, which can cause digestive upset."
   - q: "Why does weight loss in cats need a vet visit more urgently than in dogs?"
     a: "Cats are especially good at hiding illness, so by the time weight loss is visible, an underlying condition like hyperthyroidism or kidney disease may already be fairly advanced. Cats are also uniquely vulnerable to hepatic lipidosis (a dangerous liver condition) if they stop eating for even a few days while overweight or losing weight rapidly, which makes prompt veterinary evaluation more urgent than a general 'wait and watch' approach."
+  - q: "Is my cat underweight?"
+    a: "If you're asking is my cat underweight, the checklist above is exactly how to tell if a cat is underweight: feel for ribs, spine, and hip bones without pressing hard, and look for an exaggerated waist from above rather than the gentle tuck seen at a healthy weight. If bone is easily visible rather than just felt, it's worth a vet visit to check for an underlying cause."
+  - q: "How do I know if my cat is underweight?"
+    a: "How do I know if my cat is underweight versus just naturally lean? The two clearest signs are a visibly prominent spine or hip bones (not just felt with light pressure) and an exaggerated waist tuck from above. That's generally how to know if my cat is underweight without a scale — if either sign is present, it's worth confirming with your vet. In short, how to tell if cat is underweight comes down to bone visibility and muscle mass, not just a number on the scale."
 ---
 
 Cat weight discussions online lean heavily toward obesity — for good reason, it's common. But an underweight cat is arguably the more urgent situation to catch early, since unexplained weight loss in cats is very often the first visible sign of a real medical problem rather than simply "not eating enough."
@@ -89,6 +93,12 @@ Once your vet has ruled out or is treating an underlying cause, offer more frequ
 
 **Why does weight loss in cats need a vet visit more urgently than in dogs?**
 Cats are especially good at hiding illness, so by the time weight loss is visible, an underlying condition like hyperthyroidism or kidney disease may already be fairly advanced. Cats are also uniquely vulnerable to hepatic lipidosis (a dangerous liver condition) if they stop eating for even a few days while overweight or losing weight rapidly, which makes prompt veterinary evaluation more urgent than a general "wait and watch" approach.
+
+**Is my cat underweight?**
+If you're asking is my cat underweight, the checklist above is exactly how to tell if a cat is underweight: feel for ribs, spine, and hip bones without pressing hard, and look for an exaggerated waist from above rather than the gentle tuck seen at a healthy weight. If bone is easily visible rather than just felt, it's worth a vet visit to check for an underlying cause.
+
+**How do I know if my cat is underweight?**
+How do I know if my cat is underweight versus just naturally lean? The two clearest signs are a visibly prominent spine or hip bones (not just felt with light pressure) and an exaggerated waist tuck from above. That's generally how to know if my cat is underweight without a scale — if either sign is present, it's worth confirming with your vet. In short, how to tell if cat is underweight comes down to bone visibility and muscle mass, not just a number on the scale.
 
 ## Related Articles
 

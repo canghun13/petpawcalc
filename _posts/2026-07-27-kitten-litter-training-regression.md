@@ -19,6 +19,8 @@ faqs:
     a: "It's usually not the surgery itself but a litter change made around it — many vets recommend switching to shredded paper or non-clumping pellets for about a week afterward so litter dust and granules don't irritate the incision. Cats can be picky about sudden texture changes, and some hesitate at the unfamiliar litter rather than the box itself. Transitioning back to normal litter gradually, mixed in over a few days, usually solves it."
   - q: "How many litter boxes do I need to prevent regression in a multi-cat home?"
     a: "The standard guidance is one litter box per cat, plus one extra, placed in separate locations rather than clustered together. Boxes lined up side by side function as a single resource to a cat, which defeats the purpose — a more confident cat can still block access to all of them at once if they're in the same spot."
+  - q: "What are common litter training kittens problems?"
+    a: "The most common litter training kittens problems are: the box location changed too soon, the litter type was switched abruptly, there aren't enough boxes for the number of cats (see the n+1 rule above), stress from a household change, or an underlying medical issue like FIC or a UTI. Most cases trace back to one of these rather than the kitten \"forgetting\" its training."
 ---
 
 Your cat was reliable for months, maybe years. Then, out of nowhere, an accident on the bathmat — and then another. If your first instinct is to wonder what you did wrong, the more useful question is what *changed*, because litter box use in cats isn't a skill they can forget. It's instinctual. When a previously reliable cat stops, something in their environment, body, or household has shifted faster than their habits have caught up.
@@ -96,6 +98,9 @@ It's usually not the surgery itself but a litter change made around it — many 
 
 **How many litter boxes do I need to prevent regression in a multi-cat home?**
 The standard guidance is one litter box per cat, plus one extra, placed in separate locations rather than clustered together. Boxes lined up side by side function as a single resource to a cat, which defeats the purpose — a more confident cat can still block access to all of them at once if they're in the same spot.
+
+**What are common litter training kittens problems?**
+The most common litter training kittens problems are: the box location changed too soon, the litter type was switched abruptly, there aren't enough boxes for the number of cats (see the n+1 rule above), stress from a household change, or an underlying medical issue like FIC or a UTI. Most cases trace back to one of these rather than the kitten "forgetting" its training.
 
 ## Related Articles
 

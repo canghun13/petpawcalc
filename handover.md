@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-07 (세션 AB — 분석 전용)
+최종 갱신: 2026-08-07 (세션 AC — 클러스터 A~E 보강 완료)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1440,3 +1440,59 @@ GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklis
 - **제휴 프로그램 신청 진행 상황을 사용자에게 확인할 것** — 승인이 나면 그때 `_includes/affiliate-cta.html` + `/affiliate-disclosure.html` 작업을 실행.
 - GA(7/10~8/6): 활성 사용자 100명, 여전히 (direct) 76명이 압도적이고 organic은 bing 7·google 6·yahoo 2 수준. **`pitchwall.co` referral 세션 10건이 처음 잡힘.** AI 검색엔진(ChatGPT/Perplexity)발 유입은 이번에도 식별 안 됨(`copilot.com` 1건이 유일한 근접 사례) — 계속 관찰.
 
+
+---
+
+### 세션 AC — 세션 AB 클러스터 A~E 정확 문구 보강 실행 (8/7, Sonnet 작업)
+
+세션 AB(Opus 분석 전용 세션)이 남긴 "최우선 보강 대상" 클러스터 A→B→C→E를 순서대로 실행. 신규 URL 없음, 전부 기존 페이지 보강. **한 세션 안에 완료(세 번의 대화 턴에 걸쳐 이어짐 — 첫 턴에서 일부 미완료 상태로 QA 없이 보고했다가, 사용자가 "계속"이라고 두 번 요청해 이어서 마무리함).**
+
+**클러스터 A — 저체중(underweight) 포스트 2개**
+- `_posts/2026-07-22-how-to-tell-if-cat-is-underweight.md`: FAQ 2개 추가(front matter + 본문), "is my cat underweight", "how to know if my cat is underweight", "how to tell if cat is underweight", "how do i know if my cat is underweight", "how to tell if a cat is underweight" 5개 문구 전부 삽입.
+- `_posts/2026-07-22-how-to-tell-if-dog-is-underweight.md`: FAQ 1개 추가, "is my dog underweight", "dog underweight", "underweight dogs" 3개 문구 전부 삽입.
+
+**클러스터 B — 개/고양이 임신 계산기**
+- `tools/dog-pregnancy-calculator.html`: 기존 진단/확인 FAQ 답변을 재작성해 "dog pregnancy diagnosis"·"dog pregnancy confirmation"·"dog pregnancy check" 3개 문구 삽입 + 신규 FAQ 2개 추가해 "calculator" 계열 명칭 변형 15개(due date calculator, gestation calculator, pregnancy estimator, calendar for pregnancy, breeding calculator, ovulation calculator 등) 전부 커버. 총 18개 쿼리 문구 전수 확인.
+- `tools/cat-pregnancy-calculator.html`: 같은 패턴을 canine→feline, dog→cat으로 미리 적용(현재 미색인이지만 색인되면 바로 대응). 고양이가 유도배란 동물(induced ovulator)이라는 기존 사이트에 이미 있던 사실(세션 L)을 재사용해 정확성 확보, 새 주장 없음.
+
+**클러스터 C — cat-weight-calculator 검색의도 재정렬**
+- title/description/H1 서브카피를 "How Big Will My Cat Get?", "Cat Size Calculator" 방향으로 재작성. 기존 FBMI FAQ에 "cat BMI calculator" 문구 추가, 신규 FAQ로 정확 문구 "how big will my cat get calculator" 삽입.
+- `_posts/2026-07-17-kitten-weight-chart-by-breed-size.md`의 계산기 링크(CTA) 문구도 이 의도에 맞춰 수정("Try Our Cat Weight Calculator" → "Wondering How Big Will My Cat Get?" / "Use the Cat Size Calculator →"). 블로그 본문 자체는 손대지 않음(핸드오버 지시 그대로).
+- 작업 중 이 파일의 **기존(이번 세션 이전부터 있던) JSON-LD/본문 순서 불일치**를 발견해 함께 수정(부수적 버그 픽스).
+
+**클러스터 E — 나머지 11개 파일 단건/소수 문구 보강**
+1. `tools/pet-food-calorie-calculator.html` — "pet calorie calculator"
+2. `_posts/2026-07-15-what-to-feed-pregnant-cat.md` — "pregnant cat diet", "best food for pregnant cat", "cat food for pregnant cats", "what should pregnant cats eat" (4개)
+3. `tools/dog-weight-calculator.html` — "dog adult weight calculator", "dog weight calculator by age", "weight calculator for dogs", "calculator dog weight", "weight calculator dog", "calculate dog weight" (6개)
+4. `tools/pet-insurance-cost-estimator.html` — "pet insurance estimate", "dog insurance estimate", "pet insurance cost calculator", "pet insurance cost estimate", "puppy insurance cost calculator" (5개, **제휴 수익 1순위 페이지**)
+5. `tools/pet-insurance-waiting-period-tracker.html` — "how long does pet insurance take to kick in" (**제휴 연결 페이지**)
+6. `_posts/2026-07-04-how-to-tell-if-cat-is-overweight.md` — "how to tell if your kitten is overweight", "how to tell if my cat is overweight", "how to tell if your cat is fat", "how to know if your cat is fat", "how can you tell if your cat is overweight" (5개)
+7. `tools/dog-quality-of-life-calculator.html` — "quality of life calculator dog", "senior dog quality of life calculator", "dog quality of life scale calculator", "what is a paw score" (4개)
+8. `_posts/2026-07-17-flea-tick-prevention-cost.md` — "how much is flea and tick prevention for dogs", "how much is flea prevention for dogs" (2개, **사이트 최고 순위 페이지, 11.0위**)
+9. `_posts/2026-07-22-puppy-potty-training-regression.md` — "potty training regression puppy" (어순 변형)
+10. `_posts/2026-07-27-kitten-litter-training-regression.md` — "litter training kittens problems"
+11. `tools/cat-introduction-timeline.html` — "how long does it take for cats to get used to each other" / "how long does it take cats to get used to each other" (2개 어순 변형)
+12. `tools/dog-heat-cycle-calculator.html` — "dog heat cycle calendar"
+13. `_posts/2026-07-10-dog-cat-dental-cleaning-cost.md` — "cat dental work cost", "dog dental cleaning cost" (2개)
+14. `tools/dog-age-calculator.html` — "pet age calculator" (신규 FAQ로 cat-age-calculator 상호링크도 함께 추가)
+15. `_posts/2026-05-26-how-to-tell-if-dog-is-pregnant.md` — "how to tell if a dog is pregnant", "signs your dog is pregnant", "dog pregnancy symptoms", "canine pregnancy symptoms" (4개)
+
+세션 AB가 나열한 클러스터 E 항목 중 llms.txt 관련(별도 항목 없음)을 제외하고 전부 처리 완료. 새 사실 주장은 하지 않음 — 전부 기존 페이지에 이미 있는 내용을 쿼리 문자열 그대로 재서술하는 방식(세션 C 패턴 재적용). 페어링 페이지(cat-pregnancy-calculator)에 대한 선제 적용을 제외하면 신규 계산 로직 변경 없음.
+
+**QA(전수, 이번 세션 수정 파일 20개 대상)**:
+- 블로그 포스트 10개: YAML 파싱 전부 통과, front matter `faqs:` 배열과 본문 `## Frequently Asked Questions` 섹션 1:1 매칭(질문 텍스트와 순서까지) 전부 확인.
+- tool 페이지 11개: JSON-LD FAQPage 유효성 전부 통과. **1차 검증에서 `dog-weight-calculator.html`과 `pet-food-calorie-calculator.html` 2곳에서 JSON-LD 질문 순서와 본문 h3 순서가 어긋난 걸 발견**(질문 집합 자체는 동일, 순서만 다름) — 신규 FAQ를 JSON-LD엔 끝에 추가하고 본문엔 중간에 삽입하면서 발생. 두 파일 모두 JSON-LD 순서를 본문 순서에 맞춰 재정렬해 1:1(순서 포함) 매칭으로 수정 완료.
+- div 개수 전부 open=close 확인(11개 tool 파일).
+- **모든 `<script>` 블록(JSON-LD 제외, 인라인 계산 로직) node --check 통과** — 20개 파일 중 스크립트 블록이 있는 tool 파일 기준 총 13개 블록 전수 검사, 오류 0건. (`/dev/stdin` 방식이 이 샌드박스에서 안 먹혀서 임시 파일 방식으로 전환해 검사함 — 다음 세션도 이 방식 사용 권장.)
+- no-print 스캔: 이번 세션은 신규 경고박스/고정 배너를 전혀 추가하지 않음(텍스트 콘텐츠와 JSON-LD만 추가) — 배경색 있는 div 패턴 검색 결과 전부 이번 세션 이전부터 있던 기존 요소(타임라인 카드, 진행률 바)로 확인, 해당 없음.
+- 전체 저장소 링크 재스캔(신규 포함 20개 파일) — 브로큰 링크 0건.
+- slug 중복 검사(37개, 중복 없음), permalink 중복 검사(48개, 중복 없음).
+- 전체 `_posts`+`tools`+`checklists` YAML 전수 재검증 — 오류 0건.
+
+**교훈(체크리스트 반영 권장)**: JSON-LD FAQ 끝에 신규 질문을 추가할 때, 본문에는 주제상 더 자연스러운 위치(예: 관련 기존 질문 바로 뒤)에 삽입하는 경우 순서가 어긋나기 쉽다. **신규 FAQ를 추가할 때는 JSON-LD와 본문 양쪽에 정확히 같은 삽입 위치(보통 마지막)를 쓸 것** — 순서를 다르게 하고 싶으면 두 곳 다 동일하게 재정렬할 것.
+
+**다음 세션에서 확인할 것**:
+- 이번에 보강한 클러스터 A~E의 쿼리들이 다음 GSC 데이터에서 순위 변화를 보이는지 확인 — 특히 클러스터 A(저체중, 원래 25~42위)가 1페이지 진입하는지가 "정확 문구 매칭" 방법론의 최대 검증 사례가 됨.
+- 클러스터 B의 `cat-pregnancy-calculator` 선제 보강이 색인 이후 실제 노출로 이어지는지 확인.
+- 세션 AB가 제시한 수익화 정책 전환(AdSense 비의존, 제휴 우선) 관련 액션 아이템은 이번 세션에서 다루지 않음 — 사용자의 제휴 프로그램 신청 진행 여부를 다음 세션에서 확인할 것.
+- 이번 세션은 코드/커밋까지 전부 완료(세션 AB는 분석만 하고 커밋 없이 종료했었음) — push 후 GitHub Pages 빌드 상태 Actions API로 확인 필수(아래 커밋 직후 확인 예정).

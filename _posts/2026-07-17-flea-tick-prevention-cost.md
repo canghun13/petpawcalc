@@ -19,6 +19,8 @@ faqs:
     a: "Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, other pets, or through window screens, and a single flea can start an infestation. The risk is lower than for outdoor cats, but not zero — many vets suggest a lighter-duty or lower-frequency product for strictly indoor cats rather than skipping prevention entirely."
   - q: "What happens if I skip flea and tick prevention for a few months?"
     a: "The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use."
+  - q: "How much is flea and tick prevention for dogs?"
+    a: "How much is flea and tick prevention for dogs specifically? Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. If you're asking how much is flea prevention for dogs without tick coverage, flea-only products are rare in the US market; nearly all modern products bundle flea and tick together at the same price point."
 
 ---
 
@@ -108,6 +110,9 @@ Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, othe
 
 **What happens if I skip flea and tick prevention for a few months?**
 The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use.
+
+**How much is flea and tick prevention for dogs?**
+How much is flea and tick prevention for dogs specifically? Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. If you're asking how much is flea prevention for dogs without tick coverage, flea-only products are rare in the US market; nearly all modern products bundle flea and tick together at the same price point.
 
 *This article is for informational purposes only. Always consult your veterinarian to choose the right product for your pet's specific risk factors, health history, and region.*
 

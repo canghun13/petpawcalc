@@ -19,6 +19,8 @@ faqs:
     a: "Very little in the first three weeks. By mid-pregnancy she'll gradually increase to about 25–50% more than her pre-pregnancy intake. By the final weeks, total intake may be 50–100% above normal. During peak nursing, energy needs can reach 2–3x her pre-pregnancy amount depending on litter size."
   - q: "Can pregnant cats eat raw fish?"
     a: "No. Raw fish carries a bacterial contamination risk (Salmonella, Listeria) and contains an enzyme called thiaminase that destroys thiamine (vitamin B1) — a deficiency that can cause serious neurological problems. Cooked fish in moderation is fine; raw fish should be avoided during pregnancy."
+  - q: "What's the best pregnant cat diet?"
+    a: "The best pregnant cat diet is a complete kitten food or an \"all life stages\" formula — this is generally considered the best food for pregnant cat nutrition needs, since it's calorie-dense enough with adequate taurine. If you're wondering what should pregnant cats eat as a simple rule: any complete cat food for pregnant cats should be labeled for growth/reproduction or all life stages, never a standard adult maintenance formula or dog food."
 
 ---
 
@@ -207,6 +209,9 @@ Very little in the first three weeks. By mid-pregnancy she'll gradually increase
 
 **Can pregnant cats eat raw fish?**
 No. Raw fish carries a bacterial contamination risk (Salmonella, Listeria) and contains an enzyme called thiaminase that destroys thiamine (vitamin B1) — a deficiency that can cause serious neurological problems. Cooked fish in moderation is fine; raw fish should be avoided during pregnancy.
+
+**What's the best pregnant cat diet?**
+The best pregnant cat diet is a complete kitten food or an "all life stages" formula — this is generally considered the best food for pregnant cat nutrition needs, since it's calorie-dense enough with adequate taurine. If you're wondering what should pregnant cats eat as a simple rule: any complete cat food for pregnant cats should be labeled for growth/reproduction or all life stages, never a standard adult maintenance formula or dog food.
 
 <div class="post-cta">
   Planning for your cat's due date? → <a href="/tools/cat-pregnancy-calculator.html">Use the Cat Pregnancy Calculator</a>

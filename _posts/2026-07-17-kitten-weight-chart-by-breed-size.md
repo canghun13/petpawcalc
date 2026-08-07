@@ -62,9 +62,9 @@ If you don't want to look up a chart, the shortcut vets commonly use is: **a kit
 This rule is convenient but has real limits. It's built around an average domestic cat reaching roughly 8–10 lbs as an adult, so it naturally stops being useful once growth slows after month 5 — and it never applied well to large breeds in the first place (see below). Use it as a quick sanity check, not a target.
 
 <div class="post-cta">
-  <h4>Try Our Cat Weight Calculator</h4>
-  <p>Enter your kitten's current age and weight to check where they fall for their age and get a body-condition read.</p>
-  <a href="/tools/cat-weight-calculator.html">Calculate now →</a>
+  <h4>Wondering How Big Will My Cat Get?</h4>
+  <p>Enter your kitten's current age and weight to get a predicted adult size range and a body-condition read.</p>
+  <a href="/tools/cat-weight-calculator.html">Use the Cat Size Calculator →</a>
 </div>
 
 ## Large Breeds Grow on a Different Timeline

@@ -8,9 +8,9 @@ read_time: 10
 slug: dog-cat-dental-cleaning-cost
 faqs:
   - q: "How much does dog teeth cleaning cost?"
-    a: "A routine dog dental cleaning under anesthesia typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth."
+    a: "A routine dog dental cleaning under anesthesia — often called dog dental cleaning cost by owners searching for it — typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth."
   - q: "How much does cat teeth cleaning cost?"
-    a: "A routine cat dental cleaning under anesthesia typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs."
+    a: "A routine cat dental cleaning under anesthesia — sometimes searched for as cat dental work cost — typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs."
   - q: "Is anesthesia-free dental cleaning a cheaper alternative?"
     a: "Anesthesia-free cleanings ($150–$350) only remove visible surface tartar and cannot clean below the gumline, where most periodontal disease actually lives. The AVMA, AAHA, and American Veterinary Dental College all oppose anesthesia-free cleaning as a substitute for a proper anesthetic dental, since it's cosmetic rather than medically effective."
   - q: "How often does my dog or cat need a dental cleaning?"
@@ -62,10 +62,10 @@ Standard accident-and-illness pet insurance plans typically don't cover routine 
 ## Frequently Asked Questions
 
 **How much does dog teeth cleaning cost?**
-A routine dog dental cleaning under anesthesia typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth.
+A routine dog dental cleaning under anesthesia — often called dog dental cleaning cost by owners searching for it — typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth.
 
 **How much does cat teeth cleaning cost?**
-A routine cat dental cleaning under anesthesia typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs.
+A routine cat dental cleaning under anesthesia — sometimes searched for as cat dental work cost — typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs.
 
 **Is anesthesia-free dental cleaning a cheaper alternative?**
 Anesthesia-free cleanings ($150–$350) only remove visible surface tartar and cannot clean below the gumline, where most periodontal disease actually lives. The AVMA, AAHA, and American Veterinary Dental College all oppose anesthesia-free cleaning as a substitute for a proper anesthetic dental, since it's cosmetic rather than medically effective.
