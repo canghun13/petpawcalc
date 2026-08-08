@@ -1,0 +1,397 @@
+---
+layout: tool
+title: Heartworm Prevention Cost Calculator — Prevention vs. Treatment
+description: See your dog's annual heartworm prevention cost by product type, then compare it against what treatment would cost if your dog were infected. Free, instant results.
+permalink: /tools/heartworm-prevention-cost-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Heartworm Prevention Cost Calculator",
+  "url": "https://petpawcalc.com/tools/heartworm-prevention-cost-calculator.html",
+  "description": "Estimate a dog's annual heartworm prevention cost by product type, purchase source, and dosing schedule, then compare it against the estimated cost of heartworm treatment if infected.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much is heartworm prevention for dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How much is heartworm prevention for dogs depends mainly on product type and dog size. Monthly oral or topical products run roughly $5-$18 per month, or about $75-$230 per year for a medium dog including the annual heartworm test. Injectable options (given every 6 or 12 months at the vet's office) typically work out to $90-$160 per year depending on dosing schedule and size. Larger dogs cost more across every product type since dosing is weight-based."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heartworm prevention cost per month",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heartworm prevention cost per month for a monthly oral or topical product is typically $5 to $18, depending on the specific product and your dog's weight (larger dogs need a higher, more expensive dose). Injectable options are not priced monthly since they are given once every 6 or 12 months at the vet, but averaged out they land in a broadly similar range."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is heartworm prevention worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A full year of heartworm prevention, even at the higher end of the price range, typically costs a fraction of what treating an active heartworm infection costs, before even factoring in the health risk and physical toll treatment puts on a dog. Heartworm is also almost entirely preventable with consistent dosing, while treatment is not risk-free and does not undo existing damage to the heart and lungs. For cats, there is no FDA-approved heartworm treatment at all, which makes prevention the only real option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heartworm test cost",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard annual heartworm antigen test typically costs $35-$75 at a veterinary clinic. If that test comes back positive, a confirmatory microfilaria test (roughly $20-$40 more) and further diagnostics like chest X-rays are usually the next step before starting treatment. This annual test is recommended even for dogs who are consistently on prevention, since no preventive is 100% effective and a missed or vomited dose can create a window for infection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heartworm prevention vs treatment cost",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heartworm prevention vs treatment cost is not a close comparison. A year of prevention, including the annual test, generally runs $75-$360 depending on product type and dog size. Treatment for an established infection generally runs $400-$2,000 or more, and can exceed $3,000 in complicated or advanced cases requiring additional imaging and extended monitoring — roughly 5 to 15 times the cost of a year of prevention, not counting the physical toll of treatment on the dog itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cheapest heartworm prevention",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cheapest heartworm prevention on a per-dose basis is usually a monthly oral or topical product for a small dog, purchased through a low-cost or nonprofit veterinary clinic rather than a full-service vet office. Buying oral or topical products through an online pharmacy with a prescription from your vet is often somewhat cheaper than buying directly at a vet clinic as well. Injectable products must be given at a vet's office regardless of where you shop, since they cannot be self-administered."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🫀 Heartworm Prevention Cost Calculator</h1>
+    <p>See your dog's annual heartworm prevention cost by product type and size, then compare it against what treatment would actually cost if your dog were infected.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="hw-weight">Dog's Weight</label>
+      <select id="hw-weight">
+        <option value="small">Small (under 25 lbs)</option>
+        <option value="medium">Medium (25–50 lbs)</option>
+        <option value="large">Large (51–90 lbs)</option>
+        <option value="giant">Giant (over 90 lbs)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="hw-product">Product Type</label>
+      <select id="hw-product" onchange="toggleHwProduct()">
+        <option value="oral">Monthly oral chewable — e.g. Heartgard Plus, Interceptor Plus</option>
+        <option value="topical">Monthly topical — e.g. Revolution, Advantage Multi</option>
+        <option value="inject6">Injectable, every 6 months (ProHeart 6)</option>
+        <option value="inject12">Injectable, every 12 months (ProHeart 12)</option>
+        <option value="combo">Combo (flea + tick + heartworm) — e.g. Simparica Trio, Revolution Plus</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="hw-source">Where You Buy It</label>
+      <select id="hw-source">
+        <option value="vet">Veterinary clinic</option>
+        <option value="online">Online pharmacy (with a prescription from your vet)</option>
+        <option value="lowcost">Low-cost or nonprofit clinic</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="hw-yearround-group">
+      <label for="hw-yearround">Dosing Schedule</label>
+      <select id="hw-yearround">
+        <option value="full">Year-round (all 12 months) — recommended</option>
+        <option value="seasonal">Seasonal only (roughly 7 months)</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateHeartworm()" style="margin-top: 8px;">Compare Prevention vs. Treatment Cost →</button>
+
+    <div class="result-box" id="hw-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="hw-date"></span>
+      </div>
+      <div id="hw-compare-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+        <div style="text-align:center; padding: 14px 8px; background: var(--cream); border-radius: var(--radius);">
+          <div style="font-size: 0.78rem; color: var(--brown-mid); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em;">A Year of Prevention</div>
+          <div id="hw-prevention-total" style="font-size: 1.3rem; font-weight: 700; color: #27ae60;"></div>
+        </div>
+        <div style="text-align:center; padding: 14px 8px; background: #fdf2f2; border-radius: var(--radius);">
+          <div style="font-size: 0.78rem; color: var(--brown-mid); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em;">If Infected: Treatment</div>
+          <div id="hw-treatment-total" style="font-size: 1.3rem; font-weight: 700; color: #e74c3c;"></div>
+        </div>
+      </div>
+      <h3 id="hw-ratio-headline" style="text-align:center; margin-bottom: 16px;"></h3>
+      <div id="hw-result-breakdown" style="font-size: 0.88rem; color: var(--brown-mid);"></div>
+      <div id="hw-warnings" style="margin-top: 12px;"></div>
+      <button class="pdf-btn" id="hw-pdf-btn" onclick="doPrint('hw-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This calculator provides general cost estimates based on national averages for common products, and is not a product recommendation. Before starting any heartworm preventive, your dog needs a heartworm test — giving prevention to a dog that already has heartworms can cause a severe, potentially fatal reaction as the medication rapidly kills circulating microfilariae. Talk to your vet about which product and schedule fits your dog and your local heartworm risk.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Prevention Products Compared</h2>
+    <div class="table-wrapper" style="margin-bottom: 24px;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: var(--cream-dark);">
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Product type</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Dosing</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Who gives it</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Typical annual cost (medium dog)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Monthly oral chewable</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Every month, year-round</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">You, at home</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$75–$215</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Monthly topical</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Every month, year-round</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">You, at home</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$85–$230</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Injectable (ProHeart 6)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Every 6 months</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Your vet, in-office only</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$115–$160</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Injectable (ProHeart 12)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Once per year</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Your vet, in-office only</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$90–$160</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Combo (+ flea/tick)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Every month, year-round</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">You, at home</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">$260–$360</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">All figures above are for a medium dog (25–50 lbs) bought at a standard veterinary clinic, and include the annual heartworm test. Costs above are for the medication itself; some clinics bundle a free or discounted heartworm test with an injectable purchase, so ask before assuming the full test fee applies on top.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Prevention Cost vs. Treatment Cost</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the comparison that matters most, and it is not close. A year of prevention, including the annual test, runs roughly $75–$360 depending on product and size. Treatment for an established infection runs $400–$2,000 in typical cases, and can climb past $3,000 in advanced or complicated cases needing additional imaging, hospitalization, and extended monitoring. That is commonly 5 to 15 times the cost of a full year of prevention — before counting the physical toll on the dog.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Treatment itself is not simple. The standard protocol involves confirming the diagnosis (antigen test plus a microfilaria test, often chest X-rays and sometimes an echocardiogram to assess damage already done), a course of an antibiotic and sometimes steroids to prepare the dog's body, then a series of melarsomine injections spaced out over roughly two months, with strict activity restriction throughout — because physical exertion while dying worms are breaking down in the bloodstream raises the risk of a fatal blood clot. Recovery is not guaranteed even with treatment, particularly in dogs with a heavy worm burden or existing heart damage.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Safety Notes That Matter More Than the Price</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Test before you start.</strong> A dog needs a negative heartworm test before beginning any preventive product. Giving a preventive to a dog that already has an active infection can trigger a severe, potentially fatal reaction as the medication rapidly kills circulating microfilariae in the bloodstream.</li>
+      <li><strong>Test annually, even while on prevention.</strong> No preventive product is 100% effective, and a missed dose, a vomited chewable you did not notice, or a rare breakthrough infection can happen even with consistent use. The American Heartworm Society recommends annual testing regardless of how reliably you dose.</li>
+      <li><strong>Year-round dosing is the actual recommendation, not seasonal.</strong> Mosquito activity does not stop cleanly at a calendar line, and gaps in coverage are one of the most common paths to a breakthrough infection. If you select seasonal dosing above, treat the resulting lower price as informational, not as a recommendation.</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What About Cats?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This calculator is built around dogs, since dosing, product options, and treatment protocols differ meaningfully by species — but heartworm matters just as much for cats, arguably more. There is no FDA-approved heartworm treatment for cats at all. If a cat becomes infected, veterinary care focuses on managing symptoms and supporting the cat through the infection rather than eliminating the worms, since the treatment used in dogs (melarsomine) is not safe for cats. That makes monthly preventive medication the only real defense for cats in any heartworm-risk area, indoor cats included — mosquitoes get inside, and heartworm disease in cats can look like asthma or simply go undiagnosed until it is serious.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Where to Buy It for Less</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Veterinary clinic:</strong> the default option and the only place to get an injectable product administered. Convenient, and the exam or bloodwork needed can sometimes be bundled with the visit.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Online pharmacy:</strong> oral and topical products can usually be filled through an online pharmacy once your vet approves and authorizes the prescription, and this route is often somewhat cheaper than buying directly at the clinic counter. This option does not apply to injectable products, which must be given in person.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Low-cost or nonprofit clinic:</strong> often the cheapest source across every product type, including injectables, though appointment availability and product selection may be more limited than a full-service vet office. Worth checking for seasonal wellness or vaccine clinics in your area.</p>
+
+    <div class="post-cta">
+      <p>Also budgeting for fleas and ticks? → <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Prevention Cost Calculator</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Read the full flea and tick cost breakdown → <a href="/blog/flea-tick-prevention-cost/">Flea & Tick Prevention: What It Actually Costs</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p>Want the full annual cost picture across every category? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much is heartworm prevention for dogs?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">How much is heartworm prevention for dogs depends mainly on product type and dog size. Monthly oral or topical products run roughly $5-$18 per month, or about $75-$230 per year for a medium dog including the annual heartworm test. Injectable options (given every 6 or 12 months at the vet's office) typically work out to $90-$160 per year depending on dosing schedule and size. Larger dogs cost more across every product type since dosing is weight-based.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Heartworm prevention cost per month</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Heartworm prevention cost per month for a monthly oral or topical product is typically $5 to $18, depending on the specific product and your dog's weight (larger dogs need a higher, more expensive dose). Injectable options are not priced monthly since they are given once every 6 or 12 months at the vet, but averaged out they land in a broadly similar range.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is heartworm prevention worth it?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes. A full year of heartworm prevention, even at the higher end of the price range, typically costs a fraction of what treating an active heartworm infection costs, before even factoring in the health risk and physical toll treatment puts on a dog. Heartworm is also almost entirely preventable with consistent dosing, while treatment is not risk-free and does not undo existing damage to the heart and lungs. For cats, there is no FDA-approved heartworm treatment at all, which makes prevention the only real option.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Heartworm test cost</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A standard annual heartworm antigen test typically costs $35-$75 at a veterinary clinic. If that test comes back positive, a confirmatory microfilaria test (roughly $20-$40 more) and further diagnostics like chest X-rays are usually the next step before starting treatment. This annual test is recommended even for dogs who are consistently on prevention, since no preventive is 100% effective and a missed or vomited dose can create a window for infection.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Heartworm prevention vs treatment cost</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Heartworm prevention vs treatment cost is not a close comparison. A year of prevention, including the annual test, generally runs $75-$360 depending on product type and dog size. Treatment for an established infection generally runs $400-$2,000 or more, and can exceed $3,000 in complicated or advanced cases requiring additional imaging and extended monitoring — roughly 5 to 15 times the cost of a year of prevention, not counting the physical toll of treatment on the dog itself.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Cheapest heartworm prevention</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The cheapest heartworm prevention on a per-dose basis is usually a monthly oral or topical product for a small dog, purchased through a low-cost or nonprofit veterinary clinic rather than a full-service vet office. Buying oral or topical products through an online pharmacy with a prescription from your vet is often somewhat cheaper than buying directly at a vet clinic as well. Injectable products must be given at a vet's office regardless of where you shop, since they cannot be self-administered.</p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print { .form-group, select, label, input { display: none !important; } }
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+<script>
+function toggleHwProduct() {
+  const product = document.getElementById("hw-product").value;
+  const isInjectable = product === "inject6" || product === "inject12";
+  const sourceSelect = document.getElementById("hw-source");
+  const onlineOption = sourceSelect.querySelector("option[value=\"online\"]");
+  const yearRoundGroup = document.getElementById("hw-yearround-group");
+
+  if (isInjectable) {
+    onlineOption.disabled = true;
+    if (sourceSelect.value === "online") sourceSelect.value = "vet";
+    yearRoundGroup.style.display = "none";
+  } else {
+    onlineOption.disabled = false;
+    yearRoundGroup.style.display = "block";
+  }
+}
+
+const hwBaseRanges = {
+  oral:     { low: 75,  high: 215, label: "Monthly oral chewable", monthly: true },
+  topical:  { low: 85,  high: 230, label: "Monthly topical", monthly: true },
+  inject6:  { low: 115, high: 160, label: "Injectable, every 6 months (ProHeart 6)", monthly: false },
+  inject12: { low: 90,  high: 160, label: "Injectable, every 12 months (ProHeart 12)", monthly: false },
+  combo:    { low: 260, high: 360, label: "Combo (flea + tick + heartworm)", monthly: true }
+};
+
+const hwWeightMultiplier = { small: 0.85, medium: 1.0, large: 1.25, giant: 1.5 };
+const hwSourceMultiplier = { vet: 1.0, online: 0.80, lowcost: 0.75 };
+const hwTestCost = { low: 35, high: 75 };
+const hwTreatmentBase = { low: 400, high: 2000 };
+const hwWeightLabels = { small: "Small dog", medium: "Medium dog", large: "Large dog", giant: "Giant dog" };
+const hwSourceLabels = { vet: "Veterinary clinic", online: "Online pharmacy", lowcost: "Low-cost or nonprofit clinic" };
+
+function calculateHeartworm() {
+  const weight = document.getElementById("hw-weight").value;
+  const product = document.getElementById("hw-product").value;
+  const source = document.getElementById("hw-source").value;
+  const yearRound = document.getElementById("hw-yearround").value;
+
+  const base = hwBaseRanges[product];
+  const isInjectable = product === "inject6" || product === "inject12";
+  const weightMult = hwWeightMultiplier[weight];
+  const effectiveSource = isInjectable && source === "online" ? "vet" : source;
+  const sourceMult = hwSourceMultiplier[effectiveSource];
+  const seasonalApplies = base.monthly && yearRound === "seasonal";
+  const monthsFactor = seasonalApplies ? (7 / 12) : 1;
+
+  const productLow = Math.round(base.low * weightMult * sourceMult * monthsFactor);
+  const productHigh = Math.round(base.high * weightMult * sourceMult * monthsFactor);
+
+  const testLow = hwTestCost.low;
+  const testHigh = hwTestCost.high;
+
+  const preventionLow = productLow + testLow;
+  const preventionHigh = productHigh + testHigh;
+
+  const treatmentLow = Math.round(hwTreatmentBase.low * weightMult);
+  const treatmentHigh = Math.round(hwTreatmentBase.high * weightMult);
+
+  const preventionMid = (preventionLow + preventionHigh) / 2;
+  const treatmentMid = (treatmentLow + treatmentHigh) / 2;
+  const ratio = Math.round((treatmentMid / preventionMid) * 2) / 2;
+
+  document.getElementById("hw-prevention-total").textContent = "$" + preventionLow.toLocaleString() + " – $" + preventionHigh.toLocaleString();
+  document.getElementById("hw-treatment-total").textContent = "$" + treatmentLow.toLocaleString() + " – $" + treatmentHigh.toLocaleString() + "+";
+  document.getElementById("hw-ratio-headline").textContent = "Treatment would run roughly " + ratio + "x the cost of a year of prevention";
+
+  let breakdown = "";
+  breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Product</span><span>" + base.label + "</span></div>";
+  breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Dog size</span><span>" + hwWeightLabels[weight] + "</span></div>";
+  breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Purchase source</span><span>" + hwSourceLabels[effectiveSource] + "</span></div>";
+  breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Medication cost</span><span>$" + productLow.toLocaleString() + "–$" + productHigh.toLocaleString() + "</span></div>";
+  breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Annual antigen test</span><span>$" + testLow + "–$" + testHigh + "</span></div>";
+  if (seasonalApplies) {
+    breakdown += "<div style=\"display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);\"><span>Dosing schedule</span><span>Seasonal (~7 months)</span></div>";
+  }
+  document.getElementById("hw-result-breakdown").innerHTML = breakdown;
+
+  let warnings = "";
+  if (seasonalApplies) {
+    warnings += "<div style=\"background:#fdf2f2; border-left:3px solid #e74c3c; padding:10px 12px; border-radius: var(--radius-sm); font-size:0.85rem; color:#7b1c1c; margin-bottom:8px;\">⚠️ You selected seasonal dosing. The American Heartworm Society recommends year-round prevention regardless of climate, since gaps in coverage are one of the most common paths to a breakthrough infection. The lower price above reflects fewer doses, not a recommended approach.</div>";
+  }
+  warnings += "<div style=\"background:var(--cream); padding:10px 12px; border-radius: var(--radius-sm); font-size:0.85rem; color:var(--brown-mid);\">💡 Before starting any preventive, your dog needs a negative heartworm test. Starting prevention on an already-infected dog can cause a severe reaction.</div>";
+  document.getElementById("hw-warnings").innerHTML = warnings;
+
+  document.getElementById("hw-result").style.display = "block";
+  document.getElementById("hw-result").classList.add("show");
+  document.getElementById("hw-pdf-btn").style.display = "block";
+  document.getElementById("hw-result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+</script>

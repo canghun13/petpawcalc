@@ -91,6 +91,10 @@ If fleas are already established, prevention products alone usually aren't enoug
   <a href="/tools/flea-tick-prevention-cost-calculator.html">Use the Flea & Tick Cost Calculator →</a>
 </div>
 
+<div class="post-cta">
+  <p>Also budgeting for heartworm prevention specifically, including what treatment would cost if skipped? → <a href="/tools/heartworm-prevention-cost-calculator.html">Heartworm Prevention Cost Calculator</a></p>
+</div>
+
 ## Frequently Asked Questions
 
 **How much does flea and tick prevention cost per month?**
