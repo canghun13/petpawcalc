@@ -1,0 +1,514 @@
+---
+layout: tool
+title: Dog Arthritis Screening Tool — At-Home Mobility & Pain Checklist
+description: A free, research-based screening tool for early signs of arthritis in dogs. Answer 6 validated yes/no questions about limping, stiffness, and mobility to see whether a vet visit is worth scheduling.
+permalink: /tools/dog-mobility-arthritis-screening.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Arthritis Screening Tool",
+  "url": "https://petpawcalc.com/tools/dog-mobility-arthritis-screening.html",
+  "description": "A free at-home screening tool for early signs of arthritis in dogs, based on a validated 6-question veterinary checklist. Helps owners decide whether mobility or pain changes are worth discussing with a vet.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the signs of arthritis in dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The signs of arthritis in dogs most commonly reported by owners are limping or stiffness after exercise, reluctance to climb stairs or jump, difficulty rising from rest, tiring easily or lagging on walks, and a general change in behavior such as increased irritability or withdrawal. These are exactly the six items this screening checks, based on a validated 500-dog study (Wright et al., 2022, Journal of Small Animal Practice)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to tell if my dog has arthritis",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How to tell if my dog has arthritis starts with watching for a pattern rather than a single moment — a dog who is occasionally stiff after a long hike is different from one who is stiff after every short walk and slow to rise afterward. The six-question screening above gives you a structured way to check for that pattern. A positive result is worth bringing to your veterinarian, since X-rays and a physical exam are generally needed to actually confirm osteoarthritis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my dog in pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Is my dog in pain? Dogs hide pain far more effectively than most owners expect, so subtle behavior changes are often the earliest indicator, not obvious signs like yelping. Reduced enthusiasm for walks, more time spent resting, reluctance to be touched in certain spots, or general irritability can all reflect pain in a dog with no obvious limp. If this sounds familiar, use the screening above and consider a vet visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a dog arthritis test at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is not a diagnostic dog arthritis test at home — osteoarthritis is confirmed by a veterinarian through a physical exam and usually X-rays. What you can do at home is a validated screening like the one above: it does not diagnose osteoarthritis, but it gives you a structured, research-backed way to decide whether what you are seeing is worth a vet visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my senior dog seem stiff after a walk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A senior dog stiff after walk that eases within an hour, then returns after the next walk, is one of the clearest early patterns for canine osteoarthritis — it is exactly Q1 on the screening above. Occasional stiffness after unusually long or hard exercise is common and less concerning; stiffness after every walk, or stiffness that is getting more frequent, is the pattern worth screening for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my dog struggling to get up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A dog struggling to get up from lying down or sitting is Q4 on the screening above, and it is one of the more specific single signs of osteoarthritis on this checklist. It commonly shows up as needing several attempts to stand, a stiff \"walk it off\" phase right after rising, or a growing reluctance to lie down on hard floors in the first place."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🦴 Dog Arthritis Screening Tool</h1>
+    <p>Answer 6 quick yes/no questions based on a validated veterinary screening checklist to check for early signs of arthritis in dogs. Takes about a minute.</p>
+  </div>
+
+  <div class="tool-box">
+    <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 24px; line-height: 1.6;">
+      Answer each question honestly based on your dog <strong>over the past few weeks</strong>, not just today. This is a screening tool, not a diagnosis — it is designed to help you decide whether a vet conversation is worth having, not to replace one.
+    </p>
+
+    <!-- Q1 -->
+    <div class="oa-question" id="oa-q1">
+      <div class="oa-question-header">
+        <span class="oa-icon">🦵</span>
+        <div>
+          <div class="oa-title">Limping or Stiffness After Exercise</div>
+          <div class="oa-subtitle">Does your dog limp, or seem stiff, in the period after exercise or a walk?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-1"></div>
+      <div class="oa-note">Post-exercise stiffness that eases with rest, then returns after the next walk, is one of the most commonly reported early signs of osteoarthritis in dogs.</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="oa-question" id="oa-q2">
+      <div class="oa-question-header">
+        <span class="oa-icon">😣</span>
+        <div>
+          <div class="oa-title">Signs of Pain</div>
+          <div class="oa-subtitle">Setting limping aside — do you think your dog is showing any other signs of pain?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-2"></div>
+      <div class="oa-note">This is a general, gut-instinct question on the original checklist. Trust your read on your own dog, even if you cannot point to one specific behavior.</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="oa-question" id="oa-q3">
+      <div class="oa-question-header">
+        <span class="oa-icon">🪜</span>
+        <div>
+          <div class="oa-title">Reluctant to Climb Stairs or Jump</div>
+          <div class="oa-subtitle">Is your dog reluctant to climb stairs, jump onto furniture, or jump into the car?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-3"></div>
+      <div class="oa-note">Reduced willingness to jump or use stairs is often one of the very first changes owners notice — sometimes before any obvious limping appears.</div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="oa-question" id="oa-q4">
+      <div class="oa-question-header">
+        <span class="oa-icon">🛌</span>
+        <div>
+          <div class="oa-title">Difficulty Rising From Rest</div>
+          <div class="oa-subtitle">Does your dog have difficulty getting up from lying down or sitting?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-4"></div>
+      <div class="oa-note">Owners often describe this as needing a "run-up," several attempts to stand, or being noticeably slower to rise after naps than after a night's sleep.</div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="oa-question" id="oa-q5">
+      <div class="oa-question-header">
+        <span class="oa-icon">🔄</span>
+        <div>
+          <div class="oa-title">Change in Behavior</div>
+          <div class="oa-subtitle">Have you noticed any change in your dog's behavior lately, compared with how they normally act?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-5"></div>
+      <div class="oa-note">Reduced play, more irritability, less enthusiasm for walks, or increased sleeping can all reflect chronic discomfort rather than simple aging.</div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="oa-question" id="oa-q6">
+      <div class="oa-question-header">
+        <span class="oa-icon">🚶</span>
+        <div>
+          <div class="oa-title">Tires Easily or Lags on Walks</div>
+          <div class="oa-subtitle">Does your dog tire more easily than they used to, or lag behind during walks?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-6"></div>
+      <div class="oa-note">Falling behind on a walk your dog used to keep pace with, or needing more rest breaks, can signal joint pain rather than simply losing interest.</div>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateOA()" id="calc-btn" style="margin-top: 8px;">Check My Dog's Screening Result →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="oa-date"></span>
+      </div>
+      <div id="score-display" style="text-align:center; margin-bottom: 16px;">
+        <div style="font-size: 2.2rem; font-weight: 700; color: var(--orange);" id="total-score"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">of 6 items flagged</div>
+      </div>
+      <div id="score-bar-wrap" style="background: #eee; border-radius: 20px; height: 12px; margin-bottom: 20px; overflow:hidden;">
+        <div id="score-bar" style="height:100%; border-radius:20px; transition: width 0.6s ease;"></div>
+      </div>
+      <h3 id="result-headline" style="margin-bottom: 8px;"></h3>
+      <p id="result-summary" style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"></p>
+      <div id="result-flags"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('oa-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- Breakdown (shown after calc) -->
+  <div id="breakdown-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Item-by-Item Breakdown</h2>
+    <div id="breakdown-list"></div>
+    <div style="margin-top: 20px; padding: 16px; background: var(--cream); border-radius: var(--radius); border-left: 3px solid var(--orange);">
+      <p style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.7; margin: 0;">
+        <strong>How to use this result:</strong> A single screening gives you a snapshot. If your result is negative today but you are still not sure, repeat the screening in a few weeks — osteoarthritis is a slow, progressive condition, so the pattern usually becomes clearer over time rather than appearing all at once. Bring a printed or saved copy to your vet visit; it gives your vet a structured starting point rather than a vague "he seems slower lately."
+      </p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This is a screening tool, not a diagnostic tool, and it does not replace veterinary examination. Osteoarthritis can only be confirmed by a veterinarian, typically with a physical exam and X-rays. If your dog is showing sudden, severe lameness, is not putting any weight on a limb, or is crying out in pain, contact your vet promptly rather than waiting on a screening result.
+  </div>
+
+  <!-- Educational content -->
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How This Screening Was Built</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This tool is based on a 2022 study published in the Journal of Small Animal Practice (Wright et al.), which tested a 9-question, owner-completed osteoarthritis screening checklist on 500 dogs. Every dog whose owner answered "yes" to at least one question was examined by a veterinarian, and osteoarthritis was confirmed in 38% of them (188 of 500) — a notably higher rate than earlier prevalence estimates, suggesting a real number of cases were going unrecognized by owners.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Across all 9 original questions, a "yes to any" rule caught about 99% of confirmed osteoarthritis cases, but also flagged a large share of healthy dogs (specificity around 37%) — useful for not missing cases, but not very efficient. The researchers found that narrowing the checklist to the 6 strongest-performing questions (dropping three based on prior injury, prior pain medication, and recent weight gain, which turned out to be weaker predictors) gave a better-balanced result: roughly 88% sensitivity and 71% specificity. Those are the exact 6 questions used above.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">In plain terms: answering "yes" to even one of the six questions above was associated with correctly flagging about 88 of every 100 dogs who truly had osteoarthritis in this study, while about 71 of every 100 healthy dogs correctly screened negative. No screening tool is perfect — some dogs with early or mild osteoarthritis will screen negative, and some healthy dogs (especially seniors with unrelated aches) will screen positive. That is exactly why this is framed as a conversation-starter for your vet, not a diagnosis.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">This Tool vs. the Dog Quality of Life Calculator</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">PetPawCalc has two related but different tools, and it is worth knowing which one fits your situation. This screening tool is for <strong>early detection</strong> — it is meant for a dog who seems a little different lately, and helps you decide whether joint pain is worth raising with your vet before it becomes obvious. It is not designed for dogs who are already diagnosed with a serious or terminal condition.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The <a href="/tools/dog-quality-of-life-calculator.html">Dog Quality of Life Calculator</a> (Paw Score) is a different kind of tool, used for a different stage: it is designed for senior dogs, dogs with a terminal illness, or dogs with chronic pain that is already being managed, and it is meant to be tracked over time to support decisions about ongoing care, palliative treatment, or end-of-life timing. If your dog already has a diagnosis and you are trying to track their overall wellbeing rather than screen for a new problem, that is the tool to use instead.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Weight Matters for Joint Pain</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Weight management is not a minor add-on to arthritis care — it is a tier-1, first-line recommendation in the 2022 AAHA Pain Management Guidelines for Dogs and Cats, alongside exercise, and ahead of most medications and supplements on the guideline's priority list. Extra weight puts direct mechanical load on already-painful joints, and fat tissue itself produces inflammatory compounds that can worsen joint pain independent of the extra load.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The effect size is not small either: studies in overweight dogs with hip or elbow osteoarthritis have found measurable improvement in OA symptoms with as little as 6% to 18% body weight loss. If your dog screened positive above and is carrying extra weight, that is often the single highest-leverage change available before medication is even discussed with your vet. Start with the <a href="/tools/dog-weight-calculator.html">Dog Weight Calculator</a> to check where your dog currently stands, then the <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a> (switch to weight-loss mode) to get a target daily calorie intake.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When to Seek Care Sooner Rather Than Later</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This screening is built around gradual, chronic signs — the kind that build up over weeks or months. It is not meant for sudden changes. If your dog suddenly will not put any weight on a leg, is crying out, has a visibly swollen joint, or the change happened within a day or two (rather than gradually), that points toward an acute injury rather than chronic osteoarthritis, and it is worth contacting your vet promptly rather than completing a screening and waiting for a routine appointment.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs of arthritis in dogs?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The signs of arthritis in dogs most commonly reported by owners are limping or stiffness after exercise, reluctance to climb stairs or jump, difficulty rising from rest, tiring easily or lagging on walks, and a general change in behavior such as increased irritability or withdrawal. These are exactly the six items this screening checks, based on a validated 500-dog study (Wright et al., 2022, Journal of Small Animal Practice).</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How to tell if my dog has arthritis</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">How to tell if my dog has arthritis starts with watching for a pattern rather than a single moment — a dog who is occasionally stiff after a long hike is different from one who is stiff after every short walk and slow to rise afterward. The six-question screening above gives you a structured way to check for that pattern. A positive result is worth bringing to your veterinarian, since X-rays and a physical exam are generally needed to actually confirm osteoarthritis.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is my dog in pain?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Is my dog in pain? Dogs hide pain far more effectively than most owners expect, so subtle behavior changes are often the earliest indicator, not obvious signs like yelping. Reduced enthusiasm for walks, more time spent resting, reluctance to be touched in certain spots, or general irritability can all reflect pain in a dog with no obvious limp. If this sounds familiar, use the screening above and consider a vet visit.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is there a dog arthritis test at home?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There is not a diagnostic dog arthritis test at home — osteoarthritis is confirmed by a veterinarian through a physical exam and usually X-rays. What you can do at home is a validated screening like the one above: it does not diagnose osteoarthritis, but it gives you a structured, research-backed way to decide whether what you are seeing is worth a vet visit.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my senior dog seem stiff after a walk?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A senior dog stiff after walk that eases within an hour, then returns after the next walk, is one of the clearest early patterns for canine osteoarthritis — it is exactly Q1 on the screening above. Occasional stiffness after unusually long or hard exercise is common and less concerning; stiffness after every walk, or stiffness that is getting more frequent, is the pattern worth screening for.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why is my dog struggling to get up?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A dog struggling to get up from lying down or sitting is Q4 on the screening above, and it is one of the more specific single signs of osteoarthritis on this checklist. It commonly shows up as needing several attempts to stand, a stiff "walk it off" phase right after rising, or a growing reluctance to lie down on hard floors in the first place.</p>
+
+    <div class="post-cta">
+      <h4>Carrying extra weight?</h4>
+      <p>Weight management is a tier-1 recommendation for arthritis care. Check your dog's current weight status first.</p>
+      <a href="/tools/dog-weight-calculator.html">Use the Dog Weight Calculator →</a>
+    </div>
+
+    <div class="post-cta">
+      <h4>Ready to set a weight-loss calorie target?</h4>
+      <p>If your dog needs to lose weight, switch to weight-loss mode for a daily calorie target based on goal weight.</p>
+      <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator →</a>
+    </div>
+
+    <div class="post-cta">
+      <h4>Already managing a serious or terminal condition?</h4>
+      <p>This screening is for early detection. For ongoing quality-of-life tracking in senior or seriously ill dogs, use our dedicated tool instead.</p>
+      <a href="/tools/dog-quality-of-life-calculator.html">Go to the Dog Quality of Life Calculator →</a>
+    </div>
+
+    <div class="post-cta">
+      <p>Due for a checkup? → <a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  #breakdown-section { margin-top: 20px !important; }
+  .result-box, #breakdown-section > div { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print {
+  .oa-question, #calc-btn, .tool-box > p { display: none !important; }
+}
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+<style>
+.oa-question {
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.oa-question:last-of-type {
+  border-bottom: none;
+}
+.oa-question-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.oa-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.oa-title {
+  font-weight: 700;
+  color: var(--brown);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.oa-subtitle {
+  font-size: 0.875rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+}
+.oa-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.oa-btn {
+  flex: 1;
+  max-width: 140px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--brown);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: var(--font-body);
+}
+.oa-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.oa-btn.selected-yes {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+.oa-btn.selected-no {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+.oa-note {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+  background: var(--cream);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.flag-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.flag-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.flag-note { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+</style>
+
+<script>
+const oaQuestions = [
+  { n: 1, label: "Limping or stiffness after exercise" },
+  { n: 2, label: "Signs of pain" },
+  { n: 3, label: "Reluctant to climb stairs or jump" },
+  { n: 4, label: "Difficulty rising from rest" },
+  { n: 5, label: "Change in behavior" },
+  { n: 6, label: "Tires easily or lags on walks" }
+];
+
+const oaAnswers = {};
+
+oaQuestions.forEach(q => {
+  const container = document.getElementById("oa-buttons-" + q.n);
+  const yesBtn = document.createElement("button");
+  yesBtn.className = "oa-btn";
+  yesBtn.textContent = "Yes";
+  yesBtn.onclick = () => selectOA(q.n, true);
+  const noBtn = document.createElement("button");
+  noBtn.className = "oa-btn";
+  noBtn.textContent = "No";
+  noBtn.onclick = () => selectOA(q.n, false);
+  container.appendChild(noBtn);
+  container.appendChild(yesBtn);
+});
+
+function selectOA(n, value) {
+  oaAnswers[n] = value;
+  const container = document.getElementById("oa-buttons-" + n);
+  const buttons = container.querySelectorAll(".oa-btn");
+  buttons.forEach(btn => {
+    btn.classList.remove("selected-yes", "selected-no");
+    if (btn.textContent === "Yes" && value === true) btn.classList.add("selected-yes");
+    if (btn.textContent === "No" && value === false) btn.classList.add("selected-no");
+  });
+}
+
+function calculateOA() {
+  const missing = oaQuestions.filter(q => oaAnswers[q.n] === undefined);
+  if (missing.length > 0) {
+    alert("Please answer all 6 questions before checking your result.");
+    return;
+  }
+
+  const yesCount = oaQuestions.filter(q => oaAnswers[q.n] === true).length;
+  const pct = (yesCount / 6) * 100;
+
+  let barColor, headline, summary;
+  if (yesCount === 0) {
+    barColor = "#27ae60";
+    headline = "No Red Flags on This Screening (0 of 6)";
+    summary = "None of the six items on this validated screening were flagged today. This does not rule out osteoarthritis — some dogs, especially in early stages, do not show these particular signs yet — but there is nothing here that needs an urgent vet visit. It is still worth mentioning any subtle changes at your dog\u2019s next regular checkup, and repeating this screening again in a few months as your dog ages.";
+  } else if (yesCount <= 2) {
+    barColor = "#f39c12";
+    headline = "Positive Screen (" + yesCount + " of 6) \u2014 Worth a Vet Conversation";
+    summary = "Your dog flagged " + yesCount + " of the six items on this validated screening. In the study this tool is based on, flagging even one item was associated with roughly 88% sensitivity and 71% specificity for osteoarthritis across 500 dogs. This is a screening result, not a diagnosis \u2014 bring it up with your veterinarian, who can examine your dog and confirm whether osteoarthritis or another condition explains what you are seeing.";
+  } else {
+    barColor = "#e74c3c";
+    headline = "Positive Screen (" + yesCount + " of 6) \u2014 Multiple Signs Present";
+    summary = "Your dog flagged " + yesCount + " of the six items on this validated screening. Multiple signs appearing together generally strengthens the case for a vet visit sooner rather than later. This is still a screening result, not a diagnosis \u2014 your veterinarian can examine your dog and use imaging or other tests if needed to confirm osteoarthritis or rule out other causes.";
+  }
+
+  document.getElementById("total-score").textContent = yesCount + "/6";
+  document.getElementById("score-bar").style.width = pct + "%";
+  document.getElementById("score-bar").style.background = barColor;
+  document.getElementById("result-headline").textContent = headline;
+  document.getElementById("result-headline").style.color = barColor;
+  document.getElementById("result-summary").textContent = summary;
+
+  const flags = [];
+  if (oaAnswers[2] === true) {
+    flags.push({ type: "warn", text: "You indicated your dog may be showing signs of pain. If this is sudden, severe, or your dog is vocalizing in distress, do not wait for a routine appointment \u2014 contact your vet promptly." });
+  }
+  if (oaAnswers[4] === true) {
+    flags.push({ type: "note", text: "Difficulty rising is one of the more specific signs on this screening. Weight management, joint-friendly flooring, and ramps or steps for furniture access can all help alongside a vet-guided pain management plan." });
+  }
+  if (oaAnswers[1] === true || oaAnswers[3] === true || oaAnswers[6] === true) {
+    flags.push({ type: "note", text: "Mobility-related signs like this are the most common early indicators of osteoarthritis. Ask your vet whether joint supplements, physical therapy, or pain management could help preserve your dog\u2019s mobility." });
+  }
+  if (oaAnswers[5] === true) {
+    flags.push({ type: "note", text: "Behavior changes can reflect pain, but can also reflect other medical or cognitive changes, especially in senior dogs. Mention this specifically at your vet visit rather than assuming it is just aging." });
+  }
+
+  const flagsEl = document.getElementById("result-flags");
+  flagsEl.innerHTML = flags.map(f => "<div class=\"flag-item flag-" + f.type + "\"><span>" + (f.type === "warn" ? "\u26A0\uFE0F" : "\uD83D\uDCA1") + "</span><span>" + f.text + "</span></div>").join("");
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").classList.add("show");
+  document.getElementById("pdf-btn").style.display = "block";
+
+  const breakdownEl = document.getElementById("breakdown-list");
+  breakdownEl.innerHTML = oaQuestions.map(q => {
+    const isYes = oaAnswers[q.n] === true;
+    const color = isYes ? "#e74c3c" : "#27ae60";
+    const mark = isYes ? "Yes" : "No";
+    return "<div style=\"display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--border);\">" +
+      "<span style=\"font-size:0.9rem; color:var(--brown);\">Q" + q.n + ". " + q.label + "</span>" +
+      "<span style=\"font-weight:700; color:" + color + "; font-size:0.85rem;\">" + mark + "</span>" +
+      "</div>";
+  }).join("");
+
+  document.getElementById("breakdown-section").style.display = "block";
+  document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+</script>
