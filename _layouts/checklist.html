@@ -103,12 +103,14 @@
       applyState();
 
       // Optional: age-window countdown (opt-in per checklist page).
-      // A checklist page can add <input type="date" id="checklist-age-input" data-window-days="112">
+      // A checklist page can add <input type="date" id="checklist-age-input" data-window-days="112"
+      // data-window-label="critical socialization window"> (label attribute optional, defaults below)
       // plus <div id="checklist-countdown-result"></div> to get a generic "days left in window" countdown.
       // This is generic/reusable so individual checklist pages never need their own <script>.
       const dobInput = document.getElementById('checklist-age-input');
       if (dobInput) {
         const windowDays = parseInt(dobInput.getAttribute('data-window-days') || '0', 10);
+        const windowLabel = dobInput.getAttribute('data-window-label') || 'critical socialization window';
         const countdownEl = document.getElementById('checklist-countdown-result');
         const dobStorageKey = storageKey + ':dob';
 
@@ -130,10 +132,10 @@
           const daysLeft = Math.ceil((windowEnd - today) / (1000 * 60 * 60 * 24));
 
           if (daysLeft > 0) {
-            countdownEl.innerHTML = `<strong>${daysLeft} day${daysLeft === 1 ? '' : 's'} left</strong> in the critical socialization window — it closes on ${fmtCountdownDate(windowEnd)}.`;
+            countdownEl.innerHTML = `<strong>${daysLeft} day${daysLeft === 1 ? '' : 's'} left</strong> in the ${windowLabel} — it closes on ${fmtCountdownDate(windowEnd)}.`;
             countdownEl.className = 'checklist-countdown checklist-countdown-active';
           } else {
-            countdownEl.innerHTML = `The critical socialization window closed on ${fmtCountdownDate(windowEnd)}. Continued exposure is still valuable — see the FAQ below.`;
+            countdownEl.innerHTML = `The ${windowLabel} closed on ${fmtCountdownDate(windowEnd)}. Continued exposure is still valuable — see the FAQ below.`;
             countdownEl.className = 'checklist-countdown checklist-countdown-closed';
           }
           try { localStorage.setItem(dobStorageKey, val); } catch (e) { /* ignore */ }

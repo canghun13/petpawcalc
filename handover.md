@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-08 (세션 AE — 신규 클러스터: Dog Arthritis Screening Tool)
+최종 갱신: 2026-08-08 (세션 AF — 페어링 보강: Kitten Socialization Checklist)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1583,3 +1583,45 @@ GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklis
 - Opus 기획 세션이 함께 제시한 나머지 후보들(고양이 관절염 스크리닝, 심장사상충 예방비 계산기, 킷튼 소셜라이제이션 체크리스트, 고양이 사료 전환 플래너, 페어링 공백 7곳 등) 순서대로 진행 검토 — 이번 세션은 그중 1순위 하나만 처리.
 - 이 툴의 FAQ 문구("signs of arthritis in dogs" 등)가 다음 GSC 데이터에서 실제로 잡히는지 확인 — 신생 페이지라 최소 대기 필요.
 - `dog-quality-of-life-calculator`와의 자기잠식 여부(역할 분리 문구가 실제로 효과가 있는지, 두 페이지가 겹치는 쿼리에서 서로 잡아먹지 않는지)를 다음 GSC 데이터에서 확인.
+
+---
+
+### 세션 AF — 페어링 공백 보강: Kitten Socialization Checklist (8/8, Opus 기획 세션 후속 2번째 항목)
+
+세션 AE(Dog Arthritis Screening Tool)에 이은 Opus 기획 목록의 두 번째 항목 실행. `checklists/puppy-socialization-checklist.html`은 있는데 고양이 버전이 없던 페어링 공백을 메움.
+
+**신규 파일**: `checklists/kitten-socialization-checklist.html` — 24개 항목(사람 5 / 핸들링 4 / 표면 3 / 소리 4 / 캐리어 3 / 발톱관리 도구 2 / 다른 동물 3).
+
+**핵심 설계 판단 — "강아지 내용 복붙 금지" 지시를 실제로 다르게 만든 부분**:
+사용자가 지정한 프레이밍을 그대로 실행: **대부분의 킷튼은 1차 사회화 창(2~7주)이 이미 끝난 뒤인 8~12주에 입양된다는 사실**을 도구의 핵심으로 삼음. puppy 버전은 "아직 남은 창의 카운트다운"이 프레이밍이지만, kitten 버전은 **"이미 끝난 1차 창은 어쩔 수 없고, 2차 창(9주~14-16주)을 어떻게 최대한 활용할 것인가"**가 프레이밍 — 이게 강아지 버전을 그대로 복붙해서는 절대 안 나오는 구조적 차이.
+
+**사실관계 검증(웹서치로 원 출처 직접 확인, 확인 안 된 것은 안 씀)**:
+- **Karsh & Turner(1988)**: *The Domestic Cat: The Biology of its Behaviour* (Cambridge University Press) 안의 챕터로 실재 확인 — Cambridge Animal Welfare 저널 인용목록, gwern.net 호스팅 학술 PDF들("Karsh and Turner, 1988"), Waltham/SHINE(고양이 복지재단) 공식 자료 각주에서 전부 일관되게 인용됨. 1차 민감기 2~7주라는 수치도 Waltham 자료가 직접 확인해줌("primary sensitive period occurs between two and seven weeks of age, with a gradual decline in sensitivity over the following weeks").
+- **Casey & Bradshaw(2008)**: *Applied Animal Behaviour Science* 114(1-2), 196-205, DOI 10.1016/j.applanim.2008.01.003 — **원문 PDF를 직접 열어서 확인**(gwern.net 호스팅본). 보호소 킷튼 대상 추가 사회화 개입 연구, 방법론에 "최소 4명의 다른 사람(성인 남성 1명·10세 미만 아동 1명 포함) 접촉"이라는 조건이 실제로 명시돼 있음을 원문에서 확인. 이 논문은 이후 학계에서도 계속 인용되는 실재 연구(2024년 Applied Animal Behaviour Science 논문에서도 참고문헌으로 재확인).
+- **1차 창만 있고 "2차 창"이 동일한 학술적 엄밀성으로 검증된 별개 구간이라는 근거는 약함** — Waltham 출처는 "점진적 감소"로 서술(두 개의 뚜렷이 분리된 창이 아니라 연속적 감소). 이 점을 정직하게 반영해서, 본문에서 1차 창은 "학계에서 확고히 검증된" 톤으로, 2차 창(9~16주)은 "실무적으로 통용되는 확장 개념"으로 톤을 구분해서 서술 — 과장 없음.
+- **입양 시기(8~12주가 흔함)**: TheCatSite 포럼·Chewy 공식 가이드·PetHealthMD 등 복수 소스 교차확인, "최소 8주, 실무적으로는 10~12주가 흔함"으로 일관 — 사용자가 지시한 "7~8주"보다 실제로는 살짝 더 늦은 경향(8~12주)이지만, 어느 쪽이든 1차 창(2~7주)이 입양 시점엔 이미 끝나있다는 핵심 논지는 그대로 성립하므로 이 실측 수치로 조정해서 사용.
+
+**공용 인프라를 건드린 부분 — 백워드 호환 확인 필수**:
+`_layouts/checklist.html`의 카운트다운 위젯이 "critical socialization window"라는 문구를 **하드코딩**하고 있었음(puppy 체크리스트 전용으로 작성돼 있었던 것). 고양이 버전은 "2차 창"이라는 다른 라벨이 필요해서, 이 위젯에 **선택적 `data-window-label` 속성**을 추가해 범용화(속성 없으면 기존 문구 "critical socialization window"로 그대로 기본값 처리 — puppy 체크리스트는 아무것도 안 바꿔도 됨).
+- **Node로 직접 시뮬레이션해서 puppy 체크리스트가 이전과 100% 동일한 텍스트를 렌더링하는지 확인**(속성 미지정 시): "112 days left in the critical socialization window..." — 기존과 바이트 단위로 동일. kitten 체크리스트는 `data-window-label="secondary socialization window"`로 "112 days left in the secondary socialization window..." 정상 출력 확인. 마감 후 텍스트도 양쪽 다 정상 확인.
+- kitten의 `data-window-days`는 112(16주)로 설정 — 2차 창 상한(14~16주 중 더 관대한 쪽)에 맞춤. 카운트다운은 항상 2차 창 기준으로만 표시(1차 창은 입양 시점엔 이미 끝나있는 게 보통이라 카운트다운 대상으로 실효성이 없음 — 본문 설명 섹션에서만 1차 창을 별도로 다룸).
+
+**항목 구성(사용자 지시 그대로 반영)**:
+사람 노출(남성·여성·아동·고령자·모자/후드 착용자로 연령·성별·외형 다양화), 신체 부위별 핸들링(발·귀·입, 추가로 배/옆구리 방향 들기 항목), 다양한 바닥재(마루·카펫·바스락거리는/미끄러운 질감), 소리 둔감화(청소기·초인종·천둥·가전 알림음), 캐리어 적응(들어가기·문 닫고 대기·목적지가 병원이 아닌 짧은 드라이브), 발톱깎기 도구 노출(도구 노출·클리핑 동작 연습), 다른 동물 노출(고양이·개·장벽 너머 관찰).
+
+**FAQ 5개 정확 문구 전부 반영** + 백신 관련 FAQ 1개 추가(강아지 버전과의 차별점 명시 — 고양이는 이 체크리스트 항목 대부분이 실내·통제된 환경이라 강아지처럼 백신 완료를 기다릴 이유가 없다는 점을 명확히 함): "kitten socialization window", "how to socialize a kitten", "kitten socialization checklist", "is it too late to socialize my kitten", "shy kitten won't come out" — 전부 본문에 그대로 삽입 확인.
+
+**금지사항 준수**: 브랜드명 없음(Feliway 등 특정 제품명 대신 "synthetic feline pheromone diffuser"로 일반화 표기 — 사이트 내 다른 곳엔 Feliway가 태그로 쓰인 전례가 있지만 이번엔 보수적으로 일반명사 사용). 제휴 마커 없음.
+
+**공통 파일 동기화**: `checklists/index.html`(카드를 puppy-socialization 바로 다음에 배치해 페어링을 시각적으로도 드러냄, 기존 post-surgery-recovery-checklist에 남아있던 stale New 배지를 신규 카드로 이동), `llms.txt`(Checklists 섹션, puppy 항목 바로 다음에 추가, 1차/2차 창 프레이밍과 방법론을 상세 기술). **index.html(홈페이지)에는 Checklists 섹션 자체가 없어서(Tools만 노출) 카드 추가 대상에서 제외** — 세션 M 당시 설계 그대로.
+
+**역링크(고아 페이지 방지) 4곳**: `new-kitten-checklist.html`, `cat-carrier-training-planner.html`, `cat-introduction-timeline.html`, `kitten-litter-training-timeline.html` — 지시받은 4개 링크 전부 역방향으로도 연결.
+
+**QA(전수)**: 수정/신규 파일 8개 전부 div/`<a>`/`<label>`/`<span>` 태그 균형 확인. YAML front matter 파싱 통과. JSON-LD 2개(ItemList+FAQPage) 유효성 + FAQ 스키마-본문 h3 순서 1:1(6/6) + **ItemList 항목수 vs 실제 체크박스 개수 일치(24/24)** + 초기 "0 of 24 done" 텍스트 일치 확인. 이 파일은 자체 `<script>` 태그가 JSON-LD 2개뿐이라(인터랙션은 전부 공용 레이아웃 JS가 처리) 아포스트로피 축약형 검사 대상 자체가 없음 — 이 구조 덕분에 세션 T급 이스케이프 사고 리스크가 원천 차단됨. `_layouts/checklist.html` 수정분은 script 블록 2개 전수 node --check 통과, Liquid 태그 균형 확인(9/9, 2/2), **puppy 체크리스트 백워드 호환을 Node 시뮬레이션으로 직접 검증**(속성 미지정 시 기존과 동일 텍스트 출력). 전체 저장소 링크 재스캔 0건. permalink 중복 검사 50개(41 tools + 9 기존 checklists + 신규 1) 전부 유니크. checklists/index.html 카드 개수 정밀 재확인 10=10(실제 파일 개수와 일치), New 배지 정확히 1개. 브랜드/제휴 마커 스캔 0건.
+
+**오늘(세션 AE+AF) 누적 페이지 수**: tools 41 + posts 37 + checklists 10 = 88페이지. 이번 세션 신규 순증 1개.
+
+**다음 세션에서 확인할 것**:
+- 신규 체크리스트 GSC 노출/색인 여부(최소 1~2주 필요).
+- Opus 기획 세션 후보 잔여 항목(고양이 관절염 스크리닝, 심장사상충 예방비 계산기, 고양이 사료 전환 플래너, 페어링 공백 나머지 6곳) 순서대로 진행 검토.
+- `_layouts/checklist.html`의 `data-window-label` 범용화가 향후 다른 종(토끼·기니피그 등) 사회화 체크리스트를 만들 때도 그대로 재사용 가능 — 다음에 유사 체크리스트 만들 때 이 패턴부터 확인할 것(새로 만들 필요 없음).
