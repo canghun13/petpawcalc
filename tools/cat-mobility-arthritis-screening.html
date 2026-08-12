@@ -285,6 +285,58 @@ permalink: /tools/cat-mobility-arthritis-screening.html
   </div>
 </div>
 
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  #breakdown-section { margin-top: 20px !important; }
+  .result-box, #breakdown-section > div { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print {
+  .oa-question, #calc-btn, .tool-box > p { display: none !important; }
+}
+</style>
+
 <script>
 function doPrint(dateId) {
   document.getElementById(dateId).textContent =
