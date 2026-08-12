@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-08 (세션 AG — 신규: Heartworm Prevention Cost Calculator)
+최종 갱신: 2026-08-12 (세션 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1665,3 +1665,144 @@ GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklis
 - 신규 계산기 GSC 노출/색인 여부(최소 1~2주 필요).
 - Opus 기획 세션 잔여 후보(고양이 관절염 스크리닝, 고양이 사료 전환 플래너, 페어링 공백 나머지 6곳) 순서대로 진행 검토.
 - 이 계산기의 ProHeart 6/12 실측 가격 데이터(DeHart·Protect Your Pet·PopUpPetVax)가 3곳 다 미국 특정 지역 클리닉 표라 전국 대표성엔 한계 있음 — 더 많은 클리닉 데이터가 확보되면 재검증 권장.
+
+
+---
+
+### 세션 AH — GSC/GA 8/12 주간 작업: 색인 정체 완전 해소 확인 + 고양이 관절염 스크리닝 신규 + 5개 클러스터 정확문구 보강 (8/12)
+
+사용자 요청: 밀린 일요일 주간 작업. GSC(+GA) 확인 후 신규/보강 정리, 색인은 첨부 자료로만 판단, 신규는 중복 체크 + 웹검색 경쟁조사 + 경쟁 회피 장치 + 롱테일 전략, **공격적 확장 전략 유지**(진짜 할 게 없으면 안 하는 게 맞지만 전략 자체는 바꾸지 말 것), 수익화 관점 우선순위, 대시보드/시각화 금지 텍스트 보고만.
+
+---
+
+#### 1. 🎉 색인 정체가 완전히 깨졌다 — 여러 세션째 열려있던 이슈 종결
+
+- **발견됨-미색인 15 → 4개**, 크롤링됨-미색인 6 → 8개, **합계 21 → 12개**. Coverage 차트 기준 7/1(15) → 7/11(9) → 7/25(4)로 계단식 감소가 실제로 찍혀 있음.
+- 세션 J(7/15)부터 세션 AA(8/2)까지 5개 데이터 포인트 연속 21개로 못 박혀 있던 것이 세션 AB에서 17로 움직였고, 이번에 12까지 내려옴. **"사용자가 GSC UI에서 개별 URL 재크롤 요청" 권고는 이제 불필요 — 이 항목은 종결 처리한다.**
+- **남은 발견됨-미색인 4개**: `annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `spay-neuter-cost-calculator`, `titer-test-vs-revaccination-calculator`. 이 중 **`cat-pregnancy-calculator`만 예외적으로 사용자에게 수동 색인 요청을 권했다** — dog 버전이 246노출·46.73위로 완전히 살아난 것과 대비되는 비대칭이 세션 P부터 계속 유지 중이고, 온페이지 처리(세션 M 비교표, 세션 AC 정확문구, 이번 세션 명칭변형 FAQ)는 dog와 동일하게 다 해줬는데도 결과가 안 갈리기 때문.
+- **크롤링됨-미색인 8개에 `https://petpawcalc.com/handover/`가 들어있음(최종 크롤 7/12)**. 세션 M에서 `_config.yml` exclude 처리한 뒤라 현재는 404를 반환할 것이고 이게 정상 동작임. **다음 세션에서 이 항목 보고 불필요하게 파지 말 것.**
+- `what-to-feed-pregnant-dog`가 크롤링됨-미색인 목록에 있으나(최종 크롤 5/19) Performance에는 101노출이 잡힘 — Coverage 리포트의 집계 지연으로 판단, 모순 아님.
+
+#### 2. Performance 지표
+
+- 누적(3개월): **노출 3,885 / 클릭 12 / 평균 43.75위**. 세션 AB(3,180 / 9)에서 계속 증가.
+- 일별 평균 순위: 8/4(24.4) → 8/6(21) → 8/7(21) → 8/9(25.3). 세션 AB의 "66.9→24.4 급개선" 이후 20위대에서 안정화.
+- 기기: 모바일 1,534노출·9클릭·CTR 0.59%·21.06위 / 데스크톱 2,323노출·3클릭·CTR 0.13%·53.32위. **모바일이 노출은 적은데 순위·CTR은 압도적으로 좋다** — 다음 세션에서 모바일 우선 관점으로 볼 여지 있음(신규 관찰 항목).
+- 클릭 나온 페이지: kitten-weight-chart(509노출·2클릭·12.93위), flea-tick-prevention-cost(312·2·10.61), puppy-weight-chart(208·2·11.32), how-much-should-senior-dog-eat(153·2·14.31), cat-weight-calculator(194·1·36.27), pet-weight-calculator(40·1·2.5%), kitten-litter-training-regression(31·1·**CTR 3.23%**), dog-heat-safety-calculator(3·1·33%).
+- **세션 AC의 클러스터 C(cat-weight-calculator 검색의도 재정렬)가 실제로 먹혔다**: 세션 AB 때 39.4위였던 게 36.27위·194노출·클릭 1건으로 개선.
+- GA(7/15~8/11): 활성 103명, 신규 108명. 유입은 여전히 (direct) 70명 압도, organic은 bing 7·google 7·duckduckgo 4·yahoo 4. 세션 소스에 `pitchwall.co` referral 11건. **AI 검색엔진발 유입은 `copilot.com` 2건이 유일** — 여전히 유의미한 채널 아님, 계속 관찰.
+
+#### 3. 정확 문구 자동 대조 — 세션 AC 효과가 데이터로 확인됨
+
+GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklists + index + llms.txt)와 정확 문구 기준으로 자동 대조하는 스크립트를 돌렸다(세션 AB 방법 재사용).
+
+- **노출 3회 이상 미매칭이 세션 AB의 90개 → 28개로 감소.** 그중 실제 대응 가능한 건 10개 남짓이고 나머지는 경쟁사 브랜드명(`pet alliance calculator`, `fido score calculator`, `pet nutrition alliance ~`)·비영어권·오타 노이즈(`p e t calculator`). **세션 AC/AD의 클러스터 A~E 작업이 실제로 효과가 있었다는 정량적 근거.**
+- 이번 세션은 남은 28개 + **노출 1~2회지만 순위가 좋은(8~40위) 롱테일 갭**까지 훑었다. 노출 1~2회를 무시하지 않은 게 이번 세션의 핵심 판단 — 개별로는 작아도 같은 페이지를 향한 20~30개가 뭉치면 큰 클러스터이고, 이미 17~19위면 1페이지가 코앞이라 ROI가 가장 높다.
+
+#### 4. 신규 (URL 1개) — `tools/cat-mobility-arthritis-screening.html`
+
+**세션 AE에서 만든 `dog-mobility-arthritis-screening`의 페어링 공백.** Opus 기획 세션이 잔여 후보로 남겨뒀던 "고양이 관절염 스크리닝" 항목이기도 함.
+
+- **근거 도구**: Feline Musculoskeletal Pain Screening Checklist (Enomoto M, Lascelles BDX, Gruen ME, 2020, *Journal of Feline Medicine and Surgery* 22(12):1137-1147, DOI 10.1177/1098612X20907424). NC State 통증연구 프로그램이 300마리 이상 데이터로 긴 설문(FMPI)을 6문항까지 축약해 검증한 도구. **6개 문항 원문을 4개 독립 소스에서 교차 확인**(NC State 공식 발표, Royal Canin Academy, VetTimes, BVA In Practice).
+- **⚠️ 개 버전과 극성이 반대다.** 고양이 체크리스트는 "정상적으로 하는가?"를 묻기 때문에 **"No"가 플래그**다(개 버전은 "문제가 있는가?"라 "Yes"가 플래그). CSS 클래스도 `selected-yes/selected-no`가 아니라 `selected-ok/selected-flag`로 새로 정의했다 — 다음에 이 파일을 만질 때 개 버전과 혼동하지 말 것.
+- **점수 규칙**: 원논문이 제안한 대로 "하나라도 No면 추가 평가"를 그대로 채택. 0개=녹색, 1개=주황(단일 No도 양성 스크린임을 명시), 2개 이상=빨강. **논문이 6문항 버전의 민감도/특이도 수치를 개별로 공표하지 않고 "축약해도 정확도가 유의하게 떨어지지 않았다"고만 서술했으므로, 개 버전처럼 88%/71% 같은 구체 수치를 쓰지 않고 그 서술 그대로 옮겼다** — 없는 숫자를 지어내지 않은 사례.
+- **경쟁 조사**: Zoetis가 자사약(Solensia) 리드젠용 arthritis quiz + PDF 스크리닝 툴 보유, 개별 동물병원 자체 문진표(Best Friends Veterinary Center 등, 로컬), tfaforms 호스팅 클리닉 폼, NC State 보도자료. **중립적·무브랜드·무료 인터랙티브 도구는 없음** — furcalc/calculatorsfordogs 등 계산기 경쟁사도 전부 개 중심이라 이 자리는 비어 있었다.
+- **차별화 장치(경쟁 회피)**: ① 개↔고양이 스크리닝이 왜 다른지 비교표(고양이 관절염은 양측성이 흔해 절뚝임이 안 나타남; 방사선상 변화가 있는 고양이 중 절뚝인 비율이 여러 연구에서 17% 미만), ② 체크리스트에 없는 신호 별도 섹션(그루밍 중단으로 인한 허리·꼬리 밑 엉킴, 리터박스 사고, 높은 자리 포기, 핸들링 거부), ③ `cat-quality-of-life-calculator`와의 역할 분리 전용 섹션(이 툴=미진단 고양이의 조기 발견 / QoL=이미 진단된 고양이의 추적), ④ 체중과 관절 부하 연결(cat-weight-calculator, pet-food-calorie-calculator 감량 모드로 연결, 단 고양이는 급격한 감량 시 지방간 위험 명시).
+- **롱테일 문구 의도적 배치**: "signs of arthritis in cats", "how to tell if my cat has arthritis", "why is my cat not jumping up anymore", "cat stopped jumping on the bed", "cat arthritis test at home", "how common is arthritis in cats", "do cats limp when they have arthritis".
+- **안전**: 약물명·용량·보조제 브랜드 전무. disclaimer와 결과 플래그 양쪽에 **"사람용·개용 진통제는 고양이에게 독성"** 경고 명시. 급성 징후(갑작스러운 파행, 뒷다리 끌기, 기립 불능)는 이 스크리닝 대상이 아니라 당일 진료 사유임을 별도 섹션으로 분리(뒷다리 급성 마비=동맥혈전 응급 가능성 언급).
+- **역링크 4곳**: `dog-mobility-arthritis-screening`(자매 툴), `cat-quality-of-life-calculator`, `cat-weight-calculator`, `senior-pet-care-checklist`. 공통 파일 4종(index.html, tools/index.html, footer.html, llms.txt) 전부 동기화, New 배지를 heartworm 계산기에서 이동.
+
+**기각 후보 — 새끼고양이 나이 추정 도구(무게/치아/눈으로 나이 역산)**: GSC에 `age of kittens by weight`(78위), `kitten weight calculator`(64위), `kitten size calculator`(70위) 등 수요 신호가 있어 조사했으나, **`kittenage.com`(전용 도메인, 인터랙티브 추정기 + 나이 차트 보유)과 `communikitty.com/tools/kitten-age`(인터랙티브 추정기, "200+ 포스터 새끼고양이 기반" 표방)가 이미 존재.** 그 외 Chewy·felinenest·동물병원 블로그 다수. **토끼·기니피그 체크리스트가 성공했던 전제("정적 콘텐츠 경쟁자만 있고 인터랙티브 도구는 0곳")가 깨진 케이스라 세션 X의 햄스터 기각과 동일 논리로 기각.** 대신 이 수요는 기존 kitten-weight-chart 포스트 안에 "무게→나이 역산" 섹션으로 흡수했다(아래 5번). **다음 세션에서 재조사하지 말 것.**
+
+#### 5. 보강 — 수익화 관점 우선순위 순서로 처리
+
+**① `flea-tick-prevention-cost` 포스트 (312노출·10.61위 = 사이트 최고 순위 페이지, 커머스 제휴 1순위 타깃)**
+
+관련 쿼리가 `how much does it cost to get rid of fleas` **8.0위**, `average cost of flea and tick prevention for dogs` **11.3위**로 페이지1 경계에 있었는데 두 문구 다 사이트 어디에도 없었음.
+
+- **⚠️ 조사 중 사실관계가 바뀐 것을 발견했다 — 반드시 기억할 것**: `flea and tick shot for dogs cost`·`1 year flea and tick shot for dogs cost` 쿼리를 보고 처음엔 "개용 벼룩·진드기 주사는 미국에 없고 사용자가 심장사상충 주사와 혼동한 것"이라고 답할 뻔했으나, 웹 검색으로 확인하니 **2025년 7월 10일 FDA가 개용 연 1회 벼룩·진드기 주사제(fluralaner 서방형 주사, Bravecto Quantum)를 승인**했고 2026년 3월 18일 라벨까지 확대(Asian longhorned tick, Gulf Coast tick 12개월 추가)됐다. FDA CVM 공지·Merck 보도자료·dvm360·AVMA·VCA·PetMD로 교차 확인. **에이전트 학습 시점 이후의 신제품이라 확신에 근거해 서술했으면 명백한 오답이 나갈 뻔한 사례 — 체크리스트의 "FAQ에 새 사실 추가 시 반드시 웹 검색으로 검증"이 실제로 사고를 막았다.**
+- 반영 내용: 가격(중형견 연 $150~250, 대형견 최대 $400 인용 사례, 웰니스 검진비 $45~75 별도), 수의사 투여 전용(OTC 아님), 개 6개월 이상만·고양이 미승인, **그리고 트레이드오프를 균형 있게**: isoxazoline 계열 신경계 경고(US 필드 스터디 225마리 중 2마리, 0.9% 발작 보고)와 **한 번 주사하면 12개월간 회수 불가**라는 구조적 특성. 이게 OTC가 아니라 수의사 투여 전용인 이유라고 설명. 추천/비추천 표현은 쓰지 않음.
+- **"벼룩 박멸 비용" 신규 섹션 + 표**: 반려동물별 속효성 치료제, OTC 스프레이/포거, 전문 실내 방역($150~400+/회), **전문 마당 방역($70~200/회)**, 벼룩 알러지 피부염 진료비, 침구 교체. 중등도 감염 총액 $100~300, 심한 경우 $600 초과. `professional flea and tick yard treatment cost`, `how much does tick control cost`, `flea treatment for dogs cost`, `how much is flea and worm treatment for dogs` 대응.
+- 기존 FAQ "Why is flea and tick prevention so expensive?" 답변에 `flea and tick medicine` 문구 추가(쿼리는 medicine으로 검색됨).
+- 신규 FAQ 3개(평균 비용 / 박멸 비용 / 주사제 비용), 스키마-본문 1:1.
+
+**② `kitten-weight-chart-by-breed-size` 포스트 (509노출 = 사이트 최다 노출)**
+
+`how much should a 10 week old kitten weigh`, `how much should a 3 week old kitten weigh`, `how much does a newborn kitten weigh`, `how much should my kitten weigh`, `kitten weight chart kg`, `how much weight should kittens gain per week`, `kitten weight chart by month`, `how much do 8 week old kittens weigh` 등이 **전부 17~19위**에 몰려 있는데 정확 문구가 하나도 없었음(포스트는 표만 있고 "몇 주차엔 얼마"를 문장으로 쓰지 않았음).
+
+- **신규 섹션 "How Much Should My Kitten Weigh at Each Age?"**: 나이별 Q&A 형태로 30개 정확 문구를 자연스럽게 배치(newborn / 주간 증가량 / 3주 / 8주 / 10주 / 12주 / 4개월·16주 / 5개월 / 6개월 / 7개월). **수치는 기존 표와 완전히 정합되도록 보간해서 작성**(3주 350~450g은 여러 동물병원 소스와도 일치 확인, 10주 2~3lb, 7개월 5.5~7lb 등).
+- **신규 하위 섹션 "Working Backwards: Estimating Age From Weight"** — 위 4번에서 기각한 "새끼고양이 나이 추정 도구" 수요를 신규 URL 없이 여기로 흡수. `age of kittens by weight` 대응. 단, 무게만으로는 부정확하다(굶주림·기생충 시 실제 나이보다 가벼움)는 한계와 눈·치아가 더 신뢰도 높은 지표라는 점을 명시.
+- 미터법 문구(`kitten weight chart kg`, `kitten weight chart in grams`) 추가 — 표엔 이미 g/kg가 있었지만 문구가 없었음.
+- 신규 FAQ 2개(`kitten weight calculator`/`kitten size calculator` 명칭 변형 + `how much should my kitten weigh`).
+
+**③ `dog-cat-dental-cleaning-cost` 포스트 (117노출·55.64위, 관련 쿼리 클러스터 약 90노출)**
+
+두 개의 뚜렷한 서브인텐트가 발견됨:
+- **마취 비용**: `how much is dog dental cleaning with anesthesia`(40위), `average cost for dog teeth cleaning with anesthesia`(24위), `how much does dog teeth cleaning cost with anesthesia`(32위). → **신규 섹션 + 항목별 비중 표**(마취·모니터링·IV 카테터가 청구액의 40~60%, 스케일링/폴리싱 20~30%, 혈액검사 $50~120, 치과 X선 $75~200, 발치 별도). 마취는 옵션이 아니라 시술 그 자체라 견적에 이미 포함돼 있다는 점을 명확히 함.
+- **지역 편차**: `cat dental cleaning cost nyc`(29위), `how much does dog dental cleaning cost in charleston sc`(51위). → **신규 섹션 "Why the Same Cleaning Costs Twice as Much One City Over"**(대도시 20~40% 상회, 지방 10~20% 하회, 치과 전문의, 비영리/수의대 클리닉). 견적 2~3곳 받되 X선·혈액검사 포함 여부를 반드시 확인하라는 실용 조언으로 마무리.
+- 신규 FAQ 3개.
+
+**④ 저체중 포스트 2개 (dog 88노출·40.31위 / cat 83노출·33.2위)**
+
+세션 AC가 클러스터 A로 이미 보강한 페이지지만, **강아지 전용 변형과 "too thin" 표현 계열이 통째로 빠져 있었다**: `how to tell if a puppy is underweight`(25.5위), `how do i know if my puppy is underweight`(32위), `is my puppy underweight`(28위), `how to know if your cat is underweight`(26.5위), `how do i know if my cat is too thin`(38위), `how do you know if your cats too thin`(30위), `how to tell if a long haired cat is underweight`(39위).
+- dog 포스트 FAQ 3개 추가 — 강아지는 성견과 판정 기준이 다르다(건강한 성장기 강아지는 원래 마름, 실루엣이 아니라 **성장 곡선**이 신뢰 지표)는 실질적 차별화 내용 포함.
+- cat 포스트 FAQ 3개 추가 — 장모종은 눈으로 판단 불가하므로 손으로 만져야 한다는 점, 심한 저체중의 응급성, 원인 4갈래(갑상선기능항진증/신부전/당뇨/치과통증·다묘가정 경쟁 등).
+
+**⑤ 명칭 변형 일괄 (tool 6개 + post 2개)**
+
+세션 C 패턴 재적용. 전부 스키마+본문 1:1 동시 추가:
+- `dog-pregnancy-calculator` — `canine due date calculator`, `gestation calculator for dogs`, `puppy pregnancy calculator`, `pregnancy in dogs calculator`, `when will my dog give birth calculator` 명칭 변형 + 임신 증상 주차별 + `when can a vet tell if a dog is pregnant`(촉진 21~35일, relaxin 22~25일, 초음파 25~28일, X선 45~55일). FAQ 3개.
+- `dog-heat-cycle-calculator` — `canine heat cycle calculator`, `dog heat calculator`, `dog heat cycle calendar`.
+- `dog-weight-calculator` — `dog weight estimator`, `puppy adult weight calculator`.
+- `cat-age-calculator` — `how old is my cat in human years calculator`, `cat calculator age`.
+- `pet-food-calorie-calculator` — `pet nutrition calculator`(단, 영양소 프로파일 분석은 안 한다는 한계 명시).
+- `dog-quality-of-life-calculator` — `hhhhhmm scale quiz`(3노출·82위). Villalobos HHHHHMM 스케일 기반임을 명시.
+- `how-to-tell-if-dog-is-pregnant` 포스트 — 임신 징후 클러스터가 **17~20위**로 좋은데 정확 문구가 없었음(`early signs of pregnant dog`, `signs a dogs pregnant`, `signs and symptoms of a pregnant dog`, `symptoms for a pregnant dog`, `dog signs of pregnancy symptoms`). 주차별 징후 시퀀스 FAQ로 대응. FAQ 3개.
+- `what-to-feed-pregnant-dog` 포스트 — `diet for pregnant dog`, `what to feed pregnant dog`(관사 "a" 없는 형태).
+
+**자기잠식 주의**: 임신 징후 문구를 `dog-pregnancy-calculator`(툴)와 `how-to-tell-if-dog-is-pregnant`(포스트) 양쪽에 넣되 **문장을 완전히 다르게 썼고, 툴은 "확인 시기/방법" 중심, 포스트는 "주차별 징후 시퀀스" 중심으로 각도를 나눴다.** 다음 세션에서 이 두 페이지가 같은 쿼리에서 서로 잡아먹지 않는지 확인할 것.
+
+#### 6. 🔴 QA가 잡아낸 기존 버그 3건 (전부 이번 세션 이전부터 존재, `git stash`로 확인)
+
+1. **`_posts/2026-06-18-how-much-does-a-cat-vet-visit-cost.md`에 본문 FAQ 섹션이 아예 없었다.** front matter `faqs:`에 5개가 있어 스키마로는 나가는데 **화면에는 한 번도 노출된 적이 없는 상태.** 세션 H에서 발견해 세션 H~L에 걸쳐 tools/ 21개 전부에 대해 고쳤던 바로 그 결함이, **블로그 포스트 쪽에 남아 있었던 것.** 당시 점검 범위가 tools/에만 한정됐던 게 원인. 본문 섹션 신설로 수정.
+2. `_posts/2026-05-17-true-cost-cat-vs-dog.md` — 본문에만 있고 스키마엔 없는 FAQ 1개(`How much should I budget per month for a dog?`). front matter에 추가.
+3. `_posts/2026-05-19-what-to-feed-pregnant-dog.md` — 동일 유형 1개(`Is it normal for a pregnant dog to lose her appetite before labor?`). front matter에 추가하고 순서 정렬.
+
+**➡️ 새 QA 표준(Rule D)으로 정식 편입할 것: FAQ 스키마↔본문 1:1(순서 포함) 검사를 tools/·checklists/뿐 아니라 `_posts/` 전수에도 매 세션 돌릴 것.** 이번에 91개 파일 전수 자동 검사 스크립트로 돌려서 잡았다. 포스트는 front matter `faqs:`의 q 리스트 vs 본문 `## Frequently Asked Questions` 섹션의 `**질문**` 리스트를 순서까지 비교하면 된다.
+
+#### 7. 수익화 관점 판단 (세션 AB 정책 유지 — AdSense 비의존, 제휴 우선)
+
+- 이번 세션 보강 순서를 수익화 기준으로 잡았다: **제휴 전환 가치가 가장 높은 페이지 순**이 아니라, **"제휴를 붙일 페이지 중 순위가 1페이지에 가장 가까운 페이지" 순**으로 정렬. flea-tick(10.61위, Chewy/Amazon 커머스 제휴 대상)을 1순위로 둔 게 그 결과.
+- 보험 클러스터(`pet-insurance-cost-estimator` 114노출·55.25위, `pet-insurance-waiting-period-tracker` 37노출·82.19위, `pet-insurance-claim-calculator` 1노출·8위)는 **정확 문구 갭이 이미 세션 AC에서 다 메워져 남은 게 없었다.** 즉 이 페이지들의 문제는 문구가 아니라 순위/권위 그 자체 — 온페이지로 더 짜낼 게 없는 구간. **다음 라운드에 보험 클러스터를 올리려면 문구 보강이 아니라 콘텐츠 깊이나 내부링크 재배치 같은 다른 수단이 필요하다.**
+- **신규 URL은 1개만 만들었다.** 사이트가 이미 94 URL이고 이번 데이터에서 확인된 최고 ROI는 "이미 17위 안에 들어와 있는 롱테일 20~30개를 1페이지로 밀어올리는 것"이었기 때문. **다만 이건 이번 주 판단이지 확장 중단이 아니다 — 세션 O의 "페이지 수가 곧 생존" 원칙은 그대로 유효하고, 사용자도 이번에 "공격적 확장전략 바꾸지 마라"고 재확인했다.**
+- 제휴 프로그램 신청 진행 상황은 이번 세션에도 확인하지 못함 — 다음 세션에서 사용자에게 물을 것. 승인되면 세션 AB에 적어둔 대로 `/affiliate-disclosure.html` + `_includes/affiliate-cta.html`(`rel="sponsored nofollow" target="_blank"`, `no-print` 클래스) 인프라부터 만들 것.
+
+#### 8. QA (전수)
+
+- **Rule D(신규)**: `_posts` 37개 front matter FAQ ↔ 본문 FAQ 1:1(순서 포함) — 버그 3건 발견·수정 후 전체 통과.
+- FAQ 스키마-본문 1:1(순서 포함): tools/checklists 전수 통과.
+- **Rule A(모든 script 블록 전수 검사)**: `_layouts` 포함 **64개 스크립트 블록 전부 `node --check` 통과**, 0건. (`/dev/stdin` 방식은 이 샌드박스에서 안 먹히므로 임시파일 방식 사용 — 세션 AC 교훈 재확인.)
+- **Rule B(아포스트로피/이스케이프 스캔)**: 신규 파일 0건 — 애초에 JS 문자열을 전부 큰따옴표로 작성.
+- **Rule C(no-print 스캔)**: `.tool-box` 앞 인라인 background 박스 전수 0건.
+- YAML front matter 91개 파일 전수 통과. JSON-LD 104블록 전부 유효.
+- div / `<a>` 태그 균형: 변경된 html 14개 전부 짝 일치.
+- 전체 저장소 링크 재스캔(slug/permalink 실제 목록 대조) — **브로큰 링크 0건**.
+- slug 중복 없음(37/37 유니크), permalink 중복 없음(52/52 유니크).
+- tool-card 개수 `index.html`/`tools/index.html` 42 = 실제 tool 파일 42개 일치. `checklists/index.html` 10 = 실제 10개. **New 배지 각 인덱스에 정확히 1개씩**(heartworm에서 신규 툴로 이동 완료).
+- **신규 툴 스코어링 로직을 Node로 6개 시나리오 직접 실행 검증**(0/1/2(계단)/2(놀이)/4/6 플래그) — 등급 분류·바 퍼센트·조건부 플래그 개수 전부 의도대로 동작, 미답변 상태에서 계산 시도하면 alert로 차단되는 것까지 확인.
+- 커밋(`8d73c56`) → push → **Actions API로 빌드 `success` 확인**(legacy Pages Builds API 아님).
+
+**오늘(세션 AH) 최종 페이지 수**: tools 42 + posts 37 + checklists 10 = **89페이지**(+ index/정적 포함 사이트 전체 94 URL). 신규 순증 1개.
+
+#### 9. 다음 세션에서 확인할 것
+
+- **최대 검증 포인트 — kitten-weight-chart의 나이별 롱테일(현재 17~19위 20여개)이 실제로 1페이지에 진입하는지.** 이게 "노출 1~2회짜리 롱테일도 뭉치면 우선순위 1순위"라는 이번 세션 판단의 검증 사례가 된다.
+- flea-tick 포스트의 `how much does it cost to get rid of fleas`(8.0위)·`average cost of flea and tick prevention for dogs`(11.3위)가 클릭으로 전환되는지. **사이트에서 클릭이 나올 가능성이 가장 높은 자리다.**
+- 신규 `cat-mobility-arthritis-screening`의 첫 노출/색인(최소 1~2주).
+- 세션 AC의 클러스터 A(저체중)가 이번에 25~42위 → 33.2/40.31위로 페이지 평균은 개선됐으나 아직 1페이지는 아님. 이번에 강아지·"too thin" 변형까지 채웠으니 다음 데이터에서 재확인.
+- **`cat-pregnancy-calculator`에 사용자가 GSC UI에서 수동 색인 요청을 눌렀는지 확인.** 나머지 미색인 3개는 자연 회복 추세를 그냥 관찰만 하면 됨.
+- `dog-pregnancy-calculator`(툴) vs `how-to-tell-if-dog-is-pregnant`(포스트)가 임신 징후 쿼리에서 자기잠식하지 않는지.
+- **모바일 vs 데스크톱 격차**(모바일 21.06위·CTR 0.59% vs 데스크톱 53.32위·CTR 0.13%)가 유지되는지 — 유지되면 다음 라운드는 모바일 우선 관점(표 반응형, 첫 화면 정보량 등)으로 볼 여지가 있다. 이번엔 관찰만 하고 조치 안 함.
+- 제휴 프로그램 신청 상태 확인 → 승인 시 세션 AB의 제휴 인프라 작업 착수.
+- **신규 클러스터 후보가 다시 소진됐다.** Opus 기획 세션 잔여 항목 중 남은 건 "고양이 사료 전환 플래너" 정도이고, 다음에 신규가 필요하면 웹서치 기반 후보 발굴부터 다시 시작해야 한다.
+- **기각 목록 갱신**: "새끼고양이 나이 추정 도구"(kittenage.com·communikitty가 이미 인터랙티브 도구 보유) 추가. 기존 기각분(두 번째 반려동물 비용, 크레이트 훈련/사이즈, 햄스터, 다묘 자원배치, 투약 트래커, 이름생성기, 기대수명, 사이즈예측, 첫해입양비용, 체중감량 전용 페이지)과 함께 재조사 금지.
