@@ -1,0 +1,488 @@
+---
+layout: tool
+title: Cat Arthritis Screening Tool — At-Home Mobility & Joint Pain Checklist
+description: A free, research-based screening tool for signs of arthritis in cats. Answer 6 validated yes/no questions about jumping, stairs, running, and play to see whether a vet visit is worth scheduling.
+permalink: /tools/cat-mobility-arthritis-screening.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Arthritis Screening Tool",
+  "url": "https://petpawcalc.com/tools/cat-mobility-arthritis-screening.html",
+  "description": "A free at-home screening tool for signs of arthritis in cats, based on the validated 6-question Feline Musculoskeletal Pain Screening Checklist. Helps owners decide whether mobility changes are worth discussing with a vet.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "PetPawCalc",
+    "url": "https://petpawcalc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the signs of arthritis in cats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The signs of arthritis in cats are almost never limping. Instead, cats keep doing the same activities but do them worse: hesitating before a jump, jumping onto a chair instead of the counter, taking stairs one at a time, running less, and losing interest in chasing toys. The validated screening above checks exactly those six activities, because they are the changes owners can actually observe at home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to tell if my cat has arthritis",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How to tell if my cat has arthritis comes down to comparing your cat with their own past self rather than looking for obvious pain. Ask whether they still jump up, jump down, use stairs, run, and chase toys the way they did a year ago. If any of those is no longer normal, that is a positive screen worth raising with your veterinarian, who can examine your cat and decide whether X-rays or a treatment trial make sense."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my cat not jumping up anymore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cat not jumping up anymore, or a cat who stopped jumping on the bed and counters they used to reach easily, is one of the single most common owner-reported signs of feline joint pain. Cats rarely refuse a jump outright at first — they hesitate longer, gather themselves, pick a lower landing spot, or break one big jump into two smaller ones. Because it happens gradually, it is very easy to write off as your cat simply getting older or calmer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a cat arthritis test at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no diagnostic cat arthritis test at home — degenerative joint disease is confirmed by a veterinarian through an orthopedic exam and often X-rays. What you can do at home is a validated screening like the one above. It does not diagnose arthritis, but it gives you a structured, research-backed way to decide whether the changes you are noticing are worth a vet visit, and it gives your vet something concrete to work from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How common is arthritis in cats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very common, and very under-diagnosed. Researchers at NC State have estimated that around 45% of all cats and roughly 90% of cats over the age of 10 are affected by degenerative joint disease to some degree. Radiographic studies have found joint changes in the majority of older cats while only a small minority — in several studies under 17% — showed any lameness at all, which is exactly why owner observation at home matters so much."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do cats limp when they have arthritis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not. Feline arthritis is very often bilateral — affecting the same joint on both sides — so there is no good leg to shift weight onto and no visible limp to spot. That is the core reason a dog-style check for limping misses most arthritic cats, and why this screening asks about jumping, stairs, running and chasing instead. A cat who is genuinely limping on one leg should be seen promptly, since that pattern points more toward injury than chronic joint disease."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐈 Cat Arthritis Screening Tool</h1>
+    <p>Answer 6 quick yes/no questions from a validated veterinary screening checklist to check for signs of arthritis in cats. Takes about a minute.</p>
+  </div>
+
+  <div class="tool-box">
+    <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 24px; line-height: 1.6;">
+      Answer each question based on your cat <strong>over the past few weeks</strong>, and compare them with how they moved <strong>a year or two ago</strong> — not with other cats. Each question asks whether an activity still happens <em>normally</em>, so a <strong>"No" is the answer that gets flagged</strong>. This is a screening tool, not a diagnosis.
+    </p>
+
+    <!-- Q1 -->
+    <div class="oa-question" id="oa-q1">
+      <div class="oa-question-header">
+        <span class="oa-icon">⬆️</span>
+        <div>
+          <div class="oa-title">Jumping Up</div>
+          <div class="oa-subtitle">Does your cat jump up normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-1"></div>
+      <div class="oa-note">Watch for hesitation before the jump, choosing a lower surface than usual, or breaking one jump into two hops via a chair. Reaching the counter "eventually" is not the same as reaching it normally.</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="oa-question" id="oa-q2">
+      <div class="oa-question-header">
+        <span class="oa-icon">⬇️</span>
+        <div>
+          <div class="oa-title">Jumping Down</div>
+          <div class="oa-subtitle">Does your cat jump down normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-2"></div>
+      <div class="oa-note">Jumping down loads the front limbs hard, so elbow pain often shows here first. Lowering themselves carefully, pausing at the edge, or landing with a thud instead of silently all count as not normal.</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="oa-question" id="oa-q3">
+      <div class="oa-question-header">
+        <span class="oa-icon">🪜</span>
+        <div>
+          <div class="oa-title">Climbing Up Stairs</div>
+          <div class="oa-subtitle">Does your cat climb up stairs or steps normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-3"></div>
+      <div class="oa-note">A healthy cat usually bounds up stairs two at a time. Taking them one step at a time, pausing partway, or avoiding the upstairs floor entirely are all meaningful changes.</div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="oa-question" id="oa-q4">
+      <div class="oa-question-header">
+        <span class="oa-icon">🔽</span>
+        <div>
+          <div class="oa-title">Climbing Down Stairs</div>
+          <div class="oa-subtitle">Does your cat climb down stairs or steps normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-4"></div>
+      <div class="oa-note">Going down is harder than going up for a painful cat, because the front limbs absorb the weight on every step. Descending slowly, sideways, or reluctantly is worth flagging.</div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="oa-question" id="oa-q5">
+      <div class="oa-question-header">
+        <span class="oa-icon">🏃</span>
+        <div>
+          <div class="oa-title">Running</div>
+          <div class="oa-subtitle">Does your cat run normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-5"></div>
+      <div class="oa-note">Think about the last time your cat sprinted across the house or tore off after something. A stiff, short-strided trot in place of a real run, or simply never running any more, is a change.</div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="oa-question" id="oa-q6">
+      <div class="oa-question-header">
+        <span class="oa-icon">🧶</span>
+        <div>
+          <div class="oa-title">Chasing Moving Objects</div>
+          <div class="oa-subtitle">Does your cat chase moving objects (toys, prey, and so on) normally?</div>
+        </div>
+      </div>
+      <div class="oa-buttons" id="oa-buttons-6"></div>
+      <div class="oa-note">Reduced play is very commonly filed under "they are just getting older." A cat who still watches the toy intently but no longer pounces is often telling you the pounce itself has become uncomfortable.</div>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateOA()" id="calc-btn" style="margin-top: 8px;">Check My Cat's Screening Result →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="oa-date"></span>
+      </div>
+      <div id="score-display" style="text-align:center; margin-bottom: 16px;">
+        <div style="font-size: 2.2rem; font-weight: 700; color: var(--orange);" id="total-score"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">of 6 activities no longer normal</div>
+      </div>
+      <div id="score-bar-wrap" style="background: #eee; border-radius: 20px; height: 12px; margin-bottom: 20px; overflow:hidden;">
+        <div id="score-bar" style="height:100%; border-radius:20px; transition: width 0.6s ease;"></div>
+      </div>
+      <h3 id="result-headline" style="margin-bottom: 8px;"></h3>
+      <p id="result-summary" style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"></p>
+      <div id="result-flags"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('oa-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- Breakdown (shown after calc) -->
+  <div id="breakdown-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Item-by-Item Breakdown</h2>
+    <div id="breakdown-list"></div>
+    <div style="margin-top: 20px; padding: 16px; background: var(--cream); border-radius: var(--radius); border-left: 3px solid var(--orange);">
+      <p style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.7; margin: 0;">
+        <strong>How to use this result:</strong> Print or save this page and bring it to your appointment. A concrete list of which specific activities changed is far more useful to a veterinarian than "she seems to be slowing down," and it gives you a baseline to repeat in a few months.
+      </p>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This is a screening tool, not a diagnostic tool, and it does not replace veterinary examination. Degenerative joint disease can only be confirmed by a veterinarian, and several other conditions common in older cats can produce similar changes in movement and activity. Never give your cat any pain medication that was not prescribed for that cat — many human and canine painkillers are toxic to cats.
+  </div>
+
+  <!-- Educational content -->
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How This Screening Was Built</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The six questions above are the Feline Musculoskeletal Pain Screening Checklist, published by Enomoto, Lascelles and Gruen in the <em>Journal of Feline Medicine and Surgery</em> in 2020. The researchers, working at North Carolina State University's pain research program, started from longer questionnaires already used by veterinarians and cut them down question by question, dropping the items that contributed least, until only six remained.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The underlying data came from more than 300 cats with and without confirmed joint pain. According to the researchers, shortening the questionnaire this far did not meaningfully reduce its screening accuracy compared with the longer parent version. The rule they proposed is deliberately simple: <strong>if any one of the six activities is answered "no," that should prompt further evaluation.</strong></p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">It was designed as a conversation starter between owner and veterinarian, not as a diagnosis. That is exactly how this page uses it.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Cats Are Screened Differently From Dogs</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If you have used our <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a>, you may notice the questions here are not simply the cat version of the same list. That is intentional — the two species genuinely need different questions.</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>&nbsp;</th><th>Dogs</th><th>Cats</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Typical first sign</strong></td><td>Limping or stiffness after exercise</td><td>Hesitating before a jump they used to make easily</td></tr>
+          <tr><td><strong>Limping?</strong></td><td>Common and often obvious</td><td>Uncommon — joint disease is frequently bilateral, so there is no "good side" to favor</td></tr>
+          <tr><td><strong>What owners notice</strong></td><td>Trouble on walks, slow to rise, reluctance to jump into the car</td><td>Reduced jumping height, avoiding stairs, less play, more sleeping</td></tr>
+          <tr><td><strong>Usual misattribution</strong></td><td>"He's slowing down with age"</td><td>"She's just gotten lazy / mellowed out"</td></tr>
+          <tr><td><strong>Question format</strong></td><td>Asks whether a problem is present ("yes" flags)</td><td>Asks whether an activity is still normal ("no" flags)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">Radiographic studies illustrate the gap starkly: joint changes show up on X-rays in the majority of older cats, yet across several studies only a small minority — under 17% in the figures most often cited — showed any lameness their owner or vet could see. A screening built around limping would simply miss most of them.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Signs That Are Not on the Checklist (But Still Matter)</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The six questions were chosen because they screen efficiently, not because they are the only signs that exist. Several others are worth mentioning to your vet even if all six items came back normal:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Grooming changes.</strong> A matted or greasy coat over the lower back and tail base often means twisting to groom there has become painful. Some cats go the other way and over-groom a single sore joint until the fur thins.</li>
+      <li><strong>Litter box accidents.</strong> A high-sided box that used to be nothing can become a real obstacle. Missing the box, or going just outside it, is sometimes a mobility problem rather than a behavior problem.</li>
+      <li><strong>Change in resting spots.</strong> A cat who has abandoned the top of the wardrobe for a chair, or who now sleeps on the floor, may not have changed preferences — they may have lost access.</li>
+      <li><strong>Being less tolerant of handling.</strong> Reacting when picked up or brushed, hiding more, or becoming grumpy with other pets in the house can all be pain-driven.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Our <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a> covers the home setup side of this in more detail, including ramps and low-entry litter boxes.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">This Tool vs. the Cat Quality of Life Calculator</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">PetPawCalc has two tools that both ask about how your cat is doing, and they are for different moments. This screening is for <strong>finding a problem you do not yet know about</strong> — a cat with no diagnosis, where you have a vague sense that something has changed but cannot name it.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The <a href="/tools/cat-quality-of-life-calculator.html">Cat Quality of Life Calculator</a> (Paw Score) is for <strong>tracking a cat you already know is unwell</strong> — it scores hurt, hunger, hydration, hygiene, happiness and mobility over time, and is generally used alongside a veterinarian during ongoing care. If your screening here comes back positive and your vet confirms a diagnosis, the Quality of Life Calculator becomes the more useful of the two from that point on.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Weight Is Part of the Picture</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Every extra pound on a cat is proportionally enormous — a 15 lb cat that should weigh 10 lb is carrying 50% more load through every joint on every jump. Weight management is a first-line recommendation in veterinary pain management guidelines for exactly that reason, and unlike most interventions it costs nothing and has no side effects. If you are not sure where your cat sits, our <a href="/tools/cat-weight-calculator.html">Cat Weight Calculator</a> gives you a healthy range by breed, and the <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a> has a weight-loss mode that works out target portions. Any weight-loss plan for a cat should be checked with your vet first — cats lose weight far more slowly than dogs must, because rapid loss risks hepatic lipidosis.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When to Skip the Screening and Call the Vet</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This screening is built for gradual, chronic change measured in months. It is not the right tool for anything sudden. A cat who becomes acutely lame, cannot use a leg at all, drags a back leg, cries out when touched, or suddenly cannot stand needs to be seen the same day — sudden hind-limb weakness in particular can be an arterial clot, which is a genuine emergency. Likewise, a cat who stops eating for more than a day or two needs prompt attention regardless of what this screening says.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs of arthritis in cats?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The signs of arthritis in cats are almost never limping. Instead, cats keep doing the same activities but do them worse: hesitating before a jump, jumping onto a chair instead of the counter, taking stairs one at a time, running less, and losing interest in chasing toys. The validated screening above checks exactly those six activities, because they are the changes owners can actually observe at home.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How to tell if my cat has arthritis</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">How to tell if my cat has arthritis comes down to comparing your cat with their own past self rather than looking for obvious pain. Ask whether they still jump up, jump down, use stairs, run, and chase toys the way they did a year ago. If any of those is no longer normal, that is a positive screen worth raising with your veterinarian, who can examine your cat and decide whether X-rays or a treatment trial make sense.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why is my cat not jumping up anymore?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A cat not jumping up anymore, or a cat who stopped jumping on the bed and counters they used to reach easily, is one of the single most common owner-reported signs of feline joint pain. Cats rarely refuse a jump outright at first — they hesitate longer, gather themselves, pick a lower landing spot, or break one big jump into two smaller ones. Because it happens gradually, it is very easy to write off as your cat simply getting older or calmer.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is there a cat arthritis test at home?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There is no diagnostic cat arthritis test at home — degenerative joint disease is confirmed by a veterinarian through an orthopedic exam and often X-rays. What you can do at home is a validated screening like the one above. It does not diagnose arthritis, but it gives you a structured, research-backed way to decide whether the changes you are noticing are worth a vet visit, and it gives your vet something concrete to work from.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How common is arthritis in cats?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Very common, and very under-diagnosed. Researchers at NC State have estimated that around 45% of all cats and roughly 90% of cats over the age of 10 are affected by degenerative joint disease to some degree. Radiographic studies have found joint changes in the majority of older cats while only a small minority — in several studies under 17% — showed any lameness at all, which is exactly why owner observation at home matters so much.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do cats limp when they have arthritis?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Usually not. Feline arthritis is very often bilateral — affecting the same joint on both sides — so there is no good leg to shift weight onto and no visible limp to spot. That is the core reason a dog-style check for limping misses most arthritic cats, and why this screening asks about jumping, stairs, running and chasing instead. A cat who is genuinely limping on one leg should be seen promptly, since that pattern points more toward injury than chronic joint disease.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a> —
+      <a href="/tools/cat-quality-of-life-calculator.html">Cat Quality of Life Calculator</a> —
+      <a href="/tools/cat-weight-calculator.html">Cat Weight Calculator</a> —
+      <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a> —
+      <a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a>
+    </p>
+  </div>
+</div>
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+<style>
+.oa-question {
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.oa-question:last-of-type {
+  border-bottom: none;
+}
+.oa-question-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.oa-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.oa-title {
+  font-weight: 700;
+  color: var(--brown);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.oa-subtitle {
+  font-size: 0.875rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+}
+.oa-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.oa-btn {
+  flex: 1;
+  max-width: 140px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--brown);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: var(--font-body);
+}
+.oa-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.oa-btn.selected-ok {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+.oa-btn.selected-flag {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+.oa-note {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+  background: var(--cream);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.flag-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.flag-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.flag-note { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+</style>
+
+<script>
+const oaQuestions = [
+  { n: 1, label: "Jumps up normally" },
+  { n: 2, label: "Jumps down normally" },
+  { n: 3, label: "Climbs up stairs normally" },
+  { n: 4, label: "Climbs down stairs normally" },
+  { n: 5, label: "Runs normally" },
+  { n: 6, label: "Chases moving objects normally" }
+];
+
+const oaAnswers = {};
+
+oaQuestions.forEach(function (q) {
+  const container = document.getElementById("oa-buttons-" + q.n);
+  const yesBtn = document.createElement("button");
+  yesBtn.className = "oa-btn";
+  yesBtn.textContent = "Yes";
+  yesBtn.onclick = function () { selectOA(q.n, true); };
+  const noBtn = document.createElement("button");
+  noBtn.className = "oa-btn";
+  noBtn.textContent = "No";
+  noBtn.onclick = function () { selectOA(q.n, false); };
+  container.appendChild(yesBtn);
+  container.appendChild(noBtn);
+});
+
+function selectOA(n, value) {
+  oaAnswers[n] = value;
+  const container = document.getElementById("oa-buttons-" + n);
+  const buttons = container.querySelectorAll(".oa-btn");
+  buttons.forEach(function (btn) {
+    btn.classList.remove("selected-ok", "selected-flag");
+    if (btn.textContent === "Yes" && value === true) btn.classList.add("selected-ok");
+    if (btn.textContent === "No" && value === false) btn.classList.add("selected-flag");
+  });
+}
+
+function calculateOA() {
+  const missing = oaQuestions.filter(function (q) { return oaAnswers[q.n] === undefined; });
+  if (missing.length > 0) {
+    alert("Please answer all 6 questions before checking your result.");
+    return;
+  }
+
+  // On this checklist a "No" (activity is no longer normal) is what gets flagged.
+  const flagCount = oaQuestions.filter(function (q) { return oaAnswers[q.n] === false; }).length;
+  const pct = (flagCount / 6) * 100;
+
+  let barColor, headline, summary;
+  if (flagCount === 0) {
+    barColor = "#27ae60";
+    headline = "No Red Flags on This Screening (0 of 6)";
+    summary = "All six activities on this validated screening are still normal for your cat. That is a reassuring result, but it does not rule out joint disease — cats compensate well and early changes can be subtle. Because degenerative joint disease is so common in older cats, it is worth repeating this screening every few months and mentioning any change at your cat's next routine checkup.";
+  } else if (flagCount === 1) {
+    barColor = "#f39c12";
+    headline = "Positive Screen (1 of 6) — Worth a Vet Conversation";
+    summary = "One of the six activities is no longer normal for your cat. The researchers who developed this checklist proposed that a single \"no\" should prompt further evaluation, so this counts as a positive screen even though only one item changed. This is not a diagnosis — bring the result to your veterinarian, who can examine your cat and work out whether joint pain or something else explains the change.";
+  } else {
+    barColor = "#e74c3c";
+    headline = "Positive Screen (" + flagCount + " of 6) — Multiple Activities Affected";
+    summary = "Your cat is no longer doing " + flagCount + " of the six activities normally. Several changes appearing together generally strengthens the case for booking a vet visit sooner rather than later. It is still a screening result rather than a diagnosis — your veterinarian can examine your cat, check joints that are hard to assess at home, and rule out the other conditions that can look similar in older cats.";
+  }
+
+  document.getElementById("total-score").textContent = flagCount + "/6";
+  document.getElementById("score-bar").style.width = pct + "%";
+  document.getElementById("score-bar").style.background = barColor;
+  document.getElementById("result-headline").textContent = headline;
+  document.getElementById("result-headline").style.color = barColor;
+  document.getElementById("result-summary").textContent = summary;
+
+  const flags = [];
+  if (oaAnswers[1] === false || oaAnswers[2] === false) {
+    flags.push({ type: "note", text: "Jumping changes are the most commonly reported early sign of feline joint pain. In the meantime, adding a sturdy step or ramp to the beds, sofas and window perches your cat still wants to reach can keep them using those spots instead of giving them up." });
+  }
+  if (oaAnswers[3] === false || oaAnswers[4] === false) {
+    flags.push({ type: "note", text: "If stairs have become difficult, check that food, water, a litter box and a comfortable resting spot are all available on the floor your cat spends most time on — so nothing essential is on the far side of a staircase." });
+  }
+  if (oaAnswers[5] === false && oaAnswers[6] === false) {
+    flags.push({ type: "note", text: "Reduced running and reduced play together are easy to read as a personality change, but in an older cat this combination is a classic pain pattern. Mention it specifically at your appointment rather than describing it as your cat mellowing out." });
+  }
+  if (flagCount >= 4) {
+    flags.push({ type: "warn", text: "Most of the six activities have changed. That is a substantial shift in how your cat moves, and it is worth booking an appointment rather than waiting for the next routine visit. Do not attempt to treat pain at home — many common human and canine painkillers are toxic to cats even in small amounts." });
+  }
+
+  const flagsEl = document.getElementById("result-flags");
+  flagsEl.innerHTML = flags.map(function (f) {
+    return "<div class=\"flag-item flag-" + f.type + "\"><span>" + (f.type === "warn" ? "\u26A0\uFE0F" : "\uD83D\uDCA1") + "</span><span>" + f.text + "</span></div>";
+  }).join("");
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").classList.add("show");
+  document.getElementById("pdf-btn").style.display = "block";
+
+  const breakdownEl = document.getElementById("breakdown-list");
+  breakdownEl.innerHTML = oaQuestions.map(function (q) {
+    const isFlagged = oaAnswers[q.n] === false;
+    const color = isFlagged ? "#e74c3c" : "#27ae60";
+    const mark = isFlagged ? "Not normal" : "Normal";
+    return "<div style=\"display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--border);\">" +
+      "<span style=\"font-size:0.9rem; color:var(--brown);\">Q" + q.n + ". " + q.label + "</span>" +
+      "<span style=\"font-weight:700; color:" + color + "; font-size:0.85rem;\">" + mark + "</span>" +
+      "</div>";
+  }).join("");
+
+  document.getElementById("breakdown-section").style.display = "block";
+  document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+</script>

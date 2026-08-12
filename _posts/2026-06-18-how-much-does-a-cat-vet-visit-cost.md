@@ -199,6 +199,23 @@ For a senior cat (8+ years), add bloodwork ($150–$300) and a possible dental c
 
 *This article is for informational purposes only. Vet costs vary significantly by location, clinic, and individual pet needs. Consult your veterinarian for an accurate estimate based on your cat's specific health status.*
 
+## Frequently Asked Questions
+
+**How much does a cat vet visit cost without insurance?**
+A routine wellness exam typically costs $50–$100. If your cat needs vaccinations, bloodwork, or treatment, expect $150–$400 or more for a single visit without pet insurance.
+
+**How often should cats go to the vet?**
+Healthy adult cats (1–7 years) need a wellness exam once a year. Kittens need visits every 3–4 weeks until 16 weeks old for their vaccine series, and senior cats (7+ years) benefit from exams every 6 months.
+
+**What does a standard cat checkup include?**
+A standard exam includes a physical nose-to-tail assessment, weight check, heart and lung evaluation, and discussion of diet, behavior, and preventive care. Vaccines, blood tests, or dental cleanings are typically add-on costs.
+
+**Can I take my cat to the vet without a carrier?**
+It's strongly advised to use a carrier for safety and to reduce stress for both your cat and other animals in the waiting room. Most clinics require it.
+
+**Is pet insurance worth it for cats?**
+For cats prone to illness or injury, pet insurance can significantly reduce out-of-pocket costs. It's most cost-effective when purchased while your cat is young and healthy, before any pre-existing conditions develop.
+
 ## Related Articles
 
 - [How Often Should Cats Go to the Vet?](/blog/how-often-vet-visits-cat/)

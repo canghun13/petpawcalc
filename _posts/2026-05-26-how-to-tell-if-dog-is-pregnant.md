@@ -24,6 +24,12 @@ faqs:
   - q: "How to tell if a dog is pregnant: what are the signs?"
     a: "How to tell if a dog is pregnant comes down to watching for the classic canine pregnancy symptoms: appetite changes, nipple enlargement and darkening, abdominal enlargement, and behavioral changes like nesting. If you've searched signs your dog is pregnant or dog pregnancy symptoms, these are the same indicators described throughout this guide."
 
+  - q: "What are the early signs of a pregnant dog?"
+    a: "The early signs of a pregnant dog in weeks 1–3 are easy to miss entirely: a brief dip in appetite or mild nausea, lower energy, and sometimes a change in affection or clinginess. Nipple enlargement and darkening is usually the first physical change owners actually spot, around week 3–4. Signs a dog's pregnant that are unmistakable — a firm swollen abdomen, obvious weight gain, nesting behaviour — belong to the second half of the pregnancy, so relying on them alone means losing several weeks of prenatal care."
+  - q: "What are the signs and symptoms of a pregnant dog, week by week?"
+    a: "Signs and symptoms of a pregnant dog follow a rough sequence. Weeks 1–2: usually nothing visible. Week 3–4: nipples enlarge and darken, appetite may dip then rebound, some dogs have a small amount of clear vaginal discharge. Weeks 5–6: noticeable weight gain and abdominal enlargement, appetite climbs. Weeks 7–8: fetal movement may be visible or felt, mammary development becomes obvious. Week 9: nesting, restlessness, and a drop in body temperature roughly 24 hours before labour. Symptoms for a pregnant dog vary a lot between individuals, and dog signs of pregnancy symptoms overlap heavily with false pregnancy, which is why confirmation matters."
+  - q: "When can a vet tell if a dog is pregnant?"
+    a: "When can a vet tell if a dog is pregnant: palpation is possible roughly days 21–35, a relaxin blood test is generally reliable from about day 22–25, ultrasound confirms pregnancy and heartbeats from around day 25–28, and X-ray from about day 45–55 is the most accurate method for counting puppies once the skeletons have mineralised. Before roughly day 21, there is no reliable way to confirm pregnancy in a dog — including at the vet."
 ---
 
 If your dog has recently been in contact with an intact male, or if you're a breeder waiting to see whether a mating was successful, knowing what to look for in early pregnancy matters. The challenge is that early dog pregnancy signs are subtle — and some mimic other conditions entirely.
@@ -144,6 +150,15 @@ Yes, especially in early pregnancy and in dogs carrying small litters. A dog car
 
 **How to tell if a dog is pregnant: what are the signs?**
 How to tell if a dog is pregnant comes down to watching for the classic canine pregnancy symptoms: appetite changes, nipple enlargement and darkening, abdominal enlargement, and behavioral changes like nesting. If you've searched signs your dog is pregnant or dog pregnancy symptoms, these are the same indicators described throughout this guide.
+
+**What are the early signs of a pregnant dog?**
+The early signs of a pregnant dog in weeks 1–3 are easy to miss entirely: a brief dip in appetite or mild nausea, lower energy, and sometimes a change in affection or clinginess. Nipple enlargement and darkening is usually the first physical change owners actually spot, around week 3–4. Signs a dog's pregnant that are unmistakable — a firm swollen abdomen, obvious weight gain, nesting behaviour — belong to the second half of the pregnancy, so relying on them alone means losing several weeks of prenatal care.
+
+**What are the signs and symptoms of a pregnant dog, week by week?**
+Signs and symptoms of a pregnant dog follow a rough sequence. Weeks 1–2: usually nothing visible. Week 3–4: nipples enlarge and darken, appetite may dip then rebound, some dogs have a small amount of clear vaginal discharge. Weeks 5–6: noticeable weight gain and abdominal enlargement, appetite climbs. Weeks 7–8: fetal movement may be visible or felt, mammary development becomes obvious. Week 9: nesting, restlessness, and a drop in body temperature roughly 24 hours before labour. Symptoms for a pregnant dog vary a lot between individuals, and dog signs of pregnancy symptoms overlap heavily with false pregnancy, which is why confirmation matters.
+
+**When can a vet tell if a dog is pregnant?**
+When can a vet tell if a dog is pregnant: palpation is possible roughly days 21–35, a relaxin blood test is generally reliable from about day 22–25, ultrasound confirms pregnancy and heartbeats from around day 25–28, and X-ray from about day 45–55 is the most accurate method for counting puppies once the skeletons have mineralised. Before roughly day 21, there is no reliable way to confirm pregnancy in a dog — including at the vet.
 
 *This article is for informational purposes only. Always consult your veterinarian for guidance specific to your dog's health, reproductive history, and individual situation.*
 

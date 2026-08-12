@@ -21,6 +21,12 @@ faqs:
     a: "Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass."
   - q: "Is my dog underweight?"
     a: "Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above)."
+  - q: "How to tell if a puppy is underweight"
+    a: "How to tell if a puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed."
+  - q: "How do I know if my puppy is underweight?"
+    a: "How do I know if my puppy is underweight comes down to three checks: weigh them weekly and confirm the number is still climbing, run your hands over the ribs and spine to see whether there is any fat covering at all, and compare against a breed-size growth chart rather than against other puppies at the park. Is my puppy underweight is a question worth taking to a vet quickly rather than managing at home — puppies have very little reserve, and the common causes (parasites, inadequate calories, or an underlying issue) all have straightforward fixes when caught early."
+  - q: "How can you tell if your dog is too thin?"
+    a: "A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. How to know if your dog is too skinny in borderline cases is best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time."
 ---
 
 Most dog-weight content out there is about the opposite problem — helping an overweight dog slim down. But being underweight carries its own real risks: reduced energy, a weaker immune system, and in many cases, it's the first visible sign of an underlying illness rather than just "not eating enough." Here's how to tell the difference between a naturally lean dog and one that actually needs to gain weight, and how to help safely.
@@ -93,6 +99,15 @@ Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a natu
 
 **Is my dog underweight?**
 Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above).
+
+**How to tell if a puppy is underweight**
+How to tell if a puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed.
+
+**How do I know if my puppy is underweight?**
+How do I know if my puppy is underweight comes down to three checks: weigh them weekly and confirm the number is still climbing, run your hands over the ribs and spine to see whether there is any fat covering at all, and compare against a breed-size growth chart rather than against other puppies at the park. Is my puppy underweight is a question worth taking to a vet quickly rather than managing at home — puppies have very little reserve, and the common causes (parasites, inadequate calories, or an underlying issue) all have straightforward fixes when caught early.
+
+**How can you tell if your dog is too thin?**
+A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. How to know if your dog is too skinny in borderline cases is best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time.
 
 ## Related Articles
 

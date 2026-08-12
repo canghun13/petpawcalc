@@ -20,6 +20,10 @@ faqs:
   - q: "Should I feed wet or dry food to a pregnant dog?"
     a: "Either works if it meets AAFCO standards for growth/reproduction. Many breeders use high-quality dry kibble as the caloric base with a wet food topper in the third trimester for palatability and hydration. Pure wet food also works — just ensure calorie density is sufficient for late pregnancy needs."
 
+  - q: "Is it normal for a pregnant dog to lose her appetite before labor?"
+    a: "Yes. A drop in appetite 24–48 hours before whelping is completely normal and is one of the signs that labor is near. Don't try to force her to eat at this point. Her appetite returns quickly after delivery."
+  - q: "What is the best diet for a pregnant dog?"
+    a: "What is the best diet for a pregnant dog? The best diet for a pregnant dog is a complete, AAFCO-compliant food formulated for growth or for all life stages — in practice, most vets simply move the dog onto a quality puppy food, which is calorie-dense and higher in protein, calcium and phosphorus than adult maintenance food. If you are asking what to feed pregnant dog in the first four weeks specifically, the answer is usually nothing different: intake stays at normal maintenance levels until roughly week 5, then climbs steadily to around 1.5 times normal by the final week."
 ---
 
 What you feed a pregnant dog directly affects her health — and the birth weight, immune function, and development of every puppy in the litter.
@@ -292,6 +296,9 @@ Either works if it meets AAFCO standards for growth/reproduction. Many breeders 
 
 **Is it normal for a pregnant dog to lose her appetite before labor?**
 Yes. A drop in appetite 24–48 hours before whelping is completely normal and is one of the signs that labor is near. Don't try to force her to eat at this point. Her appetite returns quickly after delivery.
+
+**What is the best diet for a pregnant dog?**
+What is the best diet for a pregnant dog? The best diet for a pregnant dog is a complete, AAFCO-compliant food formulated for growth or for all life stages — in practice, most vets simply move the dog onto a quality puppy food, which is calorie-dense and higher in protein, calcium and phosphorus than adult maintenance food. If you are asking what to feed pregnant dog in the first four weeks specifically, the answer is usually nothing different: intake stays at normal maintenance levels until roughly week 5, then climbs steadily to around 1.5 times normal by the final week.
 
 <div class="post-cta">
   Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>

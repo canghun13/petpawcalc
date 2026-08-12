@@ -18,6 +18,8 @@ faqs:
   - q: "How much should I budget per month for a cat?"
     a: "For a healthy adult cat, budget $60–$130/month on average. This covers food ($25–$60), litter ($12–$20), parasite prevention ($8–$20), and a monthly allocation toward annual vet costs and a small emergency fund ($15–$30). Senior cats should budget higher — $120–$200/month — to account for more frequent vet visits and possible chronic disease management."
 
+  - q: "How much should I budget per month for a dog?"
+    a: "For a healthy adult medium dog, budget $100–$275/month on average. Large breeds run $150–$350/month. This covers food, heartworm and flea prevention, grooming (amortized monthly), and an allocation toward annual vet costs and emergency savings. Pet insurance ($30–$60/month) is worth adding to this budget, particularly while the dog is young."
 ---
 
 The short answer: dogs cost significantly more than cats. But the gap varies a lot depending on the dog's size, the cat's health, and how you approach ownership for both.

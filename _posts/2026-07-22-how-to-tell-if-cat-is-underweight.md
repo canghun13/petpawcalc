@@ -23,6 +23,12 @@ faqs:
     a: "If you're asking is my cat underweight, the checklist above is exactly how to tell if a cat is underweight: feel for ribs, spine, and hip bones without pressing hard, and look for an exaggerated waist from above rather than the gentle tuck seen at a healthy weight. If bone is easily visible rather than just felt, it's worth a vet visit to check for an underlying cause."
   - q: "How do I know if my cat is underweight?"
     a: "How do I know if my cat is underweight versus just naturally lean? The two clearest signs are a visibly prominent spine or hip bones (not just felt with light pressure) and an exaggerated waist tuck from above. That's generally how to know if my cat is underweight without a scale — if either sign is present, it's worth confirming with your vet. In short, how to tell if cat is underweight comes down to bone visibility and muscle mass, not just a number on the scale."
+  - q: "How to know if your cat is underweight"
+    a: "How to know if your cat is underweight starts with your hands rather than your eyes, because coat length hides a great deal. Run your palms along the ribs, spine and hips: on a healthy cat these are easy to feel under a thin layer of cover, while on an underweight cat they feel sharp and bare. How to tell if a long haired cat is underweight is the same check — with a Maine Coon, Persian or Ragdoll you genuinely cannot judge by sight, and owners are often surprised at what they find once they feel through the coat."
+  - q: "How do I know if my cat is too thin?"
+    a: "How do I know if my cat is too thin, as opposed to just slim? A slim cat has a visible waist and easily felt ribs with a thin fat layer over them. A cat who is too thin has ribs, spine and hip bones that are individually visible or feel sharp with no cover at all, often with a hollow look in front of the hips. How do you know if your cat's too thin in a borderline case: ask for a body condition score at your next vet visit, and weigh them monthly at home so you are tracking a trend rather than guessing from a single look."
+  - q: "Why is my cat underweight, and when is it severe?"
+    a: "Why is my cat underweight most often traces to one of four things: an underlying medical cause (hyperthyroidism, chronic kidney disease, diabetes, dental pain, or intestinal disease), inadequate calorie intake, competition at the food bowl in a multi-cat home, or age-related loss of muscle. A severely underweight cat — sharp bones everywhere, obvious muscle loss over the shoulder blades and skull, lethargy — is an urgent vet visit rather than a feeding project. Underweight cat symptoms that should escalate the timeline include refusing food entirely, vomiting, or rapid loss over a few weeks."
 ---
 
 Cat weight discussions online lean heavily toward obesity — for good reason, it's common. But an underweight cat is arguably the more urgent situation to catch early, since unexplained weight loss in cats is very often the first visible sign of a real medical problem rather than simply "not eating enough."
@@ -99,6 +105,15 @@ If you're asking is my cat underweight, the checklist above is exactly how to te
 
 **How do I know if my cat is underweight?**
 How do I know if my cat is underweight versus just naturally lean? The two clearest signs are a visibly prominent spine or hip bones (not just felt with light pressure) and an exaggerated waist tuck from above. That's generally how to know if my cat is underweight without a scale — if either sign is present, it's worth confirming with your vet. In short, how to tell if cat is underweight comes down to bone visibility and muscle mass, not just a number on the scale.
+
+**How to know if your cat is underweight**
+How to know if your cat is underweight starts with your hands rather than your eyes, because coat length hides a great deal. Run your palms along the ribs, spine and hips: on a healthy cat these are easy to feel under a thin layer of cover, while on an underweight cat they feel sharp and bare. How to tell if a long haired cat is underweight is the same check — with a Maine Coon, Persian or Ragdoll you genuinely cannot judge by sight, and owners are often surprised at what they find once they feel through the coat.
+
+**How do I know if my cat is too thin?**
+How do I know if my cat is too thin, as opposed to just slim? A slim cat has a visible waist and easily felt ribs with a thin fat layer over them. A cat who is too thin has ribs, spine and hip bones that are individually visible or feel sharp with no cover at all, often with a hollow look in front of the hips. How do you know if your cat's too thin in a borderline case: ask for a body condition score at your next vet visit, and weigh them monthly at home so you are tracking a trend rather than guessing from a single look.
+
+**Why is my cat underweight, and when is it severe?**
+Why is my cat underweight most often traces to one of four things: an underlying medical cause (hyperthyroidism, chronic kidney disease, diabetes, dental pain, or intestinal disease), inadequate calorie intake, competition at the food bowl in a multi-cat home, or age-related loss of muscle. A severely underweight cat — sharp bones everywhere, obvious muscle loss over the shoulder blades and skull, lethargy — is an urgent vet visit rather than a feeding project. Underweight cat symptoms that should escalate the timeline include refusing food entirely, vomiting, or rapid loss over a few weeks.
 
 ## Related Articles
 
