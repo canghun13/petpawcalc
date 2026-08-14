@@ -165,3 +165,4 @@ The FDA approved the first once-yearly injectable flea and tick preventive for d
 - [Dog & Cat Dental Cleaning Cost — What to Expect](/blog/dog-cat-dental-cleaning-cost/)
 - [Spay/Neuter Cost and Timing: A Complete Guide](/blog/spay-neuter-cost-and-timing/)
 - [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
+- [Pet Itch Score Tracker](/tools/pet-itch-score-tracker.html) — flea allergy is the most common cause of itching; score the severity before assuming it's something else

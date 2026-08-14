@@ -1,0 +1,536 @@
+---
+layout: tool
+title: Elimination Diet Trial Planner for Dogs & Cats — Dated Schedule + Contamination Audit
+description: Enter your start date and get a dated food trial calendar — transition week, trial length, recheck points, and the challenge phase. Includes an audit of the flavored treats, chews and medications that make most food trials fail.
+permalink: /tools/elimination-diet-trial-planner.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Elimination Diet Trial Planner",
+  "url": "https://petpawcalc.com/tools/elimination-diet-trial-planner.html",
+  "description": "A free planner for food elimination diet trials in dogs and cats. Generates a dated schedule covering the transition period, trial duration, recheck points and the challenge phase, plus a contamination audit of flavored items that commonly cause trials to fail.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does an elimination diet trial take for a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most veterinary dermatologists run an elimination diet trial for at least 8 weeks in dogs, and often extend it to 12. Research summarised in Today's Veterinary Practice indicates that extending the trial to 8 weeks raises sensitivity for diagnosing food allergy above 90%. Trials for purely digestive signs are often shorter — commonly 3 to 4 weeks — because gut signs tend to resolve faster than skin signs. The planner above adds a 7-day transition period on top of the trial itself, so plan for roughly 9 to 13 weeks door to door."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a food trial take for a cat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cats are usually given a longer trial than dogs — commonly 12 weeks for skin signs, versus 8 for dogs. Cats also present a practical problem dogs do not: they may simply refuse the new food, and a cat that stops eating for more than a day or two is at real risk of hepatic lipidosis. Never starve a cat into accepting a trial diet. If your cat refuses the food, stop and call your vet rather than waiting it out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do most elimination diet trials fail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contamination, not the diet. The trial only works if the prescribed food and water are genuinely the only things entering your pet's mouth for the whole period, and the items owners forget are almost always flavored: chewable heartworm and flea preventives, flavored or compounded medications, dental chews, toothpaste, pill pockets, training treats, table scraps, and food stolen from another pet's bowl in a multi-pet household. The Tufts veterinary nutrition service has written specifically about this category of mistake. The audit in the planner above walks through each of these before you start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are blood or saliva tests for dog food allergies accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veterinary nutrition and dermatology specialists are consistently critical of blood and saliva tests marketed for diagnosing food allergy, describing them as unreliable for this purpose. The elimination diet trial followed by a challenge remains the reference standard for diagnosing an adverse food reaction. That is inconvenient — a test would be far easier than 8 to 12 weeks of strict feeding — but a test result that sends you eliminating the wrong ingredient costs more time than doing the trial properly once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the challenge phase, and do I have to do it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The challenge is where you reintroduce the original food after a successful trial and watch for symptoms to return. Without it, you only know your pet improved on a new diet — not why. Improvement could have come from the season changing, a flea treatment, or medication given alongside. A flare after rechallenge is what actually confirms a food reaction. Signs typically return within 1 to 3 days but can take up to two weeks. Not every pet should be rechallenged, and that decision belongs to your veterinarian."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a grain-free or limited-ingredient store food for the trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally not, and this is one of the most common and costly misunderstandings. Trial diets are either hydrolyzed — proteins broken into fragments too small to trigger a reaction — or built on a protein and carbohydrate your pet has genuinely never eaten. Over-the-counter limited-ingredient foods frequently contain trace proteins not listed prominently on the front of the bag, and \"grain-free\" is unrelated to protein allergy since the usual culprits are meat proteins rather than grains. Your veterinarian should choose the trial diet."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🍽️ Elimination Diet Trial Planner</h1>
+    <p>An elimination diet trial is the reference standard for diagnosing a food allergy — but it only works if it's run strictly. Enter your start date to get a dated schedule, then work through the contamination audit before day one.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="species">Which pet is the trial for?</label>
+      <select id="species">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="signs">What signs are you trying to resolve?</label>
+      <select id="signs">
+        <option value="skin">Skin signs — itching, licking, chewing, ear problems</option>
+        <option value="gi">Digestive signs only — loose stool, gas, vomiting</option>
+        <option value="both">Both skin and digestive signs</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>When will you start the food transition?</label>
+      <div style="display:flex; gap:8px;">
+        <select id="start-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="start-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="start-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+      </div>
+    </div>
+
+    <button class="btn-calculate" onclick="buildPlan()">Build My Trial Schedule →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="ed-date"></span>
+      </div>
+      <div style="text-align:center; margin-bottom:18px;">
+        <div style="font-size: 1.9rem; font-weight: 700; color: var(--orange);" id="trial-length"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);" id="trial-window"></div>
+      </div>
+      <div id="timeline-list"></div>
+      <div id="plan-notes" style="margin-top:16px;"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('ed-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- Contamination audit -->
+  <div id="audit-section" style="display:none; margin-top: 40px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 8px;">Contamination Audit — Do This Before Day One</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 20px;">Trials rarely fail because the diet was wrong. They fail because something else got into the pet. Tick everything you have actually dealt with — anything left unticked is a hole in the trial.</p>
+    <div id="audit-list"></div>
+    <div id="audit-summary" style="margin-top:18px;"></div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This planner organises a protocol your veterinarian prescribes — it does not replace them. The trial diet itself must be chosen by your vet, since suitable diets are hydrolyzed or genuinely novel for your individual pet and most are prescription-only. Do not stop or change prescribed medication to run a trial, and never withhold food from a cat that refuses the new diet.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why the Trial Has to Be This Strict</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A food allergy is an immune reaction to a specific protein. The only way to prove one exists is to remove every protein the immune system already knows, wait long enough for the reaction to settle, and then see whether putting the old food back brings the signs straight back. There is no shortcut around that, which is why the protocol is so unforgiving: a single flavored chew in week six can restart the clock without you ever knowing it happened.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The duration is not arbitrary either. A 2015 critically appraised topic by Olivry, Mueller and Prélaud in <em>BMC Veterinary Research</em> examined how long elimination diets need to run, and the 8-week figure that dermatology practice settled on comes out of that line of work. Shorter trials miss cases — a pet whose signs would have resolved in week seven looks like a treatment failure if you stop at week four.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Food Allergy Is Less Common Than the Internet Suggests</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It is worth going in with realistic expectations. Most chronically itchy dogs turn out to have environmental atopic dermatitis, fleas, or a secondary skin infection rather than a food allergy — food is one item on a longer list, not the default answer. A few patterns point more towards food than environment:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Year-round, non-seasonal signs.</strong> Environmental allergies classically flare with pollen seasons. Itching that never lets up regardless of month is more suspicious for food.</li>
+      <li><strong>Skin and gut signs together.</strong> Itching plus chronically loose stool, frequent gas, or intermittent vomiting shifts the odds towards diet.</li>
+      <li><strong>Onset very young or later in life.</strong> Adverse food reactions often begin before 1 year or after 7, while environmental atopy typically starts between roughly 1 and 3.</li>
+      <li><strong>Recurring ear infections.</strong> Ears that keep flaring, especially with gut signs alongside, are a recognised pattern.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">None of these is proof. They are reasons your vet may put a diet trial higher up the list — and none of them removes the need to rule out fleas first, which is why the audit above starts there.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Tracking Whether It's Actually Working</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The benchmark dermatologists use is roughly a <strong>50% reduction in itching behaviour</strong> — licking, scratching, chewing — by the end of the trial. That is much harder to judge from memory than it sounds, because improvement over eight weeks is gradual and you are with your pet every day. Scoring the itch on a fixed scale at the start and then weekly gives you a comparison that memory cannot: our <a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a> uses the owner-assessed pruritus scale validated for exactly this purpose, and the planner's recheck dates are the points at which to record a score.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does an elimination diet trial take for a dog?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most veterinary dermatologists run an elimination diet trial for at least 8 weeks in dogs, and often extend it to 12. Research summarised in Today's Veterinary Practice indicates that extending the trial to 8 weeks raises sensitivity for diagnosing food allergy above 90%. Trials for purely digestive signs are often shorter — commonly 3 to 4 weeks — because gut signs tend to resolve faster than skin signs. The planner above adds a 7-day transition period on top of the trial itself, so plan for roughly 9 to 13 weeks door to door.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does a food trial take for a cat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats are usually given a longer trial than dogs — commonly 12 weeks for skin signs, versus 8 for dogs. Cats also present a practical problem dogs do not: they may simply refuse the new food, and a cat that stops eating for more than a day or two is at real risk of hepatic lipidosis. Never starve a cat into accepting a trial diet. If your cat refuses the food, stop and call your vet rather than waiting it out.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why do most elimination diet trials fail?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Contamination, not the diet. The trial only works if the prescribed food and water are genuinely the only things entering your pet's mouth for the whole period, and the items owners forget are almost always flavored: chewable heartworm and flea preventives, flavored or compounded medications, dental chews, toothpaste, pill pockets, training treats, table scraps, and food stolen from another pet's bowl in a multi-pet household. The Tufts veterinary nutrition service has written specifically about this category of mistake. The audit in the planner above walks through each of these before you start.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Are blood or saliva tests for dog food allergies accurate?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Veterinary nutrition and dermatology specialists are consistently critical of blood and saliva tests marketed for diagnosing food allergy, describing them as unreliable for this purpose. The elimination diet trial followed by a challenge remains the reference standard for diagnosing an adverse food reaction. That is inconvenient — a test would be far easier than 8 to 12 weeks of strict feeding — but a test result that sends you eliminating the wrong ingredient costs more time than doing the trial properly once.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is the challenge phase, and do I have to do it?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The challenge is where you reintroduce the original food after a successful trial and watch for symptoms to return. Without it, you only know your pet improved on a new diet — not why. Improvement could have come from the season changing, a flea treatment, or medication given alongside. A flare after rechallenge is what actually confirms a food reaction. Signs typically return within 1 to 3 days but can take up to two weeks. Not every pet should be rechallenged, and that decision belongs to your veterinarian.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I use a grain-free or limited-ingredient store food for the trial?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Generally not, and this is one of the most common and costly misunderstandings. Trial diets are either hydrolyzed — proteins broken into fragments too small to trigger a reaction — or built on a protein and carbohydrate your pet has genuinely never eaten. Over-the-counter limited-ingredient foods frequently contain trace proteins not listed prominently on the front of the bag, and "grain-free" is unrelated to protein allergy since the usual culprits are meat proteins rather than grains. Your veterinarian should choose the trial diet.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a> —
+      <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a> —
+      <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea &amp; Tick Prevention Cost Calculator</a> —
+      <a href="/blog/how-much-to-feed-a-dog/">How Much to Feed a Dog</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  #audit-section { margin-top: 20px !important; }
+  .result-box, .ed-step { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print {
+  .form-group { display: none !important; }
+}
+.ed-step {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ed-step:last-child { border-bottom: none; }
+.ed-marker {
+  flex-shrink: 0;
+  width: 46px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--orange);
+  line-height: 1.3;
+  padding-top: 2px;
+}
+.ed-body-title { font-weight: 700; color: var(--brown); font-size: 0.94rem; margin-bottom: 3px; }
+.ed-body-date  { font-size: 0.78rem; color: var(--orange); font-weight: 600; margin-bottom: 5px; }
+.ed-body-desc  { font-size: 0.86rem; color: var(--brown-mid); line-height: 1.6; }
+.ed-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.ed-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.ed-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+.audit-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: var(--white);
+}
+.audit-item:hover { border-color: var(--orange); }
+.audit-item.checked { background: #f2faf5; border-color: #27ae60; }
+.audit-box {
+  flex-shrink: 0;
+  width: 20px; height: 20px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  margin-top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; color: transparent;
+  font-weight: 700;
+}
+.audit-item.checked .audit-box { background: #27ae60; border-color: #27ae60; color: white; }
+.audit-title { font-weight: 700; color: var(--brown); font-size: 0.9rem; margin-bottom: 2px; }
+.audit-desc  { font-size: 0.83rem; color: var(--brown-mid); line-height: 1.55; }
+</style>
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+
+<script>
+(function initDates() {
+  var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var mSel = document.getElementById("start-month");
+  var dSel = document.getElementById("start-day");
+  var ySel = document.getElementById("start-year");
+  var today = new Date();
+  months.forEach(function (m, i) {
+    var o = document.createElement("option");
+    o.value = i; o.textContent = m;
+    if (i === today.getMonth()) o.selected = true;
+    mSel.appendChild(o);
+  });
+  for (var d = 1; d <= 31; d++) {
+    var o = document.createElement("option");
+    o.value = d; o.textContent = d;
+    if (d === today.getDate()) o.selected = true;
+    dSel.appendChild(o);
+  }
+  for (var y = today.getFullYear(); y <= today.getFullYear() + 1; y++) {
+    var o = document.createElement("option");
+    o.value = y; o.textContent = y;
+    ySel.appendChild(o);
+  }
+})();
+
+function addDays(date, days) {
+  var d = new Date(date.getTime());
+  d.setDate(d.getDate() + days);
+  return d;
+}
+function fmt(d) {
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+var AUDIT_ITEMS = [
+  { t: "Flea control is current on every animal in the home",
+    d: "Flea allergy is by far the most common cause of itching and will keep signs going no matter what your pet eats. Rule it out first, not last — and treat every pet in the house, not just the itchy one." },
+  { t: "Heartworm and flea preventives switched to non-flavored forms",
+    d: "Most chewable preventives are flavored with beef, pork or chicken protein. Ask your vet about a topical or unflavored alternative for the trial period." },
+  { t: "All flavored or compounded medications reviewed with your vet",
+    d: "Chewable joint supplements, flavored tablets and compounded liquids frequently carry animal protein. Do not stop a prescribed medication on your own — ask for an unflavored version instead." },
+  { t: "Every treat, chew and dental product removed",
+    d: "Dental chews, rawhide, bully sticks, jerky, training treats and flavored toothpaste all break the trial. Use pieces of the trial diet itself as treats, or ask your vet about a matching treat." },
+  { t: "Pill pockets and 'hiding' foods replaced",
+    d: "Cheese, peanut butter, lunch meat and commercial pill pockets are all protein. Ask your vet how to give medication during the trial." },
+  { t: "Everyone in the household briefed",
+    d: "One family member slipping a scrap under the table, or a neighbour giving treats over the fence, undoes the whole trial. This is the single most common leak." },
+  { t: "Other pets' food made inaccessible",
+    d: "In a multi-pet home, feed separately behind a closed door and pick bowls up afterwards. Cats raiding a dog's bowl and dogs cleaning the cat's plate are both classic failures." },
+  { t: "Flavored chew toys removed",
+    d: "Toys infused with bacon, cheese or peanut flavour count. Swap to plain rubber or rope for the duration." },
+  { t: "Table scraps, crumbs and floor access controlled",
+    d: "Toddlers dropping food, an accessible bin, or a countertop-surfing dog will all contaminate the trial. Some households need a baby gate for the kitchen." },
+  { t: "Trial diet chosen by your veterinarian",
+    d: "It needs to be hydrolyzed or genuinely novel for your individual pet — an over-the-counter 'limited ingredient' or 'grain-free' bag is not the same thing and often contains trace proteins." }
+];
+
+function buildPlan() {
+  var species = document.getElementById("species").value;
+  var signs = document.getElementById("signs").value;
+  var y = parseInt(document.getElementById("start-year").value, 10);
+  var m = parseInt(document.getElementById("start-month").value, 10);
+  var d = parseInt(document.getElementById("start-day").value, 10);
+
+  var start = new Date(y, m, d);
+  if (start.getMonth() !== m) {
+    alert("That date doesn't exist — please check the day you selected for that month.");
+    return;
+  }
+
+  // Trial length (weeks) measured from the first day on 100% trial diet.
+  var weeks;
+  if (signs === "gi") {
+    weeks = 4;
+  } else {
+    weeks = (species === "cat") ? 12 : 8;
+  }
+
+  var transitionDays = 7;
+  var trialStart = addDays(start, transitionDays);          // first day fully on trial diet
+  var trialEnd = addDays(trialStart, weeks * 7 - 1);
+  var challengeStart = addDays(trialEnd, 1);
+
+  var steps = [];
+
+  steps.push({
+    marker: "DAYS<br>1–2",
+    title: "Transition: 25% new food",
+    date: fmt(start) + " – " + fmt(addDays(start, 1)),
+    desc: "Mix one quarter trial diet with three quarters of the current food. Transitioning gradually avoids the stomach upset that would otherwise be mistaken for a reaction to the new diet."
+  });
+  steps.push({
+    marker: "DAYS<br>3–5",
+    title: "Transition: 50% new food",
+    date: fmt(addDays(start, 2)) + " – " + fmt(addDays(start, 4)),
+    desc: "Half and half. If stool becomes loose, hold at this ratio for a few extra days rather than pushing ahead."
+  });
+  steps.push({
+    marker: "DAYS<br>6–7",
+    title: "Transition: 75% new food",
+    date: fmt(addDays(start, 5)) + " – " + fmt(addDays(start, 6)),
+    desc: "Almost there. This is the last day any of the old food is in the bowl — from here the old bag should leave the house."
+  });
+  steps.push({
+    marker: "DAY 0",
+    title: "Trial officially begins — 100% trial diet",
+    date: fmt(trialStart),
+    desc: "The clock starts now, not on the day you began transitioning. From this point the trial diet and water are the only things your pet consumes. Record a baseline itch score today."
+  });
+
+  // Recheck points
+  var recheckWeeks = [];
+  for (var w = 2; w < weeks; w += 2) recheckWeeks.push(w);
+  recheckWeeks.forEach(function (w) {
+    var dt = addDays(trialStart, w * 7);
+    var desc;
+    if (w === 2) {
+      desc = "Do not expect much yet. Two weeks is far too early to judge a skin trial, and seeing no change now means nothing. Score the itch and carry on.";
+    } else if (w === 4) {
+      desc = "Digestive signs, if present, often improve by around this point. Skin signs usually lag well behind. Score the itch and compare against your baseline.";
+    } else {
+      desc = "Score the itch and compare it with your baseline. A downward trend by now is encouraging even if signs have not fully resolved.";
+    }
+    steps.push({
+      marker: "WEEK<br>" + w,
+      title: "Checkpoint — record an itch score",
+      date: fmt(dt),
+      desc: desc
+    });
+  });
+
+  steps.push({
+    marker: "WEEK<br>" + weeks,
+    title: "Trial period ends — assess with your vet",
+    date: fmt(trialEnd),
+    desc: "The benchmark dermatologists use is roughly a 50% reduction in itching behaviour. Bring your scores to the appointment. If there has been clear improvement, your vet may move to the challenge phase; if there has been none, food allergy becomes much less likely and the search moves elsewhere."
+  });
+
+  steps.push({
+    marker: "NEXT",
+    title: "Challenge phase — only if the trial worked",
+    date: "From " + fmt(challengeStart),
+    desc: "Reintroduce the original food and watch for signs to return. A flare usually appears within 1 to 3 days but can take up to two weeks. A return of signs is what actually confirms a food reaction; if nothing happens, the improvement probably came from something else. Your vet decides whether to rechallenge at all."
+  });
+
+  steps.push({
+    marker: "AFTER",
+    title: "Single-ingredient challenges (optional)",
+    date: "Allow 1–2 weeks per ingredient",
+    desc: "Once a reaction is confirmed, individual proteins can be reintroduced one at a time to identify which ones your pet actually reacts to, giving you a wider long-term menu than the trial diet alone. Some vets allow up to 3–4 weeks per ingredient before calling it clear."
+  });
+
+  document.getElementById("trial-length").textContent = weeks + "-week trial";
+  document.getElementById("trial-window").textContent =
+    "Full diet from " + fmt(trialStart) + " to " + fmt(trialEnd) +
+    " · transition begins " + fmt(start);
+
+  document.getElementById("timeline-list").innerHTML = steps.map(function (s) {
+    return '<div class="ed-step">' +
+      '<div class="ed-marker">' + s.marker + '</div>' +
+      '<div><div class="ed-body-title">' + s.title + '</div>' +
+      '<div class="ed-body-date">' + s.date + '</div>' +
+      '<div class="ed-body-desc">' + s.desc + '</div></div></div>';
+  }).join("");
+
+  var notes = [];
+  if (species === "cat") {
+    notes.push({ type: "warn", text: "Cats must not be starved into a diet change. If your cat refuses the trial food for more than a day or two, stop and call your vet — going without food puts cats at risk of hepatic lipidosis, which is far more dangerous than the itching you are investigating." });
+    notes.push({ type: "tip", text: "Cats are typically given 12 weeks rather than 8. If your cat goes outdoors, the trial is very difficult to run properly — hunting and neighbours feeding them both break it. Discuss keeping them in for the duration." });
+  } else {
+    notes.push({ type: "tip", text: "Dogs on walks are a common leak: dropped food on the pavement, treats from other people, and rubbish are all contamination. A basket muzzle is a legitimate option for determined scavengers during the trial." });
+  }
+  if (signs === "gi") {
+    notes.push({ type: "tip", text: "You selected digestive signs only, so the plan uses a 4-week trial. Gut signs typically settle faster than skin signs — but if itching is also present, run the longer schedule instead, because stopping at 4 weeks would give you a false negative for skin." });
+  }
+  if (signs === "both") {
+    notes.push({ type: "tip", text: "With both skin and gut signs, expect the digestive side to improve first, often several weeks before the skin. Early gut improvement is an encouraging signal, not a reason to end the trial early." });
+  }
+  notes.push({ type: "warn", text: "If a skin or ear infection is present, it needs treating alongside the trial. Dermatologists generally continue the diet for at least a month past the point an infection clears, because an untreated infection keeps the itching going and makes the trial look like a failure." });
+
+  document.getElementById("plan-notes").innerHTML = notes.map(function (n) {
+    return '<div class="ed-note ed-' + (n.type === "warn" ? "warn" : "tip") + '"><span>' +
+      (n.type === "warn" ? "\u26A0\uFE0F" : "\uD83D\uDCA1") + "</span><span>" + n.text + "</span></div>";
+  }).join("");
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").classList.add("show");
+  document.getElementById("pdf-btn").style.display = "block";
+
+  renderAudit();
+  document.getElementById("audit-section").style.display = "block";
+  document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+var auditState = {};
+
+function renderAudit() {
+  var el = document.getElementById("audit-list");
+  el.innerHTML = AUDIT_ITEMS.map(function (it, i) {
+    var on = auditState[i] ? " checked" : "";
+    return '<div class="audit-item' + on + '" onclick="toggleAudit(' + i + ')">' +
+      '<div class="audit-box">\u2713</div>' +
+      '<div><div class="audit-title">' + it.t + '</div>' +
+      '<div class="audit-desc">' + it.d + '</div></div></div>';
+  }).join("");
+  updateAuditSummary();
+}
+
+function toggleAudit(i) {
+  auditState[i] = !auditState[i];
+  renderAudit();
+}
+
+function updateAuditSummary() {
+  var done = 0;
+  for (var i = 0; i < AUDIT_ITEMS.length; i++) if (auditState[i]) done++;
+  var total = AUDIT_ITEMS.length;
+  var el = document.getElementById("audit-summary");
+  var msg, cls;
+  if (done === total) {
+    cls = "ed-tip";
+    msg = "All " + total + " items cleared. That is the part of the trial you control — the rest is patience. Record a baseline itch score on day 0 so you have something to compare against at week " + (document.getElementById("species").value === "cat" ? "12" : "8") + ".";
+  } else {
+    cls = "ed-warn";
+    msg = done + " of " + total + " cleared. Each unticked item is a route for protein to reach your pet, and a single one is enough to make an 8-week trial inconclusive. It is worth delaying the start date until these are sorted rather than discovering the gap in week six.";
+  }
+  el.innerHTML = '<div class="ed-note ' + cls + '"><span>' +
+    (done === total ? "\u2705" : "\u26A0\uFE0F") + "</span><span>" + msg + "</span></div>";
+}
+</script>

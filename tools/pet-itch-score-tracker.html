@@ -1,0 +1,408 @@
+---
+layout: tool
+title: Pet Itch Score Tracker — Owner-Assessed Pruritus Scale for Dogs & Cats
+description: Score your dog or cat's itching on the validated owner-assessed pruritus scale used in veterinary dermatology. Free tool to track whether treatment or a food trial is actually working, with a printable record for your vet.
+permalink: /tools/pet-itch-score-tracker.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pet Itch Score Tracker",
+  "url": "https://petpawcalc.com/tools/pet-itch-score-tracker.html",
+  "description": "A free itch severity scoring tool for dogs and cats based on the owner-assessed pruritus scale developed and validated in veterinary dermatology research. Produces a 0-10 score and a printable record for tracking response to treatment or an elimination diet trial.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if my dog is itching too much?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some scratching is normal — in the validation research for this scale, a number of owners of dogs with no skin disease at all still gave a score above zero. The threshold that matters is not whether your dog scratches, but whether scratching, licking or chewing has started interrupting normal life: waking them at night, stopping play, or continuing while they eat. Itching that reaches that level, or that has visibly damaged the skin, is worth a vet visit rather than another shampoo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't the slider show numbers while I score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That is deliberate, and it comes straight from the research. When the scale was further validated in 2009, the authors found that owners were heavily influenced by visible numerical markings — adding numbers pulled scores toward round figures and lost the fine gradation the scale is designed to capture. A true visual analog scale with descriptions rather than numbers produced better data, so this tool hides the number until after you have placed the marker."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as a meaningful improvement in itch score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the context of an elimination diet trial, veterinary dermatologists generally look for roughly a 50% reduction in itching behaviour — licking, scratching, chewing — to call the trial a response. For medication, improvement is usually judged both by the drop in score and by whether the pet has come back under a level where the itching interferes with sleep and normal activity. Because a single score is just one day, a trend across several weeks is far more informative than any individual number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this the same as a diagnosis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This scale measures how severe the itching is, not what is causing it. The same score can come from fleas, environmental allergy, a food reaction, a skin infection, mites or several of these at once — and those are distinguished by veterinary examination and testing, not by severity. What the score gives you is a way to measure change over time, which is exactly the thing owners are worst at judging from memory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I score my pet's itching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weekly is enough for most situations, plus a baseline score on the day a treatment or diet trial begins. Daily scoring tends to capture normal fluctuation rather than real trend, and can be discouraging during the early weeks of a food trial when little has changed yet. Score at roughly the same time of day, since itching in many pets is worse in the evening."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐾 Pet Itch Score Tracker</h1>
+    <p>Owners are unreliable judges of gradual change — eight weeks of slow improvement is nearly invisible from memory. This scores itching on the scale veterinary dermatologists use, so you have numbers instead of impressions.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="species">Species</label>
+      <select id="species" onchange="updateSpeciesCopy()">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <p style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.6; margin-bottom: 18px;">
+      Think about the <strong>past week</strong>, not today alone. Read the descriptions below, then drag the marker to the point that best fits. <strong>The number is hidden while you choose</strong> — that is intentional, and the reason is explained underneath.
+    </p>
+
+    <div class="pv-scale-wrap">
+      <div class="pv-anchor pv-anchor-left" id="anchor-left">Not itchy — no scratching, chewing, rubbing or licking seen</div>
+      <input type="range" id="itch-slider" min="0" max="100" value="50" step="1" class="pv-slider" oninput="onSlide()">
+      <div class="pv-anchor pv-anchor-right" id="anchor-right">Extremely itchy — scratching, chewing, rubbing or licking almost constantly</div>
+    </div>
+
+    <div id="descriptor-band" class="pv-descriptor">Drag the marker to begin</div>
+
+    <div class="form-group" style="margin-top: 24px;">
+      <label for="context">What are you tracking? (optional — changes the guidance below)</label>
+      <select id="context">
+        <option value="none">Just checking where we are</option>
+        <option value="diet">Baseline or checkpoint in an elimination diet trial</option>
+        <option value="med">Response to a medication or treatment</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="scoreItch()">Reveal Score →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="itch-date"></span>
+      </div>
+      <div style="text-align:center; margin-bottom: 14px;">
+        <div style="font-size: 2.4rem; font-weight: 700; color: var(--orange);" id="score-value"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">on the 0–10 owner-assessed pruritus scale</div>
+      </div>
+      <div id="score-bar-wrap" style="background:#eee; border-radius:20px; height:12px; margin-bottom:20px; overflow:hidden;">
+        <div id="score-bar" style="height:100%; border-radius:20px; transition: width 0.6s ease;"></div>
+      </div>
+      <h3 id="band-headline" style="margin-bottom:8px;"></h3>
+      <p id="band-summary" style="color: var(--brown-mid); line-height:1.7; margin-bottom:16px;"></p>
+      <div id="score-notes"></div>
+      <div id="log-block" style="margin-top:18px;"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('itch-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool measures itch severity — it does not identify the cause and is not a diagnosis. Persistent itching in dogs and cats has many causes, several of which need veterinary treatment, and skin that is broken, bleeding, smelly or losing hair should be seen rather than tracked. Never give human antihistamines or any medication that was not prescribed for that specific pet.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Where This Scale Comes From</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Measuring itch is genuinely difficult — the animal cannot report it, and the behaviour is intermittent. The scale used here is the owner-assessed pruritus visual analog scale, developed by Hill, Lau and Rybníček and published in <em>Veterinary Dermatology</em> in 2007. They tested four different formats on 116 owners before settling on a visual analog scale carrying behavioural descriptions rather than bare numbers.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It was validated further by Rybníček and colleagues in 2009 in a study of 713 owners presenting dogs for veterinary attention. Scores from the 408 dogs with skin disease covered the entire 0 to 10 range. Notably, among 305 dogs with <em>no</em> evidence of skin disease, 90 owners still gave a score above zero — a useful reminder that some scratching is simply normal and a low score is not a failure.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The scale has since become the standard owner-reported outcome measure in canine dermatology trials, which is why it is worth using at home: it produces a number your veterinarian already knows how to interpret.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why the Numbers Are Hidden Until You Commit</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This is the detail most versions of this scale on the internet get wrong. The 2009 validation study directly compared the visual analog scale against one with visible numerical markings, and found that owners were heavily influenced by the numbers — the marked version pulled responses toward round figures and lost the scale's ability to generate continuous data. The authors concluded that a traditional visual analog scale was essential. So this tool shows you descriptions while you place the marker and only converts to a number afterwards. If you would rather use a straightforward 0–10 verbal scale, one was validated separately in 2022 in 251 dogs; it correlates well with this scale but the authors specifically cautioned that the two are <em>not</em> interchangeable, so pick one and stay with it across all your scores.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Scoring Cats</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The original scale was built and validated for dogs. A separate visual analog scale for feline pruritus has been developed and shown able to track improvement following treatment, but cats are harder to score for a practical reason: much of their scratching and over-grooming happens out of sight, and the first sign is often the <em>result</em> rather than the act — thinning fur on the belly or inner thighs, bald patches behind the ears, scabs along the back. If you have a cat, factor in what the coat tells you as well as what you have actually watched them do, and weight indoor observation heavily since an outdoor cat's daytime behaviour is invisible to you.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Getting a Useful Trend</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Score at the same time of day.</strong> Itching is worse in the evening for many pets, so an evening score one week and a morning score the next produces a change that is not real.</li>
+      <li><strong>Weekly, not daily.</strong> Daily scoring mostly captures noise. Weekly captures trend.</li>
+      <li><strong>Record a baseline before anything changes.</strong> A score taken after starting treatment has nothing to be compared against.</li>
+      <li><strong>Write down what else changed.</strong> A new flea treatment, a course of steroids, a bath, or pollen season starting will all move the number, and without a note you will not remember which.</li>
+      <li><strong>Keep prior scores in front of you.</strong> A 2019 study in <em>Veterinary Dermatology</em> examined how owners' scores behave at follow-up visits, and showing previous scores has been found to improve agreement between what owners perceive and what they record.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This tool does not store scores between visits — nothing you enter leaves your browser. Use the Save as PDF button to keep each score, or write them in a note on your phone. If you are running a food trial, our <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a> generates the dated checkpoints to score against.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I know if my dog is itching too much?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Some scratching is normal — in the validation research for this scale, a number of owners of dogs with no skin disease at all still gave a score above zero. The threshold that matters is not whether your dog scratches, but whether scratching, licking or chewing has started interrupting normal life: waking them at night, stopping play, or continuing while they eat. Itching that reaches that level, or that has visibly damaged the skin, is worth a vet visit rather than another shampoo.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why doesn't the slider show numbers while I score?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">That is deliberate, and it comes straight from the research. When the scale was further validated in 2009, the authors found that owners were heavily influenced by visible numerical markings — adding numbers pulled scores toward round figures and lost the fine gradation the scale is designed to capture. A true visual analog scale with descriptions rather than numbers produced better data, so this tool hides the number until after you have placed the marker.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What counts as a meaningful improvement in itch score?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">In the context of an elimination diet trial, veterinary dermatologists generally look for roughly a 50% reduction in itching behaviour — licking, scratching, chewing — to call the trial a response. For medication, improvement is usually judged both by the drop in score and by whether the pet has come back under a level where the itching interferes with sleep and normal activity. Because a single score is just one day, a trend across several weeks is far more informative than any individual number.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is this the same as a diagnosis?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">No. This scale measures how severe the itching is, not what is causing it. The same score can come from fleas, environmental allergy, a food reaction, a skin infection, mites or several of these at once — and those are distinguished by veterinary examination and testing, not by severity. What the score gives you is a way to measure change over time, which is exactly the thing owners are worst at judging from memory.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I score my pet's itching?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Weekly is enough for most situations, plus a baseline score on the day a treatment or diet trial begins. Daily scoring tends to capture normal fluctuation rather than real trend, and can be discouraging during the early weeks of a food trial when little has changed yet. Score at roughly the same time of day, since itching in many pets is worse in the evening.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a> —
+      <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea &amp; Tick Prevention Cost Calculator</a> —
+      <a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a> —
+      <a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+@media print {
+  .form-group, .pv-scale-wrap, .pv-descriptor, .tool-box > p { display: none !important; }
+}
+.pv-scale-wrap {
+  padding: 4px 0 2px;
+}
+.pv-anchor {
+  font-size: 0.82rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+  background: var(--cream);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+}
+.pv-anchor-left  { border-left: 3px solid #27ae60; margin-bottom: 14px; }
+.pv-anchor-right { border-left: 3px solid #e74c3c; margin-top: 14px; }
+.pv-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #27ae60, #f39c12, #e74c3c);
+  outline: none;
+  cursor: pointer;
+}
+.pv-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--orange);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(44,26,14,0.2);
+}
+.pv-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--orange);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(44,26,14,0.2);
+}
+.pv-descriptor {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--brown);
+  line-height: 1.6;
+  min-height: 52px;
+}
+.itch-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.itch-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.itch-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+</style>
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+
+<script>
+var DESCRIPTORS = [
+  { max: 5,   text: "Normal \u2014 no itching beyond the occasional scratch that any healthy pet does." },
+  { max: 20,  text: "Very mild \u2014 slightly more scratching, licking or chewing than usual, but only occasionally and never during sleep, eating or play." },
+  { max: 40,  text: "Mild \u2014 more frequent episodes, still not while sleeping, eating, playing or exercising." },
+  { max: 60,  text: "Moderate \u2014 regular episodes through the day, and it has now started happening at night, or during meals, play or exercise." },
+  { max: 80,  text: "Severe \u2014 prolonged bouts, including at night and during eating, playing and exercise. Hard to interrupt." },
+  { max: 100, text: "Extremely severe \u2014 almost continuous. Stops sleep, interrupts everything, and does not stop when you try to distract them." }
+];
+
+function currentDescriptor(v) {
+  for (var i = 0; i < DESCRIPTORS.length; i++) {
+    if (v <= DESCRIPTORS[i].max) return DESCRIPTORS[i].text;
+  }
+  return DESCRIPTORS[DESCRIPTORS.length - 1].text;
+}
+
+function onSlide() {
+  var v = parseInt(document.getElementById("itch-slider").value, 10);
+  document.getElementById("descriptor-band").textContent = currentDescriptor(v);
+}
+
+function updateSpeciesCopy() {
+  var sp = document.getElementById("species").value;
+  var verb = (sp === "cat")
+    ? "Not itchy \u2014 no scratching, over-grooming, chewing or rubbing seen"
+    : "Not itchy \u2014 no scratching, chewing, rubbing or licking seen";
+  var verb2 = (sp === "cat")
+    ? "Extremely itchy \u2014 scratching, over-grooming, chewing or rubbing almost constantly"
+    : "Extremely itchy \u2014 scratching, chewing, rubbing or licking almost constantly";
+  document.getElementById("anchor-left").textContent = verb;
+  document.getElementById("anchor-right").textContent = verb2;
+}
+
+function scoreItch() {
+  var raw = parseInt(document.getElementById("itch-slider").value, 10);
+  var species = document.getElementById("species").value;
+  var context = document.getElementById("context").value;
+
+  // 0-100 slider position maps to the scale's 0-10 range, one decimal place.
+  var display = (raw / 10).toFixed(1);
+
+  var color, headline, summary;
+  if (raw <= 20) {
+    color = "#27ae60";
+    headline = "Mild range";
+    summary = "This sits in the range where many pets with no skin disease at all still score above zero, so a number in this band is not automatically a problem. It is a useful baseline to keep — if it climbs over the next few weeks, you will be able to show that rather than guess at it.";
+  } else if (raw <= 60) {
+    color = "#f39c12";
+    headline = "Moderate range";
+    summary = "Itching in this band is happening regularly and, at the upper end, has started intruding on sleep, meals or play. That is generally the point at which owners are advised to stop managing it at home and have the skin actually examined, because the useful question now is what is causing it rather than how bad it is.";
+  } else {
+    color = "#e74c3c";
+    headline = "Severe range";
+    summary = "This is a high score. Itching at this level is uncomfortable, disrupts sleep, and frequently leads to self-trauma and secondary skin infection, which then drives the itching higher still. This warrants a veterinary appointment rather than continued monitoring.";
+  }
+
+  document.getElementById("score-value").textContent = display + " / 10";
+  document.getElementById("score-bar").style.width = raw + "%";
+  document.getElementById("score-bar").style.background = color;
+  document.getElementById("band-headline").textContent = headline;
+  document.getElementById("band-headline").style.color = color;
+  document.getElementById("band-summary").textContent = summary;
+
+  var notes = [];
+  if (context === "diet") {
+    notes.push({ type: "tip", text: "For an elimination diet trial, the benchmark is roughly a 50% reduction from baseline by the end of the trial. From a baseline of " + display + ", that would mean reaching about " + (Math.round(raw / 20 * 10) / 10).toFixed(1) + " or lower. Do not judge before week 8 for a dog or week 12 for a cat \u2014 skin signs improve slowly and early weeks look like failure." });
+  }
+  if (context === "med") {
+    notes.push({ type: "tip", text: "When tracking a medication, note the date you started it alongside the score. Some treatments act within hours and others take days to reach full effect, so a score taken too early can look like the treatment is not working when it simply has not peaked yet." });
+  }
+  if (raw > 60) {
+    notes.push({ type: "warn", text: "Check the skin itself, not just the behaviour. Broken skin, raw patches, a yeasty or infected smell, hair loss, or dark thickened skin all point to secondary infection, which needs treating in its own right \u2014 no allergy plan will work while an infection is running." });
+  }
+  if (species === "cat" && raw > 40) {
+    notes.push({ type: "tip", text: "In cats, check the belly and inner thighs for thinning fur even if you have not seen much scratching. Over-grooming is often done in private, and a symmetrically bald belly is sometimes the only visible evidence." });
+  }
+  if (raw <= 20) {
+    notes.push({ type: "tip", text: "Low scores are still worth recording. The value of this scale is the trend, and a baseline taken while things are calm is what makes a later increase obvious rather than debatable." });
+  }
+  notes.push({ type: "tip", text: "Whatever the score, confirm flea control is current on every animal in the household. Flea allergy remains the most common cause of itching in both dogs and cats, and a single bite can sustain the reaction in a sensitised pet." });
+
+  document.getElementById("score-notes").innerHTML = notes.map(function (n) {
+    return '<div class="itch-note itch-' + (n.type === "warn" ? "warn" : "tip") + '"><span>' +
+      (n.type === "warn" ? "\u26A0\uFE0F" : "\uD83D\uDCA1") + "</span><span>" + n.text + "</span></div>";
+  }).join("");
+
+  var today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  document.getElementById("log-block").innerHTML =
+    '<div style="border:1.5px dashed var(--border); border-radius: var(--radius-sm); padding: 14px 16px;">' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.9rem; margin-bottom:6px;">Record for your notes</div>' +
+    '<div style="font-size:0.88rem; color:var(--brown-mid); line-height:1.7;">' +
+    today + " \u2014 " + (species === "cat" ? "Cat" : "Dog") + " itch score: <strong>" + display + " / 10</strong>" +
+    '<br><span style="font-size:0.82rem;">Scores aren\'t saved between visits, so print this or copy the line above into a note. Bring the series to your appointment.</span>' +
+    "</div></div>";
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").classList.add("show");
+  document.getElementById("pdf-btn").style.display = "block";
+  document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+onSlide();
+</script>
