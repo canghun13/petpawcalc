@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How Often Should Cats Go to the Vet? A Schedule by Age"
-description: Vet visit frequency for cats depends entirely on age. Here's the exact schedule vets recommend — from kitten vaccines to senior semi-annual exams.
+title: "How Often Do Cats Need to Go to the Vet? Schedule by Age (2026)"
+description: Do cats need to go to the vet every year? Kittens every 3–4 weeks, healthy adults once a year, seniors twice. Here's the full schedule by age — plus what each visit typically costs.
 category: Cat Care
 date: 2026-06-06
 read_time: 8

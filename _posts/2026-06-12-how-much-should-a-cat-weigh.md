@@ -8,7 +8,7 @@ read_time: 9
 slug: how-much-should-a-cat-weigh
 faqs:
   - q: "How much should my cat weigh?"
-    a: "It depends on breed, sex, and individual frame — not a universal number. Domestic shorthair females typically weigh 8–10 lbs at a healthy weight; males 10–12 lbs. Siamese cats are lighter (6–10 lbs), while Maine Coons can be healthy at 15–25 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of w"
+    a: "It depends on breed, sex, and individual frame — not a universal number. Domestic shorthair females typically weigh 8–10 lbs at a healthy weight; males 10–12 lbs. Siamese cats are lighter (6–10 lbs), while Maine Coons can be healthy at 15–25 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says."
   - q: "Is my cat overweight if they weigh 15 lbs?"
     a: "It depends entirely on breed. A 15 lb female domestic shorthair is overweight. A 15 lb male Maine Coon or Ragdoll may be perfectly healthy. Use the BCS physical check rather than scale weight alone — a large-framed cat can weigh 15 lbs and be lean, while a small-framed cat at 12 lbs may be overweight."
   - q: "How can I tell if my cat is fat?"

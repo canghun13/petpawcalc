@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Much Should I Feed My Dog? A Vet-Backed Guide"
-description: Overfeeding is the #1 nutrition mistake dog owners make. Here's how to calculate the right daily food amount for your dog's weight, age, and activity level.
+description: "Overfeeding is the #1 nutrition mistake dog owners make. Here's how to calculate the right daily food amount for your dog's weight, age, and activity level."
 category: Dog Nutrition
 date: 2026-05-10
 read_time: 8

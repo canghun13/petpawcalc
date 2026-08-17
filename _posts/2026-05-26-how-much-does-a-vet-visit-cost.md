@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How Much Does a Vet Visit Cost? A Complete 2026 Guide"
-description: Routine checkups, emergency visits, vaccines, bloodwork — here's what vet care actually costs in the US and how to plan for it.
+title: "How Much Does a Vet Visit Cost? Real 2026 Price Ranges"
+description: A routine exam runs $50–$100, bloodwork $80–$300, and an emergency visit starts at a $100–$200 exam fee before treatment. Full US price ranges by service, plus what drives the bill up.
 category: Dog Care
 date: 2026-05-26
 read_time: 8

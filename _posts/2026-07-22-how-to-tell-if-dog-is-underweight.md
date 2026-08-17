@@ -22,11 +22,17 @@ faqs:
   - q: "Is my dog underweight?"
     a: "Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above)."
   - q: "How to tell if a puppy is underweight"
-    a: "How to tell if a puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed."
+    a: "How to tell if your puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed."
   - q: "How do I know if my puppy is underweight?"
     a: "How do I know if my puppy is underweight comes down to three checks: weigh them weekly and confirm the number is still climbing, run your hands over the ribs and spine to see whether there is any fat covering at all, and compare against a breed-size growth chart rather than against other puppies at the park. Is my puppy underweight is a question worth taking to a vet quickly rather than managing at home — puppies have very little reserve, and the common causes (parasites, inadequate calories, or an underlying issue) all have straightforward fixes when caught early."
   - q: "How can you tell if your dog is too thin?"
     a: "A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. How to know if your dog is too skinny in borderline cases is best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time."
+  - q: "How can you tell if a greyhound is underweight?"
+    a: "How can you tell if a greyhound is underweight when visible ribs are normal for the breed? Judge muscle and energy rather than bone. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds \u2014 they simply look leaner at a healthy body condition than a Labrador does."
+  - q: "How to tell if a long haired dog is underweight"
+    a: "How to tell if a long haired dog is underweight comes down to using your hands rather than your eyes, because thick and double coats can visually hide roughly one to two points of body condition. Press firmly enough to reach the ribcage through the fur: ribs that feel like your knuckles with a closed fist mean too thin, while ribs that feel like the back of your flat hand are about right. Check the spine and hips the same way. When what you see and what you feel disagree, trust your hands."
+  - q: "What does it mean if my dog is slightly underweight?"
+    a: "A slightly underweight dog has ribs that are easy to feel with almost no fat covering and possibly faintly visible, a pronounced waist, but intact muscle and normal behaviour \u2014 roughly a 3 on the 9-point body condition scale where 4 to 5 is ideal. That is worth correcting with a vet-guided increase in calories and a recheck in a few weeks. It is a different situation from a dog whose spine, ribs and hip bones are all prominent alongside visible muscle loss, which needs to be seen rather than simply fed more."
 ---
 
 Most dog-weight content out there is about the opposite problem — helping an overweight dog slim down. But being underweight carries its own real risks: reduced energy, a weaker immune system, and in many cases, it's the first visible sign of an underlying illness rather than just "not eating enough." Here's how to tell the difference between a naturally lean dog and one that actually needs to gain weight, and how to help safely.
@@ -45,6 +51,24 @@ The same rib/waist/profile check used to spot an overweight dog works in reverse
 Some breeds are built lean and get mistaken for underweight constantly. Greyhounds, Whippets, Salukis, and Italian Greyhounds are the classic examples — visible ribs and a tight waist are completely normal for these breeds at a healthy weight.
 
 The difference comes down to muscle and energy, not just how much bone shows. A naturally lean dog has firm muscle tone and normal energy levels. A genuinely underweight dog — of any breed — tends to have soft or reduced muscle on top of the visible bones, along with lower energy than usual.
+
+So how can you tell if a Greyhound is underweight, given that visible ribs are the breed's normal state? The usual guidance is that the last two or three ribs showing is expected in a fit sighthound, along with a pronounced tuck-up. What is *not* expected is flat, wasted muscle through the thighs, shoulders and chest, a hollow look between the hip bones, a dull coat, or lethargy. A lean sighthound is bright and springy; an underweight one is flat. If every rib is countable from across the room and the spine and hips have gone sharp, that is past breed-normal regardless of pedigree.
+
+### Coat Length Changes What You Can See — Not What You Can Feel
+
+The opposite problem applies to heavily coated dogs. How to tell if a long haired dog is underweight is a genuinely harder question, because thick or double coats can visually hide a meaningful amount of body condition — commonly described as concealing one to two points on the 9-point body condition scale. A Husky, Samoyed, Golden Retriever, Chow, or Bernese can be well under condition and still look round and healthy in photographs.
+
+The fix is simple: **when sight and touch disagree, trust your hands.** This is the standard look-feel-look approach used in veterinary body condition scoring. Run your fingertips firmly enough to get through the coat to the ribcage. The widely used comparison is your own hand:
+
+- **Ribs feel like your knuckles with your fist closed** — too thin.
+- **Ribs feel like the back of your hand, lying flat** — about right.
+- **Ribs feel like your palm** — carrying too much.
+
+Do the same along the spine and over the hip bones. On a long-coated dog, bathing is often the moment owners discover what has actually been happening under the fur — a wet coat flattens and the real outline appears.
+
+### What "Slightly Underweight" Actually Means
+
+A slightly underweight dog is one where the ribs are easy to feel with almost no fat cover and may be faintly visible, the waist is pronounced, but muscle is still present and the dog is behaving normally. That is roughly a 3 on the 9-point scale, against an ideal of 4 to 5. It is worth correcting, but it is a feeding-and-recheck situation rather than an emergency — quite different from a dog whose spine, ribs and hips all stand out with visible muscle loss, which warrants a prompt vet visit rather than extra kibble.
 
 <div class="post-cta">
   <h4>Check Against Breed-Specific Ranges</h4>
@@ -101,13 +125,22 @@ Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a natu
 Is my dog underweight, or just naturally lean for the breed? The at-home check above is the best starting point: visible ribs, spine, and hip bones plus reduced muscle tone point to a dog underweight rather than lean, while firm muscle and normal energy point to a naturally slim build. This same check works for underweight dogs of any breed and size, though sighthounds need a slightly different baseline (see above).
 
 **How to tell if a puppy is underweight**
-How to tell if a puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed.
+How to tell if your puppy is underweight uses the same rib-and-waist check as an adult dog, but with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable puppy-specific signal is the growth curve, not the silhouette — a puppy who has stopped gaining weight week over week, or is losing weight, needs a vet regardless of how they look. Intestinal parasites are by far the most common cause in puppies and are easily treated once diagnosed.
 
 **How do I know if my puppy is underweight?**
 How do I know if my puppy is underweight comes down to three checks: weigh them weekly and confirm the number is still climbing, run your hands over the ribs and spine to see whether there is any fat covering at all, and compare against a breed-size growth chart rather than against other puppies at the park. Is my puppy underweight is a question worth taking to a vet quickly rather than managing at home — puppies have very little reserve, and the common causes (parasites, inadequate calories, or an underlying issue) all have straightforward fixes when caught early.
 
 **How can you tell if your dog is too thin?**
 A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. How to know if your dog is too skinny in borderline cases is best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time.
+
+**How can you tell if a greyhound is underweight?**
+How can you tell if a greyhound is underweight when visible ribs are normal for the breed? Judge muscle and energy rather than bone. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds — they simply look leaner at a healthy body condition than a Labrador does.
+
+**How to tell if a long haired dog is underweight**
+How to tell if a long haired dog is underweight comes down to using your hands rather than your eyes, because thick and double coats can visually hide roughly one to two points of body condition. Press firmly enough to reach the ribcage through the fur: ribs that feel like your knuckles with a closed fist mean too thin, while ribs that feel like the back of your flat hand are about right. Check the spine and hips the same way. When what you see and what you feel disagree, trust your hands.
+
+**What does it mean if my dog is slightly underweight?**
+A slightly underweight dog has ribs that are easy to feel with almost no fat covering and possibly faintly visible, a pronounced waist, but intact muscle and normal behaviour — roughly a 3 on the 9-point body condition scale where 4 to 5 is ideal. That is worth correcting with a vet-guided increase in calories and a recheck in a few weeks. It is a different situation from a dog whose spine, ribs and hip bones are all prominent alongside visible muscle loss, which needs to be seen rather than simply fed more.
 
 ## Related Articles
 
