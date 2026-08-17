@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-08-14 (세션 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
+최종 갱신: 2026-08-18 (세션 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -1885,3 +1885,96 @@ GSC 쿼리 633개 전수를 저장소 전체 텍스트(_posts + tools + checklis
 - `cat-pregnancy-calculator` 수동 색인 요청 여부 재확인.
 - **다음 신규 후보로 유일하게 살려둔 것: 다음다갈(물 과다 섭취) 스크리닝.** 임상 역치가 명확하고(개 >100ml/kg/일, 고양이 >45~50ml/kg/일) 신부전·당뇨·쿠싱의 조기 신호라 관절염 스크리닝과 같은 패턴으로 만들 수 있다. 기존 water intake 계산기들은 "최소 필요량"만 다루고 상한 red flag를 안 다룬다. 다만 만들기 전에 경쟁 재확인 필요.
 - 알레르기 클러스터를 더 키운다면 3번째 후보는 "음식 알레르기 vs 환경 알레르기 구분"(계절성·발병 연령·귀/발 분포) 블로그 포스트. 이번엔 경쟁 조사를 안 했으니 반드시 먼저 확인할 것.
+
+
+---
+
+### 세션 AJ — Bing 데이터 최초 반영: CTR 문제 발견 + 정확문구 보강 + 실제 SEO 버그 2건 수정 (8/18)
+
+사용자 요청: 밀린 일요일 주간 작업. **Bing 자료 추가 제공.** 색인은 첨부 자료로만 판단. 신규는 중복 확인 + 웹검색 + 경쟁 회피 장치 + 롱테일. 공격적 확장 전략 유지(할 게 없으면 안 하는 게 맞지만 전략은 바꾸지 말 것). 수익화 우선순위. 대시보드/시각화 금지. 화면 깨짐 확인 필요 페이지만 링크. 완료 시 토큰 revoke 요청할 것.
+
+---
+
+#### 1. 🆕 Bing Webmaster Tools 데이터가 처음 들어왔고, 이번 세션 우선순위를 바꿨다
+
+**Bing과 구글의 그림이 정반대다. 이건 앞으로 계속 기억할 것.**
+
+| | Google | Bing |
+|---|---|---|
+| 노출 | 4,890 | 약 70 |
+| 평균 순위 | 20~80위대 | **2~10위 (1페이지)** |
+| 클릭 | 16 | **0** |
+
+- `how-often-vet-visits-cat` — Bing 22노출 **5.09위**, 클릭 0
+- `how-much-does-a-vet-visit-cost` — Bing 21노출 **5.90위**, 클릭 0
+- 그 외 `how-to-tell-if-dog-is-underweight` 5.67위, `what-to-feed-pregnant-dog` 5위, `pet-boarding-cost-calculator` 6.75위, `pet-food-calorie-calculator` 4.33위
+
+**즉 Bing에서는 "순위 문제"가 이미 해결돼 있고 "CTR 문제"가 남아 있다.** 구글에서는 아직 순위 싸움 중이라 이 문제가 안 보였다. 상위 2개 페이지의 title/description을 Bing 쿼리가 묻는 구체적 숫자·답을 앞세우도록 다시 썼다.
+
+**⚠️ 단, 0/22와 0/21은 표본이 매우 작다.** 노이즈일 수 있다. 변경 비용이 낮아서 한 것이고, **다음 주에 개선이 안 보여도 그것이 반증은 아니다.** 표본이 쌓일 때까지 판단 보류할 것.
+
+**Bing 쿼리 특성**: 오타가 압도적으로 많다("how oftent to visit the vet for a cat", "hw to make aure my senior cat is eating enough", "estimated bill for cat teeth cleaning under aneastisea"). 그리고 고양이 병원 방문 주기 쿼리가 7개나 한 페이지로 몰린다. 오타 쿼리는 정확문구로 대응할 수 없으니 무시하고, **의미 클러스터만 볼 것.**
+
+#### 2. GSC 지표 — 세션 AH 작업이 실제로 먹혔다
+
+- 노출 3,885 → **4,890**, 클릭 12 → **16**.
+- **`pet-itch-score-tracker`(8/14 배포, 세션 AI)가 이미 색인되고 클릭까지 받았다** — 1노출 1클릭 23위. 배포 4일 만이다. 색인 속도가 초기와 비교해 확연히 빨라졌다.
+- `kitten-weight-chart` 509 → **717노출**, 12.93 → 12.59위. 세션 AH의 나이별 롱테일 작업 효과.
+- `what-to-feed-pregnant-dog` **50.66 → 27.01위**. 세션 AH FAQ 추가 효과가 가장 극적으로 나온 페이지.
+- `puppy-weight-chart`가 **클릭 3건으로 사이트 1위 수익 페이지**가 됐다(270노출, 13위).
+- **모바일 19.68위 / 데스크톱 53.85위** — 세션 AH에서 관찰 항목으로 남긴 격차가 더 벌어졌다. 모바일 CTR 0.55% vs 데스크톱 0.17%. **이제는 관찰이 아니라 조치를 고민할 단계다.**
+
+#### 3. 색인 — 남은 4개는 "한 번도 크롤링된 적 없음"
+
+- 발견됨-미색인 **4개 그대로**, 크롤링됨-미색인 7개.
+- **결정적 정보: 남은 4개(`annual-pet-cost-calculator`, `cat-pregnancy-calculator`, `spay-neuter-cost-calculator`, `titer-test-vs-revaccination-calculator`)의 최종 크롤링이 전부 `1970-01-01`, 즉 구글이 발견만 하고 한 번도 가져간 적이 없다.** 온페이지로 고칠 수 있는 문제가 아니다. **사용자가 GSC UI에서 직접 색인 요청을 누르는 것 외에 방법이 없다** — 세션 AH·AI에 이어 3번째로 요청했다.
+- `elimination-diet-trial-planner`(8/14)는 크롤링됨-미색인에 있으나 신규라 정상. `cat-mobility-arthritis-screening`은 두 목록 어디에도 없다(= 색인됨).
+- `/handover/`는 여전히 목록에 있으나 404 정상 동작. 건드리지 말 것.
+
+#### 4. 신규 0개 — 의도적 판단, 전략 변경 아님
+
+세션 AI에서 유일하게 남겨뒀던 후보 **다음다갈(물 과다 섭취) 스크리닝을 조사 후 기각**했다:
+- hundeo.com, dogscalculators.com이 **자사 water calculator 안에 이미 >100ml/kg 다음다갈 역치를 넣어놨다.**
+- velacare.app이 2026년 5월 강력한 가이드를 냈는데, 거기서 이미 **"중요한 건 절대량이 아니라 당신이 알아챈 변화가 진짜냐다"**라는, 우리가 쓰려던 차별화 논지를 그대로 쓰고 있다.
+- 차별화 장치가 사라졌으므로 기각. **재조사 금지 목록에 추가.**
+
+이번 주 데이터는 압도적으로 보강을 가리켰다(Bing 1페이지 CTR 공백, 369노출짜리 최다 노출 툴의 문구 공백). **다만 이건 이번 주 판단이고, 세션 O의 "페이지 수가 곧 생존" 원칙과 공격적 확장 전략은 그대로 유효하다.**
+
+#### 5. 보강
+
+- **저체중(개) 포스트 — 모질(코트) 섹션 신설.** Bing에서 `how to tell if a long haired dog is underweight` 4위, `how can you tell if a greyhound is underweight` 10위, `slightly underweight dog` 8위인데 사이트에 코트 각도가 전무했다. 두꺼운/이중모가 체형점수 1~2점을 시각적으로 가린다는 점, look-feel-look 원칙("보이는 것과 만져지는 것이 다르면 손을 믿어라"), 갈비뼈-주먹/손등/손바닥 비교법 추가. 기존 사이트하운드 섹션은 중복하지 않고 **"품종 정상 마름과 진짜 저체중을 어떻게 구분하나"**(뼈가 아니라 근육과 활력으로 판단)로 확장. "slightly underweight"가 9점 척도 3점에 해당한다는 구체적 정의도 추가. FAQ 3개.
+- **`dog-pregnancy-calculator`(369노출, 사이트 최다 노출 툴).** 이 툴은 **JS로 주차별 타임라인을 이미 생성하고 있는데** 사람들이 검색하는 문구가 텍스트에 하나도 없었다. `dog pregnancy calendar`, `week by week`, `gestational calendar for dogs`, `k9 gestation calendar`, `gestation period dogs calculator`, `dog pregnancy due date calculator` 대응 FAQ 3개. **콘텐츠는 이미 있으니 정직하게 뒷받침된다 — 없는 기능을 문구로만 주장한 게 아니다.**
+- `dog-weight-calculator` — `how much will my dog weigh calculator` + Bing의 "8주 때 10lb면 성견 몇 kg" 예측 문구.
+- `dog-quality-of-life-calculator` — paw score / paws score / pet paw score / free. **이 클러스터가 7~28위로 구글에서 1페이지에 가장 가깝다.**
+- `cat-age-calculator` — `kitten calculator`, `how old is my cat calculator`.
+- `heartworm-prevention-cost-calculator` — `proheart 12 pricing calculator`(**2위**).
+- `annual-cost-of-owning-a-dog` — `how much does owning a dog cost per year`(28위).
+- **근접 미매칭은 FAQ를 늘리지 않고 기존 문장에 녹였다**(`how do you know if your cats too thin`, `early signs of pregnant dog`, `signs a dogs pregnant` — 쿼리가 관사·아포스트로피를 빠뜨린 형태). FAQ 과다 적재를 피하기 위한 의도적 선택.
+
+#### 6. 🔴 실제로 라이브에 나가고 있던 SEO 버그 2건 수정 (둘 다 기존)
+
+**① `how-much-to-feed-a-dog.md`의 meta description이 `"Overfeeding is the"`로 잘려서 나가고 있었다.**
+프론트매터가 `description: Overfeeding is the #1 nutrition mistake...`처럼 **따옴표 없이** 작성돼 있었는데, **YAML에서 따옴표 없는 값의 ` #`는 주석 시작이다.** 그래서 Jekyll이 파싱한 `page.description`이 `"Overfeeding is the"` 세 단어였다. 노출 상위권 포스트라 실제 손해가 있었다. 따옴표로 감싸서 수정. 저장소 전체 스캔 결과 이 1건뿐.
+
+**② `how-much-should-a-cat-weigh.md`의 스키마 FAQ 답변이 단어 중간에서 잘려 있었다** — `"...regardless of w"`. 리치 결과에 잘린 채로 노출될 수 있었다. 본문 문장으로 복원.
+
+**➡️ 새 QA 규칙(Rule E)으로 편입:**
+- (a) 모든 프론트매터/스키마 답변과 description은 종료 문장부호로 끝나야 한다 → 잘림 탐지.
+- (b) 따옴표 없는 YAML 값에 ` #`가 들어있으면 경고 → 주석 절단 탐지.
+- 추가로 **프론트매터 답변 vs 본문 답변 문자열 비교**를 넣었는데, 9건은 정상(스키마엔 마크다운 링크가 없고 따옴표 스타일이 다른 게 의도된 설계)이고 1건만 진짜 잘림이었다. **하드 게이트가 아니라 트리아지 신호로 쓸 것.**
+
+#### 7. QA
+
+YAML 93파일, JSON-LD 108블록, 스크립트 68블록 `node --check`, FAQ 스키마↔본문 1:1(tools/checklists + `_posts`, Rule D), 잘림 스캔(Rule E), 브로큰 링크 0, slug 37, tool 44, 변경 파일 div/`<a>` 균형 — 전부 통과. 커밋 `1ba3620` → Actions 빌드 `success`.
+
+**페이지 수 변화 없음**: tools 44 + posts 37 + checklists 10 = **91페이지**. 신규 0.
+
+#### 8. 다음 세션에서 확인할 것
+
+- **Bing CTR 실험 결과.** 단 표본이 작으니 1주로 판단하지 말 것. 2~3주 누적을 볼 것.
+- **모바일/데스크톱 격차(19.68 vs 53.85위)가 계속 벌어지는지.** 두 세션 연속 관찰됐다. 계속되면 모바일 우선 최적화를 실제 작업 항목으로 올릴 것.
+- `pet-itch-score-tracker`가 첫 주 만에 클릭을 받았다 — 알레르기/가려움 클러스터가 초기 반응이 좋은지 추적. `elimination-diet-trial-planner` 색인 여부.
+- `dog-quality-of-life-calculator`의 paw score 클러스터(7~28위)가 1페이지에 들어가는지 — 구글에서 가장 가까운 자리다.
+- **미색인 4개에 사용자가 수동 색인 요청을 눌렀는지.** 3세션 연속 요청 중이고, 크롤링 기록이 1970-01-01이라 우리가 할 수 있는 게 없다.
+- 제휴 프로그램 신청 상태 — 3세션 연속 확인 못 했다. **반드시 물을 것.**
+- **신규 클러스터 후보가 완전히 소진됐다.** 다음에 신규를 하려면 세션 AI처럼 도메인 공백 분석 + 외부 검색으로 처음부터 발굴해야 한다. 기각 목록(재조사 금지): 다음다갈 스크리닝, 수분섭취 계산기, 고양이 모래 계산기, 알레르기 치료비 페이지, 새끼고양이 나이추정, 두 번째 반려동물 비용, 크레이트, 햄스터, 다묘 자원배치, 투약 트래커, 이름생성기, 기대수명, 사이즈예측, 첫해입양비용, 체중감량 전용, 강아지 운동 계산기.
