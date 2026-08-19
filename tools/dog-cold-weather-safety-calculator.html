@@ -351,6 +351,7 @@ function calculateColdSafety() {
   if (wet === 'snow')   { level += 1; adjustments.push("Dry snow falling: +1 level"); }
   if (shelter === 'good' && level > 0) { level -= 1; adjustments.push("Good dry, wind-blocked shelter: \u22121 level"); }
 
+  var uncapped = level;
   if (level < 0) level = 0;
   if (level > DCS_LEVELS.length - 1) level = DCS_LEVELS.length - 1;
 
@@ -374,6 +375,9 @@ function calculateColdSafety() {
   }
   if (age === 'senior') {
     extra.push("Cold and stiff joints compound each other. If your senior has quietly stopped wanting winter walks, it may be the joints talking rather than the weather.");
+  }
+  if (uncapped > DCS_LEVELS.length - 1) {
+    extra.push("The risk factors here add up past the top of the scale, so this is already at the most severe rating \u2014 changing one input may not move the rating even though it genuinely helps. Shelter, a coat, or waiting for the rain to stop all still reduce real risk at this level.");
   }
 
   document.getElementById('dcs-result-title').innerHTML =
