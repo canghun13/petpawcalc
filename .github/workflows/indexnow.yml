@@ -43,27 +43,40 @@ jobs:
       - name: Wait for GitHub Pages to publish
         run: sleep 120
 
-      - name: Build payload
-        env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      - name: Resolve IndexNow key
+        id: key
         run: |
           set -euo pipefail
-          if [ -z "${INDEXNOW_KEY:-}" ]; then
-            echo "::error::INDEXNOW_KEY secret is not set. Add it in Settings > Secrets and variables > Actions."
+          # The IndexNow key is public by design - it must be served at
+          # https://<host>/<key>.txt - so it lives in the repo, not in a secret.
+          KEYFILE=$(ls -1 [0-9a-f]*.txt 2>/dev/null | head -n1 || true)
+          if [ -z "$KEYFILE" ]; then
+            echo "::error::No IndexNow key file found at the repository root."
             exit 1
           fi
-          python3 .github/scripts/indexnow_payload.py petpawcalc.com "$INDEXNOW_KEY" changed.txt payload.json
+          KEY="${KEYFILE%.txt}"
+          CONTENT=$(tr -d '[:space:]' < "$KEYFILE")
+          if [ "$KEY" != "$CONTENT" ]; then
+            echo "::error::Key file name ($KEY) does not match its contents ($CONTENT). IndexNow requires them to be identical."
+            exit 1
+          fi
+          echo "key=$KEY" >> "$GITHUB_OUTPUT"
+          echo "Using IndexNow key $KEY"
+
+      - name: Build payload
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/indexnow_payload.py petpawcalc.com "${{ steps.key.outputs.key }}" changed.txt payload.json
 
       - name: Verify key file is live
-        env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           set -euo pipefail
           [ -f payload.json ] || { echo "Nothing to submit."; exit 0; }
-          CODE=$(curl -sS -o keyfile.txt -w '%{http_code}' "https://petpawcalc.com/${INDEXNOW_KEY}.txt")
+          KEY="${{ steps.key.outputs.key }}"
+          CODE=$(curl -sS -o keyfile.txt -w '%{http_code}' "https://petpawcalc.com/${KEY}.txt")
           echo "Key file HTTP $CODE"
           if [ "$CODE" != "200" ]; then
-            echo "::error::Key file not reachable at https://petpawcalc.com/${INDEXNOW_KEY}.txt — IndexNow will reject the submission."
+            echo "::error::Key file not reachable at https://petpawcalc.com/${KEY}.txt - IndexNow will reject the submission."
             exit 1
           fi
 
