@@ -2043,9 +2043,20 @@ YAML 93파일, JSON-LD 108블록, 스크립트 68블록 `node --check`, FAQ 스�
 1. **Actions 시크릿을 쓰지 않는다.** 첫 실행이 `INDEXNOW_KEY` 시크릿 부재로 실패했고, 세션 토큰에 시크릿 생성 권한이 없었다. 그런데 **IndexNow 키는 애초에 공개 정보다** — 프로토콜이 `https://<host>/<key>.txt`로 게시하도록 요구한다. 시크릿으로 두는 이득이 0이므로 제거하고, 워크플로가 루트의 `[0-9a-f]*.txt`에서 키를 읽고 **파일명과 내용이 일치하는지 검증**하도록 했다(IndexNow 자체 검증과 동일 조건). 수동 설정 단계가 사라졌다. `llms.txt`가 글롭에 안 걸리는 것도 로컬 확인 완료.
 2. **수동 실행(workflow_dispatch)은 전체 재제출.** 테스트 중 발견한 설계 결함: 수동 실행도 푸시와 같은 "직전 커밋 diff" 로직을 타서, 비-콘텐츠 커밋 직후 수동 버튼을 누르면 제출할 게 없다고 조용히 no-op 된다 — 하필 사람이 수동 버튼을 찾는 바로 그 상황이다. 이제 수동 실행은 `--all`로 전체 96개 URL을 재제출한다.
 
-**엔드투엔드 실행 결과는 이 섹션 아래 "IndexNow 실제 실행 결과"에 기록한다.**
-- 샌드박스는 `petpawcalc.com`이 네트워크 allowlist 밖이라 키 파일 접근성과 POST 응답을 직접 확인할 수 없다. 대신 **워크플로 안에 키 파일 도달 확인 단계를 넣어뒀으므로**, Actions 로그가 그 역할을 한다.
-- 수동 실행이 필요하면 사용자가 Actions 탭 → "IndexNow submit" → Run workflow를 누르면 96개 전체가 재제출된다.
+**✅ IndexNow 엔드투엔드 검증 완료 — 2회 연속 성공**
+
+| run | 커밋 | 결과 | 제출 URL |
+|---|---|---|---|
+| 1차 | `9b45059` | ❌ 실패 | `INDEXNOW_KEY` 시크릿 부재 (→ 시크릿 의존 제거로 해결) |
+| 2차 | `edccbd6` | ✅ 성공 | 한랭 계산기 1개 |
+| 3차 | `023bf5f` | ✅ 성공 | 겨울 체크리스트 1개 |
+
+전 단계 통과: Collect changed files → Wait for Pages → Resolve IndexNow key → Build payload → **Verify key file is live** → Submit to IndexNow. 특히 "Verify key file is live" 통과는 **`https://petpawcalc.com/af0f631a5cc606930a47e73706bc1c34.txt`가 실제로 서빙되고 있다**는 직접 증거다(샌드박스는 이 도메인에 접근할 수 없어 워크플로 안에서 확인하도록 설계했다).
+
+**신규 2개 페이지 모두 IndexNow 제출 완료.** 다만 각 run은 해당 커밋의 diff만 제출하므로, 두 페이지가 서로 다른 run에서 제출됐다.
+
+- Actions 로그 본문 다운로드는 이 토큰 권한으로 403이지만, **단계별 conclusion 조회는 가능**하므로 다음 세션도 그 방식으로 확인하면 된다.
+- 수동 전체 재제출이 필요하면 Actions 탭 → "IndexNow submit" → Run workflow (96개 전량).
 - **IndexNow는 Bing·Yandex·Seznam·Naver에만 닿는다. 구글은 참여하지 않는다.** 세션 AJ에서 Bing 순위가 이미 2~10위로 확인됐으니 우리가 실제로 자리를 가진 엔진을 겨냥한다는 점에서 방향은 맞다. **구글 색인 개선을 기대하지 말 것.**
 
 #### 2. 신규 클러스터 (2 URL) — 계절·환경 안전
@@ -2085,7 +2096,7 @@ YAML 95, JSON-LD 112블록, 스크립트 70블록 `node --check`, FAQ 스키마�
 
 #### 5. 다음 세션에서 확인할 것
 
-- **최우선: IndexNow가 실제로 돌았는지 Actions 로그 확인.** 위 1번 참조 — 신규 2개는 아직 미제출 상태다.
+- IndexNow는 검증 완료(2회 연속 성공, 신규 2개 모두 제출됨). 다음 세션은 **Bing Webmaster Tools에서 IndexNow 제출이 실제 크롤로 이어졌는지**를 보면 된다.
 - 신규 2개(`dog-cold-weather-safety-calculator`, `winter-pet-safety-checklist`) 색인 여부. 겨울 콘텐츠라 **순위 반응은 11월 이후에나 의미 있게 나온다 — 9~10월 데이터로 실패 판정하지 말 것.**
 - 세션 AJ의 Bing CTR 실험(제목·설명 재작성) 누적 결과. **표본이 작으니 2~3주 누적으로 볼 것.**
 - 모바일/데스크톱 순위 격차(19.68 vs 53.85위)가 3세션 연속인지.
