@@ -1,0 +1,406 @@
+---
+layout: tool
+title: Dog Cold Weather Safety Calculator — How Cold Is Too Cold to Walk Your Dog?
+description: Enter the temperature, wind chill, and your dog's size, coat, age and shelter to get a cold risk level and safe outdoor time. Applies the shelter, precipitation and age adjustments that static charts leave out.
+permalink: /tools/dog-cold-weather-safety-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Cold Weather Safety Calculator",
+  "url": "https://petpawcalc.com/tools/dog-cold-weather-safety-calculator.html",
+  "description": "A free calculator for how cold is too cold for a dog. Adapts the Tufts Animal Care and Condition weather safety scale, applying its documented adjustments for shelter, active precipitation, age, body condition and coat type to give a risk level and a safe outdoor time estimate.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How cold is too cold for a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single number, which is why size and coat have to come first. Working from the Tufts weather safety guidance for dogs with no shelter, risk generally begins around 40\u00b0F for small dogs, 37\u00b0F for medium dogs, 34\u00b0F for large dogs, and only around 10\u00b0F for northern double-coated breeds. Below roughly 20\u00b0F every dog is exposed to some hypothermia and frostbite risk on a long outing. Those figures shift substantially once you add wet weather, wind, age or illness, which is what the calculator above adjusts for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can a dog stay outside in cold weather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How long a dog can stay outside in cold weather depends far more on the combination of factors than on temperature alone. A large double-coated dog at 25\u00b0F on a dry, still day may be comfortable for an hour. A senior Chihuahua in the same air temperature with sleet falling should be out for a couple of minutes to toilet and no more. The single biggest accelerator is being wet: a wet coat loses heat dramatically faster, which is why the Tufts guidance moves the threat level by two steps when precipitation is falling, rather than one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do dogs need coats and boots in winter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some do and some genuinely do not. A coat earns its place on thin-coated, small, senior, very young, lean or unwell dogs \u2014 Greyhounds and other sighthounds carry almost no insulating fat, and small dogs lose heat faster because they have more surface area relative to their mass. On a Husky, Malamute or Samoyed a coat is usually unnecessary and can flatten the double coat that is doing the insulating. Boots protect against ice-melt salt and ice cuts more than against cold itself; if your dog will not tolerate them, rinsing and drying the paws after every walk achieves much of the same protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the signs a dog is too cold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shivering is the first and most reliable sign, followed by a hunched posture with the tail tucked, lifting or favouring paws, slowing down, whining, or turning back toward home. Later signs are more serious: shivering that stops while the dog is still cold, lethargy, stumbling, weakness, or shallow breathing can indicate hypothermia and need veterinary attention rather than just a warm room. Frostbite most often affects ear tips, tail tip and paws, and the affected skin may look pale or grey at first and only become painful and swollen as it rewarms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How cold is too cold for cats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indoor cats should be brought in whenever temperatures approach freezing, and most cats are uncomfortable well before that. Community and outdoor cats survive colder conditions when they have dry, wind-blocked, insulated shelter, but they are still at real risk of frostbite on ear tips and tail. One winter hazard is specific to cats: they climb into wheel wells and onto warm engine blocks for shelter. Banging on the hood and checking under the car before starting the engine in freezing weather is a genuinely worthwhile habit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does wind chill matter for dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is the reason this calculator asks you to use the temperature it feels like rather than the raw reading. Wind strips away the warm layer of air trapped near the skin, and for a dog that layer sits inside the coat, so wind cuts through a thin-coated dog far more than a double-coated one. Use the wind chill or \"feels like\" figure from your weather app. Wind combined with wet fur is the most dangerous common combination in winter, and it is the one owners most often underestimate."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🥶 Dog Cold Weather Safety Calculator</h1>
+    <p>How cold is too cold depends on your dog, not just the thermometer. This applies the shelter, precipitation and age adjustments that the usual winter temperature charts print but never actually calculate.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="dcs-temp">Temperature — use the "feels like" / wind chill figure (°F)</label>
+      <input type="number" id="dcs-temp" placeholder="e.g. 28" step="1">
+    </div>
+
+    <div class="form-group">
+      <label for="dcs-size">Size &amp; Coat</label>
+      <select id="dcs-size">
+        <option value="toy">Toy / very small, thin coat (Chihuahua, Italian Greyhound)</option>
+        <option value="small">Small (under 25 lbs)</option>
+        <option value="medium" selected>Medium (25–50 lbs)</option>
+        <option value="large">Large / giant (50 lbs+)</option>
+        <option value="northern">Northern or heavy double coat (Husky, Malamute, Samoyed, Newfoundland)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dcs-age">Age Group</label>
+      <select id="dcs-age">
+        <option value="adult" selected>Healthy adult</option>
+        <option value="young">Puppy (under 6 months)</option>
+        <option value="senior">Senior</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dcs-health">Health &amp; Body Condition</label>
+      <select id="dcs-health">
+        <option value="none" selected>No known issues, healthy weight</option>
+        <option value="lean">Very lean / low body fat (sighthound build)</option>
+        <option value="sick">Ill, recovering, or a chronic condition</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dcs-wet">Precipitation / Wet Coat</label>
+      <select id="dcs-wet">
+        <option value="dry" selected>Dry — no rain or snow falling</option>
+        <option value="snow">Dry snow falling</option>
+        <option value="wet">Rain, sleet, or coat already wet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dcs-shelter">If Outdoors, Is There Shelter?</label>
+      <select id="dcs-shelter">
+        <option value="none" selected>No shelter — open yard or walk</option>
+        <option value="good">Clean, dry, wind-blocked shelter with proper bedding</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateColdSafety()">Check Cold Safety →</button>
+
+    <div class="result-box" id="dcs-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="dcs-date"></span>
+      </div>
+      <h3 id="dcs-result-title"></h3>
+      <div id="dcs-result-body" style="margin-top: 12px;"></div>
+      <button class="pdf-btn" id="dcs-pdf-btn" onclick="doPrintDcs('dcs-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This is a general estimate, not a guarantee. Individual tolerance varies enormously, and factors a calculator cannot see — acclimatisation, ground conditions, how much your dog is moving — all change real risk. If you suspect hypothermia or frostbite, contact your vet rather than treating it at home, and never rub or apply direct heat to frostbitten tissue.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Where These Thresholds Come From</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The temperature bands here are adapted from the weather safety scale in the Tufts Animal Care and Condition (TACC) scales, developed by Gary Patronek, VMD, at the Tufts Center for Animals and Public Policy and published in 1997. For dogs without shelter, the commonly cited thresholds where hazards begin are around <strong>40°F for small dogs, 37°F for medium, 34°F for large, and 10°F for northern breeds</strong>.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>An honest note on provenance:</strong> TACC was built as a screening instrument for veterinarians, animal control officers and cruelty investigators — a way to judge whether an animal left outside is being neglected. It was not designed as a walk planner for pet owners. What makes it useful here is that it is one of the few cold-exposure frameworks with documented, quantified adjustments rather than vague advice, and those adjustments are what this calculator implements. It should inform your judgement, not replace it.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The adjustments applied above, following the published guidance:</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Factor</th><th>Effect on risk</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Clean, dry, wind-blocked shelter with bedding</td><td>Down one level</td></tr>
+          <tr><td>Puppy under 6 months, or a senior</td><td>Up one level</td></tr>
+          <tr><td>Sick, or in poor body condition</td><td>Up one level</td></tr>
+          <tr><td>Active precipitation — rain, sleet, wet coat</td><td><strong>Up two levels</strong></td></tr>
+          <tr><td>Toy or very small breed</td><td>Up one level</td></tr>
+          <tr><td>Northern or heavy double-coated breed</td><td>Down one level</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">The precipitation adjustment being worth <em>two</em> steps rather than one is the part most winter guides omit. A wet coat loses its insulating air layer, and a wet dog in wind at 35°F can be in more trouble than a dry dog at 20°F.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Use the Wind Chill, Not the Thermometer</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A dog's coat works by trapping a layer of still, warm air against the skin. Wind removes that layer, which is why the "feels like" figure is the honest input and the raw air temperature is not. The effect is very uneven between dogs: a Husky's dense undercoat resists it well, while a thin-coated Greyhound or Whippet has almost nothing holding that air in place. If your weather app reports a wind chill, use that number in the field above.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Signs Your Dog Is Too Cold</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Watch the dog, not the app. Early signs are easy to read once you know them:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Shivering</strong> — the clearest early signal, and reason enough to turn back.</li>
+      <li><strong>Hunched posture, tucked tail</strong>, or curling tightly when stopped.</li>
+      <li><strong>Lifting or favouring paws</strong>, or stopping to lick at them.</li>
+      <li><strong>Slowing, whining, or steering toward home.</strong> Dogs are usually clear about this if you let them lead.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Later signs are a different matter. <strong>Shivering that stops while the dog is still cold</strong>, along with lethargy, stumbling, weakness or shallow breathing, can indicate hypothermia and warrants a call to your vet rather than just coming indoors.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Frostbite most commonly affects the ear tips, tail tip and paws. Affected skin can look pale, grey or bluish at first and often only becomes obviously painful and swollen as it rewarms — so damage can be done before it looks like anything. Do not rub the area or apply direct heat; warm gradually with body temperature and call your vet.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Winter Hazards That Aren't Temperature</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Antifreeze.</strong> Ethylene glycol tastes sweet, is attractive to both dogs and cats, and a very small amount can cause fatal kidney failure. Treatment depends heavily on speed, so a suspected ingestion is an immediate emergency call, not a wait-and-see.</li>
+      <li><strong>Ice-melt salt.</strong> Irritates and cracks paw pads, and dogs ingest it when licking their feet. Rinse and dry paws after every walk on treated pavement.</li>
+      <li><strong>Ice balls between the toes.</strong> Painful and easy to miss in furry-footed breeds. Trimming the hair between the pads helps a great deal.</li>
+      <li><strong>Cats under car hoods.</strong> Cats climb into wheel wells and onto warm engines. Bang on the hood before starting the car in freezing weather.</li>
+      <li><strong>Frozen water bowls.</strong> Dehydration is a real winter problem, and dogs outdoors need liquid water, not ice.</li>
+      <li><strong>Thin ice.</strong> Dogs going through ice on ponds is a recurring winter emergency, and so are the owners who go in after them.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Our <a href="/checklists/pet-emergency-kit-checklist.html">Pet Emergency Kit Checklist</a> covers what to have on hand before you need it, and the <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a> is worth a look if your dog is older, since cold and stiff joints compound each other.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Cold Weather and Arthritis</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Owners very often report that an older dog is stiffer and more reluctant in winter. Whether cold worsens joint disease itself is debated, but reduced activity, slippery surfaces and longer periods lying still all plausibly contribute — and a dog who has quietly stopped wanting walks in December may be telling you about their joints rather than the weather. If that sounds familiar, the <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a> takes about a minute and gives you something concrete to raise with your vet.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How cold is too cold for a dog?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There is no single number, which is why size and coat have to come first. Working from the Tufts weather safety guidance for dogs with no shelter, risk generally begins around 40°F for small dogs, 37°F for medium dogs, 34°F for large dogs, and only around 10°F for northern double-coated breeds. Below roughly 20°F every dog is exposed to some hypothermia and frostbite risk on a long outing. Those figures shift substantially once you add wet weather, wind, age or illness, which is what the calculator above adjusts for.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long can a dog stay outside in cold weather?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">How long a dog can stay outside in cold weather depends far more on the combination of factors than on temperature alone. A large double-coated dog at 25°F on a dry, still day may be comfortable for an hour. A senior Chihuahua in the same air temperature with sleet falling should be out for a couple of minutes to toilet and no more. The single biggest accelerator is being wet: a wet coat loses heat dramatically faster, which is why the Tufts guidance moves the threat level by two steps when precipitation is falling, rather than one.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do dogs need coats and boots in winter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Some do and some genuinely do not. A coat earns its place on thin-coated, small, senior, very young, lean or unwell dogs — Greyhounds and other sighthounds carry almost no insulating fat, and small dogs lose heat faster because they have more surface area relative to their mass. On a Husky, Malamute or Samoyed a coat is usually unnecessary and can flatten the double coat that is doing the insulating. Boots protect against ice-melt salt and ice cuts more than against cold itself; if your dog will not tolerate them, rinsing and drying the paws after every walk achieves much of the same protection.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs a dog is too cold?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Shivering is the first and most reliable sign, followed by a hunched posture with the tail tucked, lifting or favouring paws, slowing down, whining, or turning back toward home. Later signs are more serious: shivering that stops while the dog is still cold, lethargy, stumbling, weakness, or shallow breathing can indicate hypothermia and need veterinary attention rather than just a warm room. Frostbite most often affects ear tips, tail tip and paws, and the affected skin may look pale or grey at first and only become painful and swollen as it rewarms.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How cold is too cold for cats?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Indoor cats should be brought in whenever temperatures approach freezing, and most cats are uncomfortable well before that. Community and outdoor cats survive colder conditions when they have dry, wind-blocked, insulated shelter, but they are still at real risk of frostbite on ear tips and tail. One winter hazard is specific to cats: they climb into wheel wells and onto warm engine blocks for shelter. Banging on the hood and checking under the car before starting the engine in freezing weather is a genuinely worthwhile habit.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does wind chill matter for dogs?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, and it is the reason this calculator asks you to use the temperature it feels like rather than the raw reading. Wind strips away the warm layer of air trapped near the skin, and for a dog that layer sits inside the coat, so wind cuts through a thin-coated dog far more than a double-coated one. Use the wind chill or "feels like" figure from your weather app. Wind combined with wet fur is the most dangerous common combination in winter, and it is the one owners most often underestimate.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/tools/dog-heat-safety-calculator.html">Dog Heat Safety Calculator</a> —
+      <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a> —
+      <a href="/checklists/pet-emergency-kit-checklist.html">Pet Emergency Kit Checklist</a> —
+      <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+
+<script>
+function doPrintDcs(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+// Base temperature (°F) at which hazard begins for a sheltered-less dog, per the
+// Tufts weather safety guidance. Higher threshold = gets cold sooner.
+var DCS_BASE = {
+  toy: 45,
+  small: 40,
+  medium: 37,
+  large: 34,
+  northern: 10
+};
+
+// Each "level" of adjustment is treated as a step in the risk ladder.
+var DCS_LEVELS = [
+  { name: "Safe",            color: "#2f7d4f",
+    time: "Normal walk duration is fine",
+    advice: "Conditions look reasonable for this dog's profile. Keep an eye out for shivering or paw-lifting anyway, and dry the paws off afterwards if the pavement has been salted." },
+  { name: "Caution",         color: "#b58a00",
+    time: "Limit to roughly 20\u201330 minutes",
+    advice: "Fine for a normal walk, but not for standing around outside. Keep moving, skip the long sniffing stops, and head back at the first sign of shivering. A coat is worth considering for a thin-coated dog at this level." },
+  { name: "Risky",           color: "var(--orange)",
+    time: "Keep it to about 10\u201315 minutes",
+    advice: "Shorten the walk and choose a route you can cut short. This is coat-and-boots territory for most dogs that tolerate them, and not a level to leave any dog outside unattended." },
+  { name: "Dangerous",       color: "#c0392b",
+    time: "Brief toilet breaks only \u2014 about 5 minutes",
+    advice: "Out and back, nothing more. Hypothermia and frostbite are realistic at this level for a dog with this profile, and no dog should be left outdoors unsupervised. Move exercise indoors." },
+  { name: "Life-Threatening", color: "#7b1c1c",
+    time: "Avoid outdoor time beyond a minute or two",
+    advice: "Take your dog out only to toilet, stay with them, and come straight back in. Prolonged exposure at this level risks serious injury or death for a dog with this profile." }
+];
+
+function calculateColdSafety() {
+  var temp = parseFloat(document.getElementById('dcs-temp').value);
+  var size = document.getElementById('dcs-size').value;
+  var age = document.getElementById('dcs-age').value;
+  var health = document.getElementById('dcs-health').value;
+  var wet = document.getElementById('dcs-wet').value;
+  var shelter = document.getElementById('dcs-shelter').value;
+
+  if (isNaN(temp)) {
+    alert('Please enter the temperature (use the wind chill or "feels like" figure if you have it).');
+    return;
+  }
+  if (temp > 80 || temp < -60) {
+    alert('That temperature looks out of range for this tool. Enter degrees Fahrenheit \u2014 and if it is genuinely warm out, the Dog Heat Safety Calculator is the one you want.');
+    return;
+  }
+
+  var base = DCS_BASE[size];
+
+  // Start from how far below the size threshold we are. Every 12°F below the
+  // threshold moves one step up the ladder.
+  var level = 0;
+  if (temp <= base) {
+    level = 1 + Math.floor((base - temp) / 12);
+  }
+
+  var adjustments = [];
+  if (age === 'young')  { level += 1; adjustments.push("Puppy under 6 months: +1 level"); }
+  if (age === 'senior') { level += 1; adjustments.push("Senior dog: +1 level"); }
+  if (health === 'sick'){ level += 1; adjustments.push("Illness or recovery: +1 level"); }
+  if (health === 'lean'){ level += 1; adjustments.push("Very lean build, little insulating fat: +1 level"); }
+  if (wet === 'wet')    { level += 2; adjustments.push("Rain, sleet or wet coat: +2 levels"); }
+  if (wet === 'snow')   { level += 1; adjustments.push("Dry snow falling: +1 level"); }
+  if (shelter === 'good' && level > 0) { level -= 1; adjustments.push("Good dry, wind-blocked shelter: \u22121 level"); }
+
+  if (level < 0) level = 0;
+  if (level > DCS_LEVELS.length - 1) level = DCS_LEVELS.length - 1;
+
+  var band = DCS_LEVELS[level];
+
+  var extra = [];
+  if (size === 'northern' && level <= 1) {
+    extra.push("Double-coated breeds handle cold far better than most dogs, but they are not immune \u2014 and a coat on a Husky is usually counterproductive, since it flattens the very undercoat doing the insulating.");
+  }
+  if (size === 'toy' || health === 'lean') {
+    extra.push("Thin-coated and very lean dogs lose heat fastest. A well-fitted coat makes a real difference here, unlike on a heavy-coated breed.");
+  }
+  if (wet === 'wet') {
+    extra.push("Being wet is the single largest accelerator in cold weather, which is why it counts double. Dry your dog thoroughly on the way back in, paying attention to the belly and legs.");
+  }
+  if (temp <= 20) {
+    extra.push("Below about 20\u00b0F, frostbite risk applies to every dog on a long enough outing \u2014 ear tips, tail tip and paws first.");
+  }
+  if (temp <= 32) {
+    extra.push("At or below freezing, check for ice balls between the toes after walks, and rinse off ice-melt salt, which both irritates paws and gets swallowed during grooming.");
+  }
+  if (age === 'senior') {
+    extra.push("Cold and stiff joints compound each other. If your senior has quietly stopped wanting winter walks, it may be the joints talking rather than the weather.");
+  }
+
+  document.getElementById('dcs-result-title').innerHTML =
+    '<span style="color:' + band.color + ';">' + band.name + '</span>';
+
+  var adjHtml = adjustments.length
+    ? '<div style="font-size:0.82rem; color:var(--brown-mid); margin-top:8px; line-height:1.6;">Adjustments applied: ' +
+      adjustments.join(' &middot; ') + '</div>'
+    : '<div style="font-size:0.82rem; color:var(--brown-mid); margin-top:8px;">No adjustments applied \u2014 healthy adult, dry conditions.</div>';
+
+  var extraHtml = extra.length
+    ? '<ul style="color:var(--brown-mid); font-size:0.87rem; line-height:1.65; margin-top:12px; padding-left:20px;"><li>' +
+      extra.join('</li><li>') + '</li></ul>'
+    : '';
+
+  document.getElementById('dcs-result-body').innerHTML =
+    '<div style="padding: 12px 14px; background: var(--cream-dark); border-radius: var(--radius); margin-bottom: 12px;">' +
+      '<div style="font-size: 0.85rem; color: var(--brown-mid); margin-bottom: 4px;">At ' + temp +
+      '\u00B0F, hazard for this size and coat begins near <strong>' + base + '\u00B0F</strong></div>' +
+      '<div style="font-weight: 600; color: var(--brown);">' + band.time + '</div>' +
+      adjHtml +
+    '</div>' +
+    '<p style="color: var(--brown-mid); font-size: 0.9rem; line-height: 1.6;">' + band.advice + '</p>' +
+    extraHtml;
+
+  document.getElementById('dcs-result').classList.add('show');
+  document.getElementById('dcs-pdf-btn').style.display = 'block';
+  document.getElementById('dcs-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

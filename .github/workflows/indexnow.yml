@@ -1,0 +1,88 @@
+name: IndexNow submit
+
+# Pings IndexNow-participating search engines (Bing, Yandex, Seznam, Naver)
+# whenever published content changes. Google does not participate in IndexNow
+# and is unaffected by this workflow.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+      - 'tools/**'
+      - 'checklists/**'
+      - 'index.html'
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Collect changed files
+        run: |
+          set -euo pipefail
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            git diff --name-only HEAD~1 HEAD > changed.txt
+          else
+            git ls-files > changed.txt
+          fi
+          echo "Changed files:"
+          cat changed.txt
+
+      - name: Wait for GitHub Pages to publish
+        run: sleep 120
+
+      - name: Build payload
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${INDEXNOW_KEY:-}" ]; then
+            echo "::error::INDEXNOW_KEY secret is not set. Add it in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          python3 .github/scripts/indexnow_payload.py petpawcalc.com "$INDEXNOW_KEY" changed.txt payload.json
+
+      - name: Verify key file is live
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          set -euo pipefail
+          [ -f payload.json ] || { echo "Nothing to submit."; exit 0; }
+          CODE=$(curl -sS -o keyfile.txt -w '%{http_code}' "https://petpawcalc.com/${INDEXNOW_KEY}.txt")
+          echo "Key file HTTP $CODE"
+          if [ "$CODE" != "200" ]; then
+            echo "::error::Key file not reachable at https://petpawcalc.com/${INDEXNOW_KEY}.txt — IndexNow will reject the submission."
+            exit 1
+          fi
+
+      - name: Submit to IndexNow
+        run: |
+          set -euo pipefail
+          if [ ! -f payload.json ]; then
+            echo "Nothing to submit."
+            exit 0
+          fi
+          cat payload.json
+          CODE=$(curl -sS -o response.txt -w '%{http_code}' \
+            -X POST 'https://api.indexnow.org/indexnow' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data @payload.json)
+          echo "HTTP $CODE"
+          cat response.txt || true
+          # 200 = accepted, 202 = accepted, key validation pending
+          case "$CODE" in
+            200|202) echo "IndexNow accepted the submission." ;;
+            *) echo "::error::IndexNow returned $CODE"; exit 1 ;;
+          esac

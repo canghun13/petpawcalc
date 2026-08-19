@@ -32,6 +32,7 @@ defaults:
 
 exclude:
   - README.md
+  - .github
   - handover.md
   - Gemfile
   - Gemfile.lock
