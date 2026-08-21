@@ -1,0 +1,442 @@
+---
+layout: tool
+title: Orphaned Kitten & Puppy Bottle Feeding Calculator — Formula Amount by Weight
+description: Work out exactly how much formula an orphaned kitten or puppy needs per feed, how many feeds a day, and the interval — calculated from body weight, with a stomach-capacity check and the warm-before-feeding rule built in.
+permalink: /tools/orphaned-kitten-puppy-bottle-feeding-calculator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Orphaned Kitten & Puppy Bottle Feeding Calculator",
+  "url": "https://petpawcalc.com/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html",
+  "description": "A free bottle feeding calculator for orphaned neonatal kittens and puppies. Calculates daily formula volume, per-feed amount, feeds per day and feeding interval from body weight, checks the per-feed amount against neonatal stomach capacity, and enforces the rule that a cold neonate must be warmed before being fed.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much formula does an orphaned kitten need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The widely used rule is about 8 ml of formula per ounce of body weight per day, which works out to roughly 28 ml per 100 g per day. That total is then divided across the day's feeds rather than given at once. So a 150 g kitten needs about 42 ml across 24 hours — around 6 ml per feed if you are feeding seven times a day. Weigh the kitten daily on a kitchen or postal scale and recalculate, because the amount changes as fast as they grow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I feed a cold kitten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because a hypothermic neonate cannot digest. When body temperature drops, circulation slows and gut movement essentially stops, so formula sits undigested in the stomach. Feeding at that point risks regurgitation and aspiration, and can kill an animal that warming alone might have saved. Neonates also cannot shiver to generate heat — kittens do not develop that reflex until around two weeks — so they cannot recover on their own. Warm first, gradually, over one to three hours, then feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I bottle feed a newborn kitten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Newborns under a week generally need feeding every 2 to 3 hours around the clock, which is 8 to 10 feeds a day including overnight. That stretches to roughly every 3 hours in weeks one to two, every 3 to 4 hours in weeks two to three, and every 4 to 5 hours by weeks three to four, at which point gruel can start being introduced. The overnight feeds are not optional for the youngest kittens — this is the part of fostering people most underestimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I give a kitten cow's milk or human baby formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cow's milk, goat's milk, evaporated milk and human infant formula all have the wrong protein and lactose balance for a kitten and commonly cause diarrhoea, which in an animal this small can become fatal dehydration within hours. Use a commercial kitten milk replacer, and do not substitute puppy milk replacer for a kitten. If you genuinely cannot get formula tonight, contact a vet or a rescue rather than improvising — most areas have someone who will hand over a can at short notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the calculated amount is more than the kitten's stomach can hold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add a feeding rather than increasing the volume per feed. Comfortable neonatal stomach capacity is roughly 4 ml per 100 g of body weight, and most milk replacers sold in the US supply well under 1 kcal per ml, so the volume needed to meet energy requirements can exceed what the stomach comfortably holds. Overfilling risks regurgitation, aspiration and diarrhoea. The calculator above shows the per-feed volume next to the capacity figure, and where they conflict it tells you what the feed size would be if you split the day into more feeds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if the kitten is getting enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weight, not behaviour. A healthy neonatal kitten gains roughly 10 to 15 g a day, and should not go a full day without gaining. Weigh at the same time each day on a gram scale and keep a written log of weights and volumes taken. A kitten that stalls for a day, or loses weight at all, needs a vet rather than another adjustment at home — at this size there is very little margin, and weight loss is usually the first measurable sign that something is wrong."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🍼 Orphaned Kitten &amp; Puppy Bottle Feeding Calculator</h1>
+    <p>Work out the formula amount per feed, how many feeds a day, and the interval — from body weight rather than a one-size chart. Checks each feed against stomach capacity, which is where most feeding plans quietly go wrong.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="obf-species">Species</label>
+      <select id="obf-species">
+        <option value="kitten" selected>Kitten</option>
+        <option value="puppy">Puppy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="obf-warm">Is the animal fully warm right now?</label>
+      <select id="obf-warm">
+        <option value="unknown" selected>Not sure / feels cool to the touch</option>
+        <option value="cold">No — feels cold, limp, or unresponsive</option>
+        <option value="warm">Yes — warm, active, and rooting or suckling</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="obf-weight">Body Weight</label>
+      <div style="display:flex; gap:8px;">
+        <input type="number" id="obf-weight" placeholder="e.g. 150" step="any" style="flex:2;">
+        <select id="obf-unit" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+          <option value="g" selected>grams</option>
+          <option value="oz">ounces</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="obf-age">Approximate Age</label>
+      <select id="obf-age">
+        <option value="0">Newborn — under 1 week</option>
+        <option value="1" selected>1–2 weeks</option>
+        <option value="2">2–3 weeks</option>
+        <option value="3">3–4 weeks</option>
+        <option value="4">4–5 weeks</option>
+        <option value="5">5 weeks and older</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="calcBottleFeed()">Calculate Feeding Plan →</button>
+
+    <div class="result-box" id="obf-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="obf-date"></span>
+      </div>
+      <div id="obf-result-body"></div>
+      <button class="pdf-btn" id="obf-pdf-btn" onclick="doPrintObf('obf-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ Hand-rearing a neonate is veterinary-level care. This calculator gives volumes based on published rescue and shelter-medicine guidance, but any orphaned neonate should be seen by a veterinarian — for a weight check, a parasite and infection assessment, and to confirm the age estimate the whole plan depends on. Follow the mixing instructions on your specific milk replacer, since concentrations differ between brands.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Warm First. Always.</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the one rule worth learning before anything else, because the instinct it overrides is so strong. A tiny, crying, obviously hungry kitten makes you want to feed it immediately — and if that kitten is cold, feeding it can kill it.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A hypothermic neonate cannot digest. Circulation slows, gut motility essentially stops, and formula sits in the stomach undigested, which leads to regurgitation and aspiration. Neonates also cannot fix this themselves: kittens do not develop a shivering reflex until around two weeks of age and cannot regulate their own temperature until about four weeks. Left cold, they simply keep getting colder.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Warming has to be <strong>gradual</strong> — guidance from neonatal rescue organisations puts it at roughly one to three hours, and rewarming too fast causes its own problems. Practical points that come up repeatedly in shelter-medicine and rescue guidance:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Never place a neonate directly on a heat source.</strong> A heating pad on its lowest setting under two layers of towel, a warmed rice sock, or a covered warm water bottle. Always leave an unheated area they can move away to.</li>
+      <li><strong>Heat lamps are not recommended</strong> for neonates — they burn and dehydrate.</li>
+      <li><strong>Your own body is only a partial measure.</strong> Human skin sits well below the 100–102°F a kitten should be, so skin-to-skin helps but does not finish the job.</li>
+      <li><strong>Hypoglycaemia runs alongside hypothermia.</strong> While warming, a drop of sugar water or corn syrup rubbed on the gums is commonly advised — that is absorbed through the gums, and is not the same as feeding.</li>
+      <li><strong>Get to a vet</strong> even once they perk up. A neonate that went properly cold needs examining regardless of how well it seems to be responding.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Only once the animal is genuinely warm — active, rooting, with a suckle reflex — does the feeding plan below apply.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Arithmetic Behind the Numbers</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Two figures drive everything, and they pull against each other:</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Figure</th><th>Value used here</th><th>What it decides</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Daily formula requirement</td><td>~8 ml per oz of body weight per day (~28 ml per 100 g)</td><td>Total volume across 24 hours</td></tr>
+          <tr><td>Comfortable stomach capacity</td><td>~4 ml per 100 g of body weight</td><td>Ceiling on any single feed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px; margin-top: 16px;"><strong>Here is the conflict that static charts skip.</strong> Divide 28 by 4 and you get seven — meaning a neonate needs at least seven feeds a day just to fit its daily requirement inside its stomach. Most milk replacers sold in the US supply noticeably less than 1 kcal per ml, so the volume needed to meet energy requirements is larger still. Push that volume into fewer feeds and you exceed comfortable capacity, which is a recognised route to regurgitation, aspiration and diarrhoea.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">So when the numbers do not fit, <strong>the answer is another feeding, not a bigger one.</strong> The calculator shows you the per-feed volume next to the capacity figure so you can see the margin, and tells you what the feed size would be if you split the day further.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">To be straight about it: published feeding schedules themselves sometimes sit slightly above the comfortable-capacity figure, and the reference charts that quote both numbers say as much in their footnotes. That is a genuine tension in the source material rather than something a calculator can resolve for you — so this one shows both numbers instead of quietly picking a side. Regurgitation or loose stool is the signal to split the feeds.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Weight Is the Only Honest Feedback</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A neonate that is crying may be hungry, cold, in pain, or dying. Behaviour will not tell you which. Weight will.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Weigh at the same time every day on a gram-accurate kitchen or postal scale, and write it down alongside how much was actually taken at each feed. A healthy neonatal kitten gains roughly 10–15 g a day. <strong>A day with no gain is a warning; any loss is a vet visit.</strong> Once they are past the bottle stage, our <a href="/blog/kitten-weight-chart-by-breed-size/">Kitten Weight Chart by Age</a> carries the growth curve forward through the first year.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Things That Are Not Formula</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Cow's milk, goat's milk, evaporated milk and human infant formula are all wrong for a neonate and reliably cause diarrhoea — which, in an animal made mostly of water, becomes dangerous dehydration fast. Kitten milk replacer and puppy milk replacer are also not interchangeable. If it is the middle of the night and you have nothing, warming and a vet call come first; improvised milk is not a safe stopgap, and most areas have a rescue that will hand over a can at short notice.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">After Every Feed: Stimulation</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Neonates cannot urinate or defecate on their own — the mother triggers it by licking. Until roughly three to four weeks of age you have to do the same job with a warm, damp cloth or cotton pad on the genital area after each feed, until they go. Skipping it causes a genuine and avoidable medical emergency, and it is the step first-time fosters most often do not know about.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much formula does an orphaned kitten need?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The widely used rule is about 8 ml of formula per ounce of body weight per day, which works out to roughly 28 ml per 100 g per day. That total is then divided across the day's feeds rather than given at once. So a 150 g kitten needs about 42 ml across 24 hours — around 6 ml per feed if you are feeding seven times a day. Weigh the kitten daily on a kitchen or postal scale and recalculate, because the amount changes as fast as they grow.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why can't I feed a cold kitten?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Because a hypothermic neonate cannot digest. When body temperature drops, circulation slows and gut movement essentially stops, so formula sits undigested in the stomach. Feeding at that point risks regurgitation and aspiration, and can kill an animal that warming alone might have saved. Neonates also cannot shiver to generate heat — kittens do not develop that reflex until around two weeks — so they cannot recover on their own. Warm first, gradually, over one to three hours, then feed.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I bottle feed a newborn kitten?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Newborns under a week generally need feeding every 2 to 3 hours around the clock, which is 8 to 10 feeds a day including overnight. That stretches to roughly every 3 hours in weeks one to two, every 3 to 4 hours in weeks two to three, and every 4 to 5 hours by weeks three to four, at which point gruel can start being introduced. The overnight feeds are not optional for the youngest kittens — this is the part of fostering people most underestimate.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I give a kitten cow's milk or human baby formula?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">No. Cow's milk, goat's milk, evaporated milk and human infant formula all have the wrong protein and lactose balance for a kitten and commonly cause diarrhoea, which in an animal this small can become fatal dehydration within hours. Use a commercial kitten milk replacer, and do not substitute puppy milk replacer for a kitten. If you genuinely cannot get formula tonight, contact a vet or a rescue rather than improvising — most areas have someone who will hand over a can at short notice.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if the calculated amount is more than the kitten's stomach can hold?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Add a feeding rather than increasing the volume per feed. Comfortable neonatal stomach capacity is roughly 4 ml per 100 g of body weight, and most milk replacers sold in the US supply well under 1 kcal per ml, so the volume needed to meet energy requirements can exceed what the stomach comfortably holds. Overfilling risks regurgitation, aspiration and diarrhoea. The calculator above shows the per-feed volume next to the capacity figure, and where they conflict it tells you what the feed size would be if you split the day into more feeds.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I know if the kitten is getting enough?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Weight, not behaviour. A healthy neonatal kitten gains roughly 10 to 15 g a day, and should not go a full day without gaining. Weigh at the same time each day on a gram scale and keep a written log of weights and volumes taken. A kitten that stalls for a day, or loses weight at all, needs a vet rather than another adjustment at home — at this size there is very little margin, and weight loss is usually the first measurable sign that something is wrong.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/checklists/found-orphaned-kitten-checklist.html">Found an Orphaned Kitten? First 24 Hours</a> —
+      <a href="/blog/kitten-weight-chart-by-breed-size/">Kitten Weight Chart by Age</a> —
+      <a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a> —
+      <a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+.obf-stop {
+  border-left: 4px solid #c0392b;
+  background: #fdf2f2;
+  padding: 16px 18px;
+  border-radius: var(--radius-sm);
+  color: #7b1c1c;
+}
+.obf-stop h4 { margin: 0 0 8px; font-size: 1.05rem; color: #a32020; font-family: var(--font-display); }
+.obf-stop p, .obf-stop li { font-size: 0.89rem; line-height: 1.65; }
+.obf-big {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.obf-stat {
+  flex: 1 1 120px;
+  background: var(--cream-dark);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  text-align: center;
+}
+.obf-stat-num { font-size: 1.5rem; font-weight: 700; color: var(--orange); line-height: 1.2; }
+.obf-stat-lbl { font-size: 0.78rem; color: var(--brown-mid); margin-top: 3px; }
+.obf-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.obf-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.obf-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+</style>
+
+<script>
+function doPrintObf(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+// Daily formula requirement: ~8 ml per oz body weight/day == ~28.2 ml per 100 g/day.
+var ML_PER_100G_PER_DAY = 28.2;
+// Comfortable neonatal stomach capacity per feed.
+var STOMACH_ML_PER_100G = 4;
+
+var AGE_BANDS = [
+  { label: "Under 1 week",  feeds: 9, interval: "every 2\u20133 hours", nest: "85\u201390\u00B0F (29\u201332\u00B0C)",
+    note: "Round-the-clock feeding, overnight included. At this age they cannot shiver, cannot thermoregulate, and cannot toilet without stimulation." },
+  { label: "1\u20132 weeks",   feeds: 8, interval: "roughly every 3 hours", nest: "85\u201390\u00B0F (29\u201332\u00B0C)",
+    note: "Eyes usually open between 8 and 14 days, and ear canals between 5 and 8 days. Still fully dependent on you for warmth and stimulation." },
+  { label: "2\u20133 weeks",   feeds: 7, interval: "every 3\u20134 hours", nest: "80\u201385\u00B0F (27\u201329\u00B0C)",
+    note: "A shivering reflex starts appearing around 2 weeks, but thermoregulation is still not reliable. Keep the heat source available." },
+  { label: "3\u20134 weeks",   feeds: 6, interval: "every 4\u20135 hours", nest: "~80\u00B0F (27\u00B0C)",
+    note: "Stimulation can usually stop around now as they start toileting on their own. Introduce a shallow litter tray with non-clumping litter." },
+  { label: "4\u20135 weeks",   feeds: 5, interval: "every 5\u20136 hours", nest: "~79\u00B0F (26\u00B0C)",
+    note: "Weaning begins. Offer gruel \u2014 wet food mashed with formula \u2014 alongside bottle feeds, and let them make a mess of it. Progress is gradual." },
+  { label: "5+ weeks",     feeds: 4, interval: "every 6 hours, alongside gruel", nest: "room temperature, warm spot available",
+    note: "Mostly eating gruel and moving toward wet food. Bottle feeds taper off as solid intake climbs. Keep weighing daily until they are reliably on solids." }
+];
+
+function calcBottleFeed() {
+  var species = document.getElementById('obf-species').value;
+  var warm = document.getElementById('obf-warm').value;
+  var raw = parseFloat(document.getElementById('obf-weight').value);
+  var unit = document.getElementById('obf-unit').value;
+  var ageIdx = parseInt(document.getElementById('obf-age').value, 10);
+  var out = document.getElementById('obf-result-body');
+  var animal = species === 'puppy' ? 'puppy' : 'kitten';
+
+  // The warmth gate comes before anything else, including input validation,
+  // because a cold neonate needs warming regardless of what else is unknown.
+  if (warm !== 'warm') {
+    out.innerHTML =
+      '<div class="obf-stop">' +
+        '<h4>\u26A0\uFE0F Stop \u2014 warm the ' + animal + ' before feeding</h4>' +
+        '<p>A cold neonate cannot digest. Circulation slows, the gut stops moving, and formula sits in the stomach undigested \u2014 so feeding now risks regurgitation and aspiration, and can kill a ' + animal + ' that warming alone might have saved.</p>' +
+        '<p style="margin-top:10px;"><strong>Do this instead:</strong></p>' +
+        '<ul style="padding-left:18px; margin-top:6px;">' +
+          '<li>Warm <strong>gradually over 1\u20133 hours</strong>. Rewarming too fast causes its own problems.</li>' +
+          '<li>Heating pad on its lowest setting under two layers of towel, a warmed rice sock, or a covered warm water bottle. Never direct contact, and always leave an unheated area.</li>' +
+          '<li>No heat lamps \u2014 they burn and dehydrate neonates.</li>' +
+          '<li>Rub a drop of sugar water or corn syrup on the gums for low blood sugar. That is absorbed through the gums and is <em>not</em> feeding.</li>' +
+          '<li>Call a vet or a local rescue now. A ' + animal + ' that has gone properly cold needs examining even if it perks up.</li>' +
+        '</ul>' +
+        '<p style="margin-top:10px;">Once the ' + animal + ' is genuinely warm \u2014 active, rooting, with a suckle reflex \u2014 come back and change the answer above to get the feeding plan.</p>' +
+      '</div>';
+    document.getElementById('obf-result').classList.add('show');
+    document.getElementById('obf-pdf-btn').style.display = 'block';
+    document.getElementById('obf-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    return;
+  }
+
+  if (isNaN(raw) || raw <= 0) {
+    alert('Please enter the body weight. A gram-accurate kitchen or postal scale is worth the trip \u2014 the whole plan depends on this number.');
+    return;
+  }
+
+  var grams = unit === 'oz' ? raw * 28.35 : raw;
+
+  if (grams < 40 || grams > 3000) {
+    alert('That weight looks outside the neonatal range. Check the unit selector \u2014 a newborn kitten is around 85\u2013120 g (3\u20134 oz).');
+    return;
+  }
+
+  var band = AGE_BANDS[ageIdx];
+  var dailyMl = grams / 100 * ML_PER_100G_PER_DAY;
+  var capacityMl = grams / 100 * STOMACH_ML_PER_100G;
+  var minFeeds = Math.ceil(dailyMl / capacityMl);
+
+  var feeds = band.feeds;
+  var perFeed = dailyMl / feeds;
+  var intervalHrs = 24 / feeds;
+
+  // The published stomach-capacity figure (~4 ml/100 g) is a neonatal one. Rather
+  // than silently overriding the age-typical schedule, surface the trade-off:
+  // published schedules themselves sometimes exceed comfortable capacity.
+  var overCapacity = perFeed > capacityMl;
+
+  var notes = [];
+  if (overCapacity && ageIdx <= 2) {
+    notes.push({ type: 'warn', text: 'Worth knowing: ' + perFeed.toFixed(1) + ' ml per feed is above the roughly ' +
+      capacityMl.toFixed(1) + ' ml (about 4 ml per 100 g) usually quoted as comfortable neonatal stomach capacity. ' +
+      'Published schedules do sometimes exceed it, but overfilling is a recognised route to regurgitation, aspiration and diarrhoea. ' +
+      'The safer resolution is more feeds, not bigger ones \u2014 at ' + minFeeds + ' feeds a day each one would be about ' +
+      (dailyMl / minFeeds).toFixed(1) + ' ml. If your ' + animal + ' regurgitates or gets loose stool, split the feeds before changing anything else.' });
+  } else if (ageIdx <= 2) {
+    notes.push({ type: 'tip', text: 'Each feed of ' + perFeed.toFixed(1) + ' ml sits within the roughly ' +
+      capacityMl.toFixed(1) + ' ml a neonate this size can comfortably hold. If they stop before finishing, do not force it \u2014 note what was taken and offer again sooner.' });
+  } else {
+    notes.push({ type: 'tip', text: 'Past about three weeks the per-feed volume matters less, because stomach capacity has grown and gruel is taking over from the bottle. Let intake taper naturally rather than pushing the full bottle volume once they are eating solids.' });
+  }
+  if (ageIdx <= 2) {
+    notes.push({ type: 'tip', text: 'Stimulate urination and defecation with a warm damp cloth after every single feed. Neonates cannot go on their own until roughly 3\u20134 weeks, and skipping this causes a real medical emergency.' });
+  }
+  if (ageIdx <= 1) {
+    notes.push({ type: 'warn', text: 'Overnight feeds are not optional at this age. Missing the night shift is the single most common reason hand-reared neonates fail to gain.' });
+  }
+  if (species === 'puppy') {
+    notes.push({ type: 'tip', text: 'Puppy milk replacer concentrations vary more between brands than kitten formulas do, and breed size changes the picture considerably. Treat this as a starting point and follow your specific product label and your vet\u2019s advice.' });
+  } else {
+    notes.push({ type: 'tip', text: 'Expect roughly 10\u201315 g of weight gain per day. Weigh at the same time daily and log it \u2014 a day without gain is a warning, and any loss is a vet visit.' });
+  }
+  notes.push({ type: 'warn', text: 'Never use cow\u2019s milk, goat\u2019s milk, evaporated milk or human infant formula. They cause diarrhoea, and dehydration moves fast at this size. Kitten and puppy milk replacers are also not interchangeable.' });
+
+  var schedule = [];
+  for (var i = 0; i < feeds; i++) {
+    var h = i * intervalHrs;
+    var hh = Math.floor(h) % 24;
+    var mm = Math.round((h - Math.floor(h)) * 60);
+    var ampm = hh < 12 ? 'AM' : 'PM';
+    var disp = hh % 12; if (disp === 0) disp = 12;
+    schedule.push(disp + ':' + (mm < 10 ? '0' : '') + mm + ' ' + ampm);
+  }
+
+  out.innerHTML =
+    '<div class="obf-big">' +
+      '<div class="obf-stat"><div class="obf-stat-num">' + perFeed.toFixed(1) + ' ml</div><div class="obf-stat-lbl">per feed<br><span style="font-size:0.92em;">capacity \u2248 ' + capacityMl.toFixed(1) + ' ml</span></div></div>' +
+      '<div class="obf-stat"><div class="obf-stat-num">' + feeds + '</div><div class="obf-stat-lbl">feeds per day</div></div>' +
+      '<div class="obf-stat"><div class="obf-stat-num">' + dailyMl.toFixed(0) + ' ml</div><div class="obf-stat-lbl">total per 24 h</div></div>' +
+    '</div>' +
+    '<div style="padding:12px 14px; background:var(--cream-dark); border-radius:var(--radius); margin-bottom:14px;">' +
+      '<div style="font-size:0.85rem; color:var(--brown-mid);">' + band.label + ' \u00B7 ' + Math.round(grams) + ' g (' + (grams / 28.35).toFixed(1) + ' oz)</div>' +
+      '<div style="font-weight:600; color:var(--brown); margin-top:4px;">Feed ' + band.interval + ' \u00B7 nest temperature ' + band.nest + '</div>' +
+      '<div style="font-size:0.85rem; color:var(--brown-mid); margin-top:6px; line-height:1.6;">' + band.note + '</div>' +
+    '</div>' +
+    '<div style="margin-bottom:14px;">' +
+      '<div style="font-weight:700; color:var(--brown); font-size:0.9rem; margin-bottom:6px;">Suggested feed times (shift to fit your day, keeping the gaps even)</div>' +
+      '<div style="font-size:0.87rem; color:var(--brown-mid); line-height:1.8;">' + schedule.join(' \u00B7 ') + '</div>' +
+    '</div>' +
+    notes.map(function (n) {
+      return '<div class="obf-note obf-' + (n.type === 'warn' ? 'warn' : 'tip') + '"><span>' +
+        (n.type === 'warn' ? '\u26A0\uFE0F' : '\uD83D\uDCA1') + '</span><span>' + n.text + '</span></div>';
+    }).join('') +
+    '<div style="margin-top:14px; padding:12px 14px; border:1.5px dashed var(--border); border-radius:var(--radius-sm); font-size:0.85rem; color:var(--brown-mid); line-height:1.7;">' +
+      '<strong style="color:var(--brown);">Recalculate every day.</strong> These volumes are derived from today\u2019s weight, and a healthy neonate outgrows them within a day or two.' +
+    '</div>';
+
+  document.getElementById('obf-result').classList.add('show');
+  document.getElementById('obf-pdf-btn').style.display = 'block';
+  document.getElementById('obf-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>

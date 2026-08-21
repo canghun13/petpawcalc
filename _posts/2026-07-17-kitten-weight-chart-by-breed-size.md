@@ -190,6 +190,9 @@ How much should my kitten weigh depends almost entirely on age. As a fast check:
 
 ## Related Articles
 
+- [Orphaned Kitten Bottle Feeding Calculator](/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html) — formula amounts by weight for kittens too young to be on this chart
+- [Found an Orphaned Kitten? First 24 Hours](/checklists/found-orphaned-kitten-checklist.html) — what to do before feeding, in the order that matters
+
 - [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
 - [How Much Should a Cat Weigh? Healthy Weight by Breed and Sex](/blog/how-much-should-a-cat-weigh/)
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
