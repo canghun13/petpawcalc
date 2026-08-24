@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Much Does a Vet Visit Cost? Real 2026 Price Ranges"
-description: A routine exam runs $50–$100, bloodwork $80–$300, and an emergency visit starts at a $100–$200 exam fee before treatment. Full US price ranges by service, plus what drives the bill up.
+description: A full physical exam runs $50–$100 — but finding out what's actually wrong costs $160–$490 once bloodwork is added, more with imaging. Itemised US price ranges for exams, tests, dentals and emergencies.
 category: Dog Care
 date: 2026-05-26
 read_time: 8
@@ -18,6 +18,12 @@ faqs:
   - q: "Is it worth going to the vet every year if my pet seems healthy?"
     a: "Yes. Annual wellness exams catch conditions before symptoms appear — dental disease, early organ changes, subtle weight gain, heart murmurs. Most conditions discovered at routine exams cost significantly less to treat than those found after clinical signs develop. The cost of skipping annual visits almost always exceeds the cost of attending them."
 
+  - q: "How much does it cost to find out what's wrong with your pet?"
+    a: "A diagnostic workup is billed step by step rather than as one price. A straightforward investigation \u2014 consultation, bloodwork and urinalysis \u2014 usually runs about $160\u2013$490. Adding X-rays commonly brings it to $400\u2013$900, and a case needing ultrasound or a specialist can pass $1,500 before any treatment begins. Ask for an itemised estimate up front, and ask which tests would actually change the treatment plan \u2014 a good vet will stage the workup rather than running everything at once."
+  - q: "What is the cost of a pet full physical exam?"
+    a: "A full physical exam \u2014 the consultation itself \u2014 typically costs $50\u2013$100, or $100\u2013$200 at an emergency clinic. That fee buys a nose-to-tail examination and the vet's assessment, but no tests. Bloodwork, urinalysis, imaging and anything else are billed separately on top, which is why the exam fee alone rarely answers the question of what is wrong."
+  - q: "How much does a vet charge to treat a cat with a UTI?"
+    a: "Reaching the diagnosis \u2014 exam, urinalysis, often bloodwork and an X-ray \u2014 generally costs $200\u2013$600. Treatment for a straightforward urinary tract infection is then modest, commonly $30\u2013$80 for a course of antibiotics. The important distinction is that a male cat who cannot urinate is not a UTI but a urinary blockage, which is a same-day emergency costing $1,500\u2013$3,500. If a cat is straining in the litter box and producing nothing, that is an emergency call rather than a next-day appointment."
 ---
 
 Veterinary costs are one of the most variable and least predictable expenses in pet ownership. A routine wellness visit might run $60. The same appointment at an emergency clinic on a Saturday night could cost ten times that — before any treatment.
@@ -69,6 +75,29 @@ Annual bloodwork isn't universally recommended for healthy young dogs, but becom
 - **Full senior panel** (includes thyroid): $150–$300
 
 If something concerning shows up, additional targeted tests can add another $100–$400+ depending on what's being investigated.
+
+## How Much Does It Cost to Find Out What's Wrong With Your Pet?
+
+The costs above are for known, scheduled things. The question people more often arrive with is different: your pet is unwell, nobody knows why yet, and you want to know what the investigation itself will run before you agree to it.
+
+A diagnostic workup is billed piece by piece, and the exam fee only buys the starting point. What is the cost of a pet full physical exam? That is the $50–$100 consultation — a nose-to-tail physical, but no tests. Everything below is what gets added when the exam alone does not answer the question.
+
+| Diagnostic step | Typical cost |
+|-----------------|--------------|
+| Consultation / full physical exam | $50–$100 |
+| Basic bloodwork (CBC and chemistry) | $80–$300 |
+| Urinalysis | $30–$90 |
+| Fecal test | $25–$60 |
+| X-rays | $150–$400 |
+| Ultrasound | $300–$600 |
+| Specialist referral consultation | $200–$500 |
+| Advanced imaging (CT or MRI) | $1,500–$3,000+ |
+
+So how much will a vet charge to work out what is going on? For a straightforward case — exam, bloodwork and a urinalysis — expect roughly **$160–$490**. Add imaging and it commonly reaches **$400–$900**. A case that needs ultrasound and a specialist can pass **$1,500** before any treatment starts.
+
+A worked example makes the shape of it clearer. A cat with a suspected urinary problem typically means an exam, urinalysis, and often bloodwork and an X-ray — landing somewhere around **$200–$600** to reach a diagnosis. Treatment is separate: a straightforward urinary tract infection may be a course of antibiotics for $30–$80, while a blocked male cat is an emergency that runs **$1,500–$3,500**. The diagnostic step is what tells you which of those you are dealing with, which is exactly why skipping it tends to cost more rather than less.
+
+Two things are worth asking for at the start of any workup: an itemised estimate before tests begin, and which tests would change the treatment plan versus which are confirmatory. A reasonable vet will happily stage the investigation — run the cheap, high-yield tests first and stop if they answer the question.
 
 ## Dental Cleanings: $300–$800+
 
@@ -163,6 +192,15 @@ Standard accident and illness pet insurance does not cover routine wellness visi
 
 **Is it worth going to the vet every year if my pet seems healthy?**
 Yes. Annual wellness exams catch conditions before symptoms appear — dental disease, early organ changes, subtle weight gain, heart murmurs. Most conditions discovered at routine exams cost significantly less to treat than those found after clinical signs develop. The cost of skipping annual visits almost always exceeds the cost of attending them.
+
+**How much does it cost to find out what's wrong with your pet?**
+A diagnostic workup is billed step by step rather than as one price. A straightforward investigation — consultation, bloodwork and urinalysis — usually runs about $160–$490. Adding X-rays commonly brings it to $400–$900, and a case needing ultrasound or a specialist can pass $1,500 before any treatment begins. Ask for an itemised estimate up front, and ask which tests would actually change the treatment plan — a good vet will stage the workup rather than running everything at once.
+
+**What is the cost of a pet full physical exam?**
+A full physical exam — the consultation itself — typically costs $50–$100, or $100–$200 at an emergency clinic. That fee buys a nose-to-tail examination and the vet's assessment, but no tests. Bloodwork, urinalysis, imaging and anything else are billed separately on top, which is why the exam fee alone rarely answers the question of what is wrong.
+
+**How much does a vet charge to treat a cat with a UTI?**
+Reaching the diagnosis — exam, urinalysis, often bloodwork and an X-ray — generally costs $200–$600. Treatment for a straightforward urinary tract infection is then modest, commonly $30–$80 for a course of antibiotics. The important distinction is that a male cat who cannot urinate is not a UTI but a urinary blockage, which is a same-day emergency costing $1,500–$3,500. If a cat is straining in the litter box and producing nothing, that is an emergency call rather than a next-day appointment.
 
 *Cost ranges are based on US national averages as of 2026 and will vary by location, clinic type, and individual pet needs. Always consult your veterinarian for guidance specific to your pet.*
 
