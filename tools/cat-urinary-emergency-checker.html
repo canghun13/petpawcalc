@@ -1,0 +1,390 @@
+---
+layout: tool
+title: Cat Urinary Emergency Checker — Straining in the Litter Box? Check Now
+description: A cat straining in the litter box with little or no urine is a life-threatening emergency, and it is constantly mistaken for constipation. Answer a few questions to see how urgently your cat needs to be seen.
+permalink: /tools/cat-urinary-emergency-checker.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Urinary Emergency Checker",
+  "url": "https://petpawcalc.com/tools/cat-urinary-emergency-checker.html",
+  "description": "A free urgency checker for cats showing urinary signs. Asks about urine output, straining, sex, and systemic signs to indicate how quickly a cat needs veterinary attention. Designed around the fact that urethral obstruction is life-threatening within 24 to 48 hours and is frequently mistaken for constipation.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "My cat is straining in the litter box — is that constipation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Assume it is not until a vet says otherwise. The AVMA notes that although straining in the litter box can look like a cat trying to pass stool, it is more often a sign that the urethra is blocked. This is the single most dangerous misreading in feline medicine: constipation is uncomfortable, while a blocked urethra kills within a day or two. The two look almost identical from across the room, so the question that separates them is what comes out — a constipated cat still passes urine normally, a blocked cat passes little or none."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can a cat go without urinating before it becomes dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not long. Once the urethra is completely obstructed, urine backs up toward the kidneys and toxins accumulate in the bloodstream, and veterinary sources describe this becoming life-threatening within roughly 24 to 48 hours. Potassium rises to levels that affect the heart. There is no version of this that resolves on its own, and waiting overnight to see whether things improve is how cats are lost to a condition that is very treatable when caught early."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are male cats at higher risk of urinary blockage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anatomy. A male cat's urethra is longer and considerably narrower than a female's, so the mineral and protein plugs or small stones that a female would pass can lodge and obstruct completely. The AVMA notes urethral obstruction is most often found in male cats between one and ten years old, and neutering does not remove that risk. Female cats absolutely still get lower urinary tract disease and still need to be seen — they are simply far less likely to become fully blocked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the signs of FLUTD in cats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The recognised signs are straining to urinate, frequent or prolonged attempts, crying out while urinating, excessive licking of the genital area, urinating outside the litter box, and blood in the urine. Feline lower urinary tract disease is an umbrella term covering several causes, of which urethral obstruction is the emergency. A cat with an obstruction shows the same signs but passes little or no urine and becomes progressively more distressed, so urine output is the detail that matters most."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a cat's urinary blockage clear on its own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A complete obstruction will not resolve without veterinary intervention, and home remedies, extra water, or waiting do not relieve it. Treatment usually involves sedation, placing a urinary catheter to relieve the obstruction, and fluid therapy to correct the metabolic consequences, often with a few days of hospitalisation. That is expensive — commonly quoted in the range of $1,500 to $3,500 — but it is a treatable condition when it is caught in time, which is the entire reason this page exists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is blood in my cat's urine an emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blood in the urine always warrants veterinary attention, and how fast depends on what accompanies it. Blood with normal urine volume in a cat that is otherwise bright is usually a same-day or next-day appointment rather than a middle-of-the-night drive. Blood together with straining and little or no urine output, or with vomiting, lethargy or hiding, is an emergency now. When you are not sure which situation you are in, phone an emergency clinic and describe what you are seeing — that call is free and they will tell you."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🚨 Cat Urinary Emergency Checker</h1>
+    <p>A cat straining in the litter box with little or nothing coming out is a life-threatening emergency — and it is routinely mistaken for constipation. Four questions will tell you how fast you need to move.</p>
+  </div>
+
+  <div class="cue-banner no-print">
+    <strong>If your cat is straining and producing no urine at all, stop reading and call an emergency vet now.</strong> You do not need this tool to confirm that. Nothing below changes that answer.
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="cue-sex">Is your cat male or female?</label>
+      <select id="cue-sex">
+        <option value="male" selected>Male (neutered or intact)</option>
+        <option value="female">Female</option>
+        <option value="unknown">Not sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="cue-output">When your cat strains or squats, how much urine comes out?</label>
+      <select id="cue-output">
+        <option value="none" selected>Nothing at all</option>
+        <option value="drops">Only a few drops</option>
+        <option value="small">Small amounts, more often than usual</option>
+        <option value="normal">Normal amount</option>
+        <option value="unsure">I can't tell / covered or multi-cat box</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="cue-signs">Which of these is your cat also doing? (choose the most serious that applies)</label>
+      <select id="cue-signs">
+        <option value="systemic" selected>Vomiting, lethargic, hiding, or refusing food</option>
+        <option value="crying">Crying or howling when trying to urinate</option>
+        <option value="blood">Blood in the urine</option>
+        <option value="licking">Licking the genital area a lot, or going outside the box</option>
+        <option value="none">None of these — just the litter box changes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="cue-duration">How long has this been going on?</label>
+      <select id="cue-duration">
+        <option value="today" selected>Started today</option>
+        <option value="days">A day or two</option>
+        <option value="longer">Longer than two days</option>
+        <option value="recurring">It keeps coming back</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="checkUrinary()">Check Urgency →</button>
+
+    <div class="result-box" id="cue-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="cue-date"></span>
+      </div>
+      <div id="cue-result-body"></div>
+      <button class="pdf-btn" id="cue-pdf-btn" onclick="doPrintCue('cue-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool indicates urgency — it cannot diagnose, and it cannot rule an emergency out. It is deliberately built to err toward sending you to a vet, because the cost of being wrong in the other direction is a dead cat. If anything about your cat worries you and this page says something milder than your instinct does, trust your instinct and phone a clinic. That call costs nothing.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Mistake That Kills Cats</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A cat crouched in the litter box, straining, tail up, clearly working at something and producing nothing looks exactly like a constipated cat. Owners see it, think "he's blocked up," and decide to see how things look in the morning.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The AVMA addresses this directly: although it may seem like the cat is trying to pass stool, straining in the litter box is more often a sign that the urethra is blocked. And the consequences of the two are not remotely comparable. Constipation is uncomfortable and can usually wait for a normal appointment. A complete urethral obstruction backs urine up toward the kidneys, drives blood potassium to levels that affect the heart, and becomes life-threatening within roughly 24 to 48 hours.</p>
+    <div class="cue-callout">
+      <strong>The question that separates them:</strong> a constipated cat is still passing urine normally. A blocked cat is passing little or none. If you cannot tell, that uncertainty is itself a reason to be seen — not a reason to wait.
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">One practical tip that resolves the ambiguity fast: if you have a covered box or share boxes between cats, temporarily switch to a single open tray with a thin layer of litter, so you can see immediately whether anything is being produced and by whom.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Male Cats Are the Ones That Block</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A male cat's urethra is longer and much narrower than a female's. The urethral plugs — soft material made of minerals, cells and mucus-like protein — and the small stones that a female would pass without much trouble can lodge and obstruct a male completely. The AVMA notes that urethral obstruction is most often found in male cats between one and ten years old, and neutering does not remove the risk.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This does not mean female cats can be ignored. Females get lower urinary tract disease at similar rates and are in real pain when they do; they are simply far less likely to become fully obstructed. A female cat with urinary signs still needs to be seen — just usually on a same-day rather than a same-hour timescale, unless she is showing systemic signs.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What FLUTD Actually Covers</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Feline lower urinary tract disease is an umbrella term rather than a diagnosis. The signs are shared across the whole group — straining, frequent or prolonged attempts, crying out, excessive licking of the genital area, urinating outside the box, and blood in the urine — but the causes differ substantially:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Feline idiopathic cystitis (FIC).</strong> The most common cause in younger cats. There is no specific test for it and it is diagnosed by ruling other things out. Stress plays a substantial role.</li>
+      <li><strong>Urethral obstruction.</strong> The emergency. Most often male cats, caused by plugs or stones.</li>
+      <li><strong>Bladder stones and crystals.</strong> May need dietary dissolution or surgery.</li>
+      <li><strong>Bacterial infection.</strong> Less common in young cats than owners expect, more common in older cats and those with kidney disease or diabetes.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Because these need different treatment and look the same from your sofa, the workup matters. Expect an exam, a urinalysis, and often bloodwork and imaging — our <a href="/blog/how-much-does-a-vet-visit-cost/">vet visit cost guide</a> breaks down what a urinary workup typically runs.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">After the Crisis: Reducing the Odds of a Repeat</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Cats that have had one episode are at meaningful risk of another, and the evidence-backed response is environmental rather than pharmaceutical. A body of work from Ohio State on <strong>multimodal environmental modification (MEMO)</strong> found that restructuring a cat's environment reduced urinary signs — and, notably, reduced fearfulness and other stress-related problems alongside them. Our <a href="/checklists/cat-urinary-health-checklist.html">Cat Urinary Health Checklist</a> works through that as a practical list: water, litter boxes, diet, stress and weight.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">My cat is straining in the litter box — is that constipation?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Assume it is not until a vet says otherwise. The AVMA notes that although straining in the litter box can look like a cat trying to pass stool, it is more often a sign that the urethra is blocked. This is the single most dangerous misreading in feline medicine: constipation is uncomfortable, while a blocked urethra kills within a day or two. The two look almost identical from across the room, so the question that separates them is what comes out — a constipated cat still passes urine normally, a blocked cat passes little or none.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long can a cat go without urinating before it becomes dangerous?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not long. Once the urethra is completely obstructed, urine backs up toward the kidneys and toxins accumulate in the bloodstream, and veterinary sources describe this becoming life-threatening within roughly 24 to 48 hours. Potassium rises to levels that affect the heart. There is no version of this that resolves on its own, and waiting overnight to see whether things improve is how cats are lost to a condition that is very treatable when caught early.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why are male cats at higher risk of urinary blockage?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Anatomy. A male cat's urethra is longer and considerably narrower than a female's, so the mineral and protein plugs or small stones that a female would pass can lodge and obstruct completely. The AVMA notes urethral obstruction is most often found in male cats between one and ten years old, and neutering does not remove that risk. Female cats absolutely still get lower urinary tract disease and still need to be seen — they are simply far less likely to become fully blocked.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs of FLUTD in cats?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The recognised signs are straining to urinate, frequent or prolonged attempts, crying out while urinating, excessive licking of the genital area, urinating outside the litter box, and blood in the urine. Feline lower urinary tract disease is an umbrella term covering several causes, of which urethral obstruction is the emergency. A cat with an obstruction shows the same signs but passes little or no urine and becomes progressively more distressed, so urine output is the detail that matters most.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can a cat's urinary blockage clear on its own?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">No. A complete obstruction will not resolve without veterinary intervention, and home remedies, extra water, or waiting do not relieve it. Treatment usually involves sedation, placing a urinary catheter to relieve the obstruction, and fluid therapy to correct the metabolic consequences, often with a few days of hospitalisation. That is expensive — commonly quoted in the range of $1,500 to $3,500 — but it is a treatable condition when it is caught in time, which is the entire reason this page exists.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is blood in my cat's urine an emergency?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Blood in the urine always warrants veterinary attention, and how fast depends on what accompanies it. Blood with normal urine volume in a cat that is otherwise bright is usually a same-day or next-day appointment rather than a middle-of-the-night drive. Blood together with straining and little or no urine output, or with vomiting, lethargy or hiding, is an emergency now. When you are not sure which situation you are in, phone an emergency clinic and describe what you are seeing — that call is free and they will tell you.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/checklists/cat-urinary-health-checklist.html">Cat Urinary Health Checklist</a> —
+      <a href="/blog/how-much-does-a-vet-visit-cost/">What a Vet Workup Costs</a> —
+      <a href="/tools/cat-weight-calculator.html">Cat Weight Calculator</a> —
+      <a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+.cue-banner {
+  background: #fdf2f2;
+  border: 2px solid #c0392b;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  color: #7b1c1c;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.cue-callout {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--brown-mid);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.cue-verdict {
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+.cue-verdict h3 { margin: 0 0 8px; font-family: var(--font-display); font-size: 1.25rem; }
+.cue-verdict p  { margin: 0; font-size: 0.92rem; line-height: 1.65; }
+.cue-red    { background: #fdf2f2; border: 2px solid #c0392b; }
+.cue-red h3 { color: #a32020; } .cue-red p { color: #7b1c1c; }
+.cue-amber    { background: #fef9e7; border: 2px solid #f39c12; }
+.cue-amber h3 { color: #9a6b00; } .cue-amber p { color: #7a5c00; }
+.cue-item {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: var(--cream);
+  border-left: 3px solid var(--orange);
+  color: var(--brown-mid);
+}
+</style>
+
+<script>
+function doPrintCue(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+function checkUrinary() {
+  var sex = document.getElementById('cue-sex').value;
+  var output = document.getElementById('cue-output').value;
+  var signs = document.getElementById('cue-signs').value;
+  var duration = document.getElementById('cue-duration').value;
+
+  // Escalation-only logic. There is no branch that tells the user to stay home:
+  // the mildest outcome available is "book an appointment".
+  // Two bands by design. Urinary signs in a cat always warrant same-day attention
+  // at minimum, so there is deliberately no "monitor at home" outcome.
+  var level;   // 3 = emergency now, 2 = same day
+  var reasons = [];
+
+  if (output === 'none' || output === 'drops') {
+    level = 3;
+    reasons.push('Straining while producing ' + (output === 'none' ? 'no urine at all' : 'only a few drops') +
+      ' is the defining sign of urethral obstruction. This does not resolve on its own.');
+  } else if (signs === 'systemic') {
+    level = 3;
+    reasons.push('Vomiting, lethargy, hiding or refusing food alongside urinary signs can mean a cat is already becoming systemically unwell from an obstruction \u2014 sometimes before the litter box changes are obvious.');
+  } else if (output === 'unsure') {
+    level = 3;
+    reasons.push('Not being able to confirm that urine is being produced is itself a reason to be seen. The difference between "some" and "none" is the difference between an appointment and an emergency, and it cannot be guessed.');
+  } else {
+    level = 2;
+    reasons.push('Urine is being produced, which makes complete obstruction less likely \u2014 but these signs still point to lower urinary tract disease, which is painful and needs diagnosis.');
+  }
+
+  if (level === 3 && sex === 'male') {
+    reasons.push('Your cat is male. A male cat\u2019s urethra is longer and narrower, and the AVMA notes obstruction is most often found in male cats aged one to ten. This raises the urgency further.');
+  }
+  if (level === 3 && sex === 'unknown') {
+    reasons.push('You are not certain of your cat\u2019s sex. Treat this as the higher-risk case until a vet confirms otherwise.');
+  }
+  if (level === 2 && signs === 'crying') {
+    level = 3;
+    reasons.push('Crying or howling while trying to urinate indicates significant pain and moves this into same-hour territory rather than same-day.');
+  }
+  if (level === 2 && signs === 'blood') {
+    reasons.push('Blood in the urine always needs veterinary attention. With normal urine volume in an otherwise bright cat, that is typically same-day rather than overnight.');
+  }
+  if (level === 2 && duration === 'longer') {
+    reasons.push('This has been going on more than two days. Signs that persist rather than settle need investigating rather than continued watching.');
+  }
+  if (duration === 'recurring') {
+    reasons.push('Recurring episodes are common in feline idiopathic cystitis and are worth addressing properly between flare-ups \u2014 environmental changes have good evidence behind them for reducing recurrence.');
+  }
+
+  var bands = {
+    3: { cls: 'cue-red', title: '\uD83D\uDEA8 Emergency \u2014 call a vet now',
+         lead: 'Based on what you have described, your cat should be seen immediately, including overnight or at a weekend emergency clinic. Phone ahead so they can prepare, and describe the straining and the lack of urine specifically.' },
+    2: { cls: 'cue-amber', title: '\u26A0\uFE0F Same-day veterinary appointment',
+         lead: 'Your cat needs to be seen today rather than at the next convenient slot. If anything changes while you are waiting \u2014 output stops, crying starts, or your cat becomes quiet, vomits or hides \u2014 go straight to an emergency clinic instead.' }
+  };
+  var band = bands[level];
+
+  var actions;
+  if (level === 3) {
+    actions = [
+      'Phone the nearest emergency clinic now and say the words "possible urinary blockage" \u2014 that phrase gets triaged immediately.',
+      'Do not offer home remedies, extra water, or wait-and-see. Neither hydration nor time relieves an obstruction.',
+      'Do not press or massage your cat\u2019s abdomen. A distended bladder can be damaged.',
+      'Take a note of when you last saw normal urination, and bring it with you.'
+    ];
+  } else {
+    actions = [
+      'Book today, and describe the urine output specifically when you call \u2014 that is what determines how they triage you.',
+      'Switch temporarily to a single open litter tray with a thin layer of litter so you can see exactly what is being produced.',
+      'If you have several cats, separate them briefly so you know which cat this is.',
+      'Escalate to an emergency clinic at any point if output stops, crying starts, or your cat becomes lethargic or starts vomiting.'
+    ];
+  }
+
+  document.getElementById('cue-result-body').innerHTML =
+    '<div class="cue-verdict ' + band.cls + '">' +
+      '<h3>' + band.title + '</h3>' +
+      '<p>' + band.lead + '</p>' +
+    '</div>' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.9rem; margin-bottom:8px;">Why</div>' +
+    reasons.map(function (r) { return '<div class="cue-item"><span>\u2022</span><span>' + r + '</span></div>'; }).join('') +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.9rem; margin:14px 0 8px;">What to do</div>' +
+    actions.map(function (a) { return '<div class="cue-item"><span>\u2192</span><span>' + a + '</span></div>'; }).join('') +
+    '<div style="margin-top:14px; padding:12px 14px; border:1.5px dashed var(--border); border-radius:var(--radius-sm); font-size:0.85rem; color:var(--brown-mid); line-height:1.7;">' +
+      'This is an urgency guide, not a diagnosis, and it cannot rule an emergency out. If your instinct says something is more wrong than this page suggests, phone a clinic \u2014 the call costs nothing.' +
+    '</div>';
+
+  document.getElementById('cue-result').classList.add('show');
+  document.getElementById('cue-pdf-btn').style.display = 'block';
+  document.getElementById('cue-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
