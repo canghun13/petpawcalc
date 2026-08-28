@@ -1,0 +1,427 @@
+---
+layout: tool
+title: Lost Pet Search Plan — How Far to Search for a Missing Cat or Dog
+description: Your instinct is to drive around calling and post flyers. For a missing cat that is usually the wrong first move. Get a search radius and priority order based on species, temperament and how long they have been gone.
+permalink: /tools/lost-pet-search-plan.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lost Pet Search Plan Generator",
+  "url": "https://petpawcalc.com/tools/lost-pet-search-plan.html",
+  "description": "A free search plan generator for missing cats and dogs. Produces a search radius and a prioritised action sequence based on species, indoor or outdoor lifestyle, temperament and time missing, drawing on published research into how far lost cats travel and on missing-animal-response methodology for approaching panicked dogs.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far do lost cats usually go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Much less far than owners assume. In a study of 1,210 missing cats published in Animals in 2018, 75% were found within 500 metres of where they escaped, and about 18% were hiding directly outside an entrance to their own home. Indoor-only cats that got outside travelled a median of just 50 metres — roughly a two-and-a-half house radius. Cats with regular outdoor access travelled considerably further. The practical implication is that for an escaped indoor cat, the search area is your own property and your immediate neighbours', not the wider neighbourhood."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why shouldn't I chase my lost dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because a frightened dog stops behaving like a predator and starts behaving like prey, and treats every approaching human — including you — as a threat. Missing-animal-response guidance is emphatic that chasing includes any forward movement toward the dog, even a single step, and that following in a car counts too. The dog runs further and faster the harder you pursue. The alternative is to make yourself boring and non-threatening: stop, sit or lie down, turn side-on, avoid direct eye contact, and let the dog choose to come to you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Silence Factor in lost cats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A term coined by pet detective Kat Albrecht for the way a sick, injured or frightened cat hides in silence rather than calling out — silence being their main defence against predators. It matters because it breaks the search: owners call and call, hear nothing, conclude the cat is not there, and go and check the shelter instead. Meanwhile the cat is under a neighbour's deck, three houses away, not answering. This is why a lost-cat search has to be a slow physical search with a torch rather than a calling search."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to find a lost cat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first week matters most. In the 2018 study of 1,210 cats, roughly a third were recovered alive by their owner within seven days and about 56% by two months, with few found alive after 90 days. That is not a reason to give up at day eight — cats do come home later — but it does mean the intensive physical searching is worth front-loading rather than pacing. If you can only search hard for a few days, make them the first few."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I check the shelter first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check it, but do not let it replace searching. There is a well-described mismatch here: the shelter is the first place an owner looks, and often the last place a member of the public takes a found animal, because people worry about euthanasia and try to rehome the pet themselves instead. So file a lost report and visit in person — descriptions over the phone are unreliable — but treat it as one thread among several rather than the main effort, especially in the first days when a cat is most likely still hiding nearby."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do flyers and social media actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They have a place, and that place is usually second. For a dog — which travels, is visible, and is often picked up by a stranger — getting the word out fast is genuinely high-yield, and large fluorescent signs beat small paper flyers. For a cat hiding silently within a few houses of home, no amount of posting substitutes for physically looking under the decks and sheds nearby, with permission. The failure mode worth avoiding is spending the first 48 hours on posting because it feels productive while the highest-yield action goes undone."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🔦 Lost Pet Search Plan</h1>
+    <p>Everyone's instinct is the same: drive around calling, then post flyers, then ring the shelter. For a missing cat that order is close to backwards. This gives you a radius and a sequence based on what actually finds pets.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="lps-species">Which pet is missing?</label>
+      <select id="lps-species" onchange="lpsToggle()">
+        <option value="cat" selected>Cat</option>
+        <option value="dog">Dog</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="lps-lifestyle-wrap">
+      <label for="lps-lifestyle">Was your cat indoor-only or did they go outside regularly?</label>
+      <select id="lps-lifestyle">
+        <option value="indoor" selected>Indoor-only — this is unfamiliar territory for them</option>
+        <option value="outdoor">Indoor-outdoor — they have their own territory outside</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="lps-temperament">How does your pet behave with strangers at the door?</label>
+      <select id="lps-temperament">
+        <option value="bold" selected>Confident — runs to greet, unafraid</option>
+        <option value="middle">Cautious — hides at first, comes out to investigate</option>
+        <option value="shy">Very fearful — hides and stays hidden</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="lps-time">How long have they been missing?</label>
+      <select id="lps-time">
+        <option value="hours" selected>Hours — today</option>
+        <option value="days">1–3 days</option>
+        <option value="week">4–7 days</option>
+        <option value="long">More than a week</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="lps-sighting-wrap" style="display:none;">
+      <label for="lps-sighting">Can you see your dog right now, or has someone reported a sighting?</label>
+      <select id="lps-sighting">
+        <option value="no" selected>No sightings</option>
+        <option value="yes">Yes — visible now or recently spotted</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="buildSearchPlan()">Build My Search Plan →</button>
+
+    <div class="result-box" id="lps-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="lps-date"></span>
+      </div>
+      <div id="lps-result-body"></div>
+      <button class="pdf-btn" id="lps-pdf-btn" onclick="doPrintLps('lps-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ These are general strategies drawn from published research and missing-animal-response practice, not a guarantee. Every case differs. Do not enter anyone's property without permission, do not go into unsafe spaces after an animal, and never approach an unfamiliar or frightened dog in a way that puts you at risk of being bitten.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Cats Do Not Run Away. They Hide.</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The mental picture most owners have — a cat trotting off down the street, getting further away by the hour — is wrong for the majority of cases, and it sends people searching in the wrong place.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A retrospective study of 1,210 missing cats by Huang, Rand, Albrecht and colleagues, published in <em>Animals</em> in 2018, found that <strong>75% were recovered within 500 metres of the point of escape</strong>. Around <strong>18% were hiding directly outside an entrance to their own home.</strong> Indoor-only cats that got out travelled a median of just <strong>50 metres</strong> — roughly two and a half houses — while cats used to going outside travelled considerably further.</p>
+    <div class="lps-callout">
+      <strong>The uncomfortable implication:</strong> if your indoor cat got out last night, they are statistically most likely to be within a few houses of your door, hiding under something, right now — while you are driving around the neighbourhood calling their name.
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">The same study reported evidence that physical searching improved the chance of finding a cat alive, though at a level short of conventional statistical significance — worth saying plainly, since this figure gets repeated online as settled fact. Taken with the distance data and decades of pet-detective field experience, the practical advice is well supported even where any single statistic is not decisive.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Silence Factor</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Pet detective Kat Albrecht coined this term for the behaviour that defeats most cat searches: a sick, injured or frightened cat hides <em>in silence</em>, because silence is its protection from predators. So the owner walks the street calling, hears nothing, and reasonably concludes the cat is not nearby. They shift to flyers and shelter visits. Meanwhile the cat is under a neighbour's deck, not answering and not moving. A calling search does not find a silent cat — only a slow, physical, torch-in-hand search does, and it has to include the neighbours' properties, which means asking permission.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Dogs Are the Opposite Problem</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dogs travel, and they are visible, so strangers find them. The mistake with dogs is not where you search but <strong>what you do when you see them.</strong></p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A frightened dog stops behaving like a predator and starts behaving like prey, and at that point every approaching human reads as a threat — including you, however much they love you at home. Missing-animal-response guidance is blunt about what counts as chasing: <strong>any forward movement toward the dog, even a single step.</strong> Following in a car is chasing. A search party in vehicles is chasing. The dog runs further and faster the harder you pursue, often into traffic.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">What works instead is making yourself uninteresting and unthreatening:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Stop moving. Sit or lie down on the ground.</strong> This alone interrupts the flight response in many dogs.</li>
+      <li><strong>Turn side-on and avoid direct eye contact.</strong> Facing an animal square-on and staring is predator behaviour.</li>
+      <li><strong>Use a happy, high-pitched voice</strong> — not the frantic or angry one that is going to come out naturally.</li>
+      <li><strong>Toss treats sideways</strong>, away from yourself, rather than holding them out.</li>
+      <li><strong>If the dog approaches, let it touch you first.</strong> Reaching for the collar too early is how you lose a dog that had almost come in.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If your dog is calm and social rather than panicked, none of this applies and you can simply call them. The rules above are for a dog in flight — and a dog that has just bolted from a car accident, a firework or a fight is in flight regardless of how confident it normally is.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Shelter Mismatch</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">One asymmetry is worth knowing about because it wastes a lot of effort: the shelter is the first place an owner looks, and frequently the <em>last</em> place a member of the public takes a found animal — people worry about euthanasia and try to rehome the pet themselves or post about it online instead. File the lost report and visit in person anyway, since phone descriptions are unreliable and staff turn over. Just do not let it become the main activity while the highest-yield action goes undone.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How far do lost cats usually go?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Much less far than owners assume. In a study of 1,210 missing cats published in Animals in 2018, 75% were found within 500 metres of where they escaped, and about 18% were hiding directly outside an entrance to their own home. Indoor-only cats that got outside travelled a median of just 50 metres — roughly a two-and-a-half house radius. Cats with regular outdoor access travelled considerably further. The practical implication is that for an escaped indoor cat, the search area is your own property and your immediate neighbours', not the wider neighbourhood.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why shouldn't I chase my lost dog?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Because a frightened dog stops behaving like a predator and starts behaving like prey, and treats every approaching human — including you — as a threat. Missing-animal-response guidance is emphatic that chasing includes any forward movement toward the dog, even a single step, and that following in a car counts too. The dog runs further and faster the harder you pursue. The alternative is to make yourself boring and non-threatening: stop, sit or lie down, turn side-on, avoid direct eye contact, and let the dog choose to come to you.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is the Silence Factor in lost cats?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A term coined by pet detective Kat Albrecht for the way a sick, injured or frightened cat hides in silence rather than calling out — silence being their main defence against predators. It matters because it breaks the search: owners call and call, hear nothing, conclude the cat is not there, and go and check the shelter instead. Meanwhile the cat is under a neighbour's deck, three houses away, not answering. This is why a lost-cat search has to be a slow physical search with a torch rather than a calling search.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does it take to find a lost cat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The first week matters most. In the 2018 study of 1,210 cats, roughly a third were recovered alive by their owner within seven days and about 56% by two months, with few found alive after 90 days. That is not a reason to give up at day eight — cats do come home later — but it does mean the intensive physical searching is worth front-loading rather than pacing. If you can only search hard for a few days, make them the first few.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I check the shelter first?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Check it, but do not let it replace searching. There is a well-described mismatch here: the shelter is the first place an owner looks, and often the last place a member of the public takes a found animal, because people worry about euthanasia and try to rehome the pet themselves instead. So file a lost report and visit in person — descriptions over the phone are unreliable — but treat it as one thread among several rather than the main effort, especially in the first days when a cat is most likely still hiding nearby.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do flyers and social media actually work?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">They have a place, and that place is usually second. For a dog — which travels, is visible, and is often picked up by a stranger — getting the word out fast is genuinely high-yield, and large fluorescent signs beat small paper flyers. For a cat hiding silently within a few houses of home, no amount of posting substitutes for physically looking under the decks and sheds nearby, with permission. The failure mode worth avoiding is spending the first 48 hours on posting because it feels productive while the highest-yield action goes undone.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related</h3>
+    <p>
+      <a href="/checklists/lost-pet-first-24-hours-checklist.html">Lost Pet: First 24 Hours Checklist</a> —
+      <a href="/checklists/pet-emergency-kit-checklist.html">Pet Emergency Kit Checklist</a> —
+      <a href="/checklists/moving-with-pets-checklist.html">Moving With Pets Checklist</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box, .lps-step { page-break-inside: avoid; }
+}
+.lps-callout {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--brown-mid);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.lps-radius {
+  background: var(--cream-dark);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.lps-radius-num { font-size: 1.6rem; font-weight: 700; color: var(--orange); line-height: 1.25; }
+.lps-radius-lbl { font-size: 0.85rem; color: var(--brown-mid); margin-top: 5px; line-height: 1.55; }
+.lps-step {
+  display: flex; gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+.lps-step:last-child { border-bottom: none; }
+.lps-num {
+  flex-shrink: 0; width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--orange); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.82rem; font-weight: 700;
+}
+.lps-step-title { font-weight: 700; color: var(--brown); font-size: 0.93rem; margin-bottom: 3px; }
+.lps-step-desc  { font-size: 0.87rem; color: var(--brown-mid); line-height: 1.6; }
+.lps-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.lps-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.lps-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+</style>
+
+<script>
+function doPrintLps(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+function lpsToggle() {
+  var isCat = document.getElementById('lps-species').value === 'cat';
+  document.getElementById('lps-lifestyle-wrap').style.display = isCat ? '' : 'none';
+  document.getElementById('lps-sighting-wrap').style.display = isCat ? 'none' : '';
+}
+
+function buildSearchPlan() {
+  var species = document.getElementById('lps-species').value;
+  var lifestyle = document.getElementById('lps-lifestyle').value;
+  var temp = document.getElementById('lps-temperament').value;
+  var time = document.getElementById('lps-time').value;
+  var sighting = document.getElementById('lps-sighting').value;
+
+  var radiusNum, radiusLbl, steps = [], notes = [];
+
+  if (species === 'cat') {
+    if (lifestyle === 'indoor') {
+      radiusNum = 'Your property + 5 houses in every direction';
+      radiusLbl = 'Escaped indoor-only cats travelled a median of about 50 m in the 2018 study \u2014 roughly two and a half houses. Search small and search thoroughly before you search wide.';
+    } else if (temp === 'bold') {
+      radiusNum = '500 m, focused on the first 5 houses';
+      radiusLbl = 'Outdoor-access cats travel further, and confident cats furthest of all \u2014 but 75% of all cats in the study were still found within 500 m of where they went missing.';
+    } else {
+      radiusNum = '500 m, concentrated close to home';
+      radiusLbl = 'A cautious outdoor cat that has been frightened tends to hide rather than roam, often much closer to home than its usual territory would suggest.';
+    }
+
+    steps = [
+      { t: 'Search your own property first, on your stomach, with a torch',
+        d: 'Under the deck, under the shed, in the garage, behind the water heater, inside anything with a gap. About 18% of cats in the study were found hiding directly outside an entrance to their own home. Use the torch even in daylight \u2014 eyeshine is what gives them away in a dark cavity.' },
+      { t: 'Ask each neighbour for permission to search their property \u2014 and do the searching yourself',
+        d: 'This is the single most important step and the one people skip. Handing a neighbour a flyer is not a search; they will not get on their belly to look under their own deck. You have to. Ask politely, explain it takes five minutes, and bring the torch.' },
+      { t: 'Search at night when it is quiet',
+        d: 'Fewer people, fewer cars, less noise. A frightened cat is far more likely to move or respond at 2am than at midday, and eyeshine is easy to catch with a torch.' },
+      { t: 'Put familiar scent and food at the escape point',
+        d: 'Their litter box, bedding, and strong-smelling wet food just outside the door they left from. Many cats return to the point of escape once things quieten down.' },
+      { t: 'Set up a camera or a humane trap if there are no sightings after a couple of days',
+        d: 'A cheap motion camera aimed at the food tells you whether your cat is coming back at night. Rescues and shelters will often lend humane traps \u2014 ask them.' },
+      { t: 'File reports and post \u2014 but after the searching, not instead of it',
+        d: 'Lost report with every local shelter and vet practice, microchip registry updated, and posts in neighbourhood groups. Visit shelters in person rather than phoning.' }
+    ];
+
+    notes.push({ type: 'tip', text: 'The Silence Factor: a frightened or injured cat hides without making a sound. Calling and hearing nothing does not mean your cat is not ten feet away. Search with your eyes and a torch, not with your voice.' });
+
+    if (temp === 'bold') {
+      notes.push({ type: 'tip', text: 'Confident, curious cats were more likely than other personality types to be found inside someone else\u2019s house in the 2018 study. Ask neighbours to check sheds, garages, basements and open cupboards \u2014 and ask specifically whether any doors or car boots were open.' });
+    }
+    if (temp === 'shy') {
+      notes.push({ type: 'tip', text: 'A very fearful cat may not come out even for you, and may not respond at all for the first several days. That silence is normal and is not evidence they have gone. Keep searching the small radius and consider a humane trap sooner rather than later.' });
+    }
+    if (time === 'hours') {
+      notes.push({ type: 'warn', text: 'The first hours are your best chance and the easiest to waste. Do not get in the car yet. Search your own property and the immediately neighbouring ones on foot first \u2014 that is where the odds are.' });
+    }
+    if (time === 'week' || time === 'long') {
+      notes.push({ type: 'tip', text: 'Around a third of cats in the study were recovered by their owner within 7 days and about 56% by two months. Past the first week, keep the food station and camera running, widen your poster area, and re-check shelters in person regularly \u2014 staff change and intake descriptions are often wrong.' });
+    }
+    if (lifestyle === 'indoor') {
+      notes.push({ type: 'warn', text: 'Before searching outside at all, search inside once more. Indoor cats that seem to have vanished are frequently still in the house \u2014 inside a cupboard, behind an appliance, under a bed base, or in the back of a wardrobe.' });
+    }
+  } else {
+    if (temp === 'bold') {
+      radiusNum = 'Start local, expand fast \u2014 and prioritise getting the word out';
+      radiusLbl = 'A confident, social dog is likely to approach people and be picked up quickly. Your finder is more likely to be a stranger than you, so visibility matters more than radius.';
+    } else if (temp === 'middle') {
+      radiusNum = 'A few miles, following sightings';
+      radiusLbl = 'A cautious dog may accept help from people but will avoid being cornered. Chase reports of sightings, not the dog itself.';
+    } else {
+      radiusNum = 'Potentially 5\u201310 miles \u2014 signage over searching';
+      radiusLbl = 'Panicked and fearful dogs can run for miles before slowing, then settle in wooded areas, cemeteries or near water where they can avoid people entirely. Large signs across a wide area generate the sightings you need.';
+    }
+
+    steps = [
+      { t: 'If you can see your dog: stop. Do not take one step toward them.',
+        d: 'Any forward movement counts as chasing, including following in a car. Sit or lie down on the ground, turn side-on, avoid eye contact, and use a happy high-pitched voice. Toss treats sideways. Let the dog come to you and touch you before you reach for anything.' },
+      { t: 'Leave scent and food at the point of escape',
+        d: 'Strong-smelling wet food, plus their bed and an unwashed piece of your clothing. Many dogs circle back to where they got out once the panic subsides, often at night.' },
+      { t: 'Get large, high-visibility signs up fast',
+        d: 'Big fluorescent poster boards readable from a moving car beat small paper flyers on poles. Concentrate them at the escape point and at every reported sighting, and at junctions where drivers slow down.' },
+      { t: 'File everywhere, and visit in person',
+        d: 'Every shelter and animal control facility in range, local vets and emergency clinics, and your microchip registry. Go in person \u2014 phone descriptions get mismatched constantly.' },
+      { t: 'Post in local groups, and ask for sightings rather than searchers',
+        d: 'What you need from the public is information, not a search party. Ask people to report where and when they saw the dog and then to leave it alone \u2014 well-meaning groups chasing a panicked dog is actively harmful.' },
+      { t: 'Follow sightings to build a pattern, then set a feeding station',
+        d: 'Once you have two or three sightings in one area, put a feeding station and a camera there. Dogs settle into routines quickly, and a predictable food source is what makes a trap or a calm capture possible.' }
+    ];
+
+    notes.push({ type: 'warn', text: 'DO NOT CHASE is the single most important rule with a loose dog. A frightened dog behaves like prey and reads every approaching human as a predator \u2014 including you. Pursuit makes them run further and faster, frequently into traffic.' });
+    notes.push({ type: 'tip', text: 'Tell everyone who is helping the same rule. A search party in cars is a chase, and a well-meaning stranger lunging for a collar can undo days of patient work in a second.' });
+
+    if (sighting === 'yes') {
+      notes.push({ type: 'warn', text: 'You have a sighting. Resist the urge to converge on the area with people. Go alone or with one other person, sit down within sight, and wait. Bring high-value smelly food and be prepared to spend hours doing very little.' });
+    }
+    if (temp === 'shy') {
+      notes.push({ type: 'tip', text: 'A fearful dog may not come to you even when it recognises you \u2014 that is the panic talking, not a lack of bond. For these dogs, a feeding station plus a humane trap, set up by people who do this regularly, is usually more realistic than a hands-on capture.' });
+    }
+    if (time === 'hours') {
+      notes.push({ type: 'tip', text: 'In the first hours, a calm social dog is often still close by or already with someone. Check with immediate neighbours, walk your usual routes, and get the first posts up \u2014 but keep your own movements calm.' });
+    }
+  }
+
+  notes.push({ type: 'tip', text: 'Update your microchip registry with your current phone number today, whatever else you do. A chip nobody can trace back to you is the most common way a found pet fails to get home.' });
+
+  document.getElementById('lps-result-body').innerHTML =
+    '<div class="lps-radius">' +
+      '<div class="lps-radius-num">' + radiusNum + '</div>' +
+      '<div class="lps-radius-lbl">' + radiusLbl + '</div>' +
+    '</div>' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin-bottom:6px;">Do these in this order</div>' +
+    steps.map(function (s, i) {
+      return '<div class="lps-step"><div class="lps-num">' + (i + 1) + '</div>' +
+        '<div><div class="lps-step-title">' + s.t + '</div>' +
+        '<div class="lps-step-desc">' + s.d + '</div></div></div>';
+    }).join('') +
+    '<div style="margin-top:14px;">' +
+      notes.map(function (n) {
+        return '<div class="lps-note lps-' + (n.type === 'warn' ? 'warn' : 'tip') + '"><span>' +
+          (n.type === 'warn' ? '\u26A0\uFE0F' : '\uD83D\uDCA1') + '</span><span>' + n.text + '</span></div>';
+      }).join('') +
+    '</div>';
+
+  document.getElementById('lps-result').classList.add('show');
+  document.getElementById('lps-pdf-btn').style.display = 'block';
+  document.getElementById('lps-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+lpsToggle();
+</script>
