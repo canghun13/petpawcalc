@@ -36,7 +36,7 @@ Here's a birth-to-12-month weight chart, the fastest rule of thumb for checking 
 
 ## Kitten Weight Chart: Birth to 12 Months
 
-These ranges apply to typical domestic shorthair/mixed-breed kittens — the majority of kittens. Large breeds are covered separately below, since their growth timeline is meaningfully different.
+This kitten growth chart applies to typical domestic shorthair/mixed-breed kittens — the majority of kittens. Large breeds are covered separately below, since their growth timeline is meaningfully different.
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
@@ -80,9 +80,33 @@ The table above is the quick reference. Below is the same information as a kitte
 
 **How much should a 7 month kitten weigh?** Roughly 5.5–7 lbs (2.5–3.2kg). A 7 month old kitten weight is usually already 70–80% of adult weight for a typical domestic shorthair.
 
+**How much should an 8 month old cat weigh?** Around 6–7.5 lbs (2.7–3.4kg). By this point most owners have stopped saying "kitten" and started saying "cat", which is why the same question gets asked both ways — the answer is identical either way. An 8 month old cat weight sitting a little under this is common in smaller-framed females.
+
+**How much should a 9 month old kitten weigh?** About 6.5–8.5 lbs (3–3.9kg), matching the 9-month row above. Growth has slowed a great deal by now; most of what remains is filling out rather than getting longer.
+
+**How much should a one year old cat weigh?** Typically 7–10 lbs (3.2–4.5kg) for a domestic shorthair, which is essentially adult weight. Large breeds are the exception and keep growing — a Maine Coon at twelve months is nowhere near finished.
+
+### The Same Question, Written Different Ways
+
+People ask this in a lot of formats, and they all resolve to the chart above:
+
+**Spelled-out ages.** How much should a three month old kitten weigh? 2.5–3.5 lbs. How much should a four month old kitten weigh? 3.5–4.5 lbs. How much should a five month old kitten weigh? 4.5–5.5 lbs. How much should a six month old kitten weigh? 5–6.5 lbs. Identical to the 3, 4, 5 and 6 month rows above — only the spelling changes.
+
+**Written as a noun.** A 3 month old kitten weight of 2.5–3.5 lbs, a 4 month old kitten weight of 3.5–4.5 lbs, a 5 month old kitten weight of 4.5–5.5 lbs, and a 4 month kitten weight asked without the word "old" all mean the same thing. Kitten weight at 5 months and kitten weight by age lbs are the same question again.
+
+**Saying "cat" instead of "kitten".** How much should a 4 month old cat weigh? 3.5–4.5 lbs. How much should a 5 month old cat weigh? 4.5–5.5 lbs. How much should a 7 month old cat weigh? Around 5.5–7 lbs. From roughly four months onward the two words get used interchangeably, and the figures do not change.
+
+**Ages given in weeks.** A 7 week old kitten size is around 1.4–2.2 lbs. How much should a 9 week old kitten weigh? Roughly 1.8–2.8 lbs. A 15 week old kitten is about 3–4 lbs, and a 16 week old kitten matches the 4-month row at 3.5–4.5 lbs.
+
+**Averages.** How much should kittens weigh on average? Average kitten weight and normal kitten weight both point at the middle of the relevant range rather than one number — healthy kittens at the same age routinely vary by a pound either side, and the average weight of a 4 month old kitten is simply the midpoint of 3.5–4.5 lbs.
+
+**How much does a kitten weigh, in one sentence?** About 100g at birth, then roughly a pound per month until about five months, reaching 7–10 lbs by their first birthday.
+
+**How big are newborn kittens?** Around 3–4.5 oz (85–130g) — roughly the weight of a deck of cards, and about four inches long. They double their birth weight in the first week.
+
 ### Working Backwards: Estimating Age From Weight
 
-If you've found a kitten and don't know their birthday, the same chart runs in reverse. The rough rule for age of kittens by weight is **1 pound ≈ 1 month old**, reliable up to about 5 months: a 1 lb kitten is around 4 weeks, a 2 lb kitten around 8 weeks, a 3 lb kitten around 12 weeks.
+If you've found a kitten and don't know their birthday, the same chart runs in reverse. The rough rule for age of kittens by weight is **1 pound ≈ 1 month old**, reliable up to about 5 months: a 1 lb kitten is around 4 weeks, a 2 lb kitten around 8 weeks, a 3 lb kitten around 12 weeks. So a 3lb kitten age estimate is roughly three months, and a kitten weighing 3.5–4 lbs is likely around 3.5 to 4 months.
 
 Weight alone is the least reliable of the aging methods, though, because a kitten who has been underfed or has a heavy parasite load will weigh well below their true age. Eyes (closed until roughly 7–14 days), teeth (baby teeth from about 3 weeks, adult teeth from 3–4 months), and mobility are all better indicators, and a vet can narrow it down properly in one visit. Use weight as a cross-check, not the answer.
 
