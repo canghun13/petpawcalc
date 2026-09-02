@@ -1,0 +1,448 @@
+---
+layout: tool
+title: Why Does My Dog Keep Getting Ear Infections? Recurrence Checker
+description: Recurring ear infections are almost never an ear problem. Answer a few questions to see which underlying layer is likely being missed — and exactly what to ask your vet to break the cycle.
+permalink: /tools/ear-infection-recurrence-checker.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ear Infection Recurrence Checker",
+  "url": "https://petpawcalc.com/tools/ear-infection-recurrence-checker.html",
+  "description": "A free tool for owners of dogs and cats with recurring ear infections. Uses the veterinary PSPP framework (primary causes, secondary infection, predisposing and perpetuating factors) to indicate which underlying layer is likely going unaddressed, and produces specific questions to ask a veterinarian.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my dog keep getting ear infections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the infection is usually the consequence, not the cause. Veterinary dermatology uses a four-part framework — primary causes, secondary infection, predisposing factors and perpetuating factors — and the ear drops only address the secondary layer. Allergic skin disease is the primary cause in a large share of cases; figures in the veterinary literature put atopic dermatitis behind roughly 43% to 75% of canine otitis externa. Clear the yeast and bacteria without touching the reason the canal keeps becoming inflamed and the canal simply becomes inflamed again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can food allergies cause ear infections in dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and sometimes ears are the only sign. Work cited in veterinary otology reports that up to 24% of dogs with an adverse food reaction present with otitis externa as their sole clinical complaint — no itchy skin, no paw licking, just ears that keep flaring. That is worth knowing because it inverts the usual assumption that a food allergy would show up on the skin first. If your dog's ears keep recurring and nothing else seems wrong, a diet trial is a reasonable conversation to have with your vet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is only one ear infected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That asymmetry is a useful clue. Allergic otitis is usually bilateral because the allergy affects the whole animal, so veterinary guidance is that a one-sided case should raise the priority of other explanations — a foreign body such as a grass awn, a polyp, a growth, or middle ear disease. A dog that suddenly starts shaking its head and pawing at one ear after being in long grass is a same-day appointment rather than a wait-and-see, because a grass seed migrating down a canal does real damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I treat my dog's ear infection at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not safely, and the reason is specific rather than precautionary. If the eardrum is perforated, some ear medications and cleaners can reach the middle ear and cause damage including hearing loss — which is why veterinary sources treat otoscopic examination as mandatory before treatment, since a perforated eardrum fundamentally changes what can be used. You cannot see the eardrum from outside. Leftover drops from a previous infection are a particularly common mistake, because the organism this time may be different from last time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is cytology and why does it matter every time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cytology is a swab of the ear examined under a microscope to identify what is actually growing — yeast, cocci, rods, or a mix. It is described in veterinary practice as the most valuable single diagnostic tool in otitis, because the treatment differs by organism and you cannot tell them apart by how the ear looks or smells. It matters at each episode rather than just the first, because a recurring ear frequently changes organism between flare-ups, and rod-shaped bacteria in particular tend to signal a harder problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chronic ear infections cause permanent damage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can. Repeated inflammation thickens the canal lining, narrows the canal and can eventually mineralise it, and veterinary sources note these changes can become irreversible when otitis is inadequately treated. At that point medication struggles to reach the affected tissue and surgery may become the remaining option. Middle ear involvement is also common in long-running cases — reported in over half of chronic or recurrent cases in one summary — and an infected middle ear acts as a reservoir that reseeds the outer ear. This is the argument for treating recurrence seriously early rather than managing flare-ups indefinitely."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>👂 Why Do the Ear Infections Keep Coming Back?</h1>
+    <p>If your pet has had several ear infections, the ear is rarely the actual problem. Veterinary dermatology treats otitis as four stacked layers, and the drops only reach one of them. This works out which layer is likely being missed.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="eir-species">Species</label>
+      <select id="eir-species">
+        <option value="dog" selected>Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-episodes">How many ear infections in the last 12 months?</label>
+      <select id="eir-episodes">
+        <option value="1">This is the first one</option>
+        <option value="2" selected>2</option>
+        <option value="3">3 or 4</option>
+        <option value="many">5 or more, or it never fully clears</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-sides">One ear or both?</label>
+      <select id="eir-sides">
+        <option value="both" selected>Both ears</option>
+        <option value="one">Only one ear, consistently</option>
+        <option value="onesudden">One ear, and it came on suddenly</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-signs">Anything else going on with the skin?</label>
+      <select id="eir-signs">
+        <option value="itchy" selected>Yes — licking paws, scratching, itchy belly or rubbing the face</option>
+        <option value="none">No — the ears are genuinely the only problem</option>
+        <option value="unsure">Not sure / hard to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-season">Is there a seasonal pattern?</label>
+      <select id="eir-season">
+        <option value="yearround" selected>Year-round, no clear pattern</option>
+        <option value="seasonal">Worse in spring/summer or a particular season</option>
+        <option value="tooearly">Too early to tell</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-anatomy">Ear shape and lifestyle</label>
+      <select id="eir-anatomy">
+        <option value="floppy" selected>Floppy or heavily haired ears</option>
+        <option value="water">Swims often or is bathed frequently</option>
+        <option value="both2">Both floppy ears and frequent water</option>
+        <option value="neither">Upright ears, not often wet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="eir-workup">Has your vet done a swab under the microscope (cytology) at each episode?</label>
+      <select id="eir-workup">
+        <option value="unknown" selected>I don't know / not sure what was done</option>
+        <option value="first">Only at the first visit</option>
+        <option value="each">Yes, at each episode</option>
+        <option value="never">No, we were given drops without a swab</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="checkEarRecurrence()">See What's Likely Being Missed →</button>
+
+    <div class="result-box" id="eir-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="eir-date"></span>
+      </div>
+      <div id="eir-result-body"></div>
+      <button class="pdf-btn" id="eir-pdf-btn" onclick="doPrintEir('eir-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This organises questions to raise with your veterinarian — it does not diagnose, and it cannot tell you what is growing in the ear. <strong>Do not put anything into your pet's ear without a vet confirming the eardrum is intact</strong>, including leftover drops from a previous infection and over-the-counter cleaners. If the eardrum is perforated, some products can damage the middle ear and hearing.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Four Layers (PSPP)</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Veterinary dermatology classifies otitis externa into four categories, usually abbreviated PSPP. Understanding which layer the treatment is addressing explains almost everything about why some ears clear and stay clear while others become a permanent feature of your life.</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Layer</th><th>What it is</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Primary</strong></td><td>Can cause otitis in a completely healthy ear</td><td>Allergic skin disease (atopic or food), ear mites, foreign bodies, hormonal disease, polyps or growths</td></tr>
+          <tr><td><strong>Secondary</strong></td><td>Only causes trouble in an already-abnormal ear</td><td>Yeast (<em>Malassezia</em>) and bacterial overgrowth — this is what the drops treat</td></tr>
+          <tr><td><strong>Predisposing</strong></td><td>Raises risk but never causes otitis alone</td><td>Floppy or hairy ears, narrow canals, swimming, over-cleaning</td></tr>
+          <tr><td><strong>Perpetuating</strong></td><td>Consequences of inflammation that block resolution</td><td>Thickened canal lining, narrowing, mineralisation, middle ear involvement</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;"><strong>Ear drops treat the secondary layer.</strong> That is genuinely useful — the infection is real and needs clearing — but if the primary cause is untouched, the canal becomes inflamed again and the organisms come back with it. That single mismatch is the mechanism behind most recurring ears.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Allergy Is the Usual Primary Cause</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">In dogs, the numbers are lopsided. Veterinary literature puts atopic dermatitis as the primary cause in roughly <strong>43% to 75%</strong> of canine otitis externa, and a retrospective series of 100 dogs found allergic dermatitis the most common primary cause, followed by grass awns.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The detail that surprises most owners: <strong>up to 24% of dogs with an adverse food reaction have otitis externa as their only complaint.</strong> No itchy skin, no paw licking, no rash — just ears. So "it can't be allergies, his skin is fine" is not the reassurance it sounds like.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The distinction between food and environmental allergy matters for what you do next, and seasonality is the most useful clue an owner has. Environmental allergy classically flares with pollen seasons; food reaction runs year-round. If a diet trial is on the table, our <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a> lays out the schedule and the contamination audit that decides whether it actually proves anything.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When One Ear Changes the Answer</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Allergy affects the whole animal, so allergic otitis is typically <strong>bilateral</strong>. Veterinary guidance is that a consistently one-sided case should raise the priority of other explanations: a foreign body such as a grass awn, a polyp, a growth, or middle ear disease. This is a discriminator owners can actually apply at home. A dog that suddenly starts violently shaking its head and pawing at one ear after a walk through long grass has a plausible grass seed in there, and that is a same-day appointment — awns migrate and do progressive damage.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Cytology Every Time, Not Just the First Time</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A swab examined under the microscope is described in veterinary practice as the most valuable diagnostic tool in otitis, because it identifies what is actually growing and the treatment differs by organism. You cannot distinguish yeast from rod-shaped bacteria by smell or appearance, and a recurring ear frequently changes organism between episodes — so drops that worked in March may be the wrong drops in September. Rods in particular tend to signal a more difficult infection. If you have been handed medication without a swab, asking for cytology is a reasonable and cheap request.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Cats Are a Different Picture</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Allergic otitis is <strong>less common in cats</strong> than in dogs, which shifts the likely primary causes. Ear mites are a leading cause in kittens and young cats and are contagious between pets in the household. In an adult cat, particularly with a stubbornly one-sided problem, inflammatory polyps and growths climb the list — and those need a vet to look rather than another course of drops. Dark, crumbly, coffee-ground debris is classic for mites but is not diagnostic on its own, which is another reason the swab matters.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Damage That Does Not Reverse</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Chronic inflammation thickens the canal lining, narrows the lumen and can eventually mineralise it, and veterinary sources note these changes can become irreversible where otitis has been inadequately treated. Once the canal has closed down, medication struggles to reach the tissue and surgery may be the remaining option. Middle ear involvement is common in long-running cases — reported in over half of chronic or recurrent cases in one summary — and an infected middle ear reseeds the outer ear indefinitely. This is the honest argument for pushing on the underlying cause early rather than settling into a rhythm of managing flare-ups.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my dog keep getting ear infections?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Because the infection is usually the consequence, not the cause. Veterinary dermatology uses a four-part framework — primary causes, secondary infection, predisposing factors and perpetuating factors — and the ear drops only address the secondary layer. Allergic skin disease is the primary cause in a large share of cases; figures in the veterinary literature put atopic dermatitis behind roughly 43% to 75% of canine otitis externa. Clear the yeast and bacteria without touching the reason the canal keeps becoming inflamed and the canal simply becomes inflamed again.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can food allergies cause ear infections in dogs?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, and sometimes ears are the only sign. Work cited in veterinary otology reports that up to 24% of dogs with an adverse food reaction present with otitis externa as their sole clinical complaint — no itchy skin, no paw licking, just ears that keep flaring. That is worth knowing because it inverts the usual assumption that a food allergy would show up on the skin first. If your dog's ears keep recurring and nothing else seems wrong, a diet trial is a reasonable conversation to have with your vet.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why is only one ear infected?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">That asymmetry is a useful clue. Allergic otitis is usually bilateral because the allergy affects the whole animal, so veterinary guidance is that a one-sided case should raise the priority of other explanations — a foreign body such as a grass awn, a polyp, a growth, or middle ear disease. A dog that suddenly starts shaking its head and pawing at one ear after being in long grass is a same-day appointment rather than a wait-and-see, because a grass seed migrating down a canal does real damage.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I treat my dog's ear infection at home?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not safely, and the reason is specific rather than precautionary. If the eardrum is perforated, some ear medications and cleaners can reach the middle ear and cause damage including hearing loss — which is why veterinary sources treat otoscopic examination as mandatory before treatment, since a perforated eardrum fundamentally changes what can be used. You cannot see the eardrum from outside. Leftover drops from a previous infection are a particularly common mistake, because the organism this time may be different from last time.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is cytology and why does it matter every time?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cytology is a swab of the ear examined under a microscope to identify what is actually growing — yeast, cocci, rods, or a mix. It is described in veterinary practice as the most valuable single diagnostic tool in otitis, because the treatment differs by organism and you cannot tell them apart by how the ear looks or smells. It matters at each episode rather than just the first, because a recurring ear frequently changes organism between flare-ups, and rod-shaped bacteria in particular tend to signal a harder problem.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can chronic ear infections cause permanent damage?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">They can. Repeated inflammation thickens the canal lining, narrows the canal and can eventually mineralise it, and veterinary sources note these changes can become irreversible when otitis is inadequately treated. At that point medication struggles to reach the affected tissue and surgery may become the remaining option. Middle ear involvement is also common in long-running cases — reported in over half of chronic or recurrent cases in one summary — and an infected middle ear acts as a reservoir that reseeds the outer ear. This is the argument for treating recurrence seriously early rather than managing flare-ups indefinitely.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Tools</h3>
+    <p>
+      <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a> —
+      <a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a> —
+      <a href="/checklists/recurring-ear-infection-vet-visit-checklist.html">Recurring Ear Infection: Vet Visit Checklist</a> —
+      <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea &amp; Tick Prevention Cost Calculator</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box, .eir-layer { page-break-inside: avoid; }
+}
+.eir-headline {
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  background: var(--cream-dark);
+  border-left: 4px solid var(--orange);
+}
+.eir-headline h3 { margin: 0 0 6px; font-family: var(--font-display); font-size: 1.15rem; color: var(--brown); }
+.eir-headline p  { margin: 0; font-size: 0.9rem; line-height: 1.65; color: var(--brown-mid); }
+.eir-layer {
+  display: flex; gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.eir-layer:last-child { border-bottom: none; }
+.eir-badge {
+  flex-shrink: 0;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  height: fit-content;
+  white-space: nowrap;
+}
+.eir-hot  { background: #fdecea; color: #a32020; }
+.eir-warm { background: #fef6e0; color: #8a6100; }
+.eir-cool { background: #eef3f8; color: #3d6288; }
+.eir-layer-text { font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6; }
+.eir-ask {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: var(--cream);
+  border-left: 3px solid var(--orange);
+  color: var(--brown-mid);
+}
+.eir-warn {
+  display: flex; gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: #fdf2f2;
+  border-left: 3px solid #e74c3c;
+  color: #7b1c1c;
+}
+</style>
+
+<script>
+function doPrintEir(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+function checkEarRecurrence() {
+  var sp = document.getElementById('eir-species').value;
+  var ep = document.getElementById('eir-episodes').value;
+  var sides = document.getElementById('eir-sides').value;
+  var signs = document.getElementById('eir-signs').value;
+  var season = document.getElementById('eir-season').value;
+  var anat = document.getElementById('eir-anatomy').value;
+  var work = document.getElementById('eir-workup').value;
+
+  var animal = sp === 'cat' ? 'cat' : 'dog';
+  var layers = [], asks = [], warns = [], headline, lead;
+
+  // --- Headline framing by episode count ---
+  if (ep === '1') {
+    headline = 'One episode \u2014 treat it, but note the baseline';
+    lead = 'A single ear infection does not mean an underlying disease. Get it treated properly, with a swab, and keep a note of the date. If a second one arrives within a year, that changes the picture and the questions below become the ones to ask.';
+  } else if (ep === '2') {
+    headline = 'Two episodes \u2014 worth asking why now, not later';
+    lead = 'Two infections in a year is the point at which veterinary dermatology starts looking past the infection itself. Raising the underlying-cause question now is much easier than after the canal has started to change.';
+  } else if (ep === '3') {
+    headline = 'Recurrent \u2014 the primary cause is very likely unaddressed';
+    lead = 'At three or four episodes in a year, the pattern itself is the finding. Something is repeatedly inflaming that canal, and each course of drops is resetting the secondary infection without touching it.';
+  } else {
+    headline = 'Chronic \u2014 this needs a different approach, not another course of drops';
+    lead = 'Five or more episodes, or an ear that never fully clears, is chronic otitis. At this stage both an unaddressed primary cause and perpetuating changes in the canal are likely in play, and a referral to a veterinary dermatologist is a reasonable thing to ask about.';
+  }
+
+  // --- PRIMARY ---
+  if (sides === 'onesudden') {
+    layers.push({ b: 'hot', l: 'PRIMARY', t: 'A sudden one-sided ear points away from allergy and toward a foreign body \u2014 a grass awn is the classic one \u2014 or a polyp or growth. Allergy affects the whole animal and is usually bilateral, so this asymmetry is meaningful.' });
+    warns.push('Sudden onset in one ear with head shaking and pawing should be seen the same day. A grass seed migrates down the canal and does progressive damage, and it will not resolve on its own.');
+  } else if (sides === 'one') {
+    layers.push({ b: 'hot', l: 'PRIMARY', t: 'A consistently one-sided ear raises the priority of causes other than allergy: a foreign body, a polyp, a growth, or middle ear disease on that side. Veterinary guidance treats unilateral otitis as a prompt to look for these specifically.' });
+    if (sp === 'cat') {
+      warns.push('In an adult cat, a stubbornly one-sided ear moves inflammatory polyps and growths up the list. That needs someone to look down the canal rather than another course of drops.');
+    }
+  } else if (sp === 'dog') {
+    if (signs === 'itchy') {
+      layers.push({ b: 'hot', l: 'PRIMARY', t: 'Ear infections alongside itchy skin, paw licking or face rubbing is the classic allergic pattern. Veterinary literature puts atopic dermatitis behind roughly 43\u201375% of canine otitis externa \u2014 this is the single most likely primary cause in your dog.' });
+    } else if (signs === 'none') {
+      layers.push({ b: 'hot', l: 'PRIMARY', t: 'Ears as the ONLY sign does not rule allergy out \u2014 it is a recognised presentation. Up to 24% of dogs with an adverse food reaction have otitis as their sole complaint, with no skin signs at all. "His skin is fine" is not the reassurance it sounds like.' });
+    } else {
+      layers.push({ b: 'hot', l: 'PRIMARY', t: 'Worth watching deliberately for a fortnight: paw licking, face rubbing, belly scratching, or a musty smell to the skin. Allergic disease is the most common primary cause of canine otitis, and these are the signs that support it.' });
+    }
+  } else {
+    layers.push({ b: 'hot', l: 'PRIMARY', t: 'Allergic otitis is less common in cats than dogs, which changes the shortlist. Ear mites lead in kittens and young cats and spread between pets in the house; in adult cats, polyps and growths climb the list. Dark coffee-ground debris suggests mites but is not proof on its own.' });
+  }
+
+  if (sp === 'dog' && sides === 'both') {
+    if (season === 'seasonal') {
+      layers.push({ b: 'warm', l: 'PRIMARY', t: 'A seasonal pattern points more toward environmental allergy than food. That does not make a diet trial pointless, but it does change what your vet is likely to prioritise and what time of year they will judge the result.' });
+    } else if (season === 'yearround') {
+      layers.push({ b: 'warm', l: 'PRIMARY', t: 'Year-round flare-ups with no seasonal pattern is one of the signals that shifts suspicion toward a food reaction rather than pollen. A properly run elimination diet trial is the way that gets settled.' });
+      asks.push('Would an elimination diet trial be reasonable here, given the year-round pattern?');
+    }
+  }
+
+  // --- SECONDARY ---
+  if (work === 'never' || work === 'unknown') {
+    layers.push({ b: 'hot', l: 'SECONDARY', t: 'Without a swab under the microscope, the treatment is a guess. Cytology is described in veterinary practice as the single most valuable diagnostic tool in otitis, because yeast and rod-shaped bacteria need different treatment and look identical from outside.' });
+    asks.push('Can you run ear cytology before we treat, so we know whether this is yeast, cocci or rods?');
+  } else if (work === 'first') {
+    layers.push({ b: 'warm', l: 'SECONDARY', t: 'Cytology at the first visit but not since is a common gap. A recurring ear often changes organism between episodes, so drops that worked last time can be the wrong drops this time \u2014 and rods in particular signal a harder infection.' });
+    asks.push('Can we repeat cytology at each episode rather than reusing the previous prescription?');
+  } else {
+    layers.push({ b: 'cool', l: 'SECONDARY', t: 'Cytology at each episode is exactly right and means the infection layer is being handled properly. That makes it more likely the gap is in the primary or perpetuating layers rather than the drugs.' });
+  }
+
+  // --- PREDISPOSING ---
+  if (anat === 'floppy') {
+    layers.push({ b: 'cool', l: 'PREDISPOSING', t: 'Floppy or heavily haired ears raise the risk by trapping warmth and moisture, but they cannot cause otitis on their own \u2014 plenty of spaniels never get an ear infection. Treat this as a contributing factor, not the answer.' });
+  } else if (anat === 'water') {
+    layers.push({ b: 'cool', l: 'PREDISPOSING', t: 'Frequent swimming or bathing leaves the canal damp, which favours overgrowth. Drying the ears after water is a reasonable habit \u2014 but ask your vet what to use, since over-cleaning irritates the canal and is itself a predisposing factor.' });
+  } else if (anat === 'both2') {
+    layers.push({ b: 'warm', l: 'PREDISPOSING', t: 'Floppy ears plus frequent water is a meaningful combination for trapping moisture. Still not a cause on its own \u2014 but it is the layer where a practical routine can genuinely reduce flare frequency once the primary cause is under control.' });
+  } else {
+    layers.push({ b: 'cool', l: 'PREDISPOSING', t: 'Upright ears and a dry lifestyle means anatomy and moisture are unlikely to be doing much here. That pushes the explanation further toward the primary layer.' });
+  }
+
+  // --- PERPETUATING ---
+  if (ep === 'many' || ep === '3') {
+    layers.push({ b: 'hot', l: 'PERPETUATING', t: 'After repeated episodes, the canal itself changes \u2014 thickened lining, narrowing, sometimes mineralisation \u2014 and these can become irreversible if otitis is inadequately treated. Middle ear involvement is also common in chronic cases and acts as a reservoir that reseeds the outer ear.' });
+    asks.push('Can you assess the canal for thickening or narrowing, and is there any suggestion of middle ear involvement?');
+    asks.push('At what point would you refer us to a veterinary dermatologist?');
+  } else {
+    layers.push({ b: 'cool', l: 'PERPETUATING', t: 'Too few episodes for major structural change to be likely yet. This is the layer you are trying to avoid reaching, and it is the reason for pushing on the primary cause now rather than in two years.' });
+  }
+
+  asks.push('Has the eardrum been checked, and is it intact? What can and cannot be used if it is not?');
+  asks.push('What is the recheck plan \u2014 how do we confirm this has actually cleared rather than just looks better?');
+
+  warns.push('Do not put anything into the ear without your vet confirming the eardrum is intact \u2014 including leftover drops from last time and over-the-counter cleaners. If the eardrum is perforated, some products can reach the middle ear and damage hearing.');
+
+  document.getElementById('eir-result-body').innerHTML =
+    '<div class="eir-headline"><h3>' + headline + '</h3><p>' + lead + '</p></div>' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin-bottom:4px;">Layer by layer for your ' + animal + '</div>' +
+    layers.map(function (x) {
+      return '<div class="eir-layer"><span class="eir-badge eir-' + x.b + '">' + x.l + '</span>' +
+        '<span class="eir-layer-text">' + x.t + '</span></div>';
+    }).join('') +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin:16px 0 8px;">Questions to take to your vet</div>' +
+    asks.map(function (a) { return '<div class="eir-ask"><span>\u2192</span><span>' + a + '</span></div>'; }).join('') +
+    '<div style="margin-top:12px;">' +
+      warns.map(function (w) { return '<div class="eir-warn"><span>\u26A0\uFE0F</span><span>' + w + '</span></div>'; }).join('') +
+    '</div>';
+
+  document.getElementById('eir-result').classList.add('show');
+  document.getElementById('eir-pdf-btn').style.display = 'block';
+  document.getElementById('eir-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
