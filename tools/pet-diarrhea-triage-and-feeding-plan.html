@@ -1,0 +1,474 @@
+---
+layout: tool
+title: Dog & Cat Diarrhea Triage — Vet Now, or Manage at Home?
+description: Work out how urgently your pet needs a vet, and what to actually feed. The old advice to fast a pet with diarrhea has been overturned for most cases — and for some pets it was never safe.
+permalink: /tools/pet-diarrhea-triage-and-feeding-plan.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog & Cat Diarrhea Triage and Feeding Plan",
+  "url": "https://petpawcalc.com/tools/pet-diarrhea-triage-and-feeding-plan.html",
+  "description": "A free triage tool for dogs and cats with diarrhea. Uses species, age, stool appearance, vomiting, energy level and duration to indicate urgency, and gives feeding guidance reflecting current veterinary thinking that withholding food delays recovery in most cases.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I fast my dog with diarrhea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Probably not, and this is guidance that has genuinely changed. VCA Animal Hospitals describes the position plainly: fasting pets with gastrointestinal upset for 24 to 48 hours used to be common practice on the belief that the gut needed rest, but it is now better understood that the gut needs nutrients while it is recovering and that withholding food can cause more damage and delay recovery. PetMD makes a similar point — if a dog has diarrhoea and is not vomiting, there is no need to withhold food. Some clinics still suggest a short fast of up to 12 hours for a healthy adult dog with mild uncomplicated diarrhoea, so opinions have not fully converged, but the direction of travel is clear."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which pets should never be fasted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cats, puppies, kittens, toy and small breeds, seniors, diabetics, and any pet with an existing health condition. For cats the risk is specific and serious: going without food puts them at risk of hepatic lipidosis, a potentially fatal liver condition. Puppies and toy breeds can become hypoglycaemic surprisingly quickly. If a pet in any of these groups will not eat, that is itself a reason to call a vet rather than something to wait out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is dog diarrhea an emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go now, not tomorrow, for: black tarry stool, diarrhoea that looks like raspberry jam, a large amount of blood, diarrhoea in a puppy or unvaccinated dog, diarrhoea with repeated vomiting, pale gums, weakness or collapse, a painful or bloated belly, or a known toxin or swallowed object. Black tarry stool is called melena and means digested blood from higher in the tract; veterinary sources treat it as an emergency without exception. Raspberry-jam diarrhoea suggests acute haemorrhagic diarrhoea syndrome, which most often affects small and toy breeds and can produce dangerous dehydration within hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can diarrhea last before I worry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a bright, alert adult dog with no blood and no vomiting, mild diarrhoea that is improving within 24 to 48 hours is often manageable at home. Beyond 48 hours without improvement, it needs investigating. The thresholds are much shorter for puppies, seniors and pets with existing conditions — veterinary guidance commonly puts those at 12 to 24 hours — because they dehydrate faster and have less reserve. Cats generally warrant an earlier call than adult dogs for the same reason plus the appetite issue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I give my dog Imodium or Pepto-Bismol?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not without veterinary approval. These medications can be harmful in pets, can mask a worsening problem, and are contraindicated in some situations — anti-diarrhoeals are a poor idea when an infection or toxin needs to be expelled. Some herding breeds, including Collies and Shelties, carry a genetic sensitivity that makes certain common human drugs dangerous at ordinary doses. Bismuth-containing products also turn stool black, which destroys your ability to spot melena. Ask before giving anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a bland diet actually mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plain, low-fat, easily digestible food in small frequent portions — commonly boiled skinless chicken breast or lean ground turkey with white rice, with no salt, oil or seasoning. It is a short-term measure rather than a complete diet, so it should not run for weeks without veterinary input. Your vet may instead recommend a prescription gastrointestinal diet, which is formulated to be nutritionally complete and is the better option if the problem is recurring or long-running. Reintroduce the normal food gradually over several days rather than switching back in one meal."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>💩 Diarrhea: Vet Now, or Manage at Home?</h1>
+    <p>Two questions matter and most articles only answer one. How urgent is this — and should you actually be feeding them? The old fasting advice has been overturned for most cases, and for some pets it was never safe in the first place.</p>
+  </div>
+
+  <div class="pdt-banner no-print">
+    <strong>Black tarry stool, raspberry-jam diarrhea, pale gums, collapse, or a puppy with diarrhea?</strong> Call a vet now — you do not need this tool to confirm that.
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="pdt-species">Species</label>
+      <select id="pdt-species">
+        <option value="dog" selected>Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-age">Age and health</label>
+      <select id="pdt-age">
+        <option value="adult" selected>Healthy adult</option>
+        <option value="young">Puppy or kitten under 6 months</option>
+        <option value="senior">Senior</option>
+        <option value="condition">Has a health condition (diabetes, kidney, IBD, etc.)</option>
+        <option value="toy">Toy or very small breed adult</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-stool">What does the stool look like?</label>
+      <select id="pdt-stool">
+        <option value="soft" selected>Soft or watery, normal brown</option>
+        <option value="mucus">Soft with mucus or jelly-like coating</option>
+        <option value="streaks">A few streaks of bright red blood</option>
+        <option value="bloody">A lot of blood, or raspberry-jam appearance</option>
+        <option value="black">Black, tarry or sticky</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-vomit">Is there vomiting too?</label>
+      <select id="pdt-vomit">
+        <option value="none" selected>No vomiting</option>
+        <option value="once">Vomited once or twice</option>
+        <option value="repeat">Repeated vomiting, or can't keep water down</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-energy">How are they in themselves?</label>
+      <select id="pdt-energy">
+        <option value="bright" selected>Bright and alert, still eating and drinking</option>
+        <option value="quiet">A bit quiet or off their food</option>
+        <option value="flat">Lethargic, weak, hiding, or not drinking</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-duration">How long has it been going on?</label>
+      <select id="pdt-duration">
+        <option value="today" selected>Started today</option>
+        <option value="24">About 24 hours</option>
+        <option value="48">2 days</option>
+        <option value="longer">More than 2 days, or it keeps returning</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pdt-vax">Vaccination status</label>
+      <select id="pdt-vax">
+        <option value="current" selected>Up to date</option>
+        <option value="not">Not up to date, or unknown</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="triageDiarrhea()">Check Urgency &amp; Feeding →</button>
+
+    <div class="result-box" id="pdt-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="pdt-date"></span>
+      </div>
+      <div id="pdt-result-body"></div>
+      <button class="pdf-btn" id="pdt-pdf-btn" onclick="doPrintPdt('pdt-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This indicates urgency and general feeding approach — it cannot diagnose, and it cannot rule an emergency out. Do not give anti-diarrhoeal medication such as loperamide or bismuth products without veterinary approval; they can be harmful, can mask deterioration, and bismuth turns stool black, which hides the one sign you most need to see. If your instinct says something is more wrong than this page suggests, phone a clinic.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Fasting Advice Has Been Overturned</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">"Withhold food for 24 hours" is still the most commonly repeated advice for a pet with diarrhoea, and it reflects thinking that has moved on.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">VCA Animal Hospitals puts it directly: fasting pets with gastrointestinal upset for 24 to 48 hours used to be common practice because the gut was thought to need rest, but it is now better understood — in human and veterinary medicine alike — that <strong>the gut needs nutrients while it is recovering, and withholding food can cause more damage and delay recovery.</strong> PetMD makes the practical version of the same point: if a dog has diarrhoea and is not vomiting, there is no need to withhold food.</p>
+    <div class="pdt-callout">
+      <strong>Being straight about the disagreement:</strong> this is not fully settled. Plenty of veterinary clinics still suggest a short fast of up to 12 hours for a healthy adult dog with mild, uncomplicated diarrhoea, and that is a defensible position. What has changed is the long fast, and the assumption that fasting is the default first move. If your own vet has told you to fast your specific pet, follow them — they know the case.
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Pets Who Should Never Be Fasted</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This part was never a matter of fashion. For some animals, going without food is actively dangerous:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Cats.</strong> Going without food puts cats at risk of hepatic lipidosis, a potentially fatal liver condition. A cat that will not eat is a reason to call a vet, not a situation to wait out.</li>
+      <li><strong>Puppies and kittens.</strong> Very little reserve and a real risk of dropping blood sugar. Diarrhoea in a young animal is a same-day call in its own right.</li>
+      <li><strong>Toy and small breeds.</strong> Same hypoglycaemia problem, at any age.</li>
+      <li><strong>Seniors, diabetics, and pets on medication or with a diagnosed condition.</strong> Skipping meals interacts with the condition and often with the drugs.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If a pet in any of these groups is refusing food on their own, that is a finding to report rather than a fast to manage.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What the Blood Is Telling You</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Where blood comes from changes how worried to be, and you can read that from the colour:</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Appearance</th><th>What it suggests</th><th>Urgency</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bright red streaks (haematochezia)</td><td>Bleeding low down — colon or rectum, often colitis or straining</td><td>Vet appointment; sooner if repeated or the pet is unwell</td></tr>
+          <tr><td>Large volume of blood, or raspberry-jam</td><td>Acute haemorrhagic diarrhoea syndrome (AHDS/HGE), most often small and toy breeds</td><td><strong>Emergency</strong> — dehydration and shock can develop within hours</td></tr>
+          <tr><td>Black, tarry, sticky (melena)</td><td>Digested blood from the stomach or small intestine — ulcers, toxins, clotting problems</td><td><strong>Emergency, always</strong></td></tr>
+          <tr><td>Mucus or jelly-like coating</td><td>Large bowel irritation; common with colitis, parasites and stress</td><td>Vet appointment, not usually an emergency alone</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">One caution: bismuth-containing stomach remedies turn stool black. If you have given one, you have removed your own ability to distinguish that from melena — which is a good reason not to give one.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Behaviour Is Not a Reliable Severity Gauge</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Dogs frequently look fine in the early stages of conditions like AHDS and pancreatitis. "He's still wagging" is genuinely reassuring for a mild upset and genuinely misleading when there is blood involved. The stool findings and the pet's age carry more weight than demeanour, which is why the tool above asks about both rather than just how they seem.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I fast my dog with diarrhea?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Probably not, and this is guidance that has genuinely changed. VCA Animal Hospitals describes the position plainly: fasting pets with gastrointestinal upset for 24 to 48 hours used to be common practice on the belief that the gut needed rest, but it is now better understood that the gut needs nutrients while it is recovering and that withholding food can cause more damage and delay recovery. PetMD makes a similar point — if a dog has diarrhoea and is not vomiting, there is no need to withhold food. Some clinics still suggest a short fast of up to 12 hours for a healthy adult dog with mild uncomplicated diarrhoea, so opinions have not fully converged, but the direction of travel is clear.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Which pets should never be fasted?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats, puppies, kittens, toy and small breeds, seniors, diabetics, and any pet with an existing health condition. For cats the risk is specific and serious: going without food puts them at risk of hepatic lipidosis, a potentially fatal liver condition. Puppies and toy breeds can become hypoglycaemic surprisingly quickly. If a pet in any of these groups will not eat, that is itself a reason to call a vet rather than something to wait out.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When is dog diarrhea an emergency?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Go now, not tomorrow, for: black tarry stool, diarrhoea that looks like raspberry jam, a large amount of blood, diarrhoea in a puppy or unvaccinated dog, diarrhoea with repeated vomiting, pale gums, weakness or collapse, a painful or bloated belly, or a known toxin or swallowed object. Black tarry stool is called melena and means digested blood from higher in the tract; veterinary sources treat it as an emergency without exception. Raspberry-jam diarrhoea suggests acute haemorrhagic diarrhoea syndrome, which most often affects small and toy breeds and can produce dangerous dehydration within hours.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long can diarrhea last before I worry?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">For a bright, alert adult dog with no blood and no vomiting, mild diarrhoea that is improving within 24 to 48 hours is often manageable at home. Beyond 48 hours without improvement, it needs investigating. The thresholds are much shorter for puppies, seniors and pets with existing conditions — veterinary guidance commonly puts those at 12 to 24 hours — because they dehydrate faster and have less reserve. Cats generally warrant an earlier call than adult dogs for the same reason plus the appetite issue.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I give my dog Imodium or Pepto-Bismol?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not without veterinary approval. These medications can be harmful in pets, can mask a worsening problem, and are contraindicated in some situations — anti-diarrhoeals are a poor idea when an infection or toxin needs to be expelled. Some herding breeds, including Collies and Shelties, carry a genetic sensitivity that makes certain common human drugs dangerous at ordinary doses. Bismuth-containing products also turn stool black, which destroys your ability to spot melena. Ask before giving anything.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What does a bland diet actually mean?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Plain, low-fat, easily digestible food in small frequent portions — commonly boiled skinless chicken breast or lean ground turkey with white rice, with no salt, oil or seasoning. It is a short-term measure rather than a complete diet, so it should not run for weeks without veterinary input. Your vet may instead recommend a prescription gastrointestinal diet, which is formulated to be nutritionally complete and is the better option if the problem is recurring or long-running. Reintroduce the normal food gradually over several days rather than switching back in one meal.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related</h3>
+    <p>
+      <a href="/blog/dog-cat-stool-chart-color-guide/">Stool Chart: What the Colour and Consistency Mean</a> —
+      <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a> —
+      <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a> —
+      <a href="/tools/cat-urinary-emergency-checker.html">Cat Urinary Emergency Checker</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+.pdt-banner {
+  background: #fdf2f2;
+  border: 2px solid #c0392b;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  color: #7b1c1c;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.pdt-callout {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--brown-mid);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+.pdt-verdict { border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
+.pdt-verdict h3 { margin: 0 0 8px; font-family: var(--font-display); font-size: 1.22rem; }
+.pdt-verdict p  { margin: 0; font-size: 0.92rem; line-height: 1.65; }
+.pdt-red   { background: #fdf2f2; border: 2px solid #c0392b; }
+.pdt-red h3   { color: #a32020; } .pdt-red p   { color: #7b1c1c; }
+.pdt-amber { background: #fef9e7; border: 2px solid #f39c12; }
+.pdt-amber h3 { color: #9a6b00; } .pdt-amber p { color: #7a5c00; }
+.pdt-green { background: #f2faf5; border: 2px solid #27ae60; }
+.pdt-green h3 { color: #1e7e45; } .pdt-green p { color: #1e6b3c; }
+.pdt-item {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: var(--cream);
+  border-left: 3px solid var(--orange);
+  color: var(--brown-mid);
+}
+.pdt-warn {
+  display: flex; gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: #fdf2f2;
+  border-left: 3px solid #e74c3c;
+  color: #7b1c1c;
+}
+</style>
+
+<script>
+function doPrintPdt(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+function triageDiarrhea() {
+  var sp = document.getElementById('pdt-species').value;
+  var age = document.getElementById('pdt-age').value;
+  var stool = document.getElementById('pdt-stool').value;
+  var vom = document.getElementById('pdt-vomit').value;
+  var en = document.getElementById('pdt-energy').value;
+  var dur = document.getElementById('pdt-duration').value;
+  var vax = document.getElementById('pdt-vax').value;
+
+  var animal = sp === 'cat' ? 'cat' : 'dog';
+  var fragile = (age !== 'adult');
+  var level = 1;   // 3 = emergency, 2 = same-day, 1 = home care with tripwires
+  var reasons = [];
+
+  // --- Emergency triggers ---
+  if (stool === 'black') {
+    level = 3;
+    reasons.push('Black, tarry stool is melena \u2014 digested blood from the stomach or small intestine. Veterinary sources treat this as an emergency without exception, whatever else your ' + animal + ' seems like.');
+  }
+  if (stool === 'bloody') {
+    level = 3;
+    reasons.push('A large volume of blood, or raspberry-jam diarrhoea, points toward acute haemorrhagic diarrhoea syndrome. It most often affects small and toy breeds and can cause dangerous dehydration and shock within hours.');
+  }
+  if (en === 'flat') {
+    level = 3;
+    reasons.push('Lethargy, weakness, hiding or not drinking alongside diarrhoea means fluid loss is winning. This is the point at which the situation stops being a gut upset and starts being a circulation problem.');
+  }
+  if (vom === 'repeat') {
+    level = 3;
+    reasons.push('Repeated vomiting with diarrhoea drains fluid from both ends and makes dehydration much faster. A ' + animal + ' that cannot keep water down cannot self-correct at home.');
+  }
+  if (age === 'young' && level < 3) {
+    level = 3;
+    reasons.push('Diarrhoea in a ' + (sp === 'cat' ? 'kitten' : 'puppy') + ' under six months is treated as urgent in its own right. They dehydrate quickly and have almost no reserve.');
+  }
+  if (vax === 'not' && sp === 'dog' && (age === 'young' || stool === 'bloody' || stool === 'streaks') && level < 3) {
+    level = 3;
+    reasons.push('An incompletely vaccinated dog with blood in the stool raises the possibility of parvovirus, which is life-threatening and needs treatment quickly.');
+  }
+
+  // --- Same-day triggers ---
+  if (level < 3) {
+    if (stool === 'streaks') {
+      level = 2;
+      reasons.push('Bright red streaks suggest bleeding low down \u2014 colon or rectum \u2014 which is commonly colitis, parasites or straining. Less alarming than melena, but blood in stool always warrants being looked at.');
+    }
+    if (fragile) {
+      level = 2;
+      reasons.push('For a ' + (age === 'senior' ? 'senior' : age === 'toy' ? 'toy or small-breed' : 'pet with an existing condition') + ', the safe window is shorter than for a healthy adult \u2014 veterinary guidance commonly puts it at 12 to 24 hours rather than 48.');
+    }
+    if (sp === 'cat' && (en === 'quiet' || dur === '48' || dur === 'longer')) {
+      level = 2;
+      reasons.push('Cats warrant an earlier call than adult dogs, partly because they hide illness well and partly because a cat that stops eating is at risk of hepatic lipidosis.');
+    }
+    if (dur === 'longer') {
+      level = 2;
+      reasons.push('Diarrhoea lasting beyond two days, or that keeps coming back, is no longer a simple upset. Recurring episodes in particular usually have a findable cause \u2014 parasites, diet, or an underlying condition.');
+    }
+    if (vom === 'once' && en === 'quiet') {
+      level = 2;
+      reasons.push('Vomiting plus being off-colour together shifts this from a one-end problem to a whole-gut one, which is worth a same-day look.');
+    }
+  }
+
+  if (level === 1) {
+    reasons.push('A bright, alert adult with soft stool, no blood and no vomiting is the situation most likely to settle on its own. That is a reason to manage carefully at home over the next day or two \u2014 not a reason to stop paying attention.');
+  }
+
+  var bands = {
+    3: { cls: 'pdt-red', t: '\uD83D\uDEA8 Emergency \u2014 call a vet now',
+         p: 'Phone the nearest clinic or emergency service straight away, describe the stool specifically, and go. Do not wait for the next episode to see whether it is better.' },
+    2: { cls: 'pdt-amber', t: '\u26A0\uFE0F Same-day veterinary appointment',
+         p: 'Book today rather than at the next convenient slot. If anything changes while you wait \u2014 blood appears, vomiting starts or repeats, or your ' + animal + ' goes quiet or stops drinking \u2014 switch to an emergency clinic.' },
+    1: { cls: 'pdt-green', t: 'Reasonable to manage at home \u2014 with tripwires',
+         p: 'Keep water available, feed as described below, and watch closely. Set yourself a clear point at which you stop watching and call \u2014 the list underneath is that point.' }
+  };
+  var band = bands[level];
+
+  // --- Feeding guidance: the part most pages get wrong ---
+  var feeding = [];
+  if (level === 3) {
+    feeding.push('Hold off on food until you have spoken to the vet \u2014 not as a fast, but because they may need an empty stomach for treatment or sedation. Ask when you call. Keep water available unless vomiting makes it worse.');
+  } else {
+    if (sp === 'cat') {
+      feeding.push('Do NOT fast your cat. Going without food puts cats at risk of hepatic lipidosis, a potentially fatal liver condition. Offer small, frequent portions of plain, low-fat food and tell your vet if she will not eat \u2014 that is a finding, not something to wait out.');
+    } else if (age === 'young' || age === 'toy' || age === 'senior' || age === 'condition') {
+      feeding.push('Do NOT fast this ' + animal + '. Puppies, toy breeds, seniors and pets with existing conditions can drop their blood sugar or destabilise quickly. Small frequent portions of plain, low-fat food, starting now.');
+    } else {
+      feeding.push('Keep feeding. The old advice to withhold food for 24 hours has been overturned for most cases \u2014 VCA describes it plainly: the gut needs nutrients while it is recovering, and withholding food can cause more damage and delay recovery. Some clinics still suggest up to 12 hours for a healthy adult with mild uncomplicated diarrhoea, so a short pause is defensible, but a long fast is not.');
+    }
+    feeding.push('Bland and low-fat, in small frequent meals: boiled skinless chicken breast or lean ground turkey with white rice, no salt, oil or seasoning. This is short-term \u2014 it is not nutritionally complete, so do not run it for weeks without asking your vet.');
+    feeding.push('Reintroduce the normal food gradually over several days once stools firm up. Switching back in one meal is a common way to end up back at the start.');
+    feeding.push('Fresh water available at all times. If drinking triggers vomiting, offer small amounts frequently rather than a full bowl, and mention it when you call.');
+  }
+
+  // --- Tripwires ---
+  var tripwires = [
+    'Black, tarry stool, or diarrhoea that looks like raspberry jam',
+    'A large amount of blood, or blood appearing for the first time',
+    'Repeated vomiting, or an inability to keep water down',
+    'Lethargy, weakness, collapse, or pale gums',
+    'A painful, hard or swollen belly',
+    'No improvement after ' + (fragile || sp === 'cat' ? '12 to 24 hours' : '48 hours')
+  ];
+
+  var warns = ['Do not give loperamide, bismuth products or any human anti-diarrhoeal without veterinary approval. They can be harmful, can mask deterioration, and some herding breeds are genetically sensitive to common human drugs. Bismuth also turns stool black \u2014 which removes your ability to spot melena.'];
+  if (sp === 'dog' && vax === 'not') {
+    warns.push('With vaccination not up to date, mention that when you phone. Parvovirus is highly contagious \u2014 clinics will usually want to bring you in a separate entrance rather than through the waiting room.');
+  }
+
+  document.getElementById('pdt-result-body').innerHTML =
+    '<div class="pdt-verdict ' + band.cls + '"><h3>' + band.t + '</h3><p>' + band.p + '</p></div>' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin-bottom:6px;">Why</div>' +
+    reasons.map(function (r) { return '<div class="pdt-item"><span>\u2022</span><span>' + r + '</span></div>'; }).join('') +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin:16px 0 6px;">What to feed</div>' +
+    feeding.map(function (f) { return '<div class="pdt-item"><span>\uD83C\uDF7D\uFE0F</span><span>' + f + '</span></div>'; }).join('') +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin:16px 0 6px;">' +
+      (level === 3 ? 'Also tell the vet about' : 'Stop watching and call if any of these appear') + '</div>' +
+    tripwires.map(function (t) { return '<div class="pdt-item"><span>\u2192</span><span>' + t + '</span></div>'; }).join('') +
+    '<div style="margin-top:12px;">' +
+      warns.map(function (w) { return '<div class="pdt-warn"><span>\u26A0\uFE0F</span><span>' + w + '</span></div>'; }).join('') +
+    '</div>';
+
+  document.getElementById('pdt-result').classList.add('show');
+  document.getElementById('pdt-pdf-btn').style.display = 'block';
+  document.getElementById('pdt-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
