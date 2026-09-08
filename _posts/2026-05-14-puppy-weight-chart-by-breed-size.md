@@ -38,7 +38,7 @@ Beyond just timing, the risks associated with abnormal growth differ by size. Fo
 
 ## Puppy Weight Chart by Breed Size
 
-This puppy growth chart by breed size gives approximate ranges based on typical growth curves. Individual dogs vary, so use it as a guide rather than a strict standard. If you were looking for a dog weight chart by age rather than by breed, read down any single column — the age rows are the same throughout, and only the expected weights differ by size group.
+This puppy growth chart by breed size gives approximate ranges based on typical growth curves. It doubles as a dog weight chart puppy owners can use throughout the first year, and as a dog age weight reference — read down a column for one size group, or across a row to compare sizes at the same age. Individual dogs vary, so use it as a guide rather than a strict standard. If you were looking for a dog weight chart by age rather than by breed, read down any single column — the age rows are the same throughout, and only the expected weights differ by size group.
 
 ### Toy Breeds (Adult weight under 12 lbs)
 *Examples: Chihuahua, Yorkshire Terrier, Pomeranian*
@@ -97,13 +97,27 @@ This puppy growth chart by breed size gives approximate ranges based on typical 
 | 12 months | 75–130 lbs |
 | 24 months | 100–180 lbs (near adult) |
 
+## The Two Ages People Look Up Most
+
+Almost every search for a puppy weight chart is really one of two questions, so here they are pulled out of the tables above.
+
+**How much should a puppy weigh at 8 weeks?** It depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs, small 3–5 lbs, medium 5–10 lbs, large 8–16 lbs. Eight weeks is when most puppies go home, so this is the figure people check on day one.
+
+**How much should a 12 week old puppy weigh?** Toy 1.5–3.5 lbs, small 5–8 lbs, medium 8–16 lbs, large 14–26 lbs. A 12 week old puppy has usually doubled or more since coming home.
+
+**Puppy birth weight** varies far more than either of these and is a poor predictor on its own — a large-breed puppy is typically born around 1 lb, a toy-breed puppy at only a few ounces. What matters in the first fortnight is not the starting number but that it climbs steadily every day; a newborn that is not gaining needs a vet the same day.
+
+**Puppy weight chart large breed:** for a large breed specifically, use the large and giant tables above rather than scaling a medium-breed curve up. Large and giant breeds grow for considerably longer — 18 months rather than 12 — and pushing weight on early is actively harmful to developing joints. A large-breed puppy that looks slightly lean at six months is usually where it should be.
+
+**Is there a puppy height chart?** Not a useful one, and this is worth saying plainly. Height at the withers varies so much within a breed, and is so awkward to measure on a wriggling puppy, that veterinary practice tracks weight instead. If you want a growth measure, weigh — it is more repeatable and it is what your vet will ask for.
+
 ## How to Estimate Your Puppy's Adult Weight
 
 A rough formula that works for most breeds:
 
 **Adult weight ≈ (current weight ÷ current age in weeks) × maturity age in weeks**
 
-That formula is how to calculate dog weight at maturity from where your puppy is today. It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight.
+That formula is how to calculate dog weight at maturity from where your puppy is today, and it is what a puppy weight calculator is doing behind the scenes. Our [Dog Weight Calculator](/tools/dog-weight-calculator.html) runs it for you against breed-size curves, which handles the large-breed timeline better than the raw formula does. It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight.
 
 Maturity ages by size:
 - Toy: 32 weeks
