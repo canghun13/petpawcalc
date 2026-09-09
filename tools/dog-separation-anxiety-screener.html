@@ -1,0 +1,475 @@
+---
+layout: tool
+title: Dog Separation Anxiety Screener — Is It Really Separation Anxiety?
+description: Most dogs labelled with separation anxiety have something else — boredom, confinement distress, isolation distress or a medical problem. Work out which, then get a realistic starting plan if it is the real thing.
+permalink: /tools/dog-separation-anxiety-screener.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Separation Anxiety Screener",
+  "url": "https://petpawcalc.com/tools/dog-separation-anxiety-screener.html",
+  "description": "A free two-stage screener that distinguishes true separation anxiety from its common mimics — boredom, confinement distress, isolation distress, incomplete house training and medical causes — and then gives a realistic starting point for departure training, including the absence-suspension requirement that determines whether the protocol works.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I tell separation anxiety from boredom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Timing and context. True separation anxiety usually shows itself within the first 10 to 30 minutes of you leaving — pacing, panting, drooling, howling, scratching at exits. A bored dog typically sleeps for the first stretch, wakes up later, wanders, and then dismantles something out of sheer lack of anything to do. The other test is presence: boredom-driven chewing happens whether or not you are home, so a dog who destroys the sofa while you are in the next room is under-stimulated rather than panicking. Dogs with genuine separation anxiety are usually calm when you are there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is confinement anxiety and how is it different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Confinement anxiety, also called barrier frustration, is panic about being shut in a crate or small room — and the giveaway is that it happens whether or not a person is home. Veterinary behaviour sources describe the first step in telling the two apart as filming the dog home alone outside the crate, loose or confined to part of the house. It matters because the treatment differs, and because crating a dog with confinement distress can lead to real injury: dogs break teeth and cut their mouths trying to escape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I crate a dog with separation anxiety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no, and this surprises people because crating is the usual first response to destruction. Veterinary behaviourists report that most separation anxiety patients do not improve in a crate and often get worse, because confinement distress frequently travels with separation anxiety. The reasoning behind crating also falls apart under a proper protocol: destructive behaviour is the outward expression of panic, and a protocol that keeps the dog under its anxiety threshold never reaches the level where destruction happens. Some dogs do settle better in a crate, but that has to be established from video rather than assumed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my dog's separation anxiety training keep failing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost always because absences above threshold are continuing alongside the training. Practising two-minute departures three times a week and then leaving for eight hours on the days in between is not progress — each full panic episode undoes the work. This is why suspending absences is the central requirement of the leading protocols, and it is also the part owners most often skip. The other common failure is confusing desensitisation with flooding: leaving the dog alone and waiting for them to get used to it is not desensitisation, and pushing through the crying tends to make things worse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does separation anxiety treatment take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Months, typically, and starting durations are measured in seconds rather than minutes. Trainers who specialise in this describe reaching a one-minute absence as a milestone worth celebrating, which tells you a great deal about the pace. Be sceptical of anything promising to fix it in a fixed short window — the protocol works at the dog's pace, and the primary data point is the dog's emotional state rather than the clock. Progress is not linear either; going backwards a step when a session goes badly is part of the method, not a failure of it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a camera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — it is the single most useful thing you can do, and it comes before any training. You cannot treat what you cannot see. Video tells you when distress starts, whether the dog settles after a few minutes or stays distressed the whole time, and whether the behaviour matches separation anxiety or one of the mimics. It also gives you your starting threshold, which is the number the entire plan is built on. An old phone propped up facing the door is enough."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🚪 Is It Really Separation Anxiety?</h1>
+    <p>Boredom, confinement distress, isolation distress, incomplete house training and several medical problems all look like separation anxiety from the wreckage. They need different plans. This sorts that out first, then gives a realistic starting point if it is the real thing.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="sas-timing">When does the trouble start after you leave?</label>
+      <select id="sas-timing">
+        <option value="early" selected>Within the first 10–30 minutes, often before I've even gone</option>
+        <option value="late">Later — they settle or sleep first, then start</option>
+        <option value="unknown">I don't know — I've never watched or filmed it</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-presence">Does any of it happen while you're home?</label>
+      <select id="sas-presence">
+        <option value="never" selected>No — they're settled when I'm here</option>
+        <option value="sometimes">Yes — chewing or destruction happens while I'm in another room too</option>
+        <option value="confined">Only when shut in a crate or room, even if I'm home</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-alone">If someone else stays with them — a friend, a sitter, another household member — are they fine?</label>
+      <select id="sas-alone">
+        <option value="fine" selected>Fine with anyone, as long as somebody is there</option>
+        <option value="specific">Only fine if one specific person is there</option>
+        <option value="notried">Haven't tried it</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-signs">What are the main signs? (choose the most prominent)</label>
+      <select id="sas-signs">
+        <option value="panic" selected>Panting, drooling, pacing, trembling, can't settle</option>
+        <option value="exits">Destruction focused on doors, windows, crate or exits</option>
+        <option value="vocal">Constant barking or howling</option>
+        <option value="soiling">Urinating or defecating indoors</option>
+        <option value="random">Destruction of random items — bins, cushions, shoes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-soiling">If there's indoor soiling, when does it happen?</label>
+      <select id="sas-soiling">
+        <option value="na" selected>No indoor soiling</option>
+        <option value="departures">Only during absences</option>
+        <option value="varied">At other times too, not just when I'm out</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-vet">Has a vet examined them for this recently?</label>
+      <select id="sas-vet">
+        <option value="no" selected>No</option>
+        <option value="yes">Yes — medical causes were ruled out</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sas-threshold">How long can they currently be alone before distress starts? (from video, if you have it)</label>
+      <select id="sas-threshold">
+        <option value="unknown" selected>I don't know</option>
+        <option value="0">Distressed before I even get out the door</option>
+        <option value="sec">A few seconds to a minute</option>
+        <option value="min">A few minutes</option>
+        <option value="longer">15 minutes or more</option>
+      </select>
+    </div>
+
+    <button class="btn-calculate" onclick="screenSeparation()">Screen &amp; Get a Starting Plan →</button>
+
+    <div class="result-box" id="sas-result">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="sas-date"></span>
+      </div>
+      <div id="sas-result-body"></div>
+      <button class="pdf-btn" id="sas-pdf-btn" onclick="doPrintSas('sas-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This is a screening aid, not a diagnosis. Separation anxiety is diagnosed by a veterinarian or qualified behaviour professional from history and video, not from damage. Medical problems including urinary tract disease, gastrointestinal disease, pain and cognitive dysfunction can all mimic it, so a veterinary examination comes first. For moderate or severe cases, work with a veterinary behaviourist or a trainer who specialises in separation anxiety — medication is a legitimate part of treatment for many dogs and that is a veterinary decision.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Great Imitator</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Coming home to a wrecked room and concluding "separation anxiety" is understandable and often wrong. Several different problems produce similar wreckage and need genuinely different plans, so starting a months-long anxiety protocol for a dog who is simply under-exercised wastes everyone's time.</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>What it is</th><th>How it presents</th><th>The distinguishing question</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Separation anxiety</strong></td><td>Panic within the first 10–30 minutes; panting, drooling, pacing, exit-focused destruction</td><td>Does it start almost immediately, and only when a particular person leaves?</td></tr>
+          <tr><td><strong>Isolation distress</strong></td><td>Same picture, but any company solves it</td><td>Is the dog fine if <em>anyone</em> stays with them?</td></tr>
+          <tr><td><strong>Confinement distress</strong></td><td>Panic about the crate or closed room specifically</td><td>Does it happen even when you are home?</td></tr>
+          <tr><td><strong>Boredom / under-stimulation</strong></td><td>Settles first, wakes later, then destroys random items</td><td>Does chewing also happen while you are in the next room?</td></tr>
+          <tr><td><strong>Incomplete house training</strong></td><td>Accidents in varied circumstances</td><td>Does soiling happen when you are home too?</td></tr>
+          <tr><td><strong>Medical</strong></td><td>Soiling, restlessness, panting, night waking</td><td>Has a vet examined them?</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px; margin-top: 16px;">One framing worth discarding entirely: dogs do not do this out of spite or revenge. Destruction during absences is an emotional or environmental problem, and treating it as disobedience leads directly to punishment, which the Humane Society and every behaviour source agree makes anxiety worse rather than better.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Film It Before You Train Anything</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">You cannot treat what you cannot see, and almost every mistake in this area traces back to guessing. An old phone on a shelf pointing at the door is enough. What the video gives you:</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>When distress actually starts.</strong> This is the single most useful discriminator between anxiety and boredom.</li>
+      <li><strong>Whether they settle.</strong> A dog who is upset for two minutes and then sleeps is in a very different situation from one who paces for four hours.</li>
+      <li><strong>Your starting threshold.</strong> The number the entire training plan is built on — and it is frequently far shorter than owners assume.</li>
+      <li><strong>Whether the crate is the problem.</strong> Veterinary behaviour guidance is to film the dog alone <em>outside</em> the crate as the first step in separating confinement distress from separation anxiety.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Some dogs show almost no visible damage and are still suffering badly — panting, trembling, refusing food, pacing without pause. Those dogs are only found on camera.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why the Crate Usually Isn't the Answer</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Crating is the standard first response to destruction, and veterinary behaviourists report that most separation anxiety patients do not improve in a crate — many get worse, because confinement distress frequently accompanies separation anxiety. Dogs in that state pant, salivate, howl, soil and can injure themselves seriously trying to escape, including breaking teeth and cutting their mouths. There is also a logical problem with the usual justification: destruction is the outward expression of panic, and a protocol that keeps the dog below its anxiety threshold never reaches the level where destruction occurs, so the thing the crate was protecting against does not arise. Some individual dogs genuinely do settle better in a crate — but that should be established from video, not assumed.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Requirement Everyone Skips</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If there is one thing that determines whether this works, it is <strong>suspending absences</strong>: not leaving the dog alone for longer than they can currently handle, for the duration of the training. It is the central tenet of the leading protocols and, by their authors' own account, the most controversial and most commonly abandoned part.</p>
+    <div class="sas-callout">
+      <strong>The reason is arithmetic, not dogma.</strong> Practising under-threshold departures three times a week and leaving for eight hours on the days in between is not slow progress — it is a treadmill. Every full panic episode refills the bucket you have been emptying. The training and the management have to run together or neither works.
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px; margin-top: 16px;">It is a genuinely big ask, and pretending otherwise helps nobody. It is also temporary, and it does not require <em>you</em> personally to be there — a housemate, a neighbour, a sitter, daycare or taking the dog with you all count. Our <a href="/checklists/separation-anxiety-training-setup-checklist.html">Separation Anxiety Training Setup Checklist</a> works through making it practical.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The related trap is confusing desensitisation with flooding. Leaving a dog alone and waiting for them to get used to it is not desensitisation — it is exposure above threshold, and pushing through the crying tends to make the fear worse rather than better.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How Long This Actually Takes</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Months, usually. Starting durations are measured in seconds — specialists describe starting at whatever the dog can handle without stress, "even if that is literally ten seconds", and treat reaching a one-minute absence as a milestone worth celebrating. That should calibrate your expectations, and it should also make you sceptical of anything advertising a fix in a fixed short window. The pace is set by the dog's emotional state, not by a schedule, and going backwards a step after a bad session is part of the method rather than a failure of it.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I tell separation anxiety from boredom?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Timing and context. True separation anxiety usually shows itself within the first 10 to 30 minutes of you leaving — pacing, panting, drooling, howling, scratching at exits. A bored dog typically sleeps for the first stretch, wakes up later, wanders, and then dismantles something out of sheer lack of anything to do. The other test is presence: boredom-driven chewing happens whether or not you are home, so a dog who destroys the sofa while you are in the next room is under-stimulated rather than panicking. Dogs with genuine separation anxiety are usually calm when you are there.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is confinement anxiety and how is it different?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Confinement anxiety, also called barrier frustration, is panic about being shut in a crate or small room — and the giveaway is that it happens whether or not a person is home. Veterinary behaviour sources describe the first step in telling the two apart as filming the dog home alone outside the crate, loose or confined to part of the house. It matters because the treatment differs, and because crating a dog with confinement distress can lead to real injury: dogs break teeth and cut their mouths trying to escape.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I crate a dog with separation anxiety?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Generally no, and this surprises people because crating is the usual first response to destruction. Veterinary behaviourists report that most separation anxiety patients do not improve in a crate and often get worse, because confinement distress frequently travels with separation anxiety. The reasoning behind crating also falls apart under a proper protocol: destructive behaviour is the outward expression of panic, and a protocol that keeps the dog under its anxiety threshold never reaches the level where destruction happens. Some dogs do settle better in a crate, but that has to be established from video rather than assumed.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my dog's separation anxiety training keep failing?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Almost always because absences above threshold are continuing alongside the training. Practising two-minute departures three times a week and then leaving for eight hours on the days in between is not progress — each full panic episode undoes the work. This is why suspending absences is the central requirement of the leading protocols, and it is also the part owners most often skip. The other common failure is confusing desensitisation with flooding: leaving the dog alone and waiting for them to get used to it is not desensitisation, and pushing through the crying tends to make things worse.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does separation anxiety treatment take?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Months, typically, and starting durations are measured in seconds rather than minutes. Trainers who specialise in this describe reaching a one-minute absence as a milestone worth celebrating, which tells you a great deal about the pace. Be sceptical of anything promising to fix it in a fixed short window — the protocol works at the dog's pace, and the primary data point is the dog's emotional state rather than the clock. Progress is not linear either; going backwards a step when a session goes badly is part of the method, not a failure of it.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do I need a camera?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — it is the single most useful thing you can do, and it comes before any training. You cannot treat what you cannot see. Video tells you when distress starts, whether the dog settles after a few minutes or stays distressed the whole time, and whether the behaviour matches separation anxiety or one of the mimics. It also gives you your starting threshold, which is the number the entire plan is built on. An old phone propped up facing the door is enough.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related</h3>
+    <p>
+      <a href="/checklists/separation-anxiety-training-setup-checklist.html">Separation Anxiety Training Setup Checklist</a> —
+      <a href="/tools/dog-car-anxiety-desensitization-planner.html">Dog Car Anxiety Desensitization Planner</a> —
+      <a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a> —
+      <a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .form-group { display: none !important; }
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box, .sas-step { page-break-inside: avoid; }
+}
+.sas-callout {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--brown-mid);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.sas-verdict { border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
+.sas-verdict h3 { margin: 0 0 8px; font-family: var(--font-display); font-size: 1.2rem; color: var(--brown); }
+.sas-verdict p  { margin: 0; font-size: 0.92rem; line-height: 1.65; color: var(--brown-mid); }
+.sas-likely  { background: var(--cream-dark); border-left: 4px solid var(--orange); }
+.sas-other   { background: #f0f5fb; border-left: 4px solid #4a7fb5; }
+.sas-vet     { background: #fef9e7; border-left: 4px solid #f39c12; }
+.sas-item {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: var(--cream);
+  border-left: 3px solid var(--orange);
+  color: var(--brown-mid);
+}
+.sas-warn {
+  display: flex; gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  background: #fdf2f2;
+  border-left: 3px solid #e74c3c;
+  color: #7b1c1c;
+}
+.sas-step {
+  display: flex; gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.sas-step:last-child { border-bottom: none; }
+.sas-num {
+  flex-shrink: 0; width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--orange); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.82rem; font-weight: 700;
+}
+.sas-step-t { font-weight: 700; color: var(--brown); font-size: 0.92rem; margin-bottom: 3px; }
+.sas-step-d { font-size: 0.87rem; color: var(--brown-mid); line-height: 1.6; }
+</style>
+
+<script>
+function doPrintSas(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  window.print();
+}
+</script>
+
+<script>
+function screenSeparation() {
+  var timing = document.getElementById('sas-timing').value;
+  var presence = document.getElementById('sas-presence').value;
+  var alone = document.getElementById('sas-alone').value;
+  var signs = document.getElementById('sas-signs').value;
+  var soiling = document.getElementById('sas-soiling').value;
+  var vet = document.getElementById('sas-vet').value;
+  var thr = document.getElementById('sas-threshold').value;
+
+  var cls, title, lead;
+  var notes = [], warns = [], steps = [];
+  var showPlan = false;
+
+  // --- Stage 1: which problem is this? Mimics are checked before SA. ---
+  if (presence === 'confined') {
+    cls = 'sas-other';
+    title = 'This looks more like confinement distress than separation anxiety';
+    lead = 'Panic that happens when your dog is shut in a crate or room even while you are at home points to confinement distress, also called barrier frustration, rather than to separation anxiety. The two need different plans, and treating one as the other wastes months.';
+    notes.push('Veterinary behaviour guidance is to film your dog home alone <em>outside</em> the crate \u2014 loose, or confined to part of the house \u2014 as the first step in telling these apart. If they are calm loose and panic in the crate, you have your answer.');
+    warns.push('Stop crating in the meantime. Dogs with confinement distress injure themselves trying to escape \u2014 broken teeth and cut mouths are common \u2014 and every episode makes the association worse.');
+    notes.push('The two can also coexist. Filming alone-and-loose is what separates \u201conly the crate\u201d from \u201cboth\u201d, and that distinction changes the plan.');
+  } else if (presence === 'sometimes' || (timing === 'late' && signs === 'random')) {
+    cls = 'sas-other';
+    title = 'This looks more like boredom or under-stimulation';
+    lead = 'Destruction that also happens while you are home, or that starts only after your dog has settled and slept for a while, generally points to under-stimulation rather than panic. That is good news \u2014 it is a far easier problem to fix, and it does not need a months-long anxiety protocol.';
+    notes.push('The timing test is the useful one: a panicking dog is usually in trouble within the first 10\u201330 minutes. A bored dog sleeps first, wakes up, wanders, and then finds a job you did not assign.');
+    notes.push('Work on it from the enrichment side \u2014 a proper walk and a short training session before you leave, food puzzles and chew items for while you are out, and something to look at. Under-exercised dogs find their own entertainment.');
+    notes.push('Film it anyway before concluding. If the video shows panting, drooling, pacing and exit-focused scratching in the first few minutes, come back and re-run this screen \u2014 the two can look identical from the damage alone.');
+  } else if (soiling === 'varied') {
+    cls = 'sas-vet';
+    title = 'Rule out house training and medical causes first';
+    lead = 'Indoor soiling that also happens when you are at home does not fit separation anxiety, where the signs appear specifically around departures. Incomplete house training, territorial marking, and several medical problems all produce this pattern.';
+    notes.push('Medical causes worth excluding include urinary tract disease, gastrointestinal disease, incontinence and \u2014 in older dogs \u2014 cognitive dysfunction. Your vet may want a urinalysis and bloodwork depending on age and signs.');
+    notes.push('Territorial marking looks different again: small amounts on vertical surfaces, unrelated to whether you are in or out.');
+    notes.push('Once medical causes are excluded and the pattern is genuinely departure-only, come back and re-run this screen.');
+  } else if (timing === 'unknown' || thr === 'unknown') {
+    cls = 'sas-vet';
+    title = 'Film it before you decide anything';
+    lead = 'You do not yet have the one piece of information that decides everything else. Without video you cannot tell separation anxiety from boredom or confinement distress, and you cannot set a starting threshold \u2014 which means any training plan would be guesswork.';
+    notes.push('An old phone on a shelf pointing at the door is enough. Record a normal departure, watch it back, and note the exact minute distress begins and whether they settle.');
+    notes.push('Watch for the quiet cases too. Some dogs destroy nothing and still suffer badly \u2014 panting, trembling, refusing food, pacing without pause. Those are only found on camera.');
+    notes.push('Then come back with two answers: when the trouble starts, and how long they lasted before it did.');
+  } else if (alone === 'fine') {
+    cls = 'sas-likely';
+    title = 'This fits isolation distress \u2014 treated much like separation anxiety';
+    lead = 'Your dog is fine as long as somebody is present, regardless of who. That is usually described as isolation distress rather than separation anxiety proper, which is attachment to one specific person. The practical difference is mostly good news: anyone can hold the fort while you train.';
+    showPlan = true;
+    notes.push('Because any company works, suspending absences is considerably easier for you than for households where only one person will do. Housemates, neighbours, sitters and daycare all count.');
+  } else {
+    cls = 'sas-likely';
+    title = 'This is consistent with separation anxiety';
+    lead = 'Distress starting soon after you leave, absent when you are home, is the pattern separation anxiety produces. That is a screening impression rather than a diagnosis \u2014 it needs confirming with video and a vet \u2014 but it is enough to start planning around.';
+    showPlan = true;
+    if (alone === 'specific') {
+      notes.push('Being settled only when one particular person is present fits separation anxiety in the strict sense \u2014 attachment to a specific figure rather than a general problem with being alone. It also makes suspending absences harder, since not just anyone can cover. Plan the logistics before you start rather than discovering the problem in week two.');
+    }
+    if (alone === 'notried') {
+      notes.push('Worth testing: have someone else stay with your dog while you go out. If they are fine with any company, this is isolation distress rather than separation anxiety proper \u2014 same training, much easier logistics.');
+    }
+  }
+
+  if (vet === 'no') {
+    warns.push('A veterinary examination comes first regardless of what this screen says. Pain, gastrointestinal disease, urinary disease, hormonal problems and cognitive dysfunction all mimic anxiety, and medication is a legitimate part of treatment for many dogs \u2014 which is a veterinary decision, not a training one.');
+  }
+
+  // --- Stage 2: the plan, only when the screen is SA-consistent ---
+  if (showPlan) {
+    var start, startNote;
+    if (thr === '0') {
+      start = 'Pre-departure cues, not the door';
+      startNote = 'If distress begins before you are out the door, the starting point is not absence at all \u2014 it is the routine that predicts it. Pick up the keys and sit back down. Put a coat on and take it off. Repeat until those cues stop meaning anything, then work up to the door.';
+    } else if (thr === 'sec') {
+      start = 'Seconds \u2014 start below what they can already handle';
+      startNote = 'Start shorter than their current limit, not at it. If they cope with 40 seconds, work at 20\u201330 and build. This feels absurdly slow and it is the correct pace.';
+    } else if (thr === 'min') {
+      start = 'A minute or two, staying under the limit';
+      startNote = 'Work at roughly half of what they can currently manage and build from there. Vary durations rather than climbing in a straight line \u2014 a shorter rep after a longer one keeps the whole thing under threshold.';
+    } else {
+      start = '15 minutes is a workable starting base';
+      startNote = 'A dog who is genuinely fine for 15 minutes is in a much better position than most. Build from just under that, and be careful not to jump ahead because progress feels easy \u2014 the bar for a bad rep is the same as for any other dog.';
+    }
+
+    steps = [
+      { t: 'Get the video baseline',
+        d: 'Before anything else. Note the exact point distress starts \u2014 that number is your threshold and every session is built from it.' },
+      { t: 'Sort out absence coverage first, then start training',
+        d: 'Suspending absences is what makes the rest work. Map out who covers which hours \u2014 housemates, neighbours, sitters, daycare, working from home, taking the dog along \u2014 before day one, not after the first failed week.' },
+      { t: 'Starting duration: ' + start,
+        d: startNote },
+      { t: 'Watch the dog, not the clock',
+        d: 'The dog\u2019s emotional state is the data point. If a rep goes badly, the next one gets shorter. Going backwards is part of the method, not evidence it is failing.' },
+      { t: 'Keep sessions short and frequent',
+        d: 'Several short reps beat one long one. Vary the durations so your dog cannot predict that each absence will be longer than the last.' },
+      { t: 'Get help if it is severe or stalls',
+        d: 'A veterinary behaviourist or a trainer who specialises in separation anxiety is worth the money for moderate to severe cases, and medication helps many dogs get to a point where training can work at all.' }
+    ];
+
+    warns.push('Do not punish any of it \u2014 the barking, the mess, the destruction. It is panic, not disobedience, and punishment reliably makes anxiety worse. Dogs do not do this out of spite.');
+    warns.push('Do not use \u201cjust leave them to get used to it\u201d as a method. That is flooding rather than desensitisation, and pushing through the crying tends to deepen the fear.');
+    notes.push('Expect months rather than weeks. Specialists treat a one-minute absence as a milestone worth celebrating, which is the honest calibration \u2014 and a reason to be sceptical of anything promising a fix on a fixed short timetable.');
+  }
+
+  document.getElementById('sas-result-body').innerHTML =
+    '<div class="sas-verdict ' + cls + '"><h3>' + title + '</h3><p>' + lead + '</p></div>' +
+    (steps.length
+      ? '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin-bottom:6px;">Your starting plan</div>' +
+        steps.map(function (s, i) {
+          return '<div class="sas-step"><div class="sas-num">' + (i + 1) + '</div>' +
+            '<div><div class="sas-step-t">' + s.t + '</div><div class="sas-step-d">' + s.d + '</div></div></div>';
+        }).join('') + '<div style="height:14px;"></div>'
+      : '') +
+    (notes.length
+      ? '<div style="font-weight:700; color:var(--brown); font-size:0.92rem; margin-bottom:6px;">Worth knowing</div>' +
+        notes.map(function (n) { return '<div class="sas-item"><span>\u2022</span><span>' + n + '</span></div>'; }).join('')
+      : '') +
+    (warns.length
+      ? '<div style="margin-top:12px;">' +
+        warns.map(function (w) { return '<div class="sas-warn"><span>\u26A0\uFE0F</span><span>' + w + '</span></div>'; }).join('') +
+        '</div>'
+      : '');
+
+  document.getElementById('sas-result').classList.add('show');
+  document.getElementById('sas-pdf-btn').style.display = 'block';
+  document.getElementById('sas-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
