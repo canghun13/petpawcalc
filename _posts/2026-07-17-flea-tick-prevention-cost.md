@@ -21,6 +21,8 @@ faqs:
     a: "The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use."
   - q: "How much is flea and tick prevention for dogs?"
     a: "How much is flea and tick prevention for dogs specifically? Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. If you're asking how much is flea prevention for dogs without tick coverage, flea-only products are rare in the US market; nearly all modern products bundle flea and tick together at the same price point."
+  - q: "What does an annual tick prevention plan cost?"
+    a: "The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price \u2014 roughly $180\u2013$300 a year for a mid-sized dog on a monthly product, or about $85\u2013$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option."
   - q: "What is the average cost of flea and tick prevention for dogs?"
     a: "The average cost of flea and tick prevention for dogs works out to roughly $180–$300 per year for a mid-sized dog on a mainstream monthly product, or about $15–$25 per month. Collars pull the average down to around $85–$110 per year; combo products that also cover heartworm push it up toward $265–$360. Weight is the single biggest variable — the same product can cost 50% more for a large dog than a small one."
   - q: "How much does it cost to get rid of fleas?"
@@ -148,6 +150,9 @@ The risk isn't guaranteed but it compounds — a single flea bite can lead to a 
 
 **How much is flea and tick prevention for dogs?**
 How much is flea and tick prevention for dogs specifically? Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. If you're asking how much is flea prevention for dogs without tick coverage, flea-only products are rare in the US market; nearly all modern products bundle flea and tick together at the same price point.
+
+**What does an annual tick prevention plan cost?**
+The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price — roughly $180–$300 a year for a mid-sized dog on a monthly product, or about $85–$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option.
 
 **What is the average cost of flea and tick prevention for dogs?**
 The average cost of flea and tick prevention for dogs works out to roughly $180–$300 per year for a mid-sized dog on a mainstream monthly product, or about $15–$25 per month. Collars pull the average down to around $85–$110 per year; combo products that also cover heartworm push it up toward $265–$360. Weight is the single biggest variable — the same product can cost 50% more for a large dog than a small one.

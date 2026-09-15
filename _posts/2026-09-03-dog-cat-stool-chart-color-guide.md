@@ -25,7 +25,7 @@ faqs:
 
 Stool is the most information-dense thing your pet produces, and the only diagnostic test you get to run daily for free. The trouble with most poop charts is that they tell you what you are looking at and stop there — which leaves you with a label and no idea whether to worry.
 
-This one is organised around what to do.
+This one is organised around what to do. Read it as an unhealthy dog poop chart — the entries that matter are the ones that change your next action, and they are marked as such.
 
 ## The Consistency Scale, 1 to 7
 

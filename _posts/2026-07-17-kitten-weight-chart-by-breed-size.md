@@ -115,7 +115,7 @@ People ask this in a lot of formats, and they all resolve to the chart above:
 
 **With numerals rather than words.** How much should a 3 month old kitten weigh? 2.5–3.5 lbs. How much should a 4 month old kitten weigh? 3.5–4.5 lbs. How much should a 6 month old kitten weigh? 5–6.5 lbs. Same rows as the spelled-out versions above.
 
-**Written as a noun.** A 3 month old kitten weight of 2.5–3.5 lbs, a 4 month old kitten weight of 3.5–4.5 lbs, a 5 month old kitten weight of 4.5–5.5 lbs, and a 4 month kitten weight asked without the word "old" all mean the same thing. Kitten weight at 5 months, kitten weight 5 months and kitten weight by age lbs are the same question again — and so is how much should a kitten weigh at 5 months, which is 4.5–5.5 lbs.
+**Written as a noun.** A 3 month old kitten weight of 2.5–3.5 lbs, a 4 month old kitten weight of 3.5–4.5 lbs, a 5 month old kitten weight of 4.5–5.5 lbs, and a 4 month kitten weight asked without the word "old" all mean the same thing. Kitten weight at 3 months (2.5–3.5 lbs), kitten weight at 5 months, kitten weight 5 months and kitten weight by age lbs are the same question again — and so is how much should a kitten weigh at 5 months, which is 4.5–5.5 lbs.
 
 **Saying "cat" instead of "kitten".** How much should a 4 month old cat weigh? 3.5–4.5 lbs. How much should a 5 month old cat weigh? 4.5–5.5 lbs. How much should a 7 month old cat weigh? Around 5.5–7 lbs. From roughly four months onward the two words get used interchangeably, and the figures do not change.
 
@@ -125,7 +125,11 @@ People ask this in a lot of formats, and they all resolve to the chart above:
 
 **Asked as "how much does it weigh" rather than "should".** How much does a 3 week old kitten weigh, and how much do 3 week old kittens weigh? Both around 12–16 oz. How much does a 4 week old kitten weigh? 1–1.5 lbs. How much does a 10 week old kitten weigh? 2–3 lbs. How much does a 12 week old kitten weigh? 2.5–3.5 lbs. How much does a 14 week old kitten weigh? 3–4 lbs. How much does a 3 month old kitten weigh? 2.5–3.5 lbs. How much does a 4 month old kitten weigh? 3.5–4.5 lbs.
 
-**Asked as "size" rather than weight.** A 12 week kitten size and a 12 week cat size both mean 2.5–3.5 lbs. A 3 month old cat size is the same figure. There is no separate size measurement for kittens in ordinary use — weight is the measurement.
+**Asked as "size" rather than weight.** A 12 week kitten size and a 12 week cat size both mean 2.5–3.5 lbs. A 3 month old cat size is the same figure, and so is 3 month cat size or 3 months cat size written without the word "old". A 2 months cat size is 1.5–2.5 lbs, and newborn cat size is 3–4.5 oz. How big is a 3 month old cat? 2.5–3.5 lbs and roughly half their adult length. There is no separate size measurement for kittens in ordinary use — weight is the measurement, which is also why **cat weight by length** is not something you can look up: length tells you very little about whether a cat is a healthy weight, and body condition scored by feel is what vets use instead.
+
+**With the article dropped.** People often type these without "a": how much should 12 week old kitten weigh (2.5–3.5 lbs), how much should 9 week old kitten weigh (1.8–2.8 lbs), and 12 week old kitten weight (the same 2.5–3.5 lbs). How much do 12 week old kittens weigh, asked in the plural, is the same answer again.
+
+**Odd ages between the rows.** How much should a 4.5 month old kitten weigh? Around 4–5 lbs, between the 4-month and 5-month rows. How much should a 1 year old kitten weigh? By twelve months they are a cat rather than a kitten, at roughly 7–10 lbs for a domestic shorthair — large breeds keep growing well past this.
 
 **Weeks written as a noun.** Kitten weight 12 weeks, 12 weeks kitten weight and 14 week kitten weight are the same question as the rows above: 2.5–3.5 lbs and 3–4 lbs.
 
