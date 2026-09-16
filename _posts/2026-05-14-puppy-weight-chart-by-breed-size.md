@@ -38,7 +38,7 @@ Beyond just timing, the risks associated with abnormal growth differ by size. Fo
 
 ## Puppy Weight Chart by Breed Size
 
-This puppy growth chart by breed size gives approximate ranges based on typical growth curves. It doubles as a dog weight chart puppy owners can use throughout the first year, and as a dog age weight reference — read down a column for one size group, or across a row to compare sizes at the same age. Individual dogs vary, so use it as a guide rather than a strict standard. If you were looking for a dog weight chart by age rather than by breed, read down any single column — the age rows are the same throughout, and only the expected weights differ by size group.
+These are approximate ranges based on typical growth curves, grouped by adult size because that is what drives the timeline. The age rows are the same in every group, so you can read down one column to follow a single size through the first year, or across a row to compare sizes at the same age. Individual dogs vary — use this as a guide rather than a standard.
 
 ### Toy Breeds (Adult weight under 12 lbs)
 *Examples: Chihuahua, Yorkshire Terrier, Pomeranian*
@@ -117,7 +117,7 @@ A rough formula that works for most breeds:
 
 **Adult weight ≈ (current weight ÷ current age in weeks) × maturity age in weeks**
 
-That formula is how to calculate dog weight at maturity from where your puppy is today, and it is what a puppy weight calculator is doing behind the scenes. Our [Dog Weight Calculator](/tools/dog-weight-calculator.html) runs it for you against breed-size curves, which handles the large-breed timeline better than the raw formula does. It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight.
+It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight. Our [Dog Weight Calculator](/tools/dog-weight-calculator.html) runs the same arithmetic against breed-size curves, which handles the large-breed timeline better than the raw formula does. It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight.
 
 Maturity ages by size:
 - Toy: 32 weeks
