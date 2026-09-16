@@ -30,7 +30,28 @@
   {% include header.html %}
   <main>
     {{ content }}
+
+    <div class="page-byline no-print">
+      Built and maintained by <a href="/about.html">PetPawCalc Team</a> ·
+      <a href="/sources.html">Sources</a> ·
+      <a href="/editorial-policy.html">Editorial policy</a>
+    </div>
   </main>
+<style>
+.page-byline {
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 16px 20px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.84rem;
+  color: var(--brown-light);
+  line-height: 1.7;
+}
+.page-byline a { color: var(--brown-light); text-decoration: underline; }
+.page-byline a:hover { color: var(--orange); }
+@media print { .page-byline { display: none !important; } }
+</style>
+
   {% include footer.html %}
 
   <script>
