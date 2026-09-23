@@ -232,6 +232,8 @@ It depends where you draw the line. Toy breeds are generally under 12 lbs as adu
 
 ## Related Articles
 
+- [How Much Exercise Does a Puppy Need?](/blog/puppy-exercise-5-minute-rule/) — what the research says, and why weight matters more than minutes
+
 - [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
 - [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
 - [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
