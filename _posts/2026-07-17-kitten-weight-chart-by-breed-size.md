@@ -36,7 +36,7 @@ Here's a birth-to-12-month weight chart, the fastest rule of thumb for checking 
 
 ## Kitten Weight Chart: Birth to 12 Months
 
-This kitten growth chart applies to typical domestic shorthair/mixed-breed kittens — people also look for it as a kitten growth chart weight table or a cat growth chart weight table, and this is that table — the majority of kittens. Large breeds are covered separately below, since their growth timeline is meaningfully different.
+This kitten growth chart applies to typical domestic shorthair/mixed-breed kittens — the majority of kittens. Large breeds are covered separately below, since their growth timeline is meaningfully different.
 
 | Age | Expected Weight Range |
 |-----|-----------------------|

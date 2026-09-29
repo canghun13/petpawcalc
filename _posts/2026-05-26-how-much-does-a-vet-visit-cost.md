@@ -64,7 +64,7 @@ Heartworm prevention, flea/tick control, and intestinal parasite management are 
 
 - **Heartworm prevention**: $30–$80 for a 6-month supply, depending on your pet's weight
 - **Flea/tick prevention**: $40–$120 for a 3-month supply (topical, collar, or oral)
-- **Annual heartworm test**: $25–$50 (required before renewing heartworm prevention in most practices)
+- **Annual heartworm test**: $35–$75 at a private clinic, less at low-cost clinics (required before renewing heartworm prevention in most practices — see [what a heartworm test costs and what a negative result can't tell you](/blog/heartworm-test-cost/))
 
 ## Bloodwork: $80–$300
 
@@ -156,11 +156,11 @@ For a healthy adult dog with no major health issues:
 |---------|-------------|
 | Wellness exam | $75–$200 |
 | Core vaccines (rotating) | $40–$100 |
-| Heartworm test | $25–$50 |
+| Heartworm test | $35–$75 |
 | Parasite prevention | $150–$300 |
 | Basic bloodwork (7+ years) | $100–$200 |
 | Dental cleaning (amortized) | $100–$250 |
-| **Total** | **$490–$1,100** |
+| **Total** | **$500–$1,125** |
 
 This doesn't include emergencies, unexpected illness, or specialist care. Adding pet insurance and a small emergency fund on top brings the realistic annual budget for vet-related expenses to $1,000–$2,000/year for most dogs.
 
