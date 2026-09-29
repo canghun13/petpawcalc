@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-09-22 (세션 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
+최종 갱신: 2026-09-29 (세션 AX — 툴 FAQ에 남아 있던 명칭 나열 제거 + 심장사상충 검사 비용 포스트 / 직전 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -2995,3 +2995,71 @@ YAML 전 페이지, JSON-LD 134, FAQ 1:1(신규 포스트 포함), 표 컬럼 �
 - **신규는 계속 포스트 우선.** 툴 51 / 포스트 39로 격차가 좁혀지기 시작했다.
 - **표기법 나열 금지 — 회귀 방지 검사 매번 돌릴 것.**
 - 제휴는 묻지 말 것. 광고 네트워크 대안 논의는 AV 이후 사용자가 "알겠다"로 종결함 — 다시 꺼내지 말 것.
+
+### 세션 AX — AV가 놓친 툴 FAQ 나열 정리 + 심장사상충 검사 포스트 (9/29)
+
+사용자 요청: 주간 작업. GSC+GA+Bing 확인 → 신규/보강. 색인은 첨부 자료로만. 공격적 확장 유지. 수익화 우선. 화면 깨짐 확인 필요 페이지만 링크 + revoke 요청.
+
+#### 1. 데이터 (GSC 3개월, 차트 마지막 날짜 9/26)
+
+- 사이트: 클릭 56 → **67**, 노출 15,880 → **19,484**. 일 노출이 9월 초 ~300 → 9/25–26 **635·644**로 올라왔다. 모바일 순위 **12.74**(직전 13.75).
+- **kitten 차트: 13 → 17클릭, 순위 18.18 → 16.17**, 노출 6,849. AV 판단(나열 제거) 이후 3주 연속 개선. puppy 차트 14 → 18클릭.
+- `puppy-exercise-5-minute-rule`(AW 신규): **색인됨**, 7노출·6.86위. `puppy exercise calculator` 쿼리 자체는 68.9위(21노출) — 포스트가 "계산기를 만들지 않은 이유"를 쓴 페이지라 이 쿼리엔 약하다. 계산기로 되돌리지 말 것(AW 판단 유지).
+- paw score 클러스터(`paw score` 141노출 10.3위, `paw score calculator free` 71노출 **7.93위**, `pet paw score` 9.88위)가 여전히 구글 1페이지에 가장 가깝다.
+- 신규 쿼리 신호: `kitten weight chart kg` 123노출 12.73위, `maine coon kitten weight chart kg` 10.5위 — **kg 표기 수요.** 다음 보강 후보(표에 kg 열이 있는지 먼저 확인할 것. 나열이 아니라 실제 단위 열 추가로만).
+- GA(9/1–9/28): 활성 사용자 225, 평균 참여 46.3초(문제 아님 — 사용자 확인 사항). 소스 direct 82 / google 37 / bing 35 / duckduckgo 29 / yahoo 16 / ecosia 12 / chatgpt 2 / perplexity 1. 싱가포르 50은 크롤러로 추정.
+- Bing: `how-much-does-a-cat-vet-visit-cost` 581노출 11클릭 4.14위, `how-often-vet-visits-cat` 350/13/2.96위 — **비용·수의 방문 주제가 Bing 주력**이라는 기존 판단 유지. `pet checklist` 20노출 5.45위 0클릭, `checklists/` 33노출 0클릭.
+
+#### 2. 색인 (첨부 Coverage 기준)
+
+- 발견됨-미색인 **2개**: `ear-infection-recurrence-checker`, `spay-neuter-cost-calculator` — 둘 다 여전히 1970-01-01(미크롤).
+- `annual-pet-cost-calculator`는 **9/20 처음 크롤링**(AV 보강 효과 두 번째 사례, titer 9/17에 이어). 아직 크롤링됨-미색인.
+- 크롤링됨-미색인 11개. `/handover/`가 7/12 크롤 기록으로 남아 있음 — `_config.yml` exclude 이전 기록, 현재는 빌드 제외 상태라 조치 불필요.
+
+#### 3. 🔴 AV가 놓친 것 — 툴 FAQ의 명칭 나열
+
+AV는 **포스트**의 표기법 나열을 제거했지만 **툴 FAQ**에 같은 패턴이 남아 있었다: "What other names do people search for this calculator?", "Is this a canine due date calculator or a gestation calculator for dogs?", "Whether you call it a calculator dog weight tool…", "If you were searching for a paws score calculator…". 애드센스 "가치 없는 콘텐츠" 사유와 직결되는 패턴이다. AW의 회귀 검사는 AV가 쓴 문구만 찾았기 때문에 이걸 못 잡았다.
+
+**12개 툴 정리** (스키마·본문 1:1 유지, 쓸모 있는 내용은 자연스러운 질문으로 병합):
+dog-pregnancy 14→6, cat-pregnancy 7→4, dog-weight 11→8, cat-weight 7→6, dog-QoL 8→4, cat-QoL 4→4, cat-age 5→5, dog-age(질문 1개 교체), pet-insurance 5→5(나열 1개 삭제 + "나이 들면 보험료 오르나" 신규), heartworm 9→8(키워드 조각 질문 "Heartworm test cost" 등을 실제 질문으로), pet-food-calorie 11→11(질문 4개 교체), dog-heat 5→4.
+kitten 차트 본문에 남아 있던 "people also look for it as…" 한 구절도 삭제.
+
+**정리하다 발견한 사실 오류도 고쳤다:**
+- QoL FAQ가 "0–10점"이라고 했는데 **툴은 1–10점**으로 계산한다. 1–10으로 통일. "Paw Score = HHHHHMM의 별칭/이 사이트가 붙인 이름"이라는 서로 모순된 설명도 → "공식 수의학 용어가 아니고 보호자들이 쓰는 비공식 명칭"으로 정리.
+- cat-weight FAQ 하나는 "고양이 BMI(FBMI) 있다", 다른 하나는 "고양이엔 BMI가 없다" — 모순. 하나로 합침.
+- cat-age가 **구 6단계 체계**(junior, 11–14 senior, 15+ super senior)를 썼다. **2021 AAHA/AAFP Feline Life Stage Guidelines**(kitten ~1 / young adult 1–6 / mature adult 7–10 / senior >10, DOI 10.1177/1098612X21993657 — PMC 원문 Table 1로 확인)로 본문·FAQ·**툴 결과 라벨 코드**까지 변경. 구 차트 명칭이 왜 다른지 한 단락으로 설명.
+- cat-age "6개월 = 사람 10살" FAQ가 툴 계산(6개월 → 8살)과 달랐다. 툴 계산 기준으로 정정.
+- 심장사상충 검사 가격이 vet-visit-cost 포스트($25–$50)와 heartworm 툴($35–$75)에서 달랐다. $35–$75로 통일하고 **표 합계도 $490–$1,100 → $500–$1,125로 재계산.**
+
+**➡️ 회귀 검사 확장**: 기존 7개 문구 + "If you were searching", "If you're searching", "What other names do people search", "whether you're calling it", "Whether you call it", "this page is the tool", "People also look for", "land on the same", "Both names describe", "dog owners use to", "If you are searching", "If you were looking for" + **툴 FAQ 질문이 `Is this/there a … calculator?` 형태면 경고.** 현재 0건. 매 세션 돌릴 것.
+
+**➡️ 교훈: 회귀 검사는 "내가 제거한 문구"가 아니라 "패턴"을 찾아야 한다.** 새 페이지에 명칭 변형 FAQ를 다시 만들지 말 것 — 특히 "Is this a X calculator?"는 쓰지 말 것.
+
+#### 4. 신규 포스트 — `_posts/2026-09-29-heartworm-test-cost.md` (Pet Costs)
+
+근거: GSC `heartworm test cost` 94노출 75위(툴 FAQ가 받던 쿼리, 전용 페이지 없음), heartworm 툴 373노출 0클릭. 비용 주제 = Bing 주력 + 수익화 적합. 중복 확인: 기존엔 툴 FAQ 1개와 vet-visit 포스트의 한 줄뿐.
+
+**반직관적 핵심 (AHS 원문 확인):** 유충이 성충이 되는 데 약 6개월, **감염 후 약 7개월이 지나야 검사로 잡힌다** → 음성 결과는 몇 달 전 상태다. 여기서:
+- 7개월 미만 강아지: 검사 없이 예방 시작, 6개월 뒤·그 6개월 뒤·이후 매년 검사.
+- 투약 누락: 즉시 재개, **6개월 뒤 재검사가 답을 준다**(당장 검사는 더 오래된 감염 확인용).
+- 연중 예방 중에도 연 1회 검사 — 프로그램 작동 확인 + **제조사 보증 조건**(Zoetis ProHeart 보증: 시작 후 6개월 이상 간격 음성 2회, 수의사 구매·투여, 최대 $1,000 + melarsomine 비용 — Zoetis PDF 원문 확인). 제품 추천 아님을 sources에 명시.
+- 항원 검사 위음성(소수·수컷만·미성숙·항체 결합) → AHS는 미세사상충 검사 병행 권고.
+- 고양이: 성충 1–3마리, 성충 없는 경우 많음 → 항원+항체 병행, 승인된 치료제 없음.
+
+경쟁 회피: "heartworm test cost" 헤드 키워드는 대형 사이트 몫. 강아지·투약 누락·예방 중 검사 이유·고양이 검사 같은 롱테일을 **실제 H2 섹션**으로 다룬다(나열 아님).
+역링크: heartworm 툴(post-cta + FAQ), vet-visit-cost 포스트. `sources.html`에 AHS, ProHeart 보증 조건, AAHA/AAFP 2021 추가. `llms.txt` 등재.
+
+#### 5. 기타
+- `index.html` 런치 배지 3개에 `rel="noopener"` 누락 → 추가(QA의 `target="_blank"` 검사를 루트 파일까지 넓히면서 발견).
+- **푸시 경로 변경**: 이번 세션부터 git 프록시가 세션 소스에 없는 저장소 푸시를 403으로 막는다. `add_repo`(access: push)로 저장소를 세션에 추가한 뒤 **토큰 없는 `https://github.com/canghun13/petpawcalc.git`로 푸시**하면 된다. 토큰은 API 확인(`/user`, Actions 조회)에만 썼다.
+
+**페이지 수**: tools 51 + posts **40** + checklists 16 = **107**.
+
+#### 6. 다음 세션에서 확인할 것
+- kitten 차트 추세(기준 17클릭·16.17위)와 **툴 FAQ 정리 후 dog-pregnancy(1,110노출 40.6위)·dog-weight(576노출 53.7위)·dog-QoL(707노출 29.6위, paw score 7.9–10위) 순위 변화.** 나열 제거가 kitten처럼 도움이 되는지 확인. 떨어져도 나열을 되돌리지 말 것 — 애드센스가 우선.
+- `heartworm-test-cost` 색인 및 `heartworm test cost` 쿼리 순위.
+- 미크롤 2개(`spay-neuter-cost`, `ear-infection-recurrence-checker`) 크롤링 여부, `annual-pet-cost` 색인 여부.
+- **애드센스 재검토 결과**(9/16 요청). 거절 시 AV 8번 대응 순서 — 포스트 비중 늘리기가 1순위.
+- 다음 보강 후보: kitten 차트 kg 단위(실제 열 추가로만).
+- 신규는 계속 포스트 우선(툴 51 / 포스트 40). 제휴·광고 네트워크 대안은 묻지 말 것.
+
