@@ -3063,3 +3063,7 @@ kitten 차트 본문에 남아 있던 "people also look for it as…" 한 구절
 - 다음 보강 후보: kitten 차트 kg 단위(실제 열 추가로만).
 - 신규는 계속 포스트 우선(툴 51 / 포스트 40). 제휴·광고 네트워크 대안은 묻지 말 것.
 
+#### 세션 AX 추가 (10/1) — ads.txt
+- 루트에 `ads.txt` 추가: `google.com, pub-5592663499707350, DIRECT, f08c47fec0942fa0` (pub ID는 레이아웃의 adsbygoogle 스크립트와 동일). 승인 전에 미리 둔 것이고 승인에 직접 영향은 없지만, 승인 후 "ads.txt 없음" 경고와 수익 손실을 막는다.
+- **pub ID를 바꾸면 레이아웃 4곳(default/tool/checklist/post)과 ads.txt를 같이 바꿀 것.**
+
