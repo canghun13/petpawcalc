@@ -49,8 +49,10 @@ This kitten growth chart applies to typical domestic shorthair/mixed-breed kitte
 | 4 months | 3.5–4.5 lbs (1.6–2kg) |
 | 5 months | 4.5–5.5 lbs (2–2.5kg) |
 | 6 months | 5–6.5 lbs (2.3–3kg) |
+| 7 months | 5.5–7 lbs (2.5–3.2kg) |
+| 8 months | 6–7.5 lbs (2.7–3.4kg) |
 | 9 months | 6.5–8.5 lbs (3–3.9kg) |
-| 12 months | 7–10 lbs (near adult weight) |
+| 12 months | 7–10 lbs (3.2–4.5kg), near adult weight |
 
 ### Kitten Age and Weight Chart, Week by Week
 
@@ -146,11 +148,11 @@ This is the single biggest reason kitten weight charts confuse people: most char
 
 | Breed type | Reaches adult weight | 6-month weight vs. chart | Adult weight |
 |---|---|---|---|
-| Domestic shorthair / mixed | 10–12 months | On track with chart above | 8–10 lbs |
-| Siamese, Oriental breeds | 10–12 months | Often slightly under chart (naturally leaner build) | 6–10 lbs |
-| Maine Coon | 3–5 years | Normally *below* the chart at 6 months | 12–20 lbs (males up to 25 lbs) |
-| Ragdoll | 3–4 years | Normally *below* the chart at 6 months | 10–20 lbs |
-| Norwegian Forest Cat, Siberian | ~3 years | Normally *below* the chart at 6 months | 10–16 lbs |
+| Domestic shorthair / mixed | 10–12 months | On track with chart above | 8–10 lbs (3.6–4.5 kg) |
+| Siamese, Oriental breeds | 10–12 months | Often slightly under chart (naturally leaner build) | 6–10 lbs (2.7–4.5 kg) |
+| Maine Coon | 3–5 years | Normally *below* the chart at 6 months | 12–20 lbs (5.4–9 kg); males up to 25 lbs (11 kg) |
+| Ragdoll | 3–4 years | Normally *below* the chart at 6 months | 10–20 lbs (4.5–9 kg) |
+| Norwegian Forest Cat, Siberian | ~3 years | Normally *below* the chart at 6 months | 10–16 lbs (4.5–7.3 kg) |
 
 If you have a Maine Coon or Ragdoll kitten who looks "small for their age" next to a generic chart at 6 months, that's usually expected — these breeds pack on the bulk of their size in years two and three, not in the first year. Comparing them to a domestic-shorthair chart and concluding something is wrong is one of the most common mistakes new large-breed-kitten owners make.
 

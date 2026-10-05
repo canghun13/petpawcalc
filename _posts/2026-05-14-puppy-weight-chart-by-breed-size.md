@@ -40,74 +40,74 @@ Beyond just timing, the risks associated with abnormal growth differ by size. Fo
 
 These are approximate ranges based on typical growth curves, grouped by adult size because that is what drives the timeline. The age rows are the same in every group, so you can read down one column to follow a single size through the first year, or across a row to compare sizes at the same age. Individual dogs vary — use this as a guide rather than a standard.
 
-### Toy Breeds (Adult weight under 12 lbs)
+### Toy Breeds (Adult weight under 12 lbs / 5.4 kg)
 *Examples: Chihuahua, Yorkshire Terrier, Pomeranian*
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
-| 8 weeks | 1–2.5 lbs |
-| 12 weeks | 1.5–3.5 lbs |
-| 16 weeks | 2–5 lbs |
-| 6 months | 3–7 lbs |
-| 12 months | 4–12 lbs (near adult) |
+| 8 weeks | 1–2.5 lbs (0.45–1.1 kg) |
+| 12 weeks | 1.5–3.5 lbs (0.68–1.6 kg) |
+| 16 weeks | 2–5 lbs (0.91–2.3 kg) |
+| 6 months | 3–7 lbs (1.4–3.2 kg) |
+| 12 months | 4–12 lbs (1.8–5.4 kg), near adult |
 
-### Small Breeds (Adult weight 12–25 lbs)
+### Small Breeds (Adult weight 12–25 lbs / 5.4–11 kg)
 *Examples: Beagle, Shih Tzu, French Bulldog*
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
-| 8 weeks | 3–5 lbs |
-| 12 weeks | 5–8 lbs |
-| 16 weeks | 7–12 lbs |
-| 6 months | 10–18 lbs |
-| 12 months | 12–25 lbs (near adult) |
+| 8 weeks | 3–5 lbs (1.4–2.3 kg) |
+| 12 weeks | 5–8 lbs (2.3–3.6 kg) |
+| 16 weeks | 7–12 lbs (3.2–5.4 kg) |
+| 6 months | 10–18 lbs (4.5–8.2 kg) |
+| 12 months | 12–25 lbs (5.4–11 kg), near adult |
 
-### Medium Breeds (Adult weight 25–50 lbs)
+### Medium Breeds (Adult weight 25–50 lbs / 11–23 kg)
 *Examples: Border Collie, Cocker Spaniel, Bulldog*
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
-| 8 weeks | 5–10 lbs |
-| 12 weeks | 8–16 lbs |
-| 16 weeks | 12–22 lbs |
-| 6 months | 18–35 lbs |
-| 12 months | 25–50 lbs (near adult) |
+| 8 weeks | 5–10 lbs (2.3–4.5 kg) |
+| 12 weeks | 8–16 lbs (3.6–7.3 kg) |
+| 16 weeks | 12–22 lbs (5.4–10 kg) |
+| 6 months | 18–35 lbs (8.2–16 kg) |
+| 12 months | 25–50 lbs (11–23 kg), near adult |
 
-### Large Breeds (Adult weight 50–100 lbs)
+### Large Breeds (Adult weight 50–100 lbs / 23–45 kg)
 *Examples: Labrador, German Shepherd, Golden Retriever*
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
-| 8 weeks | 8–16 lbs |
-| 12 weeks | 14–26 lbs |
-| 16 weeks | 20–38 lbs |
-| 6 months | 35–60 lbs |
-| 12 months | 45–85 lbs |
-| 18 months | 50–100 lbs (near adult) |
+| 8 weeks | 8–16 lbs (3.6–7.3 kg) |
+| 12 weeks | 14–26 lbs (6.4–12 kg) |
+| 16 weeks | 20–38 lbs (9.1–17 kg) |
+| 6 months | 35–60 lbs (16–27 kg) |
+| 12 months | 45–85 lbs (20–39 kg) |
+| 18 months | 50–100 lbs (23–45 kg), near adult |
 
-### Giant Breeds (Adult weight over 100 lbs)
+### Giant Breeds (Adult weight over 100 lbs / 45 kg)
 *Examples: Great Dane, Mastiff, Saint Bernard*
 
 | Age | Expected Weight Range |
 |-----|-----------------------|
-| 8 weeks | 10–20 lbs |
-| 12 weeks | 18–35 lbs |
-| 16 weeks | 27–50 lbs |
-| 6 months | 50–90 lbs |
-| 12 months | 75–130 lbs |
-| 24 months | 100–180 lbs (near adult) |
+| 8 weeks | 10–20 lbs (4.5–9.1 kg) |
+| 12 weeks | 18–35 lbs (8.2–16 kg) |
+| 16 weeks | 27–50 lbs (12–23 kg) |
+| 6 months | 50–90 lbs (23–41 kg) |
+| 12 months | 75–130 lbs (34–59 kg) |
+| 24 months | 100–180 lbs (45–82 kg), near adult |
 
 ## The Two Ages People Look Up Most
 
 Almost every search for a puppy weight chart is really one of two questions, so here they are pulled out of the tables above.
 
-**How much should a puppy weigh at 8 weeks?** It depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs, small 3–5 lbs, medium 5–10 lbs, large 8–16 lbs. Eight weeks is when most puppies go home, so this is the figure people check on day one.
+**How much should a puppy weigh at 8 weeks?** It depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs (0.45–1.1 kg), small 3–5 lbs (1.4–2.3 kg), medium 5–10 lbs (2.3–4.5 kg), large 8–16 lbs (3.6–7.3 kg). Eight weeks is when most puppies go home, so this is the figure people check on day one.
 
-**How much should a 12 week old puppy weigh?** Toy 1.5–3.5 lbs, small 5–8 lbs, medium 8–16 lbs, large 14–26 lbs. A 12 week old puppy has usually doubled or more since coming home.
+**How much should a 12 week old puppy weigh?** Toy 1.5–3.5 lbs (0.68–1.6 kg), small 5–8 lbs (2.3–3.6 kg), medium 8–16 lbs (3.6–7.3 kg), large 14–26 lbs (6.4–12 kg). A 12 week old puppy has usually doubled or more since coming home.
 
 **Puppy birth weight** varies far more than either of these and is a poor predictor on its own — a large-breed puppy is typically born around 1 lb, a toy-breed puppy at only a few ounces. What matters in the first fortnight is not the starting number but that it climbs steadily every day; a newborn that is not gaining needs a vet the same day.
 
-**Puppy weight chart large breed:** for a large breed specifically, use the large and giant tables above rather than scaling a medium-breed curve up. Large and giant breeds grow for considerably longer — 18 months rather than 12 — and pushing weight on early is actively harmful to developing joints. A large-breed puppy that looks slightly lean at six months is usually where it should be.
+**Large and giant breeds:** for a large breed specifically, use the large and giant tables above rather than scaling a medium-breed curve up. Large and giant breeds grow for considerably longer — 18 months rather than 12 — and pushing weight on early is actively harmful to developing joints. A large-breed puppy that looks slightly lean at six months is usually where it should be.
 
 **Is there a puppy height chart?** Not a useful one, and this is worth saying plainly. Height at the withers varies so much within a breed, and is so awkward to measure on a wriggling puppy, that veterinary practice tracks weight instead. If you want a growth measure, weigh — it is more repeatable and it is what your vet will ask for.
 

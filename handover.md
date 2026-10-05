@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-09-29 (세션 AX — 툴 FAQ에 남아 있던 명칭 나열 제거 + 심장사상충 검사 비용 포스트 / 직전 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
+최종 갱신: 2026-10-05 (세션 AY — 체중표 kg 보강 + 심장사상충 치료 비용 포스트 / 직전 AX — 툴 FAQ에 남아 있던 명칭 나열 제거 + 심장사상충 검사 비용 포스트 / 직전 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -3066,4 +3066,41 @@ kitten 차트 본문에 남아 있던 "people also look for it as…" 한 구절
 #### 세션 AX 추가 (10/1) — ads.txt
 - 루트에 `ads.txt` 추가: `google.com, pub-5592663499707350, DIRECT, f08c47fec0942fa0` (pub ID는 레이아웃의 adsbygoogle 스크립트와 동일). 승인 전에 미리 둔 것이고 승인에 직접 영향은 없지만, 승인 후 "ads.txt 없음" 경고와 수익 손실을 막는다.
 - **pub ID를 바꾸면 레이아웃 4곳(default/tool/checklist/post)과 ads.txt를 같이 바꿀 것.**
+
+### 세션 AY — kg 단위 보강 + 심장사상충 치료 비용 포스트 (10/5)
+
+사용자 요청: 주간 작업(앞당김). 토큰은 이번엔 안 줬음 — AX에서 저장소를 세션에 연결해 둬서 **토큰 없이 프록시로 푸시됨.** 같은 세션이 이어지는 한 토큰 불필요.
+
+#### 1. 데이터 (GSC 3개월, 차트 마지막 10/2)
+- 사이트: 클릭 67 → **90**, 노출 19,484 → **23,776**. 9/27–10/2 한 주 클릭 23(직전 주 약 11). 일 노출 700–800대. 모바일 순위 **11.93**(12.74).
+- kitten 차트 17 → **24클릭, 16.17 → 14.81위.** puppy 차트 18 → 22.
+- **AX 툴 FAQ 정리 후 해당 툴 전부 소폭 개선(악화 없음)**: dog-QoL 29.63 → 27.2위(4 → 6클릭), dog-pregnancy 40.63 → 38.15, dog-weight 53.7 → 50.32, heartworm 46.78 → 44.43, cat-age 71 → 68.2. 나열 제거가 해롭지 않다는 두 번째 확인.
+- `heartworm-test-cost`(AX 신규): **이미 26노출·6위.** 비용 포스트 방향 유효.
+- GA(9/7–10/4): 활성 사용자 255(225), 참여 47초. google 59 / bing 43 / duckduckgo 27 / yahoo 21. pitchwall.co 리퍼럴 세션 9.
+- Bing: cat-vet-visit-cost 680노출 13클릭, how-often-vet-visits-cat 428/17, flea-tick-cost 104노출 **7클릭 3.1위**. `cat health checkup schedule` 35노출 6.26위, `pregnancy calculator for dogs` 57노출 8.28위.
+
+#### 2. 색인 (첨부 Coverage 기준)
+지난주와 **목록 동일**: 발견됨-미색인 2(`ear-infection-recurrence-checker`, `spay-neuter-cost-calculator` — 여전히 미크롤), 크롤링됨-미색인 11. 변화 없음.
+
+#### 3. 보강 — kg 단위 (AX에서 예고한 후보)
+GSC: `kitten weight chart kg` 136노출 12.44위, `maine coon kitten weight chart kg` 10.27위, `7/6/9 month old kitten weight kg` 8–10위, `puppy growth chart kg` 53위.
+- **puppy 차트: 표 전체가 lbs만 있었다.** 5개 크기 표 모든 칸과 크기 구분 제목에 kg 병기, "두 나이" 단락도 kg 병기. "Puppy weight chart large breed:" 키워드형 라벨 → "Large and giant breeds:".
+- **kitten 차트**: 월별 표에 7·8개월 행 추가(본문 FAQ 수치와 동일 값), 12개월 kg, 대형 품종 표 성묘 체중 kg.
+- **나열이 아니라 단위 열 추가다.** "kg로도 검색합니다" 같은 문장은 넣지 않았다.
+
+#### 4. 신규 포스트 — `_posts/2026-10-05-heartworm-treatment-cost.md` (Pet Costs)
+근거: `heartworm treatment cost` 13노출 71위, `canine heartworm treatment cost`, `heartworm treatment calculator` 21위. 전용 페이지 없음(툴 하나에 범위만). 지난주 검사 포스트의 짝.
+**반직관적 핵심:** 싸 보이는 "slow kill"(예방약+독시사이클린)은 AHS가 "치료 선택지가 아니라 구제 절차"로 규정 — 1년 이상, 효과 낮음, 그동안 폐혈관 손상 지속, 내내 운동 제한(AHS 임상 FAQ 원문 확인). 비용은 PetMD 항목별 범위를 **합산해서** $740–$2,050 → "$700–$2,000" 도출(산식을 본문에 공개). melarsomine 체중 비례 → 대형견 비쌈. 보험(기왕증 제외), 제조사 보증(ProHeart), 고양이 치료제 없음.
+- 롱테일: 체중별 비용, slow kill vs 주사, 보험 적용, 치료 기간 — 각각 실제 H2.
+- 역링크: 검사 포스트(표 + 관련 글), heartworm 툴 post-cta. sources.html에 AHS 치료 입장 + PetMD/MetLife(가격 범위 용도만) 추가. llms.txt 등재.
+- ⚠️ 비용 범위 일관성: 툴 JS는 기본 $400–$2,000을 체중 배수로 조정, 포스트는 항목 합산 $700–$2,000. **다른 페이지에 새 수치를 쓸 땐 이 포스트 수치를 기준으로.** 검사 포스트 표의 치료 행은 이번에 맞췄다.
+- AHS 가이드라인 본문 페이지(veterinary-resources)는 WebFetch 권한 요청이 시간 초과됐다 — 임상 FAQ 페이지와 PetMD로 교차 확인했다.
+
+QA 전부 통과(회귀 검사 포함). **페이지 수**: tools 51 + posts **41** + checklists 16 = **108**.
+
+#### 5. 다음 세션
+- 두 심장사상충 포스트 순위, kg 보강 후 `kitten weight chart kg`·`puppy growth chart kg` 순위.
+- 미크롤 2개 여전히 1970-01-01 — 3주째 그대로면 내부 링크를 더 붙이는 방안 검토.
+- 애드센스 재검토 결과. ads.txt는 10/1 게시 완료.
+- 신규는 계속 포스트 우선(툴 51 / 포스트 41).
 

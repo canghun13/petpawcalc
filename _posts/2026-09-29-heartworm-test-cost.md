@@ -37,7 +37,7 @@ Typical US price ranges:
 | Same test at a walk-in or low-cost clinic | Often $20–$55 |
 | Microfilaria test, if added | $20–$40 |
 | Exam fee, if the clinic requires a visit | $50–$100 |
-| Treating a confirmed infection in a dog | $400–$2,000+, sometimes over $3,000 |
+| Treating a confirmed infection in a dog | Roughly $700–$2,000, sometimes over $3,000 ([breakdown](/blog/heartworm-treatment-cost/)) |
 
 Many clinics run a combination test that screens for heartworm and several tick-borne diseases from the same blood sample, which usually costs a little more than a heartworm-only test. It is worth asking which one you are being quoted, since the combination test is often the default.
 
@@ -141,6 +141,7 @@ Differently from dogs. Cats with adult heartworms typically have only one to thr
 
 ## Related Articles
 
+- [Heartworm Treatment Cost for Dogs](/blog/heartworm-treatment-cost/) — what a positive result costs, and why slow kill isn't the bargain it looks
 - [Heartworm Prevention Cost Calculator](/tools/heartworm-prevention-cost-calculator.html) — a year of prevention by product type against the cost of treatment
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/) — what else the annual visit costs
 - [How Often Should You Take Your Dog to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/) — the annual visit schedule by age
