@@ -65,7 +65,7 @@
   "headline": "{{ page.title | escape }}",
   "description": "{{ page.description | escape }}",
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-  "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
   "author": {
     "@type": "Organization",
     "name": "PetPawCalc Team",

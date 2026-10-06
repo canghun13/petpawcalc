@@ -24,6 +24,7 @@ faqs:
     a: "Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. A dog weight tracker by age does not need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading \u2014 steady climb is normal, a plateau during a growth phase or any loss is worth a vet call."
   - q: "What is the weight of a small dog?"
     a: "It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So the weight of a small dog usually means somewhere between about 12 and 25 lbs \u2014 a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it."
+last_modified_at: 2026-10-05
 ---
 
 Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.

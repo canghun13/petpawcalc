@@ -19,6 +19,7 @@ faqs:
     a: "Yes, mostly by missing an infection. Antigen tests detect proteins from adult female worms, so they can come back negative when there are only a few worms, only male worms, or worms that are not yet mature, and occasionally when the antigen is bound up by the dog's own antibodies. This is why the American Heartworm Society recommends pairing the antigen test with a microfilaria test, and why a recent infection will not show up at all until months later."
   - q: "How are cats tested for heartworm?"
     a: "Differently from dogs. Cats with adult heartworms typically have only one to three worms, and many affected cats have no adult worms at all, so the antigen test that works well in dogs often misses feline infections. The American Heartworm Society's preferred screening for cats uses both an antigen test and an antibody test, which detects exposure to heartworm larvae. There is no approved heartworm treatment for cats, which is why prevention matters so much."
+last_modified_at: 2026-10-05
 ---
 
 A heartworm test is one of the cheaper lines on a vet bill — usually **$35–$75** at a private clinic, less at a walk-in or low-cost clinic. Most owners pay it once a year without thinking much about what it tells them.

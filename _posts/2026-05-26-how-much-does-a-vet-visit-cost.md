@@ -24,6 +24,7 @@ faqs:
     a: "A full physical exam \u2014 the consultation itself \u2014 typically costs $50\u2013$100, or $100\u2013$200 at an emergency clinic. That fee buys a nose-to-tail examination and the vet's assessment, but no tests. Bloodwork, urinalysis, imaging and anything else are billed separately on top, which is why the exam fee alone rarely answers the question of what is wrong."
   - q: "How much does a vet charge to treat a cat with a UTI?"
     a: "Reaching the diagnosis \u2014 exam, urinalysis, often bloodwork and an X-ray \u2014 generally costs $200\u2013$600. Treatment for a straightforward urinary tract infection is then modest, commonly $30\u2013$80 for a course of antibiotics. The important distinction is that a male cat who cannot urinate is not a UTI but a urinary blockage, which is a same-day emergency costing $1,500\u2013$3,500. If a cat is straining in the litter box and producing nothing, that is an emergency call rather than a next-day appointment — our [Cat Urinary Emergency Checker](/tools/cat-urinary-emergency-checker.html) walks through the urgency question in under a minute."
+last_modified_at: 2026-09-29
 ---
 
 Veterinary costs are one of the most variable and least predictable expenses in pet ownership. A routine wellness visit might run $60. The same appointment at an emergency clinic on a Saturday night could cost ten times that — before any treatment.

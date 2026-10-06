@@ -3107,3 +3107,9 @@ QA 전부 통과(회귀 검사 포함). **페이지 수**: tools 51 + posts **41
 #### 6. 🔴 IndexNow 실패 원인 — ads.txt (AY에서 수정)
 AY 푸시의 IndexNow가 "Resolve IndexNow key" 단계에서 실패했다. 워크플로가 루트의 `[0-9a-f]*.txt`를 키 파일로 찾는데, 10/1에 추가한 **`ads.txt`도 이 패턴에 걸리고 알파벳순으로 먼저 와서** 키 "ads"≠내용으로 실패. 패턴을 `^[0-9a-f]{32}\.txt$`로 좁혔다. **루트에 .txt를 추가할 땐 이 단계를 떠올릴 것.** AY 콘텐츠 URL은 이 실패로 IndexNow 제출이 안 됐다(Bing은 사이트맵으로 어차피 가져감).
 
+#### 세션 AY 추가 (10/6) — 사이트맵 수정일
+- 사이트맵은 `jekyll-sitemap`이 빌드마다 자동 생성(127개 URL, 신규 포스트 포함, handover·ads.txt 제외 확인). robots.txt도 플러그인이 생성.
+- 문제: 포스트 `lastmod`와 JSON-LD `dateModified`가 **게시일 고정**이라 보강한 페이지가 "수정됨"으로 안 보였다(puppy 차트 lastmod가 5/14).
+- 조치: `post.html`의 dateModified를 `page.last_modified_at | default: page.date`로 변경. AX·AY에서 고친 포스트 4개·툴 12개에 `last_modified_at` 추가.
+- **➡️ 앞으로 기존 페이지를 보강하면 front matter의 `last_modified_at`을 그날 날짜로 바꿀 것.** (새 페이지는 불필요)
+

@@ -28,6 +28,7 @@ faqs:
   - q: "How much should my kitten weigh?"
     a: "How much should my kitten weigh depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number."
 
+last_modified_at: 2026-10-05
 ---
 
 "My kitten weighs 3 pounds — is that normal?" The honest answer is: it depends entirely on age, and a little on breed. A 3 lb kitten at 8 weeks is unusually large; a 3 lb kitten at 4 months is right on schedule; a 3 lb Maine Coon at 6 months is small for their breed but might still be perfectly healthy.
