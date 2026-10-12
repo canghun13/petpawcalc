@@ -18,6 +18,7 @@ faqs:
   - q: "How much does a cat vet visit cost per year?"
     a: "For a healthy adult cat (ages 2–9), annual vet costs typically run $200–$500 including the exam, rotating vaccines, and parasite prevention. Senior cats add bloodwork and more frequent visits, bringing annual costs to $500–$1,000+. Dental cleanings, when needed, add $250–$600 and are billed separately."
 
+last_modified_at: 2026-10-12
 ---
 
 Cats are famously good at hiding illness — a survival instinct that makes routine vet visits more important, not less. By the time most cats show visible signs of a health problem, the condition has often been developing for months.
@@ -92,7 +93,7 @@ This is the most important shift in vet visit frequency. Senior cats can develop
 
 Most vets recommend twice-yearly exams for cats over 10. Cats in this age group are at significantly elevated risk for:
 
-- **Hyperthyroidism** — affects roughly 10% of cats over 10, causes weight loss, increased appetite, and hyperactivity
+- **Hyperthyroidism** — affects roughly 10% of cats over 10, causes weight loss, increased appetite, and hyperactivity ([what treatment costs](/blog/cat-hyperthyroidism-treatment-cost/))
 - **Chronic kidney disease** — one of the most common conditions in older cats; early detection through bloodwork dramatically improves outcomes
 - **Diabetes** — increasingly common in overweight cats and senior cats
 - **Hypertension** — often secondary to kidney disease or hyperthyroidism; can cause sudden blindness if untreated

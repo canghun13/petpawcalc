@@ -1,150 +1,127 @@
 ---
 layout: post
 title: "How Much Does a Cat Vet Visit Cost? A 2026 Guide"
-description: "Routine exams, vaccines, bloodwork, dental cleanings, and emergency visits — here's what cat vet care actually costs in the US in 2026, and how to plan for it."
+description: "A routine cat checkup is cheap; the big cat bills come from a handful of conditions cats hide until late — urinary blockage, dental resorption, thyroid and kidney disease. US price ranges, and where cat costs differ from dogs."
 category: Cat Care
 date: 2026-06-18
+last_modified_at: 2026-10-12
 read_time: 8
 slug: how-much-does-a-cat-vet-visit-cost
 faqs:
   - q: "How much does a cat vet visit cost without insurance?"
-    a: "A routine wellness exam typically costs $50–$100. If your cat needs vaccinations, bloodwork, or treatment, expect $150–$400 or more for a single visit without pet insurance."
-  - q: "How often should cats go to the vet?"
-    a: "Healthy adult cats (1–7 years) need a wellness exam once a year. Kittens need visits every 3–4 weeks until 16 weeks old for their vaccine series, and senior cats (7+ years) benefit from exams every 6 months."
-  - q: "What does a standard cat checkup include?"
-    a: "A standard exam includes a physical nose-to-tail assessment, weight check, heart and lung evaluation, and discussion of diet, behavior, and preventive care. Vaccines, blood tests, or dental cleanings are typically add-on costs."
-  - q: "Can I take my cat to the vet without a carrier?"
-    a: "It's strongly advised to use a carrier for safety and to reduce stress for both your cat and other animals in the waiting room. Most clinics require it."
-  - q: "Is pet insurance worth it for cats?"
-    a: "For cats prone to illness or injury, pet insurance can significantly reduce out-of-pocket costs. It's most cost-effective when purchased while your cat is young and healthy, before any pre-existing conditions develop." 
+    a: "A routine wellness exam typically costs $50–$100 at a suburban general practice and $150–$250 in high-cost cities. With vaccines due, a typical adult checkup totals about $100–$200. Visits where something is wrong cost more, because bloodwork, urine tests and imaging are billed on top of the exam."
+  - q: "Why are cat vet bills so expensive when my cat seemed fine?"
+    a: "Because cats hide illness well, so problems are often found late, when treatment is more involved. The biggest cat bills cluster in a few conditions: urinary blockage in male cats, painful tooth resorption needing extractions, and the thyroid and kidney disease common in older cats. Routine checkups are what catch most of these while they are still cheaper to manage."
+  - q: "Are vet visits cheaper for cats than for dogs?"
+    a: "The exam fee is usually about the same. Cats tend to cost less over a year because they need fewer weight-dosed medications and are less often injured, but cat owners also take their cats to the vet less often, which is part of why cat problems are found later. The large cat-specific costs come from conditions rather than from routine care."
+  - q: "What tests does a new cat need?"
+    a: "Most vets recommend testing a newly adopted cat for feline leukemia virus (FeLV) and feline immunodeficiency virus (FIV), usually $50–$80 for the combined test, along with a fecal test for intestinal parasites. Kittens also need the FVRCP vaccine series and rabies, and FeLV vaccination is recommended for kittens and for cats with any outdoor access."
+  - q: "How much does it cost to sedate a scared cat at the vet?"
+    a: "It varies by clinic and by what the cat needs done, so ask for an estimate. Often the cheaper route is prevention: carrier training at home and, for very fearful cats, a pre-visit anti-anxiety medication your vet can prescribe. A calmer cat is easier to examine thoroughly, and needs sedation less often."
 ---
 
-Cat owners tend to take their cats to the vet less often than dog owners do — and often get surprised when they do go. The bill looks different from what they expected, partly because cats are better at hiding illness, which means problems go unnoticed longer, and partly because many owners simply don't know what cat care typically costs.
+A routine cat checkup is one of the cheaper things in pet care. A wellness exam typically costs **$50–$100** at a suburban practice, and an adult cat's yearly vet budget, if nothing goes wrong, can stay under $400.
 
-Here's a realistic breakdown of what vet visits actually cost for cats in 2026, what's typically included, and how to build a plan that doesn't catch you off guard.
+So why do cat owners so often get a bill that shocks them? Because the expensive cat bills don't come from routine care. They cluster in a handful of conditions that cats hide until late, and that a general vet price list doesn't single out. This page covers both sides: what routine care costs, and the cat-specific problems behind the big bills.
 
-## Routine Wellness Exam: $50–$250
+## What Routine Cat Care Costs
 
-A standard wellness exam for a cat — physical assessment, weight, temperature, heart and lung check, eyes, ears, teeth — typically runs $50–$100 at a general practice vet. In major urban areas (New York, Los Angeles, San Francisco, Seattle), the same appointment often runs $150–$250.
+Typical US prices at a general practice:
 
-What drives the variation:
-- **Location**: Urban and coastal vets charge 40–80% more than rural or small-town practices for the same services.
-- **Clinic type**: Corporate-owned clinics (Banfield, VCA) have different pricing structures than independent practices. Both can be excellent — the pricing just differs.
-- **Cat's age**: Senior wellness exams typically include additional assessments and take longer, which increases the base fee.
+| Service | Typical cost |
+|---------|--------------|
+| Wellness exam | $50–$100 (high-cost cities $150–$250) |
+| FVRCP vaccine (core, every 1–3 years) | $20–$40 |
+| Rabies vaccine (every 1–3 years) | $15–$30 |
+| FeLV vaccine (kittens; cats with outdoor access) | $25–$45 |
+| FeLV/FIV test (new cats, cats with outdoor access) | $50–$80 |
+| Fecal test | $30–$60 |
+| Basic chemistry panel / CBC | $80–$150 / $50–$100 |
+| Senior panel including T4 thyroid | $150–$300 |
+| Dental cleaning under anesthesia, no extractions | $300–$600 |
 
-The exam fee is usually the starting point. Most appointments include at least some additional services.
+For how these costs apply to dogs and to vet visits in general, including what it costs to find out what's wrong with a sick pet, see [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/). For how often a cat needs each visit at each age, see [How Often Do Cats Need to Go to the Vet?](/blog/how-often-vet-visits-cat/).
 
-## Core Vaccines for Cats: $20–$50 Per Vaccine
+## Where Cat Bills Get Big: Five Cat-Specific Costs
 
-Vaccines are typically billed per shot, not as a package. Core vaccines for cats include:
+### 1. Urinary blockage in male cats: $1,500–$3,500
 
-| Vaccine | Frequency | Typical Cost |
-|---------|-----------|--------------|
-| FVRCP (distemper, calicivirus, rhinotracheitis) | Every 1–3 years | $20–$40 |
-| Rabies | Every 1–3 years | $15–$30 |
-| FeLV (feline leukemia) | Annually for at-risk cats | $25–$45 |
+The most important cat-specific emergency. Male cats have a narrow urethra that can block with crystals, plugs or inflammation. A blocked cat can't pass urine, and without treatment it becomes life-threatening within hours to days.
 
-**FVRCP** is the core three-in-one vaccine given to nearly all cats. Rabies is required by law in most states. **FeLV** (feline leukemia) is recommended for cats that go outdoors or live with FeLV-positive cats — indoor-only cats with no exposure may not need it after the initial series.
+Treatment means hospitalization, sedation, a urinary catheter and several days of care, typically **$1,500–$3,500**. Recurrence is common, which is why prevention matters after the first episode.
 
-A typical adult cat wellness visit with routine vaccines usually totals $100–$200 at a standard suburban practice. In a high cost-of-living city, that same visit often runs $200–$350.
+**The sign to know:** a male cat straining in the litter box and producing little or nothing. That is a same-day emergency, not a constipation problem. Our [Cat Urinary Emergency Checker](/tools/cat-urinary-emergency-checker.html) walks through the urgency question, and the [Cat Urinary Health Checklist](/checklists/cat-urinary-health-checklist.html) covers prevention.
 
-## Kitten Vaccine Series: $200–$400 in Year One
+### 2. Tooth resorption: extractions, not cleanings
 
-Kittens need a series of vaccines spaced over several months, which makes their first year more expensive than subsequent years.
+Cats are prone to tooth resorption, a painful condition in which the tooth structure breaks down from the inside. Affected teeth usually have to be extracted, and full-mouth dental X-rays under anesthesia are needed to find them, because much of the damage sits below the gumline.
 
-| Age | Vaccines |
-|-----|---------|
-| 6–8 weeks | First FVRCP |
-| 10–12 weeks | FVRCP booster |
-| 14–16 weeks | FVRCP booster + Rabies |
-| 6 months | Spay/neuter visit |
-| 1 year | First annual wellness exam, FVRCP booster |
+This is why a cat dental estimate often comes with a wide range. A cleaning alone runs **$300–$600**, but once extractions are involved it commonly reaches **$600–$1,200 or more**, and the vet often can't tell you which until the X-rays are taken. Cats rarely stop eating from dental pain until it is advanced, so routine dental checks are what catch it.
 
-Including spay/neuter (see below), kitten owners should budget $400–$800 for the first year of vet care.
+### 3. Hyperthyroidism in older cats
 
-## Spay or Neuter: $200–$600
+Up to 10% of cats over 10 develop an overactive thyroid. Weight loss despite a big appetite is the classic sign, and an inexpensive T4 test ($45–$80, often included in senior panels) picks it up.
 
-Spaying or neutering is typically performed around 5–6 months of age and is usually the single largest veterinary expense in a cat's first year.
+The treatment choice has a large cost effect. Daily medication looks cheap, but over several years it usually costs more than a one-time radioiodine cure. Our guide to [cat hyperthyroidism treatment cost](/blog/cat-hyperthyroidism-treatment-cost/) works through the arithmetic, and explains why vets often start with pills anyway.
 
-- **Spay (female)**: $200–$500 at most general practices; $50–$150 at low-cost clinics
-- **Neuter (male)**: $150–$400 at most general practices; $40–$100 at low-cost clinics
+### 4. Chronic kidney disease monitoring
 
-Low-cost spay/neuter clinics (often run by humane societies or nonprofits) can significantly reduce these costs. The procedure itself is the same — the price difference reflects overhead and staffing model, not quality of care.
+Kidney disease is common in older cats and is usually managed rather than cured. The cost isn't a single bill. It is ongoing monitoring: repeat bloodwork and urine tests, blood pressure checks, and often a prescription kidney diet, spread over years.
 
-Cats adopted from shelters are almost always already spayed or neutered, which removes this cost.
+Caught early on senior bloodwork, it is far cheaper to manage than a cat brought in already in crisis, which can mean hospitalization and IV fluids.
 
-## Parasite Prevention: $100–$250/Year
+### 5. FeLV/FIV and outdoor exposure
 
-Cats need parasite prevention too — though the specifics differ from dogs.
+Cats that go outdoors, or live with cats that do, carry costs that strictly indoor cats mostly avoid:
 
-- **Flea/tick prevention**: $40–$100 for a 3-month supply (topical or oral). Indoor-only cats with no flea exposure may not need year-round treatment.
-- **Heartworm prevention**: Often combined with flea prevention. Costs $30–$80 for a 6-month supply.
-- **Intestinal parasite testing (fecal)**: $30–$60. Usually done annually or when symptoms suggest parasites.
+- **FeLV/FIV testing** ($50–$80) for new cats and after possible exposure, plus FeLV vaccination
+- **Bite wounds and abscesses** from cat fights, which usually need antibiotics or drainage ($150–$400)
+- **Year-round parasite prevention** rather than minimal protection for an indoor-only cat
+- **Trauma** from cars or falls, which can run from $500 to well over $5,000
 
-Note: Many flea/tick products made for dogs are toxic to cats. Never use a dog product on a cat without explicit veterinary confirmation that it's cat-safe.
+## Emergency Costs for Cats
 
-## Bloodwork: $80–$300
+Because cats tend to be ill for a while before it shows, emergency visits are often more involved by the time they happen. Typical ranges:
 
-Bloodwork is standard for cats over 7 years old and for any cat going under anesthesia. It's also useful when a cat suddenly changes behavior, appetite, or weight — which are often the first signs of illness in cats.
-
-| Test | Typical Cost |
-|------|-------------|
-| Basic chemistry panel | $80–$150 |
-| Complete blood count (CBC) | $50–$100 |
-| Full senior panel (including T4 thyroid) | $150–$300 |
-| Hyperthyroidism test (T4) | $45–$80 |
-
-**Hyperthyroidism** is one of the most common conditions in cats over 10, and a simple T4 test can catch it. Many vets include it automatically in senior wellness panels — ask if it's included in the price you're quoted.
-
-If initial bloodwork is abnormal, follow-up tests (urinalysis, imaging, specialist referral) can add $200–$600+ to the total.
-
-<div class="post-cta">
-  <h4>How often should your cat see the vet?</h4>
-  <p>Vet visit frequency changes at different life stages. Get a personalized schedule for your cat.</p>
-  <a href="/tools/cat-vet-visit-scheduler.html">Use the Cat Vet Visit Scheduler →</a>
-</div>
-
-## Dental Cleaning: $300–$900+
-
-Dental disease is extremely common in cats — most cats over 3 have some degree of it, and it often goes unnoticed because cats don't show pain the same way dogs do. A professional dental cleaning requires general anesthesia, which is why it costs significantly more than a teeth check.
-
-- **Dental exam + cleaning (no extractions)**: $300–$600
-- **Cleaning + extraction (simple tooth)**: $400–$700
-- **Cleaning + multiple extractions or complex work**: $600–$1,200+
-
-Cats with untreated dental disease often stop eating properly due to oral pain — which leads to other health problems. Dental care that seems expensive upfront often prevents more expensive problems later.
-
-## Emergency and Urgent Care Visits: $500–$5,000+
-
-Cats are notorious for hiding illness until it becomes serious. By the time a cat shows obvious signs of being sick, they've often been unwell for days or weeks. Emergency visits are accordingly more complex — and more expensive.
-
-**Common emergency scenarios and typical costs:**
-
-| Situation | Typical ER Cost |
+| Situation | Typical ER cost |
 |-----------|----------------|
 | Urinary blockage (especially male cats) | $1,500–$3,500 |
 | Respiratory distress (asthma flare, fluid in chest) | $800–$2,500 |
 | Trauma (hit by car, fall injury) | $500–$5,000+ |
-| Poisoning | $500–$3,000+ |
-| Sudden vomiting/not eating (various causes) | $300–$1,500 |
-| Suspected foreign body ingestion | $500–$3,000+ |
+| Poisoning (lilies, antifreeze, medications) | $500–$3,000+ |
+| Sudden vomiting or not eating | $300–$1,500 |
+| Swallowed string or other foreign body | $500–$3,000+ |
 
-**Urinary blockage** deserves special mention: it's one of the most common feline emergencies, it primarily affects male cats, and it's life-threatening if not treated within hours. If a male cat is straining in the litter box and not producing urine, this is a same-day emergency.
+Emergency clinics also charge a higher exam fee — typically **$150–$250** — before any treatment starts.
 
-Emergency clinics also charge a premium over regular hours — expect a base exam fee of $150–$250 before any treatment.
+## The Cost of a Scared Cat
 
-## Annual Pet Cost Estimate by Life Stage
+One cost cat owners rarely plan for is fear. A cat that is terrified of the carrier and the clinic is harder to examine thoroughly, more likely to need sedation for simple procedures, and more likely to be brought in only when something is obviously wrong.
 
-To put it all together — here's what annual cat vet costs typically look like at different life stages, assuming no major illness:
+The cheapest fixes come before the appointment:
 
-| Life Stage | Typical Annual Vet Costs |
-|------------|-------------------------|
-| Kitten (year one, including spay/neuter) | $400–$800 |
-| Young adult (1–7 years) | $200–$450 |
-| Senior (8–12 years) | $400–$800 |
-| Geriatric (13+ years) | $500–$1,200+ |
+- **Carrier training at home**, so the carrier stops meaning "vet." Our [Cat Carrier Training Planner](/tools/cat-carrier-training-planner.html) counts back from the appointment date.
+- **A pre-visit anti-anxiety medication** for very fearful cats, which your vet can prescribe. Ask about it at the next visit.
+- **A cat-friendly clinic** with separate waiting areas and handling designed around cats.
 
-These are wellness costs only. A single unexpected illness or injury can add $500–$5,000+ in any given year. This is why pet insurance is worth evaluating — particularly for cats under 3, before pre-existing conditions accumulate.
+## A Typical Year of Vet Costs for a Healthy Adult Cat
+
+For a healthy indoor adult cat seen once a year at a mid-range suburban practice:
+
+| Service | Cost |
+|---------|------|
+| Wellness exam | $75–$100 |
+| FVRCP booster (every 3 years) | $0 or $30 |
+| Rabies (every 1–3 years) | $0 or $20 |
+| Flea prevention (6 months) | $50–$80 |
+| Heartworm prevention (6 months) | $30–$50 |
+| Fecal test | $35–$55 |
+| **Total (no vaccines due this year)** | **$190–$285** |
+| **Total (vaccines due this year)** | **$240–$385** |
+
+For a senior cat (over 10), add bloodwork with a T4 test ($150–$300) and, often, a second checkup each year. A dental cleaning adds $300–$600, more with extractions. Annual costs for a senior cat typically run $500–$900 even when nothing is wrong.
+
+Kittens cost more in year one: the vaccine series, FeLV/FIV testing and spay or neuter usually add up to $400–$800. See the [Spay/Neuter Cost Calculator](/tools/spay-neuter-cost-calculator.html) for that line on its own.
 
 <div class="post-cta">
   <h4>Want to estimate your cat's total annual cost?</h4>
@@ -152,74 +129,30 @@ These are wellness costs only. A single unexpected illness or injury can add $50
   <a href="/tools/annual-pet-cost-calculator.html">Calculate your cat's annual cost →</a>
 </div>
 
-## Indoor vs. Outdoor Cats: Does It Affect Vet Costs?
-
-Yes — significantly. Outdoor and indoor-outdoor cats face health risks that strictly indoor cats don't, and those risks show up in the vet bill.
-
-**Higher costs for outdoor/indoor-outdoor cats:**
-- **Injuries**: Bite wounds from other cats are extremely common and almost always require antibiotics or wound treatment ($150–$400). Fight wounds abscess quickly if untreated.
-- **FeLV and FIV testing**: Cats exposed to other cats outdoors should be tested for feline leukemia and feline immunodeficiency virus. Tests run $50–$80. FeLV-positive cats require more frequent monitoring.
-- **Flea and tick treatment**: Outdoor cats need year-round parasite prevention, not just seasonal. This adds $100–$200/year.
-- **Respiratory infections**: Upper respiratory infections are more common in cats exposed to other cats outdoors. A typical URI treatment runs $100–$250.
-- **Toxin exposure**: Antifreeze, rodenticide bait, and toxic plants are outdoor hazards. Poisoning treatment is expensive and time-sensitive.
-- **Accidents**: Cars are the leading cause of traumatic injury in outdoor cats. Trauma treatment can cost $500–$5,000+.
-
-Strictly indoor cats, by contrast, avoid most of these risks entirely. Their annual vet costs are more predictable and lower — primarily wellness exams, vaccines, and parasite prevention.
-
-If cost is a significant concern, keeping cats indoors also keeps vet costs more manageable and predictable. There are other good reasons too, but the financial one is real.
-
-## Ways to Reduce Cat Vet Costs Without Cutting Corners
-
-**Low-cost and community clinics**: Many areas have nonprofits, humane societies, or vet schools that offer discounted care. Spay/neuter, vaccines, and basic wellness exams are often significantly cheaper. Search for low-cost vet clinics in your area — the quality of care is generally the same.
-
-**Preventive care**: Cats that receive regular wellness exams get problems caught earlier, which almost always means less expensive treatment. A $150 annual exam that catches early kidney disease is far cheaper than a $3,000 hospitalization for a cat in kidney failure.
-
-**Pet insurance**: Insurance premiums run $20–$60/month for cats, depending on coverage and deductible. For cats that are young and healthy, insuring early (before pre-existing conditions) locks in lower premiums and broader coverage. It doesn't reduce routine costs, but it protects against the large unexpected bills.
-
-**Dental care at home**: Daily toothbrushing with cat-safe toothpaste dramatically reduces the frequency of professional cleanings. Most cats can be trained to tolerate brushing if started young — and the payoff in avoided dental bills over a lifetime is significant.
-
-**Ask about packages**: Some practices offer wellness plans that bundle annual exam, vaccines, and parasite prevention at a discounted total. These don't cover illness or emergency, but they reduce the predictable annual costs.
-
-## What a Typical Annual Cat Vet Budget Looks Like
-
-For a healthy adult cat (ages 2–7), seeing the vet once a year at a mid-range suburban practice:
-
-| Service | Cost |
-|---------|------|
-| Wellness exam | $75–$100 |
-| FVRCP booster (every 3 years) | $0 or $30 |
-| Rabies (every 3 years) | $0 or $20 |
-| Flea prevention (6 months) | $50–$80 |
-| Heartworm prevention (6 months) | $30–$50 |
-| Fecal test | $35–$55 |
-| **Total (no vaccines due this year)** | **$190–$285** |
-| **Total (vaccines due this year)** | **$240–$385** |
-
-For a senior cat (8+ years), add bloodwork ($150–$300) and a possible dental cleaning ($300–$600), and annual costs typically run $500–$900 even when nothing is wrong.
+If the totals here are hard to fit in a budget, [How to Reduce Vet Costs Without Compromising Your Cat's Care](/blog/how-to-reduce-vet-costs-for-cats/) covers insurance timing, low-cost clinics and the preventive care that pays for itself.
 
 *This article is for informational purposes only. Vet costs vary significantly by location, clinic, and individual pet needs. Consult your veterinarian for an accurate estimate based on your cat's specific health status.*
 
 ## Frequently Asked Questions
 
 **How much does a cat vet visit cost without insurance?**
-A routine wellness exam typically costs $50–$100. If your cat needs vaccinations, bloodwork, or treatment, expect $150–$400 or more for a single visit without pet insurance.
+A routine wellness exam typically costs $50–$100 at a suburban general practice and $150–$250 in high-cost cities. With vaccines due, a typical adult checkup totals about $100–$200. Visits where something is wrong cost more, because bloodwork, urine tests and imaging are billed on top of the exam.
 
-**How often should cats go to the vet?**
-Healthy adult cats (1–7 years) need a wellness exam once a year. Kittens need visits every 3–4 weeks until 16 weeks old for their vaccine series, and senior cats (7+ years) benefit from exams every 6 months.
+**Why are cat vet bills so expensive when my cat seemed fine?**
+Because cats hide illness well, so problems are often found late, when treatment is more involved. The biggest cat bills cluster in a few conditions: urinary blockage in male cats, painful tooth resorption needing extractions, and the thyroid and kidney disease common in older cats. Routine checkups are what catch most of these while they are still cheaper to manage.
 
-**What does a standard cat checkup include?**
-A standard exam includes a physical nose-to-tail assessment, weight check, heart and lung evaluation, and discussion of diet, behavior, and preventive care. Vaccines, blood tests, or dental cleanings are typically add-on costs.
+**Are vet visits cheaper for cats than for dogs?**
+The exam fee is usually about the same. Cats tend to cost less over a year because they need fewer weight-dosed medications and are less often injured, but cat owners also take their cats to the vet less often, which is part of why cat problems are found later. The large cat-specific costs come from conditions rather than from routine care.
 
-**Can I take my cat to the vet without a carrier?**
-It's strongly advised to use a carrier for safety and to reduce stress for both your cat and other animals in the waiting room. Most clinics require it.
+**What tests does a new cat need?**
+Most vets recommend testing a newly adopted cat for feline leukemia virus (FeLV) and feline immunodeficiency virus (FIV), usually $50–$80 for the combined test, along with a fecal test for intestinal parasites. Kittens also need the FVRCP vaccine series and rabies, and FeLV vaccination is recommended for kittens and for cats with any outdoor access.
 
-**Is pet insurance worth it for cats?**
-For cats prone to illness or injury, pet insurance can significantly reduce out-of-pocket costs. It's most cost-effective when purchased while your cat is young and healthy, before any pre-existing conditions develop.
+**How much does it cost to sedate a scared cat at the vet?**
+It varies by clinic and by what the cat needs done, so ask for an estimate. Often the cheaper route is prevention: carrier training at home and, for very fearful cats, a pre-visit anti-anxiety medication your vet can prescribe. A calmer cat is easier to examine thoroughly, and needs sedation less often.
 
 ## Related Articles
 
-- [How Often Should Cats Go to the Vet?](/blog/how-often-vet-visits-cat/)
+- [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) — why the priciest option is often the cheapest
+- [How Often Do Cats Need to Go to the Vet?](/blog/how-often-vet-visits-cat/) — the visit schedule by age
 - [How to Reduce Vet Costs Without Compromising Your Cat's Care](/blog/how-to-reduce-vet-costs-for-cats/)
 - [True Cost: Cat vs Dog](/blog/true-cost-cat-vs-dog-year-by-year/)
-- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
-

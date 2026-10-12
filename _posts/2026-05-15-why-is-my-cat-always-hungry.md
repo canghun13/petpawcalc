@@ -18,6 +18,7 @@ faqs:
   - q: "How many times a day should I feed my cat?"
     a: "Most adult cats do well with 2 meals per day, though 3–4 smaller meals more closely matches their natural eating pattern and can reduce food-focused behavior. Kittens need 3–4 meals per day. Senior cats often do better with 3 smaller meals due to reduced stomach capacity."
 
+last_modified_at: 2026-10-12
 ---
 
 Cats have a reputation for being aloof, but when it comes to food, many owners deal with the opposite problem: a cat that acts like it's starving at all times. Meowing at the bowl, pacing, pawing at you before meals.
@@ -113,7 +114,7 @@ Not every cat that meows for food is actually hungry. Cats are highly routine-or
 
 ## When to See a Vet
 
-If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's highly manageable when caught early.
+If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's highly manageable when caught early — and the treatment choice makes a big difference to the long-run cost, as our guide to [cat hyperthyroidism treatment cost](/blog/cat-hyperthyroidism-treatment-cost/) explains.
 
 Other conditions that can increase appetite include diabetes, intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
 

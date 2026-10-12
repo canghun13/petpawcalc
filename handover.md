@@ -1,6 +1,6 @@
 # PetPawCalc 인수인계 문서
 
-최종 갱신: 2026-10-05 (세션 AY — 체중표 kg 보강 + 심장사상충 치료 비용 포스트 / 직전 AX — 툴 FAQ에 남아 있던 명칭 나열 제거 + 심장사상충 검사 비용 포스트 / 직전 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
+최종 갱신: 2026-10-12 (세션 AZ — 구글이 색인에서 뺀 고양이 진료비 포스트 차별화 재작성 + 고양이 갑상선기능항진증 치료비 포스트 / 직전 AY — 체중표 kg 보강 + 심장사상충 치료 비용 포스트 / 직전 AX — 툴 FAQ에 남아 있던 명칭 나열 제거 + 심장사상충 검사 비용 포스트 / 직전 AW — 강아지 운동 포스트, AV 판단 검증됨 / 직전 AV — 애드센스 저가치 판정 대응 / 직전 AU — 클릭 0 페이지에 문구 점검 적용, 신규 0 / 직전 AT — 신규 클러스터: 분리불안 2개, 마지막 빈 도메인 종료 / 직전 AS — 문구 변형 2라운드, 신규 0 / 직전 AR — 신규 클러스터: 소화기 2개 / 직전 AQ — 신규 클러스터: 재발성 외이염 2개, 알레르기 클러스터 심화 / 직전 AP — 문구 변형 체계적 보강, 신규 0 / 직전 AO — 신규 클러스터: 유실동물 대응 2개 / 직전 AN — 신규 클러스터: 고양이 하부요로계 2개 / 직전 AM — Bing CTR 실험 결과 + 정확문구 보강, 신규 0 / 직전 AL — 신규 클러스터: 신생아 케어 2개 / 직전 AK — 신규 클러스터: 한랭 안전 2개 + IndexNow 신규 구축 / 직전 AJ — Bing 데이터 최초 반영, CTR 개선 + 보강, 신규 0 / 직전 AI — 신규 클러스터: 알레르기/가려움 도메인 툴 2개 / 직전 AH — 주간 작업: 신규 Cat Arthritis Screening Tool + 5개 클러스터 정확문구 보강 + 기존 FAQ 버그 3건 수정)
 저장소: `canghun13/petpawcalc` (GitHub Pages, Jekyll)
 운영 도메인: https://petpawcalc.com
 
@@ -3112,4 +3112,43 @@ AY 푸시의 IndexNow가 "Resolve IndexNow key" 단계에서 실패했다. 워�
 - 문제: 포스트 `lastmod`와 JSON-LD `dateModified`가 **게시일 고정**이라 보강한 페이지가 "수정됨"으로 안 보였다(puppy 차트 lastmod가 5/14).
 - 조치: `post.html`의 dateModified를 `page.last_modified_at | default: page.date`로 변경. AX·AY에서 고친 포스트 4개·툴 12개에 `last_modified_at` 추가.
 - **➡️ 앞으로 기존 페이지를 보강하면 front matter의 `last_modified_at`을 그날 날짜로 바꿀 것.** (새 페이지는 불필요)
+
+### 세션 AZ — 색인에서 빠진 포스트 재작성 + 갑상선 치료비 포스트 (10/12)
+
+사용자 요청: 주간 작업(앞당김). 토큰 언급 없음 — 세션 연결로 푸시.
+
+#### 1. 데이터 (GSC 3개월, 차트 마지막 10/9)
+- 클릭 90 → **119**, 노출 23,776 → **31,423**. 일 노출 **1,000–1,435**(2주 전 700대). 모바일 10.93위.
+- kitten 차트 24 → 29클릭(14.81 → **12.9위**), puppy 22 → 29클릭(19.77 → 17.54).
+- kg 보강 반응: `6 month old kitten weight kg` **첫 클릭**(7.86위), `kitten weight chart kg` 176노출 12.4위.
+- 심장사상충 검사 포스트 79노출 11위, 치료 포스트 31노출(첫 주).
+- `annual-pet-cost`·`titer`가 크롤링됨-미색인 목록에서 빠지고 **클릭 발생 → 색인됨.** AV 보강의 최종 결과.
+- GA(9/14–10/11): 활성 사용자 **308**(255), google 80 / bing 48.
+- Bing: cat-vet-visit-cost 750노출 14클릭 4.19위, how-often-vet-visits-cat 530/21. `cat health checkup schedule` 73+41노출 4–5위.
+
+#### 2. 🔴 핵심 발견 — 구글이 겹치는 포스트를 색인에서 빼고 있다
+크롤링됨-미색인 목록에 **새로 들어온 3개**: `how-much-does-a-cat-vet-visit-cost`(Bing 1위 페이지!), `how-long-are-cats-pregnant`, `how-to-tell-if-dog-is-pregnant`. GSC 노출이 몇 주째 숫자 그대로(75·16)라 **이미 색인에서 빠진 상태**로 판단.
+기존 목록(7월부터): `what-to-feed-pregnant-dog`, `how-much-should-senior-dog-eat`, `how-long-are-dogs-pregnant`, `dog-age-human-years`, `how-much-to-feed-a-dog`, `how-to-tell-if-dog-is-overweight`.
+
+**공통점: 같은 주제의 다른 페이지와 구조가 겹친다.** cat-vet-visit-cost는 H2 골격이 general `how-much-does-a-vet-visit-cost`와 거의 같았고(진찰 $50–$250 / 백신 $20–$50 / 혈액검사 $80–$300 / 치과 / 응급 / 절약법 / 연간 예산), "생애단계별 비용"·"실내 vs 실외"는 `how-often-vet-visits-cat`, "절약법"은 `how-to-reduce-vet-costs-for-cats`와 겹쳤다. 임신 포스트들은 임신 계산기 FAQ·본문과 겹친다.
+**➡️ 구글은 주제당 한 페이지를 고르고 나머지를 뺀다. 이건 애드센스 "가치 없는 콘텐츠" 판정과도 같은 신호일 가능성이 크다.**
+
+#### 3. 재작성 — `how-much-does-a-cat-vet-visit-cost` (slug·제목 유지, Bing 순위 보호)
+- general 포스트와 같은 항목별 섹션들 → **표 하나로 압축**, 상세는 general 포스트로 링크.
+- 새 중심: **고양이에게만 있는 큰 비용 5가지** — 수컷 요도폐색($1,500–$3,500), 치아 흡수(발치·치과 X-ray 때문에 견적 폭이 넓은 이유), 갑상선기능항진증(신규 포스트 링크), 만성 신장병 모니터링, FeLV/FIV·실외 노출. + "겁먹은 고양이의 비용"(캐리어 훈련 툴 링크).
+- 삭제: 생애단계별 비용 표(일정 포스트와 중복), 실내 vs 실외 섹션(5번 항목으로 축소), 절약법 섹션(절약 포스트로 링크 한 줄).
+- FAQ 교체: "How often should cats go to the vet?"(일정 포스트 주제 그대로 → 중복) 등 3개 → "왜 멀쩡해 보였는데 비싸나", "개보다 싼가", "새 고양이에게 필요한 검사", "겁먹은 고양이 진정 비용". 노인묘 기준 10세 초과로 통일(2021 AAHA/AAFP).
+- `last_modified_at: 2026-10-12`.
+
+#### 4. 신규 포스트 — `_posts/2026-10-12-cat-hyperthyroidism-treatment-cost.md` (Pet Costs)
+중복 확인: 갑상선은 여러 포스트에 한 줄 언급뿐, 치료비 페이지 없음.
+**반직관적 핵심:** 방사성 요오드(I-131) $1,200–$2,000 일회성이 메티마졸(월 $40–$80 + 재검)보다 **1~3년이면 더 싸진다**(산식 표 공개: 연 $640–$1,410). 그래도 수의사가 약부터 시작하는 이유 = 치료가 **신장병을 드러낼 수 있어서**(되돌릴 수 있는 시험 투약). 처방식은 **유일한 음식이어야** 효과. 근거: 2016 AAFP 갑상선 가이드라인(PDF 원문 확인, DOI 10.1177/1098612X16643252), 가격은 PetMD·vetcostguide.
+역링크: cat-vet-visit-cost(본문+관련글), how-often-vet-visits-cat, why-is-my-cat-always-hungry. sources·llms.txt 갱신.
+
+QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
+
+#### 5. 다음 세션
+- **cat-vet-visit-cost가 다시 색인되는지가 최우선 확인 항목.** 돌아오면 같은 방식(겹치는 섹션 제거 + 그 페이지만의 질문으로 재구성)을 나머지 빠진 페이지에 **주 1개씩** 적용.
+- 다음 후보 순서(수익화·트래픽 기준): `how-to-tell-if-dog-is-pregnant`(dog-pregnancy 계산기와 겹침, 131노출) → `how-long-are-cats-pregnant`(cat-pregnancy 계산기와 겹침) → dog 7월 포스트들.
+- **신규 포스트는 기존 페이지와 섹션 골격이 겹치지 않는지 먼저 볼 것.** 같은 비용 항목 목록을 종(species)만 바꿔 다시 쓰는 방식은 이제 금지.
 
