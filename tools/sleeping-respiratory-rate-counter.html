@@ -1,0 +1,574 @@
+---
+layout: tool
+title: Sleeping Respiratory Rate Counter — Dog & Cat Breathing Rate at Home
+description: Count your dog's or cat's breaths while they sleep with a built-in 30-second timer, see whether the rate is in the normal range, and keep a log on your device to show your vet. Free, works on a phone at the bedside.
+permalink: /tools/sleeping-respiratory-rate-counter.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Sleeping Respiratory Rate Counter",
+  "url": "https://petpawcalc.com/tools/sleeping-respiratory-rate-counter.html",
+  "description": "A free tap-to-count tool for measuring a dog's or cat's sleeping respiratory rate with a 30-second timer, interpreting it against the commonly used 30 breaths-per-minute threshold, and keeping a private log on the owner's own device.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a normal sleeping breathing rate for a dog or cat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dogs and cats, with or without heart disease, typically breathe about 15 to 30 times a minute when asleep or resting calmly, and lower rates can be normal in a pet that is otherwise well. Veterinary cardiology guidance uses roughly 30 breaths per minute as the point above which a sleeping rate is considered raised. The same threshold is used for both species."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why count breaths while the pet is asleep?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because sleep removes almost everything else that changes breathing: excitement, heat, exercise, sniffing, panting and purring. That makes the sleeping rate a stable baseline, so a rise is more likely to mean something. In dogs and cats with heart disease, fluid building up in or around the lungs makes breathing faster before other signs appear, which is why cardiologists ask owners to track it at home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My pet's breathing rate is over 30. What should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recount several times over the next couple of hours while your pet is properly asleep, because a single reading can be thrown off by a dream, a recent walk or a warm room. If the rate stays consistently above about 30 a minute, contact your vet, who will usually want to see your pet within a day or two. If your pet has diagnosed heart disease, call the same day. A raised rate together with laboured breathing, pale or bluish gums, collapse, or restlessness and inability to settle is an emergency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I count my cat's breathing if she is purring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wait. A purring cat cannot be counted accurately, and veterinary guidance specifically says to count when the cat is not purring. The easiest time is when your cat has been deeply asleep for a while. Watch the side of the chest or belly rather than listening, and count one breath each time the chest rises and falls once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I check my pet's sleeping respiratory rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you are first learning, count once a day for about a week to establish your pet's own baseline. After that, follow your vet's instructions; for pets with diagnosed heart disease, many cardiologists ask for daily or several-times-weekly counts. What matters most is the trend: a pet whose usual sleeping rate is 18 and is now consistently 28 has changed, even though 28 is still under 30."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐾 Sleeping Respiratory Rate Counter</h1>
+    <p>Counting your pet's breaths while they sleep is one of the few genuinely useful heart checks you can do at home. Start the timer, tap once for every breath, and get the rate per minute with what it means.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="species">Species</label>
+      <select id="species" onchange="updateSpeciesCopy()">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="state">What is your pet doing right now?</label>
+      <select id="state">
+        <option value="asleep">Asleep (best)</option>
+        <option value="resting">Awake, lying calmly</option>
+        <option value="active">Active, panting, purring or excited</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dx">Has a vet diagnosed heart disease?</label>
+      <select id="dx">
+        <option value="no">No</option>
+        <option value="heart">Yes, or a murmur is being monitored</option>
+        <option value="unsure">Not sure</option>
+      </select>
+    </div>
+
+    <div class="srr-counter">
+      <p class="srr-howto" id="howto">Watch your dog's chest or belly. One breath = the chest rising <strong>and</strong> falling once. Press <strong>Start 30-second count</strong>, then tap the big button for every breath.</p>
+      <div class="srr-display">
+        <div><span id="timer-left">30</span><small>seconds left</small></div>
+        <div><span id="tap-count">0</span><small>breaths counted</small></div>
+      </div>
+      <button type="button" class="srr-start" id="start-btn" onclick="startCount()">Start 30-second count</button>
+      <button type="button" class="srr-tap" id="tap-btn" onclick="tapBreath()" disabled>Tap for each breath</button>
+    </div>
+
+    <div class="form-group">
+      <label for="manual-breaths">Or enter a count you made yourself</label>
+      <div style="display:flex; gap:10px;">
+        <input type="number" id="manual-breaths" min="1" max="200" placeholder="Breaths counted" style="flex:1;">
+        <select id="manual-period" style="flex:1;">
+          <option value="30">in 30 seconds</option>
+          <option value="60">in 60 seconds</option>
+          <option value="15">in 15 seconds</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Is any of this happening right now? (tick all that apply)</label>
+      <label class="srr-check"><input type="checkbox" id="sign-effort"> <span id="effort-label">Breathing looks like hard work — belly pumping, neck stretched out</span></label>
+      <label class="srr-check"><input type="checkbox" id="sign-gums"> Gums or tongue look pale, grey or bluish</label>
+      <label class="srr-check"><input type="checkbox" id="sign-collapse"> Collapse, fainting or extreme weakness</label>
+      <label class="srr-check"><input type="checkbox" id="sign-restless"> Restless, can't settle or lie down comfortably</label>
+      <label class="srr-check" id="cat-limb-wrap" style="display:none;"><input type="checkbox" id="sign-limb"> Sudden back-leg weakness, dragging, or crying in pain</label>
+    </div>
+
+    <button class="btn-calculate" onclick="evaluateRate()">Check Breathing Rate →</button>
+
+    <div class="result-box" id="result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="srr-date"></span>
+      </div>
+      <div style="text-align:center; margin-bottom: 14px;">
+        <div style="font-size: 2.4rem; font-weight: 700;" id="rate-value"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">breaths per minute</div>
+      </div>
+      <h3 id="verdict-headline" style="margin-bottom:8px;"></h3>
+      <p id="verdict-summary" style="color: var(--brown-mid); line-height:1.7; margin-bottom:16px;"></p>
+      <div id="verdict-notes"></div>
+      <div class="no-print" style="margin-top:14px;">
+        <button type="button" class="srr-save" id="save-btn" onclick="saveReading()">Save this reading to my log</button>
+      </div>
+      <div id="log-block" style="margin-top:18px;"></div>
+      <button class="pdf-btn" id="pdf-btn" onclick="doPrint('srr-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool counts and logs breathing — it cannot diagnose heart disease or rule it out. Laboured breathing, pale or bluish gums, collapse, or a cat breathing with its mouth open is an emergency whatever the number: go to an emergency vet. Your own vet's instructions for your pet always take priority over the general thresholds used here.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Cardiologists Ask Owners to Count</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">When heart disease progresses to heart failure, fluid starts to build up in or around the lungs. One of the earliest things that changes is how fast a pet breathes at rest, often before coughing, tiredness or obvious distress. A sleeping pet has none of the usual reasons to breathe fast, so a rise in the sleeping rate is a signal worth acting on.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">That is why veterinary cardiologists routinely send owners of dogs and cats with heart disease home with one instruction above all others: count the breaths while they sleep, and call if the number stays up. It costs nothing, takes thirty seconds, and it is the one heart check you can do every day. The thresholds this tool uses follow the owner guidance published by the Cardiac Education Group, a group of veterinary cardiologists.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Numbers</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>About 15–30 breaths a minute</strong> is typical for a sleeping or calmly resting dog or cat, with or without heart disease. Lower can be normal in a pet that is otherwise well.</li>
+      <li><strong>Consistently above about 30</strong> while asleep is the point to recount and then contact your vet. The same threshold applies to dogs and cats.</li>
+      <li><strong>Your pet's own baseline matters as much as the threshold.</strong> A dog that usually sleeps at 16 breaths a minute and is now steadily at 27 has changed, even though 27 is "normal".</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How to Get an Accurate Count</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Count during real sleep</strong>, not the first minute after lying down. Evening, once the house is quiet, is often easiest.</li>
+      <li><strong>Watch, don't touch.</strong> Look at the chest or belly from a little distance. A hand on the chest often wakes the pet or changes the rhythm.</li>
+      <li><strong>One rise plus one fall is one breath.</strong> Counting each movement separately doubles the number, the single most common counting mistake.</li>
+      <li><strong>Ignore dream breathing.</strong> Twitching, paddling or sudden quick breaths during a dream push the rate up. Wait until it settles and count again.</li>
+      <li><strong>Cats must not be purring.</strong> A purring cat can't be counted accurately.</li>
+      <li><strong>Room temperature matters.</strong> A pet sleeping in a hot room or in the sun may breathe faster for reasons that have nothing to do with the heart.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">When you are learning, count once a day for about a week to find your pet's usual number. After that, follow your vet's schedule. For a pet with diagnosed heart disease, that is often daily.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">About the Log</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Readings you choose to save are stored only in this browser on this device. Nothing is sent anywhere, and clearing your browser data clears the log. Use <strong>Save as PDF</strong> to bring the record to an appointment. A list of dates and numbers is far more useful to a cardiologist than "she's been breathing a bit fast lately".</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is a normal sleeping breathing rate for a dog or cat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dogs and cats, with or without heart disease, typically breathe about 15 to 30 times a minute when asleep or resting calmly, and lower rates can be normal in a pet that is otherwise well. Veterinary cardiology guidance uses roughly 30 breaths per minute as the point above which a sleeping rate is considered raised. The same threshold is used for both species.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why count breaths while the pet is asleep?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Because sleep removes almost everything else that changes breathing: excitement, heat, exercise, sniffing, panting and purring. That makes the sleeping rate a stable baseline, so a rise is more likely to mean something. In dogs and cats with heart disease, fluid building up in or around the lungs makes breathing faster before other signs appear, which is why cardiologists ask owners to track it at home.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">My pet's breathing rate is over 30. What should I do?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Recount several times over the next couple of hours while your pet is properly asleep, because a single reading can be thrown off by a dream, a recent walk or a warm room. If the rate stays consistently above about 30 a minute, contact your vet, who will usually want to see your pet within a day or two. If your pet has diagnosed heart disease, call the same day. A raised rate together with laboured breathing, pale or bluish gums, collapse, or restlessness and inability to settle is an emergency.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I count my cat's breathing if she is purring?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Wait. A purring cat cannot be counted accurately, and veterinary guidance specifically says to count when the cat is not purring. The easiest time is when your cat has been deeply asleep for a while. Watch the side of the chest or belly rather than listening, and count one breath each time the chest rises and falls once.</p>
+
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I check my pet's sleeping respiratory rate?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">When you are first learning, count once a day for about a week to establish your pet's own baseline. After that, follow your vet's instructions; for pets with diagnosed heart disease, many cardiologists ask for daily or several-times-weekly counts. What matters most is the trend: a pet whose usual sleeping rate is 18 and is now consistently 28 has changed, even though 28 is still under 30.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Reading</h3>
+    <p>
+      <a href="/blog/dog-heart-murmur-what-next/">Dog Heart Murmur: What Happens Next</a> —
+      <a href="/blog/cat-heart-murmur-what-it-means/">Cat Heart Murmur: What It Does and Doesn't Mean</a> —
+      <a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a>
+    </p>
+  </div>
+</div>
+
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .form-group, .srr-counter                    { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<style>
+.srr-counter {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 22px;
+}
+.srr-howto { font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6; margin-bottom: 12px; }
+.srr-display { display: flex; gap: 12px; margin-bottom: 12px; }
+.srr-display > div {
+  flex: 1;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  padding: 10px 6px;
+}
+.srr-display span { display: block; font-size: 2rem; font-weight: 700; color: var(--brown); line-height: 1.2; }
+.srr-display small { font-size: 0.78rem; color: var(--brown-mid); }
+.srr-start, .srr-save {
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--orange);
+  background: var(--white);
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  margin-bottom: 10px;
+}
+.srr-tap {
+  width: 100%;
+  min-height: 96px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--orange);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-body);
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.srr-tap:disabled { background: #d9cfc4; cursor: not-allowed; }
+.srr-check {
+  display: flex; gap: 8px; align-items: flex-start;
+  font-weight: 400 !important;
+  font-size: 0.9rem;
+  color: var(--brown-mid);
+  line-height: 1.5;
+  margin: 6px 0;
+}
+.srr-check input { margin-top: 4px; flex-shrink: 0; }
+.srr-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.srr-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.srr-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+.srr-log-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.srr-log-table th, .srr-log-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); color: var(--brown-mid); }
+.srr-log-table th { color: var(--brown); font-weight: 700; }
+.srr-high { color: #c0392b !important; font-weight: 700; }
+.srr-clear { background: none; border: none; color: var(--brown-light); text-decoration: underline; cursor: pointer; font-size: 0.82rem; margin-top: 8px; padding: 0; font-family: var(--font-body); }
+</style>
+
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+
+<script>
+var THRESHOLD = 30;
+var LOG_KEY = "ppc-srr-log";
+var tapCount = 0;
+var timerId = null;
+var secondsLeft = 30;
+var lastResult = null;
+
+function updateSpeciesCopy() {
+  var sp = document.getElementById("species").value;
+  document.getElementById("cat-limb-wrap").style.display = (sp === "cat") ? "flex" : "none";
+  if (sp !== "cat") { document.getElementById("sign-limb").checked = false; }
+  document.getElementById("effort-label").textContent = (sp === "cat")
+    ? "Breathing with the mouth open, or breathing looks like hard work"
+    : "Breathing looks like hard work — belly pumping, neck stretched out";
+  document.getElementById("howto").innerHTML = (sp === "cat")
+    ? "Watch your cat's chest or belly — <strong>not while purring</strong>. One breath = the chest rising <strong>and</strong> falling once. Press <strong>Start 30-second count</strong>, then tap the big button for every breath."
+    : "Watch your dog's chest or belly. One breath = the chest rising <strong>and</strong> falling once. Press <strong>Start 30-second count</strong>, then tap the big button for every breath.";
+}
+
+function startCount() {
+  if (timerId) { clearInterval(timerId); }
+  tapCount = 0;
+  secondsLeft = 30;
+  document.getElementById("tap-count").textContent = "0";
+  document.getElementById("timer-left").textContent = "30";
+  var tap = document.getElementById("tap-btn");
+  tap.disabled = false;
+  tap.textContent = "Tap for each breath";
+  document.getElementById("start-btn").textContent = "Restart count";
+  timerId = setInterval(function () {
+    secondsLeft -= 1;
+    document.getElementById("timer-left").textContent = String(Math.max(secondsLeft, 0));
+    if (secondsLeft <= 0) {
+      clearInterval(timerId);
+      timerId = null;
+      tap.disabled = true;
+      tap.textContent = "Done — " + tapCount + " breaths in 30 seconds";
+      document.getElementById("manual-breaths").value = tapCount;
+      document.getElementById("manual-period").value = "30";
+      if (tapCount > 0) { evaluateRate(); }
+    }
+  }, 1000);
+}
+
+function tapBreath() {
+  if (!timerId) { return; }
+  tapCount += 1;
+  document.getElementById("tap-count").textContent = String(tapCount);
+}
+
+// Pure decision function: kept separate so every branch can be tested.
+function assessReading(species, state, dx, bpm, signs) {
+  var anySign = signs.effort || signs.gums || signs.collapse || signs.restless || (species === "cat" && signs.limb);
+  if (anySign) { return "emergency"; }
+  if (state === "active") { return "invalid"; }
+  if (bpm <= THRESHOLD) { return bpm < 10 ? "low" : "normal"; }
+  if (state === "resting") { return "recount-asleep"; }
+  return dx === "heart" ? "elevated-heart" : "elevated";
+}
+
+function readSigns() {
+  return {
+    effort: document.getElementById("sign-effort").checked,
+    gums: document.getElementById("sign-gums").checked,
+    collapse: document.getElementById("sign-collapse").checked,
+    restless: document.getElementById("sign-restless").checked,
+    limb: document.getElementById("sign-limb").checked
+  };
+}
+
+function evaluateRate() {
+  var species = document.getElementById("species").value;
+  var state = document.getElementById("state").value;
+  var dx = document.getElementById("dx").value;
+  var signs = readSigns();
+  var breaths = parseInt(document.getElementById("manual-breaths").value, 10);
+  var period = parseInt(document.getElementById("manual-period").value, 10);
+  var anySign = signs.effort || signs.gums || signs.collapse || signs.restless || (species === "cat" && signs.limb);
+
+  if ((!breaths || breaths < 1) && !anySign) {
+    alert("Count your pet's breaths with the timer, or enter a count, first.");
+    return;
+  }
+  var bpm = (breaths && breaths > 0) ? Math.round(breaths * 60 / period) : null;
+  var level = assessReading(species, state, dx, bpm === null ? 0 : bpm, signs);
+  var petWord = species === "cat" ? "cat" : "dog";
+
+  var color, headline, summary;
+  var notes = [];
+  if (level === "emergency") {
+    color = "#c0392b";
+    headline = "Go to an emergency vet now";
+    summary = "The signs you ticked are an emergency whatever the breathing number. Call ahead to the nearest emergency clinic so they are ready, keep your " + petWord + " calm and cool, and travel now rather than counting again.";
+    if (species === "cat" && signs.limb) {
+      notes.push({ type: "warn", text: "Sudden back-leg weakness or pain in a cat, especially with fast breathing, can be a blood clot linked to heart disease. It needs treatment within hours." });
+    }
+    if (species === "cat" && signs.effort) {
+      notes.push({ type: "warn", text: "Cats rarely breathe with their mouths open. Open-mouth breathing in a cat is treated as an emergency." });
+    }
+  } else if (level === "invalid") {
+    color = "#7f8c8d";
+    headline = "This reading can't be interpreted yet";
+    summary = "Activity, heat, excitement, panting and purring all raise breathing rate for reasons unrelated to the heart. Count again once your " + petWord + " has been deeply asleep for a few minutes. That is the only reading the 30-breath threshold applies to.";
+  } else if (level === "low") {
+    color = "#27ae60";
+    headline = "Below the usual range";
+    summary = "Rates under the typical 15–30 range can be normal in a pet that is otherwise well, especially in deep sleep. It is also easy to miss breaths when a pet breathes slowly, so a quick recount is worthwhile.";
+  } else if (level === "normal") {
+    color = "#27ae60";
+    headline = "Within the normal sleeping range";
+    summary = "Dogs and cats typically breathe about 15–30 times a minute asleep or at calm rest, with or without heart disease. Save this reading: the most useful thing you can have is your " + petWord + "'s own baseline, so that a later change is obvious.";
+    if (bpm >= 26 && bpm <= THRESHOLD) {
+      notes.push({ type: "tip", text: "This is at the upper end of normal. If your " + petWord + "'s usual sleeping rate is well below this, the change matters even though the number is under 30 — compare with your log." });
+    }
+  } else if (level === "recount-asleep") {
+    color = "#f39c12";
+    headline = "Above 30 — recount while asleep";
+    summary = "Awake pets breathe a little faster even when lying calmly. The 30-breath threshold is meant for sleep, so count again once your " + petWord + " is properly asleep before deciding anything.";
+  } else if (level === "elevated") {
+    color = "#e67e22";
+    headline = "Above 30 while asleep — recount, then call your vet if it stays up";
+    summary = "One reading can be thrown off by a dream, a warm room or a recent walk. Recount several times over the next couple of hours while your " + petWord + " sleeps. If it stays consistently above about 30 a minute, contact your vet; they will usually want to see your " + petWord + " within a day or two.";
+  } else {
+    color = "#d35400";
+    headline = "Above 30 in a pet with heart disease — call your vet today";
+    summary = "In a pet with diagnosed heart disease, a sleeping rate above about 30 can be the first sign of fluid building up in or around the lungs. Recount once to rule out a miscount, and if it is still above 30, call your vet today rather than waiting. Follow any specific instructions your vet has already given you.";
+  }
+
+  if (dx === "unsure" && (level === "elevated" || level === "recount-asleep")) {
+    notes.push({ type: "tip", text: "If your " + petWord + " has never had a heart check, mention the fast breathing and ask whether a murmur has been heard. Heart disease is common in older small-breed dogs and in cats of any age." });
+  }
+  if (level !== "emergency") {
+    notes.push({ type: "warn", text: "Whatever the number: laboured breathing, pale or bluish gums, collapse" + (species === "cat" ? ", open-mouth breathing, or sudden back-leg weakness" : "") + " means go to an emergency vet." });
+  }
+
+  document.getElementById("rate-value").textContent = bpm === null ? "—" : String(bpm);
+  document.getElementById("rate-value").style.color = color;
+  document.getElementById("verdict-headline").textContent = headline;
+  document.getElementById("verdict-headline").style.color = color;
+  document.getElementById("verdict-summary").textContent = summary;
+  document.getElementById("verdict-notes").innerHTML = notes.map(function (n) {
+    return '<div class="srr-note srr-' + (n.type === "warn" ? "warn" : "tip") + '"><span>' +
+      (n.type === "warn" ? "⚠️" : "💡") + "</span><span>" + n.text + "</span></div>";
+  }).join("");
+
+  lastResult = (bpm === null) ? null : { t: Date.now(), sp: species, bpm: bpm, st: state };
+  document.getElementById("save-btn").style.display = (lastResult && state !== "active") ? "block" : "none";
+  document.getElementById("save-btn").disabled = false;
+  document.getElementById("save-btn").textContent = "Save this reading to my log";
+
+  renderLog();
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").classList.add("show");
+  document.getElementById("pdf-btn").style.display = "block";
+  document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function loadLog() {
+  try {
+    var raw = window.localStorage.getItem(LOG_KEY);
+    var arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function storeLog(arr) {
+  try {
+    window.localStorage.setItem(LOG_KEY, JSON.stringify(arr.slice(-60)));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function saveReading() {
+  if (!lastResult) { return; }
+  var arr = loadLog();
+  arr.push(lastResult);
+  var ok = storeLog(arr);
+  var btn = document.getElementById("save-btn");
+  btn.disabled = true;
+  btn.textContent = ok ? "Saved on this device" : "Couldn't save — your browser is blocking storage. Use Save as PDF instead.";
+  lastResult = null;
+  renderLog();
+}
+
+function clearLog() {
+  if (!confirm("Delete all saved readings on this device?")) { return; }
+  try { window.localStorage.removeItem(LOG_KEY); } catch (e) {}
+  renderLog();
+}
+
+function renderLog() {
+  var arr = loadLog();
+  var block = document.getElementById("log-block");
+  if (!arr.length) {
+    block.innerHTML = '<div style="font-size:0.84rem; color:var(--brown-mid); line-height:1.6;">Saved readings will appear here, stored only in this browser. A week of daily sleeping counts gives your vet your pet\'s baseline.</div>';
+    return;
+  }
+  var recent = arr.slice(-10).reverse();
+  var asleep = arr.filter(function (r) { return r.st === "asleep"; });
+  var last3 = asleep.slice(-3);
+  var trendHigh = last3.length === 3 && last3.every(function (r) { return r.bpm > THRESHOLD; });
+  var rows = recent.map(function (r) {
+    var d = new Date(r.t);
+    var when = d.toLocaleDateString("en-US", { month: "short", day: "numeric" }) + " " +
+      d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+    var cls = r.bpm > THRESHOLD ? ' class="srr-high"' : "";
+    return "<tr><td>" + when + "</td><td>" + (r.sp === "cat" ? "Cat" : "Dog") + "</td><td>" +
+      (r.st === "asleep" ? "Asleep" : "Resting") + "</td><td" + cls + ">" + r.bpm + "</td></tr>";
+  }).join("");
+  var avgText = "";
+  if (asleep.length >= 3) {
+    var lastSeven = asleep.slice(-7);
+    var avg = Math.round(lastSeven.reduce(function (s, r) { return s + r.bpm; }, 0) / lastSeven.length);
+    avgText = '<div style="font-size:0.86rem; color:var(--brown); margin:8px 0;">Average of the last ' + lastSeven.length + " sleeping readings: <strong>" + avg + "</strong> breaths per minute</div>";
+  }
+  var trend = trendHigh
+    ? '<div class="srr-note srr-warn"><span>⚠️</span><span>Your last three sleeping readings were all above 30. That is the "consistently above 30" pattern to call your vet about.</span></div>'
+    : "";
+  block.innerHTML =
+    '<div style="border:1.5px dashed var(--border); border-radius: var(--radius-sm); padding: 14px 16px;">' +
+    '<div style="font-weight:700; color:var(--brown); font-size:0.9rem; margin-bottom:6px;">Your saved readings (this device only)</div>' +
+    trend + avgText +
+    '<table class="srr-log-table"><thead><tr><th>When</th><th>Pet</th><th>State</th><th>Rate</th></tr></thead><tbody>' + rows + "</tbody></table>" +
+    '<button type="button" class="srr-clear no-print" onclick="clearLog()">Clear saved readings</button>' +
+    "</div>";
+}
+
+updateSpeciesCopy();
+</script>

@@ -17,6 +17,7 @@ faqs:
     a: "The surgery itself is performed under general anesthesia, so your pet feels nothing during the procedure. Post-surgical discomfort is normal and managed with pain medication; most pets return to normal behavior within a few days, with full internal healing taking 10–14 days for a spay and 5–7 days for a neuter."
   - q: "Can I get my pet spayed or neutered for free or low cost?"
     a: "Yes — many communities have low-cost or free spay/neuter programs through the ASPCA, local humane societies, and breed-specific rescues. Some require proof of income or government assistance; others are open to any pet owner in the service area. Friends of Animals also sells fixed-price certificates accepted at hundreds of participating vets nationwide."
+last_modified_at: 2026-10-13
 ---
 
 Spay and neuter surgery is one of the most common procedures in veterinary medicine, but the cost, timing, and what actually happens on surgery day vary more than most owners expect going in.
@@ -51,7 +52,7 @@ This is true across essentially every clinic and region: spay surgery consistent
 
 ## Best Age for the Procedure
 
-Most vets recommend spaying or neutering at 4–6 months, ideally before a female's first heat cycle. Spaying before the first heat significantly reduces the risk of mammary cancer later in life — a benefit that diminishes with each heat cycle that passes. Pediatric spay/neuter, performed as early as 8–12 weeks, is considered safe and is standard practice at many shelters processing large volumes of young animals.
+Most vets recommend spaying or neutering at 4–6 months, ideally before a female's first heat cycle. Spaying before the first heat significantly reduces the risk of mammary cancer later in life — a benefit that diminishes with each heat cycle that passes. Spaying also removes the risk of pyometra, a uterine infection that affects roughly 1 in 4 unspayed female dogs by age 10 — see [what pyometra costs and how to spot it](/blog/pyometra-in-dogs-cost/). Pediatric spay/neuter, performed as early as 8–12 weeks, is considered safe and is standard practice at many shelters processing large volumes of young animals.
 
 Large-breed dogs are a partial exception — some research suggests waiting until closer to a year or even later for very large breeds may reduce orthopedic issues tied to hormone-driven growth plate closure. This is genuinely breed- and size-dependent, so it's worth a direct conversation with your vet rather than defaulting to the standard 4–6 month window for a giant breed puppy.
 
