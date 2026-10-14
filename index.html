@@ -21,28 +21,28 @@ description: Free calculators, at-home health checks and research-checked guides
 
       <div class="life-track" role="tablist" aria-label="Life stage">
         <button type="button" class="stage" role="tab" id="tab-newborn" aria-controls="panel-newborn" aria-selected="false" data-stage="newborn">
-          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-newborn"/></svg>
-          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-newborn"/></svg>
-          <span class="stage-name">Pregnancy &amp; newborn</span>
-          <span class="stage-age">Birth to 8 weeks</span>
+          <svg class="stage-pet dog-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#dog-newborn"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#cat-newborn"/></svg>
+          <span class="stage-text"><span class="stage-name"><span class="wide-only">Pregnancy &amp; newborn</span><span class="narrow-only">Newborn</span></span>
+          <span class="stage-age"><span class="wide-only">Birth to 8 weeks</span><span class="narrow-only">0 to 8 weeks</span></span></span>
         </button>
         <button type="button" class="stage is-active" role="tab" id="tab-young" aria-controls="panel-young" aria-selected="true" data-stage="young">
-          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-young"/></svg>
-          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-young"/></svg>
-          <span class="stage-name">First year</span>
-          <span class="stage-age"><span class="dog-only">To 1 year<span class="age-extra"> (large breeds 18 months)</span></span><span class="cat-only">To 1 year</span></span>
+          <svg class="stage-pet dog-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#dog-young"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#cat-young"/></svg>
+          <span class="stage-text"><span class="stage-name">First year</span>
+          <span class="stage-age"><span class="dog-only">To 1 year<span class="wide-only"> (large breeds 18 months)</span></span><span class="cat-only">To 1 year</span></span></span>
         </button>
         <button type="button" class="stage" role="tab" id="tab-adult" aria-controls="panel-adult" aria-selected="false" data-stage="adult">
-          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-adult"/></svg>
-          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-adult"/></svg>
-          <span class="stage-name">Adult</span>
-          <span class="stage-age"><span class="dog-only">About 1 to 7 years</span><span class="cat-only">1 to 10 years</span></span>
+          <svg class="stage-pet dog-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#dog-adult"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#cat-adult"/></svg>
+          <span class="stage-text"><span class="stage-name">Adult</span>
+          <span class="stage-age"><span class="dog-only">1 to 7 years</span><span class="cat-only">1 to 10 years</span></span></span>
         </button>
         <button type="button" class="stage" role="tab" id="tab-senior" aria-controls="panel-senior" aria-selected="false" data-stage="senior">
-          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-senior"/></svg>
-          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-senior"/></svg>
-          <span class="stage-name">Senior</span>
-          <span class="stage-age"><span class="dog-only">About 7+<span class="age-extra"> (earlier in giant breeds)</span></span><span class="cat-only">Over 10 years</span></span>
+          <svg class="stage-pet dog-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#dog-senior"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 100 80" aria-hidden="true"><use href="#cat-senior"/></svg>
+          <span class="stage-text"><span class="stage-name">Senior</span>
+          <span class="stage-age"><span class="dog-only">7+ years<span class="wide-only"> (earlier in giant breeds)</span></span><span class="cat-only">Over 10 years</span></span></span>
         </button>
       </div>
 
@@ -377,7 +377,7 @@ description: Free calculators, at-home health checks and research-checked guides
 .sp-btn[aria-pressed="true"] { background: var(--chart); color: var(--white); }
 
 .life-track {
-  margin-top: 28px;
+  margin-top: 8px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   position: relative;
@@ -399,7 +399,9 @@ description: Free calculators, at-home health checks and research-checked guides
   position: relative;
   min-width: 0;
 }
-.stage-pet { width: 100%; max-width: 150px; height: auto; transition: transform 0.25s ease; }
+.stage-pet { width: 100%; max-width: 170px; height: auto; transition: transform 0.25s ease; }
+.stage-text { display: flex; flex-direction: column; align-items: center; min-height: 3.1em; }
+.narrow-only { display: none; }
 .stage-name { font: 600 1rem var(--font-display); color: var(--brown); margin-top: 6px; text-align: center; }
 .stage-age { font-size: 0.8rem; line-height: 1.35; text-align: center; color: var(--brown-light); }
 .stage.is-active .stage-name { color: var(--chart); }
@@ -466,8 +468,8 @@ description: Free calculators, at-home health checks and research-checked guides
   cursor: pointer;
 }
 .home-group summary::-webkit-details-marker { display: none; }
-.home-group-name { font: 600 1.15rem var(--font-display); color: var(--brown); }
-.home-group-name::before { content: "+"; display: inline-block; width: 1.2em; color: var(--chart); font-family: var(--font-body); }
+.home-group-name { font: 600 1.15rem var(--font-display); color: var(--brown); position: relative; padding-left: 1.3em; }
+.home-group-name::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--chart); font-family: var(--font-body); }
 .home-group[open] .home-group-name::before { content: "\2212"; }
 .home-group-count { font-size: 0.85rem; color: var(--brown-light); white-space: nowrap; }
 .home-group summary:focus-visible { outline: 3px solid var(--orange); outline-offset: -3px; }
@@ -511,7 +513,12 @@ description: Free calculators, at-home health checks and research-checked guides
   .stage-name { font-size: 0.82rem; line-height: 1.2; }
   .stage-age { font-size: 0.7rem; }
   .myths, .latest, .home-group ul { grid-template-columns: 1fr; }
-  .age-extra { display: none; }
+  .wide-only { display: none; }
+  .checks { columns: 2; column-gap: 16px; }
+  .checks li { font-size: 0.92rem; }
+  .narrow-only { display: inline; }
+  .stage-text { min-height: 2.9em; }
+  .stage-pet { width: 112%; max-width: none; margin: 0 -6%; }
   .tag { padding: 22px 12px 12px; }
   .tag strong { font-size: 0.98rem; }
 }
@@ -546,6 +553,9 @@ description: Free calculators, at-home health checks and research-checked guides
     });
   }
   spBtns.forEach(function (b) { b.addEventListener("click", function () { setSpecies(b.getAttribute("data-sp")); }); });
+  if (window.matchMedia && window.matchMedia("(max-width: 760px)").matches) {
+    document.querySelectorAll(".home-group[open]").forEach(function (d) { d.removeAttribute("open"); });
+  }
   stages.forEach(function (s, i) {
     s.setAttribute("tabindex", s.classList.contains("is-active") ? "0" : "-1");
     s.addEventListener("click", function () { setStage(s); });

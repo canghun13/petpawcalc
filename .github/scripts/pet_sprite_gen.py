@@ -103,7 +103,7 @@ syms = {
 }
 out = ['<svg class="pp-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">', '  <defs>']
 for k, v in syms.items():
-    out.append(f'    <symbol id="{k}" viewBox="0 0 120 100">{v}</symbol>')
+    out.append(f'    <symbol id="{k}" viewBox="10 20 100 80">{v}</symbol>')
 out += ['  </defs>', '</svg>', '']
 open('/home/claude/petpawcalc/_includes/pet-sprite.html', 'w').write('\n'.join(out))
 print('written')
