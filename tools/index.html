@@ -1,422 +1,334 @@
 ---
 layout: default
-title: Free Pet Calculators & Tools
-description: Free pet calculators for dog and cat owners. Dog age, cat age, pet food calories, dog weight, and annual pet costs — instant results, no signup.
+title: Free Pet Tools & Calculators for Dogs and Cats
+description: All 52 free PetPawCalc tools for dog and cat owners in one place — health checks, age and weight calculators, pregnancy and breeding, vet visits and vaccines, costs and insurance, training, and safety. Instant results, no signup.
 ---
 
-<div style="max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px;">
-  <h1 class="section-title" style="margin-bottom: 8px;">Pet <em>Calculators</em></h1>
-  <p class="section-sub">All tools are free, instant, and require no signup.</p>
+<div class="tl-wrap">
+  <h1 class="tl-title">Pet tools</h1>
+  <p class="tl-lede">Every calculator, health check and planner on the site, grouped by what you need it for. All free, with no signup.</p>
 
-  <!-- Search -->
-  <div style="margin: 32px 0 8px;">
-    <input
-      type="text"
-      id="tool-search"
-      placeholder="Search tools..."
-      oninput="filterTools()"
-      style="width: 100%; max-width: 480px; padding: 12px 18px; border: 1.5px solid var(--border); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown); outline: none; transition: border 0.2s;"
-      onfocus="this.style.borderColor='var(--orange)'"
-      onblur="this.style.borderColor='var(--border)'"
-    >
-  </div>
-  <p id="tool-search-count" style="font-size: 0.85rem; color: var(--brown-light); margin-bottom: 24px; min-height: 20px;"></p>
-
-  <div class="tools-grid" id="tools-grid" style="margin-top: 8px;">
-    <a href="/tools/dog-age-calculator.html" class="tool-card" data-title="dog age calculator" data-desc="find out how old your dog is in human years based on size and breed not the outdated 7x rule" data-tags="dog age years">
-      <div class="tool-card-icon">🐶</div>
-      <span class="tool-card-badge">Most Popular</span>
-      <h3>Dog Age Calculator</h3>
-      <p>Find out how old your dog is in human years — based on size and breed, not the outdated 7x rule.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-age-calculator.html" class="tool-card" data-title="cat age calculator" data-desc="convert your cat's age to human years using the latest feline aging research from the aafp" data-tags="cat age years">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Age Calculator</h3>
-      <p>Convert your cat's age to human years using the latest feline aging research from the AAFP.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-food-calorie-calculator.html" class="tool-card" data-title="pet food calorie calculator" data-desc="find out exactly how many calories your dog or cat needs per day based on weight age and activity" data-tags="food calories nutrition feeding">
-      <div class="tool-card-icon">🍖</div>
-      <h3>Pet Food Calorie Calculator</h3>
-      <p>Find out exactly how many calories your dog or cat needs per day based on weight, age, and activity.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-weight-calculator.html" class="tool-card" data-title="dog weight calculator" data-desc="estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size" data-tags="dog weight puppy healthy">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Dog Weight Calculator</h3>
-      <p>Estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-weight-calculator.html" class="tool-card" data-title="cat weight calculator" data-desc="check if your cat is at a healthy weight for their breed and sex or estimate how large your kitten will grow" data-tags="cat weight kitten healthy">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Cat Weight Calculator</h3>
-      <p>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/annual-pet-cost-calculator.html" class="tool-card" data-title="annual pet cost calculator" data-desc="estimate the full yearly cost of owning a dog or cat food vet grooming insurance and more" data-tags="cost money annual budget">
-      <div class="tool-card-icon">💰</div>
-      <h3>Annual Pet Cost Calculator</h3>
-      <p>Estimate the full yearly cost of owning a dog or cat — food, vet, grooming, insurance, and more.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-insurance-cost-estimator.html" class="tool-card" data-title="pet insurance cost estimator" data-desc="estimate your monthly pet insurance premium based on your pet's species size age and coverage level" data-tags="insurance cost monthly premium">
-      <div class="tool-card-icon">🛡️</div>
-      <h3>Pet Insurance Cost Estimator</h3>
-      <p>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-pregnancy-calculator.html" class="tool-card" data-title="dog pregnancy calculator" data-desc="enter your dog's mating date to get her estimated due date delivery window and week-by-week pregnancy guide" data-tags="dog pregnancy due date mating">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Dog Pregnancy Calculator</h3>
-      <p>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-pregnancy-calculator.html" class="tool-card" data-title="cat pregnancy calculator" data-desc="enter your cat's mating date to get her estimated due date delivery window and a week-by-week pregnancy guide" data-tags="cat pregnancy due date mating">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Pregnancy Calculator</h3>
-      <p>Enter your cat's mating date to get her estimated due date, delivery window, and a week-by-week pregnancy guide.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-heat-cycle-calculator.html" class="tool-card" data-title="dog heat cycle calculator" data-desc="predict your dog's next heat fertile window and each stage of her estrous cycle based on her last heat date and size" data-tags="dog heat cycle estrus fertile">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Dog Heat Cycle Calculator</h3>
-      <p>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-heat-cycle-calculator.html" class="tool-card" data-title="cat heat cycle calculator" data-desc="predict your cat's next heat fertile window and each stage of her estrous cycle based on her last heat date" data-tags="cat heat cycle estrus fertile in heat">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Cat Heat Cycle Calculator</h3>
-      <p>Predict your cat's next heat, fertile window, and each stage of her estrous cycle — based on her last heat date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-vet-visit-scheduler.html" class="tool-card" data-title="dog vet visit scheduler" data-desc="enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="dog vet visit checkup schedule">
-      <div class="tool-card-icon">🩺</div>
-      <h3>Dog Vet Visit Scheduler</h3>
-      <p>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/cat-vet-visit-scheduler.html" class="tool-card" data-title="cat vet visit scheduler" data-desc="enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="cat vet visit checkup schedule">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Vet Visit Scheduler</h3>
-      <p>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/dog-vaccination-schedule-calculator.html" class="tool-card" data-title="dog vaccination schedule calculator" data-desc="enter your dog's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered" data-tags="dog vaccine shots schedule">
-      <div class="tool-card-icon">💉</div>
-      <h3>Dog Vaccination Schedule Calculator</h3>
-      <p>Enter your dog's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</p>
-      <span class="tool-card-link">Check schedule →</span>
-    </a>
-
-    <a href="/tools/cat-vaccination-schedule-calculator.html" class="tool-card" data-title="cat vaccination schedule calculator" data-desc="enter your cat's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered" data-tags="cat vaccine shots schedule">
-      <div class="tool-card-icon">💉</div>
-      <h3>Cat Vaccination Schedule Calculator</h3>
-      <p>Enter your cat's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</p>
-      <span class="tool-card-link">Check schedule →</span>
-    </a>
-
-    <a href="/tools/dog-quality-of-life-calculator.html" class="tool-card" data-title="dog quality of life calculator" data-desc="assess your senior or ill dog's wellbeing across 7 key areas using the veterinary hhhhhmm scale track changes over time" data-tags="dog quality life senior paw score hhhhhmm wellbeing">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Dog Quality of Life Calculator</h3>
-      <p>Assess your senior or ill dog's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</p>
-      <span class="tool-card-link">Assess now →</span>
-    </a>
-
-    <a href="/tools/cat-quality-of-life-calculator.html" class="tool-card" data-title="cat quality of life calculator" data-desc="assess your senior or ill cat's wellbeing across 7 key areas using the veterinary hhhhhmm scale track changes over time" data-tags="cat quality life senior paw score hhhhhmm wellbeing">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Cat Quality of Life Calculator</h3>
-      <p>Assess your senior or ill cat's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</p>
-      <span class="tool-card-link">Assess now →</span>
-    </a>
-
-    <a href="/tools/pet-weight-calculator.html" class="tool-card" data-title="pet weight calculator" data-desc="check if your dog or cat is at a healthy weight using breed-based ranges and a quick body condition score check" data-tags="pet weight healthy bcs body condition score">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Pet Weight Calculator</h3>
-      <p>Check if your dog or cat is at a healthy weight using breed-based ranges and a quick Body Condition Score check.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/spay-neuter-cost-calculator.html" class="tool-card" data-title="spay neuter cost calculator" data-desc="estimate the total cost of spaying or neutering your dog or cat including surgery bloodwork and optional extras" data-tags="spay neuter cost surgery dog cat">
-      <div class="tool-card-icon">✂️</div>
-      <h3>Spay/Neuter Cost Calculator</h3>
-      <p>Estimate the total cost of spaying or neutering your dog or cat, including surgery, bloodwork, and optional extras.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-
-    <a href="/tools/dental-cleaning-cost-calculator.html" class="tool-card" data-title="dental cleaning cost calculator" data-desc="estimate the total cost of a professional dental cleaning for your dog or cat including anesthesia bloodwork and extractions" data-tags="dental cleaning cost teeth dog cat">
-      <div class="tool-card-icon">🦷</div>
-      <h3>Dental Cleaning Cost Calculator</h3>
-      <p>Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia and possible extractions.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-
-    <a href="/tools/pet-grooming-cost-calculator.html" class="tool-card" data-title="pet grooming cost calculator" data-desc="estimate your dog or cat's annual grooming cost based on size coat type and professional grooming frequency" data-tags="pet grooming cost annual dog cat coat">
-      <div class="tool-card-icon">✂️</div>
-      <h3>Pet Grooming Cost Calculator</h3>
-      <p>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-
-    <a href="/tools/flea-tick-prevention-cost-calculator.html" class="tool-card" data-title="flea tick prevention cost calculator" data-desc="estimate your dog or cat's annual flea and tick prevention cost by product type topical chewable combo or collar" data-tags="flea tick prevention cost heartworm annual dog cat">
-      <div class="tool-card-icon">🦟</div>
-      <h3>Flea & Tick Prevention Cost Calculator</h3>
-      <p>Estimate your dog or cat's annual flea and tick prevention cost by product type — topical, chewable, combo, or collar.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-
-    <a href="/tools/puppy-potty-training-calculator.html" class="tool-card" data-title="puppy potty training calculator bladder hold time" data-desc="calculate how long your puppy can hold it by age get a daily potty break schedule and housetraining timeline by breed size" data-tags="puppy potty training bladder housetraining crate schedule dog">
-      <div class="tool-card-icon">🐕</div>
-      <h3>Puppy Potty Training Calculator</h3>
-      <p>Get your puppy's bladder-hold time by age, a full daily potty schedule, and a housetraining timeline by breed size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/kitten-litter-training-timeline.html" class="tool-card" data-title="kitten litter training timeline calculator" data-desc="find the right litter box size litter type and box count for your kitten's exact age plus troubleshooting" data-tags="kitten litter box training timeline age cat">
-      <div class="tool-card-icon">🐈</div>
-      <h3>Kitten Litter Training Timeline</h3>
-      <p>Find the right box size, litter type, and box count for your kitten's exact age — plus troubleshooting tips.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/raw-feeding-calculator.html" class="tool-card" data-title="raw feeding calculator 80/10/10 cost" data-desc="calculate daily raw food portions muscle meat bone organ for your dog or cat plus estimated monthly and annual cost" data-tags="raw feeding calculator barf prey model portion cost dog cat">
-      <div class="tool-card-icon">🥩</div>
-      <h3>Raw Feeding Calculator</h3>
-      <p>Get daily raw food portions (80/10/10) for your dog or cat, plus an estimated monthly and annual cost.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-boarding-cost-calculator.html" class="tool-card" data-title="pet boarding cost calculator kennel sitter" data-desc="estimate what boarding your dog or cat will cost by facility type length of stay and add-ons" data-tags="pet boarding cost kennel sitter hotel travel dog cat">
-      <div class="tool-card-icon">🧳</div>
-      <h3>Pet Boarding Cost Calculator</h3>
-      <p>Estimate what boarding your dog or cat will cost by facility type, length of stay, and add-ons.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/titer-test-vs-revaccination-calculator.html" class="tool-card" data-title="titer test vs revaccination cost calculator" data-desc="compare the cost of titer testing against standard revaccination for dog or cat core vaccines over time" data-tags="titer test revaccination cost vaccine dhpp fvrcp dog cat">
-      <div class="tool-card-icon">🩸</div>
-      <h3>Titer Test vs. Revaccination Calculator</h3>
-      <p>Compare the real cost of titer testing against standard revaccination for your dog or cat's core vaccines.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/spay-neuter-recovery-timeline.html" class="tool-card" data-title="spay neuter recovery timeline calculator" data-desc="get a personalized recovery calendar with actual dates for cone removal incision checks and activity restrictions" data-tags="spay neuter recovery timeline cone e-collar incision surgery dog cat">
-      <div class="tool-card-icon">🩹</div>
-      <h3>Spay/Neuter Recovery Timeline</h3>
-      <p>Get a personalized recovery calendar — cone removal, incision checks, and activity restrictions by actual date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-insurance-waiting-period-tracker.html" class="tool-card" data-title="pet insurance waiting period tracker" data-desc="see the exact dates accident illness and orthopedic coverage actually begin under your policy" data-tags="pet insurance waiting period tracker accident illness orthopedic coverage start date">
-      <div class="tool-card-icon">⏳</div>
-      <h3>Pet Insurance Waiting Period Tracker</h3>
-      <p>See the exact dates accident, illness, and orthopedic coverage actually begin under your policy.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/neuter-timing-by-breed-size.html" class="tool-card" data-title="neuter timing by breed and size UC Davis research" data-desc="see what UC Davis Hart et al research reported on neutering age and joint disorder cancer risk by breed or size" data-tags="neuter timing breed size UC Davis Hart research joint disorder cancer risk spay">
-      <div class="tool-card-icon">🔬</div>
-      <h3>Neuter Timing by Breed & Size</h3>
-      <p>See what UC Davis research reported on neutering age and joint/cancer risk for your dog's breed or size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-introduction-timeline.html" class="tool-card" data-title="cat introduction timeline new cat resident cat" data-desc="step by step stages for introducing a new cat to a resident cat with signs to move forward or slow down" data-tags="cat introduction timeline new cat resident cat scent swap kitten adult">
-      <div class="tool-card-icon">🐈‍⬛</div>
-      <h3>Cat Introduction Timeline</h3>
-      <p>Step-by-step stages for introducing a new cat, with signs to move forward or slow down at each one.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-travel-timeline-planner.html" class="tool-card" data-title="pet travel timeline planner international microchip rabies health certificate" data-desc="reverse calculate your prep schedule for microchip rabies vaccine antibody test and health certificate deadlines" data-tags="pet travel timeline planner international microchip rabies FAVN titer health certificate USDA APHIS">
-      <div class="tool-card-icon">✈️</div>
-      <h3>Pet Travel Timeline Planner</h3>
-      <p>Reverse-calculate your prep schedule — microchip, rabies vaccine, antibody testing, and health certificate deadlines.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-introduction-timeline.html" class="tool-card" data-title="dog introduction timeline new dog resident dog" data-desc="step by step stages for introducing a new dog to a resident dog with signs to move forward or slow down" data-tags="dog introduction timeline new dog resident dog neutral territory parallel walk puppy adult">
-      <div class="tool-card-icon">🐕‍🦺</div>
-      <h3>Dog Introduction Timeline</h3>
-      <p>Step-by-step stages for introducing a new dog, with signs to move forward or slow down at each one.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/new-baby-pet-prep-timeline.html" class="tool-card" data-title="new baby pet prep timeline dog cat due date" data-desc="get your dog or cat ready for a new baby with a reverse calculated prep schedule from your due date" data-tags="new baby pet prep timeline dog cat due date sound desensitization introduction">
-      <div class="tool-card-icon">👶</div>
-      <h3>New Baby Pet Prep Timeline</h3>
-      <p>Get your dog or cat ready for a new baby — a reverse-calculated prep schedule from your due date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/puppy-teething-timeline.html" class="tool-card" data-title="puppy teething timeline baby teeth adult teeth retained" data-desc="see your puppys current teething stage whats next and when to check for retained baby teeth" data-tags="puppy teething timeline baby teeth adult teeth retained deciduous teeth chewing">
-      <div class="tool-card-icon">🦷</div>
-      <h3>Puppy Teething Timeline</h3>
-      <p>See your puppy's current teething stage, what's next, and when to check for retained baby teeth.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-insurance-claim-calculator.html" class="tool-card" data-title="pet insurance claim calculator annual per incident deductible" data-desc="see your expected reimbursement then compare annual vs per incident deductibles for a recurring condition" data-tags="pet insurance claim calculator deductible annual per incident reimbursement chronic condition">
-      <div class="tool-card-icon">🧾</div>
-      <h3>Pet Insurance Claim Calculator</h3>
-      <p>See your expected reimbursement, then compare annual vs. per-incident deductibles for a recurring condition.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-car-anxiety-desensitization-planner.html" class="tool-card" data-title="dog car anxiety motion sickness desensitization planner" data-desc="tell true motion sickness from anxiety then get a step by step car training plan" data-tags="dog car anxiety motion sickness desensitization training travel vet">
-      <div class="tool-card-icon">🚗</div>
-      <h3>Dog Car Anxiety Desensitization Planner</h3>
-      <p>Tell true motion sickness from anxiety, then get a step-by-step car training plan.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-carrier-training-planner.html" class="tool-card" data-title="cat carrier training planner vet visit countdown" data-desc="reverse calculated countdown to vet day for a calmer carrier experience" data-tags="cat carrier training planner vet visit countdown desensitization Feliway Fear Free">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Carrier Training Planner</h3>
-      <p>Reverse-calculated countdown to vet day for a calmer carrier experience.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-heat-safety-calculator.html" class="tool-card" data-title="dog heat safety calculator walk temperature humidity" data-desc="get a safety rating and max walk time based on your dogs individual heat risk factors" data-tags="dog heat safety calculator temperature humidity heatstroke walk brachycephalic">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Dog Heat Safety Calculator</h3>
-      <p>Get a safety rating and max walk time based on your dog's individual heat risk factors.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-mobility-arthritis-screening.html" class="tool-card" data-title="dog arthritis screening tool mobility pain checklist" data-desc="answer 6 validated yes no questions to screen for early signs of arthritis in dogs based on a veterinary research study" data-tags="dog arthritis screening mobility joint pain stiff limping senior">
-      <div class="tool-card-icon">🦴</div>
-      <h3>Dog Arthritis Screening Tool</h3>
-      <p>Answer 6 validated yes/no questions to check for early signs of arthritis, based on a veterinary research study.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-
-    <a href="/tools/heartworm-prevention-cost-calculator.html" class="tool-card" data-title="heartworm prevention cost calculator dog treatment" data-desc="compare annual heartworm prevention cost by product type against what treatment would cost if your dog were infected" data-tags="heartworm prevention cost calculator dog treatment injectable proheart antigen test">
-      <div class="tool-card-icon">🫀</div>
-      <h3>Heartworm Prevention Cost Calculator</h3>
-      <p>Compare a year of prevention against what treatment would actually cost if your dog were infected.</p>
-      <span class="tool-card-link">Compare now →</span>
-    </a>
-
-    <a href="/tools/cat-mobility-arthritis-screening.html" class="tool-card" data-title="cat arthritis screening tool mobility joint pain checklist" data-desc="answer 6 validated yes no questions about jumping stairs running and play to screen for signs of arthritis in cats" data-tags="cat arthritis screening mobility joint pain jumping stairs senior feline degenerative joint disease">
-      <div class="tool-card-icon">🐈</div>
-      <h3>Cat Arthritis Screening Tool</h3>
-      <p>Answer 6 validated yes/no questions about jumping, stairs and play to check for signs of joint pain.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-
-    <a href="/tools/elimination-diet-trial-planner.html" class="tool-card" data-title="elimination diet trial planner food allergy dog cat" data-desc="dated food trial schedule with transition period trial length recheck points challenge phase and contamination audit of flavored treats chews and medications" data-tags="elimination diet trial food allergy planner hydrolyzed novel protein hypoallergenic dog cat itching schedule">
-      <div class="tool-card-icon">🍽️</div>
-            <h3>Elimination Diet Trial Planner</h3>
-      <p>Dated food-trial schedule for dogs and cats, plus the contamination audit that decides whether it works.</p>
-      <span class="tool-card-link">Plan the trial →</span>
-    </a>
-
-    <a href="/tools/pet-itch-score-tracker.html" class="tool-card" data-title="pet itch score tracker pruritus scale dog cat" data-desc="score your dog or cat itching on the validated owner assessed pruritus visual analog scale and track whether treatment or a food trial is working" data-tags="itch score pruritus scale scratching licking chewing allergy dermatitis dog cat tracker severity">
-      <div class="tool-card-icon">🐾</div>
-            <h3>Pet Itch Score Tracker</h3>
-      <p>Score itching on the validated scale vets use, so you can prove whether treatment is actually working.</p>
-      <span class="tool-card-link">Score the itch →</span>
-    </a>
-
-    <a href="/tools/dog-cold-weather-safety-calculator.html" class="tool-card" data-title="dog cold weather safety calculator how cold is too cold" data-desc="enter temperature wind chill size coat age shelter and precipitation to get a cold risk level and safe outdoor time for your dog" data-tags="cold weather winter safety calculator how cold too cold dog hypothermia frostbite wind chill tufts snow">
-      <div class="tool-card-icon">🥶</div>
-            <h3>Dog Cold Weather Safety Calculator</h3>
-      <p>How cold is too cold for your dog? Adjusts for coat, age, shelter and wet weather — not just the thermometer.</p>
-      <span class="tool-card-link">Check the cold →</span>
-    </a>
-
-    <a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html" class="tool-card" data-title="orphaned kitten puppy bottle feeding calculator formula amount" data-desc="calculate how much formula an orphaned neonatal kitten or puppy needs per feed feeds per day and interval from body weight with stomach capacity check" data-tags="orphaned kitten bottle feeding calculator formula ml newborn neonatal puppy milk replacer KMR foster rescue how much">
-      <div class="tool-card-icon">🍼</div>
-            <h3>Orphaned Kitten Bottle Feeding Calculator</h3>
-      <p>Formula per feed, feeds per day and the interval — from body weight, with a stomach-capacity check.</p>
-      <span class="tool-card-link">Calculate feeds →</span>
-    </a>
-
-    <a href="/tools/cat-urinary-emergency-checker.html" class="tool-card" data-title="cat urinary emergency checker straining litter box blockage" data-desc="check how urgently a cat with urinary signs needs a vet straining in litter box little or no urine male cat urethral obstruction flutd" data-tags="cat urinary emergency blockage straining litter box no urine flutd fic male cat urethral obstruction constipation confusion">
-      <div class="tool-card-icon">🚨</div>
-            <h3>Cat Urinary Emergency Checker</h3>
-      <p>Straining in the litter box with little or no urine is an emergency — and looks just like constipation.</p>
-      <span class="tool-card-link">Check urgency →</span>
-    </a>
-
-    <a href="/tools/lost-pet-search-plan.html" class="tool-card" data-title="lost pet search plan missing cat dog how far radius" data-desc="search radius and priority order for a missing cat or dog based on species indoor outdoor temperament and time missing physical search not flyers do not chase" data-tags="lost cat missing dog search radius silence factor do not chase microchip shelter found pet how far do cats go">
-      <div class="tool-card-icon">🔦</div>
-            <h3>Lost Pet Search Plan</h3>
-      <p>How far to search, and in what order. Most missing cats are hiding within a few houses of home.</p>
-      <span class="tool-card-link">Build a plan →</span>
-    </a>
-
-    <a href="/tools/ear-infection-recurrence-checker.html" class="tool-card" data-title="ear infection recurrence checker dog cat why keep getting" data-desc="why does my dog keep getting ear infections pspp primary secondary predisposing perpetuating allergy food trial cytology eardrum one ear vs both" data-tags="ear infection recurring otitis externa dog cat allergy yeast malassezia cytology eardrum grass awn ear mites chronic">
-      <div class="tool-card-icon">👂</div>
-            <h3>Ear Infection Recurrence Checker</h3>
-      <p>Keeps coming back? The drops treat one layer of four. Find out which one is being missed.</p>
-      <span class="tool-card-link">Check the cause →</span>
-    </a>
-
-    <a href="/tools/pet-diarrhea-triage-and-feeding-plan.html" class="tool-card" data-title="dog cat diarrhea triage feeding plan vet emergency" data-desc="how urgent is my pet diarrhea and should i fast them black tarry stool melena raspberry jam bloody puppy parvo bland diet" data-tags="diarrhea dog cat emergency melena black tarry bloody stool fasting bland diet puppy parvo ahds hge vomiting dehydration">
-      <div class="tool-card-icon">💩</div>
-            <h3>Diarrhea Triage &amp; Feeding Plan</h3>
-      <p>Vet now or manage at home — and whether to feed. The old "fast for 24 hours" advice has been overturned.</p>
-      <span class="tool-card-link">Check urgency →</span>
-    </a>
-
-    <a href="/tools/dog-separation-anxiety-screener.html" class="tool-card" data-title="dog separation anxiety screener is it really separation anxiety" data-desc="tell separation anxiety from boredom confinement distress isolation distress and medical causes then get a realistic departure training starting point and threshold" data-tags="separation anxiety dog boredom confinement distress barrier frustration crate camera threshold suspending absences desensitization flooding">
-      <div class="tool-card-icon">🚪</div>
-      <h3>Separation Anxiety Screener</h3>
-      <p>Most dogs labelled with it have something else. Sort that out first, then get a realistic plan.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-
-    <a href="/tools/sleeping-respiratory-rate-counter.html" class="tool-card" data-title="sleeping respiratory rate counter dog cat breathing rate" data-desc="count your dog or cat breaths while asleep with a 30 second timer check against the 30 breaths per minute threshold and keep a log for your vet" data-tags="breathing rate heart failure heart murmur mitral valve hcm cardiomyopathy resting respiratory rate srr monitor cardiology">
-      <div class="tool-card-icon">🫁</div>
-      <span class="tool-card-badge">New</span>
-      <h3>Sleeping Respiratory Rate Counter</h3>
-      <p>The 30-second heart check cardiologists ask for. Tap to count breaths while your pet sleeps and keep a log for your vet.</p>
-      <span class="tool-card-link">Start counting →</span>
-    </a>
+  <div class="tl-search">
+    <label for="tool-search" class="tl-search-label">Search tools</label>
+    <input type="search" id="tool-search" placeholder="Try &quot;weight&quot;, &quot;cost&quot; or &quot;pregnancy&quot;" oninput="filterTools()" autocomplete="off">
+    <p id="tool-search-count" aria-live="polite"></p>
   </div>
 
-  <p id="no-tool-results" style="display:none; color: var(--brown-light); margin-top: 32px; font-size: 0.95rem;">No tools found. Try a different search term.</p>
+  <nav class="tl-jump" aria-label="Tool groups"><a href="#health">Health checks at home</a><a href="#age-weight-food">Age, weight and food</a><a href="#pregnancy">Pregnancy and breeding</a><a href="#vet-vaccines">Vet visits and vaccines</a><a href="#costs">Costs and insurance</a><a href="#training">Training and behavior</a><a href="#safety-travel">Safety, travel and life changes</a></nav>
+
+  <div id="tools-grid">
+  <section class="tool-group" id="health" aria-labelledby="health-title">
+    <h2 id="health-title">Health checks at home <span class="tool-group-count">10</span></h2>
+    <ul>
+      <li class="tool-row" data-title="sleeping respiratory rate counter dog cat breathing rate" data-desc="count your dog or cat breaths while asleep with a 30 second timer check against the 30 breaths per minute threshold and keep a log for your vet" data-tags="breathing rate heart failure heart murmur mitral valve hcm cardiomyopathy resting respiratory rate srr monitor cardiology">
+        <a href="/tools/sleeping-respiratory-rate-counter.html">Sleeping Respiratory Rate Counter</a> <span class="tool-card-badge">New</span>
+        <span>The 30-second heart check cardiologists ask for. Tap to count breaths while your pet sleeps and keep a log for your vet.</span>
+      </li>
+      <li class="tool-row" data-title="cat urinary emergency checker straining litter box blockage" data-desc="check how urgently a cat with urinary signs needs a vet straining in litter box little or no urine male cat urethral obstruction flutd" data-tags="cat urinary emergency blockage straining litter box no urine flutd fic male cat urethral obstruction constipation confusion">
+        <a href="/tools/cat-urinary-emergency-checker.html">Cat Urinary Emergency Checker</a>
+        <span>Straining in the litter box with little or no urine is an emergency — and looks just like constipation.</span>
+      </li>
+      <li class="tool-row" data-title="dog cat diarrhea triage feeding plan vet emergency" data-desc="how urgent is my pet diarrhea and should i fast them black tarry stool melena raspberry jam bloody puppy parvo bland diet" data-tags="diarrhea dog cat emergency melena black tarry bloody stool fasting bland diet puppy parvo ahds hge vomiting dehydration">
+        <a href="/tools/pet-diarrhea-triage-and-feeding-plan.html">Diarrhea Triage &amp; Feeding Plan</a>
+        <span>Vet now or manage at home — and whether to feed. The old "fast for 24 hours" advice has been overturned.</span>
+      </li>
+      <li class="tool-row" data-title="dog arthritis screening tool mobility pain checklist" data-desc="answer 6 validated yes no questions to screen for early signs of arthritis in dogs based on a veterinary research study" data-tags="dog arthritis screening mobility joint pain stiff limping senior">
+        <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a>
+        <span>Answer 6 validated yes/no questions to check for early signs of arthritis, based on a veterinary research study.</span>
+      </li>
+      <li class="tool-row" data-title="cat arthritis screening tool mobility joint pain checklist" data-desc="answer 6 validated yes no questions about jumping stairs running and play to screen for signs of arthritis in cats" data-tags="cat arthritis screening mobility joint pain jumping stairs senior feline degenerative joint disease">
+        <a href="/tools/cat-mobility-arthritis-screening.html">Cat Arthritis Screening Tool</a>
+        <span>Answer 6 validated yes/no questions about jumping, stairs and play to check for signs of joint pain.</span>
+      </li>
+      <li class="tool-row" data-title="dog quality of life calculator" data-desc="assess your senior or ill dog's wellbeing across 7 key areas using the veterinary hhhhhmm scale track changes over time" data-tags="dog quality life senior paw score hhhhhmm wellbeing">
+        <a href="/tools/dog-quality-of-life-calculator.html">Dog Quality of Life Calculator</a>
+        <span>Assess your senior or ill dog's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</span>
+      </li>
+      <li class="tool-row" data-title="cat quality of life calculator" data-desc="assess your senior or ill cat's wellbeing across 7 key areas using the veterinary hhhhhmm scale track changes over time" data-tags="cat quality life senior paw score hhhhhmm wellbeing">
+        <a href="/tools/cat-quality-of-life-calculator.html">Cat Quality of Life Calculator</a>
+        <span>Assess your senior or ill cat's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</span>
+      </li>
+      <li class="tool-row" data-title="pet itch score tracker pruritus scale dog cat" data-desc="score your dog or cat itching on the validated owner assessed pruritus visual analog scale and track whether treatment or a food trial is working" data-tags="itch score pruritus scale scratching licking chewing allergy dermatitis dog cat tracker severity">
+        <a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a>
+        <span>Score itching on the validated scale vets use, so you can prove whether treatment is actually working.</span>
+      </li>
+      <li class="tool-row" data-title="ear infection recurrence checker dog cat why keep getting" data-desc="why does my dog keep getting ear infections pspp primary secondary predisposing perpetuating allergy food trial cytology eardrum one ear vs both" data-tags="ear infection recurring otitis externa dog cat allergy yeast malassezia cytology eardrum grass awn ear mites chronic">
+        <a href="/tools/ear-infection-recurrence-checker.html">Ear Infection Recurrence Checker</a>
+        <span>Keeps coming back? The drops treat one layer of four. Find out which one is being missed.</span>
+      </li>
+      <li class="tool-row" data-title="elimination diet trial planner food allergy dog cat" data-desc="dated food trial schedule with transition period trial length recheck points challenge phase and contamination audit of flavored treats chews and medications" data-tags="elimination diet trial food allergy planner hydrolyzed novel protein hypoallergenic dog cat itching schedule">
+        <a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a>
+        <span>Dated food-trial schedule for dogs and cats, plus the contamination audit that decides whether it works.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="age-weight-food" aria-labelledby="age-weight-food-title">
+    <h2 id="age-weight-food-title">Age, weight and food <span class="tool-group-count">7</span></h2>
+    <ul>
+      <li class="tool-row" data-title="dog age calculator" data-desc="find out how old your dog is in human years based on size and breed not the outdated 7x rule" data-tags="dog age years">
+        <a href="/tools/dog-age-calculator.html">Dog Age Calculator</a>
+        <span>Find out how old your dog is in human years — based on size and breed, not the outdated 7x rule.</span>
+      </li>
+      <li class="tool-row" data-title="cat age calculator" data-desc="convert your cat's age to human years using the latest feline aging research from the aafp" data-tags="cat age years">
+        <a href="/tools/cat-age-calculator.html">Cat Age Calculator</a>
+        <span>Convert your cat's age to human years using the latest feline aging research from the AAFP.</span>
+      </li>
+      <li class="tool-row" data-title="dog weight calculator" data-desc="estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size" data-tags="dog weight puppy healthy">
+        <a href="/tools/dog-weight-calculator.html">Dog Weight Calculator</a>
+        <span>Estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size.</span>
+      </li>
+      <li class="tool-row" data-title="cat weight calculator" data-desc="check if your cat is at a healthy weight for their breed and sex or estimate how large your kitten will grow" data-tags="cat weight kitten healthy">
+        <a href="/tools/cat-weight-calculator.html">Cat Weight Calculator</a>
+        <span>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</span>
+      </li>
+      <li class="tool-row" data-title="pet weight calculator" data-desc="check if your dog or cat is at a healthy weight using breed-based ranges and a quick body condition score check" data-tags="pet weight healthy bcs body condition score">
+        <a href="/tools/pet-weight-calculator.html">Pet Weight Calculator</a>
+        <span>Check if your dog or cat is at a healthy weight using breed-based ranges and a quick Body Condition Score check.</span>
+      </li>
+      <li class="tool-row" data-title="pet food calorie calculator" data-desc="find out exactly how many calories your dog or cat needs per day based on weight age and activity" data-tags="food calories nutrition feeding">
+        <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a>
+        <span>Find out exactly how many calories your dog or cat needs per day based on weight, age, and activity.</span>
+      </li>
+      <li class="tool-row" data-title="raw feeding calculator 80/10/10 cost" data-desc="calculate daily raw food portions muscle meat bone organ for your dog or cat plus estimated monthly and annual cost" data-tags="raw feeding calculator barf prey model portion cost dog cat">
+        <a href="/tools/raw-feeding-calculator.html">Raw Feeding Calculator</a>
+        <span>Get daily raw food portions (80/10/10) for your dog or cat, plus an estimated monthly and annual cost.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="pregnancy" aria-labelledby="pregnancy-title">
+    <h2 id="pregnancy-title">Pregnancy and breeding <span class="tool-group-count">5</span></h2>
+    <ul>
+      <li class="tool-row" data-title="dog pregnancy calculator" data-desc="enter your dog's mating date to get her estimated due date delivery window and week-by-week pregnancy guide" data-tags="dog pregnancy due date mating">
+        <a href="/tools/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a>
+        <span>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</span>
+      </li>
+      <li class="tool-row" data-title="cat pregnancy calculator" data-desc="enter your cat's mating date to get her estimated due date delivery window and a week-by-week pregnancy guide" data-tags="cat pregnancy due date mating">
+        <a href="/tools/cat-pregnancy-calculator.html">Cat Pregnancy Calculator</a>
+        <span>Enter your cat's mating date to get her estimated due date, delivery window, and a week-by-week pregnancy guide.</span>
+      </li>
+      <li class="tool-row" data-title="dog heat cycle calculator" data-desc="predict your dog's next heat fertile window and each stage of her estrous cycle based on her last heat date and size" data-tags="dog heat cycle estrus fertile">
+        <a href="/tools/dog-heat-cycle-calculator.html">Dog Heat Cycle Calculator</a>
+        <span>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</span>
+      </li>
+      <li class="tool-row" data-title="cat heat cycle calculator" data-desc="predict your cat's next heat fertile window and each stage of her estrous cycle based on her last heat date" data-tags="cat heat cycle estrus fertile in heat">
+        <a href="/tools/cat-heat-cycle-calculator.html">Cat Heat Cycle Calculator</a>
+        <span>Predict your cat's next heat, fertile window, and each stage of her estrous cycle — based on her last heat date.</span>
+      </li>
+      <li class="tool-row" data-title="orphaned kitten puppy bottle feeding calculator formula amount" data-desc="calculate how much formula an orphaned neonatal kitten or puppy needs per feed feeds per day and interval from body weight with stomach capacity check" data-tags="orphaned kitten bottle feeding calculator formula ml newborn neonatal puppy milk replacer KMR foster rescue how much">
+        <a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html">Orphaned Kitten Bottle Feeding Calculator</a>
+        <span>Formula per feed, feeds per day and the interval — from body weight, with a stomach-capacity check.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="vet-vaccines" aria-labelledby="vet-vaccines-title">
+    <h2 id="vet-vaccines-title">Vet visits and vaccines <span class="tool-group-count">7</span></h2>
+    <ul>
+      <li class="tool-row" data-title="dog vet visit scheduler" data-desc="enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="dog vet visit checkup schedule">
+        <a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a>
+        <span>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</span>
+      </li>
+      <li class="tool-row" data-title="cat vet visit scheduler" data-desc="enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda" data-tags="cat vet visit checkup schedule">
+        <a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a>
+        <span>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</span>
+      </li>
+      <li class="tool-row" data-title="dog vaccination schedule calculator" data-desc="enter your dog's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered" data-tags="dog vaccine shots schedule">
+        <a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a>
+        <span>Enter your dog's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</span>
+      </li>
+      <li class="tool-row" data-title="cat vaccination schedule calculator" data-desc="enter your cat's age and lifestyle to see which core and non-core vaccines are due now, upcoming, or already covered" data-tags="cat vaccine shots schedule">
+        <a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a>
+        <span>Enter your cat's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</span>
+      </li>
+      <li class="tool-row" data-title="titer test vs revaccination cost calculator" data-desc="compare the cost of titer testing against standard revaccination for dog or cat core vaccines over time" data-tags="titer test revaccination cost vaccine dhpp fvrcp dog cat">
+        <a href="/tools/titer-test-vs-revaccination-calculator.html">Titer Test vs. Revaccination Calculator</a>
+        <span>Compare the real cost of titer testing against standard revaccination for your dog or cat's core vaccines.</span>
+      </li>
+      <li class="tool-row" data-title="neuter timing by breed and size UC Davis research" data-desc="see what UC Davis Hart et al research reported on neutering age and joint disorder cancer risk by breed or size" data-tags="neuter timing breed size UC Davis Hart research joint disorder cancer risk spay">
+        <a href="/tools/neuter-timing-by-breed-size.html">Neuter Timing by Breed & Size</a>
+        <span>See what UC Davis research reported on neutering age and joint/cancer risk for your dog's breed or size.</span>
+      </li>
+      <li class="tool-row" data-title="spay neuter recovery timeline calculator" data-desc="get a personalized recovery calendar with actual dates for cone removal incision checks and activity restrictions" data-tags="spay neuter recovery timeline cone e-collar incision surgery dog cat">
+        <a href="/tools/spay-neuter-recovery-timeline.html">Spay/Neuter Recovery Timeline</a>
+        <span>Get a personalized recovery calendar — cone removal, incision checks, and activity restrictions by actual date.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="costs" aria-labelledby="costs-title">
+    <h2 id="costs-title">Costs and insurance <span class="tool-group-count">10</span></h2>
+    <ul>
+      <li class="tool-row" data-title="annual pet cost calculator" data-desc="estimate the full yearly cost of owning a dog or cat food vet grooming insurance and more" data-tags="cost money annual budget">
+        <a href="/tools/annual-pet-cost-calculator.html">Annual Pet Cost Calculator</a>
+        <span>Estimate the full yearly cost of owning a dog or cat — food, vet, grooming, insurance, and more.</span>
+      </li>
+      <li class="tool-row" data-title="pet insurance cost estimator" data-desc="estimate your monthly pet insurance premium based on your pet's species size age and coverage level" data-tags="insurance cost monthly premium">
+        <a href="/tools/pet-insurance-cost-estimator.html">Pet Insurance Cost Estimator</a>
+        <span>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</span>
+      </li>
+      <li class="tool-row" data-title="pet insurance claim calculator annual per incident deductible" data-desc="see your expected reimbursement then compare annual vs per incident deductibles for a recurring condition" data-tags="pet insurance claim calculator deductible annual per incident reimbursement chronic condition">
+        <a href="/tools/pet-insurance-claim-calculator.html">Pet Insurance Claim Calculator</a>
+        <span>See your expected reimbursement, then compare annual vs. per-incident deductibles for a recurring condition.</span>
+      </li>
+      <li class="tool-row" data-title="pet insurance waiting period tracker" data-desc="see the exact dates accident illness and orthopedic coverage actually begin under your policy" data-tags="pet insurance waiting period tracker accident illness orthopedic coverage start date">
+        <a href="/tools/pet-insurance-waiting-period-tracker.html">Pet Insurance Waiting Period Tracker</a>
+        <span>See the exact dates accident, illness, and orthopedic coverage actually begin under your policy.</span>
+      </li>
+      <li class="tool-row" data-title="spay neuter cost calculator" data-desc="estimate the total cost of spaying or neutering your dog or cat including surgery bloodwork and optional extras" data-tags="spay neuter cost surgery dog cat">
+        <a href="/tools/spay-neuter-cost-calculator.html">Spay/Neuter Cost Calculator</a>
+        <span>Estimate the total cost of spaying or neutering your dog or cat, including surgery, bloodwork, and optional extras.</span>
+      </li>
+      <li class="tool-row" data-title="dental cleaning cost calculator" data-desc="estimate the total cost of a professional dental cleaning for your dog or cat including anesthesia bloodwork and extractions" data-tags="dental cleaning cost teeth dog cat">
+        <a href="/tools/dental-cleaning-cost-calculator.html">Dental Cleaning Cost Calculator</a>
+        <span>Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia and possible extractions.</span>
+      </li>
+      <li class="tool-row" data-title="heartworm prevention cost calculator dog treatment" data-desc="compare annual heartworm prevention cost by product type against what treatment would cost if your dog were infected" data-tags="heartworm prevention cost calculator dog treatment injectable proheart antigen test">
+        <a href="/tools/heartworm-prevention-cost-calculator.html">Heartworm Prevention Cost Calculator</a>
+        <span>Compare a year of prevention against what treatment would actually cost if your dog were infected.</span>
+      </li>
+      <li class="tool-row" data-title="flea tick prevention cost calculator" data-desc="estimate your dog or cat's annual flea and tick prevention cost by product type topical chewable combo or collar" data-tags="flea tick prevention cost heartworm annual dog cat">
+        <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Prevention Cost Calculator</a>
+        <span>Estimate your dog or cat's annual flea and tick prevention cost by product type — topical, chewable, combo, or collar.</span>
+      </li>
+      <li class="tool-row" data-title="pet grooming cost calculator" data-desc="estimate your dog or cat's annual grooming cost based on size coat type and professional grooming frequency" data-tags="pet grooming cost annual dog cat coat">
+        <a href="/tools/pet-grooming-cost-calculator.html">Pet Grooming Cost Calculator</a>
+        <span>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</span>
+      </li>
+      <li class="tool-row" data-title="pet boarding cost calculator kennel sitter" data-desc="estimate what boarding your dog or cat will cost by facility type length of stay and add-ons" data-tags="pet boarding cost kennel sitter hotel travel dog cat">
+        <a href="/tools/pet-boarding-cost-calculator.html">Pet Boarding Cost Calculator</a>
+        <span>Estimate what boarding your dog or cat will cost by facility type, length of stay, and add-ons.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="training" aria-labelledby="training-title">
+    <h2 id="training-title">Training and behavior <span class="tool-group-count">8</span></h2>
+    <ul>
+      <li class="tool-row" data-title="puppy potty training calculator bladder hold time" data-desc="calculate how long your puppy can hold it by age get a daily potty break schedule and housetraining timeline by breed size" data-tags="puppy potty training bladder housetraining crate schedule dog">
+        <a href="/tools/puppy-potty-training-calculator.html">Puppy Potty Training Calculator</a>
+        <span>Get your puppy's bladder-hold time by age, a full daily potty schedule, and a housetraining timeline by breed size.</span>
+      </li>
+      <li class="tool-row" data-title="kitten litter training timeline calculator" data-desc="find the right litter box size litter type and box count for your kitten's exact age plus troubleshooting" data-tags="kitten litter box training timeline age cat">
+        <a href="/tools/kitten-litter-training-timeline.html">Kitten Litter Training Timeline</a>
+        <span>Find the right box size, litter type, and box count for your kitten's exact age — plus troubleshooting tips.</span>
+      </li>
+      <li class="tool-row" data-title="puppy teething timeline baby teeth adult teeth retained" data-desc="see your puppys current teething stage whats next and when to check for retained baby teeth" data-tags="puppy teething timeline baby teeth adult teeth retained deciduous teeth chewing">
+        <a href="/tools/puppy-teething-timeline.html">Puppy Teething Timeline</a>
+        <span>See your puppy's current teething stage, what's next, and when to check for retained baby teeth.</span>
+      </li>
+      <li class="tool-row" data-title="cat introduction timeline new cat resident cat" data-desc="step by step stages for introducing a new cat to a resident cat with signs to move forward or slow down" data-tags="cat introduction timeline new cat resident cat scent swap kitten adult">
+        <a href="/tools/cat-introduction-timeline.html">Cat Introduction Timeline</a>
+        <span>Step-by-step stages for introducing a new cat, with signs to move forward or slow down at each one.</span>
+      </li>
+      <li class="tool-row" data-title="dog introduction timeline new dog resident dog" data-desc="step by step stages for introducing a new dog to a resident dog with signs to move forward or slow down" data-tags="dog introduction timeline new dog resident dog neutral territory parallel walk puppy adult">
+        <a href="/tools/dog-introduction-timeline.html">Dog Introduction Timeline</a>
+        <span>Step-by-step stages for introducing a new dog, with signs to move forward or slow down at each one.</span>
+      </li>
+      <li class="tool-row" data-title="dog separation anxiety screener is it really separation anxiety" data-desc="tell separation anxiety from boredom confinement distress isolation distress and medical causes then get a realistic departure training starting point and threshold" data-tags="separation anxiety dog boredom confinement distress barrier frustration crate camera threshold suspending absences desensitization flooding">
+        <a href="/tools/dog-separation-anxiety-screener.html">Separation Anxiety Screener</a>
+        <span>Most dogs labelled with it have something else. Sort that out first, then get a realistic plan.</span>
+      </li>
+      <li class="tool-row" data-title="dog car anxiety motion sickness desensitization planner" data-desc="tell true motion sickness from anxiety then get a step by step car training plan" data-tags="dog car anxiety motion sickness desensitization training travel vet">
+        <a href="/tools/dog-car-anxiety-desensitization-planner.html">Dog Car Anxiety Desensitization Planner</a>
+        <span>Tell true motion sickness from anxiety, then get a step-by-step car training plan.</span>
+      </li>
+      <li class="tool-row" data-title="cat carrier training planner vet visit countdown" data-desc="reverse calculated countdown to vet day for a calmer carrier experience" data-tags="cat carrier training planner vet visit countdown desensitization Feliway Fear Free">
+        <a href="/tools/cat-carrier-training-planner.html">Cat Carrier Training Planner</a>
+        <span>Reverse-calculated countdown to vet day for a calmer carrier experience.</span>
+      </li>
+    </ul>
+  </section>
+  <section class="tool-group" id="safety-travel" aria-labelledby="safety-travel-title">
+    <h2 id="safety-travel-title">Safety, travel and life changes <span class="tool-group-count">5</span></h2>
+    <ul>
+      <li class="tool-row" data-title="dog heat safety calculator walk temperature humidity" data-desc="get a safety rating and max walk time based on your dogs individual heat risk factors" data-tags="dog heat safety calculator temperature humidity heatstroke walk brachycephalic">
+        <a href="/tools/dog-heat-safety-calculator.html">Dog Heat Safety Calculator</a>
+        <span>Get a safety rating and max walk time based on your dog's individual heat risk factors.</span>
+      </li>
+      <li class="tool-row" data-title="dog cold weather safety calculator how cold is too cold" data-desc="enter temperature wind chill size coat age shelter and precipitation to get a cold risk level and safe outdoor time for your dog" data-tags="cold weather winter safety calculator how cold too cold dog hypothermia frostbite wind chill tufts snow">
+        <a href="/tools/dog-cold-weather-safety-calculator.html">Dog Cold Weather Safety Calculator</a>
+        <span>How cold is too cold for your dog? Adjusts for coat, age, shelter and wet weather — not just the thermometer.</span>
+      </li>
+      <li class="tool-row" data-title="lost pet search plan missing cat dog how far radius" data-desc="search radius and priority order for a missing cat or dog based on species indoor outdoor temperament and time missing physical search not flyers do not chase" data-tags="lost cat missing dog search radius silence factor do not chase microchip shelter found pet how far do cats go">
+        <a href="/tools/lost-pet-search-plan.html">Lost Pet Search Plan</a>
+        <span>How far to search, and in what order. Most missing cats are hiding within a few houses of home.</span>
+      </li>
+      <li class="tool-row" data-title="pet travel timeline planner international microchip rabies health certificate" data-desc="reverse calculate your prep schedule for microchip rabies vaccine antibody test and health certificate deadlines" data-tags="pet travel timeline planner international microchip rabies FAVN titer health certificate USDA APHIS">
+        <a href="/tools/pet-travel-timeline-planner.html">Pet Travel Timeline Planner</a>
+        <span>Reverse-calculate your prep schedule — microchip, rabies vaccine, antibody testing, and health certificate deadlines.</span>
+      </li>
+      <li class="tool-row" data-title="new baby pet prep timeline dog cat due date" data-desc="get your dog or cat ready for a new baby with a reverse calculated prep schedule from your due date" data-tags="new baby pet prep timeline dog cat due date sound desensitization introduction">
+        <a href="/tools/new-baby-pet-prep-timeline.html">New Baby Pet Prep Timeline</a>
+        <span>Get your dog or cat ready for a new baby — a reverse-calculated prep schedule from your due date.</span>
+      </li>
+    </ul>
+  </section>
+  </div>
+
+  <p id="no-tool-results" hidden>No tools match that search. Try a broader word, such as "dog", "cat" or "cost".</p>
 </div>
+
+<style>
+.tl-wrap { max-width: 1060px; margin: 0 auto; padding: 48px 24px 24px; }
+.tl-title { font: 600 clamp(2rem, 4.6vw, 3rem)/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--brown); }
+.tl-lede { margin-top: 12px; max-width: 60ch; color: var(--brown-mid); font-size: 1.05rem; line-height: 1.6; }
+.tl-search { margin-top: 28px; max-width: 520px; }
+.tl-search-label { display: block; font-weight: 600; font-size: 0.9rem; color: var(--brown); margin-bottom: 6px; }
+.tl-search input {
+  width: 100%; padding: 12px 16px;
+  border: 1.5px solid var(--brown); border-radius: 10px;
+  font: 1rem var(--font-body); background: var(--white); color: var(--brown);
+}
+.tl-search input:focus { outline: 3px solid var(--orange); outline-offset: 1px; }
+#tool-search-count { min-height: 1.4em; margin-top: 6px; font-size: 0.85rem; color: var(--brown-light); }
+.tl-jump { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tl-jump[hidden] { display: none; }
+.tl-jump a {
+  padding: 6px 12px; border: 1.5px solid #24564F; border-radius: 999px;
+  color: #24564F; font-size: 0.85rem; font-weight: 600;
+}
+.tl-jump a:hover { background: #24564F; color: var(--white); }
+.tool-group { margin-top: 40px; scroll-margin-top: 84px; }
+.tool-group h2 {
+  font: 600 1.4rem var(--font-display); color: var(--brown);
+  padding-bottom: 10px; border-bottom: 1.5px solid var(--brown);
+  display: flex; align-items: baseline; gap: 10px;
+}
+.tool-group-count { font: 500 0.85rem var(--font-body); color: var(--brown-light); }
+.tool-group ul { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+.tool-row { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.tool-row > a { font-weight: 600; font-size: 1.02rem; color: var(--brown); }
+.tool-row > a:hover { color: #24564F; text-decoration: underline; }
+.tool-row > span:last-child { display: block; margin-top: 3px; font-size: 0.9rem; line-height: 1.5; color: var(--brown-light); }
+.tool-row .tool-card-badge {
+  display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px;
+  background: #24564F; color: var(--white); font-size: 0.72rem; font-weight: 600; vertical-align: 2px;
+}
+#no-tool-results { margin-top: 32px; color: var(--brown-mid); }
+@media (max-width: 760px) {
+  .tl-wrap { padding-top: 32px; }
+  .tool-group ul { grid-template-columns: 1fr; }
+  .tool-group { margin-top: 32px; }
+  .tl-jump { flex-wrap: nowrap; overflow-x: auto; margin-right: -24px; padding: 2px 24px 8px 0; scrollbar-width: none; }
+  .tl-jump::-webkit-scrollbar { display: none; }
+  .tl-jump a { flex: 0 0 auto; white-space: nowrap; }
+}
+</style>
 
 <script>
 function filterTools() {
-  const query = document.getElementById('tool-search').value.toLowerCase().trim();
-  const cards = document.querySelectorAll('#tools-grid .tool-card');
-  let visible = 0;
-
-  cards.forEach(card => {
-    const title = card.dataset.title || '';
-    const desc = card.dataset.desc || '';
-    const tags = card.dataset.tags || '';
-    const match = !query || title.includes(query) || desc.includes(query) || tags.includes(query);
-    card.style.display = match ? '' : 'none';
-    if (match) visible++;
+  var query = document.getElementById('tool-search').value.toLowerCase().trim();
+  var visible = 0;
+  document.querySelectorAll('#tools-grid .tool-group').forEach(function (group) {
+    var groupVisible = 0;
+    group.querySelectorAll('.tool-row').forEach(function (row) {
+      var hay = (row.dataset.title || '') + ' ' + (row.dataset.desc || '') + ' ' + (row.dataset.tags || '');
+      var match = !query || hay.indexOf(query) !== -1;
+      row.hidden = !match;
+      if (match) { groupVisible++; visible++; }
+    });
+    group.hidden = groupVisible === 0;
   });
-
-  const count = document.getElementById('tool-search-count');
-  const noResults = document.getElementById('no-tool-results');
-
-  if (query) {
-    count.textContent = `${visible} tool${visible !== 1 ? 's' : ''} found`;
-    noResults.style.display = visible === 0 ? 'block' : 'none';
-  } else {
-    count.textContent = '';
-    noResults.style.display = 'none';
-  }
+  document.querySelector('.tl-jump').hidden = !!query;
+  var count = document.getElementById('tool-search-count');
+  count.textContent = query ? visible + (visible === 1 ? ' tool found' : ' tools found') : '';
+  document.getElementById('no-tool-results').hidden = !(query && visible === 0);
 }
 </script>
