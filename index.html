@@ -1,443 +1,560 @@
 ---
 layout: default
 title: Free Pet Calculators for Dog & Cat Owners
-description: Free calculators for pet owners. Dog age, cat calories, annual pet costs, and more — instant results, no signup needed.
+description: Free calculators, at-home health checks and research-checked guides for dog and cat owners — organised by your pet's stage of life, from pregnancy and newborns to senior years.
 ---
+{% include pet-sprite.html %}
 
-<section class="hero">
-  <div class="hero-badge">🐾 Free · No Signup · Instant Results</div>
-  <h1>Your pet,<br><em>understood</em></h1>
-  <p>Free calculators for dog and cat owners. Get real answers about age, nutrition, and costs — built for pet parents, not vets.</p>
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <strong>15+</strong>
-      <span>Free tools</span>
-    </div>
-    <div class="hero-stat">
-      <strong>100%</strong>
-      <span>No signup</span>
-    </div>
-    <div class="hero-stat">
-      <strong>$0</strong>
-      <span>Hidden fees</span>
-    </div>
-  </div>
-</section>
-
-<div class="features-strip">
-  <div class="features-inner">
-    <div class="feature-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      Science-based formulas
-    </div>
-    <div class="feature-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      Works on any device
-    </div>
-    <div class="feature-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      No account needed
-    </div>
-    <div class="feature-item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      Free forever
-    </div>
-  </div>
-</div>
-
-<section class="section" id="tools">
-  <h2 class="section-title">Pet <em>Calculators</em></h2>
-  <p class="section-sub">Pick a tool and get your result in seconds.</p>
-
-  <div class="tools-grid">
-    <a href="/tools/dog-age-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐶</div>
-      <span class="tool-card-badge">Most Popular</span>
-      <h3>Dog Age Calculator</h3>
-      <p>Find out how old your dog really is in human years — based on size and breed, not the outdated 7x rule.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-age-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Age Calculator</h3>
-      <p>Convert your cat's age to human years using the latest feline aging research.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-food-calorie-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🍖</div>
-      <h3>Pet Food Calorie Calculator</h3>
-      <p>Find out exactly how many calories your dog or cat needs per day based on weight, age, and activity level.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-weight-calculator.html" class="tool-card">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Dog Weight Calculator</h3>
-      <p>Estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their breed.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/annual-pet-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">💰</div>
-      <h3>Annual Pet Cost Calculator</h3>
-      <p>Estimate the full yearly cost of owning a dog or cat — food, vet, grooming, insurance and more.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/pet-insurance-cost-estimator.html" class="tool-card">
-      <div class="tool-card-icon">🛡️</div>
-      <h3>Pet Insurance Cost Estimator</h3>
-      <p>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-pregnancy-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Dog Pregnancy Calculator</h3>
-      <p>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-heat-cycle-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Dog Heat Cycle Calculator</h3>
-      <p>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/cat-heat-cycle-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Cat Heat Cycle Calculator</h3>
-      <p>Predict your cat's next heat, fertile window, and each stage of her estrous cycle — based on her last heat date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-
-    <a href="/tools/dog-vet-visit-scheduler.html" class="tool-card">
-      <div class="tool-card-icon">🩺</div>
-      <h3>Dog Vet Visit Scheduler</h3>
-      <p>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/cat-vet-visit-scheduler.html" class="tool-card">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Vet Visit Scheduler</h3>
-      <p>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</p>
-      <span class="tool-card-link">Schedule now →</span>
-    </a>
-
-    <a href="/tools/dog-vaccination-schedule-calculator.html" class="tool-card">
-      <div class="tool-card-icon">💉</div>
-      <h3>Dog Vaccination Schedule Calculator</h3>
-      <p>Enter your dog's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</p>
-      <span class="tool-card-link">Check schedule →</span>
-    </a>
-
-    <a href="/tools/cat-vaccination-schedule-calculator.html" class="tool-card">
-      <div class="tool-card-icon">💉</div>
-      <h3>Cat Vaccination Schedule Calculator</h3>
-      <p>Enter your cat's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</p>
-      <span class="tool-card-link">Check schedule →</span>
-    </a>
-    <a href="/tools/spay-neuter-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">✂️</div>
-      <h3>Spay/Neuter Cost Calculator</h3>
-      <p>Estimate the total cost of spaying or neutering your dog or cat, including surgery, bloodwork, and optional extras.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-    <a href="/tools/dental-cleaning-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🦷</div>
-      <h3>Dental Cleaning Cost Calculator</h3>
-      <p>Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia and possible extractions.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-    <a href="/tools/pet-grooming-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">✂️</div>
-      <h3>Pet Grooming Cost Calculator</h3>
-      <p>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</p>
-      <span class="tool-card-link">Estimate cost →</span>
-    </a>
-    <a href="/tools/cat-pregnancy-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Pregnancy Calculator</h3>
-      <p>Enter your cat's mating date to get her estimated due date, delivery window, and a week-by-week pregnancy guide.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/cat-weight-calculator.html" class="tool-card">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Cat Weight Calculator</h3>
-      <p>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/dog-quality-of-life-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Dog Quality of Life Calculator</h3>
-      <p>Assess your senior or ill dog's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</p>
-      <span class="tool-card-link">Assess now →</span>
-    </a>
-    <a href="/tools/cat-quality-of-life-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐾</div>
-      <h3>Cat Quality of Life Calculator</h3>
-      <p>Assess your senior or ill cat's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</p>
-      <span class="tool-card-link">Assess now →</span>
-    </a>
-    <a href="/tools/pet-weight-calculator.html" class="tool-card">
-      <div class="tool-card-icon">⚖️</div>
-      <h3>Pet Weight Calculator</h3>
-      <p>Check if your dog or cat is at a healthy weight using breed-based ranges and a quick Body Condition Score check.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/flea-tick-prevention-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🦟</div>
-      <h3>Flea & Tick Prevention Cost Calculator</h3>
-      <p>Estimate your dog or cat's annual flea and tick prevention cost by product type — topical, chewable, combo, or collar.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/puppy-potty-training-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🐕</div>
-      <h3>Puppy Potty Training Calculator</h3>
-      <p>Get your puppy's bladder-hold time by age, a full daily potty schedule, and a housetraining timeline by breed size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/kitten-litter-training-timeline.html" class="tool-card">
-      <div class="tool-card-icon">🐈</div>
-      <h3>Kitten Litter Training Timeline</h3>
-      <p>Find the right box size, litter type, and box count for your kitten's exact age — plus troubleshooting tips.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/raw-feeding-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🥩</div>
-      <h3>Raw Feeding Calculator</h3>
-      <p>Get daily raw food portions (80/10/10) for your dog or cat, plus an estimated monthly and annual cost.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/pet-boarding-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🧳</div>
-      <h3>Pet Boarding Cost Calculator</h3>
-      <p>Estimate what boarding your dog or cat will cost by facility type, length of stay, and add-ons.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/titer-test-vs-revaccination-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🩸</div>
-      <h3>Titer Test vs. Revaccination Calculator</h3>
-      <p>Compare the real cost of titer testing against standard revaccination for your dog or cat's core vaccines.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/spay-neuter-recovery-timeline.html" class="tool-card">
-      <div class="tool-card-icon">🩹</div>
-      <h3>Spay/Neuter Recovery Timeline</h3>
-      <p>Get a personalized recovery calendar — cone removal, incision checks, and activity restrictions by actual date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/pet-insurance-waiting-period-tracker.html" class="tool-card">
-      <div class="tool-card-icon">⏳</div>
-      <h3>Pet Insurance Waiting Period Tracker</h3>
-      <p>See the exact dates accident, illness, and orthopedic coverage actually begin under your policy.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/neuter-timing-by-breed-size.html" class="tool-card">
-      <div class="tool-card-icon">🔬</div>
-      <h3>Neuter Timing by Breed & Size</h3>
-      <p>See what UC Davis research reported on neutering age and joint/cancer risk for your dog's breed or size.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/cat-introduction-timeline.html" class="tool-card">
-      <div class="tool-card-icon">🐈‍⬛</div>
-      <h3>Cat Introduction Timeline</h3>
-      <p>Step-by-step stages for introducing a new cat, with signs to move forward or slow down at each one.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/pet-travel-timeline-planner.html" class="tool-card">
-      <div class="tool-card-icon">✈️</div>
-      <h3>Pet Travel Timeline Planner</h3>
-      <p>Reverse-calculate your prep schedule — microchip, rabies vaccine, antibody testing, and health certificate deadlines.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/dog-introduction-timeline.html" class="tool-card">
-      <div class="tool-card-icon">🐕‍🦺</div>
-      <h3>Dog Introduction Timeline</h3>
-      <p>Step-by-step stages for introducing a new dog, with signs to move forward or slow down at each one.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/new-baby-pet-prep-timeline.html" class="tool-card">
-      <div class="tool-card-icon">👶</div>
-      <h3>New Baby Pet Prep Timeline</h3>
-      <p>Get your dog or cat ready for a new baby — a reverse-calculated prep schedule from your due date.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/puppy-teething-timeline.html" class="tool-card">
-      <div class="tool-card-icon">🦷</div>
-      <h3>Puppy Teething Timeline</h3>
-      <p>See your puppy's current teething stage, what's next, and when to check for retained baby teeth.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/pet-insurance-claim-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🧾</div>
-      <h3>Pet Insurance Claim Calculator</h3>
-      <p>See your expected reimbursement, then compare annual vs. per-incident deductibles for a recurring condition.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/dog-car-anxiety-desensitization-planner.html" class="tool-card">
-      <div class="tool-card-icon">🚗</div>
-      <h3>Dog Car Anxiety Desensitization Planner</h3>
-      <p>Tell true motion sickness from anxiety, then get a step-by-step car training plan.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/cat-carrier-training-planner.html" class="tool-card">
-      <div class="tool-card-icon">🐱</div>
-      <h3>Cat Carrier Training Planner</h3>
-      <p>Reverse-calculated countdown to vet day for a calmer carrier experience.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/dog-heat-safety-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🌡️</div>
-      <h3>Dog Heat Safety Calculator</h3>
-      <p>Get a safety rating and max walk time based on your dog's individual heat risk factors.</p>
-      <span class="tool-card-link">Calculate now →</span>
-    </a>
-    <a href="/tools/dog-mobility-arthritis-screening.html" class="tool-card">
-      <div class="tool-card-icon">🦴</div>
-      <h3>Dog Arthritis Screening Tool</h3>
-      <p>Answer 6 validated yes/no questions to check for early signs of arthritis, based on a veterinary research study.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-    <a href="/tools/heartworm-prevention-cost-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🫀</div>
-      <h3>Heartworm Prevention Cost Calculator</h3>
-      <p>Compare a year of prevention against what treatment would actually cost if your dog were infected.</p>
-      <span class="tool-card-link">Compare now →</span>
-    </a>
-
-    <a href="/tools/cat-mobility-arthritis-screening.html" class="tool-card">
-      <div class="tool-card-icon">🐈</div>
-      <h3>Cat Arthritis Screening Tool</h3>
-      <p>Answer 6 validated yes/no questions about jumping, stairs and play to check for signs of joint pain.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-
-    <a href="/tools/elimination-diet-trial-planner.html" class="tool-card">
-      <div class="tool-card-icon">🍽️</div>
-            <h3>Elimination Diet Trial Planner</h3>
-      <p>Dated food-trial schedule for dogs and cats, plus the contamination audit that decides whether it works.</p>
-      <span class="tool-card-link">Plan the trial →</span>
-    </a>
-
-    <a href="/tools/pet-itch-score-tracker.html" class="tool-card">
-      <div class="tool-card-icon">🐾</div>
-            <h3>Pet Itch Score Tracker</h3>
-      <p>Score itching on the validated scale vets use, so you can prove whether treatment is actually working.</p>
-      <span class="tool-card-link">Score the itch →</span>
-    </a>
-
-    <a href="/tools/dog-cold-weather-safety-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🥶</div>
-            <h3>Dog Cold Weather Safety Calculator</h3>
-      <p>How cold is too cold for your dog? Adjusts for coat, age, shelter and wet weather — not just the thermometer.</p>
-      <span class="tool-card-link">Check the cold →</span>
-    </a>
-
-    <a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html" class="tool-card">
-      <div class="tool-card-icon">🍼</div>
-            <h3>Orphaned Kitten Bottle Feeding Calculator</h3>
-      <p>Formula per feed, feeds per day and the interval — from body weight, with a stomach-capacity check.</p>
-      <span class="tool-card-link">Calculate feeds →</span>
-    </a>
-
-    <a href="/tools/cat-urinary-emergency-checker.html" class="tool-card">
-      <div class="tool-card-icon">🚨</div>
-            <h3>Cat Urinary Emergency Checker</h3>
-      <p>Straining in the litter box with little or no urine is an emergency — and looks just like constipation.</p>
-      <span class="tool-card-link">Check urgency →</span>
-    </a>
-
-    <a href="/tools/lost-pet-search-plan.html" class="tool-card">
-      <div class="tool-card-icon">🔦</div>
-            <h3>Lost Pet Search Plan</h3>
-      <p>How far to search, and in what order. Most missing cats are hiding within a few houses of home.</p>
-      <span class="tool-card-link">Build a plan →</span>
-    </a>
-
-    <a href="/tools/ear-infection-recurrence-checker.html" class="tool-card">
-      <div class="tool-card-icon">👂</div>
-            <h3>Ear Infection Recurrence Checker</h3>
-      <p>Keeps coming back? The drops treat one layer of four. Find out which one is being missed.</p>
-      <span class="tool-card-link">Check the cause →</span>
-    </a>
-
-    <a href="/tools/pet-diarrhea-triage-and-feeding-plan.html" class="tool-card">
-      <div class="tool-card-icon">💩</div>
-            <h3>Diarrhea Triage &amp; Feeding Plan</h3>
-      <p>Vet now or manage at home — and whether to feed. The old "fast for 24 hours" advice has been overturned.</p>
-      <span class="tool-card-link">Check urgency →</span>
-    </a>
-
-    <a href="/tools/dog-separation-anxiety-screener.html" class="tool-card">
-      <div class="tool-card-icon">🚪</div>
-      <h3>Separation Anxiety Screener</h3>
-      <p>Most dogs labelled with it have something else. Sort that out first, then get a realistic plan.</p>
-      <span class="tool-card-link">Screen now →</span>
-    </a>
-
-    <a href="/tools/sleeping-respiratory-rate-counter.html" class="tool-card">
-      <div class="tool-card-icon">🫁</div>
-      <span class="tool-card-badge">New</span>
-      <h3>Sleeping Respiratory Rate Counter</h3>
-      <p>The 30-second heart check cardiologists ask for. Tap to count breaths while your pet sleeps and keep a log for your vet.</p>
-      <span class="tool-card-link">Start counting →</span>
-    </a>
-  </div>
-</section>
-
-<section class="section">
-  <h2 class="section-title">From the <em>Blog</em></h2>
-  <p class="section-sub">Guides to help you make better decisions for your pet.</p>
-
-  <div class="blog-grid">
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in sorted_posts limit:3 %}
-    <a href="{{ post.url }}" class="blog-card">
-      <div class="blog-card-body">
-        <div class="blog-card-tag">{{ post.category }}</div>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.description }}</p>
-        <div class="blog-card-meta">{{ post.date | date: "%B %Y" }} · {{ post.read_time }} min read</div>
+<section class="home-hero">
+  <div class="home-wrap">
+    <div class="life" id="life" data-sp="dog">
+      <div class="home-top">
+        <div>
+          <h1 class="home-title">Answers for every stage of your pet's life</h1>
+          <p class="home-lede">Free calculators, at-home health checks and guides that show their sources, for dog and cat owners. Choose your pet, then tap where they are in life.</p>
+        </div>
+        <div class="sp-toggle" role="group" aria-label="Choose your pet">
+          <button type="button" class="sp-btn" data-sp="dog" aria-pressed="true">Dog</button>
+          <button type="button" class="sp-btn" data-sp="cat" aria-pressed="false">Cat</button>
+        </div>
       </div>
-    </a>
-    {% endfor %}
-  </div>
 
-  <div style="text-align: center; margin-top: 36px;">
-    <a href="/blog/" style="display: inline-block; padding: 12px 32px; border: 2px solid var(--orange); color: var(--orange); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; transition: background 0.2s, color 0.2s;" onmouseover="this.style.background='var(--orange)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--orange)'">View all articles →</a>
+      <div class="life-track" role="tablist" aria-label="Life stage">
+        <button type="button" class="stage" role="tab" id="tab-newborn" aria-controls="panel-newborn" aria-selected="false" data-stage="newborn">
+          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-newborn"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-newborn"/></svg>
+          <span class="stage-name">Pregnancy &amp; newborn</span>
+          <span class="stage-age">Birth to 8 weeks</span>
+        </button>
+        <button type="button" class="stage is-active" role="tab" id="tab-young" aria-controls="panel-young" aria-selected="true" data-stage="young">
+          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-young"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-young"/></svg>
+          <span class="stage-name">First year</span>
+          <span class="stage-age"><span class="dog-only">To 1 year<span class="age-extra"> (large breeds 18 months)</span></span><span class="cat-only">To 1 year</span></span>
+        </button>
+        <button type="button" class="stage" role="tab" id="tab-adult" aria-controls="panel-adult" aria-selected="false" data-stage="adult">
+          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-adult"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-adult"/></svg>
+          <span class="stage-name">Adult</span>
+          <span class="stage-age"><span class="dog-only">About 1 to 7 years</span><span class="cat-only">1 to 10 years</span></span>
+        </button>
+        <button type="button" class="stage" role="tab" id="tab-senior" aria-controls="panel-senior" aria-selected="false" data-stage="senior">
+          <svg class="stage-pet dog-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#dog-senior"/></svg>
+          <svg class="stage-pet cat-only" viewBox="0 0 120 100" aria-hidden="true"><use href="#cat-senior"/></svg>
+          <span class="stage-name">Senior</span>
+          <span class="stage-age"><span class="dog-only">About 7+<span class="age-extra"> (earlier in giant breeds)</span></span><span class="cat-only">Over 10 years</span></span>
+        </button>
+      </div>
+
+      <div class="life-panels">
+        <div class="life-panel" role="tabpanel" id="panel-newborn" aria-labelledby="tab-newborn" hidden>
+          <ul>
+            <li data-sp="dog"><a href="/tools/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+            <li data-sp="dog"><a href="/blog/how-to-tell-if-dog-is-pregnant/">How to tell if your dog is pregnant</a></li>
+            <li data-sp="dog"><a href="/blog/what-to-feed-pregnant-dog/">What to feed a pregnant dog</a></li>
+            <li data-sp="dog"><a href="/blog/signs-of-dog-labor/">Signs of dog labor, hour by hour</a></li>
+            <li data-sp="cat"><a href="/tools/cat-pregnancy-calculator.html">Cat Pregnancy Calculator</a></li>
+            <li data-sp="cat"><a href="/blog/how-to-tell-if-cat-is-pregnant/">How to tell if your cat is pregnant</a></li>
+            <li data-sp="cat"><a href="/blog/what-to-feed-pregnant-cat/">What to feed a pregnant cat</a></li>
+            <li data-sp="cat"><a href="/blog/signs-of-cat-labor/">Signs of cat labor</a></li>
+            <li data-sp="cat"><a href="/checklists/found-orphaned-kitten-checklist.html">Found an orphaned kitten: first 24 hours</a></li>
+            <li><a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html">Orphaned Kitten &amp; Puppy Bottle Feeding Calculator</a></li>
+          </ul>
+        </div>
+        <div class="life-panel" role="tabpanel" id="panel-young" aria-labelledby="tab-young">
+          <ul>
+            <li data-sp="dog"><a href="/blog/puppy-weight-chart-by-breed-size/">Puppy weight chart by breed size</a></li>
+            <li data-sp="dog"><a href="/tools/dog-weight-calculator.html">Dog Weight Calculator (adult size estimate)</a></li>
+            <li data-sp="dog"><a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a></li>
+            <li data-sp="dog"><a href="/tools/puppy-potty-training-calculator.html">Puppy Potty Training Calculator</a></li>
+            <li data-sp="dog"><a href="/tools/puppy-teething-timeline.html">Puppy Teething Timeline</a></li>
+            <li data-sp="dog"><a href="/blog/puppy-exercise-5-minute-rule/">How much exercise a puppy needs</a></li>
+            <li data-sp="dog"><a href="/checklists/puppy-socialization-checklist.html">Puppy Socialization Checklist</a></li>
+            <li data-sp="dog"><a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a></li>
+            <li data-sp="dog"><a href="/tools/neuter-timing-by-breed-size.html">Neuter Timing by Breed &amp; Size</a></li>
+            <li data-sp="cat"><a href="/blog/kitten-weight-chart-by-breed-size/">Kitten weight chart by age</a></li>
+            <li data-sp="cat"><a href="/tools/cat-weight-calculator.html">Cat Weight Calculator (adult size estimate)</a></li>
+            <li data-sp="cat"><a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a></li>
+            <li data-sp="cat"><a href="/tools/kitten-litter-training-timeline.html">Kitten Litter Training Timeline</a></li>
+            <li data-sp="cat"><a href="/checklists/kitten-socialization-checklist.html">Kitten Socialization Checklist</a></li>
+            <li data-sp="cat"><a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a></li>
+            <li data-sp="cat"><a href="/tools/cat-introduction-timeline.html">Cat Introduction Timeline</a></li>
+            <li><a href="/tools/spay-neuter-cost-calculator.html">Spay/Neuter Cost Calculator</a></li>
+          </ul>
+        </div>
+        <div class="life-panel" role="tabpanel" id="panel-adult" aria-labelledby="tab-adult" hidden>
+          <ul>
+            <li><a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a></li>
+            <li><a href="/tools/annual-pet-cost-calculator.html">Annual Pet Cost Calculator</a></li>
+            <li><a href="/tools/pet-insurance-cost-estimator.html">Pet Insurance Cost Estimator</a></li>
+            <li><a href="/tools/dental-cleaning-cost-calculator.html">Dental Cleaning Cost Calculator</a></li>
+            <li><a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a></li>
+            <li data-sp="dog"><a href="/tools/heartworm-prevention-cost-calculator.html">Heartworm Prevention Cost Calculator</a></li>
+            <li data-sp="dog"><a href="/tools/dog-heat-cycle-calculator.html">Dog Heat Cycle Calculator</a></li>
+            <li data-sp="dog"><a href="/blog/pyometra-in-dogs-cost/">Pyometra: the risk for unspayed females</a></li>
+            <li data-sp="dog"><a href="/tools/ear-infection-recurrence-checker.html">Ear Infection Recurrence Checker</a></li>
+            <li data-sp="dog"><a href="/tools/dog-separation-anxiety-screener.html">Separation Anxiety Screener</a></li>
+            <li data-sp="cat"><a href="/blog/how-much-does-a-cat-vet-visit-cost/">What cat vet visits cost</a></li>
+            <li data-sp="cat"><a href="/tools/cat-heat-cycle-calculator.html">Cat Heat Cycle Calculator</a></li>
+            <li data-sp="cat"><a href="/checklists/cat-urinary-health-checklist.html">Cat Urinary Health Checklist</a></li>
+            <li data-sp="cat"><a href="/blog/how-much-should-a-cat-weigh/">How much a cat should weigh</a></li>
+          </ul>
+        </div>
+        <div class="life-panel" role="tabpanel" id="panel-senior" aria-labelledby="tab-senior" hidden>
+          <ul>
+            <li><a href="/tools/sleeping-respiratory-rate-counter.html">Sleeping Respiratory Rate Counter</a></li>
+            <li data-sp="dog"><a href="/tools/dog-quality-of-life-calculator.html">Dog Quality of Life Calculator</a></li>
+            <li data-sp="dog"><a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a></li>
+            <li data-sp="dog"><a href="/blog/dog-heart-murmur-what-next/">Dog heart murmur: what happens next</a></li>
+            <li data-sp="dog"><a href="/blog/how-much-should-senior-dog-eat/">How much a senior dog should eat</a></li>
+            <li data-sp="cat"><a href="/tools/cat-quality-of-life-calculator.html">Cat Quality of Life Calculator</a></li>
+            <li data-sp="cat"><a href="/tools/cat-mobility-arthritis-screening.html">Cat Arthritis Screening Tool</a></li>
+            <li data-sp="cat"><a href="/blog/cat-heart-murmur-what-it-means/">Cat heart murmur: what it means</a></li>
+            <li data-sp="cat"><a href="/blog/cat-hyperthyroidism-treatment-cost/">Hyperthyroid cat: treatment costs compared</a></li>
+            <li data-sp="cat"><a href="/blog/how-much-should-senior-cat-eat/">How much a senior cat should eat</a></li>
+            <li><a href="/checklists/senior-pet-care-checklist.html">Senior Pet Care Checklist</a></li>
+            <li><a href="/blog/pet-euthanasia-cost-and-what-to-expect/">Euthanasia: costs and what to expect</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<div class="features-strip" style="text-align:center;">
-  <a href="https://newtool.site/item/petpawcalc" target="_blank" rel="noopener noreferrer" style="display:inline-block">
-    <img src="https://newtool.site/badges/newtool-light.svg" alt="Featured on NewTool.site" height = "36px" width = "auto" />
-  </a>
-  <a href="https://www.foundrlist.com/product/petpawcalc?utm_source=badge&amp;utm_medium=embed" target="_blank" rel="noopener" style="display:inline-block">
-    <img src="https://www.foundrlist.com/api/badge/petpawcalc" alt="Featured on FoundrList" height="36px" />
-  </a>
-  <a href="https://fazier.com" target="_blank" rel="noopener" style="display:inline-block"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light" height="36px" alt="Fazier badge" /></a>
-  <a href="https://findly.tools/petpawcalc?utm_source=petpawcalc" target="_blank" rel="noopener noreferrer" style="display:inline-block">
-    <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly.tools" height="36px" />
-  </a>
-  <a href="https://twelve.tools" target="_blank" rel="noopener" style="display:inline-block"><img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" height="36px"></a>
-  <a href="https://pitchwall.co/product/petpawcalc?utm_source=badge" target="_blank" rel="noopener" style="display: inline-block">
-    <img
-      src="https://pitchwall.co/images/listed/pitchwall-light.png"
-      height="36px"
-      alt="Listed on PitchWall"
-    />
-  </a>
-  <a href="https://kittylaunch.com/p/petpawcalc" target="_blank" rel="noopener" style="display: inline-block">
-    <img src="https://kittylaunch.com/api/public/badges/launch_badge.svg?theme=light&name=PetPawCalc" height="36px" alt="PetPawCalc on KittyLaunch" data-kittylaunch-badge="1" />
-  </a>
-  <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer" style="display: inline-block">
-    <img src="https://sellwithboost.com/badge/listing.svg" alt="Listed on Sell With boost" style="height: 36px; width: auto;" />
-  </a>
-  <a href="https://boostdomainrating.com/item/petpawcalc.com?utm_source=badge" target="_blank" rel="noopener noreferrer" style="display: inline-block">
-  	<img src="https://boostdomainrating.com/api/badge/petpawcalc.com" alt="Free Pet Calculators for Dog & Cat Owners — PetPawCalc - Domain Rating" style="height: 36px; width: auto;"/>
-  </a>
+
+<section class="home-block home-urgent" aria-labelledby="urgent-title">
+  <div class="home-wrap">
+    <h2 id="urgent-title" class="home-h2">Something seems wrong right now</h2>
+    <p class="home-sub">Quick checks that tell you whether to go to a vet today. Each one leads with the emergency signs.</p>
+    <div class="tags">
+      <a class="tag" href="/tools/cat-urinary-emergency-checker.html">
+        <strong>Cat straining in the litter box</strong>
+        <span>Cat Urinary Emergency Checker</span>
+      </a>
+      <a class="tag" href="/tools/pet-diarrhea-triage-and-feeding-plan.html">
+        <strong>Diarrhea: vet now, or wait?</strong>
+        <span>Diarrhea Triage &amp; Feeding Plan</span>
+      </a>
+      <a class="tag" href="/tools/sleeping-respiratory-rate-counter.html">
+        <strong>Breathing fast while asleep</strong>
+        <span>Sleeping Respiratory Rate Counter</span>
+      </a>
+      <a class="tag" href="/tools/dog-heat-safety-calculator.html">
+        <strong>Too hot for a walk?</strong>
+        <span>Dog Heat Safety Calculator</span>
+      </a>
+      <a class="tag" href="/checklists/lost-pet-first-24-hours-checklist.html">
+        <strong>Pet missing</strong>
+        <span>Lost Pet: First 24 Hours</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-block" aria-labelledby="myth-title">
+  <div class="home-wrap">
+    <h2 id="myth-title" class="home-h2">Common advice, checked against the research</h2>
+    <p class="home-sub">Some of what owners are told doesn't hold up. These are the corrections our guides are built on.</p>
+    <div class="myths">
+      <div class="myth">
+        <p class="myth-old">Puppies need five minutes of exercise per month of age.</p>
+        <p class="myth-new">No study is behind that number. In a study of 501 large-breed puppies, off-lead play on soft ground went with <em>lower</em> hip dysplasia risk.</p>
+        <a href="/blog/puppy-exercise-5-minute-rule/">Read the puppy exercise guide</a>
+      </div>
+      <div class="myth">
+        <p class="myth-old">A negative heartworm test means your dog is clear.</p>
+        <p class="myth-new">The test can't detect an infection until it is roughly seven months old, so it reports on the past.</p>
+        <a href="/blog/heartworm-test-cost/">Read about heartworm testing</a>
+      </div>
+      <div class="myth">
+        <p class="myth-old">Daily pills are the cheap way to treat a hyperthyroid cat.</p>
+        <p class="myth-new">Pills plus rechecks usually overtake a one-time radioiodine cure within one to three years.</p>
+        <a href="/blog/cat-hyperthyroidism-treatment-cost/">See the cost comparison</a>
+      </div>
+      <div class="myth">
+        <p class="myth-old">A heart murmur in a cat means heart disease.</p>
+        <p class="myth-new">In 780 healthy-looking cats, about 70% of murmurs were harmless, and some cats with heart disease had none.</p>
+        <a href="/blog/cat-heart-murmur-what-it-means/">Read about cat heart murmurs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-block" id="tools" aria-labelledby="tools-title">
+  <div class="home-wrap">
+    <div class="home-head-row">
+      <h2 id="tools-title" class="home-h2">Pet tools</h2>
+      <a class="home-more" href="/tools/">Search all tools</a>
+    </div>
+    <div class="groups">
+    <details class="home-group" open>
+      <summary><span class="home-group-name">Health checks at home</span><span class="home-group-count">10 tools</span></summary>
+      <ul>
+        <li><a href="/tools/sleeping-respiratory-rate-counter.html">Sleeping Respiratory Rate Counter</a><span>The 30-second heart check cardiologists ask for. Tap to count breaths while your pet sleeps and keep a log for your vet.</span></li>
+        <li><a href="/tools/cat-urinary-emergency-checker.html">Cat Urinary Emergency Checker</a><span>Straining in the litter box with little or no urine is an emergency — and looks just like constipation.</span></li>
+        <li><a href="/tools/pet-diarrhea-triage-and-feeding-plan.html">Diarrhea Triage &amp; Feeding Plan</a><span>Vet now or manage at home — and whether to feed. The old "fast for 24 hours" advice has been overturned.</span></li>
+        <li><a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a><span>Answer 6 validated yes/no questions to check for early signs of arthritis, based on a veterinary research study.</span></li>
+        <li><a href="/tools/cat-mobility-arthritis-screening.html">Cat Arthritis Screening Tool</a><span>Answer 6 validated yes/no questions about jumping, stairs and play to check for signs of joint pain.</span></li>
+        <li><a href="/tools/dog-quality-of-life-calculator.html">Dog Quality of Life Calculator</a><span>Assess your senior or ill dog's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</span></li>
+        <li><a href="/tools/cat-quality-of-life-calculator.html">Cat Quality of Life Calculator</a><span>Assess your senior or ill cat's wellbeing across 7 key areas using the veterinary HHHHHMM Scale. Track changes over time.</span></li>
+        <li><a href="/tools/pet-itch-score-tracker.html">Pet Itch Score Tracker</a><span>Score itching on the validated scale vets use, so you can prove whether treatment is actually working.</span></li>
+        <li><a href="/tools/ear-infection-recurrence-checker.html">Ear Infection Recurrence Checker</a><span>Keeps coming back? The drops treat one layer of four. Find out which one is being missed.</span></li>
+        <li><a href="/tools/elimination-diet-trial-planner.html">Elimination Diet Trial Planner</a><span>Dated food-trial schedule for dogs and cats, plus the contamination audit that decides whether it works.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Age, weight and food</span><span class="home-group-count">7 tools</span></summary>
+      <ul>
+        <li><a href="/tools/dog-age-calculator.html">Dog Age Calculator</a><span>Find out how old your dog is in human years — based on size and breed, not the outdated 7x rule.</span></li>
+        <li><a href="/tools/cat-age-calculator.html">Cat Age Calculator</a><span>Convert your cat's age to human years using the latest feline aging research from the AAFP.</span></li>
+        <li><a href="/tools/dog-weight-calculator.html">Dog Weight Calculator</a><span>Estimate your puppy's adult weight or check if your adult dog is at a healthy weight for their size.</span></li>
+        <li><a href="/tools/cat-weight-calculator.html">Cat Weight Calculator</a><span>Check if your cat is at a healthy weight for their breed and sex, or estimate how large your kitten will grow.</span></li>
+        <li><a href="/tools/pet-weight-calculator.html">Pet Weight Calculator</a><span>Check if your dog or cat is at a healthy weight using breed-based ranges and a quick Body Condition Score check.</span></li>
+        <li><a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a><span>Find out exactly how many calories your dog or cat needs per day based on weight, age, and activity.</span></li>
+        <li><a href="/tools/raw-feeding-calculator.html">Raw Feeding Calculator</a><span>Get daily raw food portions (80/10/10) for your dog or cat, plus an estimated monthly and annual cost.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Pregnancy and breeding</span><span class="home-group-count">5 tools</span></summary>
+      <ul>
+        <li><a href="/tools/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a><span>Enter your dog's mating date to get her estimated due date, delivery window, and week-by-week pregnancy guide.</span></li>
+        <li><a href="/tools/cat-pregnancy-calculator.html">Cat Pregnancy Calculator</a><span>Enter your cat's mating date to get her estimated due date, delivery window, and a week-by-week pregnancy guide.</span></li>
+        <li><a href="/tools/dog-heat-cycle-calculator.html">Dog Heat Cycle Calculator</a><span>Predict your dog's next heat, fertile window, and each stage of her estrous cycle based on her last heat date and size.</span></li>
+        <li><a href="/tools/cat-heat-cycle-calculator.html">Cat Heat Cycle Calculator</a><span>Predict your cat's next heat, fertile window, and each stage of her estrous cycle — based on her last heat date.</span></li>
+        <li><a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html">Orphaned Kitten Bottle Feeding Calculator</a><span>Formula per feed, feeds per day and the interval — from body weight, with a stomach-capacity check.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Vet visits and vaccines</span><span class="home-group-count">7 tools</span></summary>
+      <ul>
+        <li><a href="/tools/dog-vet-visit-scheduler.html">Dog Vet Visit Scheduler</a><span>Enter your dog's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</span></li>
+        <li><a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a><span>Enter your cat's age and last vet visit to get their next recommended checkup date and a personalized visit agenda.</span></li>
+        <li><a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a><span>Enter your dog's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</span></li>
+        <li><a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a><span>Enter your cat's age and lifestyle to see which vaccines are due now, upcoming, or already covered — plus typical costs.</span></li>
+        <li><a href="/tools/titer-test-vs-revaccination-calculator.html">Titer Test vs. Revaccination Calculator</a><span>Compare the real cost of titer testing against standard revaccination for your dog or cat's core vaccines.</span></li>
+        <li><a href="/tools/neuter-timing-by-breed-size.html">Neuter Timing by Breed & Size</a><span>See what UC Davis research reported on neutering age and joint/cancer risk for your dog's breed or size.</span></li>
+        <li><a href="/tools/spay-neuter-recovery-timeline.html">Spay/Neuter Recovery Timeline</a><span>Get a personalized recovery calendar — cone removal, incision checks, and activity restrictions by actual date.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Costs and insurance</span><span class="home-group-count">10 tools</span></summary>
+      <ul>
+        <li><a href="/tools/annual-pet-cost-calculator.html">Annual Pet Cost Calculator</a><span>Estimate the full yearly cost of owning a dog or cat — food, vet, grooming, insurance, and more.</span></li>
+        <li><a href="/tools/pet-insurance-cost-estimator.html">Pet Insurance Cost Estimator</a><span>Estimate your monthly pet insurance premium based on your pet's species, size, age, and coverage level.</span></li>
+        <li><a href="/tools/pet-insurance-claim-calculator.html">Pet Insurance Claim Calculator</a><span>See your expected reimbursement, then compare annual vs. per-incident deductibles for a recurring condition.</span></li>
+        <li><a href="/tools/pet-insurance-waiting-period-tracker.html">Pet Insurance Waiting Period Tracker</a><span>See the exact dates accident, illness, and orthopedic coverage actually begin under your policy.</span></li>
+        <li><a href="/tools/spay-neuter-cost-calculator.html">Spay/Neuter Cost Calculator</a><span>Estimate the total cost of spaying or neutering your dog or cat, including surgery, bloodwork, and optional extras.</span></li>
+        <li><a href="/tools/dental-cleaning-cost-calculator.html">Dental Cleaning Cost Calculator</a><span>Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia and possible extractions.</span></li>
+        <li><a href="/tools/heartworm-prevention-cost-calculator.html">Heartworm Prevention Cost Calculator</a><span>Compare a year of prevention against what treatment would actually cost if your dog were infected.</span></li>
+        <li><a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Prevention Cost Calculator</a><span>Estimate your dog or cat's annual flea and tick prevention cost by product type — topical, chewable, combo, or collar.</span></li>
+        <li><a href="/tools/pet-grooming-cost-calculator.html">Pet Grooming Cost Calculator</a><span>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</span></li>
+        <li><a href="/tools/pet-boarding-cost-calculator.html">Pet Boarding Cost Calculator</a><span>Estimate what boarding your dog or cat will cost by facility type, length of stay, and add-ons.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Training and behavior</span><span class="home-group-count">8 tools</span></summary>
+      <ul>
+        <li><a href="/tools/puppy-potty-training-calculator.html">Puppy Potty Training Calculator</a><span>Get your puppy's bladder-hold time by age, a full daily potty schedule, and a housetraining timeline by breed size.</span></li>
+        <li><a href="/tools/kitten-litter-training-timeline.html">Kitten Litter Training Timeline</a><span>Find the right box size, litter type, and box count for your kitten's exact age — plus troubleshooting tips.</span></li>
+        <li><a href="/tools/puppy-teething-timeline.html">Puppy Teething Timeline</a><span>See your puppy's current teething stage, what's next, and when to check for retained baby teeth.</span></li>
+        <li><a href="/tools/cat-introduction-timeline.html">Cat Introduction Timeline</a><span>Step-by-step stages for introducing a new cat, with signs to move forward or slow down at each one.</span></li>
+        <li><a href="/tools/dog-introduction-timeline.html">Dog Introduction Timeline</a><span>Step-by-step stages for introducing a new dog, with signs to move forward or slow down at each one.</span></li>
+        <li><a href="/tools/dog-separation-anxiety-screener.html">Separation Anxiety Screener</a><span>Most dogs labelled with it have something else. Sort that out first, then get a realistic plan.</span></li>
+        <li><a href="/tools/dog-car-anxiety-desensitization-planner.html">Dog Car Anxiety Desensitization Planner</a><span>Tell true motion sickness from anxiety, then get a step-by-step car training plan.</span></li>
+        <li><a href="/tools/cat-carrier-training-planner.html">Cat Carrier Training Planner</a><span>Reverse-calculated countdown to vet day for a calmer carrier experience.</span></li>
+      </ul>
+    </details>
+    <details class="home-group">
+      <summary><span class="home-group-name">Safety, travel and life changes</span><span class="home-group-count">5 tools</span></summary>
+      <ul>
+        <li><a href="/tools/dog-heat-safety-calculator.html">Dog Heat Safety Calculator</a><span>Get a safety rating and max walk time based on your dog's individual heat risk factors.</span></li>
+        <li><a href="/tools/dog-cold-weather-safety-calculator.html">Dog Cold Weather Safety Calculator</a><span>How cold is too cold for your dog? Adjusts for coat, age, shelter and wet weather — not just the thermometer.</span></li>
+        <li><a href="/tools/lost-pet-search-plan.html">Lost Pet Search Plan</a><span>How far to search, and in what order. Most missing cats are hiding within a few houses of home.</span></li>
+        <li><a href="/tools/pet-travel-timeline-planner.html">Pet Travel Timeline Planner</a><span>Reverse-calculate your prep schedule — microchip, rabies vaccine, antibody testing, and health certificate deadlines.</span></li>
+        <li><a href="/tools/new-baby-pet-prep-timeline.html">New Baby Pet Prep Timeline</a><span>Get your dog or cat ready for a new baby — a reverse-calculated prep schedule from your due date.</span></li>
+      </ul>
+    </details>
+    </div>
+  </div>
+</section>
+
+<section class="home-block" aria-labelledby="check-title">
+  <div class="home-wrap">
+    <div class="home-head-row">
+      <h2 id="check-title" class="home-h2">Checklists</h2>
+      <a class="home-more" href="/checklists/">All checklists</a>
+    </div>
+    <ul class="checks">
+      <li><a href="/checklists/new-puppy-checklist.html">New puppy, first month</a></li>
+      <li><a href="/checklists/new-kitten-checklist.html">New kitten, first month</a></li>
+      <li><a href="/checklists/puppy-socialization-checklist.html">Puppy socialization</a></li>
+      <li><a href="/checklists/kitten-socialization-checklist.html">Kitten socialization</a></li>
+      <li><a href="/checklists/senior-pet-care-checklist.html">Senior pet care</a></li>
+      <li><a href="/checklists/post-surgery-recovery-checklist.html">After surgery</a></li>
+      <li><a href="/checklists/pet-emergency-kit-checklist.html">Emergency kit</a></li>
+      <li><a href="/checklists/lost-pet-first-24-hours-checklist.html">Lost pet, first 24 hours</a></li>
+      <li><a href="/checklists/found-orphaned-kitten-checklist.html">Found an orphaned kitten</a></li>
+      <li><a href="/checklists/cat-urinary-health-checklist.html">Cat urinary health</a></li>
+      <li><a href="/checklists/recurring-ear-infection-vet-visit-checklist.html">Recurring ear infections</a></li>
+      <li><a href="/checklists/separation-anxiety-training-setup-checklist.html">Separation anxiety setup</a></li>
+      <li><a href="/checklists/moving-with-pets-checklist.html">Moving with pets</a></li>
+      <li><a href="/checklists/winter-pet-safety-checklist.html">Winter safety</a></li>
+      <li><a href="/checklists/new-rabbit-checklist.html">New rabbit</a></li>
+      <li><a href="/checklists/new-guinea-pig-checklist.html">New guinea pig</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="home-block" aria-labelledby="latest-title">
+  <div class="home-wrap">
+    <div class="home-head-row">
+      <h2 id="latest-title" class="home-h2">Latest guides</h2>
+      <a class="home-more" href="/blog/">All guides</a>
+    </div>
+    <ol class="latest">
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts limit:6 %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.description }}</p>
+        <span class="latest-meta">{{ post.category }}, {{ post.date | date: "%B %-d, %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="home-block home-how" aria-labelledby="how-title">
+  <div class="home-wrap">
+    <div class="home-how-inner">
+    <h2 id="how-title" class="home-h2">How this site works</h2>
+    <p>PetPawCalc is written by the PetPawCalc Team. We are not veterinarians, so every figure on the site is traced to a published study, a veterinary association or a named source, and tools that touch on health lead with the signs that mean "see a vet now". Read our <a href="/sources.html">sources</a> and our <a href="/editorial-policy.html">editorial policy</a>.</p>
+    </div>
+  </div>
+</section>
+
+<div class="home-listed">
+  <div class="home-wrap">
+    <span>Listed on</span>
+    <a href="https://newtool.site/item/petpawcalc" target="_blank" rel="noopener noreferrer"><img src="https://newtool.site/badges/newtool-light.svg" alt="Featured on NewTool.site" height="28" loading="lazy"></a>
+    <a href="https://www.foundrlist.com/product/petpawcalc?utm_source=badge&amp;utm_medium=embed" target="_blank" rel="noopener"><img src="https://www.foundrlist.com/api/badge/petpawcalc" alt="Featured on FoundrList" height="28" loading="lazy"></a>
+    <a href="https://fazier.com" target="_blank" rel="noopener"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&amp;theme=light" alt="Fazier badge" height="28" loading="lazy"></a>
+    <a href="https://findly.tools/petpawcalc?utm_source=petpawcalc" target="_blank" rel="noopener noreferrer"><img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly.tools" height="28" loading="lazy"></a>
+    <a href="https://twelve.tools" target="_blank" rel="noopener"><img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" height="28" loading="lazy"></a>
+    <a href="https://pitchwall.co/product/petpawcalc?utm_source=badge" target="_blank" rel="noopener"><img src="https://pitchwall.co/images/listed/pitchwall-light.png" alt="Listed on PitchWall" height="28" loading="lazy"></a>
+    <a href="https://kittylaunch.com/p/petpawcalc" target="_blank" rel="noopener"><img src="https://kittylaunch.com/api/public/badges/launch_badge.svg?theme=light&amp;name=PetPawCalc" alt="PetPawCalc on KittyLaunch" height="28" loading="lazy" data-kittylaunch-badge="1"></a>
+  </div>
 </div>
+
+<style>
+.pp-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+:root { --chart: #24564F; --chart-soft: #E3EEEA; --alarm: #A8322B; }
+
+.home-wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+.home-hero { padding: 56px 0 40px; background: var(--white); border-bottom: 1px solid var(--border); }
+.home-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5.2vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--brown);
+  max-width: 18ch;
+}
+.home-lede { margin-top: 16px; max-width: 56ch; font-size: 1.08rem; line-height: 1.6; color: var(--brown-mid); }
+
+.home-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.home-top .sp-toggle { margin-bottom: 4px; }
+.sp-toggle { display: inline-flex; border: 1.5px solid var(--chart); border-radius: 999px; padding: 3px; gap: 2px; }
+.sp-btn {
+  font: 600 0.95rem var(--font-body);
+  color: var(--chart);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 22px;
+  cursor: pointer;
+}
+.sp-btn[aria-pressed="true"] { background: var(--chart); color: var(--white); }
+
+.life-track {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  border-bottom: 3px solid var(--brown);
+}
+.life-track::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: -11px; height: 8px;
+  background: repeating-linear-gradient(to right, var(--brown) 0 2px, transparent 2px 25%);
+  opacity: 0.55;
+}
+.stage {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  gap: 2px;
+  background: transparent; border: 0; cursor: pointer;
+  padding: 8px 6px 12px;
+  font-family: var(--font-body);
+  color: var(--brown-mid);
+  position: relative;
+  min-width: 0;
+}
+.stage-pet { width: 100%; max-width: 150px; height: auto; transition: transform 0.25s ease; }
+.stage-name { font: 600 1rem var(--font-display); color: var(--brown); margin-top: 6px; text-align: center; }
+.stage-age { font-size: 0.8rem; line-height: 1.35; text-align: center; color: var(--brown-light); }
+.stage.is-active .stage-name { color: var(--chart); }
+.stage.is-active::before {
+  content: "";
+  position: absolute; left: 10%; right: 10%; bottom: -3px; height: 6px;
+  background: var(--chart); border-radius: 3px 3px 0 0;
+}
+.stage.is-active .stage-pet { transform: translateY(-4px); }
+.stage:focus-visible, .sp-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 8px; }
+
+.life[data-sp="dog"] .cat-only, .life[data-sp="cat"] .dog-only { display: none; }
+.life[data-sp="dog"] li[data-sp="cat"], .life[data-sp="cat"] li[data-sp="dog"] { display: none; }
+
+.life-panels { margin-top: 28px; }
+.life-panel ul {
+  list-style: none;
+  columns: 3 240px;
+  column-gap: 32px;
+}
+.life-panel li { break-inside: avoid; padding: 7px 0; border-bottom: 1px dotted var(--border); }
+.life-panel a { color: var(--brown); font-weight: 500; }
+.life-panel a:hover { color: var(--chart); text-decoration: underline; }
+
+.home-block { padding: 56px 0 8px; }
+.home-h2 { font: 600 clamp(1.5rem, 3vw, 2rem)/1.15 var(--font-display); color: var(--brown); letter-spacing: -0.01em; }
+.home-sub { margin-top: 8px; color: var(--brown-mid); max-width: 60ch; }
+.home-head-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.home-more { font-weight: 600; color: var(--chart); text-decoration: underline; text-underline-offset: 3px; }
+
+.tags { margin-top: 22px; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.tag {
+  position: relative;
+  display: block;
+  background: var(--white);
+  border: 1.5px solid var(--brown);
+  border-top: 6px solid var(--alarm);
+  border-radius: 4px 4px 10px 10px;
+  padding: 26px 16px 16px;
+  color: var(--brown);
+}
+.tag::before {
+  content: "";
+  position: absolute; top: 9px; left: 50%; width: 10px; height: 10px; margin-left: -5px;
+  border-radius: 50%; border: 1.5px solid var(--brown); background: var(--cream);
+}
+.tag strong { display: block; font: 600 1.05rem/1.25 var(--font-display); }
+.tag span { display: block; margin-top: 8px; font-size: 0.85rem; color: var(--alarm); font-weight: 600; }
+.tag:hover { background: #FFF6F4; }
+.tag:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+.myths { margin-top: 22px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 40px; }
+.myth { padding-left: 18px; border-left: 3px solid var(--chart); }
+.myth-old { color: var(--brown-light); text-decoration: line-through; text-decoration-color: var(--alarm); text-decoration-thickness: 2px; font-size: 0.98rem; }
+.myth-new { margin-top: 6px; font: 500 1.12rem/1.45 var(--font-display); color: var(--brown); }
+.myth a { display: inline-block; margin-top: 8px; font-weight: 600; color: var(--chart); text-decoration: underline; text-underline-offset: 3px; }
+
+.groups { margin-top: 18px; border-top: 1.5px solid var(--brown); }
+.home-group { border-bottom: 1px solid var(--border); }
+.home-group summary {
+  list-style: none;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  padding: 16px 4px;
+  cursor: pointer;
+}
+.home-group summary::-webkit-details-marker { display: none; }
+.home-group-name { font: 600 1.15rem var(--font-display); color: var(--brown); }
+.home-group-name::before { content: "+"; display: inline-block; width: 1.2em; color: var(--chart); font-family: var(--font-body); }
+.home-group[open] .home-group-name::before { content: "\2212"; }
+.home-group-count { font-size: 0.85rem; color: var(--brown-light); white-space: nowrap; }
+.home-group summary:focus-visible { outline: 3px solid var(--orange); outline-offset: -3px; }
+.home-group ul { list-style: none; padding: 0 4px 18px 1.4em; display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 36px; }
+.home-group li { padding: 8px 0; }
+.home-group li a { font-weight: 600; color: var(--brown); }
+.home-group li a:hover { color: var(--chart); text-decoration: underline; }
+.home-group li span { display: block; font-size: 0.88rem; line-height: 1.45; color: var(--brown-light); margin-top: 2px; }
+
+.checks { margin-top: 18px; list-style: none; columns: 4 200px; column-gap: 28px; }
+.checks li { break-inside: avoid; padding: 6px 0 6px 26px; position: relative; }
+.checks li::before {
+  content: ""; position: absolute; left: 0; top: 10px; width: 14px; height: 14px;
+  border: 1.5px solid var(--chart); border-radius: 3px;
+}
+.checks a { color: var(--brown); }
+.checks a:hover { color: var(--chart); text-decoration: underline; }
+
+.latest { margin-top: 14px; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+.latest li { padding: 16px 0; border-top: 1px solid var(--border); }
+.latest a { font: 600 1.1rem/1.3 var(--font-display); color: var(--brown); }
+.latest a:hover { color: var(--chart); }
+.latest p { margin-top: 6px; font-size: 0.9rem; line-height: 1.5; color: var(--brown-mid); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.latest-meta { display: block; margin-top: 6px; font-size: 0.8rem; color: var(--brown-light); }
+
+.home-how { padding-bottom: 0; }
+.home-how-inner { border-top: 1.5px solid var(--brown); padding-top: 28px; }
+.home-how p { margin-top: 10px; max-width: 70ch; color: var(--brown-mid); line-height: 1.7; }
+.home-how a { color: var(--chart); text-decoration: underline; text-underline-offset: 3px; }
+
+.home-listed { padding: 40px 0 0; }
+.home-listed .home-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.home-listed span { font-size: 0.8rem; color: var(--brown-light); }
+.home-listed img { height: 28px; width: auto; opacity: 0.75; }
+.home-listed a:hover img { opacity: 1; }
+
+@media (max-width: 760px) {
+  .home-hero { padding: 36px 0 28px; }
+  .life-track { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stage { padding: 4px 2px 10px; }
+  .stage-name { font-size: 0.82rem; line-height: 1.2; }
+  .stage-age { font-size: 0.7rem; }
+  .myths, .latest, .home-group ul { grid-template-columns: 1fr; }
+  .age-extra { display: none; }
+  .tag { padding: 22px 12px 12px; }
+  .tag strong { font-size: 0.98rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-pet { transition: none; }
+}
+</style>
+
+<script>
+(function () {
+  var life = document.getElementById("life");
+  if (!life) return;
+  var spBtns = life.querySelectorAll(".sp-btn");
+  var stages = life.querySelectorAll(".stage");
+  try {
+    var saved = window.localStorage.getItem("ppc-home-sp");
+    if (saved === "dog" || saved === "cat") { setSpecies(saved); }
+  } catch (e) {}
+
+  function setSpecies(sp) {
+    life.setAttribute("data-sp", sp);
+    spBtns.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-sp") === sp ? "true" : "false"); });
+    try { window.localStorage.setItem("ppc-home-sp", sp); } catch (e) {}
+  }
+  function setStage(btn) {
+    stages.forEach(function (s) {
+      var on = s === btn;
+      s.classList.toggle("is-active", on);
+      s.setAttribute("aria-selected", on ? "true" : "false");
+      s.setAttribute("tabindex", on ? "0" : "-1");
+      document.getElementById(s.getAttribute("aria-controls")).hidden = !on;
+    });
+  }
+  spBtns.forEach(function (b) { b.addEventListener("click", function () { setSpecies(b.getAttribute("data-sp")); }); });
+  stages.forEach(function (s, i) {
+    s.setAttribute("tabindex", s.classList.contains("is-active") ? "0" : "-1");
+    s.addEventListener("click", function () { setStage(s); });
+    s.addEventListener("keydown", function (e) {
+      var j = null;
+      if (e.key === "ArrowRight") j = (i + 1) % stages.length;
+      if (e.key === "ArrowLeft") j = (i - 1 + stages.length) % stages.length;
+      if (j !== null) { e.preventDefault(); stages[j].focus(); setStage(stages[j]); }
+    });
+  });
+})();
+</script>
