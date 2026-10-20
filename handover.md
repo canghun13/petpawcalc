@@ -3212,7 +3212,7 @@ QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
 ### 세션 BC — 주간 (10/20): FAQ 질문 반복 정리 11개 포스트 + 고양이 당뇨 비용 신규
 
 **데이터 (GSC 3개월)**: 클릭 173(지난주 119), 노출 44,678(31,423). 하루 노출 약 1,500–2,135. 모바일 평균 순위 9.89. 키튼 차트 클릭 52(순위 11.31), 퍼피 39. 10/13 신규 4페이지(심장·자궁축농증)는 아직 노출 없음. 색인(Coverage) 자료는 지난주와 동일. GA 활성 사용자 399, 구글 오가닉 첫 방문 136. Bing: cat-vet-visit-cost 노출 775·클릭 15·순위 4.2, how-often-vet-visits-cat 624·24·3.1, flea-tick-prevention-cost 클릭 10.
-- `/blog/how-much-does-a-cat-vet-visit-cost/`는 9/? 전면 재작성 후에도 구글 크롤 날짜가 7/22 그대로 → **사용자에게 GSC URL 검사 → 색인 생성 요청을 부탁함.**
+- `/blog/how-much-does-a-cat-vet-visit-cost/`는 10/12 전면 재작성 후에도 구글 크롤 날짜가 7/22 그대로 → **사용자에게 GSC URL 검사 → 색인 생성 요청을 부탁함.**
 
 **1. FAQ 정리 (11개 포스트, last_modified_at 2026-10-20)** — AX에서 툴 FAQ를 정리했는데 포스트 FAQ에 같은 문제가 23개 남아 있었다: 답이 질문을 그대로 반복하며 시작("How much is a dog dental cleaning depends…"), "If you're asking / If you've searched / apostrophe or not" 같은 검색어 나열, 물음표 없는 검색어형 질문("How to tell if a puppy is underweight"), 앞 질문과 같은 내용의 중복 질문. 저체중 포스트(고양이 underweight 쿼리 약 400노출, 순위 24–28)에 특히 많았음.
 - 처리: 중복 질문 삭제(dog-pregnant 1, cat-overweight 1, euthanasia 1, cat-underweight 1, dog-underweight 2 — 퍼피 질문 2개는 1개로 합침), 나머지는 답 첫 문장을 바로 답으로 바꾸고 검색어 나열 문장 삭제, 검색어형 질문은 자연스러운 질문으로. 앞머리(front matter) faqs와 본문 FAQ 순서·내용 일치 유지.
