@@ -19,10 +19,9 @@ faqs:
     a: "Most veterinary clinics welcome owners to be present, and many encourage it. If being present feels too difficult, that's a completely valid choice too — there's no wrong answer, and your vet's team can talk through what feels right for you."
   - q: "How much does cat euthanasia cost?"
     a: "Cat euthanasia cost at a veterinary clinic typically runs $50–$300, with average pricing often landing a bit lower than for dogs — commonly $75–$150 — since cats need less sedative and a shorter procedure. The cost of euthanizing a cat at home instead of in-clinic is higher, typically $250–$600."
-  - q: "How much does it cost to put a dog to sleep or a cat down?"
-    a: "How much does it cost to put a dog to sleep depends mainly on setting: about $50–$300 at a clinic or $250–$750 for an in-home appointment. How much does it cost to put a cat down follows a similar pattern, though clinic pricing for cats often runs somewhat lower — commonly $75–$150 versus a dog's roughly $125–$150 average."
-  - q: "What's a typical vet euthanasia cost, and does it differ between dogs and cats?"
-    a: "Vet euthanasia cost — meaning the in-clinic procedure itself, before any cremation or burial — typically falls between $50 and $300 nationally for either species. The euthanasia cost dog owners report tends to average a little higher than what cat owners report, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly."
+  - q: "Does euthanasia cost differ between dogs and cats?"
+    a: "Only slightly. The in-clinic procedure itself, before any cremation or burial, typically falls between $50 and $300 nationally for either species. Dog owners tend to report a slightly higher average than cat owners, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly. Setting matters far more than species — an in-home appointment runs roughly $250–$750 for either."
+last_modified_at: 2026-10-20
 ---
 
 Deciding to say goodbye to a pet is never easy, and the practical questions — what it costs, how it works, what to expect — often get pushed aside by the emotional weight of the decision itself. This is meant to answer those practical questions plainly, so you have one less thing to figure out during a hard time.
@@ -101,11 +100,8 @@ Most veterinary clinics welcome owners to be present, and many encourage it. If 
 **How much does cat euthanasia cost?**
 Cat euthanasia cost at a veterinary clinic typically runs $50–$300, with average pricing often landing a bit lower than for dogs — commonly $75–$150 — since cats need less sedative and a shorter procedure. The cost of euthanizing a cat at home instead of in-clinic is higher, typically $250–$600.
 
-**How much does it cost to put a dog to sleep or a cat down?**
-How much does it cost to put a dog to sleep depends mainly on setting: about $50–$300 at a clinic or $250–$750 for an in-home appointment. How much does it cost to put a cat down follows a similar pattern, though clinic pricing for cats often runs somewhat lower — commonly $75–$150 versus a dog's roughly $125–$150 average.
-
-**What's a typical vet euthanasia cost, and does it differ between dogs and cats?**
-Vet euthanasia cost — meaning the in-clinic procedure itself, before any cremation or burial — typically falls between $50 and $300 nationally for either species. The euthanasia cost dog owners report tends to average a little higher than what cat owners report, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly.
+**Does euthanasia cost differ between dogs and cats?**
+Only slightly. The in-clinic procedure itself, before any cremation or burial, typically falls between $50 and $300 nationally for either species. Dog owners tend to report a slightly higher average than cat owners, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly. Setting matters far more than species — an in-home appointment runs roughly $250–$750 for either.
 
 ## Related Articles
 

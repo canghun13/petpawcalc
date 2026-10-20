@@ -21,9 +21,7 @@ faqs:
     a: "Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath."
   - q: "Can I just feed my cat less to help them lose weight?"
     a: "Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended."
-  - q: "How can you tell if your cat is overweight or fat?"
-    a: "How can you tell if your cat is overweight comes down to the same rib and waist check used throughout this guide — if you're specifically wondering how to tell if your cat is fat or how to tell if my cat is overweight, look for ribs you can't easily feel and a missing waist tuck from above. The same check works for kittens too: how to tell if your kitten is overweight uses the identical rib-and-waist test, just compared against a faster-growing baseline. In short, how to know if your cat is fat is about feel (ribs, waist), not the number on a scale."
-
+last_modified_at: 2026-10-20
 ---
 
 According to the Association for Pet Obesity Prevention, roughly 60% of domestic cats in the US are classified as overweight or obese. That means most owners looking at an overweight cat think they're looking at a normal one — because most of the cats around them are also carrying extra weight.
@@ -110,7 +108,7 @@ Most owners are surprised their cat scores a 6 or 7 when they assumed a 5 — th
 
 Excess weight in cats is linked to a longer list of serious conditions than many owners realize:
 
-- **Diabetes**: Overweight cats are up to four times more likely to develop type 2 diabetes
+- **Diabetes**: Overweight cats are up to four times more likely to develop type 2 diabetes ([what treating it costs](/blog/cat-diabetes-treatment-cost/))
 - **Arthritis**: Extra weight accelerates joint wear, especially in cats over 7
 - **Hepatic lipidosis (fatty liver disease)**: A life-threatening condition that's more likely to develop in obese cats, particularly if they stop eating for any reason
 - **Reduced lifespan**: Overweight cats face a measurably shorter average lifespan than cats at a healthy weight
@@ -201,9 +199,6 @@ Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear
 
 **Can I just feed my cat less to help them lose weight?**
 Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended.
-
-**How can you tell if your cat is overweight or fat?**
-How can you tell if your cat is overweight comes down to the same rib and waist check used throughout this guide — if you're specifically wondering how to tell if your cat is fat or how to tell if my cat is overweight, look for ribs you can't easily feel and a missing waist tuck from above. The same check works for kittens too: how to tell if your kitten is overweight uses the identical rib-and-waist test, just compared against a faster-growing baseline. In short, how to know if your cat is fat is about feel (ribs, waist), not the number on a scale.
 
 *This article is for informational purposes only and is not a substitute for veterinary advice. If you're concerned about your cat's weight, consult your veterinarian before starting any weight management plan.*
 

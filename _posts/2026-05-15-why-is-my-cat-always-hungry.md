@@ -116,7 +116,7 @@ Not every cat that meows for food is actually hungry. Cats are highly routine-or
 
 If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's highly manageable when caught early — and the treatment choice makes a big difference to the long-run cost, as our guide to [cat hyperthyroidism treatment cost](/blog/cat-hyperthyroidism-treatment-cost/) explains.
 
-Other conditions that can increase appetite include diabetes, intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
+Other conditions that can increase appetite include [diabetes](/blog/cat-diabetes-treatment-cost/), intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
 
 ---
 

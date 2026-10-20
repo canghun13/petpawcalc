@@ -118,6 +118,7 @@ It is the most common hormonal disorder in middle-aged and older cats in the US.
 ## Related Articles
 
 - [How Much Does a Cat Vet Visit Cost?](/blog/how-much-does-a-cat-vet-visit-cost/) — what senior checkups and bloodwork cost
+- [Cat Diabetes Treatment Cost](/blog/cat-diabetes-treatment-cost/) — insulin vs the once-daily oral drugs, and remission
 - [How Often Do Cats Need to Go to the Vet?](/blog/how-often-vet-visits-cat/) — the senior visit schedule
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/) — when a big appetite is a medical sign
 - [How to Reduce Vet Costs Without Compromising Your Cat's Care](/blog/how-to-reduce-vet-costs-for-cats/)

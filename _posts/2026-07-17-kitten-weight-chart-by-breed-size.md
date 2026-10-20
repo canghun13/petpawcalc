@@ -26,9 +26,8 @@ faqs:
   - q: "Is there a kitten weight calculator or kitten size calculator?"
     a: "Rather than a kitten weight calculator, this page uses a chart plus a simple rule you can do in your head: a kitten gains about 1 pound per month for the first 4–5 months, so age in months roughly equals weight in pounds. For adult size, our Cat Weight Calculator has a kitten adult weight mode that estimates where a growing kitten will land, which is the closest thing to a kitten size calculator — but for large breeds like Maine Coons, the breed table matters more than any formula."
   - q: "How much should my kitten weigh?"
-    a: "How much should my kitten weigh depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number."
-
-last_modified_at: 2026-10-05
+    a: "It depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number."
+last_modified_at: 2026-10-20
 ---
 
 "My kitten weighs 3 pounds — is that normal?" The honest answer is: it depends entirely on age, and a little on breed. A 3 lb kitten at 8 weeks is unusually large; a 3 lb kitten at 4 months is right on schedule; a 3 lb Maine Coon at 6 months is small for their breed but might still be perfectly healthy.
@@ -224,7 +223,7 @@ For a typical domestic shorthair or mixed-breed kitten, the birth-to-12-month ch
 Rather than a kitten weight calculator, this page uses a chart plus a simple rule you can do in your head: a kitten gains about 1 pound per month for the first 4–5 months, so age in months roughly equals weight in pounds. For adult size, our [Cat Weight Calculator](/tools/cat-weight-calculator.html) has a kitten adult weight mode that estimates where a growing kitten will land, which is the closest thing to a kitten size calculator — but for large breeds like Maine Coons, the breed table matters more than any formula.
 
 **How much should my kitten weigh?**
-How much should my kitten weigh depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number.
+It depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number.
 
 *Always consult your veterinarian with concerns about your kitten's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific cat.*
 
