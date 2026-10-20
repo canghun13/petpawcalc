@@ -3208,3 +3208,27 @@ QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
 - (10/14) `/tools/` 페이지도 개편: 제목 "Pet tools", 카드 벽 → 메인과 같은 **7개 그룹 목록**(그룹 바로가기 칩, 휴대폰에선 가로 스크롤). 검색 유지(행 단위 필터, 결과 없는 그룹 숨김, 결과 수 표시). 각 행에 data-title/desc/tags 보존.
 - **➡️ 새 툴 추가 시 할 일(변경됨)**: ① `tools/index.html` 해당 그룹 `<ul>`에 `tool-row` 한 줄(data-title/desc/tags 포함), New 배지는 `<span class="tool-card-badge">New</span>`를 새 툴 행에만 1개 ② 메인 `index.html` 같은 그룹 `<details>`에 한 줄 + 해당 생애 단계 패널에 링크 ③ llms.txt. 푸터는 수정 불필요. 그룹 h2 옆 개수 숫자와 메인의 "N tools" 개수도 맞출 것.
 
+
+### 세션 BC — 주간 (10/20): FAQ 질문 반복 정리 11개 포스트 + 고양이 당뇨 비용 신규
+
+**데이터 (GSC 3개월)**: 클릭 173(지난주 119), 노출 44,678(31,423). 하루 노출 약 1,500–2,135. 모바일 평균 순위 9.89. 키튼 차트 클릭 52(순위 11.31), 퍼피 39. 10/13 신규 4페이지(심장·자궁축농증)는 아직 노출 없음. 색인(Coverage) 자료는 지난주와 동일. GA 활성 사용자 399, 구글 오가닉 첫 방문 136. Bing: cat-vet-visit-cost 노출 775·클릭 15·순위 4.2, how-often-vet-visits-cat 624·24·3.1, flea-tick-prevention-cost 클릭 10.
+- `/blog/how-much-does-a-cat-vet-visit-cost/`는 9/? 전면 재작성 후에도 구글 크롤 날짜가 7/22 그대로 → **사용자에게 GSC URL 검사 → 색인 생성 요청을 부탁함.**
+
+**1. FAQ 정리 (11개 포스트, last_modified_at 2026-10-20)** — AX에서 툴 FAQ를 정리했는데 포스트 FAQ에 같은 문제가 23개 남아 있었다: 답이 질문을 그대로 반복하며 시작("How much is a dog dental cleaning depends…"), "If you're asking / If you've searched / apostrophe or not" 같은 검색어 나열, 물음표 없는 검색어형 질문("How to tell if a puppy is underweight"), 앞 질문과 같은 내용의 중복 질문. 저체중 포스트(고양이 underweight 쿼리 약 400노출, 순위 24–28)에 특히 많았음.
+- 처리: 중복 질문 삭제(dog-pregnant 1, cat-overweight 1, euthanasia 1, cat-underweight 1, dog-underweight 2 — 퍼피 질문 2개는 1개로 합침), 나머지는 답 첫 문장을 바로 답으로 바꾸고 검색어 나열 문장 삭제, 검색어형 질문은 자연스러운 질문으로. 앞머리(front matter) faqs와 본문 FAQ 순서·내용 일치 유지.
+- 대상: annual-cost-of-owning-a-dog, what-to-feed-pregnant-dog, how-to-tell-if-dog-is-pregnant, how-to-tell-if-cat-is-overweight, dog-cat-dental-cleaning-cost, pet-euthanasia-cost-and-what-to-expect, what-to-feed-pregnant-cat, flea-tick-prevention-cost, kitten-weight-chart-by-breed-size, how-to-tell-if-cat-is-underweight, how-to-tell-if-dog-is-underweight.
+- **QA 추가 규칙(포스트 FAQ)**: 질문이 `?`로 끝나지 않음 → FAQ-FRAGMENT, 답의 첫 4단어 = 질문 첫 4단어 → FAQ-ECHO, 답에 "if you're asking / if you are asking / if you're wondering / if you've searched / apostrophe or not" → FAQ-STUFF. 이전 버전에 돌리면 30건 잡히고 현재 0건. **새 포스트 FAQ도 답을 질문 반복으로 시작하지 말 것.**
+- 도구: `/home/claude/postfaq.py`의 `edit_post(path, {index: None(삭제) | (q, a)})` — front matter와 본문 FAQ를 같이 고치고, FAQ 뒤에 붙은 CTA 등 꼬리 내용은 보존. (세션 환경이 바뀌면 없어지므로 필요하면 다시 작성.)
+
+**2. 신규 포스트** `cat-diabetes-treatment-cost` (Pet Costs, 클러스터: 노령묘 내분비 — 갑상선 포스트와 짝)
+- 키워드/경쟁: "cat diabetes treatment cost", "how much does it cost to treat a diabetic cat", "Bexacat vs insulin cost", "cat diabetes remission" — 상위가 Hepper·realvetcost·felinediabetes 포럼 등 약한 페이지 → 롱테일 진입 가능. 중복 확인: 당뇨 전용 페이지 없음(다른 포스트에서 언급만).
+- 내용: 항목별 비용표(진단 $200–$500, 인슐린 월 $30–$150, 주사기, 혈당계·스트립, 재검 $100–$250, 식단, 경구 SGLT2, DKA 입원 $1,500–$5,000), 첫해 합산 $1,704–$6,440 / 안정기 연 $1,200–$4,800(코드로 계산). 관해율 17–67%(CVC 리뷰, 초기 몇 달·짧은 유병 기간·엄격한 조절·저탄수 식단). **차별점**: ① Bexacat/Senvelgo는 인슐린 경험 고양이에 금지(FDA 2024 수의사 서한) → 진단 시 선택이 한 방향, ② 경구약이 '싸다'는 통념 반박(출시 정가 월 약 $53, 병원가 $100–$150), ③ AAHA 2018: 고양이 병원 혈당 곡선 비권장 → 집 측정이 비용 절감.
+- 역링크: 갑상선 포스트 Related, cat-overweight(당뇨 위험 줄), why-is-my-cat-always-hungry(당뇨 단어 링크). sources.html(AAHA 2018 당뇨 가이드라인 DOI 10.5326/JAAHA-MS-6822 확인, FDA Senvelgo 서한), llms.txt.
+
+**페이지 수**: tools **52** + posts **46** + checklists 16 = **114**.
+
+**다음 세션**
+- 신규 페이지 색인/노출(심장 3·자궁축농증·당뇨).
+- FAQ 정리한 11개 포스트의 순위 변화, 특히 고양이·개 underweight.
+- "색인 빠진 포스트 주 1개 재작성"은 유효: 다음 후보 how-to-tell-if-dog-is-pregnant 본문(이번엔 FAQ만), how-long-are-cats-pregnant.
+- 신규 후보: 위고정술(대형견 GDV) 비용, 개 치매, 고양이 대동맥 혈전(ATE), 개 심부전 약 비용, 고양이 신장병(CKD) 비용(당뇨·갑상선과 같은 노령묘 묶음).
