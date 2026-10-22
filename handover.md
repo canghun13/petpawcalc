@@ -3232,3 +3232,32 @@ QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
 - FAQ 정리한 11개 포스트의 순위 변화, 특히 고양이·개 underweight.
 - "색인 빠진 포스트 주 1개 재작성"은 유효: 다음 후보 how-to-tell-if-dog-is-pregnant 본문(이번엔 FAQ만), how-long-are-cats-pregnant.
 - 신규 후보: 위고정술(대형견 GDV) 비용, 개 치매, 고양이 대동맥 혈전(ATE), 개 심부전 약 비용, 고양이 신장병(CKD) 비용(당뇨·갑상선과 같은 노령묘 묶음).
+
+### 세션 BD — 신규 키워드 발굴 + 포스트 3개 (10/22)
+
+사용자 요청: GSC 밖에서(구글·네이버·레딧 등) 문서 수는 적고 관심은 있는 키워드를 넓게 찾고, 경쟁이 강하면 롱테일로, 가능하면 클러스터 추가.
+
+**키워드 후보와 경쟁 판단 (상위 결과 직접 확인)**
+| 후보 | 상위 결과 | 판단 |
+|---|---|---|
+| cat kidney disease cost (by stage), SDMA high creatinine normal | Great Pet Care, 스팸성 catsluvus, 보험사 블로그 / SDMA는 수의사용 문서뿐 | 약함 → **제작** |
+| rabbit spay/neuter cost, too late to spay older rabbit | 해킹된 스팸 페이지(unibo, tychesoftwares), Hepper, 포럼 | 매우 약함 → **제작** (소동물 클러스터 시작) |
+| dog dementia treatment cost / sundowning / 자가진단 | Embrace, PDSA, Hepper, MetLife / 네이버·다음은 뉴스 위주(관심 높음) | 중간 → 비용·감별 롱테일로 **제작** |
+| guinea pig vet cost | 포럼, furrycritter, pangovet | 약함 → 다음 후보 |
+| cat tooth resorption extraction cost | Vetster, thepricer, catster | 중간 → 다음 후보 |
+| Librela / Solensia cost | GoodRx, thepricer, vety, MetLife | 중간(부작용 이슈로 관심 큼) → 다음 후보, 관절 툴 클러스터와 연결 |
+| Apoquel vs Cytopoint cost | Vetster, GreatPetCare | 중간 → 다음 후보, 가려움 툴 클러스터와 연결 |
+| gastropexy cost | PetMD, Embrace, Kinship | 강함 → 보류 |
+
+**만든 것**
+- `cat-kidney-disease-cost-by-stage` (노령묘 클러스터: 갑상선·당뇨와 3종 세트) — IRIS 고양이 기준표(크레아티닌·SDMA), 단계별 연간 비용(1기 $300–$1,200 / 2기 $660–$3,300 / 3기 $1,830–$5,580 / 4기 월 $200–$500+ + 입원 $1,000–$3,000, 코드로 합산). 처방식 근거(Ross 2006 무작위 시험, Elliott 2000), 처방식 전환은 3주 이상·아플 때 바꾸지 않기(IRIS). **차별점: "SDMA 높은데 크레아티닌 정상" 보호자용 설명**(근육 감소, 2주 후 재검+요비중, 지속 시 IRIS 1기). 생존 중앙값 Boyd 2008.
+- `rabbit-spay-neuter-cost` (새 클러스터: 소동물 비용) — 중성화 $390–$550, 스페이 약 $140–$1,500(지역차), HRS 저가 $200–$300. CEPSAF 마취 사망 위험 토끼 1.39% vs 고양이 0.24%·개 0.17% → "가장 싼 견적이 최선이 아닌 이유" + 병원에 물어볼 질문(토끼는 금식시키지 않음 등). **자궁암은 출처 불명 '80%' 대신 Mäkitaipale 2022(116마리, 3세 이상 40%, 약 19배)** 사용.
+- `dog-dementia-signs-treatment-cost` (새 클러스터: 노령견 행동/인지) — 유병률(14.2% 추정 vs 1.9% 진단), Dog Aging Project(15,019마리: 나이 1년당 +52%, 비활동 견 약 6.5배 — 연관성일 뿐이라고 명시), 감별할 질환, 밤에 깨는 문제 대처, 셀레길린(FDA 유일 승인, 4–12주) 체중별 월 $40–$130. 브랜드 처방식 b/d는 단종 여부 불확실해 이름 뺐음.
+- 역링크: dog-age-human-years·dog QoL 포스트·senior 체크리스트(치매), 갑상선·당뇨 포스트(신장), new-rabbit 체크리스트·spay 포스트(토끼). 메인 노령 패널에 치매(개)·신장(고양이) 링크 추가. sources.html 7개 출처(DOI 확인: Boyd 2008, CEPSAF 10.1111/j.1467-2995.2008.00397.x, Mäkitaipale = J Exotic Pet Med 2022 10.1053/j.jepm.2022.01.001, Yarborough 2022), llms.txt.
+- 검증: QA 통과, 3개 포스트 360px·1280px 가로 넘침 0.
+
+**페이지 수**: tools 52 + posts **49** + checklists 16 = **117**.
+
+**다음 세션**
+- 위 표의 "다음 후보": Librela/Solensia 비용(관절 클러스터), Apoquel vs Cytopoint(가려움 클러스터), guinea pig 비용(소동물 2번째), 고양이 치아흡수 발치 비용.
+- 노령묘 3종(갑상선·당뇨·신장)과 노령견 치매의 색인·노출.
