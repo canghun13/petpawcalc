@@ -123,6 +123,7 @@ Untreated diabetes can progress to diabetic ketoacidosis, a life-threatening eme
 ## Related Articles
 
 - [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) — the other common hormonal disease of older cats
+- [Cat Kidney Disease Cost by Stage](/blog/cat-kidney-disease-cost-by-stage/) — the other common chronic disease of older cats
 - [How to Tell If Your Cat Is Overweight](/blog/how-to-tell-if-cat-is-overweight/) — excess weight is a major risk factor for diabetes
 - [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/) — when a big appetite is a medical sign
 - [How Much Should a Senior Cat Eat?](/blog/how-much-should-senior-cat-eat/)

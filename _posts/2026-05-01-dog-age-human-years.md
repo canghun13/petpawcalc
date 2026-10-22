@@ -122,7 +122,7 @@ One aspect of aging that the human-year metaphor captures well: dogs can develop
 
 CDS is estimated to affect 14–35% of dogs over 8 years old and up to 68% of dogs over 15. It's underdiagnosed because owners often attribute the symptoms to "just getting old." But like human dementia, there are management strategies and medications that can slow progression and improve quality of life when it's caught early.
 
-If your senior dog shows signs of confusion, nighttime restlessness, or changes in learned behaviors — bring it up at the next vet visit. The earlier it's flagged, the more options you have.
+If your senior dog shows signs of confusion, nighttime restlessness, or changes in learned behaviors — bring it up at the next vet visit. The earlier it's flagged, the more options you have. Our guide to [dog dementia signs and treatment costs](/blog/dog-dementia-signs-treatment-cost/) covers what to rule out and what helps with night-time waking.
 
 ## Frequently Asked Questions
 

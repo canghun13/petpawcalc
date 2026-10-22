@@ -91,6 +91,7 @@ Yes — many communities have low-cost or free spay/neuter programs through the 
 - [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
 - [Flea & Tick Prevention Cost for Dogs and Cats](/blog/flea-tick-prevention-cost/)
+- [Rabbit Spay and Neuter Cost](/blog/rabbit-spay-neuter-cost/) — why rabbit surgery is priced differently
 
 ---
 

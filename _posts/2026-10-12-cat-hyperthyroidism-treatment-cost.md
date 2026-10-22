@@ -60,7 +60,7 @@ The flip doesn't hold for every cat. If a cat is very elderly, has other serious
 
 Even when radioiodine is the plan, many vets start with a few weeks of methimazole first. This isn't a sales tactic, and it isn't about cost.
 
-An overactive thyroid increases blood flow through the kidneys, which can **mask chronic kidney disease**, another very common condition in older cats. Once the thyroid is brought under control, that extra blood flow drops, and kidney disease that was there all along can show up. The AAFP guidelines describe this as treatment **"unmasking" pre-existing kidney disease**, and note that a methimazole trial before radioiodine or surgery may predict the risk of significant kidney problems.
+An overactive thyroid increases blood flow through the kidneys, which can **mask chronic kidney disease**, another very common condition in older cats ([what CKD costs by stage](/blog/cat-kidney-disease-cost-by-stage/)). Once the thyroid is brought under control, that extra blood flow drops, and kidney disease that was there all along can show up. The AAFP guidelines describe this as treatment **"unmasking" pre-existing kidney disease**, and note that a methimazole trial before radioiodine or surgery may predict the risk of significant kidney problems.
 
 The difference is that methimazole can be stopped or adjusted. Radioiodine and surgery can't be undone. A short trial lets your vet see how the kidneys cope with normal thyroid levels before committing to a permanent fix. So a month of pills before radioiodine is money well spent, not money wasted.
 
