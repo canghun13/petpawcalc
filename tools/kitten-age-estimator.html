@@ -1,0 +1,498 @@
+---
+layout: tool
+title: Kitten Age Estimator — How Old Is My Kitten?
+description: Estimate a kitten's age from its teeth, eyes, ears, movement, eating and weight. Get an age range, an approximate birth date, and what a kitten that age needs next. Free, works on a phone.
+permalink: /tools/kitten-age-estimator.html
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Kitten Age Estimator",
+  "url": "https://petpawcalc.com/tools/kitten-age-estimator.html",
+  "description": "A free tool that estimates a kitten's age range from developmental signs (umbilical cord, eyes, ears, teeth, movement, eating) and weight, gives an approximate birth date, and summarises the care a kitten of that age needs.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": { "@type": "Organization", "name": "PetPawCalc", "url": "https://petpawcalc.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I tell how old a kitten is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look at development first and weight last. Teeth are the most useful single sign: baby front teeth come through at about 2.5–3.5 weeks, the fangs at 3–4 weeks and the back teeth at 5–8 weeks, and adult teeth replace them from about 3 to 6 months. Eyes open at around 8–14 days, ears stand up by about 3 weeks, and kittens walk steadily by about 4 weeks. Weight is a useful cross-check but the least reliable sign on its own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How old is a kitten whose eyes are still closed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually under about two weeks. Kittens are born with their eyes closed and they open between roughly 8 and 14 days. A kitten this young cannot keep itself warm or go to the toilet on its own, and needs feeding every 2 to 3 hours around the clock, so warmth comes first and a vet visit should happen soon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How old is a 1-pound kitten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually around 4 weeks. The rough rule is about 1 pound per month up to about 5 months, so a 2-pound kitten is around 8 weeks and a 3-pound kitten around 12 weeks. An underfed or sick kitten weighs less than its true age suggests, and large breeds can be heavier, so check the teeth and eyes too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a vet tell a kitten's exact age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not exactly, but closely while the kitten is young. Vets use the same signs this tool asks about, especially the teeth, and in the first two months development changes almost week to week. Once all the adult teeth are in at around 6 months, an estimate becomes much broader."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a kitten need its first vaccines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kittens typically start their core FVRCP vaccine series at 6–8 weeks old, with boosters every 3–4 weeks until at least 16 weeks. Rabies is usually given at 12–16 weeks. Deworming usually starts earlier, from around 3 weeks of age."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't my kitten's weight match its age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most often because the kitten has not been eating enough, has intestinal parasites, or has been unwell, all of which hold weight back while teeth and eyes keep developing on schedule. Large breeds such as Maine Coons can run heavier. When weight and development disagree, trust development and ask your vet to check the kitten, because a kitten that is not gaining needs attention quickly."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="tool-page">
+  <div class="tool-page-header">
+    <h1>🐾 Kitten Age Estimator</h1>
+    <p>Found a kitten, or adopted one with no birthday? Answer what you can see — skip anything you're not sure about — and get an age range, a rough birth date, and what a kitten that age needs next.</p>
+  </div>
+
+  <div class="tool-box">
+    <div class="form-group">
+      <label for="kae-teeth">Teeth (gently lift the lip)</label>
+      <select id="kae-teeth">
+        <option value="">Not sure / can't check</option>
+        <option value="none">No teeth yet</option>
+        <option value="incisors">Only tiny front teeth</option>
+        <option value="canines">Front teeth and small fangs, no back teeth</option>
+        <option value="fullbaby">Full set of small, needle-sharp baby teeth</option>
+        <option value="adultcoming">Bigger adult teeth coming through, or gaps</option>
+        <option value="adultfull">Full set of adult teeth</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-eyes">Eyes</label>
+      <select id="kae-eyes">
+        <option value="">Not sure</option>
+        <option value="closed">Closed</option>
+        <option value="opening">Just opening — narrow slits</option>
+        <option value="blue">Fully open, and blue</option>
+        <option value="changing">Fully open, colour changing or no longer blue</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-ears">Ears</label>
+      <select id="kae-ears">
+        <option value="">Not sure</option>
+        <option value="folded">Folded flat against the head</option>
+        <option value="upright">Standing up</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-move">Movement</label>
+      <select id="kae-move">
+        <option value="">Not sure</option>
+        <option value="crawl">Can't stand; crawls or wriggles</option>
+        <option value="wobbly">Wobbly first steps</option>
+        <option value="steady">Walks steadily, starting to play</option>
+        <option value="runs">Runs, pounces, climbs</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-eat">Eating</label>
+      <select id="kae-eat">
+        <option value="">Not sure</option>
+        <option value="milk">Only nursing or bottle</option>
+        <option value="gruel">Starting to lap mushy food</option>
+        <option value="solid">Eats solid food</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-cord">Umbilical cord</label>
+      <select id="kae-cord">
+        <option value="">Not sure</option>
+        <option value="attached">Still attached</option>
+        <option value="gone">Gone</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kae-weight">Weight (optional)</label>
+      <div style="display:flex; gap:10px;">
+        <input type="number" id="kae-weight" min="0" step="any" placeholder="e.g. 450" style="flex:2;">
+        <select id="kae-unit" style="flex:1;">
+          <option value="g">grams</option>
+          <option value="oz">ounces</option>
+          <option value="lb">pounds</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn-calculate" onclick="runEstimate()">Estimate Age →</button>
+
+    <div class="result-box" id="kae-result" style="display:none;">
+      <div class="print-header">
+        <span class="print-logo">🐾 PetPawCalc</span>
+        <span class="print-date" id="kae-date"></span>
+      </div>
+      <div style="text-align:center; margin-bottom: 12px;">
+        <div style="font-size: 0.9rem; color: var(--brown-mid);">Estimated age</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--brown);" id="kae-age"></div>
+        <div style="font-size: 0.9rem; color: var(--brown-mid);" id="kae-born"></div>
+      </div>
+      <p id="kae-confidence" style="color: var(--brown-mid); line-height:1.7; margin-bottom:12px;"></p>
+      <div id="kae-notes"></div>
+      <h3 id="kae-stage-title" style="margin:16px 0 8px;"></h3>
+      <ul id="kae-stage-list" style="color: var(--brown-mid); line-height:1.7; padding-left:20px; margin-bottom:12px;"></ul>
+      <div class="kae-note kae-warn"><span>⚠️</span><span>Any kitten that feels cold, is limp or floppy, won't suckle, is gasping, or has pale gums needs a vet now. A cold kitten must be warmed gradually <strong>before</strong> it is fed.</span></div>
+      <button class="pdf-btn" id="kae-pdf" onclick="doPrint('kae-date')">🖨️ Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="disclaimer-box" style="margin-top: 40px;">
+    ⚕️ This tool gives an estimate from typical development. Individual kittens vary, and illness or poor nutrition can slow growth. A vet can examine your kitten and confirm its age and health.
+  </div>
+
+  <div class="no-print" style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How the Estimate Works</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Each sign you choose narrows the possible age to a window — closed eyes, for example, mean under about two weeks, and a full set of baby teeth means at least about five. The tool finds the age range that fits <strong>all</strong> of your answers.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If your answers can't all be true at once, the tool sets aside the least reliable sign first — weight, then eating, then movement — and tells you which one didn't fit. Teeth, eyes and ears are trusted most, because they develop on schedule even in a kitten that has been underfed.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Kitten Development Milestones</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Sign</th><th>Typical age</th></tr></thead>
+        <tbody>
+          <tr><td>Umbilical cord still attached</td><td>First few days</td></tr>
+          <tr><td>Eyes open</td><td>About 8–14 days</td></tr>
+          <tr><td>Ears stand up</td><td>About 3 weeks</td></tr>
+          <tr><td>Baby front teeth (incisors)</td><td>About 2.5–3.5 weeks</td></tr>
+          <tr><td>Baby fangs (canines)</td><td>About 3–4 weeks</td></tr>
+          <tr><td>Baby back teeth (premolars)</td><td>About 5–8 weeks; full baby set by 8 weeks</td></tr>
+          <tr><td>Wobbly walking</td><td>About 2–3 weeks</td></tr>
+          <tr><td>Walking steadily, starting to play</td><td>About 4 weeks</td></tr>
+          <tr><td>Pouncing and wrestling</td><td>About 5 weeks onward</td></tr>
+          <tr><td>Eye colour starts to change from blue</td><td>About 4–7 weeks</td></tr>
+          <tr><td>Weaning onto mushy food</td><td>About 4–5 weeks</td></tr>
+          <tr><td>Adult front teeth</td><td>About 3–3.5 months</td></tr>
+          <tr><td>All adult teeth in</td><td>By about 6 months</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Timings vary with breed, nutrition and health, and sources differ by a few days on most of them, which is why the tool works in ranges. Some breeds, such as Siamese, keep blue eyes as adults — if your kitten might be one, leave the eye-colour question as "not sure".</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Weight Is the Least Reliable Sign</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The rough rule is <strong>about 1 pound per month</strong> up to around 5 months: a 1 lb kitten is about 4 weeks old, 2 lb about 8 weeks, 3 lb about 12 weeks. It works well for a healthy, well-fed kitten. But a kitten that has been living rough, has worms or has been ill will weigh less than its real age, while its teeth and eyes keep developing on time. Large breeds can also run heavier.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">That mismatch is useful information in itself. If the tool tells you your kitten's weight doesn't fit its development, weigh it daily on a kitchen scale and mention it to your vet. Our <a href="/blog/kitten-weight-chart-by-breed-size/">kitten weight chart</a> shows the normal range at every age.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How can I tell how old a kitten is?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Look at development first and weight last. Teeth are the most useful single sign: baby front teeth come through at about 2.5–3.5 weeks, the fangs at 3–4 weeks and the back teeth at 5–8 weeks, and adult teeth replace them from about 3 to 6 months. Eyes open at around 8–14 days, ears stand up by about 3 weeks, and kittens walk steadily by about 4 weeks. Weight is a useful cross-check but the least reliable sign on its own.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How old is a kitten whose eyes are still closed?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Usually under about two weeks. Kittens are born with their eyes closed and they open between roughly 8 and 14 days. A kitten this young cannot keep itself warm or go to the toilet on its own, and needs feeding every 2 to 3 hours around the clock, so warmth comes first and a vet visit should happen soon.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How old is a 1-pound kitten?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Usually around 4 weeks. The rough rule is about 1 pound per month up to about 5 months, so a 2-pound kitten is around 8 weeks and a 3-pound kitten around 12 weeks. An underfed or sick kitten weighs less than its true age suggests, and large breeds can be heavier, so check the teeth and eyes too.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can a vet tell a kitten's exact age?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not exactly, but closely while the kitten is young. Vets use the same signs this tool asks about, especially the teeth, and in the first two months development changes almost week to week. Once all the adult teeth are in at around 6 months, an estimate becomes much broader.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When does a kitten need its first vaccines?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Kittens typically start their core FVRCP vaccine series at 6–8 weeks old, with boosters every 3–4 weeks until at least 16 weeks. Rabies is usually given at 12–16 weeks. Deworming usually starts earlier, from around 3 weeks of age.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why doesn't my kitten's weight match its age?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most often because the kitten has not been eating enough, has intestinal parasites, or has been unwell, all of which hold weight back while teeth and eyes keep developing on schedule. Large breeds such as Maine Coons can run heavier. When weight and development disagree, trust development and ask your vet to check the kitten, because a kitten that is not gaining needs attention quickly.</p>
+  </div>
+
+  <div class="post-cta no-print">
+    <h3>Related Reading</h3>
+    <p>
+      <a href="/checklists/found-orphaned-kitten-checklist.html">Found an Orphaned Kitten? First 24 Hours</a> —
+      <a href="/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html">Bottle Feeding Calculator</a> —
+      <a href="/blog/kitten-weight-chart-by-breed-size/">Kitten Weight Chart by Age</a> —
+      <a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a>
+    </p>
+  </div>
+</div>
+<style>
+.print-header {
+  display: none;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--orange);
+}
+.print-logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+.print-date  { font-size: 0.8rem; color: var(--brown-mid); }
+.pdf-btn {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.pdf-btn:hover { background: var(--orange); color: white; }
+.kae-note {
+  display: flex; gap: 10px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.kae-warn { background: #fdf2f2; border-left: 3px solid #e74c3c; color: #7b1c1c; }
+.kae-tip  { background: #fef9e7; border-left: 3px solid #f39c12; color: #7a5c00; }
+@media print {
+  .site-header, .site-footer, .nav-mobile      { display: none !important; }
+  .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
+  .post-cta, .disclaimer-box, .no-print        { display: none !important; }
+  .form-group                                  { display: none !important; }
+  .tool-box {
+    box-shadow: none !important; border: none !important;
+    background: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .result-box  { box-shadow: none !important; }
+  .print-header { display: flex !important; }
+  html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
+  body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
+  .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
+  .result-box { page-break-inside: avoid; }
+}
+</style>
+<script>
+function doPrint(dateId) {
+  document.getElementById(dateId).textContent =
+    new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+  window.print();
+}
+</script>
+<script>
+// Age windows in weeks for each sign. OPEN = no upper limit from this sign.
+var OPEN = 999;
+var SIGNS = {
+  teeth: { label: "teeth", priority: 1, ranges: {
+    none: [0, 3.5], incisors: [2.5, 4.5], canines: [3, 6], fullbaby: [5, 13],
+    adultcoming: [11, 26], adultfull: [22, OPEN] } },
+  cord:  { label: "umbilical cord", priority: 1, ranges: { attached: [0, 0.7], gone: [0.4, OPEN] } },
+  eyes:  { label: "eyes", priority: 2, ranges: {
+    closed: [0, 2], opening: [1, 2.5], blue: [1.5, 7], changing: [4, OPEN] } },
+  ears:  { label: "ears", priority: 2, ranges: { folded: [0, 3], upright: [2.5, OPEN] } },
+  move:  { label: "movement", priority: 3, ranges: {
+    crawl: [0, 3], wobbly: [1.5, 4.5], steady: [3.5, 7], runs: [5, OPEN] } },
+  eat:   { label: "eating", priority: 4, ranges: { milk: [0, 5], gruel: [3, 6], solid: [5, OPEN] } }
+};
+// Typical weight band in grams at a given age in weeks (matches the kitten weight chart).
+var WEIGHT_POINTS = [
+  [0, 85, 130], [1, 110, 170], [2, 200, 255], [3, 350, 450], [4, 450, 680], [6, 550, 900],
+  [8, 680, 1100], [10, 900, 1400], [12, 1100, 1600], [16, 1600, 2000], [21.7, 2000, 2500],
+  [26, 2300, 3000], [30.4, 2500, 3200], [34.7, 2700, 3400], [39, 3000, 3900], [52, 3200, 4500]
+];
+function weightBandAt(w) {
+  for (var i = 0; i < WEIGHT_POINTS.length - 1; i++) {
+    var a = WEIGHT_POINTS[i], b = WEIGHT_POINTS[i + 1];
+    if (w >= a[0] && w <= b[0]) {
+      var t = (w - a[0]) / (b[0] - a[0]);
+      return [a[1] + t * (b[1] - a[1]), a[2] + t * (b[2] - a[2])];
+    }
+  }
+  var last = WEIGHT_POINTS[WEIGHT_POINTS.length - 1];
+  return [last[1], last[2]];
+}
+// Weeks whose typical band (widened 15% each way) contains the weight.
+function weightRange(grams) {
+  var lo = null, hi = null;
+  for (var w = 0; w <= 52; w += 0.25) {
+    var band = weightBandAt(w);
+    if (grams >= band[0] * 0.85 && grams <= band[1] * 1.15) {
+      if (lo === null) { lo = w; }
+      hi = w;
+    }
+  }
+  if (lo === null) { return grams < 85 ? [0, 0.5] : [39, OPEN]; }
+  if (hi >= 52) { hi = OPEN; }
+  return [lo, hi];
+}
+function intersect(list) {
+  var lo = 0, hi = OPEN;
+  for (var i = 0; i < list.length; i++) {
+    lo = Math.max(lo, list[i].range[0]);
+    hi = Math.min(hi, list[i].range[1]);
+  }
+  return lo <= hi ? [lo, hi] : null;
+}
+// Pure function: answers -> estimate. Kept separate so every combination can be tested.
+function estimateAge(answers, grams) {
+  var used = [];
+  Object.keys(SIGNS).forEach(function (k) {
+    var v = answers[k];
+    if (v && SIGNS[k].ranges[v]) {
+      used.push({ key: k, label: SIGNS[k].label, priority: SIGNS[k].priority, range: SIGNS[k].ranges[v] });
+    }
+  });
+  if (grams && grams > 0) {
+    used.push({ key: "weight", label: "weight", priority: 5, range: weightRange(grams) });
+  }
+  if (used.length === 0) { return { status: "empty" }; }
+  var dropped = [];
+  var range = intersect(used);
+  while (!range && used.length > 1) {
+    var worst = 0;
+    for (var i = 1; i < used.length; i++) {
+      if (used[i].priority >= used[worst].priority) { worst = i; }
+    }
+    dropped.push(used[worst].label);
+    used.splice(worst, 1);
+    range = intersect(used);
+  }
+  var onlyWeight = used.length === 1 && used[0].key === "weight";
+  return { status: "ok", lo: range[0], hi: range[1], used: used.map(function (u) { return u.key; }),
+           dropped: dropped, onlyWeight: onlyWeight };
+}
+function half(x) {
+  var r = Math.round(x * 2) / 2;
+  var whole = Math.floor(r);
+  return (r - whole) ? (whole === 0 ? "\u00BD" : whole + "\u00BD") : String(whole);
+}
+function fmtAge(lo, hi) {
+  if (hi >= OPEN) {
+    if (lo >= 12) { return "About " + Math.round(lo / 4.345) + " months or older"; }
+    return "At least " + half(Math.max(0.5, lo)) + " weeks";
+  }
+  if (hi < 1) { return "Under 1 week"; }
+  if (lo >= 12) {
+    var a = Math.round(lo / 4.345), b = Math.round(hi / 4.345);
+    return a === b ? "About " + a + " months" : "About " + a + "–" + b + " months";
+  }
+  if (lo < 0.5) { return "Under " + half(hi) + " weeks"; }
+  var x = half(lo), y = half(hi);
+  return x === y ? "About " + x + " weeks" : "About " + x + "–" + y + " weeks";
+}
+function fmtDate(d) {
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+// Care guidance keyed to the YOUNGEST age in the range, so advice errs on the side of a younger kitten.
+function stageFor(lo) {
+  if (lo < 1) { return { t: "Newborn (under 1 week)", items: [
+    "Warmth first: a newborn can't keep itself warm. Warm a cold kitten gradually before feeding.",
+    "Kitten milk replacer every 2–3 hours, overnight included — never cow's milk.",
+    "After every feed, stimulate it to pee and poop with a warm, damp cloth.",
+    "See a vet as soon as you can, especially if there is no mother cat."] }; }
+  if (lo < 2) { return { t: "1–2 weeks", items: [
+    "Still needs a warm nest and feeding roughly every 3 hours, overnight included.",
+    "Still can't toilet alone — stimulate after every feed.",
+    "Weigh daily: a healthy kitten gains steadily every day."] }; }
+  if (lo < 3) { return { t: "2–3 weeks", items: [
+    "Feeding every 3–4 hours; keep a heat source available — temperature control is still unreliable.",
+    "Ears are opening and teeth are about to come through.",
+    "Ask your vet about deworming, which usually starts around 3 weeks."] }; }
+  if (lo < 4) { return { t: "3–4 weeks", items: [
+    "Feeding every 4–5 hours. Most kittens start toileting on their own now — offer a shallow tray with non-clumping litter.",
+    "Gentle, frequent handling now shapes how friendly the cat will be later."] }; }
+  if (lo < 5) { return { t: "4–5 weeks", items: [
+    "Weaning begins: offer gruel (wet food mashed with milk replacer) alongside bottle feeds.",
+    "Lots of play and gentle handling — this is the main socialization period."] }; }
+  if (lo < 8) { return { t: "5–8 weeks", items: [
+    "Moving onto kitten wet food, several small meals a day, with fresh water.",
+    "First FVRCP vaccine is typically due at 6–8 weeks; continue deworming as your vet advises.",
+    "Keep up handling and new experiences."] }; }
+  if (lo < 16) { return { t: "2–4 months", items: [
+    "FVRCP boosters every 3–4 weeks until at least 16 weeks; rabies usually at 12–16 weeks.",
+    "Growth is roughly a pound a month — weigh weekly to check it's on track.",
+    "Talk to your vet about spay or neuter timing."] }; }
+  if (lo < 26) { return { t: "4–6 months", items: [
+    "Adult teeth are coming in — chewing is normal.",
+    "Most vets recommend spay or neuter around 4–6 months, ideally before a female's first heat.",
+    "Make sure the kitten vaccine series was completed."] }; }
+  return { t: "6 months or older", items: [
+    "Approaching adult size; most cats reach it at 10–12 months, large breeds later.",
+    "Switch from kitten food to adult food around 12 months, or as your vet advises."] };
+}
+function gramsFromInput() {
+  var v = parseFloat(document.getElementById("kae-weight").value);
+  if (!v || v <= 0) { return null; }
+  var u = document.getElementById("kae-unit").value;
+  return u === "lb" ? v * 453.6 : (u === "oz" ? v * 28.35 : v);
+}
+function runEstimate() {
+  var answers = {
+    teeth: document.getElementById("kae-teeth").value,
+    eyes: document.getElementById("kae-eyes").value,
+    ears: document.getElementById("kae-ears").value,
+    move: document.getElementById("kae-move").value,
+    eat: document.getElementById("kae-eat").value,
+    cord: document.getElementById("kae-cord").value
+  };
+  var grams = gramsFromInput();
+  var r = estimateAge(answers, grams);
+  if (r.status === "empty") {
+    alert("Choose at least one sign or enter a weight first.");
+    return;
+  }
+  document.getElementById("kae-age").textContent = fmtAge(r.lo, r.hi);
+  var today = new Date();
+  var born;
+  if (r.hi >= OPEN) {
+    born = "Born on or before about " + fmtDate(new Date(today.getTime() - r.lo * 7 * 864e5));
+  } else {
+    born = "Born roughly " + fmtDate(new Date(today.getTime() - r.hi * 7 * 864e5)) + " – " +
+           fmtDate(new Date(today.getTime() - r.lo * 7 * 864e5));
+  }
+  document.getElementById("kae-born").textContent = born;
+  var conf;
+  if (r.onlyWeight) {
+    conf = "This is based on weight alone, the least reliable sign. Checking the teeth and eyes will give a much better estimate.";
+  } else if (r.used.length >= 3) {
+    conf = "Based on " + r.used.length + " signs that agree. A vet can confirm it in a quick exam.";
+  } else {
+    conf = "Based on " + r.used.length + " sign" + (r.used.length === 1 ? "" : "s") + ". Adding more answers — teeth especially — will narrow the range.";
+  }
+  document.getElementById("kae-confidence").textContent = conf;
+  var notes = [];
+  if (r.dropped.length) {
+    var extra = "";
+    if (r.dropped.indexOf("weight") !== -1) {
+      var wr = weightRange(grams);
+      extra = (wr[1] < r.lo)
+        ? " A kitten that weighs less than its development suggests may be underfed, have worms or be unwell — weigh it daily and mention it to your vet."
+        : " A kitten heavier than its development suggests may simply be a large breed; double-check the weight and unit.";
+    }
+    notes.push('<div class="kae-note kae-tip"><span>💡</span><span>What you entered for ' + r.dropped.join(" and ") +
+      " didn't fit the other signs, so it was set aside." + extra + "</span></div>");
+  }
+  document.getElementById("kae-notes").innerHTML = notes.join("");
+  var st = stageFor(r.lo);
+  document.getElementById("kae-stage-title").textContent = "What a kitten this age needs (" + st.t + ")";
+  document.getElementById("kae-stage-list").innerHTML = st.items.map(function (x) { return "<li>" + x + "</li>"; }).join("");
+  var res = document.getElementById("kae-result");
+  res.style.display = "block";
+  res.classList.add("show");
+  document.getElementById("kae-pdf").style.display = "block";
+  res.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+</script>

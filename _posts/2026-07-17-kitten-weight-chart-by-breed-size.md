@@ -123,7 +123,7 @@ The table above is the quick reference. Below is the same curve read age by age,
 
 If you've found a kitten and don't know their birthday, the same chart runs in reverse. The rough rule for age of kittens by weight is **1 pound ≈ 1 month old**, reliable up to about 5 months: a 1 lb kitten is around 4 weeks, a 2 lb kitten around 8 weeks, a 3 lb kitten around 12 weeks. So a 3lb kitten age estimate is roughly three months, and a kitten weighing 3.5–4 lbs is likely around 3.5 to 4 months.
 
-Weight alone is the least reliable of the aging methods, though, because a kitten who has been underfed or has a heavy parasite load will weigh well below their true age. Eyes (closed until roughly 7–14 days), teeth (baby teeth from about 3 weeks, adult teeth from 3–4 months), and mobility are all better indicators, and a vet can narrow it down properly in one visit. Use weight as a cross-check, not the answer.
+Weight alone is the least reliable of the aging methods, though, because a kitten who has been underfed or has a heavy parasite load will weigh well below their true age. Eyes (closed until roughly 7–14 days), teeth (baby teeth from about 3 weeks, adult teeth from 3–4 months), and mobility are all better indicators, and a vet can narrow it down properly in one visit. Use weight as a cross-check, not the answer — our [Kitten Age Estimator](/tools/kitten-age-estimator.html) combines all of these signs into one age range.
 
 ## The Fast Rule: 1 Pound Per Month
 
