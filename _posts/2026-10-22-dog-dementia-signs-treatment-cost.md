@@ -128,6 +128,7 @@ It is associated with lower risk. In the Dog Aging Project study, dogs reported 
 
 ## Related Articles
 
+- [Librela Cost for Dogs](/blog/librela-cost-for-dogs/) — arthritis pain is one of the first things to rule out
 - [Dog Quality of Life Assessment](/blog/dog-quality-of-life-assessment/) — how to judge good days and bad days
 - [How Much Should a Senior Dog Eat?](/blog/how-much-should-senior-dog-eat/)
 - [How Often Should Dogs Go to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/) — the senior visit schedule

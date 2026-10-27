@@ -3261,3 +3261,25 @@ QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
 **다음 세션**
 - 위 표의 "다음 후보": Librela/Solensia 비용(관절 클러스터), Apoquel vs Cytopoint(가려움 클러스터), guinea pig 비용(소동물 2번째), 고양이 치아흡수 발치 비용.
 - 노령묘 3종(갑상선·당뇨·신장)과 노령견 치매의 색인·노출.
+
+### 세션 BE — 주간 (10/26–27): GSC/GA/Bing 분석 + 키튼 나이 추정 툴 + Librela 비용 포스트
+
+**데이터 (GSC 3개월, 7/25–10/24)**: 클릭 244(지난주 173), 노출 61,762(44,678). 하루 노출 약 2,400–2,950(지난주 1,500–2,100). 모바일 순위 9.32. 미국 클릭 171.
+- 키튼 차트: 노출 33,064·클릭 85·순위 10.38(지난주 22,013·52·11.31) — 사이트 트래픽의 절반 이상. 관련 검색어 556개(노출 8,264) 대부분 순위 10–30위. 퍼피 차트 10,534·51·12.87.
+- **신규 포스트가 아주 빨리 잡힘**: cat-diabetes(10/20) 노출 142·클릭 3·순위 7.32, rabbit-spay(10/22) 노출 63·순위 11.86, cat-kidney 13·7.92, dog-dementia 10·20.4, hyperthyroid 28·13.86. → "경쟁 약한 비용형 롱테일" 전략이 효과 있음 확인.
+- 색인(Coverage): 발견됨-미색인 2→7(10/12–13 작성 heart-murmur 2, hyperthyroid, pyometra, SRR 툴 — 새 페이지라 정상, 아직 크롤 전). 크롤링됨-미색인 11개는 지난주와 동일(`/handover/`는 예전 기록, 404 정상 — 건드리지 말 것).
+- GA(9/28–10/25): 활성 사용자 496, 구글 오가닉 191, Bing 63, DuckDuckGo 42, Yahoo 30, Ecosia 21, chatgpt.com 2.
+- Bing: how-often-vet-visits-cat 노출 736·클릭 34, cat-vet-visit-cost 781·15, kitten chart 663. 
+- GSC 검색어에 AI 에이전트형 긴 질의("i am a 25-34... how much does flea and tick prevention for a large dog usually cost per year?")가 보이기 시작 — flea-tick 포스트가 2–3위로 잡힘. 별도 대응 불필요.
+
+**만든 것**
+1. **툴 `tools/kitten-age-estimator.html`** (키튼 클러스터 지원 + 고아묘 클러스터) — "kitten age by weight"(70노출, 12위), "how old is my kitten" 류는 상위가 해킹 스팸·PDF(ASPCA, Alley Cat)·Kinship뿐이고 실제 툴이 없음. 이빨·눈·귀·움직임·먹기·탯줄·체중 → 모든 답을 만족하는 나이 구간, 추정 생일, 그 나이에 필요한 돌봄. 답이 서로 안 맞으면 신뢰도 낮은 신호부터 제외(체중→먹기→움직임), 체중이 발달보다 가벼우면 영양/기생충 경고, 무거우면 대형종/단위 확인 안내. 순수 함수 `estimateAge` → node로 69,300조합 시뮬레이션 오류 0. 360/1280px 넘침 0. 기준치는 사이트 기존 값(고아묘 체크리스트·분유 계산기·키튼 차트)과 맞춤: 눈 8–14일, 귀 ~3주, 유치 앞니 2.5–3.5주·송곳니 3–4주·어금니 5–8주, 영구치 3–6개월, 구충 ~3주, FVRCP 6–8주, 중성화 4–6개월.
+   - tools/index "Age, weight and food" 그룹(7→8, New 배지 이동), 메인 같은 그룹 + 신생아 패널, 키튼 차트 "Working Backwards" 섹션, 고아묘 체크리스트, 분유 계산기에서 링크. llms.txt.
+2. **포스트 `librela-cost-for-dogs`** (관절 클러스터: dog-mobility 툴과 연결) — 1회 $75–$300+, 연 $900–$3,600, 일반 카프로펜(정당 약 50센트)과 비교표, Corral 2021(287마리, 1개월 43.5% vs 16.9%), FDA 2024-12-16 서한, 2025 라벨 변경(시판 후 이상반응 섹션, 매 주사 전 보호자 설명), Zoetis 보고율 1만 회당 1–10건(자발 보고 한계 명시). 근거 없는 "신경질환 주의" 문구는 빼고 BUN 상승→기초 혈액검사로 대체. sources.html 2건, llms.txt, dog-mobility 툴·치매 포스트에서 링크.
+
+**페이지 수**: tools **53** + posts **50** + checklists 16 = **119**.
+
+**다음 세션**
+- 키튼 나이 추정 툴이 "kitten age by weight / how old is my kitten" 쿼리에 잡히는지, 키튼 차트 순위(10.38) 변화.
+- 남은 후보: Apoquel vs Cytopoint 비용(가려움 클러스터), guinea pig 비용(소동물 2번째), 고양이 치아흡수 발치 비용, Solensia(고양이 관절).
+- 7개월 고양이 체중 질의(7–8 month old cat weigh, 순위 18–31)가 많음 — 키튼 차트의 7–12개월 구간 보강 후보(단, 질문 반복형 문장 금지).
