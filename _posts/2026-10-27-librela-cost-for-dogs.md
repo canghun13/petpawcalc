@@ -111,6 +111,7 @@ Many accident-and-illness policies cover prescription medications for arthritis,
 ## Related Articles
 
 - [Dog Mobility & Arthritis Screening](/tools/dog-mobility-arthritis-screening.html) — score your dog's mobility at home
+- [Dog ACL Surgery Cost: TPLO vs Lateral Suture](/blog/dog-acl-surgery-cost-tplo-vs-lateral-suture/)
 - [Dog Dementia: Signs and Treatment Costs](/blog/dog-dementia-signs-treatment-cost/) — another common senior-dog condition that pain can mimic
 - [How Much Should a Senior Dog Eat?](/blog/how-much-should-senior-dog-eat/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)

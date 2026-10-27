@@ -3283,3 +3283,29 @@ QA 통과. **페이지 수**: tools 51 + posts **42** + checklists 16 = **109**.
 - 키튼 나이 추정 툴이 "kitten age by weight / how old is my kitten" 쿼리에 잡히는지, 키튼 차트 순위(10.38) 변화.
 - 남은 후보: Apoquel vs Cytopoint 비용(가려움 클러스터), guinea pig 비용(소동물 2번째), 고양이 치아흡수 발치 비용, Solensia(고양이 관절).
 - 7개월 고양이 체중 질의(7–8 month old cat weigh, 순위 18–31)가 많음 — 키튼 차트의 7–12개월 구간 보강 후보(단, 질문 반복형 문장 금지).
+
+### 세션 BF — 신규 키워드 발굴 + 포스트 3개 (10/27, BE 직후)
+
+사용자 요청: GSC 밖(구글·네이버·레딧 등)에서 문서 수 적고 관심 있는 키워드를 넓게 찾고, 경쟁 강하면 롱테일, 클러스터 확장.
+
+**후보와 경쟁 판단 (상위 결과 직접 확인)**
+| 후보 | 상위 결과 | 판단 |
+|---|---|---|
+| Apoquel vs Cytopoint cost | Vetster, ThePricer, bestiepaws 등 | 중간·약함 → **제작** (가려움 클러스터: 가려움 점수 툴·제외식이 툴·귀 감염 툴) |
+| guinea pig vet costs | 포럼, Furry Critter, 동물병원 가격표 | 약함 → **제작** (소동물 클러스터 2번째, 토끼에 이어) |
+| dog TPLO / ACL surgery cost | ThePricer, OodleLife, Chewy, 계산기 사이트 1개 | 중간 → "다른 쪽 무릎·체중별 비수술" 롱테일로 **제작** (관절 클러스터: Librela·관절 툴과 연결) |
+| cat tooth resorption extraction cost | Embrace, MetLife, Cornell, Fetch | 강함(보험사·대학) → 보류 |
+| cat ate lily | PDSA, PetMD, Gallant | 강함 → 보류 |
+
+**만든 것**
+- `apoquel-vs-cytopoint-cost` — **차별점: "어느 게 싼지는 체중이 정한다."** Apoquel은 정당 가격이 용량과 거의 무관(MSPCA 가격표 기준 정당 약 $2.94)하고 라벨 용량표가 반 알 단위라, 13.5–19.9kg 개는 하루 ½알(월 약 $44)로 8kg 개(1알, 월 약 $88)보다 쌈. Cytopoint는 체중으로 용량 → 대형견일수록 비쌈(소형 $50–$100, 대형 $150–$260/회, 4–8주 간격). 첫 달은 14일 하루 2회라 더 비쌈(1알 개 약 $129). Zenrelia(2024년 9월 승인, 백신 반응 박스 경고, 접종 전 28일–3개월·후 28일 중단, 치명적 백신 유발 질환 경고는 이후 삭제). 라벨 근거: APVMA Apoquel 라벨.
+- `guinea-pig-vet-costs` — 항목별 가격, **2마리 기준 예산**(사회적 동물이라 보통 2마리 → 모든 비용 2배), 가장 비싼 3가지(치아·방광결석·난소낭종 76–90%), Merck 비타민 C 하루 10mg/kg 이상(임신 30mg/kg), 응급 신호. 소동물 마취 위험은 CEPSAF "개·고양이보다 높음"까지만 썼음(기니피그 개별 수치는 확인 못 해서 넣지 않음).
+- `dog-acl-surgery-cost-tplo-vs-lateral-suture` — TPLO $2,800–$6,400(평균 약 $3,500), TTA $3,000–$6,000, 측면 봉합 $750–$3,200. 근거: Vasseur 1984(15kg 미만 비수술 86% 양호 vs 15kg 이상 19%), Wucherer 2013(20kg 이상 과체중견 무작위 시험: 수술 75% vs 비수술 64%, 1년 안에 반대쪽 27.5%), **Muir 2011(380마리, 반대쪽 무릎 파열까지 중앙값 947일 ≈ 2.6년)** → "다른 쪽 무릎까지 예산 잡기". 보험의 양측성 질환 제외(PetMD).
+- 역링크: 가려움 툴·제외식이 툴·귀 감염 툴(Apoquel), new-guinea-pig 체크리스트·토끼 포스트(기니피그), Librela 포스트·관절 툴·수술 후 회복 체크리스트(ACL). 메인 성견 패널에 Apoquel·ACL 링크. sources.html 6개(DOI: Wucherer 10.2460/javma.242.10.1364, Vasseur 10.1111/j.1532-950X.1984.tb00801.x, Muir 10.1371/journal.pone.0025331), llms.txt.
+- 검증: QA 통과, 3개 포스트 360/1280px 가로 넘침 0.
+
+**페이지 수**: tools 53 + posts **53** + checklists 16 = **122**.
+
+**다음 세션**
+- BE·BF 신규 5개(키튼 나이 툴, Librela, Apoquel, 기니피그, ACL) 노출 확인.
+- 다음 후보: Solensia(고양이 관절), 고양이 치아흡수(롱테일 각도 필요), 소동물 3번째(햄스터/페럿 비용), 개 백내장 수술 비용.

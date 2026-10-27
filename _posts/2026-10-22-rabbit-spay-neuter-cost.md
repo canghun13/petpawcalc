@@ -116,6 +116,7 @@ Yes, for a while. Sperm and hormones take time to clear, and the House Rabbit So
 ## Related Articles
 
 - [New Rabbit Checklist](/checklists/new-rabbit-checklist.html) — setup, diet and first vet visit
+- [Guinea Pig Vet Costs](/blog/guinea-pig-vet-costs/) — typical prices and the problems that cost the most
 - [Spay and Neuter Cost and Timing for Dogs and Cats](/blog/spay-neuter-cost-and-timing/)
 - [Spay & Neuter Recovery Timeline](/tools/spay-neuter-recovery-timeline.html)
 - [Post-Surgery Recovery Checklist](/checklists/post-surgery-recovery-checklist.html)
