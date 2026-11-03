@@ -29,7 +29,7 @@ If your vet has suggested it, the two practical questions are what it will cost 
 
 Librela is a **monoclonal antibody** that blocks nerve growth factor (NGF), a protein involved in sending osteoarthritis pain signals. It is given as an injection under the skin once a month, usually at the clinic. The FDA approved it on **May 5, 2023**.
 
-It is not an NSAID, which is why it's often considered for dogs that can't take NSAIDs or don't do well on them. The cat version, frunevetmab, is sold as Solensia.
+It is not an NSAID, which is why it's often considered for dogs that can't take NSAIDs or don't do well on them. The cat version, frunevetmab, is sold as Solensia — see [Solensia Cost for Cats](/blog/solensia-cost-for-cats/).
 
 ## What It Costs
 

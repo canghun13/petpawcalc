@@ -140,6 +140,7 @@ Drinking more and urinating more are usually the earliest signs owners notice, o
 
 - [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) — the other common disease of older cats, and how it hides kidney problems
 - [Cat Diabetes Treatment Cost](/blog/cat-diabetes-treatment-cost/) — insulin vs the once-daily oral drugs
+- [Solensia Cost for Cats](/blog/solensia-cost-for-cats/) — arthritis pain relief that isn't an NSAID
 - [How Much Should a Senior Cat Eat?](/blog/how-much-should-senior-cat-eat/)
 - [How to Tell If Your Cat Is Underweight](/blog/how-to-tell-if-cat-is-underweight/) — weight loss is often an early sign
 - [How to Reduce Vet Costs Without Compromising Your Cat's Care](/blog/how-to-reduce-vet-costs-for-cats/)

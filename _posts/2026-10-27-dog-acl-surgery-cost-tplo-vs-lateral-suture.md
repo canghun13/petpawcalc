@@ -115,4 +115,5 @@ Accident-and-illness policies often do, but torn cruciate ligaments are commonly
 - [Librela Cost for Dogs](/blog/librela-cost-for-dogs/) — pain relief for dogs managed without surgery
 - [Dog Mobility & Arthritis Screening](/tools/dog-mobility-arthritis-screening.html)
 - [Post-Surgery Recovery Checklist](/checklists/post-surgery-recovery-checklist.html)
+- [Dog Cataract Surgery Cost](/blog/dog-cataract-surgery-cost/)
 - [How to Tell If Your Dog Is Overweight](/blog/how-to-tell-if-dog-is-overweight/)
