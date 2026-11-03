@@ -60,7 +60,7 @@ Diabetes is one of the most common reasons dogs develop cataracts, and those cat
 
 Two things follow from that:
 
-1. **Ask for an ophthalmology referral early** if your dog has diabetes, so the eyes are checked before a cataract matures and causes inflammation.
+1. **Ask for an ophthalmology referral early** if your dog has diabetes ([what treating dog diabetes costs](/blog/dog-diabetes-treatment-cost/)), so the eyes are checked before a cataract matures and causes inflammation.
 2. **The diabetes has to be well controlled first.** Surgeons generally want stable blood sugar before operating, which can add time and rechecks to the plan.
 
 ## Recovery and Aftercare
@@ -109,6 +109,7 @@ Many accident-and-illness policies cover it if the cataracts weren't diagnosed o
 
 ## Related Articles
 
+- [Dog Diabetes Treatment Cost](/blog/dog-diabetes-treatment-cost/) — why diabetic dogs so often need cataract surgery
 - [Dog ACL Surgery Cost: TPLO vs Lateral Suture](/blog/dog-acl-surgery-cost-tplo-vs-lateral-suture/) — the other big planned surgery for older dogs
 - [Dog Dementia: Signs and Treatment Costs](/blog/dog-dementia-signs-treatment-cost/) — vision loss can look like confusion
 - [How Often Should You Take Your Dog to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/)

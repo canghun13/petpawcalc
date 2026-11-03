@@ -105,7 +105,7 @@ This is the most important shift in vet visit frequency. Senior dogs can develop
 - Semi-annual senior visit with bloodwork: $300–$700 each
 - Annual total for senior vet care: $600–$1,400+
 
-This doesn't include treatment for any conditions found — just the monitoring visits. Conditions like kidney disease, hypothyroidism, diabetes, and Cushing's disease are all more common in older dogs and all benefit from early detection.
+This doesn't include treatment for any conditions found — just the monitoring visits. Conditions like kidney disease, hypothyroidism, [diabetes](/blog/dog-diabetes-treatment-cost/), and [Cushing's disease](/blog/dog-cushings-disease-treatment-cost/) are all more common in older dogs and all benefit from early detection.
 
 ---
 
