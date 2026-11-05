@@ -111,6 +111,7 @@ In some stable dogs, yes. Medical treatment is a recognised option, usually rese
 
 ## Related Articles
 
+- [Dog Diabetes Treatment Cost](/blog/dog-diabetes-treatment-cost/) — why spaying can sometimes reverse diabetes in females
 - [Spay or Neuter Your Pet: Cost, Timing, and What to Expect](/blog/spay-neuter-cost-and-timing/)
 - [Neuter Timing by Breed & Size](/tools/neuter-timing-by-breed-size.html) — what the UC Davis research found
 - [Dog Heat Cycle Calculator](/tools/dog-heat-cycle-calculator.html) — know when the post-heat window falls

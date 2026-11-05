@@ -129,7 +129,7 @@ Beyond routine visits, go to the vet promptly for:
 - Vomiting or diarrhea lasting more than 24 hours
 - Significant changes in appetite or water consumption
 - Lameness or sudden difficulty moving
-- Lumps or bumps that appear or change quickly
+- Lumps or bumps that appear or change quickly ([what testing and removal cost](/blog/dog-lump-removal-cost/))
 - Behavioral changes, especially in older dogs
 - Eye discharge, cloudiness, or squinting
 - Coughing that persists for more than a few days

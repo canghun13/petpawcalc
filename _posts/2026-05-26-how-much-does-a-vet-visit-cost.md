@@ -207,5 +207,6 @@ Reaching the diagnosis — exam, urinalysis, often bloodwork and an X-ray — ge
 
 ## Related Articles
 
+- [Dog Lump Removal Cost](/blog/dog-lump-removal-cost/) — why the needle test comes first
 - [How Often Should You Take Your Dog to the Vet? A Cost Breakdown by Age](/blog/how-often-vet-visits-dog-cost-by-age/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)

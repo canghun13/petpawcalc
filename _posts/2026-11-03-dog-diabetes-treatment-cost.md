@@ -10,7 +10,7 @@ faqs:
   - q: "How much does it cost to treat a diabetic dog?"
     a: "Typically about $1,850–$6,200 in the first year and $1,300–$4,600 a year once the dog is stable, based on published price ranges. The first year includes diagnosis (about $225–$500) and frequent rechecks while the dose is worked out. Insulin is the biggest ongoing cost, at roughly $40–$80 a month for smaller dogs and $80–$150 for larger ones."
   - q: "Can a diabetic dog go into remission like a cat?"
-    a: "Generally no. The 2026 AAHA Diabetes Management Guidelines for Dogs describe diabetes in dogs as an absolute insulin deficiency caused by permanent loss of the insulin-producing cells, so dogs need lifelong insulin. That's a key difference from cats, which can go into remission. With good management, most diabetic dogs tolerate insulin well and have a good long-term outlook."
+    a: "Usually not. The 2026 AAHA Diabetes Management Guidelines for Dogs describe diabetes in dogs as an absolute insulin deficiency caused by permanent loss of the insulin-producing cells, so most dogs need lifelong insulin — a key difference from cats. The main exception is unspayed females whose diabetes is linked to the heat cycle: in one study of Elkhounds, 46% of those spayed recovered, although in a broader group of intact females only about 1 in 10 did."
   - q: "Can dogs have insulin once a day?"
     a: "Some can, with newer long-acting insulins. The 2026 AAHA guidelines incorporate insulin degludec and glargine U-300, which have a flatter action profile and less day-to-day variability, and which may let some dogs move from twice-daily to once-daily injections. They also don't have to be timed exactly with meals, which helps dogs with unpredictable appetites. Your vet will decide whether one suits your dog."
   - q: "Do diabetic dogs go blind?"
@@ -19,6 +19,7 @@ faqs:
     a: "Not always, but the 2026 AAHA guidelines note that inexpensive continuous glucose monitors have changed diabetes care in dogs. Glucose monitoring, by blood test or sensor, is the only way to detect low blood sugar, and a sensor gives a more detailed picture than a single in-clinic reading. Ask your vet whether one would help while the dose is being adjusted."
   - q: "What are the signs of low blood sugar in a diabetic dog?"
     a: "Lethargy, unusual sleepiness, strange behavior, a wobbly or abnormal walk, weakness and seizures. The 2026 AAHA guidelines recommend that owners get written instructions on what to do if these happen. Low blood sugar is an emergency, so call your vet or an emergency clinic straight away."
+last_modified_at: 2026-11-05
 ---
 
 Diabetes is one of the most common hormonal diseases in dogs, usually diagnosed in middle age when an owner notices a dog drinking and urinating much more than usual, often while losing weight despite a good appetite.
@@ -30,6 +31,15 @@ It's very manageable, but it's a long-term commitment, and the costs are differe
 The 2026 AAHA guidelines split dog and cat diabetes into separate documents because the disease is different in each species. In dogs, it's an **absolute insulin deficiency** caused by permanent loss of the insulin-producing cells in the pancreas, so **dogs need insulin for life**.
 
 That's the biggest difference for your budget. Many cats can go into remission and stop insulin (see [Cat Diabetes Treatment Cost](/blog/cat-diabetes-treatment-cost/)), but for dogs the plan is long-term control. The guidelines say that, with good management, most diabetic dogs tolerate insulin well and have a good long-term outlook.
+
+### The exception: unspayed females
+
+Progesterone, which rises after every heat cycle, causes insulin resistance in dogs. In unspayed females, diabetes that appears in the weeks after a heat can sometimes go away once the dog is spayed:
+
+- In **Swedish Elkhounds (Fall et al., 2010; 63 diabetic dogs)**, signs typically appeared about a month after heat, and **46% of the dogs that were spayed recovered** (18 of 39). The authors concluded that spaying straight away improves the chance of remission.
+- In a broader group of diabetic females (**Pöppl et al., 2013**), only **6 of 57 intact females that were spayed — about 1 in 10 —** went into remission, some even after presenting with ketoacidosis or weeks after diagnosis. The authors recommended spaying every intact female that develops diabetes.
+
+So if your dog is an unspayed female, ask your vet about spaying soon after she's stable. It doesn't guarantee she'll come off insulin — most dogs still need it — but it removes one cause of insulin resistance and is the only realistic route to remission in dogs. Spaying also prevents pyometra, a womb infection that itself causes insulin resistance; see [Pyometra in Dogs](/blog/pyometra-in-dogs-cost/).
 
 ## What Each Part Costs
 
@@ -88,7 +98,9 @@ It's worth asking for an early eye check and keeping cataract surgery in mind wh
 
 ## Diabetic Ketoacidosis
 
-If diabetes goes untreated or becomes badly uncontrolled, the body starts breaking down fat for energy and produces ketones. The guidelines note that most dogs show signs for only a short time before they're seriously ill. Vomiting, refusing food, weakness or collapse in a diabetic dog needs a vet the same day. Several days of hospital treatment for ketoacidosis can cost as much as a year or more of routine management.
+If diabetes goes untreated or becomes badly uncontrolled, the body starts breaking down fat for energy and produces ketones. The guidelines note that most dogs show signs for only a short time before they're seriously ill. Vomiting, refusing food, weakness or collapse in a diabetic dog needs a vet the same day.
+
+Treatment means hospital care, usually for **at least two to four days** of intensive treatment, and the bill commonly runs into the **thousands of dollars** — often as much as a year or more of routine management. With prompt treatment, roughly **70–85% of dogs survive**. Keeping up with insulin and rechecks is the cheapest way to avoid it.
 
 ## A Note on Insurance
 
@@ -100,7 +112,7 @@ Accident-and-illness policies often cover diabetes, including insulin, monitorin
 Typically about $1,850–$6,200 in the first year and $1,300–$4,600 a year once the dog is stable, based on published price ranges. The first year includes diagnosis (about $225–$500) and frequent rechecks while the dose is worked out. Insulin is the biggest ongoing cost, at roughly $40–$80 a month for smaller dogs and $80–$150 for larger ones.
 
 **Can a diabetic dog go into remission like a cat?**
-Generally no. The 2026 AAHA Diabetes Management Guidelines for Dogs describe diabetes in dogs as an absolute insulin deficiency caused by permanent loss of the insulin-producing cells, so dogs need lifelong insulin. That's a key difference from cats, which can go into remission. With good management, most diabetic dogs tolerate insulin well and have a good long-term outlook.
+Usually not. The 2026 AAHA Diabetes Management Guidelines for Dogs describe diabetes in dogs as an absolute insulin deficiency caused by permanent loss of the insulin-producing cells, so most dogs need lifelong insulin — a key difference from cats. The main exception is unspayed females whose diabetes is linked to the heat cycle: in one study of Elkhounds, 46% of those spayed recovered, although in a broader group of intact females only about 1 in 10 did.
 
 **Can dogs have insulin once a day?**
 Some can, with newer long-acting insulins. The 2026 AAHA guidelines incorporate insulin degludec and glargine U-300, which have a flatter action profile and less day-to-day variability, and which may let some dogs move from twice-daily to once-daily injections. They also don't have to be timed exactly with meals, which helps dogs with unpredictable appetites. Your vet will decide whether one suits your dog.
