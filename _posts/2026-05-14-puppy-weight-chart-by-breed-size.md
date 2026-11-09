@@ -19,12 +19,12 @@ faqs:
     a: "A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out."
 
   - q: "Is there a puppy growth chart in kg?"
-    a: "The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. A puppy growth chart kg readers can use directly is simply these ranges multiplied by 0.45. The growth pattern itself does not change with the unit \u2014 what matters is that the weight is climbing steadily along the curve for your puppy\u0027s breed size."
+    a: "The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. To convert any range in the tables, multiply by 0.45. The growth pattern itself does not change with the unit \u2014 what matters is that the weight is climbing steadily along the curve for your puppy\u0027s breed size."
   - q: "How do I track my dog\u0027s weight by age?"
-    a: "Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. A dog weight tracker by age does not need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading \u2014 steady climb is normal, a plateau during a growth phase or any loss is worth a vet call."
+    a: "Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. The record doesn't need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading \u2014 steady climb is normal, a plateau during a growth phase or any loss is worth a vet call."
   - q: "What is the weight of a small dog?"
-    a: "It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So the weight of a small dog usually means somewhere between about 12 and 25 lbs \u2014 a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it."
-last_modified_at: 2026-10-05
+    a: "It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So a small dog is usually somewhere between about 12 and 25 lbs \u2014 a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it."
+last_modified_at: 2026-11-09
 ---
 
 Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.
@@ -98,9 +98,9 @@ These are approximate ranges based on typical growth curves, grouped by adult si
 | 12 months | 75–130 lbs (34–59 kg) |
 | 24 months | 100–180 lbs (45–82 kg), near adult |
 
-## The Two Ages People Look Up Most
+## The Two Ages Owners Check Most
 
-Almost every search for a puppy weight chart is really one of two questions, so here they are pulled out of the tables above.
+Eight and twelve weeks are the ages most owners check against, so here they are pulled out of the tables above.
 
 **How much should a puppy weigh at 8 weeks?** It depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs (0.45–1.1 kg), small 3–5 lbs (1.4–2.3 kg), medium 5–10 lbs (2.3–4.5 kg), large 8–16 lbs (3.6–7.3 kg). Eight weeks is when most puppies go home, so this is the figure people check on day one.
 
@@ -221,13 +221,13 @@ The fastest growth occurs in the first 6 months, with large breeds growing most 
 A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out.
 
 **Is there a puppy growth chart in kg?**
-The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. A puppy growth chart kg readers can use directly is simply these ranges multiplied by 0.45. The growth pattern itself does not change with the unit — what matters is that the weight is climbing steadily along the curve for your puppy's breed size.
+The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. To convert any range in the tables, multiply by 0.45. The growth pattern itself does not change with the unit — what matters is that the weight is climbing steadily along the curve for your puppy's breed size.
 
 **How do I track my dog's weight by age?**
-Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. A dog weight tracker by age does not need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading — steady climb is normal, a plateau during a growth phase or any loss is worth a vet call.
+Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. The record doesn't need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading — steady climb is normal, a plateau during a growth phase or any loss is worth a vet call.
 
 **What is the weight of a small dog?**
-It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So the weight of a small dog usually means somewhere between about 12 and 25 lbs — a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it.
+It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So a small dog is usually somewhere between about 12 and 25 lbs — a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it.
 
 *Always consult your veterinarian with concerns about your puppy's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific dog.*
 

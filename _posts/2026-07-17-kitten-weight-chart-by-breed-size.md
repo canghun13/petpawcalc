@@ -27,7 +27,7 @@ faqs:
     a: "Rather than a kitten weight calculator, this page uses a chart plus a simple rule you can do in your head: a kitten gains about 1 pound per month for the first 4–5 months, so age in months roughly equals weight in pounds. For adult size, our Cat Weight Calculator has a kitten adult weight mode that estimates where a growing kitten will land, which is the closest thing to a kitten size calculator — but for large breeds like Maine Coons, the breed table matters more than any formula."
   - q: "How much should my kitten weigh?"
     a: "It depends almost entirely on age. As a fast check: about 100g at birth, 1 lb at 1 month, 2 lbs at 2 months, 3 lbs at 3 months, and 4 lbs at 4 months, after which growth slows and becomes less predictable. The full birth-to-12-month chart above gives the ranges, and body condition — whether you can feel ribs easily but not see them — matters more than hitting an exact number."
-last_modified_at: 2026-10-20
+last_modified_at: 2026-11-09
 ---
 
 "My kitten weighs 3 pounds — is that normal?" The honest answer is: it depends entirely on age, and a little on breed. A 3 lb kitten at 8 weeks is unusually large; a 3 lb kitten at 4 months is right on schedule; a 3 lb Maine Coon at 6 months is small for their breed but might still be perfectly healthy.
@@ -77,7 +77,7 @@ A rough sanity check that works well up to about four months: **a kitten gains r
 
 Newborn kittens grow fastest of all: a healthy nursing kitten typically gains 10–15 grams *per day* in the first few weeks. A kitten who isn't gaining daily in that window should be checked by a vet — at that size, there's very little margin for error.
 
-If you prefer a kitten weight chart in grams and kilograms rather than pounds, the metric figures above are the same numbers converted — the chart works as a kitten weight chart kg either way, and grams are the more practical unit under about 8 weeks, when a few ounces either side is a meaningful difference.
+The metric figures in the chart are the same numbers converted from pounds. Grams are the more practical unit under about 8 weeks, when a few ounces either side is a meaningful difference.
 
 ## How Much Should My Kitten Weigh at Each Age?
 
@@ -115,13 +115,11 @@ The table above is the quick reference. Below is the same curve read age by age,
 
 **"How big" and "how much should they weigh" are the same question.** Size in a growing kitten is tracked by weight, not by length — frame and body length vary so much between individuals that a measuring tape tells you very little. This is also why there is no useful way to judge a cat's weight from its length: body condition assessed by feel is what veterinary practice uses instead, and the chart above is only the starting point for that.
 
-**Past about four months, "kitten" and "cat" get used interchangeably.** The figures do not change when the word does. A cat at twelve months is at roughly adult weight for a domestic shorthair — 7–10 lbs — while large breeds are still growing.
-
 **Averages hide normal variation.** Healthy kittens of the same age routinely differ by a pound either side, so treat each range as a band rather than a target. A kitten tracking steadily along the low edge of the band is usually fine; one that has stopped moving up it is the one to ask about.
 
 ### Working Backwards: Estimating Age From Weight
 
-If you've found a kitten and don't know their birthday, the same chart runs in reverse. The rough rule for age of kittens by weight is **1 pound ≈ 1 month old**, reliable up to about 5 months: a 1 lb kitten is around 4 weeks, a 2 lb kitten around 8 weeks, a 3 lb kitten around 12 weeks. So a 3lb kitten age estimate is roughly three months, and a kitten weighing 3.5–4 lbs is likely around 3.5 to 4 months.
+If you've found a kitten and don't know their birthday, the same chart runs in reverse. The rough rule is **1 pound ≈ 1 month old**, reliable up to about 5 months: a 1 lb kitten is around 4 weeks, a 2 lb kitten around 8 weeks, a 3 lb kitten around 12 weeks, and a kitten weighing 3.5–4 lbs is likely around 3.5 to 4 months.
 
 Weight alone is the least reliable of the aging methods, though, because a kitten who has been underfed or has a heavy parasite load will weigh well below their true age. Eyes (closed until roughly 7–14 days), teeth (baby teeth from about 3 weeks, adult teeth from 3–4 months), and mobility are all better indicators, and a vet can narrow it down properly in one visit. Use weight as a cross-check, not the answer — our [Kitten Age Estimator](/tools/kitten-age-estimator.html) combines all of these signs into one age range.
 

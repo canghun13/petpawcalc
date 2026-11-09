@@ -3378,3 +3378,27 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 - 검증: QA 통과, 360/1280px 넘침 0. Playwright 재설치(/tmp/claude-0/pw, 컨테이너 바뀌면 다시 설치 필요).
 
 **페이지 수**: tools 53 + posts **58** + checklists 16 = **127**.
+
+### 세션 BJ — 주간 (11/9): 체중 차트 2개가 구글에서 사실상 빠진 상태 지속 + 문구 정리 + Addison's 신규
+
+**데이터 (GSC 3개월, 8/8–11/7)**: 클릭 282, 노출 66,848. **일별: 10/30 이후 매일 260–380 노출(10/24 이전 2,400–2,950), 클릭 하루 0–7.** 10/29 하루만 정상 → 2주 이상 지속.
+- 원인 범위 좁힘: 주간 증가분이 **키튼 차트 +132(이전 주당 약 +11,000), 퍼피 차트 −11(이전 +3,255)** → **두 체중 차트만 구글 노출이 거의 0으로 떨어짐.** 나머지 페이지는 오히려 증가(cat underweight +336, 반려동물 위탁비 툴 +285, cat diabetes +168, senior cat eat +102, hyperthyroid +98, dementia +37).
+- **사이트 문제 아님 근거**: Bing은 계속 증가(키워드 노출 2,223→2,416, 클릭 173→183; 페이지 리포트에서 키튼 차트 노출 1,010·순위 7.1로 오히려 상승). 두 차트가 같은 날(10/25) 함께 빠졌고 그 전 마지막 수정은 퍼피 10/6, 키튼 10/20(FAQ 정리)·10/27(링크 1개).
+- 구글 확인된 업데이트 없음(9월 스팸 업데이트 10/8 종료가 마지막, 10/20–21·10/24 변동은 미확인 — Numinix 정리).
+- 키튼 관련 쿼리 3개월 평균 순위도 조금씩 하락 중(kitten weight chart by age 12.98→14 등).
+
+**한 일 (보강)** — 두 차트·치과 포스트에 남아 있던 "검색어 넣기" 문장 정리(구글 품질 평가·애드센스 저가치 판정과 직결되는 유형, 표·내용은 그대로):
+- 키튼 차트: "the chart works as a kitten weight chart kg either way", "The rough rule for age of kittens by weight", "So a 3lb kitten age estimate is…", "'kitten'과 'cat'이 섞여 쓰인다" 문단 → 자연 문장으로/삭제.
+- 퍼피 차트: "Almost every search for a puppy weight chart is…", 소제목 "The Two Ages People Look Up Most", FAQ 3개 속 "A puppy growth chart kg readers can use directly", "A dog weight tracker by age", "the weight of a small dog usually means" → 정리(front matter·본문 동시).
+- dental cleaning 포스트: "often called dog dental cleaning cost by owners searching for it", "searching cat dental cleaning cost NYC" → 정리.
+- 3개 모두 last_modified_at 2026-11-09. qa.py 검출 문구에 위 패턴 9개 추가.
+- **이걸로 회복된다는 보장은 없음.** 다음 주에 키튼·퍼피 주간 증가분으로 확인. 계속 0 근처면: ① 사용자에게 GSC URL 검사로 두 URL 색인 상태 확인 + 색인 요청 부탁, ② "How Much Should My Kitten Weigh at Each Age?" 섹션(검색어형 소제목 11개)도 줄일지 검토.
+
+**신규**: `dog-addisons-disease-treatment-cost` (강아지 내분비 클러스터 3번째: 당뇨·쿠싱·애디슨) — 경쟁: 포럼·ThePricer·howmuchisit 등 약함. **차별점: 저용량 DOCP 무작위 시험(Vincent 2021, JVIM, 37마리)** — 라벨 2.2 vs 1.1 mg/kg 둘 다 전해질 조절, 표준 용량이 과치료 소견 더 많음 → 대형견은 연 $1,000 이상 절감 가능(수의사와 상의 전제). 체중별 월 DOCP 비용표(Percorten-V $62/mL, Zycortal $89/mL), 안정기 월 $80–$350·연 $960–$4,200, 위기 입원 $1,500–$4,000+(ThePricer), MSU 비용 추정(웨스티 연 $475, 그레이트데인 연 $2,851·평생 $15,585), Cornell(증상·호발 품종·예후). 쿠싱 과치료와의 연결. 확인 못 한 "용량이 시간에 따라 늘어난다", "주사 간격 연장"은 넣지 않음.
+- 역링크: 쿠싱 포스트, 메인 노령 패널. sources/llms.
+- 검증: QA 통과, 360/1280px 넘침 0(Addison's, 키튼 차트).
+
+**GA(10/12–11/8)**: 활성 사용자 467(이전 490), 구글 오가닉 168(189). 일별 신규 사용자 후반부 감소 — 구글 노출 감소와 일치.
+**색인**: Coverage 차트가 10/23에서 멈춰 있음(구글 쪽 갱신 지연). 발견됨-미색인 6, 크롤링됨-미색인 11 동일.
+
+**페이지 수**: tools 53 + posts **59** + checklists 16 = **128**.
