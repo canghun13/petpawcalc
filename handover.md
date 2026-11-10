@@ -3402,3 +3402,14 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 **색인**: Coverage 차트가 10/23에서 멈춰 있음(구글 쪽 갱신 지연). 발견됨-미색인 6, 크롤링됨-미색인 11 동일.
 
 **페이지 수**: tools 53 + posts **59** + checklists 16 = **128**.
+
+### 세션 BK — 사이트 기본 신뢰 요소 점검 (11/10)
+
+사용자 체크리스트(필수 페이지·메뉴·모바일·깨진 링크·브랜드·문의 방법) 기준 점검.
+- **이미 있던 것**: About, Contact(메일 canghun13@naver.com, mailto 링크), Privacy, Disclaimer, Editorial policy, Sources. 헤더 메뉴 5개 + 모바일 햄버거 메뉴(클릭 테스트로 열림 확인). 내부 링크 전수 검사 깨진 링크 0. ads.txt 있음. 주요 페이지 12개 360/1280px 가로 넘침 0.
+- **없던 것 → 추가**: `terms.html`(이용약관: 정보 제공 목적, 추정치, 콘텐츠 이용, 광고, 면책, 책임 제한, 변경), `404.html`(sitemap: false), `robots.txt`(Sitemap 줄 포함). 푸터에 Terms 링크 추가, 푸터 "Guides"→"Blog"로 헤더와 명칭 통일. post/tool/checklist 레이아웃에도 favicon 링크(기존엔 default만).
+- **고친 것**:
+  - About: "광고 없이(without wading through ads)" 문구가 애드센스 신청 사이트와 모순 → "가입·유료벽 없음"으로 바꾸고 "광고로 운영되며 광고는 내용과 분리" 명시. "pet owner 1명" vs "small group" 불일치 정리.
+  - Privacy(날짜 2026-11): 없는 "contact form" → 이메일로 수정. 애드센스 필수 고지 문구(제3자 업체·Google 쿠키, aboutads.info 옵트아웃, Google 파트너 사이트 정책 링크) 추가. 브라우저 local storage 사용(체크리스트 진행, 호흡수 기록, 홈 개/고양이 선택) 고지. GitHub Pages 호스팅 로그 고지.
+  - Contact: 응답 시간 문장 중복 제거.
+- **사용자가 직접 확인할 것(코드 밖)**: 유럽(EEA)·영국·스위스 방문자에게 광고를 보여주려면 애드센스 "개인 정보 보호 및 메시지"에서 Google 인증 동의 관리 메시지(CMP) 설정 필요 — 사이트 코드로는 확인 불가.
