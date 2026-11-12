@@ -130,5 +130,6 @@ Lethargy, unusual sleepiness, strange behavior, a wobbly or abnormal walk, weakn
 
 - [Dog Cataract Surgery Cost](/blog/dog-cataract-surgery-cost/) — the most common complication of diabetes in dogs
 - [Cushing's Disease in Dogs: Treatment Cost](/blog/dog-cushings-disease-treatment-cost/) — often found alongside diabetes
+- [Dog Hypothyroidism Treatment Cost](/blog/dog-hypothyroidism-treatment-cost/)
 - [Cat Diabetes Treatment Cost](/blog/cat-diabetes-treatment-cost/) — how diabetes differs in cats
 - [How to Tell If Your Dog Is Overweight](/blog/how-to-tell-if-dog-is-overweight/)

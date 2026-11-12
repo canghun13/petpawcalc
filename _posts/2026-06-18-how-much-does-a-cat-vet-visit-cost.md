@@ -153,6 +153,7 @@ It varies by clinic and by what the cat needs done, so ask for an estimate. Ofte
 ## Related Articles
 
 - [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) — why the priciest option is often the cheapest
+- [FIP Treatment Cost](/blog/fip-treatment-cost-gs-441524/) — what legal GS-441524 costs by cat weight
 - [How Often Do Cats Need to Go to the Vet?](/blog/how-often-vet-visits-cat/) — the visit schedule by age
 - [How to Reduce Vet Costs Without Compromising Your Cat's Care](/blog/how-to-reduce-vet-costs-for-cats/)
 - [True Cost: Cat vs Dog](/blog/true-cost-cat-vs-dog-year-by-year/)

@@ -116,5 +116,6 @@ They're often vague and come and go, which is why it's nicknamed 'the great pret
 
 - [Cushing's Disease in Dogs: Treatment Cost](/blog/dog-cushings-disease-treatment-cost/) — the opposite adrenal problem
 - [Dog Diabetes Treatment Cost](/blog/dog-diabetes-treatment-cost/)
+- [Dog Hypothyroidism Treatment Cost](/blog/dog-hypothyroidism-treatment-cost/)
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)

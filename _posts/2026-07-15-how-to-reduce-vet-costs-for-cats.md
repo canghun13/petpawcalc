@@ -135,4 +135,5 @@ It's never too late for new conditions, but premiums rise steadily with age and 
 
 - [How Much Does a Cat Vet Visit Cost? A Complete Guide](/blog/how-much-does-a-cat-vet-visit-cost/)
 - [How Often Should You Take Your Cat to the Vet?](/blog/how-often-vet-visits-cat/)
+- [FIP Treatment Cost](/blog/fip-treatment-cost-gs-441524/) — comparing pharmacies and the 42-day course
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)

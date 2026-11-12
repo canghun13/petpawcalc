@@ -126,6 +126,7 @@ The classic signs are drinking and urinating much more than usual, a big appetit
 
 - [Dog Diabetes Treatment Cost](/blog/dog-diabetes-treatment-cost/) — often found alongside Cushing's
 - [Addison's Disease in Dogs: Treatment Cost](/blog/dog-addisons-disease-treatment-cost/) — the opposite problem, and a risk of over-treating Cushing's
+- [Dog Hypothyroidism Treatment Cost](/blog/dog-hypothyroidism-treatment-cost/) — another slow hormonal disease with overlapping signs
 - [Dog Cataract Surgery Cost](/blog/dog-cataract-surgery-cost/)
 - [How Much Should a Senior Dog Eat?](/blog/how-much-should-senior-dog-eat/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
