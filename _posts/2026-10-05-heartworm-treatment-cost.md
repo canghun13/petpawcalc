@@ -134,5 +134,6 @@ There is no approved drug to kill adult heartworms in cats, and the melarsomine 
 
 - [Heartworm Test Cost — and Why a Negative Result Is Months Out of Date](/blog/heartworm-test-cost/) — what a test can and can't tell you
 - [Heartworm Prevention Cost Calculator](/tools/heartworm-prevention-cost-calculator.html) — a year of prevention against the cost of treatment
+- [ProHeart 12 Cost](/blog/proheart-12-cost/) — a yearly shot for households that miss monthly doses
 - [Pet Insurance Cost Estimator](/tools/pet-insurance-cost-estimator.html) — what accident-and-illness cover costs before you need it
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)

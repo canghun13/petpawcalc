@@ -143,6 +143,7 @@ Differently from dogs. Cats with adult heartworms typically have only one to thr
 ## Related Articles
 
 - [Heartworm Treatment Cost for Dogs](/blog/heartworm-treatment-cost/) — what a positive result costs, and why slow kill isn't the bargain it looks
+- [ProHeart 12 Cost](/blog/proheart-12-cost/) — the yearly injection compared with monthly chews
 - [Heartworm Prevention Cost Calculator](/tools/heartworm-prevention-cost-calculator.html) — a year of prevention by product type against the cost of treatment
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/) — what else the annual visit costs
 - [How Often Should You Take Your Dog to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/) — the annual visit schedule by age

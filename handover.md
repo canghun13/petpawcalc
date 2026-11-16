@@ -3434,3 +3434,21 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 
 **페이지 수**: tools 53 + posts **62** + checklists 16 = **131**.
 **다음 주간 작업 우선 확인**: 키튼·퍼피 차트 구글 노출 회복 여부(세션 BJ 참고).
+
+### 세션 BM — 주간 (11/16)
+
+**GSC 3개월(~11/13)**: 구글 노출 **회복**. 10/25–11/8 일 260–580 → **11/9부터 2,793·2,822·3,016·2,938·3,591(최고치)**. 클릭 일 14–17. 11/9는 키튼·퍼피 차트의 검색어형 문장 정리를 푸시한 날과 같지만, 구글 쪽 변동일 수도 있어 원인 단정 불가. 세션 BJ의 대응(URL 검사·색인 요청 부탁, 키튼 소제목 11개 축소)은 **불필요 → 보류**.
+- 3개월 페이지: 키튼 차트 44,114 노출(클릭 129), 퍼피 12,931(59), 고양이 저체중 2,032 노출·순위 23·클릭 0, 고양이 체중 계산기 3,013, 고양이 당뇨 1,137(클릭 17, 순위 8.3).
+- 쿼리 신호: underweight cat 묶음(is my cat underweight 359, underweight cat 336, too skinny/thin 변형 다수, severely underweight cat, underweight cat face) 순위 19–35. pet boarding prices 415(순위 16)·cat boarding cost 74 — Rover가 도시별 페이지로 장악해 신규 보류. proheart 12 pricing calculator 28(순위 11). bexacat cost 11·클릭 3(고양이 당뇨 포스트가 받는 중).
+**Bing**: 페이지 상위 키튼 차트 1,083, cat vet visits 1,009(CTR 4%), cat vet cost 850. 키워드는 cat health checkup schedule 142 등 기존 페이지로 커버.
+**GA(10/19–11/15)**: 활성 583, 구글 오가닉 223, 직접 206, bing 53. 말일(11/14–15) 신규 83·45로 상승.
+**색인(사용자 제공, 11/13 기준)**: 크롤링됨-미색인 13 — 새로 `tools/spay-neuter-cost-calculator.html`(11/15 크롤)·`tools/ear-infection-recurrence-checker.html`(11/14) 포함. 계산기는 그동안 노출·클릭 있던 페이지라 재크롤 중 일시 변동일 수 있음 → 다음 주 재확인, 계속 빠지면 내용 보강 검토. 발견됨-미색인 6(쿠싱·애디슨·당뇨·백내장·혹 제거·솔렌시아 — 신규라 아직 미크롤). /handover/는 옛 기록(404), 무시.
+
+**보강**: `how-to-tell-if-cat-is-underweight` 전면 개편(2,000+ 노출·순위 23 대응). 제목 "…Underweight or Too Skinny (and When It's Urgent)". WSAVA 체형점수 1–5 설명표, WSAVA 근육점수(척추·견갑골·두개골 — "얼굴이 앙상해 보임" 설명, 정상 체중에서도 근육 소실 가능, 노화성 근감소 vs 질병성 악액질; dvm360 Yau 2025), 매월 체중 측정 근거(암·CKD·갑상선 사망 전 약 2.5년 체중 감소 — Burns/ISVMA, CKD 진단 약 3년 전 감소 — dvm360), 원인표에 비용 포스트 링크(갑상선·신장·당뇨·치과), 응급 신호 + 지방간(Cornell: 거의 항상 식욕 거부 선행, 90% 이상 2차성, 튜브 급식 약 한 달). FAQ 10→7(표현만 다른 중복 3개 정리). last_modified_at 2026-11-16. 확인 못 한 "며칠만 굶어도"는 삭제.
+
+**신규**: `proheart-12-cost` (하트웜 클러스터 4번째). 경쟁: ThePricer·소형 계산기 사이트·Zoetis — 약함. 체중별 클리닉 가격(≤25lb $78–$150 … 76–100lb $154–$246, ThePricer 집계) vs Heartgard Plus(Chewy 51–100lb 12개 $145.89, 26–50lb 6개 $75.49). 핵심 차별점: **누락 개월** — Lavan 2018(벼룩·진드기약도 쓰는 개 기준 연평균 약 7개월치만 구매, 11–12개월은 약 1/3), Mwacalimba 2021(Zoetis 후원 명시, 6개월 주사 제때 재접종 약 52% vs 월 제품 24%). 라벨 제한(12개월 이상, 아프거나 저체중·체중 감소 이력 금지, 백신 동시 접종 주의), 미국 현장시험 부작용표, ProHeart 6 2004 회수·RiskMAP 이력(FDA), Zoetis 보장(최대 $1,000+치료약), 벼룩·진드기 미포함.
+- 연결: 하트웜 검사·치료·벼룩 포스트 관련글, 하트웜 예방 계산기 CTA, 메인 adult 패널. sources(Lavan 항목에 Mwacalimba 포함, WSAVA 항목)·llms.
+**검증**: QA ALL CLEAN, 360/1280px 넘침 0(ProHeart, 고양이 저체중).
+
+**페이지 수**: tools 53 + posts **63** + checklists 16 = **132**.
+**다음 확인**: 고양이 저체중 순위 변화(23→?), spay-neuter 계산기 색인 복귀 여부, 신규(FIP·갑상선·발작약·ProHeart) 노출 시작 여부.
