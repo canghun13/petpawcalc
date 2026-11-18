@@ -102,6 +102,7 @@ Cats often show nothing until heart disease is advanced. Signs to act on include
 ## Related Articles
 
 - [Sleeping Respiratory Rate Counter](/tools/sleeping-respiratory-rate-counter.html) — the daily home check
+- [Felycin-CA1 Cost for Cats With HCM](/blog/felycin-ca1-cost-cat-hcm/) — the first approved drug for subclinical HCM
 - [Dog Heart Murmur: Why Heart Size Matters More Than the Grade](/blog/dog-heart-murmur-what-next/)
 - [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) — a common cause of murmurs and heart changes in older cats
 - [How Much Does a Cat Vet Visit Cost?](/blog/how-much-does-a-cat-vet-visit-cost/)

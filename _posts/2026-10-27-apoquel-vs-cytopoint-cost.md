@@ -94,7 +94,7 @@ Prices vary a lot between clinics and online pharmacies, so ask for the actual p
 
 **Zenrelia (ilunocitinib)** is a newer once-daily tablet, approved by the FDA in September 2024 for allergic and atopic itch in dogs 12 months and older. It works on similar pathways to Apoquel and has no twice-daily start.
 
-Its label carries a **boxed warning**: dogs taking it may not respond adequately to vaccines. The label says to stop it at least 28 days to 3 months before vaccination and wait at least 28 days afterwards before restarting. An earlier warning about fatal vaccine-induced disease from modified-live vaccines was later removed after the FDA reviewed the evidence. If your dog is due for vaccines, plan the timing with your vet.
+Its label carries a **boxed warning**: dogs taking it may not respond adequately to vaccines. The label says to stop it at least 28 days to 3 months before vaccination and wait at least 28 days afterwards before restarting. An earlier warning about fatal vaccine-induced disease from modified-live vaccines was later removed after the FDA reviewed the evidence. If your dog is due for vaccines, plan the timing with your vet. Prices and the head-to-head trial against Apoquel are covered in [Zenrelia vs Apoquel Cost](/blog/zenrelia-vs-apoquel-cost/).
 
 ## Finding the Cause Saves the Most
 
@@ -127,6 +127,7 @@ Zenrelia (ilunocitinib) is a once-daily tablet approved by the FDA in September 
 ## Related Articles
 
 - [Pet Itch Score Tracker](/tools/pet-itch-score-tracker.html) — score itch at home to see when treatment wears off
+- [Zenrelia vs Apoquel Cost](/blog/zenrelia-vs-apoquel-cost/) — the once-daily alternative and its vaccine rule
 - [Elimination Diet Trial Planner](/tools/elimination-diet-trial-planner.html)
 - [Flea & Tick Prevention Cost for Dogs and Cats](/blog/flea-tick-prevention-cost/)
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
