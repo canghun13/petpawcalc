@@ -117,6 +117,7 @@ It depends mainly on the grade. Low-grade tumors rarely spread and are often cur
 
 ## Related Articles
 
+- [Dog Lymphoma Treatment Cost](/blog/dog-lymphoma-treatment-cost/) — when a swollen lymph node turns out to be cancer
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/) — exam and diagnostic prices
 - [Dog & Cat Dental Cleaning Cost](/blog/dog-cat-dental-cleaning-cost/)
 - [Senior Pet Care Checklist](/checklists/senior-pet-care-checklist.html)
