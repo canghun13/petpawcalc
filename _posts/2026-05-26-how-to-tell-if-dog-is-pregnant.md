@@ -21,12 +21,6 @@ faqs:
     a: "Rarely. The first week after mating, fertilized eggs are still traveling to the uterus and haven't implanted. Most dogs show no external signs at this stage. Very subtle behavioral changes may occur in some dogs (increased affection or restlessness), but these are not reliable pregnancy indicators."
   - q: "Can a dog be pregnant and not show?"
     a: "Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know."
-  - q: "What are the earliest signs a dog is pregnant?"
-    a: "Weeks 1–3 are easy to miss entirely: a brief dip in appetite or mild nausea, lower energy, and sometimes a change in affection or clinginess. Nipple enlargement and darkening is usually the first physical change owners actually spot, around week 3–4. The unmistakable signs — a firm swollen abdomen, obvious weight gain, nesting — belong to the second half of the pregnancy, so relying on them alone means losing several weeks of prenatal care."
-  - q: "What are the signs of pregnancy in dogs, week by week?"
-    a: "They follow a rough sequence. Weeks 1–2: usually nothing visible. Week 3–4: nipples enlarge and darken, appetite may dip then rebound, some dogs have a small amount of clear vaginal discharge. Weeks 5–6: noticeable weight gain and abdominal enlargement, appetite climbs. Weeks 7–8: fetal movement may be visible or felt, mammary development becomes obvious. Week 9: nesting, restlessness, and a drop in body temperature roughly 24 hours before labour. Timing varies a lot between individuals, and almost every one of these signs also appears in false pregnancy, which is why confirmation matters."
-  - q: "When can a vet tell if a dog is pregnant?"
-    a: "It depends on the method: palpation is possible roughly days 21–35, a relaxin blood test is generally reliable from about day 22–25, ultrasound confirms pregnancy and heartbeats from around day 25–28, and X-ray from about day 45–55 is the most accurate method for counting puppies once the skeletons have mineralised. Before roughly day 21, there is no reliable way to confirm pregnancy in a dog — including at the vet."
 last_modified_at: 2026-10-20
 ---
 
@@ -145,17 +139,6 @@ Rarely. The first week after mating, fertilized eggs are still traveling to the 
 
 **Can a dog be pregnant and not show?**
 Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know.
-
-**What are the earliest signs a dog is pregnant?**
-Weeks 1–3 are easy to miss entirely: a brief dip in appetite or mild nausea, lower energy, and sometimes a change in affection or clinginess. Nipple enlargement and darkening is usually the first physical change owners actually spot, around week 3–4. The unmistakable signs — a firm swollen abdomen, obvious weight gain, nesting — belong to the second half of the pregnancy, so relying on them alone means losing several weeks of prenatal care.
-
-**What are the signs of pregnancy in dogs, week by week?**
-They follow a rough sequence. Weeks 1–2: usually nothing visible. Week 3–4: nipples enlarge and darken, appetite may dip then rebound, some dogs have a small amount of clear vaginal discharge. Weeks 5–6: noticeable weight gain and abdominal enlargement, appetite climbs. Weeks 7–8: fetal movement may be visible or felt, mammary development becomes obvious. Week 9: nesting, restlessness, and a drop in body temperature roughly 24 hours before labour. Timing varies a lot between individuals, and almost every one of these signs also appears in false pregnancy, which is why confirmation matters.
-
-**When can a vet tell if a dog is pregnant?**
-It depends on the method: palpation is possible roughly days 21–35, a relaxin blood test is generally reliable from about day 22–25, ultrasound confirms pregnancy and heartbeats from around day 25–28, and X-ray from about day 45–55 is the most accurate method for counting puppies once the skeletons have mineralised. Before roughly day 21, there is no reliable way to confirm pregnancy in a dog — including at the vet.
-
-*This article is for informational purposes only. Always consult your veterinarian for guidance specific to your dog's health, reproductive history, and individual situation.*
 
 ## Related Articles
 

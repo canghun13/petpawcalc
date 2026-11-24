@@ -83,7 +83,7 @@ Choosing not to operate is a reasonable decision for some dogs, especially older
 
 So the real comparison is surgery and its aftercare against years of drops and checks, not surgery against nothing.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Cataract Surgery?
 
 Accident-and-illness policies often cover cataract surgery if the cataracts weren't diagnosed or showing signs before coverage began. Because cataracts often affect both eyes, some insurers treat them as a **bilateral condition**: a cataract noted in one eye before the policy started can exclude the other eye too. Hereditary cataracts are common in some breeds, so check how your policy treats hereditary conditions. Our [Pet Insurance Waiting Period Tracker](/tools/pet-insurance-waiting-period-tracker.html) shows when coverage actually starts.
 

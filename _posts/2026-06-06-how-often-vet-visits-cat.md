@@ -18,7 +18,7 @@ faqs:
   - q: "How much does a cat vet visit cost per year?"
     a: "For a healthy adult cat (ages 2–9), annual vet costs typically run $200–$500 including the exam, rotating vaccines, and parasite prevention. Senior cats add bloodwork and more frequent visits, bringing annual costs to $500–$1,000+. Dental cleanings, when needed, add $250–$600 and are billed separately."
 
-last_modified_at: 2026-10-12
+last_modified_at: 2026-11-24
 ---
 
 Cats are famously good at hiding illness — a survival instinct that makes routine vet visits more important, not less. By the time most cats show visible signs of a health problem, the condition has often been developing for months.
@@ -29,7 +29,7 @@ Here's exactly how often your cat should see a vet at each life stage, what each
 
 ## Kittens (Under 1 Year): Every 3–4 Weeks
 
-The first year involves more vet visits than any other stage of your cat's life. Kittens need a series of core vaccines that must be spaced apart, plus a spay or neuter procedure, and a general health foundation.
+A kitten sees the vet more in its first months than in any later year. The core FVRCP series has to be spread out over several visits, rabies is added near the end, and spay or neuter usually follows — and each visit is also a chance to check for parasites and get a kitten used to the carrier and the clinic.
 
 **Typical visit schedule:**
 - 6–8 weeks: First exam + first FVRCP vaccine (feline distemper, herpesvirus, calicivirus)
@@ -48,7 +48,7 @@ These early visits establish the immunity that protects your cat through adultho
 
 ## Young Adults (1–3 Years): Once a Year
 
-After the kitten vaccine series is complete, healthy young adult cats typically need one annual wellness visit.
+Once the kitten series and spay or neuter are done, a healthy young cat usually needs just one wellness visit a year.
 
 **What an annual visit covers:**
 - Full physical exam (weight, temperature, heart, lungs, teeth, eyes, ears, coat)
@@ -60,7 +60,7 @@ After the kitten vaccine series is complete, healthy young adult cats typically 
 - Annual wellness visit: $150–$350
 - Parasite prevention (year-round): $100–$250
 
-The biggest temptation at this stage is to skip annual visits when a cat seems healthy. But this is when vets catch early dental disease (which affects most cats by age 3), gradual weight changes, and developing conditions that are far cheaper and easier to address early.
+Indoor cats in this age range are the ones most often skipped, because they rarely look unwell. Yet the yearly exam is where slow changes show up first: a few hundred grams gained or lost, tartar and gum inflammation, or a new heart murmur — all easier and cheaper to deal with early than once a cat is visibly ill.
 
 <div class="post-cta">
   <h4>Schedule Your Cat's Next Vet Visit</h4>

@@ -97,7 +97,7 @@ Guinea pigs hide illness, so by the time a problem is obvious it's often advance
 - is **straining, squeaking or bleeding** when urinating,
 - is **hunched, puffed up and unwilling to move**.
 
-## A Note on Insurance
+## Can You Insure a Guinea Pig?
 
 Not every pet insurer covers guinea pigs, and those that do often use separate "exotic pet" policies. As with cats and dogs, conditions that showed signs before coverage started are excluded. Compare the premium against the emergency fund figures above to see whether it's worth it for your household.
 

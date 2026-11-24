@@ -98,7 +98,7 @@ Untreated Cushing's also makes other problems more likely and harder to manage, 
 
 Because these appear gradually in middle-aged and older dogs, they're often put down to age. Senior checkups are where most cases are first suspected. Our [Dog Vet Visit Scheduler](/tools/dog-vet-visit-scheduler.html) shows when they're due, and [How Often Should You Take Your Dog to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/) covers what they cost.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Cushing's?
 
 Accident-and-illness policies often cover Cushing's diagnosis, medication and monitoring, as long as the signs didn't appear before coverage began. Because it's a long-term condition of older dogs, a policy bought when the dog was young is what usually pays. Check whether your policy has annual limits that a year of monitoring could reach.
 

@@ -92,7 +92,7 @@ Giving the pill consistently — either always with food or always without — m
 
 It typically affects middle-aged dogs. Because these signs overlap with normal aging, obesity and other hormonal diseases such as [Cushing's](/blog/dog-cushings-disease-treatment-cost/), a careful workup is worth the cost. If weight gain is the main concern, our [guide to telling whether a dog is overweight](/blog/how-to-tell-if-dog-is-overweight/) is a good first step.
 
-## A Note on Insurance
+## Is Insurance Worth It for Hypothyroidism?
 
 Accident-and-illness policies usually cover hypothyroidism diagnosis, medication and rechecks if signs didn't appear before the policy started. Because the yearly cost is modest, insurance matters less here than for other chronic conditions — but a dog with hypothyroidism on its records before enrollment will usually have it excluded.
 

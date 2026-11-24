@@ -96,7 +96,7 @@ Diabetic ketoacidosis is the main way a manageable diabetes bill becomes a large
 
 Senior bloodwork usually catches diabetes before it reaches that stage. The [Cat Vet Visit Scheduler](/tools/cat-vet-visit-scheduler.html) shows when senior checkups are due, and [How Much Does a Cat Vet Visit Cost?](/blog/how-much-does-a-cat-vet-visit-cost/) covers what those visits cost.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Diabetes in Cats?
 
 Accident-and-illness pet insurance can cover diabetes, including insulin and monitoring under many policies, but only if the condition wasn't diagnosed, or showing signs, before coverage began. Diabetes is a chronic condition, so a policy bought after the diagnosis will normally exclude it. Check whether a policy limits chronic-condition coverage or treats prescription diets as excluded.
 

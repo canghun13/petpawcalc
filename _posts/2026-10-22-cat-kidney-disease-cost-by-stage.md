@@ -112,7 +112,7 @@ These are medians — half of cats lived longer — and they come from cats diag
 
 Hyperthyroidism, which is also common in older cats, can mask kidney disease by increasing blood flow through the kidneys. If your cat is being treated for both, see [Cat Hyperthyroidism Treatment Cost](/blog/cat-hyperthyroidism-treatment-cost/) for why vets often start with a reversible treatment first.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Kidney Disease?
 
 Accident-and-illness pet insurance can cover kidney disease, including rechecks, medications and fluids under many policies, but only if it wasn't diagnosed or showing signs before coverage began. Because CKD is a disease of older cats, cover taken out when a cat is young is what usually pays for it. Check whether a policy covers prescription diets, as many exclude them.
 

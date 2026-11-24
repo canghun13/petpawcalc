@@ -24,7 +24,7 @@ faqs:
     a: "Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. The record doesn't need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading \u2014 steady climb is normal, a plateau during a growth phase or any loss is worth a vet call."
   - q: "What is the weight of a small dog?"
     a: "It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So a small dog is usually somewhere between about 12 and 25 lbs \u2014 a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it."
-last_modified_at: 2026-11-09
+last_modified_at: 2026-11-24
 ---
 
 Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.
@@ -102,15 +102,13 @@ These are approximate ranges based on typical growth curves, grouped by adult si
 
 Eight and twelve weeks are the ages most owners check against, so here they are pulled out of the tables above.
 
-**How much should a puppy weigh at 8 weeks?** It depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs (0.45–1.1 kg), small 3–5 lbs (1.4–2.3 kg), medium 5–10 lbs (2.3–4.5 kg), large 8–16 lbs (3.6–7.3 kg). Eight weeks is when most puppies go home, so this is the figure people check on day one.
+**At 8 weeks**, weight depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs (0.45–1.1 kg), small 3–5 lbs (1.4–2.3 kg), medium 5–10 lbs (2.3–4.5 kg), large 8–16 lbs (3.6–7.3 kg). Eight weeks is when most puppies go home, so this is the figure people check on day one.
 
-**How much should a 12 week old puppy weigh?** Toy 1.5–3.5 lbs (0.68–1.6 kg), small 5–8 lbs (2.3–3.6 kg), medium 8–16 lbs (3.6–7.3 kg), large 14–26 lbs (6.4–12 kg). A 12 week old puppy has usually doubled or more since coming home.
+**At 12 weeks:** toy 1.5–3.5 lbs (0.68–1.6 kg), small 5–8 lbs (2.3–3.6 kg), medium 8–16 lbs (3.6–7.3 kg), large 14–26 lbs (6.4–12 kg). A 12 week old puppy has usually doubled or more since coming home.
 
 **Puppy birth weight** varies far more than either of these and is a poor predictor on its own — a large-breed puppy is typically born around 1 lb, a toy-breed puppy at only a few ounces. What matters in the first fortnight is not the starting number but that it climbs steadily every day; a newborn that is not gaining needs a vet the same day.
 
 **Large and giant breeds:** for a large breed specifically, use the large and giant tables above rather than scaling a medium-breed curve up. Large and giant breeds grow for considerably longer — 18 months rather than 12 — and pushing weight on early is actively harmful to developing joints. A large-breed puppy that looks slightly lean at six months is usually where it should be.
-
-**Is there a puppy height chart?** Not a useful one, and this is worth saying plainly. Height at the withers varies so much within a breed, and is so awkward to measure on a wriggling puppy, that veterinary practice tracks weight instead. If you want a growth measure, weigh — it is more repeatable and it is what your vet will ask for.
 
 ## How to Estimate Your Puppy's Adult Weight
 

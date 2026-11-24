@@ -91,7 +91,7 @@ Removing a fatty lump while it's small is usually cheaper and easier than removi
 - **Combine procedures.** If your dog already needs anesthesia, for example for a [dental cleaning](/blog/dog-cat-dental-cleaning-cost/), ask whether a lump can be removed at the same time.
 - **Always send removed tissue to the lab.** Skipping histopathology saves money only if the lump was harmless; if it wasn't, you need the grade to know what comes next.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Lumps and Tumors?
 
 Accident-and-illness policies usually cover diagnosis and treatment of lumps and cancer, including aspirates, surgery and lab work, if the lump wasn't noted before coverage began. A lump mentioned in your dog's records before the policy started may be excluded, so it's worth insuring before problems appear. Our [Pet Insurance Cost Estimator](/tools/pet-insurance-cost-estimator.html) gives a rough idea of premiums.
 

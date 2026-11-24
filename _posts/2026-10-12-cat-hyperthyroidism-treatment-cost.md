@@ -91,7 +91,7 @@ Hyperthyroidism is usually found one of two ways: an owner notices weight loss d
 
 Earlier diagnosis matters for cost because untreated hyperthyroidism strains the heart and raises blood pressure, and those complications add their own treatment bills. Our [Cat Vet Visit Scheduler](/tools/cat-vet-visit-scheduler.html) shows when senior checkups are due, and [How Much Does a Cat Vet Visit Cost?](/blog/how-much-does-a-cat-vet-visit-cost/) covers what those visits cost.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Hyperthyroidism?
 
 Accident-and-illness pet insurance can cover hyperthyroidism treatment, but only if the condition wasn't diagnosed, or showing signs, before coverage started. Because it is a disease of older cats, cover bought for a young cat is what usually ends up paying for it. Insuring a 12-year-old cat that is already losing weight is unlikely to help with this particular bill.
 

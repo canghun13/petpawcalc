@@ -88,7 +88,7 @@ Over-treating Cushing's disease with trilostane can suppress the adrenal glands 
 
 There's no cure, and treatment is lifelong. But according to Cornell's Riney Canine Health Center, with appropriate treatment and monitoring, **many dogs have an excellent prognosis and live normal lives**. Untreated, the disease can be fatal.
 
-## A Note on Insurance
+## Insurance and a Lifelong Monthly Injection
 
 Accident-and-illness policies often cover Addison's disease — diagnosis, emergency care and ongoing medication — as long as signs didn't appear before coverage started. Because it often starts in young adult dogs, a policy taken out in puppyhood is what usually pays. A lifelong monthly injection can add up to tens of thousands of dollars for a large dog, so check annual limits.
 

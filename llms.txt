@@ -203,9 +203,9 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How Long Are Cats Pregnant?](https://petpawcalc.com/blog/how-long-are-cats-pregnant): Feline gestation overview with week-by-week development guide. Covers signs of pregnancy, what to prepare, and how to support your cat through delivery.
 
-- [How to Tell If Your Cat Is Pregnant](https://petpawcalc.com/blog/how-to-tell-if-cat-is-pregnant): Early and later signs of cat pregnancy by week, how false pregnancy differs from dogs (less common, subtler signs), and how veterinarians confirm pregnancy (palpation, ultrasound, X-ray).
+- [How to Tell If Your Cat Is Pregnant: Early Signs and Vet Confirmation](https://petpawcalc.com/blog/how-to-tell-if-cat-is-pregnant/): Induced ovulation and pregnancy while nursing; signs by trimester across a 63–65-day pregnancy (pinking up at days 16–20); vet confirmation by palpation (~2½ weeks), ultrasound heartbeats (3–4 weeks; scans before day 21 can miss it, per Merck) and X-ray (~6 weeks, to count kittens); rare pseudopregnancy; temperature below 100°F before labor (PetMD).
 
-- [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](https://petpawcalc.com/blog/what-to-feed-pregnant-cat): Stage-by-stage diet and nutrition guide for pregnant cats. Covers calorie increases, why taurine matters more for cats than dogs, food type recommendations, and what to avoid (including raw fish).
+- [What to Feed a Pregnant Cat: Diet, Portions, and Why Cats Need More From the Start](https://petpawcalc.com/blog/what-to-feed-pregnant-cat/): Queens gain weight steadily from conception, unlike dogs (Merck); kitten/growth food with AAFCO gestation/lactation or all-life-stages claims (VCA); last-third intake +25% average and energy up to 40% above maintenance; 2–3× intake while nursing; free-choice feeding for 3–4 weeks except with one or two kittens (mastitis risk); foods and supplements to avoid.
 
 - [Signs of Cat Labor: What to Expect](https://petpawcalc.com/blog/signs-of-cat-labor): Pre-labor signs, stage-by-stage breakdown of feline labor, kitten delivery, and when to contact a vet. Covers nesting behavior, contractions, and post-birth monitoring.
 
@@ -219,7 +219,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [Dog Quality of Life: How to Assess Your Dog's Well-Being](https://petpawcalc.com/blog/dog-quality-of-life-assessment): Explains the HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad), how to score each category honestly, how to track trends over time, and what scores below 35 mean in practical terms.
 
-- [Cat Quality of Life: How to Assess Your Cat's Well-Being](https://petpawcalc.com/blog/cat-quality-of-life-assessment): Applies the same HHHHHMM Scale to cats, with cat-specific guidance on why quality-of-life assessment matters even more for cats (they mask pain and illness far better than dogs). Covers cat-specific signs for each category — reduced grooming, reluctance to jump, hiding — and how to use scores over time.
+- [Cat Quality of Life: How to Read the Signs Cats Hide, and How to Score Them](https://petpawcalc.com/blog/cat-quality-of-life-assessment/): Behavioral signs of pain in cats (FVMA; arthritis signs in up to 92% of cats), the Feline Grimace Scale (five facial features scored 0–2, ≥4/10 indicates pain), a cat-specific HHHHHMM table, treatable causes of low scores (arthritis, dental pain, kidney dehydration, appetite drugs Mirataz and Elura, hormone disorders, home changes), hepatic lipidosis risk, logging and end-of-life decisions.
 
 - [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Three at-home body condition checks for cats (rib test, waist check, belly check), explains the primordial pouch and how it differs from excess fat, the 1-9 BCS scale, and a critical warning against crash dieting cats due to hepatic lipidosis risk.
 

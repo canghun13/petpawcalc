@@ -19,12 +19,8 @@ faqs:
     a: "Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, other pets, or through window screens, and a single flea can start an infestation. The risk is lower than for outdoor cats, but not zero — many vets suggest a lighter-duty or lower-frequency product for strictly indoor cats rather than skipping prevention entirely."
   - q: "What happens if I skip flea and tick prevention for a few months?"
     a: "The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use."
-  - q: "How much is flea and tick prevention for dogs?"
-    a: "Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. Flea-only products are rare in the US market; nearly all modern products cover fleas and ticks together at the same price."
   - q: "What does an annual tick prevention plan cost?"
     a: "The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price — roughly $180–$300 a year for a mid-sized dog on a monthly product, or about $85–$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option."
-  - q: "What is the average cost of flea and tick prevention for dogs?"
-    a: "The average cost of flea and tick prevention for dogs works out to roughly $180–$300 per year for a mid-sized dog on a mainstream monthly product, or about $15–$25 per month. Collars pull the average down to around $85–$110 per year; combo products that also cover heartworm push it up toward $265–$360. Weight is the single biggest variable — the same product can cost 50% more for a large dog than a small one."
   - q: "How much does it cost to get rid of fleas?"
     a: "Once fleas are in your home, budget $100–$300 for a moderate infestation, covering fast-acting treatment for every pet plus home sprays, and past $600 for a severe case that needs professional extermination or a vet visit for flea allergy dermatitis. Professional yard treatment adds roughly $70–$200 per application. It is almost always more than a full year of prevention would have cost."
   - q: "How much does a flea and tick shot for dogs cost?"
@@ -148,14 +144,8 @@ Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, othe
 **What happens if I skip flea and tick prevention for a few months?**
 The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use.
 
-**How much is flea and tick prevention for dogs?**
-Expect $10–$30 per month depending on product type and your dog's weight — basic topicals run cheaper, combo products (flea/tick plus heartworm) cost more. Flea-only products are rare in the US market; nearly all modern products cover fleas and ticks together at the same price.
-
 **What does an annual tick prevention plan cost?**
 The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price — roughly $180–$300 a year for a mid-sized dog on a monthly product, or about $85–$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option.
-
-**What is the average cost of flea and tick prevention for dogs?**
-The average cost of flea and tick prevention for dogs works out to roughly $180–$300 per year for a mid-sized dog on a mainstream monthly product, or about $15–$25 per month. Collars pull the average down to around $85–$110 per year; combo products that also cover heartworm push it up toward $265–$360. Weight is the single biggest variable — the same product can cost 50% more for a large dog than a small one.
 
 **How much does it cost to get rid of fleas?**
 Once fleas are in your home, budget $100–$300 for a moderate infestation, covering fast-acting treatment for every pet plus home sprays, and past $600 for a severe case that needs professional extermination or a vet visit for flea allergy dermatitis. Professional yard treatment adds roughly $70–$200 per application. It is almost always more than a full year of prevention would have cost.
@@ -163,7 +153,6 @@ Once fleas are in your home, budget $100–$300 for a moderate infestation, cove
 **How much does a flea and tick shot for dogs cost?**
 The FDA approved the first once-yearly injectable flea and tick preventive for dogs (fluralaner extended-release, sold as Bravecto Quantum) in July 2025. Reported pricing generally runs about $150–$250 per year for a mid-sized dog and higher for large dogs, plus a wellness exam fee if your dog is not current. It must be given by a veterinarian, is approved only for dogs 6 months and older, and is not approved for cats. Because it cannot be withdrawn once injected, discuss it with your vet first if your dog has any history of seizures.
 
-*This article is for informational purposes only. Always consult your veterinarian to choose the right product for your pet's specific risk factors, health history, and region.*
 
 ## Related Articles
 

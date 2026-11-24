@@ -86,7 +86,7 @@ Medication works best alongside changes at home, and most of these cost very lit
 - **Warm, padded beds** at floor level.
 - **Food and water** where your cat doesn't have to jump to reach them.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Solensia?
 
 Many accident-and-illness policies cover prescription arthritis medication, including monthly injections, if the arthritis wasn't diagnosed or showing signs before coverage started. Because arthritis is so common in older cats, insuring a young cat is what usually pays for it. Check whether your policy also reimburses the exam fee charged with each injection.
 

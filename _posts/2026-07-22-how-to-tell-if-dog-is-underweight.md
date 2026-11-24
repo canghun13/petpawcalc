@@ -21,8 +21,6 @@ faqs:
     a: "Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass."
   - q: "How do I tell if a puppy is underweight?"
     a: "Use the same rib-and-waist check as an adult dog, with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable signal is the growth curve, not the silhouette — weigh weekly and confirm the number is still climbing, and compare against a breed-size growth chart rather than other puppies at the park. A puppy who has stopped gaining or is losing weight needs a vet quickly; puppies have very little reserve, and intestinal parasites — the most common cause — are easily treated once diagnosed."
-  - q: "How can you tell if your dog is too thin?"
-    a: "A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. Borderline cases are best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time."
   - q: "How can you tell if a greyhound is underweight?"
     a: "Judge muscle and energy rather than bone, because visible ribs are normal for the breed. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds — they simply look leaner at a healthy body condition than a Labrador does."
   - q: "How do I check a long-haired dog's weight?"
@@ -121,9 +119,6 @@ Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a natu
 **How do I tell if a puppy is underweight?**
 Use the same rib-and-waist check as an adult dog, with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable signal is the growth curve, not the silhouette — weigh weekly and confirm the number is still climbing, and compare against a breed-size growth chart rather than other puppies at the park. A puppy who has stopped gaining or is losing weight needs a vet quickly; puppies have very little reserve, and intestinal parasites — the most common cause — are easily treated once diagnosed.
 
-**How can you tell if your dog is too thin?**
-A dog is too thin if the ribs, spine, and hip bones are individually visible from a distance rather than just easy to feel, there is no fat cover over the ribs at all, and the tuck behind the ribcage is severe rather than gentle. Borderline cases are best settled with a body condition score at your vet's office — it takes under a minute at a routine visit and gives you a number to track against next time.
-
 **How can you tell if a greyhound is underweight?**
 Judge muscle and energy rather than bone, because visible ribs are normal for the breed. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds — they simply look leaner at a healthy body condition than a Labrador does.
 
@@ -132,7 +127,6 @@ Use your hands rather than your eyes, because thick and double coats can hide on
 
 **What does it mean if my dog is slightly underweight?**
 A slightly underweight dog has ribs that are easy to feel with almost no fat covering and possibly faintly visible, a pronounced waist, but intact muscle and normal behaviour — roughly a 3 on the 9-point body condition scale where 4 to 5 is ideal. That is worth correcting with a vet-guided increase in calories and a recheck in a few weeks. It is a different situation from a dog whose spine, ribs and hip bones are all prominent alongside visible muscle loss, which needs to be seen rather than simply fed more.
-
 
 ## Related Articles
 

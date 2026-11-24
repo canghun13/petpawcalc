@@ -101,7 +101,7 @@ Before compounded GS-441524 became available, many US owners bought it from unre
 - **Ask about remdesivir versus oral GS-441524.** The Bova guidance notes that oral GS-441524 is cheaper than remdesivir for the cat's weight; injections are mainly used for cats too sick to take oral medication at first.
 - **Ask which tests matter at each recheck.** The guidance suggests bloodwork "as cost allows" at some visits.
 
-## A Note on Insurance
+## Does Pet Insurance Cover FIP and Compounded Drugs?
 
 Accident-and-illness policies may cover FIP diagnosis and treatment if signs didn't appear before coverage began. Because compounded medications are involved, check whether your policy covers compounded drugs, and whether a waiting period applies — our [Pet Insurance Waiting Period Tracker](/tools/pet-insurance-waiting-period-tracker.html) can help with the dates.
 

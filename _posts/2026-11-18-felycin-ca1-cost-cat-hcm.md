@@ -100,7 +100,7 @@ That's a decision to make with your vet, ideally a cardiologist. Things worth as
 
 For some owners, a weekly tablet at $54–$91 a month is a reasonable bet on an early-stage disease with no other approved option. Others may prefer monitoring alone until more evidence is in. Both are reasonable positions while the larger study is running.
 
-## A Note on Insurance
+## Does Pet Insurance Cover HCM?
 
 Accident-and-illness policies may cover HCM diagnosis and treatment if it wasn't noted before coverage began. A murmur in your cat's records before enrollment can lead to heart conditions being excluded, so insuring young cats early matters — especially breeds linked to HCM. Our [Pet Insurance Cost Estimator](/tools/pet-insurance-cost-estimator.html) gives a rough idea of premiums.
 

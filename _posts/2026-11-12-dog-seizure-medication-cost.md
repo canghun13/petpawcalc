@@ -94,7 +94,7 @@ The specialist figures are from the University of Wisconsin's neurology service 
 - **Keep a seizure diary** — date, time, length and what happened before and after. It helps your vet adjust treatment without extra tests.
 - **Don't miss doses or stop a drug on your own.** Seizure protection fades as each dose wears off, so missed doses risk breakthrough seizures — and an emergency bill.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Epilepsy?
 
 Accident-and-illness policies often cover epilepsy diagnosis, medication and monitoring if seizures didn't happen before coverage began. A single seizure in your dog's records before enrollment can lead to an exclusion, so insuring young dogs early matters. Our [Pet Insurance Cost Estimator](/tools/pet-insurance-cost-estimator.html) gives a rough idea of premiums.
 

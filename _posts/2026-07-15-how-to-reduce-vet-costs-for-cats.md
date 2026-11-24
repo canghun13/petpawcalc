@@ -26,7 +26,7 @@ Here's what actually works.
 
 ## 1. Get Pet Insurance While Your Cat Is Young and Healthy
 
-This is the single highest-leverage financial decision most cat owners can make — and, as with dogs, the one most people make too late.
+For cats, insurance is easiest to justify early: many of the expensive feline conditions — kidney disease, hyperthyroidism, diabetes — tend to appear later in life, and anything noted in your cat's records before you enroll can be excluded.
 
 Cat insurance is meaningfully cheaper than dog insurance — averaging around **$28–$32/month** for accident and illness coverage nationally, compared to $55–$62/month for dogs. That lower entry cost is one reason it's worth considering even for a cat who seems perfectly healthy and mostly stays indoors.
 
@@ -89,7 +89,7 @@ This isn't adversarial — it's normal, and a good vet will help you prioritize 
 
 ## 8. Compare Prices for Non-Emergency Procedures
 
-For planned procedures — spay/neuter, dental cleaning, mass removal — calling two or three practices for price comparisons is reasonable and common. Prices for the same procedure can vary 30–50% between practices in the same area.
+For planned work such as a dental cleaning or spay, it's normal to ask two or three clinics for an itemised estimate. Compare what's included — anesthesia monitoring, pre-anesthetic bloodwork, dental X-rays, pain relief — not just the total.
 
 Veterinary school teaching hospitals often offer procedures at reduced cost with thorough workups, and can be worth the drive for anything complex or specialized.
 

@@ -102,7 +102,7 @@ If diabetes goes untreated or becomes badly uncontrolled, the body starts breaki
 
 Treatment means hospital care, usually for **at least two to four days** of intensive treatment, and the bill commonly runs into the **thousands of dollars** — often as much as a year or more of routine management. With prompt treatment, roughly **70–85% of dogs survive**. Keeping up with insulin and rechecks is the cheapest way to avoid it.
 
-## A Note on Insurance
+## Does Pet Insurance Cover Diabetes in Dogs?
 
 Accident-and-illness policies often cover diabetes, including insulin, monitoring and complications such as cataracts, if the condition wasn't diagnosed or showing signs before coverage started. Because it's a long-term condition, cover bought after diagnosis will normally exclude it. Some policies exclude prescription diets or cap annual payouts, so check the details.
 

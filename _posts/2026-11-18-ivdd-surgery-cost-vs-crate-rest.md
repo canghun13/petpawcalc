@@ -105,7 +105,7 @@ According to Clinician's Brief, **chondrodystrophic breeds** — dogs with short
 
 Surgery fixes the disc that ruptured, not the others. In a review summarised by Clinician's Brief, about **6%** of dogs had another problem after surgical decompression; **Dachshunds recurred more often (10% vs 3%)**, and recurrence may approach 20%. Recurrence may be more common after conservative treatment.
 
-## A Note on Insurance
+## Insurance for High-Risk Breeds
 
 IVDD is a classic reason owners are glad they insured early. Accident-and-illness policies often cover diagnosis, surgery and rehab if back problems weren't noted before coverage began — but a single episode of back pain in your dog's records can lead to an exclusion, and some policies have longer waiting periods for orthopedic conditions. For a high-risk breed, check those terms before you need them. Our [Pet Insurance Waiting Period Tracker](/tools/pet-insurance-waiting-period-tracker.html) and [Pet Insurance Cost Estimator](/tools/pet-insurance-cost-estimator.html) can help.
 

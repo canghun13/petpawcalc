@@ -115,7 +115,7 @@
     <div class="post-header">
       <div class="post-tag">{{ page.category }}</div>
       <h1>{{ page.title }}</h1>
-      <div class="post-meta">By <a href="/about.html">PetPawCalc Team</a> · {{ page.date | date: "%B %d, %Y" }} · {{ page.read_time }} min read · <a href="/editorial-policy.html">How we write</a></div>
+      <div class="post-meta">By <a href="/about.html">PetPawCalc Team</a> · {{ page.date | date: "%B %d, %Y" }}{% if page.last_modified_at and page.last_modified_at != page.date %} · Updated {{ page.last_modified_at | date: "%B %d, %Y" }}{% endif %} · {{ page.read_time }} min read · <a href="/editorial-policy.html">How we write</a></div>
     </div>
     <div class="post-body">
       {{ content }}

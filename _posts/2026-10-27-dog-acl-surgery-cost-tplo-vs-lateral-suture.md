@@ -86,7 +86,7 @@ If you and your vet choose non-surgical management, the plan usually includes:
 
 The [Dog Mobility & Arthritis Screening](/tools/dog-mobility-arthritis-screening.html) tool gives you a consistent way to track how your dog is doing.
 
-## A Note on Insurance
+## Insurance and the Second Knee
 
 Accident-and-illness policies often cover cruciate surgery, but torn cruciate ligaments are commonly treated as a **bilateral condition**. Most policies won't cover a bilateral condition diagnosed before coverage began, so a dog that tore one knee before you bought the policy may be excluded for the other knee too. Some insurers also set longer waiting periods for orthopedic problems. Our [Pet Insurance Waiting Period Tracker](/tools/pet-insurance-waiting-period-tracker.html) shows when coverage actually starts.
 
