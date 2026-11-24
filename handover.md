@@ -3487,3 +3487,27 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 
 **페이지 수**: tools 53 + posts **67** + checklists 16 = **136**.
 **다음 확인**: 코어 업데이트 종료일 + 종료 1주 뒤 비교, 고양이 저체중 순위, 발견됨-미색인 9개 크롤 여부.
+
+### 세션 BP — 애드센스 "가치 없는 콘텐츠" 재거절 후 전체 점검 (11/24)
+
+**점검 방법**: 전 페이지(포스트 67·도구 53·체크리스트 16·기본 페이지) 대상으로 ① 분량 ② 페이지 쌍 유사도(개/고양이 단어 정규화 후 5-gram·문단 비교) ③ 페이지 간 반복 문장·소제목 ④ 페이지 내 표현만 다른 FAQ ⑤ 본문 속 검색어형 소제목/굵은 질문 ⑥ 출처 표기 유무 ⑦ 템플릿(제목·메타·광고 코드·사이트맵·robots·ads.txt).
+
+**찾은 문제와 조치 (커밋 577e435)**:
+1. **개→고양이 복제 페이지(가장 큰 문제)**: 고양이판이 개판 문단을 종만 바꿔 쓴 상태. 고양이 QoL 포스트 55문단 중 31개 복제, QoL 계산기 18/44, 고양이 임신 징후 15/36, 임신묘 급여 8/43, 고양이 진료 주기 8/35, 접종·진료 스케줄러 6–7.
+   - **고양이 QoL 포스트 전면 재작성**: FVMA 통증 징후 표, 관절염 징후 최대 92%, Feline Grimace Scale(몬트리올대, 5요소 0–2점, 4/10 이상 통증), 고양이 전용 HHHHHMM 표, 점수 올릴 수 있는 원인(관절·치아·신장 탈수·Mirataz·Elura·호르몬·환경), 지방간(Cornell).
+   - **고양이 QoL 계산기**: 복제 문단 6개 교체 + 그리메이스 스케일 문단 추가.
+   - **고양이 임신 징후 전면 재작성**(PetMD 2024·Merck): 미확인 내용(입덧·애교 증가·체중 2–4lb·릴랙신·12주 단계표) 삭제.
+   - **임신묘 급여 전면 재작성**: 기존 글은 개 패턴 복제라 **사실 오류**(1–3주 변화 없음·4주부터 키튼 사료 → 고양이는 수정 직후부터 체중 증가, Merck)와 근거 없는 주차별 % 표, 같은 질문 3개 반복 FAQ가 있었음. Merck·VCA(캐나다 수의영양학회) 기준으로 교체.
+   - 고양이 진료 주기 포스트·고양이 접종 계산기·진료 스케줄러·고양이 진료비 절약 포스트: 복제 문단을 고양이 고유 내용으로 교체(미확인 "30–50% 가격차", "3세까지 대부분 치과질환" 삭제).
+   - 재측정: 고양이 QoL·임신·급여 쌍은 복제 문단 0, 남은 건 UI 문구·면책 문구 수준.
+2. **검색어 겨냥 문구**: 키튼 차트 본문의 "How much should a X kitten weigh?" 굵은 질문 13개 → 단계별 소제목 4개(출생–4주/8–12주/4–6개월/7–12개월)로 통합, "How big와 how much는 같은 질문" 문단 삭제. 퍼피 차트 굵은 질문 2개 정리 + "Is there a puppy height chart?" 삭제.
+   - FAQ 표현 변형 제거 12개: dental(2), flea(2), 개 저체중(1), 개 임신(3), 시니어견 급여(1), 키튼 차트(3 — Maine Coon predictor·calculator·how much should my kitten weigh).
+3. **키튼 차트 수치 출처화**: 출생 90–110g·하루 10–15g·약 2주에 2배(Cats Protection), 2–4주 체중 ASPCA 표로 정정(기존 "1주에 2배"는 틀림). 본문에 출처 문장, sources 항목 추가.
+4. **템플릿**: 제목에 브랜드 중복(… — PetPawCalc — PetPawCalc) 9개 수정(블로그 목록·404·면책·약관·개인정보·About·Contact·QoL 계산기 2). 포스트 바이라인에 "Updated 날짜" 표시 추가. "A Note on Insurance" 동일 소제목 16개 → 주제별 질문형 소제목.
+5. 이상 없음: 광고 코드 4개 레이아웃 모두, ads.txt, robots, 사이트맵(handover 제외), About/Contact/Privacy/Terms/Disclaimer/Editorial/Sources, 홈 구성, 깨진 링크 0.
+
+**남은 핵심 과제(다음 세션들, 애드센스 재신청 전 권장)**: **출처 표기가 전혀 없는 초기 포스트 약 35개**(5–9월 작성, sources.html에도 없음). 최근 글은 모두 출처가 있어서 대비가 큼. 일부는 구글이 이미 "크롤링됨-미색인"으로 판단(how-long-are-dogs-pregnant, dog-age-human-years, how-much-to-feed-a-dog, how-to-tell-if-dog-is-overweight, how-much-should-senior-dog-eat, what-to-feed-pregnant-dog, pet-euthanasia-cost, cat/dog vet visit cost, why-is-my-cat-always-hungry).
+- 방법: 글마다 핵심 수치를 검증 가능한 출처(AAHA·WSAVA·AAFP·Merck·Cornell·VCA·ASPCA·대학병원)로 확인 → 틀린 건 정정, 확인 안 되는 건 삭제, 본문에 출처 문장 + sources.html 항목 추가. 복제 의심 개 원본(임신 급여 주차별 % 표 등)도 같이 검증.
+- 우선순위(트래픽·미색인 순): puppy-weight-chart, how-often-vet-visits-cat, how-much-does-a-cat-vet-visit-cost, flea-tick-prevention-cost, how-much-should-senior-cat-eat, signs-of-cat-labor, what-to-feed-pregnant-dog, how-to-tell-if-dog-is-pregnant, how-long-are-dogs/cats-pregnant, dog-quality-of-life-assessment, how-much-does-a-vet-visit-cost, how-to-tell-if-dog-is-underweight, true-cost-cat-vs-dog, annual-cost-of-owning-a-dog, dog-age-human-years, how-much-to-feed-a-dog, how-to-tell-if-dog/cat-is-overweight, why-is-my-cat-always-hungry, dental cleaning, euthanasia, vaccination schedule, spay-neuter, regression 2개, stool chart, signs-of-dog-labor, reduce-vet-costs 2개, how-much-should-a-cat-weigh.
+- 한 세션 5–8개씩, **신규 확장은 이 작업 동안 주 1개 이하로 줄이고 이쪽 우선** 권장(사용자 확인 필요 — 전략 변경 아님, 순서 조정).
+- 재신청 시점: 위 작업 대부분 끝난 뒤.
