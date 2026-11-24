@@ -79,7 +79,7 @@ See your vet if your senior:
 - drinks or urinates noticeably more,
 - has trouble eating, drops food or chews on one side.
 
-Weight loss in an older dog is often the first sign of an illness rather than a feeding problem. VCA notes vets often recommend **twice-yearly** checkups for senior dogs — see [How Often Should Dogs Go to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/).
+Unexplained weight loss in an older dog should be checked by a vet before you simply feed more. VCA notes vets often recommend **twice-yearly** checkups for senior dogs — see [How Often Should Dogs Go to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/).
 
 ## Frequently Asked Questions
 
