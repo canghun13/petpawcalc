@@ -3511,3 +3511,17 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 - 우선순위(트래픽·미색인 순): puppy-weight-chart, how-often-vet-visits-cat, how-much-does-a-cat-vet-visit-cost, flea-tick-prevention-cost, how-much-should-senior-cat-eat, signs-of-cat-labor, what-to-feed-pregnant-dog, how-to-tell-if-dog-is-pregnant, how-long-are-dogs/cats-pregnant, dog-quality-of-life-assessment, how-much-does-a-vet-visit-cost, how-to-tell-if-dog-is-underweight, true-cost-cat-vs-dog, annual-cost-of-owning-a-dog, dog-age-human-years, how-much-to-feed-a-dog, how-to-tell-if-dog/cat-is-overweight, why-is-my-cat-always-hungry, dental cleaning, euthanasia, vaccination schedule, spay-neuter, regression 2개, stool chart, signs-of-dog-labor, reduce-vet-costs 2개, how-much-should-a-cat-weigh.
 - 한 세션 5–8개씩, **신규 확장은 이 작업 동안 주 1개 이하로 줄이고 이쪽 우선** 권장(사용자 확인 필요 — 전략 변경 아님, 순서 조정).
 - 재신청 시점: 위 작업 대부분 끝난 뒤.
+
+### 세션 BQ — 출처 없는 초기 글 전체 수정 (11/24, 사용자 지시: "전부 다 고쳐라")
+
+**완료·배포**
+- **1묶음 임신·출산 6개**(13ec822): how-long-are-dogs-pregnant, how-to-tell-if-dog-is-pregnant, signs-of-dog-labor, how-long-are-cats-pregnant, signs-of-cat-labor, what-to-feed-pregnant-dog 전면 재작성(Cornell·Merck·VCA·AKC). 사실 오류 정정(착상 10–12일, ">4시간 간격", 급여 2배 등).
+- **2묶음 체중·급여 9개**(45cc77d): 개 과체중(APOP 2022 59%·AAHA 2014 BCS 1점=10%·주 1–2%·Kealy 2002), 고양이 과체중(61%·WSAVA·주 0.5–2%), 개 저체중, how-much-to-feed-a-dog(Merck 배수표·칼로리표 재계산), 시니어견·시니어묘 급여(VCA·AAHA 2023), how-much-should-a-cat-weigh(APOP 품종표), why-is-my-cat-always-hungry, **puppy-weight-chart 전면 재작성**(PetMD 2025 성장 종료 나이·성견 체중 규칙, Merck 주간 증가량 2–4g/일/kg).
+- **도구 오류 발견·수정**: Dog Weight Calculator가 "현재체중÷주령×성숙주령" 직선식을 써서 성견 체중을 크게 과대 추정(소형견 8주 기준 ×5, PetMD 규칙은 ×3). → PetMD 규칙(토이·소형 6주×4/8주×3, 중·대형 4개월×2, 초대형은 규칙 없음 안내) + 주간 증가량 모드 + BCS 이상체중 모드로 재작성. 성견 "크기별 범위 판정" 모드는 순환논리라 삭제.
+- **e87bbd3**: 키튼 차트 재작성(ASPCA 1–8주 표 정확값, ASPCA "월 1파운드", VCA 30주 80%·40주 성체 크기, APOP 대형묘 표 — 기존 NFC "~3년"은 APOP "최대 5년"과 충돌해 정정). Cat Weight Calculator: 키튼 직선 예측·키워드 나열 메타 삭제, APOP 12품종×성별 비교 + BCS 이상체중 모드. Kitten Age Estimator 체중 구간을 ASPCA 표로 교체.
+- 검색어 겨냥 FAQ 변형 추가 삭제 15개(비용·치과·안락사·벼룩·리터·진료주기), 검색 메타 문장 4개 정리.
+
+**남음 (WebFetch 월 한도 걸려 14:10 KST 이후 재개)**
+- 3묶음 비용 10개: annual-cost-of-owning-a-dog, true-cost-cat-vs-dog, how-much-does-a-vet-visit-cost, how-much-does-a-cat-vet-visit-cost, reduce-vet-costs dogs/cats, dental-cleaning, euthanasia, spay-neuter, flea-tick. 출처 후보: Rover COPP 2026(rover.com/blog/press-release/copp-2026/), ASPCA pet-care-costs, NAPHIA SOI 2026 하이라이트 PDF(평균 보험료), APPA 2026 개 보고서, AAHA 2019 치과 가이드라인, AAHA 2019 견 생애단계(크기별 중성화 시기), CAPC.
+- 4묶음 8개: how-often-vet-visits dog/cat, puppy-kitten-vaccination-schedule, potty/litter regression, stool chart, dog-quality-of-life-assessment, dog-age-human-years.
+- 끝나면 재신청 시점 판단(최소 전부 배포 + 재크롤 시간).

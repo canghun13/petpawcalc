@@ -19,12 +19,6 @@ faqs:
     a: "Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, other pets, or through window screens, and a single flea can start an infestation. The risk is lower than for outdoor cats, but not zero — many vets suggest a lighter-duty or lower-frequency product for strictly indoor cats rather than skipping prevention entirely."
   - q: "What happens if I skip flea and tick prevention for a few months?"
     a: "The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use."
-  - q: "What does an annual tick prevention plan cost?"
-    a: "The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price — roughly $180–$300 a year for a mid-sized dog on a monthly product, or about $85–$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option."
-  - q: "How much does it cost to get rid of fleas?"
-    a: "Once fleas are in your home, budget $100–$300 for a moderate infestation, covering fast-acting treatment for every pet plus home sprays, and past $600 for a severe case that needs professional extermination or a vet visit for flea allergy dermatitis. Professional yard treatment adds roughly $70–$200 per application. It is almost always more than a full year of prevention would have cost."
-  - q: "How much does a flea and tick shot for dogs cost?"
-    a: "The FDA approved the first once-yearly injectable flea and tick preventive for dogs (fluralaner extended-release, sold as Bravecto Quantum) in July 2025. Reported pricing generally runs about $150–$250 per year for a mid-sized dog and higher for large dogs, plus a wellness exam fee if your dog is not current. It must be given by a veterinarian, is approved only for dogs 6 months and older, and is not approved for cats. Because it cannot be withdrawn once injected, discuss it with your vet first if your dog has any history of seizures."
 last_modified_at: 2026-10-20
 ---
 
@@ -82,7 +76,7 @@ In nearly every scenario, a full year of even the most expensive prevention tier
 
 ## The Newer Option: A Once-Yearly Flea and Tick Shot for Dogs
 
-Until recently, "flea and tick shot for dogs" was a question with no real answer in the US — there was no injectable option, and people asking were usually thinking of the heartworm injection instead. That changed in July 2025, when the FDA approved the first long-acting injectable flea and tick preventive for dogs: fluralaner extended-release injectable suspension, sold as Bravecto Quantum. A single vet-administered injection covers fleas and most tick species for 12 months (8 months for lone star ticks). It is approved for dogs and puppies 6 months and older, and is not approved for cats.
+Until 2025 there was no injectable flea and tick preventive for dogs in the US; the long-acting injections vets gave were for heartworm. That changed in July 2025, when the FDA approved the first long-acting injectable flea and tick preventive for dogs: fluralaner extended-release injectable suspension, sold as Bravecto Quantum. A single vet-administered injection covers fleas and most tick species for 12 months (8 months for lone star ticks). It is approved for dogs and puppies 6 months and older, and is not approved for cats.
 
 **What does the flea and tick shot for dogs cost?** Because it is administered in-clinic and dosed by weight, pricing varies more than shelf products. Reported figures generally land around **$150–$250 per year for a mid-sized dog**, with larger dogs at the top of that range or above, and some clinics quoting up to $400 for the heaviest weight bands. A required wellness exam, if your dog is not already current, adds roughly $45–$75 on top. Compared against twelve months of a premium chewable at full vet-clinic pricing, the annual math is often close to a wash or modestly cheaper — the bigger practical difference is that there are no monthly doses to forget.
 
@@ -143,16 +137,6 @@ Most vets still recommend it. Fleas commonly hitchhike indoors on clothing, othe
 
 **What happens if I skip flea and tick prevention for a few months?**
 The risk isn't guaranteed but it compounds — a single flea bite can lead to a home infestation that takes months to fully eliminate, and a single tick bite in endemic areas can transmit Lyme disease, ehrlichiosis, or anaplasmosis. Mosquito-borne heartworm risk also doesn't pause in cooler months in many climates, which is why most vets recommend year-round coverage rather than seasonal use.
-
-**What does an annual tick prevention plan cost?**
-The cost of an annual tick prevention plan is the same figure as flea prevention in practice, because nearly every modern product covers both at one price — roughly $180–$300 a year for a mid-sized dog on a monthly product, or about $85–$110 on a collar. Tick-only products exist but are rare and rarely cheaper. If you are buying a year at a time, ask whether your vet or retailer discounts a 12-month supply; annual packs are frequently cheaper per dose than buying three months at a time, and the once-yearly injection discussed above is a third option.
-
-**How much does it cost to get rid of fleas?**
-Once fleas are in your home, budget $100–$300 for a moderate infestation, covering fast-acting treatment for every pet plus home sprays, and past $600 for a severe case that needs professional extermination or a vet visit for flea allergy dermatitis. Professional yard treatment adds roughly $70–$200 per application. It is almost always more than a full year of prevention would have cost.
-
-**How much does a flea and tick shot for dogs cost?**
-The FDA approved the first once-yearly injectable flea and tick preventive for dogs (fluralaner extended-release, sold as Bravecto Quantum) in July 2025. Reported pricing generally runs about $150–$250 per year for a mid-sized dog and higher for large dogs, plus a wellness exam fee if your dog is not current. It must be given by a veterinarian, is approved only for dogs 6 months and older, and is not approved for cats. Because it cannot be withdrawn once injected, discuss it with your vet first if your dog has any history of seizures.
-
 
 ## Related Articles
 

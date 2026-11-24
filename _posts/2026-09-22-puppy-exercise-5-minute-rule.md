@@ -61,7 +61,7 @@ None of the right-hand column is catastrophic in small doses. The point is that 
 
 ## Why This Isn't a Calculator
 
-People search for a puppy exercise calculator, and it would be easy to build one: enter the age, multiply by five, print the answer. We deliberately haven't.
+It would be easy to build a puppy exercise calculator: enter the age, multiply by five, print the answer. We deliberately haven't.
 
 A calculator would turn a rule of thumb into something that looks precise, and the precision would be false. It cannot know whether those fifteen minutes are spent sniffing through long grass or sprinting after a ball on concrete — and that difference matters more than the number. It would also give the same answer for a Chihuahua and a Great Dane, whose joints face completely different loads and who finish growing a year apart.
 

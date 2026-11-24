@@ -17,8 +17,6 @@ faqs:
     a: "Generally, small mixed-breed dogs with no predisposition to hereditary conditions. Lower food costs, lower medication costs (dosed by weight), and lower boarding fees make small breeds significantly cheaper than large ones. Breeds with known health issues — French Bulldogs, English Bulldogs, Cavalier King Charles Spaniels, Dachshunds — tend to generate higher lifetime vet costs regardless of size."
   - q: "How much should I save for a dog emergency fund?"
     a: "At minimum, $1,000–$2,000. This covers the majority of urgent care situations without insurance. Without insurance, a $3,000–$5,000 fund is more realistic for handling serious emergencies without financial crisis. Even with insurance, a smaller fund ($500–$1,000) covers deductibles and the gap between treatment and reimbursement."
-  - q: "How much does owning a dog cost per year?"
-    a: "Mostly it depends on size. Using the by-size table above: small dogs run about $1,000–$2,200 a year, medium $1,350–$3,000, large $1,700–$3,600, and giant breeds $2,100–$4,800+, covering food, routine vet care and grooming. Add insurance, boarding and any emergency care on top — which is why the full category breakdown lands at $1,400–$6,450+. Year one always costs more because of the puppy vaccine series, spay or neuter, and one-time setup."
 last_modified_at: 2026-10-20
 ---
 
@@ -157,11 +155,6 @@ Generally, small mixed-breed dogs with no predisposition to hereditary condition
 
 **How much should I save for a dog emergency fund?**
 At minimum, $1,000–$2,000. This covers the majority of urgent care situations without insurance. Without insurance, a $3,000–$5,000 fund is more realistic for handling serious emergencies without financial crisis. Even with insurance, a smaller fund ($500–$1,000) covers deductibles and the gap between treatment and reimbursement.
-
-**How much does owning a dog cost per year?**
-Mostly it depends on size. Using the by-size table above: small dogs run about $1,000–$2,200 a year, medium $1,350–$3,000, large $1,700–$3,600, and giant breeds $2,100–$4,800+, covering food, routine vet care and grooming. Add insurance, boarding and any emergency care on top — which is why the full category breakdown lands at $1,400–$6,450+. Year one always costs more because of the puppy vaccine series, spay or neuter, and one-time setup.
-
-*Cost estimates are based on US national averages as of 2026. Your actual costs will vary depending on location, breed, and individual pet needs. Always consult your veterinarian for personalized guidance.*
 
 ## Related Articles
 

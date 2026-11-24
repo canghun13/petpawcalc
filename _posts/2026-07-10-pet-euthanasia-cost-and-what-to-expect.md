@@ -17,10 +17,6 @@ faqs:
     a: "Veterinarians use an injectable medication that first causes unconsciousness, then gently stops the heart. It's quick and painless. Your pet may take a deep breath or have muscle movement afterward — these are reflexes, not signs of distress."
   - q: "Can I be with my pet during euthanasia?"
     a: "Most veterinary clinics welcome owners to be present, and many encourage it. If being present feels too difficult, that's a completely valid choice too — there's no wrong answer, and your vet's team can talk through what feels right for you."
-  - q: "How much does cat euthanasia cost?"
-    a: "Cat euthanasia cost at a veterinary clinic typically runs $50–$300, with average pricing often landing a bit lower than for dogs — commonly $75–$150 — since cats need less sedative and a shorter procedure. The cost of euthanizing a cat at home instead of in-clinic is higher, typically $250–$600."
-  - q: "Does euthanasia cost differ between dogs and cats?"
-    a: "Only slightly. The in-clinic procedure itself, before any cremation or burial, typically falls between $50 and $300 nationally for either species. Dog owners tend to report a slightly higher average than cat owners, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly. Setting matters far more than species — an in-home appointment runs roughly $250–$750 for either."
 last_modified_at: 2026-10-20
 ---
 
@@ -96,12 +92,6 @@ Veterinarians use an injectable medication that first causes unconsciousness, th
 
 **Can I be with my pet during euthanasia?**
 Most veterinary clinics welcome owners to be present, and many encourage it. If being present feels too difficult, that's a completely valid choice too — there's no wrong answer, and your vet's team can talk through what feels right for you.
-
-**How much does cat euthanasia cost?**
-Cat euthanasia cost at a veterinary clinic typically runs $50–$300, with average pricing often landing a bit lower than for dogs — commonly $75–$150 — since cats need less sedative and a shorter procedure. The cost of euthanizing a cat at home instead of in-clinic is higher, typically $250–$600.
-
-**Does euthanasia cost differ between dogs and cats?**
-Only slightly. The in-clinic procedure itself, before any cremation or burial, typically falls between $50 and $300 nationally for either species. Dog owners tend to report a slightly higher average than cat owners, mainly because larger dogs require more sedative and more of the veterinary team's time; a small dog and a cat are often priced similarly. Setting matters far more than species — an in-home appointment runs roughly $250–$750 for either.
 
 ## Related Articles
 

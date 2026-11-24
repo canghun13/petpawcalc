@@ -13,13 +13,9 @@ faqs:
     a: "For most owners, the biggest costs are food (especially for large breeds), routine vet care, and unexpected emergencies. Grooming is the largest variable cost — high-maintenance breeds like Poodles or Doodles can cost $600–$900/year at a groomer. Emergency vet visits are the biggest financial wildcard for any pet."
   - q: "What is the most expensive part of owning a cat?"
     a: "Veterinary care — particularly as cats age. Senior cats are prone to kidney disease, hyperthyroidism, and diabetes, all of which require ongoing management. Dental cleanings, which most cats need periodically, are another significant cost. The one-time cost of spay/neuter is the largest expense in the first year."
-  - q: "Do cats really cost less than dogs?"
-    a: "Yes, consistently. Annual cat ownership costs average $750–$1,550 in the stable middle years, compared to $1,250–$3,300 for a medium dog. The primary reasons: smaller food portions, lower medication costs (dosed by weight), no grooming requirement for most breeds, lower boarding costs, and generally lower emergency vet costs."
   - q: "How much should I budget per month for a cat?"
     a: "For a healthy adult cat, budget $60–$130/month on average. This covers food ($25–$60), litter ($12–$20), parasite prevention ($8–$20), and a monthly allocation toward annual vet costs and a small emergency fund ($15–$30). Senior cats should budget higher — $120–$200/month — to account for more frequent vet visits and possible chronic disease management."
-
-  - q: "How much should I budget per month for a dog?"
-    a: "For a healthy adult medium dog, budget $100–$275/month on average. Large breeds run $150–$350/month. This covers food, heartworm and flea prevention, grooming (amortized monthly), and an allocation toward annual vet costs and emergency savings. Pet insurance ($30–$60/month) is worth adding to this budget, particularly while the dog is young."
+last_modified_at: 2026-10-20
 ---
 
 The short answer: dogs cost significantly more than cats. But the gap varies a lot depending on the dog's size, the cat's health, and how you approach ownership for both.
@@ -186,16 +182,8 @@ For most owners, the biggest costs are food (especially for large breeds), routi
 **What is the most expensive part of owning a cat?**
 Veterinary care — particularly as cats age. Senior cats are prone to kidney disease, hyperthyroidism, and diabetes, all of which require ongoing management. Dental cleanings, which most cats need periodically, are another significant cost. The one-time cost of spay/neuter is the largest expense in the first year.
 
-**Do cats really cost less than dogs?**
-Yes, consistently. Annual cat ownership costs average $750–$1,550 in the stable middle years, compared to $1,250–$3,300 for a medium dog. The primary reasons: smaller food portions, lower medication costs (dosed by weight), no grooming requirement for most breeds, lower boarding costs, and generally lower emergency vet costs.
-
 **How much should I budget per month for a cat?**
 For a healthy adult cat, budget $60–$130/month on average. This covers food ($25–$60), litter ($12–$20), parasite prevention ($8–$20), and a monthly allocation toward annual vet costs and a small emergency fund ($15–$30). Senior cats should budget higher — $120–$200/month — to account for more frequent vet visits and possible chronic disease management.
-
-**How much should I budget per month for a dog?**
-For a healthy adult medium dog, budget $100–$275/month on average. Large breeds run $150–$350/month. This covers food, heartworm and flea prevention, grooming (amortized monthly), and an allocation toward annual vet costs and emergency savings. Pet insurance ($30–$60/month) is worth adding to this budget, particularly while the dog is young.
-
-*Cost estimates are based on US national averages as of 2026 and will vary by location, breed, and individual pet needs.*
 
 ## Related Articles
 

@@ -17,14 +17,7 @@ faqs:
     a: "Standard accident and illness pet insurance does not cover routine wellness visits. Some policies offer a wellness add-on that covers annual exams and vaccines — but these usually don't save money mathematically. The core value of pet insurance is covering large unexpected expenses, not routine care."
   - q: "Is it worth going to the vet every year if my pet seems healthy?"
     a: "Yes. Annual wellness exams catch conditions before symptoms appear — dental disease, early organ changes, subtle weight gain, heart murmurs. Most conditions discovered at routine exams cost significantly less to treat than those found after clinical signs develop. The cost of skipping annual visits almost always exceeds the cost of attending them."
-
-  - q: "How much does it cost to find out what's wrong with your pet?"
-    a: "A diagnostic workup is billed step by step rather than as one price. A straightforward investigation \u2014 consultation, bloodwork and urinalysis \u2014 usually runs about $160\u2013$490. Adding X-rays commonly brings it to $400\u2013$900, and a case needing ultrasound or a specialist can pass $1,500 before any treatment begins. Ask for an itemised estimate up front, and ask which tests would actually change the treatment plan \u2014 a good vet will stage the workup rather than running everything at once."
-  - q: "What is the cost of a pet full physical exam?"
-    a: "A full physical exam \u2014 the consultation itself \u2014 typically costs $50\u2013$100, or $100\u2013$200 at an emergency clinic. That fee buys a nose-to-tail examination and the vet's assessment, but no tests. Bloodwork, urinalysis, imaging and anything else are billed separately on top, which is why the exam fee alone rarely answers the question of what is wrong."
-  - q: "How much does a vet charge to treat a cat with a UTI?"
-    a: "Reaching the diagnosis \u2014 exam, urinalysis, often bloodwork and an X-ray \u2014 generally costs $200\u2013$600. Treatment for a straightforward urinary tract infection is then modest, commonly $30\u2013$80 for a course of antibiotics. The important distinction is that a male cat who cannot urinate is not a UTI but a urinary blockage, which is a same-day emergency costing $1,500\u2013$3,500. If a cat is straining in the litter box and producing nothing, that is an emergency call rather than a next-day appointment — our [Cat Urinary Emergency Checker](/tools/cat-urinary-emergency-checker.html) walks through the urgency question in under a minute."
-last_modified_at: 2026-09-29
+last_modified_at: 2026-10-20
 ---
 
 Veterinary costs are one of the most variable and least predictable expenses in pet ownership. A routine wellness visit might run $60. The same appointment at an emergency clinic on a Saturday night could cost ten times that — before any treatment.
@@ -79,7 +72,7 @@ If something concerning shows up, additional targeted tests can add another $100
 
 ## How Much Does It Cost to Find Out What's Wrong With Your Pet?
 
-The costs above are for known, scheduled things. The question people more often arrive with is different: your pet is unwell, nobody knows why yet, and you want to know what the investigation itself will run before you agree to it.
+The costs above are for known, scheduled things. When a pet is unwell and nobody knows why yet, the investigation itself has a price, and it helps to know roughly what it will run before you agree to it.
 
 A diagnostic workup is billed piece by piece, and the exam fee only buys the starting point. What is the cost of a pet full physical exam? That is the $50–$100 consultation — a nose-to-tail physical, but no tests. Everything below is what gets added when the exam alone does not answer the question.
 
@@ -193,17 +186,6 @@ Standard accident and illness pet insurance does not cover routine wellness visi
 
 **Is it worth going to the vet every year if my pet seems healthy?**
 Yes. Annual wellness exams catch conditions before symptoms appear — dental disease, early organ changes, subtle weight gain, heart murmurs. Most conditions discovered at routine exams cost significantly less to treat than those found after clinical signs develop. The cost of skipping annual visits almost always exceeds the cost of attending them.
-
-**How much does it cost to find out what's wrong with your pet?**
-A diagnostic workup is billed step by step rather than as one price. A straightforward investigation — consultation, bloodwork and urinalysis — usually runs about $160–$490. Adding X-rays commonly brings it to $400–$900, and a case needing ultrasound or a specialist can pass $1,500 before any treatment begins. Ask for an itemised estimate up front, and ask which tests would actually change the treatment plan — a good vet will stage the workup rather than running everything at once.
-
-**What is the cost of a pet full physical exam?**
-A full physical exam — the consultation itself — typically costs $50–$100, or $100–$200 at an emergency clinic. That fee buys a nose-to-tail examination and the vet's assessment, but no tests. Bloodwork, urinalysis, imaging and anything else are billed separately on top, which is why the exam fee alone rarely answers the question of what is wrong.
-
-**How much does a vet charge to treat a cat with a UTI?**
-Reaching the diagnosis — exam, urinalysis, often bloodwork and an X-ray — generally costs $200–$600. Treatment for a straightforward urinary tract infection is then modest, commonly $30–$80 for a course of antibiotics. The important distinction is that a male cat who cannot urinate is not a UTI but a urinary blockage, which is a same-day emergency costing $1,500–$3,500. If a cat is straining in the litter box and producing nothing, that is an emergency call rather than a next-day appointment — our [Cat Urinary Emergency Checker](/tools/cat-urinary-emergency-checker.html) walks through the urgency question in under a minute.
-
-*Cost ranges are based on US national averages as of 2026 and will vary by location, clinic type, and individual pet needs. Always consult your veterinarian for guidance specific to your pet.*
 
 ## Related Articles
 
