@@ -88,7 +88,7 @@ Veterinarians use a 1–9 Body Condition Score (BCS) scale for cats, with **5 as
 
 According to the 2014 AAHA Weight Management Guidelines, each point above 5 represents roughly 10% excess body weight.
 
-Most owners are surprised their cat scores a 6 or 7 when they assumed a 5 — the visual difference between these scores is subtle, but the health implications are not.
+The difference between a 5 and a 6 or 7 can be hard to see, especially under a long coat, so rely on your hands as much as your eyes.
 
 <div class="post-cta">
   <h4>Check Your Cat's Weight Range</h4>

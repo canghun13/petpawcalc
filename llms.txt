@@ -28,7 +28,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Cat Pregnancy Calculator](https://petpawcalc.com/tools/cat-pregnancy-calculator.html): Calculates estimated due date and delivery window from mating date. Includes a week-by-week pregnancy development guide covering all 9 weeks of feline gestation, with care tips for each stage.
 
-- [Cat Weight Calculator](https://petpawcalc.com/tools/cat-weight-calculator.html): Checks whether an adult cat is at a healthy weight based on breed type and sex, using breed-specific ranges. Also estimates a kitten's adult weight from current age and weight.
+- [Cat Weight Calculator](https://petpawcalc.com/tools/cat-weight-calculator.html): Compares a cat's weight with typical adult weights for 12 breeds by sex (APOP breed reference; PetMD for domestic shorthairs) and estimates an overweight cat's ideal weight and safe weekly loss from its body condition score (AAHA 2014).
 
 - [Dog Quality of Life Calculator](https://petpawcalc.com/tools/dog-quality-of-life-calculator.html): Assesses a dog's quality of life across 7 categories using the veterinary HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad). Produces a scored summary with flags for urgent concerns. Designed for senior dogs and dogs with illness or chronic pain.
 
@@ -168,7 +168,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 - [How Much Should a Senior Dog Eat?](https://petpawcalc.com/blog/how-much-should-senior-dog-eat): When dogs count as senior by size (VCA), the 12–13% fall in energy needs, a 1.4 × RER starting table, AAHA 2023 guidance on protein, calorie density and fibre, and weight and muscle changes that need a vet.
 
 - [Puppy Weight Chart by Breed Size](https://petpawcalc.com/blog/puppy-weight-chart-by-breed-size): When toy to giant puppies stop growing (PetMD), the vet rules for estimating adult weight at 6–8 weeks or 4 months, expected weekly gain by adult size (Merck), why large-breed puppies shouldn't grow fast, and growth-diet guidance.
-- [Kitten Weight Chart by Age](https://petpawcalc.com/blog/kitten-weight-chart-by-breed-size): Birth-to-12-month weight chart for kittens, the "1 pound per month" rule of thumb, and a comparison of typical domestic-shorthair growth vs. slow-maturing large breeds (Maine Coon, Ragdoll, Norwegian Forest Cat).
+- [Kitten Weight Chart by Age](https://petpawcalc.com/blog/kitten-weight-chart-by-breed-size): ASPCA weekly kitten weights for weeks 1–8, the ASPCA's about-a-pound-per-month rule, VCA's growth milestones (80% of adult size at 30 weeks, adult size at 40), large-breed weights and maturity ages (APOP), and when slow gain needs a vet.
 
 - [Why Is My Cat Always Hungry?](https://petpawcalc.com/blog/why-is-my-cat-always-hungry): Checking the amount against RER × Merck multipliers, how cats' needs change with age (AAHA, VCA), medical causes of increased appetite such as hyperthyroidism and diabetes, and telling hunger from habit.
 
