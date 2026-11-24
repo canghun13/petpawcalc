@@ -161,7 +161,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How to Calculate Your Dog's Age in Human Years (It's Not 7x)](https://petpawcalc.com/blog/dog-age-human-years): Explains why the multiply-by-7 rule is inaccurate, how dogs actually age by life stage, and why size is the most important variable.
 
-- [How Much Does a Dog Really Cost Per Year?](https://petpawcalc.com/blog/annual-cost-of-owning-a-dog): Full annual cost breakdown by category (food, vet, grooming, insurance, boarding) with ranges by dog size. Includes costs that commonly surprise new owners.
+- [How Much Does a Dog Really Cost Per Year?](https://petpawcalc.com/blog/annual-cost-of-owning-a-dog): Rover 2026 figures ($145–$505/month for a medium dog, $39,350 median lifetime), the ASPCA category and first-year tables, national average vet prices (Synchrony 2025–26), NAPHIA 2025 insurance premiums ($836 accident-and-illness), and emergency cost ranges.
 
 - [How Much Should I Feed My Dog?](https://petpawcalc.com/blog/how-much-to-feed-a-dog): Daily calories from resting energy requirement × Merck life-stage multipliers, a 10–90 lb calorie table, adjusting by body condition, treats, free-feeding, and the Labrador POMC mutation.
 
@@ -174,10 +174,10 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How to Tell If Your Dog Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-dog-is-overweight): The rib, waist and tuck checks, the 9-point body condition scale, ~10% excess weight per point above 5 and 1–2% weekly loss (AAHA 2014), 59% of US dogs overweight (APOP 2022), and the Kealy Labrador lifespan study.
 
-- [The True Cost of Owning a Cat vs Dog](https://petpawcalc.com/blog/true-cost-cat-vs-dog-year-by-year): Year-by-year cost comparison across the full lifetime of a dog vs cat, broken down by category. Includes time cost and commonly underestimated expenses.
+- [The True Cost of Owning a Cat vs Dog](https://petpawcalc.com/blog/true-cost-cat-vs-dog-year-by-year): Cat vs medium dog side by side — Rover 2026 monthly, senior and lifetime costs ($32,527 vs $39,350 median), ASPCA first-year and annual tables, NAPHIA premiums ($435 vs $836) and Synchrony vet prices.
 
 - [How Often Should You Take Your Dog to the Vet?](https://petpawcalc.com/blog/how-often-vet-visits-dog-cost-by-age): Recommended vet visit frequency by life stage (puppy, adult, senior) with what each visit should cover and typical costs.
-- [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Cost breakdown by product type (topical, chewable, combo, collar), why prices vary by dog size and brand, and a cost comparison of prevention vs. treating a flea infestation, heartworm, or tick-borne disease after the fact.
+- [Flea & Tick Prevention Cost for Dogs and Cats](https://petpawcalc.com/blog/flea-tick-prevention-cost): Yearly cost of Seresto, Frontline Plus, NexGard, Simparica Trio and Revolution Plus at Chewy prices (Nov 2026), CAPC's year-round recommendation, the FDA-approved Bravecto Quantum yearly injection, and clearing an infestation.
 
 - [Puppy Potty Training Regression: Why It Happens (and How to Fix It)](https://petpawcalc.com/blog/puppy-potty-training-regression): Explains the two predictable regression windows (4-6 months, tied to teething/adolescence, and 7-9 months, tied to adolescent boundary-testing), a behavioral-vs-medical decision table, and a step-by-step reset plan.
 
@@ -187,7 +187,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How to Tell If Your Cat Is Underweight or Too Skinny (and When It's Urgent)](https://petpawcalc.com/blog/how-to-tell-if-cat-is-underweight): The WSAVA 9-point body condition descriptions for scores 1–5, the WSAVA muscle condition score (normal to marked loss over spine, shoulder blades, skull and hips) and why a cat can look bony at a normal weight (sarcopenia vs cachexia), why monthly weighing matters (weight loss about 2.5 years before death from cancer, CKD or hyperthyroidism; about 3 years before a CKD diagnosis), common medical causes with links to cost guides, urgent signs and hepatic lipidosis (Cornell), and how to help a cat regain weight.
 
-- [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
+- [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): National average prices from the 2025–26 Synchrony veterinary cost study (exam $56–$129, vaccines, bloodwork, X-rays, ultrasound, dental), PetMD ranges and checkup schedule, diagnostic workup totals, Preventive Vet emergency costs and NAPHIA premiums.
 
 - [How Long Are Dogs Pregnant? A Week-by-Week Guide](https://petpawcalc.com/blog/how-long-are-dogs-pregnant/): About 63 days from ovulation, 63 ± 7 days from mating (Cornell); week-by-week table with implantation (~day 18), ultrasound (from ~3 weeks, reliable after day 28), relaxin (after day 22–27), X-ray (day 42–45; count after day 55) per Merck/VCA; feeding unchanged for the first two thirds then up to 1.5×; temperature drop below 99°F; when to call the vet.
 
@@ -197,7 +197,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [Signs of Dog Labor: What to Expect Hour by Hour](https://petpawcalc.com/blog/signs-of-dog-labor/): Temperature drop, stage 1 (6–12 hours of signs, up to 24–36 hours), stage 2 timings (0–30 minutes per puppy, up to 2 hours between), placentas, lochia for about 3 weeks (Cornell), dystocia criteria and prevalence (Merck), when to call the vet.
 
-- [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Practical strategies for lowering lifetime vet costs — pet insurance timing, emergency funds, preventive care ROI, dental care, low-cost vaccine clinics, and when to use urgent care vs. the ER.
+- [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Prevention that pays for itself (heartworm, vaccines, dental, spay) with prices, checkup schedule, emergency planning with insurance or savings, asking about tests, comparing estimates and the ASPCA's money-saving list.
 
 - [How Often Should Cats Go to the Vet? A Schedule by Age](https://petpawcalc.com/blog/how-often-vet-visits-cat): Recommended vet visit frequency for cats by life stage (kitten, adult, senior) with what each visit should cover, indoor vs. outdoor differences, and typical costs.
 
@@ -211,9 +211,9 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Breed reference weights from APOP, the 8–12 lb domestic shorthair range (PetMD), body condition score 5 as ideal, when large breeds finish growing, and safe weight loss.
 
-- [How Much Does a Cat Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-cat-vet-visit-cost): Detailed cost breakdown for cat vet care — routine exams, vaccines, spay/neuter, bloodwork, dental cleanings, and emergency visits. Includes indoor vs. outdoor cost differences and ways to reduce costs.
+- [How Much Does a Cat Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-cat-vet-visit-cost): Synchrony 2025–26 average cat prices (exam $57–$130, FVRCP, rabies, dental $395), a healthy cat's yearly vet cost, and cat-specific big bills — urinary blockage, tooth resorption, hyperthyroidism, kidney disease, outdoor injuries.
 
-- [How to Reduce Vet Costs Without Compromising Your Cat's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-cats): Practical strategies for lowering lifetime cat vet costs — pet insurance timing (cats are cheaper to insure than dogs), emergency funds, why annual bloodwork matters more since cats hide illness, low-cost vaccine/spay-neuter clinics, and when to use urgent care vs. the ER.
+- [How to Reduce Vet Costs Without Compromising Your Cat's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-cats): Making checkups happen for a fearful cat, senior bloodwork, the urinary emergency not to wait on, dental care, prevention prices, keeping cats lean, and insurance at about $435 a year (NAPHIA).
 
 - [How Much Should a Senior Cat Eat?](https://petpawcalc.com/blog/how-much-should-senior-cat-eat): Why cats' energy needs rise again from about 10–11 years, a 1.2 × RER starting table, why healthy seniors need more protein not less (AAHA 2023), meal frequency, water and the weight changes that need a vet.
 
@@ -225,11 +225,11 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [Puppy and Kitten Vaccination Schedule: The Complete Guide](https://petpawcalc.com/blog/puppy-kitten-vaccination-schedule): Week-by-week core vaccine timeline for puppies (DHPP, rabies) and kittens (FVRCP, rabies, FeLV), explains why multiple doses are needed (maternal antibody interference), non-core vaccines by lifestyle, adult booster schedules, and typical costs.
 
-- [Spay or Neuter Your Pet: Cost, Timing, and What to Expect](https://petpawcalc.com/blog/spay-neuter-cost-and-timing): Covers spay vs. neuter cost differences by species and dog size, private vs. low-cost clinic pricing, factors that add to cost (cryptorchidism, being in heat), best age for the procedure, recovery timeline, and where to find low-cost or free programs.
+- [Spay or Neuter Your Pet: Cost, Timing, and What to Expect](https://petpawcalc.com/blog/spay-neuter-cost-and-timing): Synchrony average prices (dog spay $455, cat spay $353), AAHA 2019 size-based timing for dogs, the fix-by-five-months standard for cats, and ASPCA recovery instructions.
 
-- [Dog and Cat Dental Cleaning Cost: What to Expect](https://petpawcalc.com/blog/dog-cat-dental-cleaning-cost): Explains why extractions (not the base cleaning) drive the final bill, why anesthesia is medically required rather than optional, why anesthesia-free cleanings are opposed by major veterinary bodies, typical cost breakdown, and how often cleanings are needed by breed.
+- [Dog and Cat Dental Cleaning Cost: What to Expect](https://petpawcalc.com/blog/dog-cat-dental-cleaning-cost): Average cleaning prices ($379 dog, $395 cat) plus X-rays and extractions, why the AVDC rejects anesthesia-free scaling, periodontal disease by age 2 (Merck), and home care that works.
 
-- [Pet Euthanasia: What It Costs and What to Expect](https://petpawcalc.com/blog/pet-euthanasia-cost-and-what-to-expect): A compassionate, practical overview covering typical costs (clinic vs. in-home, cremation options), what the procedure involves, whether to be present, and questions worth asking a vet in advance. Written in an informational, non-clinical tone given the sensitivity of the topic — no calculator, by design.
+- [Pet Euthanasia: What It Costs and What to Expect](https://petpawcalc.com/blog/pet-euthanasia-cost-and-what-to-expect): Clinic ($120–$130 average for dogs) and at-home (about $450) costs from PetMD, Lap of Love surcharges, cremation and burial prices, what happens during the appointment, and questions to ask.
 
 ## About
 
