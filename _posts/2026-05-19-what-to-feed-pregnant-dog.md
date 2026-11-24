@@ -1,320 +1,90 @@
 ---
 layout: post
-title: "What to Feed a Pregnant Dog: Complete Diet & Nutrition Guide by Week"
-description: "What to feed a pregnant dog week by week — the best diet, food types, portion increases, supplements to avoid, and a printable feeding schedule."
+title: "What to Feed a Pregnant Dog: Diet, Portions, and the Timing That Matters"
+description: "A pregnant dog doesn't need more food for the first two thirds of pregnancy — overfeeding early is a common mistake. What to feed, when and how much to increase (at least 20–30% in the last third), feeding a nursing mother (2–4 times maintenance), and why calcium supplements are usually a bad idea."
 category: Dog Nutrition
 date: 2026-05-19
-read_time: 11
+read_time: 7
 slug: what-to-feed-pregnant-dog
 faqs:
-  - q: "What's a good diet for a pregnant dog?"
-    a: "A complete puppy food or an \"all life stages\"/\"growth and reproduction\" formula meeting AAFCO standards, fed in gradually increasing amounts as pregnancy progresses. Avoid calcium supplements, raw meat, and standard adult maintenance food from week 4–5 onward — the calorie and nutrient density isn't sufficient for late pregnancy and nursing."
   - q: "What is the best food to feed a pregnant dog?"
-    a: "A high-quality puppy food or a formula labeled \"for all life stages\" or \"for growth and reproduction\" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward."
-  - q: "Can I give my pregnant dog extra calcium?"
-    a: "No. Calcium supplementation during pregnancy is one of the most common and dangerous mistakes owners make. Excess calcium during pregnancy disrupts the hormonal mechanism the mother uses to mobilize calcium during labor, which increases the risk of eclampsia (milk fever) after delivery. If you're feeding a complete puppy food, she's already getting the right amount."
-  - q: "How much more should a pregnant dog eat?"
-    a: "Very little in the first trimester. By week 5–6, about 25–30% more than her pre-pregnancy intake. By weeks 8–9, up to 50–100% more. During peak nursing (weeks 2–4 postpartum), some mothers need 3–4x their pre-pregnancy daily calories depending on litter size."
-  - q: "What foods are dangerous for pregnant dogs?"
-    a: "Raw meat and raw eggs (bacterial contamination risk), liver in large amounts (excess vitamin A), grapes and raisins (toxic), xylitol (found in some peanut butters — highly toxic), and excess calcium supplements. The usual canine toxic foods all still apply."
-  - q: "Should I feed wet or dry food to a pregnant dog?"
-    a: "Either works if it meets AAFCO standards for growth/reproduction. Many breeders use high-quality dry kibble as the caloric base with a wet food topper in the third trimester for palatability and hydration. Pure wet food also works — just ensure calorie density is sufficient for late pregnancy needs."
-  - q: "Is it normal for a pregnant dog to lose her appetite before labor?"
-    a: "Yes. A drop in appetite 24–48 hours before whelping is completely normal and is one of the signs that labor is near. Don't try to force her to eat at this point. Her appetite returns quickly after delivery."
-  - q: "Does a pregnant dog need a different diet in the first few weeks?"
-    a: "Usually not. Intake stays at normal maintenance levels until roughly week 5, then climbs steadily to around 1.5 times normal by the final week. Most vets recommend switching to a quality puppy food (or an all-life-stages formula) around week 4–5 so the transition is complete before calorie needs rise — puppy food is more calorie-dense and higher in protein, calcium and phosphorus than adult maintenance food."
-last_modified_at: 2026-10-20
+    a: "A complete and balanced diet for growth and reproduction — a puppy (growth) food, or one with an AAFCO statement for gestation and lactation or all life stages. The Merck Veterinary Manual advises switching to a growth diet at the start of pregnancy; for large and giant breeds, use a growth diet that isn't one of the special large-breed puppy formulas."
+  - q: "When should I start feeding my pregnant dog more?"
+    a: "Not until the last third of pregnancy, around week 6. Puppies grow very little in the first two thirds, so her energy needs stay at maintenance. Merck recommends increasing intake by at least 20–30% above maintenance in the last third, and VCA notes she may need up to about 1.5 times her usual amount in the final three weeks."
+  - q: "How much should a nursing dog eat?"
+    a: "A lot — about 2–4 times her maintenance energy, depending on how many puppies she's feeding, according to the Merck Veterinary Manual. Free-choice feeding of a growth diet is recommended while she's nursing, and underfeeding during lactation is a common mistake."
+  - q: "Should I give my pregnant dog calcium?"
+    a: "No, not unless your vet specifically advises it. When she's eating a complete and balanced diet for growth and reproduction, the Merck manual says calcium and other supplements are rarely necessary and may be harmful. Ask your vet before giving any supplement."
+  - q: "Should I feed smaller meals as her pregnancy goes on?"
+    a: "Yes. As the puppies take up space in the last weeks, smaller, more frequent meals are easier for her. VCA recommends increasing the amount gradually from about week 6 using this approach."
+last_modified_at: 2026-11-24
 ---
 
-What you feed a pregnant dog directly affects her health — and the birth weight, immune function, and development of every puppy in the litter.
+The most common mistake with a pregnant dog isn't feeding too little — it's feeding too much, too early. Puppies grow very little in the first two thirds of pregnancy. The time to feed more is the last three weeks, and especially once the puppies are born.
 
-The good news: the changes are straightforward once you know the timing. Most owners make at least one of three common mistakes — feeding too much too early, not switching food at the right point, or supplementing calcium when they shouldn't.
+## Why Timing Matters
 
-Here's exactly what to feed your pregnant dog at each stage, how much, and what to avoid.
+According to the Merck Veterinary Manual, **fetal growth is minimal through the first two thirds of pregnancy** and only becomes substantial near the end of the second trimester. Through that time, a dog that started pregnancy at a healthy weight needs **no more energy than usual**. Merck lists **overfeeding early in pregnancy** and **underfeeding during nursing** as the two common mistakes.
 
----
+Dogs are pregnant for about 63 days, so in practice:
 
-## What to Feed a Pregnant Dog: The Short Answer
+| Stage | Roughly | Amount |
+|---|---|---|
+| First two thirds | Weeks 1–6 | Her normal maintenance amount |
+| Last third | Week 6 to birth | At least **20–30% above maintenance** (Merck), rising to up to about **1.5 times** normal in the last three weeks (VCA) |
+| Nursing | Birth to weaning | **2–4 times maintenance**, depending on litter size (Merck); free-choice |
 
-If you only have a minute, here's what matters most:
+Cats are different — they need more food from early pregnancy — so don't use cat advice for a dog, or the other way round.
 
-- **Weeks 1–3**: No change needed. Keep her current adult food.
-- **Weeks 4–5**: Switch gradually to puppy food or "all life stages" food (AAFCO certified for growth and reproduction).
-- **Weeks 5–9**: Increase portions gradually — by week 9 she may need up to 2x her pre-pregnancy amount, split into 3–4 smaller meals.
-- **Avoid**: Calcium supplements, raw meat/eggs, liver in large amounts, and any sudden food switches.
-- **After birth**: Keep her on puppy food through the entire nursing period — calorie needs peak even higher than during pregnancy.
+## What to Feed
 
-The rest of this guide covers the full detail behind each of these points.
+- **A growth (puppy) diet or a food labeled for gestation and lactation.** Merck recommends moving her onto a complete and balanced **growth diet at the start of pregnancy** — the change is in the type of food, not the amount. VCA recommends a premium diet your vet approves, with an AAFCO statement for "gestation and lactation" or "all life stages".
+- **Large and giant breeds:** Merck advises a growth diet that is **not** one of the formulas made specifically for large or giant puppies, even if she's a large or giant breed.
+- **Fat while nursing:** Merck suggests a growth diet with about 10–20% fat on a dry-matter basis, rising to 20–30% if she's losing condition.
+- **Supplements:** discuss with your vet first. VCA mentions omega-3 DHA as recommended for puppies' development and milk; Merck notes calcium and other supplements are rarely necessary and may be harmful on a complete diet.
 
----
+Our [Pet Food Calorie Calculator](/tools/pet-food-calorie-calculator.html) gives her normal daily calories as a starting point for the increases above.
 
-## The Core Rule: Quality Over Quantity (At First)
+## How to Feed
 
-During the first half of pregnancy (weeks 1–4), your dog's calorie needs barely change. The most important thing is that she's eating **high-quality, complete nutrition** — not that she's eating more of it.
+- **Change foods gradually** over several days if you're switching.
+- **Smaller, more frequent meals** from about week 6, as VCA recommends, because there's less room in her abdomen.
+- **Weigh her weekly** and watch her body condition. She should look well covered but not fat.
+- **Free-feed while she's nursing**, and keep fresh water available at all times.
+- **Let her set her own activity level**, and don't over-exercise her, especially late in pregnancy.
 
-Overfeeding in early pregnancy leads to excessive weight gain, which can complicate delivery. Underfeeding in late pregnancy starves the growing puppies. The key is adjusting at the right time.
+## Calcium: Why Not to Supplement
 
-A good starting point is any food labeled "complete and balanced" by AAFCO standards. If she's already on a quality adult food, there's no urgency to switch immediately — but you will want to transition by mid-pregnancy.
+Owners sometimes give calcium to "prevent milk fever". The Merck Veterinary Manual says calcium and other supplements are **rarely necessary and may be contraindicated** when she's on a complete and balanced diet for growth and reproduction. Leave calcium to your vet's judgment.
 
----
+Signs of milk fever (eclampsia) after the birth — restlessness, panting, trembling, stiffness or wobbliness — are an emergency. Call your vet straight away.
 
-## What to Feed: Trimester by Trimester
+## Before Labor
 
-### First Trimester (Weeks 1–3)
-**Keep her current diet.** If she's already on a good adult maintenance food, there's no need to change anything yet. Focus on consistency — avoid switching foods, which can cause digestive upset on top of any early pregnancy nausea.
-
-If your dog experiences mild nausea in the first few weeks (common in week 2–3), offer smaller meals more frequently rather than one large one. Three smaller meals spread through the day tend to be better tolerated than two larger ones during this phase.
-
-The embryos are tiny and nutritional demand from them is minimal. The biggest priority is keeping the mother comfortable, well-hydrated, and eating consistently.
-
-### Second Trimester (Weeks 4–6)
-**Transition to puppy food.** Around week 4–5, switch gradually to a high-quality puppy formula or a food labeled "for all life stages." These are more calorie-dense and nutritionally rich than adult maintenance food — exactly what a pregnant dog needs as her puppies start growing fast.
-
-Make the switch over 5–7 days by mixing increasing amounts of the new food with her current food. A gradual transition reduces the chance of digestive upset — something you want to avoid during pregnancy.
-
-Calorie needs begin increasing around week 5. By the end of the second trimester, she should be eating about **25–30% more** than her pre-pregnancy amount. Watch her body condition: she should be gaining weight steadily but not becoming obese.
-
-### Third Trimester (Weeks 7–9)
-**Feed more, more often.** In the final weeks, your dog's puppies are growing rapidly and taking up significant space in her abdomen — leaving less room for a full stomach. Switch to **3–4 small meals per day** rather than 1–2 larger ones.
-
-By week 9, she may need up to **1.5–2x her normal daily calories**. Let her eat to appetite — she'll naturally regulate as delivery approaches and her appetite often drops in the last day or two before labor.
-
-Don't be alarmed if she becomes pickier or eats inconsistently in the final days. A drop in appetite 24–48 hours before whelping is completely normal and actually signals that labor is near.
-
-<div class="post-cta">
-  Not sure how many calories your dog needs normally? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a>
-</div>
-
----
-
-## Week-by-Week Feeding Schedule
-
-Most guides give vague trimester advice. Here's a more precise breakdown by week — because the difference between week 5 and week 8 matters more than most owners realize.
-
-| Week | Food | Meals/Day | Amount vs. Normal |
-|------|------|-----------|-------------------|
-| 1–3 | Current adult food | 2 | Normal portions |
-| 4 | Begin transitioning to puppy food | 2–3 | Normal to +10% |
-| 5 | Puppy food | 2–3 | +15–20% |
-| 6 | Puppy food | 3 | +25–30% |
-| 7 | Puppy food | 3 | +35–40% |
-| 8 | Puppy food | 3–4 | +50–75% |
-| 9 | Puppy food | 3–4 | Up to +100% (eat to appetite) |
-| Day before labor | Puppy food | Offer freely | She may refuse — normal |
-| Nursing weeks 1–2 | Puppy food | 3–4 | +50–100% |
-| Nursing weeks 3–4 (peak) | Puppy food | Free choice | Up to +200–300% |
-
-The jump from week 6 to week 8 is where most owners get caught off guard. Puppies gain about 75% of their birth weight in the final three weeks of pregnancy — the mother's calorie needs spike sharply during this window.
-
----
-
-## How to Tell If Your Pregnant Dog Is Eating Enough
-
-Weight gain during pregnancy is expected, but the amount and pattern matter. A healthy pregnant dog should gain:
-
-- **Weeks 1–4**: Little to no weight gain (embryos are tiny)
-- **Weeks 5–9**: Gradual, steady gain
-- **By delivery**: 25–30% above her pre-pregnancy weight for a typical litter; more for large litters
-
-**Signs she may not be eating enough:**
-- Weight staying flat or dropping after week 5
-- Visible rib prominence despite feeding
-- Low energy and reluctance to move
-- Puppies born underweight (under 5% of expected breed weight at birth)
-
-**Signs she may be eating too much:**
-- Rapid, excessive weight gain in the first 4 weeks
-- Difficulty moving or lying down before week 7
-- Very large abdominal girth early in pregnancy
-
-The most reliable check is a body condition score (BCS) assessment at your week 4–5 vet visit. Ask your vet to walk you through the BCS scale so you can monitor her at home between appointments. The goal is BCS 4–5 on the standard 9-point scale throughout pregnancy — not dramatically heavier or lighter than her pre-pregnancy condition.
-
-If you're unsure whether her weight gain is on track, weigh her weekly at home using a bathroom scale (weigh yourself holding her, then subtract your own weight). Keep a simple log — it gives your vet useful data and helps you spot trends early.
-
----
-
-## What Type of Food Works Best?
-
-### Dry kibble (most common)
-High-quality dry kibble formulated for puppies or all life stages is the most practical choice for most owners. It's calorie-dense, shelf-stable, and most dogs do well on it. Look for a named meat source (chicken, beef, lamb) as the first ingredient and AAFCO certification for "all life stages" or "growth and reproduction."
-
-### Wet food
-Wet food has higher moisture content, which supports hydration — especially helpful in late pregnancy. It's also often more palatable for dogs experiencing early pregnancy nausea. Many owners feed a combination: dry kibble as the base with a wet food topper for palatability and hydration.
-
-### Raw diet
-If your dog was already eating a raw diet before pregnancy, discuss with your vet whether to continue. Raw diets carry a higher risk of bacterial contamination (Salmonella, Listeria) during pregnancy, which can affect the developing puppies. Many vets recommend switching to commercial cooked food during gestation.
-
-### Homemade diets
-Not recommended during pregnancy unless formulated by a veterinary nutritionist. It's extremely difficult to achieve the precise balance of nutrients a pregnant dog needs through homemade food without professional guidance.
-
----
-
-## What About Supplements?
-
-### Don't supplement calcium
-This is one of the most common mistakes with pregnant dogs. **Calcium supplementation during pregnancy is not recommended** and can actually interfere with the mother's ability to mobilize calcium during labor, increasing the risk of eclampsia (milk fever) after delivery.
-
-If you're feeding a complete, balanced puppy food, she's already getting the right amount of calcium. Adding more disrupts a finely tuned system.
-
-### Folic acid (ask your vet)
-Some vets recommend folic acid supplementation in the early weeks to support puppy development. This is worth discussing at your week 4 prenatal visit — but don't self-prescribe.
-
-### Fish oil (optional)
-Omega-3 fatty acids (DHA especially) support puppy brain and eye development. A small amount of fish oil can be beneficial in the second and third trimester, but check with your vet on appropriate dosage for your dog's size. Too much fish oil can also cause problems, so more isn't better.
-
-### Avoid everything else
-Unless your vet specifically recommends it, skip the supplements. A complete puppy food covers everything she needs. The supplement aisle may be tempting, but unnecessary additions can throw off the nutrient balance your dog is already getting from her food.
-
----
-
-## The Pregnant Dog Diet: What Actually Matters Most
-
-A lot of advice about pregnant dog nutrition focuses on quantity. Not enough focuses on what's actually in the food. Here's a breakdown of the nutrients that matter most — and how to check for them.
-
-### Key Nutrients for a Pregnant Dog's Diet
-
-| Nutrient | Why It Matters | Where to Find It |
-|----------|---------------|-----------------|
-| Protein (28–32% DM) | Builds puppy tissue; maintains mother's muscle | Named meat as first ingredient |
-| DHA (omega-3) | Puppy brain and eye development | Fish oil, salmon-based formulas |
-| Folic acid | Neural tube development in early pregnancy | Complete puppy formulas, leafy vegetables |
-| Iron | Prevents anemia; supports puppy blood development | Meat-based foods |
-| Calcium + Phosphorus (balanced) | Bone development — but must be in correct ratio | Complete formulas handle this; don't supplement |
-| Calories (energy density) | Fueling rapid puppy growth in weeks 7–9 | Puppy/all-life-stages food |
-
-The reason puppy food (rather than adult maintenance) is recommended for pregnant dogs: the AAFCO "growth and reproduction" standard ensures these nutrients are present in the correct amounts and ratios. Adult maintenance formulas aren't held to the same standard for reproduction.
-
-### How to Read a Dog Food Label for Pregnancy
-
-When choosing a food for your pregnant dog, look for these specific things on the label:
-
-**AAFCO statement**: Should say "complete and balanced for all life stages" or "for growth and reproduction." Adult maintenance formulas are not adequate.
-
-**First ingredient**: Should be a named animal protein — chicken, beef, salmon, turkey, lamb. Not "meat meal" or "poultry by-product" as the primary source.
-
-**Calcium level**: Should be between 1.0–1.8% on a dry matter basis. Above 2.5% is too high for a pregnant dog and increases eclampsia risk.
-
-**Calorie density**: Check the kcal/cup on the bag. Higher calorie density means smaller portions needed, which matters in late pregnancy when stomach capacity is limited.
-
-### Dry vs. Wet vs. Mixed: What Works Best
-
-**Dry kibble only**: Practical and cost-effective. Works well throughout pregnancy if it meets the AAFCO reproduction standard. Downside: lower moisture, which matters in late pregnancy.
-
-**Wet food only**: Higher moisture is beneficial, especially in the third trimester. Calorie density is lower per cup, so larger volumes may be needed. More expensive for large breeds.
-
-**Mixed (kibble + wet topper)**: Best of both. Dry kibble as the caloric base with a wet food topper increases palatability (helpful when she gets picky in late pregnancy) and adds hydration. This is what many experienced breeders use.
-
-**Raw diet**: If she's already on raw, discuss with your vet. Risk of bacterial contamination (Salmonella, Listeria) is real and can affect developing puppies. Many vets recommend switching to commercial cooked food for the duration of pregnancy.
-
-## Foods to Avoid During Dog Pregnancy
-
-The usual toxic foods apply — but some deserve extra attention during pregnancy:
-
-| Food | Why to avoid |
-|------|-------------|
-| Raw meat/eggs | Risk of Salmonella and Listeria, which can affect puppies |
-| Liver (large amounts) | Very high in vitamin A, which can be toxic in excess |
-| Grapes & raisins | Toxic to dogs, especially dangerous during pregnancy |
-| Xylitol | Found in some peanut butters and sugar-free foods — highly toxic |
-| Alcohol, caffeine | Obvious, but worth stating |
-| Excess calcium supplements | Can interfere with labor and cause eclampsia |
-
-Also avoid switching foods more than once during pregnancy — digestive stability matters. If you need to change her food, do it once (around week 4–5) and stick with it through delivery.
-
----
-
-## Keeping Her Hydrated
-
-Water intake increases significantly during pregnancy, especially in the third trimester. Make sure fresh water is always available and change it frequently. Dehydration can affect both the mother's health and amniotic fluid levels.
-
-A good rule of thumb: a pregnant dog should be drinking roughly 1 ounce of water per pound of body weight per day. A 50 lb dog should drink about 50 oz — that's over 6 cups daily. In late pregnancy, that number climbs further.
-
-If she seems to be drinking less than usual, try adding a small amount of low-sodium broth to her water or switching to wet food for a meal.
-
----
-
-## Feeding After Delivery: What Changes
-
-Whelping doesn't end the increased nutritional demand — it actually intensifies it. A nursing mother produces milk for multiple puppies around the clock, which requires a significant caloric input.
-
-**First week after delivery:** Appetite may be lower as she adjusts to nursing. Offer small, frequent meals rather than expecting her to eat full portions.
-
-**Weeks 2–4 of nursing:** This is peak caloric demand. A mother nursing a large litter may need **3–4× her pre-pregnancy daily calories** — keep food available at all times and let her eat freely.
-
-**After weaning:** Gradually reduce food back to pre-pregnancy amounts over 1–2 weeks as milk production decreases.
-
-Keep her on the puppy/all-life-stages food throughout the entire nursing period. Switch back to adult maintenance food only after the puppies are fully weaned.
-
----
-
-## What Happens to Her Appetite Before Labor?
-
-In the 24–48 hours before delivery, most dogs lose their appetite and may refuse food entirely. This is completely normal — it's one of the signs that labor is approaching. Don't try to force her to eat at this point.
-
-Other pre-labor signs to watch for: drop in rectal temperature below 99°F (37.2°C), restlessness, nesting behavior, and panting. When you see these alongside food refusal, whelping is likely within 12–24 hours.
-
-After delivery, her appetite will return quickly. Have food and fresh water readily available in or near the whelping area so she can eat and drink without leaving her puppies.
-
-<div class="post-cta">
-  Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>
-</div>
-
----
-
-## Quick Summary: What to Feed a Pregnant Dog
-
-If you want the short version before reading the full guide:
-
-- **Weeks 1–3**: Keep her current adult food. No changes needed yet.
-- **Week 4–5**: Switch gradually to puppy food or all-life-stages formula over 5–7 days.
-- **Weeks 5–9**: Increase portions gradually. By week 9, she may need up to 2x her normal intake.
-- **Nursing**: This is peak demand. Feed freely — up to 3–4x normal intake at peak nursing (weeks 2–4 postpartum).
-- **Supplements to avoid**: Calcium. Do not supplement calcium during pregnancy.
-- **Food to use**: High-quality puppy food or "all life stages" formula. AAFCO certified for growth and reproduction.
-
----
+Many dogs eat less or refuse food in the day before whelping, which is normal on its own. [Signs of Dog Labor](/blog/signs-of-dog-labor/) covers the other signs, including the temperature drop.
 
 ## Frequently Asked Questions
 
-**What's a good diet for a pregnant dog?**
-A complete puppy food or an "all life stages"/"growth and reproduction" formula meeting AAFCO standards, fed in gradually increasing amounts as pregnancy progresses. Avoid calcium supplements, raw meat, and standard adult maintenance food from week 4–5 onward — the calorie and nutrient density isn't sufficient for late pregnancy and nursing.
-
 **What is the best food to feed a pregnant dog?**
-A high-quality puppy food or a formula labeled "for all life stages" or "for growth and reproduction" by AAFCO standards. These provide the calorie density and nutrient balance a pregnant dog needs, particularly in the second and third trimester. Standard adult maintenance food is not adequate from week 4–5 onward.
+A complete and balanced diet for growth and reproduction — a puppy (growth) food, or one with an AAFCO statement for gestation and lactation or all life stages. The Merck Veterinary Manual advises switching to a growth diet at the start of pregnancy; for large and giant breeds, use a growth diet that isn't one of the special large-breed puppy formulas.
 
-**Can I give my pregnant dog extra calcium?**
-No. Calcium supplementation during pregnancy is one of the most common and dangerous mistakes owners make. Excess calcium during pregnancy disrupts the hormonal mechanism the mother uses to mobilize calcium during labor, which increases the risk of eclampsia (milk fever) after delivery. If you're feeding a complete puppy food, she's already getting the right amount.
+**When should I start feeding my pregnant dog more?**
+Not until the last third of pregnancy, around week 6. Puppies grow very little in the first two thirds, so her energy needs stay at maintenance. Merck recommends increasing intake by at least 20–30% above maintenance in the last third, and VCA notes she may need up to about 1.5 times her usual amount in the final three weeks.
 
-**How much more should a pregnant dog eat?**
-Very little in the first trimester. By week 5–6, about 25–30% more than her pre-pregnancy intake. By weeks 8–9, up to 50–100% more. During peak nursing (weeks 2–4 postpartum), some mothers need 3–4x their pre-pregnancy daily calories depending on litter size.
+**How much should a nursing dog eat?**
+A lot — about 2–4 times her maintenance energy, depending on how many puppies she's feeding, according to the Merck Veterinary Manual. Free-choice feeding of a growth diet is recommended while she's nursing, and underfeeding during lactation is a common mistake.
 
-**What foods are dangerous for pregnant dogs?**
-Raw meat and raw eggs (bacterial contamination risk), liver in large amounts (excess vitamin A), grapes and raisins (toxic), xylitol (found in some peanut butters — highly toxic), and excess calcium supplements. The usual canine toxic foods all still apply.
+**Should I give my pregnant dog calcium?**
+No, not unless your vet specifically advises it. When she's eating a complete and balanced diet for growth and reproduction, the Merck manual says calcium and other supplements are rarely necessary and may be harmful. Ask your vet before giving any supplement.
 
-**Should I feed wet or dry food to a pregnant dog?**
-Either works if it meets AAFCO standards for growth/reproduction. Many breeders use high-quality dry kibble as the caloric base with a wet food topper in the third trimester for palatability and hydration. Pure wet food also works — just ensure calorie density is sufficient for late pregnancy needs.
-
-**Is it normal for a pregnant dog to lose her appetite before labor?**
-Yes. A drop in appetite 24–48 hours before whelping is completely normal and is one of the signs that labor is near. Don't try to force her to eat at this point. Her appetite returns quickly after delivery.
-
-**Does a pregnant dog need a different diet in the first few weeks?**
-Usually not. Intake stays at normal maintenance levels until roughly week 5, then climbs steadily to around 1.5 times normal by the final week. Most vets recommend switching to a quality puppy food (or an all-life-stages formula) around week 4–5 so the transition is complete before calorie needs rise — puppy food is more calorie-dense and higher in protein, calcium and phosphorus than adult maintenance food.
-
-<div class="post-cta">
-  Planning for your dog's due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>
-</div>
-
-<div class="post-cta">
-  Not sure how many calories your dog needs normally? → <a href="/tools/pet-food-calorie-calculator.html">Use the Pet Food Calorie Calculator</a>
-</div>
+**Should I feed smaller meals as her pregnancy goes on?**
+Yes. As the puppies take up space in the last weeks, smaller, more frequent meals are easier for her. VCA recommends increasing the amount gradually from about week 6 using this approach.
 
 ## Related Articles
 
-- [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
-- [Signs of Dog Labor: What to Expect Hour by Hour](/blog/signs-of-dog-labor/)
-- [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
-- [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](/blog/what-to-feed-pregnant-cat/)
+- [How Long Are Dogs Pregnant?](/blog/how-long-are-dogs-pregnant/)
+- [How to Tell If Your Dog Is Pregnant](/blog/how-to-tell-if-dog-is-pregnant/)
+- [Signs of Dog Labor](/blog/signs-of-dog-labor/)
+- [Puppy Weight Chart by Breed Size](/blog/puppy-weight-chart-by-breed-size/)
 
----
-
-*This article is for informational purposes only. Always consult your veterinarian for dietary guidance specific to your dog's health and pregnancy.*
+*This article is for general information. Ask your veterinarian about feeding your dog during pregnancy and nursing.*

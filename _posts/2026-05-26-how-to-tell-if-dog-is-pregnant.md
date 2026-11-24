@@ -1,149 +1,103 @@
 ---
 layout: post
 title: "How to Tell If Your Dog Is Pregnant: Early Signs and Vet Confirmation"
-description: Wondering if your dog is pregnant? Here are the early signs to watch for, when symptoms appear, and how vets confirm dog pregnancy.
-category: Dog Care
+description: "At-home signs of dog pregnancy are unreliable in the first month — and most intact females show some of the same signs in a false pregnancy after every heat. When a vet can confirm it by ultrasound, blood test, palpation or X-ray, and how to tell the difference."
+category: Dog Health
 date: 2026-05-26
-read_time: 8
+read_time: 7
 slug: how-to-tell-if-dog-is-pregnant
 faqs:
   - q: "What are the signs of pregnancy in dogs?"
-    a: "The clearest early signs are nipple enlargement and darkening (usually week 3–4), followed by increased appetite, a rounding belly (week 5+), and behavioral changes like nesting or increased affection. These signs alone aren't conclusive — a vet exam via ultrasound or blood test is the only reliable confirmation."
-  - q: "How can I tell if my dog is pregnant without a vet visit?"
-    a: "At-home signs to watch for include nipple enlargement and darkening, increased appetite, weight gain, a rounding abdomen from week 5 onward, and behavioral changes like nesting. None of these confirm pregnancy on their own — they can also appear during a false pregnancy — so a vet visit is the only way to know for certain."
+    a: "Early on there may be nothing obvious. As pregnancy progresses, owners usually notice weight gain, a fuller belly, mammary development and, in the final days, nesting and restlessness. The catch is that a false pregnancy after a heat can produce almost the same signs, so a vet test is the only way to be sure."
   - q: "How soon can you tell if a dog is pregnant?"
-    a: "The earliest reliable physical sign is nipple enlargement and darkening (pinking up), which typically appears around weeks 3–4. Veterinary confirmation is possible from week 3.5–4 via ultrasound or from week 4–5 via a relaxin blood test. Behavioral changes (reduced appetite, increased affection) may appear earlier but are not reliable indicators on their own."
+    a: "With a vet, from about 3–4 weeks. Ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28, and a relaxin blood test works after about day 22–27. At home, most dogs show little in the first month."
   - q: "Can a dog show pregnancy signs and not be pregnant?"
-    a: "Yes. Pseudopregnancy (false pregnancy) is common in dogs and can produce nipple enlargement, mammary development, nesting behavior, and even milk production — without actual pregnancy. It occurs due to normal hormonal changes after a heat cycle. Veterinary testing (ultrasound or relaxin blood test) is the only reliable way to distinguish true pregnancy from false pregnancy."
+    a: "Yes, and it's very common. False pregnancy usually begins 4–9 weeks after a heat and can cause mammary enlargement, milk, nesting, mothering toys, restlessness and a reduced appetite. VCA notes that most intact female dogs show some signs after a heat, and mild cases settle within about 2–3 weeks."
+  - q: "Which test tells real pregnancy from false pregnancy?"
+    a: "Ultrasound, which shows the developing puppies, or a relaxin blood test, since relaxin comes from the placenta. Late in pregnancy, an X-ray shows the puppies' skeletons. Mammary changes, milk and nesting can't tell the two apart."
   - q: "What does a pregnant dog's belly look like at 5 weeks?"
-    a: "At 5 weeks, most dogs show noticeable abdominal rounding — the belly is clearly fuller than before, though it varies with litter size. A dog carrying a large litter will be more obviously enlarged than one carrying one or two puppies. The change is most visible when looking at the dog from above or from the side."
-  - q: "Do dogs show pregnancy signs in the first week?"
-    a: "Rarely. The first week after mating, fertilized eggs are still traveling to the uterus and haven't implanted. Most dogs show no external signs at this stage. Very subtle behavioral changes may occur in some dogs (increased affection or restlessness), but these are not reliable pregnancy indicators."
+    a: "Often only slightly fuller, and in a dog carrying one or two puppies it may look normal. The belly usually becomes clearly larger in the last third of pregnancy. Size of the litter and the dog's build make a big difference, which is why belly size isn't a reliable test."
   - q: "Can a dog be pregnant and not show?"
-    a: "Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know."
-last_modified_at: 2026-10-20
+    a: "Yes, especially with a small litter. A relaxin test can also be falsely negative with a very small litter, so if pregnancy is possible and the result is negative, an ultrasound after day 28 is the better check."
+  - q: "What should I do if I think my dog is pregnant?"
+    a: "Book a vet visit to confirm it and to check her health, ask before giving any medication or supplement, and keep her food the same for the first two thirds of pregnancy. If the pregnancy wasn't planned, ask your vet about the options early."
+last_modified_at: 2026-11-24
 ---
 
-If your dog has recently been in contact with an intact male, or if you're a breeder waiting to see whether a mating was successful, knowing what to look for in early pregnancy matters. The challenge is that early dog pregnancy signs are subtle — and some mimic other conditions entirely.
+If your dog has been near an intact male during her heat, you'll want to know quickly whether she's pregnant. The honest answer is that **you usually can't tell at home in the first month** — and the signs that do appear later can also be caused by a false pregnancy, which is extremely common in dogs.
 
-Here's a practical guide to recognizing the signs of dog pregnancy, understanding when they appear, and knowing how to get a definitive answer from your veterinarian.
+This guide covers what you might notice, why it's easy to be misled, and when a vet can give you a definite answer.
 
-## How Dog Pregnancy Works: A Quick Overview
+## What You Might Notice at Home
 
-Dogs are pregnant for approximately 63 days from ovulation — roughly 9 weeks. Because ovulation timing varies and mating doesn't always coincide precisely with peak fertility, the actual duration from a specific mating to birth can range from about 58 to 68 days.
+| Stage | Possible signs | How reliable |
+|---|---|---|
+| First month | Usually nothing you can rely on | Not reliable |
+| Second month | Weight starts to rise and the belly may begin to fill out | Suggestive, not proof |
+| Last weeks | Clearly larger belly, mammary development, sometimes milk; nesting and restlessness in the final days | Also seen in false pregnancy |
 
-The pregnancy is divided into three trimesters of about three weeks each. Early signs appear primarily in weeks 3–4, become more obvious in weeks 5–6, and are unmistakable by weeks 7–9.
+Dogs are pregnant for about **63 days from ovulation** — see [How Long Are Dogs Pregnant?](/blog/how-long-are-dogs-pregnant/) for how to work out the window from a mating date.
 
-## Early Signs of Dog Pregnancy (Weeks 1–4)
+## The Big Complication: False Pregnancy
 
-The first four weeks are the hardest to read. Most dogs show minimal external signs during this period, and the changes that do appear can be easy to miss or attribute to other causes.
+**False pregnancy (pseudopregnancy) is a normal hormonal event in dogs**, not a disorder. According to VCA Hospitals:
 
-**Changes in appetite**: Some pregnant dogs experience a decrease in appetite in the first few weeks, similar to morning sickness in humans. Others become hungrier than usual. Either pattern can be an early indicator.
+- it usually starts **4–9 weeks after a heat**, whether or not she mated,
+- **most intact female dogs show some signs** after estrus,
+- signs include **mammary enlargement (with or without milk), nesting, mothering or guarding toys, restlessness, reduced appetite, lethargy and occasional vomiting**,
+- mild cases usually **settle within about 2–3 weeks** without treatment.
 
-**Nausea and occasional vomiting**: Mild nausea in the first three weeks is relatively common in pregnant dogs. It typically resolves on its own. Severe or persistent vomiting warrants a vet call regardless of suspected pregnancy.
+The American Kennel Club cites a report that **87% of intact females** show signs at least twice in their lives. VCA also advises **not to massage or milk the teats**, because that can increase milk production.
 
-**Increased affection or behavior changes**: Some dogs become more clingy, more affectionate, or conversely, more withdrawn during early pregnancy. These behavioral shifts are not reliable indicators on their own, but they're commonly reported.
+In other words, a dog nesting with a full udder two months after her heat may be pregnant — or may not. Only a test can tell.
 
-**Nipple changes**: Around week 3–4, the nipples often become slightly enlarged and may darken in color. This is one of the more consistent early physical signs. In dogs who haven't been pregnant before, this may be particularly noticeable.
+## How Vets Confirm Pregnancy
 
-**Slight vaginal discharge**: A small amount of clear discharge can appear around weeks 3–4. This is generally normal. Any bloody, cloudy, or foul-smelling discharge warrants immediate veterinary attention.
+| Method | When it works | What it tells you |
+|---|---|---|
+| Ultrasound | From about 3 weeks after mating; reliable after day 28 | Confirms pregnancy and live puppies; separates pregnancy from false pregnancy and uterine problems |
+| Relaxin blood test | After about day 22–27 | Relaxin comes from the placenta, so it's negative in false pregnancy; can be falsely negative if done early or with one or two puppies |
+| Palpation | Around day 21–28, in a relaxed dog | Can feel uterine swellings; harder after days 35–38 |
+| X-ray | From about day 42–45; best after day 55 | Shows skeletons; the best way to count puppies before birth |
 
-**Mild weight gain**: Noticeable weight gain typically doesn't begin until week 5 or later, but some dogs begin gaining slightly earlier.
+Timings are from the Merck Veterinary Manual and VCA Hospitals. The Merck manual notes ultrasound before day 21 can give false negatives, and that it can also tell pregnancy apart from fluid or infection in the uterus — including pyometra, a serious infection that can follow a heat. If an unspayed dog seems unwell after a heat, especially with increased thirst or discharge, see [Pyometra in Dogs](/blog/pyometra-in-dogs-cost/).
 
-## More Obvious Signs (Weeks 5–9)
+## What to Do Next
 
-By mid-pregnancy, the signs become considerably clearer:
-
-**Abdominal enlargement**: The abdomen becomes visibly larger starting around weeks 5–6. In dogs carrying large litters, this can be dramatic; in those carrying one or two puppies, it may be more subtle.
-
-**Increased appetite**: As the puppies develop rapidly in the second half of pregnancy, most dogs become significantly hungrier. Energy requirements increase substantially in the final trimester.
-
-**Mammary gland development**: The mammary glands enlarge and fill out in preparation for nursing. By late pregnancy, some dogs may have colostrum (the first milk) present.
-
-**Nesting behavior**: In the final weeks, many pregnant dogs begin seeking quiet, secluded spots and may gather bedding or soft materials. This instinctive nesting behavior is a reliable late-pregnancy indicator.
-
-**Visible or palpable movement**: By weeks 7–9, puppy movement may be visible and felt through the abdominal wall.
-
-**Restlessness in the final days**: As labor approaches (typically within 24–48 hours), most dogs become restless, stop eating, and may pant or seek isolation. A rectal temperature drop below 100°F is a reliable sign that labor is imminent.
-
-## How False Pregnancy Complicates Things
-
-One important caveat: dogs can experience **pseudopregnancy** (false pregnancy), which can mimic many of the signs above — including nipple changes, mammary development, nesting behavior, and even milk production.
-
-False pregnancy occurs because of normal hormonal fluctuations after a heat cycle, regardless of whether mating occurred. It typically appears 4–9 weeks after the end of heat. A dog showing pregnancy signs who was not exposed to an intact male may be experiencing pseudopregnancy rather than actual pregnancy.
-
-This is one reason why veterinary confirmation — not behavioral signs alone — matters.
-
-<div class="post-cta">
-  <h4>Know Your Dog's Due Date</h4>
-  <p>Once pregnancy is confirmed, use our Dog Pregnancy Calculator to estimate whelping date and track each week of development.</p>
-  <a href="/tools/dog-pregnancy-calculator.html">Calculate now →</a>
-</div>
-
-## How Vets Confirm Dog Pregnancy
-
-Behavioral signs and physical observations are useful starting points, but definitive confirmation requires veterinary testing. There are several methods, each with different timing and accuracy considerations.
-
-### Abdominal Palpation (Weeks 4–5)
-An experienced veterinarian can often feel the embryos through the abdominal wall around weeks 4–5. This method requires skill and isn't reliable in all dogs — it works best in lean dogs and is less reliable in dogs with tense abdomens or very small litters.
-
-### Ultrasound (Weeks 3.5–4+)
-Ultrasound is the most common confirmation method and can detect pregnancy as early as 3.5–4 weeks post-ovulation. It can also assess fetal heartbeats and provide a rough estimate of litter size. Most vets recommend scheduling an ultrasound around day 28–35 for reliable results.
-
-### Relaxin Blood Test (Weeks 4–5+)
-Relaxin is a hormone produced by the placenta and is specific to pregnancy — it won't be elevated in false pregnancy. Blood tests for relaxin can confirm pregnancy from about 25–30 days post-ovulation. In very small litters, relaxin levels may be too low to trigger a positive test.
-
-### X-Ray (Week 7+)
-X-rays don't confirm early pregnancy, but from about day 45 onward, fetal skeletons are visible and can provide an accurate puppy count. This is typically done in the final weeks to help prepare for whelping — knowing how many puppies are expected helps confirm that delivery is complete.
-
-## Timing Summary
-
-| Stage | Timing | Key Signs |
-|-------|--------|-----------| 
-| Early | Weeks 1–3 | Subtle behavior changes, occasional nausea |
-| Mid-early | Weeks 3–4 | Nipple changes, mild appetite change, possible discharge |
-| Mid | Weeks 5–6 | Visible weight gain, abdominal enlargement |
-| Late | Weeks 7–9 | Clear enlargement, mammary development, nesting |
-| Pre-labor | 24–48 hrs before | Restlessness, temperature drop, not eating |
-
-## What to Do If You Think Your Dog Is Pregnant
-
-If you suspect your dog is pregnant, the most important first step is a vet appointment. Beyond confirming or ruling out pregnancy, your vet will:
-
-- Assess your dog's overall health and baseline condition
-- Discuss appropriate nutrition changes
-- Advise on safe and unsafe medications during pregnancy
-- Help you plan for whelping and know when to seek emergency care
-
-If the pregnancy was unintended, your vet can also discuss the option of spaying while pregnant, which eliminates risks associated with whelping and ends the pregnancy.
+- **Book a confirmation visit** at about 4 weeks after mating, or earlier if she seems unwell.
+- **Don't give medications or supplements** without checking with your vet.
+- **Keep her food the same** for the first two thirds of pregnancy; VCA advises increasing gradually after about week 6 — see [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/).
+- **If the pregnancy wasn't planned**, ask your vet about the options early.
+- **If it's a false pregnancy** and you're not breeding her, VCA recommends spaying to prevent future episodes, ideally once the signs have settled. Costs and timing are in [Spay and Neuter Cost and Timing](/blog/spay-neuter-cost-and-timing/).
 
 ## Frequently Asked Questions
 
 **What are the signs of pregnancy in dogs?**
-The clearest early signs are nipple enlargement and darkening (usually week 3–4), followed by increased appetite, a rounding belly (week 5+), and behavioral changes like nesting or increased affection. These signs alone aren't conclusive — a vet exam via ultrasound or blood test is the only reliable confirmation.
-
-**How can I tell if my dog is pregnant without a vet visit?**
-At-home signs to watch for include nipple enlargement and darkening, increased appetite, weight gain, a rounding abdomen from week 5 onward, and behavioral changes like nesting. None of these confirm pregnancy on their own — they can also appear during a false pregnancy — so a vet visit is the only way to know for certain.
+Early on there may be nothing obvious. As pregnancy progresses, owners usually notice weight gain, a fuller belly, mammary development and, in the final days, nesting and restlessness. The catch is that a false pregnancy after a heat can produce almost the same signs, so a vet test is the only way to be sure.
 
 **How soon can you tell if a dog is pregnant?**
-The earliest reliable physical sign is nipple enlargement and darkening (pinking up), which typically appears around weeks 3–4. Veterinary confirmation is possible from week 3.5–4 via ultrasound or from week 4–5 via a relaxin blood test. Behavioral changes (reduced appetite, increased affection) may appear earlier but are not reliable indicators on their own.
+With a vet, from about 3–4 weeks. Ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28, and a relaxin blood test works after about day 22–27. At home, most dogs show little in the first month.
 
 **Can a dog show pregnancy signs and not be pregnant?**
-Yes. Pseudopregnancy (false pregnancy) is common in dogs and can produce nipple enlargement, mammary development, nesting behavior, and even milk production — without actual pregnancy. It occurs due to normal hormonal changes after a heat cycle. Veterinary testing (ultrasound or relaxin blood test) is the only reliable way to distinguish true pregnancy from false pregnancy.
+Yes, and it's very common. False pregnancy usually begins 4–9 weeks after a heat and can cause mammary enlargement, milk, nesting, mothering toys, restlessness and a reduced appetite. VCA notes that most intact female dogs show some signs after a heat, and mild cases settle within about 2–3 weeks.
+
+**Which test tells real pregnancy from false pregnancy?**
+Ultrasound, which shows the developing puppies, or a relaxin blood test, since relaxin comes from the placenta. Late in pregnancy, an X-ray shows the puppies' skeletons. Mammary changes, milk and nesting can't tell the two apart.
 
 **What does a pregnant dog's belly look like at 5 weeks?**
-At 5 weeks, most dogs show noticeable abdominal rounding — the belly is clearly fuller than before, though it varies with litter size. A dog carrying a large litter will be more obviously enlarged than one carrying one or two puppies. The change is most visible when looking at the dog from above or from the side.
-
-**Do dogs show pregnancy signs in the first week?**
-Rarely. The first week after mating, fertilized eggs are still traveling to the uterus and haven't implanted. Most dogs show no external signs at this stage. Very subtle behavioral changes may occur in some dogs (increased affection or restlessness), but these are not reliable pregnancy indicators.
+Often only slightly fuller, and in a dog carrying one or two puppies it may look normal. The belly usually becomes clearly larger in the last third of pregnancy. Size of the litter and the dog's build make a big difference, which is why belly size isn't a reliable test.
 
 **Can a dog be pregnant and not show?**
-Yes, especially in early pregnancy and in dogs carrying small litters. A dog carrying one or two puppies may not show visible abdominal changes until weeks 6–7. Behavioral signs are often the first clue, but they're easy to miss or misattribute. Veterinary confirmation is the only reliable way to know.
+Yes, especially with a small litter. A relaxin test can also be falsely negative with a very small litter, so if pregnancy is possible and the result is negative, an ultrasound after day 28 is the better check.
+
+**What should I do if I think my dog is pregnant?**
+Book a vet visit to confirm it and to check her health, ask before giving any medication or supplement, and keep her food the same for the first two thirds of pregnancy. If the pregnancy wasn't planned, ask your vet about the options early.
 
 ## Related Articles
 
 - [How Long Are Dogs Pregnant?](/blog/how-long-are-dogs-pregnant/)
 - [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/)
 - [Signs of Dog Labor](/blog/signs-of-dog-labor/)
-- [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/)
+- [Dog Heat Cycle Calculator](/tools/dog-heat-cycle-calculator.html)
 
+*This article is for general information. Always talk to your veterinarian about your dog's health and possible pregnancy.*

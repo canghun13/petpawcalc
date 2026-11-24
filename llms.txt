@@ -189,25 +189,25 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How Much Does a Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-vet-visit-cost): Detailed cost breakdown for routine exams, vaccines, bloodwork, dental cleanings, emergency visits, and specialist care. Includes geographic variation and cost management strategies.
 
-- [How Long Are Dogs Pregnant?](https://petpawcalc.com/blog/how-long-are-dogs-pregnant): 63-day gestation overview with week-by-week development guide. Covers what to expect each week and how to prepare for whelping.
+- [How Long Are Dogs Pregnant? A Week-by-Week Guide](https://petpawcalc.com/blog/how-long-are-dogs-pregnant/): About 63 days from ovulation, 63 ± 7 days from mating (Cornell); week-by-week table with implantation (~day 18), ultrasound (from ~3 weeks, reliable after day 28), relaxin (after day 22–27), X-ray (day 42–45; count after day 55) per Merck/VCA; feeding unchanged for the first two thirds then up to 1.5×; temperature drop below 99°F; when to call the vet.
 
-- [What to Feed a Pregnant Dog: Complete Diet & Nutrition Guide](https://petpawcalc.com/blog/what-to-feed-pregnant-dog): Trimester-by-trimester diet and nutrition guide for pregnant dogs. Covers calorie increases, food type recommendations, supplements, and what to avoid.
+- [What to Feed a Pregnant Dog: Diet, Portions, and the Timing That Matters](https://petpawcalc.com/blog/what-to-feed-pregnant-dog/): Maintenance intake for the first two thirds, at least +20–30% in the last third (Merck), up to 1.5× in the last three weeks (VCA), 2–4× maintenance while nursing with free-choice feeding, growth diet from the start of pregnancy, why calcium supplements are discouraged.
 
-- [How to Tell If Your Dog Is Pregnant](https://petpawcalc.com/blog/how-to-tell-if-dog-is-pregnant): Early and later signs of dog pregnancy by week, how to distinguish from false pregnancy, and how veterinarians confirm pregnancy (palpation, ultrasound, relaxin test, X-ray).
+- [How to Tell If Your Dog Is Pregnant: Early Signs and Vet Confirmation](https://petpawcalc.com/blog/how-to-tell-if-dog-is-pregnant/): Why at-home signs are unreliable, false pregnancy (4–9 weeks after heat, most intact females show signs, settles in 2–3 weeks — VCA; 87% figure — AKC), and confirmation by ultrasound, relaxin, palpation and X-ray with timings (Merck, VCA).
 
-- [Signs of Dog Labor: What to Expect Hour by Hour](https://petpawcalc.com/blog/signs-of-dog-labor): Hour-by-hour breakdown of dog labor — pre-labor signs, Stage 1 and Stage 2 labor, placenta delivery, and when to call the vet. Covers the temperature drop method and post-whelping monitoring.
+- [Signs of Dog Labor: What to Expect Hour by Hour](https://petpawcalc.com/blog/signs-of-dog-labor/): Temperature drop, stage 1 (6–12 hours of signs, up to 24–36 hours), stage 2 timings (0–30 minutes per puppy, up to 2 hours between), placentas, lochia for about 3 weeks (Cornell), dystocia criteria and prevalence (Merck), when to call the vet.
 
 - [How to Reduce Vet Costs Without Compromising Your Dog's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-dogs): Practical strategies for lowering lifetime vet costs — pet insurance timing, emergency funds, preventive care ROI, dental care, low-cost vaccine clinics, and when to use urgent care vs. the ER.
 
 - [How Often Should Cats Go to the Vet? A Schedule by Age](https://petpawcalc.com/blog/how-often-vet-visits-cat): Recommended vet visit frequency for cats by life stage (kitten, adult, senior) with what each visit should cover, indoor vs. outdoor differences, and typical costs.
 
-- [How Long Are Cats Pregnant?](https://petpawcalc.com/blog/how-long-are-cats-pregnant): Feline gestation overview with week-by-week development guide. Covers signs of pregnancy, what to prepare, and how to support your cat through delivery.
+- [How Long Are Cats Pregnant? A Week-by-Week Guide](https://petpawcalc.com/blog/how-long-are-cats-pregnant/): About 63–65 days on average, range about 60–67 (some to 71) per VCA; trimester table, confirmation timing, feeding (+50% in pregnancy, over 2× by end of nursing), nesting box, signs of impending birth, postpartum complications.
 
 - [How to Tell If Your Cat Is Pregnant: Early Signs and Vet Confirmation](https://petpawcalc.com/blog/how-to-tell-if-cat-is-pregnant/): Induced ovulation and pregnancy while nursing; signs by trimester across a 63–65-day pregnancy (pinking up at days 16–20); vet confirmation by palpation (~2½ weeks), ultrasound heartbeats (3–4 weeks; scans before day 21 can miss it, per Merck) and X-ray (~6 weeks, to count kittens); rare pseudopregnancy; temperature below 100°F before labor (PetMD).
 
 - [What to Feed a Pregnant Cat: Diet, Portions, and Why Cats Need More From the Start](https://petpawcalc.com/blog/what-to-feed-pregnant-cat/): Queens gain weight steadily from conception, unlike dogs (Merck); kitten/growth food with AAFCO gestation/lactation or all-life-stages claims (VCA); last-third intake +25% average and energy up to 40% above maintenance; 2–3× intake while nursing; free-choice feeding for 3–4 weeks except with one or two kittens (mastitis risk); foods and supplements to avoid.
 
-- [Signs of Cat Labor: What to Expect](https://petpawcalc.com/blog/signs-of-cat-labor): Pre-labor signs, stage-by-stage breakdown of feline labor, kitten delivery, and when to contact a vet. Covers nesting behavior, contractions, and post-birth monitoring.
+- [Signs of Cat Labor: What to Expect Before, During, and After](https://petpawcalc.com/blog/signs-of-cat-labor/): Pre-labor signs (temperature below 100°F, stops eating, milk 24–48 hours before), stage timings, 10–60 minutes between kittens, normal interrupted labor of 24–36 hours, VCA's call-the-vet list, nest temperatures and postpartum complications.
 
 - [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Healthy weight ranges by breed and sex, how to assess body condition score at home, and what to do if your cat is overweight or underweight.
 

@@ -1,179 +1,109 @@
 ---
 layout: post
 title: "How Long Are Dogs Pregnant? A Week-by-Week Guide"
-description: "Dog pregnancy lasts about 63 days — but a lot happens in those 9 weeks. Here's what to expect each week and how to prepare for the birth."
+description: "Dogs are pregnant for about 63 days from ovulation — but 63 ± 7 days from a mating date, because sperm survive for days. What happens week by week, when a vet can confirm it, when to change her food, and the labor signs that mean call the vet."
 category: Dog Health
 date: 2026-05-19
 read_time: 7
 slug: how-long-are-dogs-pregnant
 faqs:
-  - q: "How long are dogs pregnant in months?"
-    a: "Dog pregnancy lasts about 2 months — roughly 63 days from ovulation, which is a little over 9 weeks."
-  - q: "Can you tell if a dog is pregnant at 2 weeks?"
-    a: "Not reliably. At 2 weeks the embryos are still tiny and most tests won't show a positive result. A blood test for relaxin is accurate from around day 22–25, and an ultrasound can confirm pregnancy from day 25–30."
-  - q: "Do dogs show at 4 weeks pregnant?"
-    a: "Some dogs start to show a slight belly rounding around week 4–5, but it varies by litter size and the dog's own build. Weight gain and nipple changes are often the more noticeable early signs."
-  - q: "Can a dog be pregnant for only 50 days?"
-    a: "A pregnancy of 50 days would be premature and unlikely to produce viable puppies. Normal gestation is 58–68 days from ovulation. If your dog delivers before day 58, contact your vet immediately."
-  - q: "How many puppies can a dog have?"
-    a: "Litter size varies widely by breed — small breeds typically have 1–4 puppies, while large breeds can have 8–12 or more. An X-ray at week 7–8 gives the most accurate count before birth." 
+  - q: "How long are dogs pregnant?"
+    a: "About 63 days from ovulation. Counted from a mating date, it's less exact — about 63 days, give or take 7 — because sperm can survive for several days and eggs need 2–3 days to mature after ovulation. If ovulation was pinpointed with progesterone testing, the due date is usually accurate to within a day or two."
+  - q: "When can a vet confirm a dog is pregnant?"
+    a: "An ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28. A relaxin blood test detects pregnancy after about 22–27 days. Gentle palpation can sometimes find the swellings around day 21–28 in a relaxed dog. X-rays show the puppies' skeletons from about day 42–45 and are the best way to count them after day 55."
+  - q: "When should I feed my pregnant dog more?"
+    a: "Not in the first two thirds of pregnancy. VCA's veterinary guidance is to keep her intake the same for about the first 6 weeks after mating, then increase it gradually with smaller, more frequent meals, up to about 1.5 times her normal amount in the last three weeks."
+  - q: "How do I know labor is close?"
+    a: "Her rectal temperature often drops below 99°F within 24 hours of birth (normal is about 100–102.5°F), though the dip lasts only about 8 hours and is easy to miss. Nesting, restlessness and panting usually start 6–12 hours before the first puppy."
+  - q: "When should I call the vet during whelping?"
+    a: "If more than 2 hours pass between puppies, if she has strong contractions for more than 30 minutes without a puppy, if there's dark green or foul-smelling discharge before the first puppy, if labor hasn't started within 24–36 hours of the temperature drop, or if pregnancy goes beyond 70 days from a known breeding date."
+last_modified_at: 2026-11-24
 ---
 
-If your dog recently mated, you're probably wondering: how long until puppies? The short answer is about **63 days** — but knowing *what's happening* each week makes a big difference in how well you can care for her.
+The short answer is **about 63 days** — a little over nine weeks. The longer answer depends on what you're counting from, and that's why many owners find their dog "late" or "early" when she's actually right on time.
 
-This guide walks you through every stage of dog pregnancy, from fertilization to the whelping box.
+## Why the Due Date Is a Range
 
----
+According to Cornell's Riney Canine Health Center, dogs are pregnant for **about 63 days from ovulation**. But most owners only know the mating date, and mating isn't the same as conception: sperm can survive for days, and a dog's eggs need **2–3 days to mature** after ovulation before they can be fertilised. So from the first mating, Cornell puts the due date at **63 days, give or take 7**.
 
-## How Long Is a Dog's Pregnancy?
+If your vet tracked ovulation with **progesterone blood tests**, the estimate tightens to **63 days, give or take 1–2**. If there were two matings, VCA suggests expecting puppies **63–65 days after the later one**. An ultrasound around the middle of pregnancy can also help estimate how far along she is.
 
-Dog gestation averages **63 days from the mating date**, with a normal range of 58–68 days. That's roughly 9 weeks — divided into three trimesters of about 21 days each.
+Our [Dog Pregnancy Calculator](/tools/dog-pregnancy-calculator.html) works out the window from a mating date.
 
-Breed size plays a small role: smaller breeds tend to deliver slightly earlier (around day 62), while giant breeds may go a day or two longer (day 64–65). But individual variation matters more than size.
+## Week by Week
 
-One thing worth knowing: the date of mating isn't always the same as the date of conception. Sperm can survive inside the female reproductive tract for up to 7 days, and eggs remain viable for 48–72 hours after ovulation. This means a dog mated on day 1 of her heat cycle could deliver anywhere from day 58 to day 72 — a 2-week window. That's why tracking from ovulation (if possible) gives a more accurate due date than tracking from mating alone.
+| Weeks | What's happening | What you can do |
+|---|---|---|
+| 1–2 | Fertilisation; embryos travel to the uterus. No outward signs. | Keep her routine and food the same. Ask your vet before giving any medication or supplement. |
+| 3 | Embryos implant (about day 18, per the Merck Veterinary Manual). | An ultrasound may pick up the pregnancy from about 3 weeks. |
+| 4–5 | Uterine swellings can sometimes be felt (around day 21); ultrasound is reliable after day 28; a relaxin blood test works after about day 22–27. | Book a confirmation visit. Food stays the same for now. |
+| 6–7 | Puppies' skeletons start to calcify (from about day 28) and become visible on X-ray at about day 42–45. Her belly is clearly bigger. | From about week 6, increase food gradually with smaller, more frequent meals. Set up a whelping area. |
+| 8–9 | Skeletons are prominent; an X-ray after day 55 gives the best puppy count. Nesting starts. | Get an X-ray count, start checking her temperature, and keep your vet's emergency number handy. |
 
-<div class="post-cta">
-  Want to know your dog's exact due date? → <a href="/tools/dog-pregnancy-calculator.html">Use the Dog Pregnancy Calculator</a>
-</div>
+Knowing the puppy count matters: it's how you'll know whether whelping is finished or a puppy is still to come.
 
----
+## Confirming the Pregnancy
 
-## Week-by-Week: What's Happening
+| Method | When it works | Notes |
+|---|---|---|
+| Ultrasound | From about 3 weeks; reliable after day 28 | VCA's preferred method; counting puppies is difficult |
+| Relaxin blood test | After about day 22–27 | Can be falsely negative if done too early or with a very small litter |
+| Palpation | Around day 21–28 | Depends on a relaxed dog; less reliable after days 35–38 |
+| X-ray | From about day 42–45; best after day 55 | Most accurate puppy count |
 
-### Weeks 1–2: Fertilization & Implantation
-After mating, fertilization occurs within a few days. The fertilized eggs travel to the uterus and begin implanting around day 10–12. There are almost no outward signs during this period — your dog will look and act completely normal.
+Timings are from the Merck Veterinary Manual and VCA Hospitals.
 
-**What to do:** Keep her routine the same. No need to change her diet or limit exercise yet. Avoid unnecessary medications or vaccinations during this window if possible — check with your vet if something comes up.
+## Feeding Through Pregnancy
 
-### Week 3: Early Signs Appear
-By day 21, embryos are fully implanted. Some dogs begin showing subtle signs: slightly enlarged nipples, increased affection, or mild nausea. A vet can now confirm pregnancy with a blood test measuring the relaxin hormone — the most reliable early confirmation method.
+Many owners start feeding more as soon as they suspect pregnancy, but VCA's guidance is to **keep her intake the same for the first two thirds** — about 6 weeks after mating. From then on, increase gradually, using **smaller, more frequent meals**, up to about **1.5 times her normal amount** in the last three weeks. VCA recommends a diet with an AAFCO statement for "gestation and lactation" or "all life stages", and checking with your vet before any supplement. Details are in [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/).
 
-**What to do:** If you want early confirmation, schedule a vet visit this week. Don't increase food yet — the puppies are still tiny and her calorie needs haven't changed significantly.
+## Signs That Labor Is Close
 
-### Week 4: Ultrasound Week
-The puppies' organs begin forming, and an ultrasound can now confirm pregnancy and estimate the number of fetuses (though not always with perfect accuracy). Your dog's belly may start to look slightly rounder, and her appetite will likely increase.
+- **Temperature drop.** Normal rectal temperature is about **100–102.5°F**. Cornell notes it can fall **below 99°F within 24 hours of birth**, but the dip lasts only about **8 hours**, so twice-daily checks can miss it.
+- **Nesting, restlessness and panting** usually begin **6–12 hours** before birth. This first stage can last up to 24–36 hours.
+- **Puppies arrive** typically within **0–30 minutes** of active pushing, with up to **2 hours** between puppies being normal, according to Cornell.
 
-A clear, odorless vaginal discharge may begin around this time — this is normal. If the discharge is colored, foul-smelling, or accompanied by lethargy, contact your vet.
-
-**What to do:** Book your first prenatal vet visit. Start transitioning to a high-quality puppy or pregnancy formula food. The switch should be gradual — over 5–7 days — to avoid digestive upset.
-
-### Week 5: Visible Belly Growth
-This is when things become obvious. Your dog's abdomen rounds out noticeably as the puppies grow rapidly. Appetite increases significantly. She may sleep more and want more downtime.
-
-By the end of week 5, the puppies are fully recognizable as dogs in miniature — limbs, paws, and faces are all developing. They're still small, but growth accelerates sharply from here.
-
-**What to do:** Gradually increase her food portions — up to about 1.5x her normal amount by the end of pregnancy. Split meals into 2–3 smaller servings rather than one large one. Always keep fresh water available.
-
-### Week 6: Slowing Down
-The puppies' coats and claws are forming. Your dog will tire more quickly and may prefer shorter, gentler walks. Her belly will be unmistakably large by now. You may be able to feel movement in her abdomen if you place your hand gently on her side.
-
-Nesting behavior may start this week for some dogs — scratching at bedding, seeking out quiet corners, or carrying toys around. This is her instinctive preparation for birth.
-
-**What to do:** Continue 2–3 smaller meals daily. Avoid roughhousing or strenuous activity. Start thinking about where you'll set up the whelping box.
-
-### Week 7: Set Up the Whelping Box
-Puppies are nearly fully developed. Movement in your dog's belly becomes more visible, especially when she's resting. Nesting behavior often intensifies — scratching, circling, rearranging bedding are all normal.
-
-**What to do:** Set up the whelping box now and introduce your dog to it so she has time to get comfortable with it before labor. A simple, clean, low-sided box lined with washable bedding works well — it should be large enough for her to stretch out fully, with sides low enough for her to step over but high enough to contain newborn puppies.
-
-Schedule an X-ray this week to count the puppies. This is important — you need to know how many to expect so you'll know when delivery is complete. An unretrieved puppy can be life-threatening.
-
-### Week 8: Final Preparations
-The puppies are fully formed and moving into birth position — heads typically facing the cervix. Your dog may become restless, seek out quiet spots, or start refusing food as her body prepares for labor.
-
-**What to do:** Take her temperature twice daily with a rectal thermometer. A normal dog temperature is 101–102.5°F (38.3–39.2°C). When it drops below 99°F (37.2°C), labor usually begins within 12–24 hours. This is your clearest signal that whelping is imminent.
-
-Have your vet's emergency number saved and readily available.
-
-### Week 9: Labor & Delivery
-From day 58 onward, birth can happen at any time. Most deliveries take 3–12 hours total, with each puppy born 30–60 minutes apart. It's normal for your dog to rest between puppies — even for an hour or two — as long as she's not actively straining without producing a puppy.
-
-Each puppy is born in a sac, which the mother usually breaks open and licks to stimulate breathing. If she doesn't do this within 30 seconds, you may need to gently tear the sac yourself and rub the puppy with a clean towel.
-
-**What to do:** Stay close, stay calm, and have your vet's emergency number ready. Healthy puppies should begin nursing within a couple of hours of birth. Count them as they're born and confirm the number matches your X-ray.
-
----
-
-## Early Signs of Pregnancy in Dogs
-
-If you're not sure whether your dog is pregnant, watch for these signs in the first few weeks:
-
-- **Reduced appetite or mild vomiting** (early weeks)
-- **Nipple enlargement and color change** (around week 3–4)
-- **Increased clinginess or affection**
-- **Lethargy and more sleep than usual**
-- **Clear vaginal discharge** (week 4 onward — normal, unless colored or foul-smelling)
-- **Belly rounding** (noticeable from week 5)
-
-The only reliable way to confirm pregnancy is through a vet — either a blood test (week 3+), ultrasound (week 4+), or X-ray (week 7+). Physical signs alone can be misleading, as false pregnancies are common in dogs and can mimic real pregnancy symptoms closely.
-
----
-
-## How to Prepare: A Simple Checklist
-
-- [ ] Confirm pregnancy with vet (week 3–4)
-- [ ] Switch to puppy/pregnancy food (week 4–5)
-- [ ] Increase food gradually through the second and third trimester
-- [ ] Set up whelping box (week 7)
-- [ ] Get an X-ray to count puppies (week 7–8)
-- [ ] Take daily temperature readings (week 8–9)
-- [ ] Have vet's emergency number saved
-- [ ] Prepare clean towels and a bulb syringe for the birth
-
----
-
-## What to Feed a Pregnant Dog
-
-During the first 4–5 weeks, your dog's calorie needs don't change much. After that, gradually increase her food — a high-quality puppy formula works well because it's calorie-dense and nutritionally complete for growth and reproduction.
-
-By the last trimester, she may need up to twice her normal daily calories. Feed smaller, more frequent meals as her belly grows and her stomach has less room.
-
-Avoid calcium supplements during pregnancy unless specifically recommended by your vet — too much calcium can actually impair labor by disrupting the body's normal calcium regulation.
-
-<div class="post-cta">
-  Need help with nutrition during pregnancy? → <a href="/tools/pet-food-calorie-calculator.html">Try the Pet Food Calorie Calculator</a>
-</div>
-
----
+[Signs of Dog Labor](/blog/signs-of-dog-labor/) covers the stages in detail.
 
 ## When to Call the Vet
 
-Call your vet immediately if:
-- Labor hasn't started by day 68
-- More than 4 hours pass between puppies during delivery
-- Your dog strains hard for over 30 minutes without producing a puppy
-- You see green or black discharge before the first puppy arrives
-- A puppy appears stuck
-- Your dog seems in severe pain or collapses
-- The number of placentas doesn't match the number of puppies (retained placenta is a serious complication)
+Based on Cornell and the Merck Veterinary Manual, call your vet if:
 
-Dog pregnancy and birth usually proceed without problems, but having your vet's number on hand — and knowing when to use it — is part of responsible preparation.
+- **more than 2 hours** pass between puppies,
+- she has **strong contractions for more than 30 minutes** without producing a puppy,
+- there's **dark green or foul-smelling discharge** before the first puppy,
+- whelping hasn't started within **24–36 hours of the temperature drop**,
+- pregnancy goes beyond **70 days** from a known breeding date,
+- she seems very unwell, weak or in severe pain.
+
+Dystocia (difficult birth) affects about 5% of pregnancies overall, according to Merck, but is far more common in some breeds, especially flat-faced and short-legged breeds such as Bulldogs, Pugs, Boston Terriers and Chihuahuas — for those breeds, make a plan with your vet well before the due date.
+
+## After the Birth
+
+Some discharge (lochia) is normal after whelping — Cornell says it usually lasts about **3 weeks** and can continue for up to 8. Contact your vet if it smells bad or increases.
 
 ## Frequently Asked Questions
 
-**How long are dogs pregnant in months?**
-Dog pregnancy lasts about 2 months — roughly 63 days from ovulation, which is a little over 9 weeks.
+**How long are dogs pregnant?**
+About 63 days from ovulation. Counted from a mating date, it's less exact — about 63 days, give or take 7 — because sperm can survive for several days and eggs need 2–3 days to mature after ovulation. If ovulation was pinpointed with progesterone testing, the due date is usually accurate to within a day or two.
 
-**Can you tell if a dog is pregnant at 2 weeks?**
-Not reliably. At 2 weeks the embryos are still tiny and most tests won't show a positive result. A blood test for relaxin is accurate from around day 22–25, and an ultrasound can confirm pregnancy from day 25–30.
+**When can a vet confirm a dog is pregnant?**
+An ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28. A relaxin blood test detects pregnancy after about 22–27 days. Gentle palpation can sometimes find the swellings around day 21–28 in a relaxed dog. X-rays show the puppies' skeletons from about day 42–45 and are the best way to count them after day 55.
 
-**Do dogs show at 4 weeks pregnant?**
-Some dogs start to show a slight belly rounding around week 4–5, but it varies by litter size and the dog's own build. Weight gain and nipple changes are often the more noticeable early signs.
+**When should I feed my pregnant dog more?**
+Not in the first two thirds of pregnancy. VCA's veterinary guidance is to keep her intake the same for about the first 6 weeks after mating, then increase it gradually with smaller, more frequent meals, up to about 1.5 times her normal amount in the last three weeks.
 
-**Can a dog be pregnant for only 50 days?**
-A pregnancy of 50 days would be premature and unlikely to produce viable puppies. Normal gestation is 58–68 days from ovulation. If your dog delivers before day 58, contact your vet immediately.
+**How do I know labor is close?**
+Her rectal temperature often drops below 99°F within 24 hours of birth (normal is about 100–102.5°F), though the dip lasts only about 8 hours and is easy to miss. Nesting, restlessness and panting usually start 6–12 hours before the first puppy.
 
-**How many puppies can a dog have?**
-Litter size varies widely by breed — small breeds typically have 1–4 puppies, while large breeds can have 8–12 or more. An X-ray at week 7–8 gives the most accurate count before birth.
-
+**When should I call the vet during whelping?**
+If more than 2 hours pass between puppies, if she has strong contractions for more than 30 minutes without a puppy, if there's dark green or foul-smelling discharge before the first puppy, if labor hasn't started within 24–36 hours of the temperature drop, or if pregnancy goes beyond 70 days from a known breeding date.
 
 ## Related Articles
 
-- [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
-- [Puppy Weight Chart by Breed Size: What's Normal at Every Age?](/blog/puppy-weight-chart-by-breed-size/)
-- [Signs of Dog Labor: What to Expect Hour by Hour](/blog/signs-of-dog-labor/)
+- [How to Tell If Your Dog Is Pregnant](/blog/how-to-tell-if-dog-is-pregnant/)
+- [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/)
+- [Signs of Dog Labor](/blog/signs-of-dog-labor/)
+- [Dog Pregnancy Calculator](/tools/dog-pregnancy-calculator.html)
 
----
-
-*This article is for informational purposes only and is not a substitute for veterinary advice. Always consult your vet for guidance specific to your dog's pregnancy.*
+*This article is for general information and isn't a substitute for veterinary advice about your dog's pregnancy.*

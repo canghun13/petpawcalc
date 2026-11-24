@@ -1,179 +1,98 @@
 ---
 layout: post
 title: "How Long Are Cats Pregnant? A Week-by-Week Guide"
-description: Cat pregnancy lasts about 63–65 days — but what's actually happening each week? Here's a complete guide to feline gestation from mating to birth.
+description: "Cats are pregnant for about 63–65 days on average, with a normal range of roughly 60–67 days and some births up to day 71. What happens in each trimester, when a vet can confirm it, how her food needs change, and how to prepare for the birth."
 category: Cat Care
 date: 2026-06-12
-read_time: 9
+read_time: 6
 slug: how-long-are-cats-pregnant
 faqs:
   - q: "How long are cats pregnant?"
-    a: "Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days, though deliveries before day 60 carry risk for the kittens' survival. Most cats deliver between day 63 and day 67. If your cat hasn't given birth by day 70, contact your veterinarian."
+    a: "About 63–65 days on average — a little over two months. VCA Hospitals gives a normal range of about 60–67 days, and notes that most cats give birth between days 63 and 65, though some go as long as 71 days."
   - q: "How can I tell how far along my cat is?"
-    a: "The most reliable method is a veterinary ultrasound at week 3.5–4, which can confirm pregnancy and estimate gestational age from fetal size. An X-ray from week 6 onward shows fetal skeletons and provides an accurate kitten count. At home, the progression of physical signs — nipple pinking (week 3), visible belly rounding (week 5), mammary enlargement (week 8) — gives a rough estimate, but vet confirmation is more accurate."
+    a: "If you know when she mated, count from that date. If not, a vet can estimate it: ultrasound measurements give an estimate of gestational age, and on an X-ray the kittens' skeletons are visible from about day 45, which also lets the vet count them."
   - q: "What are the first signs of cat pregnancy?"
-    a: "The earliest reliable home indicator is \"pinking up\" — nipple enlargement and color change to a deeper pink — which typically appears around week 3. Some cats show mild nausea or reduced appetite in weeks 2–3. Visible abdominal rounding usually starts around week 5. Before these signs appear, most cats look and act completely normal."
-  - q: "Can a cat be pregnant and not show?"
-    a: "Yes, especially with small litters (1–2 kittens). A cat carrying a single kitten may not show obvious abdominal rounding until weeks 6–7. Behavioral changes (increased affection, more sleep, nesting) are often the first clues in these cases. A relaxin blood test or ultrasound can confirm pregnancy before physical signs are obvious."
-  - q: "What should I feed my pregnant cat?"
-    a: "From around week 4, transition gradually to a high-quality kitten food or a food labeled \"for all life stages\" (AAFCO certified for growth and reproduction). These are calorie-dense and nutritionally appropriate for pregnancy. Feed to appetite in the final weeks — her calorie needs increase significantly as kittens grow rapidly. Keep her on kitten food throughout the nursing period as well."
-
+    a: "'Pinking up' — pinker, more prominent nipples — around days 16–20, and a slight increase in appetite. A vet exam 3–4 weeks after mating usually confirms the pregnancy."
+  - q: "How much more does a pregnant cat eat?"
+    a: "More than you might expect, and from early on, because kittens grow throughout pregnancy. VCA notes food intake may rise by about 50% during pregnancy and may reach more than double her usual amount by the end of nursing. A kitten or growth formula is recommended."
+  - q: "How do I know when my cat will give birth?"
+    a: "Nesting usually starts in the final week. In the last 24 hours her rectal temperature typically falls below 100°F and she usually stops eating; milk may appear 24–48 hours before labor."
+last_modified_at: 2026-11-24
 ---
 
-Cat pregnancy moves fast. From mating to birth in roughly nine weeks, the changes your cat goes through — and the kittens' development inside her — happen on a compressed timeline compared to most mammals.
+A cat's pregnancy is short — **about 63–65 days on average** — and a lot of it goes unnoticed. If you've just realized your cat might be pregnant, she may already be a third of the way through.
 
-If you're trying to figure out when kittens are coming, what to expect along the way, or whether your cat might already be pregnant, this guide covers everything week by week.
+## How Long Is a Cat Pregnant?
 
-## How Long Is a Cat's Pregnancy?
+VCA Hospitals gives cat gestation as **about 60–67 days, averaging 63–65**, and notes in a separate guide that most cats give birth **between days 63 and 65**, with some going as long as **71 days**. Because cats ovulate in response to mating, the mating date is a good starting point for the count. Our [Cat Pregnancy Calculator](/tools/cat-pregnancy-calculator.html) works out the due-date window.
 
-Cat gestation lasts an average of **63–65 days** from the mating date. The normal range is wider than most people expect: anywhere from 58 to 72 days can be within normal limits, though deliveries before day 60 carry risk for the kittens' survival.
+If her pregnancy goes past about 71 days from a known mating date, call your vet.
 
-Most cats deliver between day 63 and day 67. If your cat hasn't given birth by day 70, contact your veterinarian — prolonged pregnancy can signal complications.
+## The Three Trimesters
 
-A few factors that influence gestation length:
-- **Breed**: Purebred cats (Siamese, Persians) tend to carry slightly longer than domestic mixed cats
-- **Litter size**: Smaller litters sometimes have longer gestations; large litters occasionally deliver earlier
-- **Age**: Very young queens (first pregnancy) sometimes deliver earlier; older cats may vary
+PetMD divides a cat's pregnancy into three trimesters of about 20 days each:
 
-<div class="post-cta">
-  <h4>Cat Pregnancy Calculator</h4>
-  <p>Enter your cat's mating date to get her estimated due date and a week-by-week guide.</p>
-  <a href="/tools/cat-pregnancy-calculator.html">Calculate now →</a>
-</div>
+| Trimester | Roughly | What's happening | What you can do |
+|---|---|---|---|
+| First | Days 1–20 | Embryos implant (about day 14, per Merck). Little outward change; appetite rises slightly; nipples "pink up" around days 16–20. | Book a vet check about 3–4 weeks after mating. Move her onto a kitten or growth food. |
+| Second | Days 21–40 | Kittens' heartbeats visible on ultrasound at about 3–4 weeks; belly starts to fill out. | Keep weighing her; she should gain steadily. |
+| Third | Day 41 to birth | Skeletons visible on X-ray from about day 45; belly clearly swollen; nesting in the final week. | Set up a quiet nesting box; ask about an X-ray to count kittens. |
 
-## Week-by-Week: What's Happening Inside
+Sources: PetMD (2024), the Merck Veterinary Manual and VCA Hospitals.
 
-### Week 1 (Days 1–7): Fertilization
-Cats are induced ovulators — they release eggs in response to mating, not on a fixed cycle. Fertilization typically occurs within 24–48 hours. Embryos begin dividing as they travel toward the uterus.
+## Confirming the Pregnancy
 
-Outward signs: None. Your cat will behave completely normally.
+- **Vet exam:** VCA says an exam **3–4 weeks after breeding** usually confirms it. PetMD notes a vet may feel the developing kittens at about two and a half weeks.
+- **Ultrasound:** heartbeats at about **3–4 weeks**. The Merck manual notes ultrasound in general works best between days 25 and 35 and can miss a pregnancy before day 21.
+- **X-ray:** kittens' skeletons can be counted from about **day 45**. Knowing how many to expect tells you when the birth is finished.
 
-### Week 2 (Days 8–14): Implantation
-Embryos implant in the uterine lining. Some queens show subtle behavioral changes — slightly more affectionate or seeking more sleep — but many show nothing at all at this stage.
+The signs you can see at home are covered in [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/).
 
-Some cats experience mild nausea around days 10–14, similar to morning sickness in humans. If your cat seems off her food for a few days, this may be why.
+## Feeding Through Pregnancy
 
-### Week 3 (Days 15–21): Pinking Up
-This week brings the first reliable visible sign of pregnancy: **nipple enlargement and color change**. The nipples become more prominent and shift to a deeper pink — veterinarians call this "pinking up." In first-time mothers, the change is often more dramatic and easier to spot.
+Unlike dogs, cats gain weight **steadily from early pregnancy**, so their needs rise early. VCA notes food intake may increase by **about 50%** during pregnancy and may reach **more than double** her usual amount by the end of nursing. A kitten or growth formula is recommended throughout. Details are in [What to Feed a Pregnant Cat](/blog/what-to-feed-pregnant-cat/).
 
-A relaxin hormone blood test can confirm pregnancy from around day 21 onward.
+## Preparing for the Birth
 
-### Week 4 (Days 22–28): Organ Formation
-The kittens' major organs — heart, brain, spinal cord — begin forming this week. An ultrasound at your vet can now confirm pregnancy and detect heartbeats. Your cat's abdomen may begin to look slightly fuller, and her appetite typically increases.
+- **A nesting box.** VCA suggests a quiet box with low sides, lined with several layers of disposable absorbent material, introduced before the final week.
+- **A vet plan.** Keep your vet's number and the nearest emergency clinic's number handy.
+- **Watch for signs.** Nesting usually starts in the final week; in the last 24 hours her temperature typically falls **below 100°F** and she usually stops eating. Milk may appear 24–48 hours before labor. [Signs of Cat Labor](/blog/signs-of-cat-labor/) explains what normal delivery looks like.
 
-This is the right week for a first prenatal vet visit. Your vet can confirm the pregnancy, estimate litter size, and advise on diet and care going forward.
+## When to Call the Vet During Pregnancy
 
-### Week 5 (Days 29–35): Rapid Growth
-Kittens grow rapidly this week, developing distinct physical features. Your cat's belly becomes noticeably rounder. Appetite increases significantly — this is when calorie needs start climbing and you should be offering more food.
+- vaginal bleeding or a discharge before her due date,
+- she stops eating for more than a day before the last week, or seems unwell,
+- the pregnancy goes beyond about **71 days** from a known mating,
+- a high temperature — VCA treats a rectal temperature **above 103°F** as a reason for immediate help around the birth.
 
-You may also notice behavioral changes: more time resting, less interest in active play, increased affection or, in some cats, more need for privacy.
+## After the Birth
 
-### Week 6 (Days 36–42): Kittens Taking Shape
-Kittens' skeletal structures are now visible on X-ray after day 42, which allows for an accurate kitten count. Fur and claws begin forming. Your cat's abdomen is unmistakably enlarged at this point.
+VCA recommends a vet check for the mother and kittens **within 24 hours** of delivery. Some bloody discharge is normal for several days; see a vet if it continues **beyond a week**. Infection of the uterus (metritis) usually shows up within 3 days of birth, and milk fever (eclampsia) usually 3–5 weeks after, so watch for fever, lethargy, poor appetite, trembling or wobbliness in those windows.
 
-This is a good time to set up the kittening box and introduce your cat to it before she starts seeking a nesting spot on her own terms — which she will.
-
-### Week 7 (Days 43–49): Nesting Begins
-Kittens are nearly fully formed. Movement may be visible or feelable through your cat's belly wall. Nesting behavior typically intensifies: your cat may start rearranging bedding, exploring closets, or seeking out quiet corners of the house.
-
-Restrict outdoor access if your cat goes outside. A cat close to delivery who delivers outdoors is at significant risk.
-
-### Week 8 (Days 50–56): Final Development
-Kittens are fully developed and moving into birth position. Your cat's mammary glands enlarge noticeably and may begin producing a small amount of milk. She may become restless, vocal, or unusually clingy — or, conversely, more withdrawn.
-
-Monitor her temperature twice daily from this point. A rectal temperature drop below 99°F (37.2°C) reliably signals that labor is typically within 24 hours.
-
-### Week 9 (Days 57–65): Birth
-Labor can begin from day 58 onward, though most cats deliver between day 63 and 67. The signs that birth is imminent:
-
-- Temperature drops below 99°F (37.2°C)
-- Refusal to eat
-- Intense nesting and restlessness
-- Panting and vocalizing
-- Clear or slightly bloody vaginal discharge
-
-Active contractions followed by straining means kittens are on the way.
-
-## How to Tell If Your Cat Is Pregnant
-
-If you didn't observe mating, you may be working backward from behavioral or physical changes. Here's what to look for and when:
-
-**Week 2–3**: Nipple pinking up. This is the earliest reliable home indicator and the one most owners notice first.
-
-**Week 3–4**: Mild nausea, reduced appetite, increased sleep. Easy to miss or attribute to other causes.
-
-**Week 4–5**: Visible belly rounding, noticeable appetite increase, behavioral changes (more affectionate or more withdrawn depending on the cat).
-
-**Week 6+**: Obvious abdominal enlargement, visible kitten movement, mammary gland development.
-
-For definitive confirmation, a vet visit at week 3–4 is the most reliable approach. Ultrasound detects pregnancy from around day 20; X-ray gives an accurate kitten count from day 42.
-
-## What to Prepare Before Kittens Arrive
-
-**Kittening box**: Set it up by week 6 and place it in a quiet, warm, private location. Line it with clean towels or newspaper that can be changed easily. A cardboard box with low sides (easy for the mother to step over but high enough to contain newborns) works well. Introduce your cat to it early — most cats will investigate and adopt it if given enough time.
-
-**Diet**: From week 4 onward, transition to a high-quality kitten food or a food labeled "for all life stages." These are more calorie-dense and nutritionally rich than adult maintenance food. Feed to appetite in the final weeks — her needs increase significantly as the kittens grow.
-
-**Vet visits**: Schedule at week 4 (ultrasound confirmation, kitten count) and week 7–8 (X-ray for final kitten count, delivery preparation guidance). Have your vet's emergency number accessible for the final week.
-
-**Supplies**: Clean towels, a heating pad set to low (for keeping newborns warm), unwaxed dental floss (in case a umbilical cord needs tying), and a clean bulb syringe for clearing kittens' airways if needed.
-
-## Normal vs. Concerning Signs During Pregnancy
-
-**Normal:**
-- Increased appetite after week 4
-- Enlarged, pinked nipples from week 3
-- Progressive belly rounding
-- Increased sleep and reduced activity
-- Nesting behavior in final weeks
-- Brief appetite reduction in the day before labor
-
-**Contact your vet if you see:**
-- Vaginal discharge that is brown, green, or foul-smelling before labor
-- Significant weight loss at any point
-- No fetal movement after week 6 (though kittens are often still)
-- Straining for more than 30 minutes without producing a kitten
-- More than 2 hours between kitten deliveries
-- A kitten delivered in its sac that the mother doesn't attend to
-
-## After Birth: What Comes Next
-
-Most queens are attentive mothers who manage delivery and newborn care instinctively. After all kittens are delivered, she will nurse, clean, and keep them warm. Your role is to ensure she has:
-
-- Constant access to food and fresh water near the kittening box
-- A warm, quiet, private space undisturbed by other pets or heavy household traffic
-- A gradual return to routine as the kittens grow over the following weeks
-
-Nursing is calorie-intensive — more so than the pregnancy itself. A mother nursing a large litter can need 2–3 times her normal daily calories at peak demand (weeks 3–4 of nursing). Keep her on kitten food throughout the entire nursing period.
-
-Kittens' eyes open at around 10–14 days. They begin exploring at 3–4 weeks and are typically ready for weaning by 8 weeks.
-
-*This article is for informational purposes only. Always consult your veterinarian for guidance on your cat's pregnancy and delivery.*
+Cats can come back into heat and become pregnant again while nursing, so plan for spaying once the kittens are weaned if you don't want another litter.
 
 ## Frequently Asked Questions
 
 **How long are cats pregnant?**
-Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days, though deliveries before day 60 carry risk for the kittens' survival. Most cats deliver between day 63 and day 67. If your cat hasn't given birth by day 70, contact your veterinarian.
+About 63–65 days on average — a little over two months. VCA Hospitals gives a normal range of about 60–67 days, and notes that most cats give birth between days 63 and 65, though some go as long as 71 days.
 
 **How can I tell how far along my cat is?**
-The most reliable method is a veterinary ultrasound at week 3.5–4, which can confirm pregnancy and estimate gestational age from fetal size. An X-ray from week 6 onward shows fetal skeletons and provides an accurate kitten count. At home, the progression of physical signs — nipple pinking (week 3), visible belly rounding (week 5), mammary enlargement (week 8) — gives a rough estimate, but vet confirmation is more accurate.
+If you know when she mated, count from that date. If not, a vet can estimate it: ultrasound measurements give an estimate of gestational age, and on an X-ray the kittens' skeletons are visible from about day 45, which also lets the vet count them.
 
 **What are the first signs of cat pregnancy?**
-The earliest reliable home indicator is "pinking up" — nipple enlargement and color change to a deeper pink — which typically appears around week 3. Some cats show mild nausea or reduced appetite in weeks 2–3. Visible abdominal rounding usually starts around week 5. Before these signs appear, most cats look and act completely normal.
+'Pinking up' — pinker, more prominent nipples — around days 16–20, and a slight increase in appetite. A vet exam 3–4 weeks after mating usually confirms the pregnancy.
 
-**Can a cat be pregnant and not show?**
-Yes, especially with small litters (1–2 kittens). A cat carrying a single kitten may not show obvious abdominal rounding until weeks 6–7. Behavioral changes (increased affection, more sleep, nesting) are often the first clues in these cases. A relaxin blood test or ultrasound can confirm pregnancy before physical signs are obvious.
+**How much more does a pregnant cat eat?**
+More than you might expect, and from early on, because kittens grow throughout pregnancy. VCA notes food intake may rise by about 50% during pregnancy and may reach more than double her usual amount by the end of nursing. A kitten or growth formula is recommended.
 
-**What should I feed my pregnant cat?**
-From around week 4, transition gradually to a high-quality kitten food or a food labeled "for all life stages" (AAFCO certified for growth and reproduction). These are calorie-dense and nutritionally appropriate for pregnancy. Feed to appetite in the final weeks — her calorie needs increase significantly as kittens grow rapidly. Keep her on kitten food throughout the nursing period as well.
-
-*This article is for informational purposes only. Always consult your veterinarian for guidance on your cat's pregnancy and delivery.*
+**How do I know when my cat will give birth?**
+Nesting usually starts in the final week. In the last 24 hours her rectal temperature typically falls below 100°F and she usually stops eating; milk may appear 24–48 hours before labor.
 
 ## Related Articles
 
-- [Signs of Cat Labor](/blog/signs-of-cat-labor/)
 - [How to Tell If Your Cat Is Pregnant](/blog/how-to-tell-if-cat-is-pregnant/)
-- [What to Feed a Pregnant Cat: Complete Diet & Nutrition Guide](/blog/what-to-feed-pregnant-cat/)
-- [Why Is My Cat Always Hungry?](/blog/why-is-my-cat-always-hungry/)
-- [How Much Should a Cat Weigh?](/blog/how-much-should-a-cat-weigh/)
+- [What to Feed a Pregnant Cat](/blog/what-to-feed-pregnant-cat/)
+- [Signs of Cat Labor](/blog/signs-of-cat-labor/)
+- [Cat Heat Cycle Calculator](/tools/cat-heat-cycle-calculator.html)
 
+*This article is for general information. Always talk to your veterinarian about your cat's pregnancy.*
