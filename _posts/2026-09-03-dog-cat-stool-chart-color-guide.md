@@ -1,134 +1,105 @@
 ---
 layout: post
 title: "Dog & Cat Stool Chart: What the Colour and Consistency Actually Mean"
-description: "A dog poop chart that tells you what to do, not just what you're looking at. Consistency scored 1-7, what each colour points to, and the three appearances that mean call a vet now rather than in the morning."
+description: "The 1–7 fecal score vets use (2 is ideal), what black, red, grey and yellow stool can mean, mucus, worms and swallowed string — and the signs that mean call a vet now rather than in the morning."
 category: Pet Health
 date: 2026-09-03
-read_time: 8
+read_time: 6
 slug: dog-cat-stool-chart-color-guide
 faqs:
   - q: "What does a healthy dog poop look like?"
-    a: "Chocolate brown, log-shaped, firm enough to hold its form but soft enough to leave a slight mark when picked up, and roughly the same volume every day. On the 1-7 consistency scale used in veterinary practice, that is a 2 — the score you are aiming for. It should come away cleanly rather than leaving residue, and there should be no visible mucus, blood, or foreign material in it. Cat stool follows the same principles but is usually smaller, firmer and darker."
+    a: "Chocolate brown, firm but not hard, pliable and segmented, and easy to pick up — a score of 2 on the 1–7 Purina fecal scoring chart many vets use. A veterinarian-written PetMD guide describes it as holding its form like Play-Doh. It shouldn't have a coating, worms, foreign material or large clumps of fur."
   - q: "What does the dog poop consistency scale mean?"
-    a: "It runs from 1 to 7. A 1 is hard, dry pellets (constipation). A 2 is the firm, segmented log you want. A 3 is log-shaped but moist and leaves residue. A 4 is very moist, holds shape but loses it when picked up. A 5 is a pile rather than a log, with distinct shape lost. A 6 is textured piles with no defined shape. A 7 is watery with no texture at all. Anything from 5 upward counts as diarrhoea; a persistent 3 or 4 is worth mentioning at a routine visit."
+    a: "It runs from 1 (very hard, dry pellets that take straining to pass) through 2 (the ideal: firm, segmented, little residue) and 3–4 (increasingly moist and soggy) to 5–6 (piles or spots without a log shape) and 7 (watery, flat puddles). A score is useful for describing changes to your vet precisely."
   - q: "Why is my dog's poop black?"
-    a: "Black, tarry, sticky stool is called melena and it means digested blood from the stomach or small intestine. Veterinary sources treat it as an emergency without exception, because the causes include ulcers, toxins including rodenticide, clotting disorders and tumours. One important false alarm: bismuth-containing stomach remedies turn stool black, as can a very iron-rich or liver-heavy meal. If you have given a bismuth product, you have also removed your ability to spot genuine melena — which is a good reason not to."
+    a: "Black, tarry stool can mean bleeding high in the digestive tract, because the blood has been digested on its way through. It needs a prompt vet visit. Some medicines containing bismuth also turn stool black, so tell your vet about anything you've given."
   - q: "What does mucus in dog poop mean?"
-    a: "A jelly-like or slimy coating means the large intestine is irritated and producing extra mucus to protect itself. It is common with colitis, parasites such as whipworm and giardia, sudden diet changes, and stress — a very frequent finding after boarding or a house move. A small amount once, in a dog who is otherwise bright, is usually not urgent. Mucus with blood, or mucus that persists beyond a couple of days, needs a vet and ideally a fresh faecal sample."
-  - q: "What does yellow or orange dog poop mean?"
-    a: "Yellow or orange usually means the stool has moved through too fast for bile to be broken down normally, which points at small intestinal upset or a rapid diet change. It can also, less commonly, relate to liver or gallbladder problems, so persistent yellow stool alongside lethargy, vomiting or yellowing of the gums or eye whites needs prompt veterinary attention rather than a wait."
-  - q: "What does grey or greasy poop mean?"
-    a: "Pale grey, greasy stool that floats and smells particularly bad suggests fat is not being digested and absorbed properly. That points toward the pancreas or the small intestine — exocrine pancreatic insufficiency and malabsorptive disease are the usual candidates — and it is often accompanied by weight loss despite a good appetite. This is not an emergency but it is not a wait-and-see either; book an appointment and mention the greasiness and floating specifically."
-  - q: "Should I bring a stool sample to the vet?"
-    a: "Yes, and it makes the appointment far more useful. Collect a fresh sample in a clean sealed bag or container, keep it cool, and get it there within about 24 hours — some parasites are hard to identify in an old or dried sample. If the stool looked dramatic and then changed before the appointment, photograph it too. A photo of what alarmed you plus a sample of what is happening now gives your vet much more to work with than a description."
+    a: "Stool shouldn't have a coating. According to PetMD's veterinarian-written guide, mucus often points to inflammation of the large bowel and often comes with diarrhea. If it persists, is mixed with blood, or your dog seems unwell, see your vet and bring a fresh sample."
+  - q: "When should I take my pet to the vet for poop changes?"
+    a: "PetMD's guide suggests calling your vet if an abnormal colour lasts for more than two stools, abnormal consistency lasts more than a day, red streaks keep appearing, you see worms or foreign material, or your pet stops eating or seems depressed. Go straight to an emergency clinic for profuse bloody diarrhea, black tarry stool with weakness, or a swallowed string."
+last_modified_at: 2026-11-24
 ---
 
-Stool is the most information-dense thing your pet produces, and the only diagnostic test you get to run daily for free. The trouble with most poop charts is that they tell you what you are looking at and stop there — which leaves you with a label and no idea whether to worry.
-
-This one is organised around what to do. Read it as an unhealthy dog poop chart — the entries that matter are the ones that change your next action, and they are marked as such.
+Stool changes are often the first sign that something is wrong, and checking costs nothing. The useful part is knowing which changes can wait for an appointment and which can't. This guide uses the Purina fecal scoring chart that many veterinary practices use, a veterinarian-written PetMD guide (Jessica Vogelsang, DVM, reviewed by Lauren Jones, VMD), and the Merck Veterinary Manual.
 
 ## The Consistency Scale, 1 to 7
 
-Veterinary practice scores faecal consistency on a seven-point scale. Knowing the number is useful mainly because it lets you describe things precisely to a vet, and because it makes a gradual change obvious in a way that "a bit soft lately" does not.
+| Score | Description (Purina fecal scoring chart) |
+|---|---|
+| **1** | Very hard and dry; often passed as separate pellets with a lot of straining; no residue |
+| **2 — ideal** | Firm but not hard; pliable; segmented; little or no residue |
+| **3** | Log-shaped with little or no segmentation; moist surface; leaves residue but holds its form |
+| **4** | Very moist and soggy; log-shaped; leaves residue and loses its form when picked up |
+| **5** | Very moist but with a distinct shape; piles rather than logs |
+| **6** | Has texture but no defined shape; piles or spots |
+| **7** | Watery; no texture; flat puddles |
 
-| Score | What it looks like | What it means |
-|-------|-------------------|---------------|
-| **1** | Hard, dry, separate pellets. Difficult to pass | Constipation — worth investigating if it persists, especially in cats |
-| **2** | Firm, segmented log. Holds shape, leaves little residue | **The target.** Healthy |
-| **3** | Log-shaped, moist, leaves residue when picked up | Mildly soft. Fine occasionally; worth mentioning if constant |
-| **4** | Very moist, holds shape but loses it when lifted | Borderline. Common after a diet change |
-| **5** | A pile rather than a log. Distinct shape lost | Diarrhoea |
-| **6** | Textured piles, no defined shape | Diarrhoea |
-| **7** | Watery, flat, no texture at all | Significant diarrhoea — dehydration risk climbs fast |
+PetMD's guide notes that formless stool can mean the large intestine isn't reabsorbing water properly, and that hard stool can be painful to pass and may point to dehydration. An occasional soft or hard stool in a pet that's otherwise normal isn't a concern; a change that persists is. Using the number when you call your vet makes the description much more precise than "a bit soft lately".
 
-Anything from 5 upward is diarrhoea. A 6 or 7 in a puppy, kitten, senior or small-breed pet moves faster than you expect, because they have very little fluid reserve.
+## Colour: What It Can Mean
 
-**Cats sit slightly differently.** Healthy cat stool is usually smaller, firmer and darker than a dog's, and a cat producing a 3 or 4 every day is further from normal than a dog doing the same. Cats also hide illness well, so a consistency change is often the earliest thing you get.
+| Colour | What it can mean (PetMD unless noted) | What to do |
+|---|---|---|
+| **Chocolate brown** | Normal; small shifts from diet or dyes are usually fine | Nothing |
+| **Black, tarry** | Bleeding high in the digestive tract | Prompt vet visit; emergency if your pet is weak or pale |
+| **Red streaks** | Bleeding in the lower digestive tract; a single streak is often from straining | Call your vet if it repeats |
+| **Grey or yellow** | Possible pancreas, liver or gallbladder problem | Vet visit if it persists |
 
-## Colour: What Each One Points To
+Medicines containing **bismuth** can turn stool black, so mention anything you've given. And a single red streak after straining is far less worrying than repeated streaks or a large amount of blood.
 
-Colour tells you roughly *where* the problem is, which is why it changes urgency so much.
+### Profuse bloody diarrhea: an emergency
 
-| Colour | Likely origin | What to do |
-|--------|--------------|------------|
-| **Chocolate brown** | Normal | Nothing |
-| **Black, tarry, sticky** | Digested blood from the stomach or small intestine (melena) | **Emergency, always** |
-| **Bright red streaks or specks** | Fresh blood from the colon or rectum | Vet appointment; sooner if repeated or the pet is unwell |
-| **Raspberry-jam appearance** | Acute haemorrhagic diarrhoea syndrome | **Emergency** — dehydration and shock can develop within hours |
-| **Yellow or orange** | Rapid transit; sometimes liver or gallbladder | Appointment if it persists; urgent if yellow gums or eye whites |
-| **Pale grey, greasy, floating** | Fat not being absorbed — pancreas or small intestine | Appointment. Mention the greasiness and floating specifically |
-| **Green** | Grass, eating a lot of greens, or rapid transit | Usually harmless; investigate if it persists |
-| **White specks that move** | Tapeworm segments | Not urgent, but needs treating — and often means fleas too |
+The Merck Veterinary Manual describes **acute hemorrhagic diarrhea syndrome** in dogs as sudden, profuse bloody diarrhea, often likened to **raspberry jam**, frequently with vomiting, lethargy and abdominal pain. It's seen most in young adult dogs, especially small and toy breeds such as Yorkshire Terriers, Miniature Schnauzers and Maltese. Fluid loss can be fast enough to cause shock **before dehydration is obvious**. With prompt IV fluids the outlook is good — Merck puts mortality in hospitalized dogs at under 10% — but it can be high without treatment.
 
-### The Two Colours People Misread
+## Mucus
 
-**Black.** This is the single most important entry on the chart and the one most often shrugged off, because a black stool in a bright, wagging dog does not look like an emergency. Melena means blood has been digested on its way down, and the causes — ulcers, rodenticide, clotting disorders, tumours — are serious enough that veterinary sources treat it as an emergency regardless of how the animal seems.
+Stool shouldn't have a coating or film. PetMD's guide says mucus often points to **inflammation of the large bowel** and often comes with diarrhea. A little once, in a pet that's otherwise bright, can be watched; mucus that persists, comes with blood or comes with other signs needs a vet visit and a fresh sample.
 
-The false alarm worth knowing: **bismuth-containing stomach remedies turn stool black**, as can a liver-heavy meal or an iron supplement. If you have given a bismuth product, you have removed your own ability to tell those apart. That is a practical argument against reaching for one.
+## Things That Shouldn't Be There
 
-**Bright red.** Counterintuitively, this is usually the *less* worrying of the two bloods. Fresh red blood generally comes from the colon or rectum — colitis, straining, parasites — and a small amount once in an otherwise well pet is often manageable with an ordinary appointment. Large volumes, a raspberry-jam appearance, or blood alongside vomiting or lethargy is a different situation entirely.
+- **Rice-like segments, sometimes moving.** These are typical of the common flea tapeworm. According to the CDC, each segment is about the size of a grain of rice, fresh ones can be seen crawling near the anus or on fresh stool, and pets become infected by swallowing an infected flea while grooming — so treating fleas is part of treating the worm.
+- **Other worms.** Bring a sample so your vet can identify them.
+- **String, thread or ribbon.** A swallowed string is a medical emergency, especially in cats. A veterinarian-written PetMD guide warns **not to pull** any string you can see from the mouth or rear, because it may be attached to a longer piece in the intestines and pulling can cause serious damage. Don't try to make the cat vomit; go to a vet.
+- **Fabric, plastic or other foreign material**, or large clumps of fur. Call your vet — the concern is what may still be inside.
 
-## Mucus, and What It Is Telling You
+## When to Call the Vet
 
-A jelly-like or slimy coating is the large intestine producing extra mucus to protect an irritated lining. It shows up with colitis, parasites like whipworm and giardia, abrupt diet changes, and — very commonly — stress. Boarding, a house move, a new pet, or building work all produce it.
+PetMD's guide suggests calling your vet if:
 
-A small amount, once, in a bright pet is usually not urgent. Mucus with blood, or mucus that persists past a couple of days, is worth a vet visit and a fresh faecal sample.
+- an abnormal colour lasts for **more than two stools**,
+- abnormal consistency lasts for **more than a day**,
+- **red streaks keep appearing**,
+- you see **worms or foreign material**,
+- your pet **stops eating, seems depressed**, or still has digestive signs after a day.
 
-## Things That Should Not Be In There
-
-- **Whole grains or visible chunks of food.** Occasionally normal for something like sweetcorn. Persistently, it suggests food is passing through too fast to be digested.
-- **White rice-like grains, or flat moving segments.** Tapeworm. Needs treatment, and usually means a flea problem to deal with at the same time.
-- **Thin white threads.** Roundworm, which is common in puppies and kittens and easily treated.
-- **Grass, fabric, plastic, string.** The stool is not the problem here; what is still inside is. **String and thread are a genuine emergency** — a linear foreign body can saw through the intestine, and this is more common in cats.
-- **Anything sparkly or metallic.** Worth a photo and a phone call.
-
-## What Actually Changes the Urgency
-
-Colour and consistency tell you a lot, but they are not the whole picture. These push things up regardless of what the stool looks like:
-
-- **Age.** A puppy or kitten with diarrhoea is a same-day call. So is a senior.
-- **Vomiting alongside it.** Fluid leaving from both ends dehydrates a pet fast.
-- **Demeanour — but only in one direction.** Lethargy, weakness or hiding raises the urgency. Seeming fine does *not* lower it when there is blood involved, because dogs often look normal early in conditions like haemorrhagic diarrhoea syndrome and pancreatitis.
-- **Duration.** Beyond 48 hours without improvement in a healthy adult, or 12 to 24 hours in anyone fragile.
-- **Vaccination status.** An incompletely vaccinated dog with bloody diarrhoea raises the possibility of parvovirus.
-
-Our [Diarrhea Triage & Feeding Plan](/tools/pet-diarrhea-triage-and-feeding-plan.html) works through those combinations and also covers the feeding question — where the common advice to fast a pet for 24 hours has largely been overturned, and for cats and puppies was never safe.
+Act faster for puppies, kittens, seniors and small pets, which have less reserve; for diarrhea with vomiting; and for any puppy that isn't fully vaccinated, where bloody diarrhea raises the possibility of parvovirus. Our [Diarrhea Triage & Feeding Plan](/tools/pet-diarrhea-triage-and-feeding-plan.html) works through these combinations.
 
 ## Bringing a Sample
 
-If you are going to the vet anyway, bring stool. It makes a real difference:
-
-- **Fresh matters.** Within about 24 hours, kept cool. Some parasites are hard to identify in a dried or old sample.
-- **Clean, sealed container or bag.** A supermarket bag knotted twice is fine.
-- **Photograph the dramatic one.** Stool changes between the alarming episode and the appointment almost every time. A photo of what worried you plus a sample of what is happening now is far better than either alone.
-- **Note the timeline.** When it started, how many episodes, whether it is improving, and any diet change or scavenging in the preceding few days.
+PetMD recommends bringing a **fresh** sample, because stool left outside for hours can pick up organisms from the environment. A clean, sealed bag or container is fine. If the stool looked dramatic and then changed before the appointment, a photo of the worrying one helps too, along with a note of when it started, how often it's happened, and any diet change or scavenging.
 
 ## Frequently Asked Questions
 
 **What does a healthy dog poop look like?**
-Chocolate brown, log-shaped, firm enough to hold its form but soft enough to leave a slight mark when picked up, and roughly the same volume every day. On the 1-7 consistency scale used in veterinary practice, that is a 2 — the score you are aiming for. It should come away cleanly rather than leaving residue, and there should be no visible mucus, blood, or foreign material in it. Cat stool follows the same principles but is usually smaller, firmer and darker.
+Chocolate brown, firm but not hard, pliable and segmented, and easy to pick up — a score of 2 on the 1–7 Purina fecal scoring chart many vets use. A veterinarian-written PetMD guide describes it as holding its form like Play-Doh. It shouldn't have a coating, worms, foreign material or large clumps of fur.
 
 **What does the dog poop consistency scale mean?**
-It runs from 1 to 7. A 1 is hard, dry pellets (constipation). A 2 is the firm, segmented log you want. A 3 is log-shaped but moist and leaves residue. A 4 is very moist, holds shape but loses it when picked up. A 5 is a pile rather than a log, with distinct shape lost. A 6 is textured piles with no defined shape. A 7 is watery with no texture at all. Anything from 5 upward counts as diarrhoea; a persistent 3 or 4 is worth mentioning at a routine visit.
+It runs from 1 (very hard, dry pellets that take straining to pass) through 2 (the ideal: firm, segmented, little residue) and 3–4 (increasingly moist and soggy) to 5–6 (piles or spots without a log shape) and 7 (watery, flat puddles). A score is useful for describing changes to your vet precisely.
 
 **Why is my dog's poop black?**
-Black, tarry, sticky stool is called melena and it means digested blood from the stomach or small intestine. Veterinary sources treat it as an emergency without exception, because the causes include ulcers, toxins including rodenticide, clotting disorders and tumours. One important false alarm: bismuth-containing stomach remedies turn stool black, as can a very iron-rich or liver-heavy meal. If you have given a bismuth product, you have also removed your ability to spot genuine melena — which is a good reason not to.
+Black, tarry stool can mean bleeding high in the digestive tract, because the blood has been digested on its way through. It needs a prompt vet visit. Some medicines containing bismuth also turn stool black, so tell your vet about anything you've given.
 
 **What does mucus in dog poop mean?**
-A jelly-like or slimy coating means the large intestine is irritated and producing extra mucus to protect itself. It is common with colitis, parasites such as whipworm and giardia, sudden diet changes, and stress — a very frequent finding after boarding or a house move. A small amount once, in a dog who is otherwise bright, is usually not urgent. Mucus with blood, or mucus that persists beyond a couple of days, needs a vet and ideally a fresh faecal sample.
+Stool shouldn't have a coating. According to PetMD's veterinarian-written guide, mucus often points to inflammation of the large bowel and often comes with diarrhea. If it persists, is mixed with blood, or your dog seems unwell, see your vet and bring a fresh sample.
 
-**What does yellow or orange dog poop mean?**
-Yellow or orange usually means the stool has moved through too fast for bile to be broken down normally, which points at small intestinal upset or a rapid diet change. It can also, less commonly, relate to liver or gallbladder problems, so persistent yellow stool alongside lethargy, vomiting or yellowing of the gums or eye whites needs prompt veterinary attention rather than a wait.
-
-**What does grey or greasy poop mean?**
-Pale grey, greasy stool that floats and smells particularly bad suggests fat is not being digested and absorbed properly. That points toward the pancreas or the small intestine — exocrine pancreatic insufficiency and malabsorptive disease are the usual candidates — and it is often accompanied by weight loss despite a good appetite. This is not an emergency but it is not a wait-and-see either; book an appointment and mention the greasiness and floating specifically.
-
-**Should I bring a stool sample to the vet?**
-Yes, and it makes the appointment far more useful. Collect a fresh sample in a clean sealed bag or container, keep it cool, and get it there within about 24 hours — some parasites are hard to identify in an old or dried sample. If the stool looked dramatic and then changed before the appointment, photograph it too. A photo of what alarmed you plus a sample of what is happening now gives your vet much more to work with than a description.
+**When should I take my pet to the vet for poop changes?**
+PetMD's guide suggests calling your vet if an abnormal colour lasts for more than two stools, abnormal consistency lasts more than a day, red streaks keep appearing, you see worms or foreign material, or your pet stops eating or seems depressed. Go straight to an emergency clinic for profuse bloody diarrhea, black tarry stool with weakness, or a swallowed string.
 
 ## Related Articles
 
-- [Diarrhea Triage & Feeding Plan](/tools/pet-diarrhea-triage-and-feeding-plan.html) — urgency and what to actually feed
-- [Elimination Diet Trial Planner](/tools/elimination-diet-trial-planner.html) — for recurring digestive signs with a suspected food cause
+- [Diarrhea Triage & Feeding Plan](/tools/pet-diarrhea-triage-and-feeding-plan.html)
+- [Elimination Diet Trial Planner](/tools/elimination-diet-trial-planner.html)
 - [How Much to Feed a Dog](/blog/how-much-to-feed-a-dog/)
 - [Cat Urinary Emergency Checker](/tools/cat-urinary-emergency-checker.html) — straining is often misread as constipation
+
+*This article is for general information. If you're unsure whether a change is urgent, call your veterinarian.*

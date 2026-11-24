@@ -3,7 +3,7 @@ layout: tool
 permalink: /tools/dog-age-calculator.html
 title: Dog Age Calculator — Convert Dog Years to Human Years
 description: Find out how old your dog is in human years. Based on size and breed, not the outdated multiply-by-7 rule. Free, instant results.
-last_modified_at: 2026-09-29
+last_modified_at: 2026-11-24
 ---
 <script type="application/ld+json">
 {
@@ -36,7 +36,7 @@ last_modified_at: 2026-09-29
       "name": "How do you convert dog years to human years?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most accurate method uses size-adjusted aging curves. Dogs age rapidly in their first two years — a 1-year-old dog is roughly equivalent to a 15-year-old human, and a 2-year-old is about 24. After that, each dog year adds approximately 4–5 human years depending on size. Large breeds age faster than small breeds."
+        "text": "The most accurate method uses size-adjusted aging curves. Dogs age rapidly in their first two years — a 1-year-old dog is roughly equivalent to a 15-year-old human, and a 2-year-old is about 24. After that, each dog year adds about 4 human years for small dogs, 4–5 for medium, 5–6 for large and 7–8 for giant breeds, according to a veterinarian-written PetMD guide."
       }
     },
     {
@@ -103,7 +103,7 @@ last_modified_at: 2026-09-29
   <div style="margin-top: 40px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Why the 7x Rule Is Wrong</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dogs age much faster in their early years and slower later on. A 1-year-old dog is roughly equivalent to a 15-year-old human, not a 7-year-old. The old formula was a rough average across an entire lifespan — it doesn't reflect how development actually works.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This calculator uses size-adjusted aging curves based on published veterinary research to give you a more accurate result. A 2-year-old dog is already roughly 24 in human years. After that, each year adds about 4–5 human years — but the rate depends on your dog's size.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This calculator uses the size-based rule in a veterinarian-written PetMD guide (Jennifer Coates, DVM): a 1-year-old dog is roughly 15 in human years and a 2-year-old about 24. After that, each year adds about 4 human years for small dogs, 4–5 for medium, 5–6 for large and 7–8 for giant breeds (the calculator uses the middle of each range). It's a rule of thumb, not a measurement.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Why Size Changes Everything</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Larger dogs age faster than smaller ones — and the gap widens significantly in the senior years. A 10-year-old Great Dane is genuinely old, comparable to a human in their early 80s. A 10-year-old Chihuahua might be closer to 56 in human terms, with several active years still ahead.</p>
@@ -130,7 +130,7 @@ last_modified_at: 2026-09-29
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do you convert dog years to human years?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The most accurate method uses size-adjusted aging curves. Dogs age rapidly in their first two years — a 1-year-old dog is roughly equivalent to a 15-year-old human, and a 2-year-old is about 24. After that, each dog year adds approximately 4–5 human years depending on size. Large breeds age faster than small breeds.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The most accurate method uses size-adjusted aging curves. Dogs age rapidly in their first two years — a 1-year-old dog is roughly equivalent to a 15-year-old human, and a 2-year-old is about 24. After that, each dog year adds about 4 human years for small dogs, 4–5 for medium, 5–6 for large and 7–8 for giant breeds, according to a veterinarian-written PetMD guide.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is the 7x rule accurate for calculating dog age?</h3>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">No. The multiply-by-7 rule is a rough average that doesn't reflect how dogs actually age. Dogs age much faster in their early years and slower later on. Size also matters significantly — large breeds age faster than small breeds throughout their lives.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">At what age is a dog considered a senior?</h3>
@@ -156,9 +156,9 @@ function calculateDogAge() {
   // Size-adjusted aging tables (approximate human year equivalents)
   const tables = {
     small:  [15,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80],
-    medium: [15,24,28,32,36,40,45,50,55,60,65,69,74,78,83,87],
-    large:  [15,24,28,32,36,41,47,53,59,65,71,77,83,89,95,101],
-    giant:  [15,24,28,32,38,45,53,62,71,80,89,98,107,116,125,134]
+    medium: [15,24,28,33,38,42,46,51,56,60,64,69,74,78,82,87],
+    large:  [15,24,30,35,40,46,52,57,62,68,74,79,84,90,96,101],
+    giant:  [15,24,32,39,46,54,62,69,76,84,92,99,106,114,122,129]
   };
 
   const table = tables[size];
