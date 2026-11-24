@@ -1,239 +1,125 @@
 ---
 layout: post
-title: "Puppy Weight Chart by Breed Size: What's Normal at Every Age?"
-description: How much should your puppy weigh at 8, 12, or 16 weeks? Here's a breed-size weight chart, how to estimate adult weight, and how to tell if your puppy is growing on track.
+title: "Puppy Weight Chart by Breed Size: When Growth Finishes and How Much to Expect"
+description: "When toy, small, medium, large and giant puppies stop growing, the vet rules for estimating adult weight from a puppy's weight at 8 weeks or 4 months, and how much a puppy should gain each week — with the reason large-breed puppies shouldn't be pushed to grow fast."
 category: Dog Care
 date: 2026-05-14
-read_time: 9
+read_time: 8
 slug: puppy-weight-chart-by-breed-size
 faqs:
   - q: "How much should my puppy weigh at 8 weeks?"
-    a: "It depends entirely on breed size. Toy breeds (Chihuahua, Pomeranian) typically weigh 1–2.5 lbs at 8 weeks. Small breeds (Beagle, Shih Tzu) weigh 3–5 lbs. Medium breeds (Border Collie, Bulldog) weigh 5–10 lbs. Large breeds (Labrador, German Shepherd) weigh 8–16 lbs. Giant breeds (Great Dane, Mastiff) weigh 10–20 lbs."
-  - q: "How do I know if my puppy is at a healthy weight?"
-    a: "Use the rib check: run your fingers along your puppy's sides. You should feel the ribs easily with light pressure but they should not be visibly prominent. View from above — there should be a slight waist visible behind the ribs. These physical checks are more reliable than comparing to a chart, since individual variation within breed sizes is significant."
-  - q: "Can puppies be overweight?"
-    a: "Yes — and for large and giant breeds, overfeeding during puppyhood is a genuine health risk. Excess weight during rapid growth phases stresses developing joints and growth plates, increasing the risk of orthopedic conditions like hip dysplasia and elbow dysplasia. For small breeds, the main risk of puppy obesity is setting up habits that carry into adulthood."
-  - q: "When do puppies gain weight the fastest?"
-    a: "The fastest growth occurs in the first 6 months, with large breeds growing most rapidly between 3–6 months. After 6 months, growth continues but slows significantly. Giant breeds continue growing until 18–24 months, but the most rapid weight gain is concentrated in the first year."
-  - q: "What if my puppy isn't gaining weight?"
-    a: "A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out."
-
-  - q: "Is there a puppy growth chart in kg?"
-    a: "The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. To convert any range in the tables, multiply by 0.45. The growth pattern itself does not change with the unit \u2014 what matters is that the weight is climbing steadily along the curve for your puppy\u0027s breed size."
-  - q: "How do I track my dog\u0027s weight by age?"
-    a: "Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. The record doesn't need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading \u2014 steady climb is normal, a plateau during a growth phase or any loss is worth a vet call."
-  - q: "What is the weight of a small dog?"
-    a: "It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So a small dog is usually somewhere between about 12 and 25 lbs \u2014 a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it."
+    a: "It depends on how big your puppy will be as an adult. For toy and small breeds, a puppy at 8 weeks typically weighs about a third of its adult weight — so a toy breed heading for 5–12 lb is about 1.7–4 lb, and a small breed heading for 12–24 lb is about 4–8 lb. For larger breeds there's no reliable 8-week figure; checking that the weight climbs each week is more useful."
+  - q: "How can I estimate my puppy's adult weight?"
+    a: "PetMD's veterinarian-written guide gives two rules. For toy and small breeds, multiply the weight at 6 weeks by 4, or the weight at 8 weeks by 3. For medium and large breeds, multiply the weight at 4 months by 2. There's no equivalent rule for giant breeds. The breed and the parents' size are the other good guides; paw size isn't."
+  - q: "When do puppies stop growing?"
+    a: "Toy breeds usually finish at 8–12 months, small breeds at 9–12 months, medium breeds at 12–15 months, large breeds at 15–18 months and giant breeds at 18–24 months. Growth stops when the growth plates near the ends of the bones close, which a vet can confirm on an X-ray."
+  - q: "How much weight should a puppy gain each week?"
+    a: "According to the Merck Veterinary Manual, puppies gain about 2–4 g a day for each kilogram of their expected adult weight during the first five months. For a puppy heading for 50 lb, that's roughly 0.7–1.4 lb a week. Growth starts to level off after about six months."
+  - q: "Will feeding a large-breed puppy less make it smaller as an adult?"
+    a: "Not if it's fed a complete growth diet. The Merck manual describes a study in which large-breed puppies fed 50–70% of the amount their littermates ate freely reached normal adult height, length and bone and muscle mass; only their body fat was lower. Overfeeding speeds growth, which harms skeletal development."
 last_modified_at: 2026-11-24
 ---
 
-Puppy growth happens fast — and it's easy to wonder whether your pup is on track. Too little weight gain can signal health issues; too much can stress developing joints, especially in large breeds.
+A Chihuahua and a Great Dane are both puppies at 12 weeks, but one is close to finished and the other has more than a year of growing left. That's why a single "normal weight" for a given age doesn't exist — the useful questions are how big your puppy is heading to be, when it will get there, and whether it's gaining steadily on the way.
 
-Here's what normal growth looks like by breed size, how to estimate your dog's adult weight, and how to tell if your puppy is developing well.
+## When Puppies Stop Growing
 
-## Why Breed Size Matters So Much
+According to a veterinarian-written PetMD guide (Sandra C. Mitchell, DVM, 2025), typical ages are:
 
-A Chihuahua and a Great Dane are both puppies, but their growth trajectories are completely different. Small breeds reach their adult weight by around 8–10 months. Giant breeds are still growing at 18–24 months. Using the wrong chart for your dog's size will give you meaningless numbers.
+| Adult size | Adult weight | Usually stops growing |
+|---|---|---|
+| Toy | 5–12 lb | 8–12 months |
+| Small | 12–24 lb | 9–12 months |
+| Medium | 24–59 lb | 12–15 months |
+| Large | 59–99 lb | 15–18 months |
+| Giant | over 100 lb | 18–24 months |
 
-Beyond just timing, the risks associated with abnormal growth differ by size. For giant breeds, overfeeding during puppyhood is one of the primary risk factors for developmental orthopedic disease — conditions like hip dysplasia, elbow dysplasia, and osteochondrosis that can cause lifelong joint problems. The growth plate in a Great Dane puppy is under far more stress than in a Chihuahua puppy. Keeping large-breed puppies lean during growth is genuinely important.
+Growth stops when the **growth plates** — tissue near the ends of the long bones — close. PetMD notes that an X-ray is the best way to tell whether a dog has finished growing, and that the age of spaying or neutering can affect when the plates close.
 
-## Puppy Weight Chart by Breed Size
+## Estimating Adult Weight
 
-These are approximate ranges based on typical growth curves, grouped by adult size because that is what drives the timeline. The age rows are the same in every group, so you can read down one column to follow a single size through the first year, or across a row to compare sizes at the same age. Individual dogs vary — use this as a guide rather than a standard.
+The same guide gives two simple rules:
 
-### Toy Breeds (Adult weight under 12 lbs / 5.4 kg)
-*Examples: Chihuahua, Yorkshire Terrier, Pomeranian*
+- **Toy and small breeds:** weight at **6 weeks × 4**, or weight at **8 weeks × 3**.
+- **Medium and large breeds:** weight at **4 months × 2**.
 
-| Age | Expected Weight Range |
-|-----|-----------------------|
-| 8 weeks | 1–2.5 lbs (0.45–1.1 kg) |
-| 12 weeks | 1.5–3.5 lbs (0.68–1.6 kg) |
-| 16 weeks | 2–5 lbs (0.91–2.3 kg) |
-| 6 months | 3–7 lbs (1.4–3.2 kg) |
-| 12 months | 4–12 lbs (1.8–5.4 kg), near adult |
+There's no equivalent rule for giant breeds. For any dog, the breed and the size of the parents are good guides, and an earlier litter from the same parents can show what to expect. Paw and ear size aren't reliable predictors, according to PetMD.
 
-### Small Breeds (Adult weight 12–25 lbs / 5.4–11 kg)
-*Examples: Beagle, Shih Tzu, French Bulldog*
+Turned around, the rules give a rough idea of what a puppy weighs at those ages:
 
-| Age | Expected Weight Range |
-|-----|-----------------------|
-| 8 weeks | 3–5 lbs (1.4–2.3 kg) |
-| 12 weeks | 5–8 lbs (2.3–3.6 kg) |
-| 16 weeks | 7–12 lbs (3.2–5.4 kg) |
-| 6 months | 10–18 lbs (4.5–8.2 kg) |
-| 12 months | 12–25 lbs (5.4–11 kg), near adult |
+| Adult size | At 6 weeks | At 8 weeks | At 4 months |
+|---|---|---|---|
+| Toy (5–12 lb) | about 1.3–3 lb | about 1.7–4 lb | — |
+| Small (12–24 lb) | about 3–6 lb | about 4–8 lb | — |
+| Medium (24–59 lb) | — | — | about 12–30 lb |
+| Large (59–99 lb) | — | — | about 30–50 lb |
 
-### Medium Breeds (Adult weight 25–50 lbs / 11–23 kg)
-*Examples: Border Collie, Cocker Spaniel, Bulldog*
-
-| Age | Expected Weight Range |
-|-----|-----------------------|
-| 8 weeks | 5–10 lbs (2.3–4.5 kg) |
-| 12 weeks | 8–16 lbs (3.6–7.3 kg) |
-| 16 weeks | 12–22 lbs (5.4–10 kg) |
-| 6 months | 18–35 lbs (8.2–16 kg) |
-| 12 months | 25–50 lbs (11–23 kg), near adult |
-
-### Large Breeds (Adult weight 50–100 lbs / 23–45 kg)
-*Examples: Labrador, German Shepherd, Golden Retriever*
-
-| Age | Expected Weight Range |
-|-----|-----------------------|
-| 8 weeks | 8–16 lbs (3.6–7.3 kg) |
-| 12 weeks | 14–26 lbs (6.4–12 kg) |
-| 16 weeks | 20–38 lbs (9.1–17 kg) |
-| 6 months | 35–60 lbs (16–27 kg) |
-| 12 months | 45–85 lbs (20–39 kg) |
-| 18 months | 50–100 lbs (23–45 kg), near adult |
-
-### Giant Breeds (Adult weight over 100 lbs / 45 kg)
-*Examples: Great Dane, Mastiff, Saint Bernard*
-
-| Age | Expected Weight Range |
-|-----|-----------------------|
-| 8 weeks | 10–20 lbs (4.5–9.1 kg) |
-| 12 weeks | 18–35 lbs (8.2–16 kg) |
-| 16 weeks | 27–50 lbs (12–23 kg) |
-| 6 months | 50–90 lbs (23–41 kg) |
-| 12 months | 75–130 lbs (34–59 kg) |
-| 24 months | 100–180 lbs (45–82 kg), near adult |
-
-## The Two Ages Owners Check Most
-
-Eight and twelve weeks are the ages most owners check against, so here they are pulled out of the tables above.
-
-**At 8 weeks**, weight depends entirely on breed size, which is why a single number is useless: toy 1–2.5 lbs (0.45–1.1 kg), small 3–5 lbs (1.4–2.3 kg), medium 5–10 lbs (2.3–4.5 kg), large 8–16 lbs (3.6–7.3 kg). Eight weeks is when most puppies go home, so this is the figure people check on day one.
-
-**At 12 weeks:** toy 1.5–3.5 lbs (0.68–1.6 kg), small 5–8 lbs (2.3–3.6 kg), medium 8–16 lbs (3.6–7.3 kg), large 14–26 lbs (6.4–12 kg). A 12 week old puppy has usually doubled or more since coming home.
-
-**Puppy birth weight** varies far more than either of these and is a poor predictor on its own — a large-breed puppy is typically born around 1 lb, a toy-breed puppy at only a few ounces. What matters in the first fortnight is not the starting number but that it climbs steadily every day; a newborn that is not gaining needs a vet the same day.
-
-**Large and giant breeds:** for a large breed specifically, use the large and giant tables above rather than scaling a medium-breed curve up. Large and giant breeds grow for considerably longer — 18 months rather than 12 — and pushing weight on early is actively harmful to developing joints. A large-breed puppy that looks slightly lean at six months is usually where it should be.
-
-## How to Estimate Your Puppy's Adult Weight
-
-A rough formula that works for most breeds:
-
-**Adult weight ≈ (current weight ÷ current age in weeks) × maturity age in weeks**
-
-It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight. Our [Dog Weight Calculator](/tools/dog-weight-calculator.html) runs the same arithmetic against breed-size curves, which handles the large-breed timeline better than the raw formula does. It needs an honest current weight, so weigh rather than estimate — for a small puppy, stand on the bathroom scale holding them and subtract your own weight.
-
-Maturity ages by size:
-- Toy: 32 weeks
-- Small: 40 weeks
-- Medium: 52 weeks
-- Large: 72 weeks
-- Giant: 84 weeks
-
-So a 10 lb medium-breed puppy at 16 weeks: (10 ÷ 16) × 52 = **~32.5 lbs adult weight**
-
-This formula is most accurate when used during the active growth phase (not the final few months before maturity, when growth slows significantly). For mixed-breed dogs, estimate size based on physical build and paw size if breed composition is unknown.
+These are estimates worked backwards from rules of thumb, not measured standards, and individual puppies vary. Our [Dog Weight Calculator](/tools/dog-weight-calculator.html) applies the same rules to your puppy's weight. Vets can also plot a puppy on size-specific growth standard charts, such as those published by Salt and colleagues in *PLoS One* in 2017.
 
 <div class="post-cta">
   <h4>Try Our Dog Weight Calculator</h4>
-  <p>Enter your puppy's current age and weight for an instant adult weight estimate.</p>
+  <p>Estimate adult weight at 6–8 weeks or 4 months, or check your puppy's weekly gain.</p>
   <a href="/tools/dog-weight-calculator.html">Calculate now →</a>
 </div>
 
-## Growth Rate: What's Normal Week to Week
+## How Much a Puppy Should Gain Each Week
 
-Knowing the big-picture weight ranges is useful, but understanding week-to-week growth rates helps you catch problems earlier.
+The Merck Veterinary Manual says puppies gain about **2–4 g per day for each kilogram of expected adult weight** during their first five months, and that growth begins to level off after about six months. In weekly terms:
 
-**Toy and small breeds** typically gain 5–10% of their body weight per week during the first 12 weeks, then growth slows. A toy-breed puppy who isn't gaining at least a few ounces per week in the first month should be evaluated by a vet.
+| Expected adult weight | Typical gain per week (first 5 months) |
+|---|---|
+| 10 lb (4.5 kg) | about 2–4.5 oz (65–130 g) |
+| 20 lb (9 kg) | about 4.5–9 oz (130–250 g) |
+| 30 lb (14 kg) | about 0.4–0.8 lb (190–380 g) |
+| 50 lb (23 kg) | about 0.7–1.4 lb (320–640 g) |
+| 70 lb (32 kg) | about 1–2 lb (450–890 g) |
+| 90 lb (41 kg) | about 1.3–2.5 lb (570–1,140 g) |
+| 120 lb (54 kg) | about 1.7–3.4 lb (760–1,520 g) |
 
-**Medium breeds** gain steadily through the first 6 months, then growth slows noticeably. A medium-breed puppy who plateaus before 6 months without an obvious dietary explanation is worth checking out.
+For example, a Labrador puppy expected to reach about 65 lb would typically gain about 0.9–1.8 lb a week through its first five months.
 
-**Large and giant breeds** grow most rapidly between 4–6 months — this is the highest-risk period for overfeeding. Growth plates are under maximum stress during rapid growth, and calorie excess during this window is the most directly linked to developmental orthopedic disease. The goal for large breeds during this phase is steady but not rapid growth.
+Merck recommends **weighing a growing puppy weekly** and adjusting the amount fed so that it gains a small amount each week — slow, steady growth rather than the fastest possible. A puppy that stops gaining or loses weight should see a vet, who can check for causes such as intestinal parasites or illness.
 
-**Rule of thumb for any puppy**: if they gain more than 10% of their current body weight in a single week over several consecutive weeks, re-evaluate their diet. If they go more than 7–10 days without any weight gain in the first 3 months, contact your vet.
+## Why Large-Breed Puppies Shouldn't Grow Fast
 
-## Signs Your Puppy's Growth Is Off Track
+The Merck manual is clear that **overfeeding speeds growth, which harms skeletal development** and contributes to obesity later. It describes a study in which large-breed puppies fed **50–70% of the amount their littermates ate freely** still reached normal adult height, length and bone and muscle mass — only their body fat was lower. Feeding a large-breed puppy less doesn't make it a smaller adult; it makes it a leaner, more slowly growing one.
 
-**Possible underweight:**
-- Ribs, spine, or hip bones clearly visible without pressing
-- Low energy, poor coat condition, decreased appetite
-- Falling significantly below the low end of the range for their size
-- Slow recovery from illness or stress
+PetMD notes that joint problems of the elbows, shoulders and hips mainly affect dogs of 50 lb or more. See your vet if a growing puppy limps, has an unusual gait or a leg that looks angled, or has heat, swelling or pain around a joint.
 
-**Possible overweight:**
-- Can't feel ribs without firm pressure
-- No visible waist when viewed from above
-- Waddling gait or reluctance to exercise
-- Significantly above the high end of the range for their size
+## Feeding a Growing Puppy
 
-Both extremes warrant a vet visit. For large and giant breeds especially, overfeeding during puppyhood can accelerate bone growth and increase the risk of joint problems later in life. The old idea that "a fat puppy is a healthy puppy" is genuinely harmful for large breeds.
+- **A complete and balanced growth diet.** For puppies expected to reach **70 lb (32 kg) or more** as adults, Merck advises a growth food with the AAFCO statement "including growth of large size dogs". Smaller puppies can eat a standard growth or all-life-stages food.
+- **No extra calcium.** On a complete growth diet, Merck says extra calcium, phosphorus or vitamin D is rarely needed and may be harmful.
+- **Meals:** Merck suggests **three meals a day from weaning to 6 months and two from 6 to 12 months**. Small-breed puppies may need more than three.
+- **Calories:** puppies need much more per pound than adults. Merck's starting multipliers are about **3 × resting energy needs under 4 months and 2 × from 4 months to adulthood**, compared with 1.6 for a neutered adult. [How Much Should I Feed My Dog?](/blog/how-much-to-feed-a-dog/) explains the calculation.
+- **Grain-free diets:** the FDA began investigating reports of a heart disease, dilated cardiomyopathy, in dogs eating certain diets — many labelled grain-free — in 2018. Ask your vet before choosing one for a puppy.
 
-## Puppy Nutrition: What Actually Matters
+## When to Switch to Adult Food
 
-The label on the food bag matters more than the brand. Look for:
-
-**"Complete and balanced" statement**: This means the food meets AAFCO nutritional standards for the stated life stage.
-
-**"All life stages" or "Growth"**: Puppy food should be formulated for growth or all life stages. Adult food is not appropriate for puppies — it doesn't have the right nutrient ratios for development.
-
-**Large breed puppy formula**: For breeds expected to exceed 50 lbs, look specifically for large-breed puppy food. These formulas have controlled calcium and phosphorus levels designed to support slower, more even bone growth — reducing the risk of developmental orthopedic disease.
-
-**Avoid**: Grain-free diets for puppies unless specifically recommended by your vet. The FDA has investigated a potential link between grain-free diets and dilated cardiomyopathy in dogs, and the research is still ongoing.
-
-## How Much to Feed a Growing Puppy
-
-Most puppy food bags have feeding guides — but these are starting points, not exact prescriptions. Puppies have high calorie needs relative to adult dogs (typically 2–3× more per pound of body weight), and those needs decrease as they approach adulthood.
-
-**General feeding frequency by age:**
-- 8–12 weeks: 4 meals per day
-- 3–6 months: 3 meals per day
-- 6–12 months: 2 meals per day
-- 12+ months: 2 meals per day (transition to adult food as appropriate for size)
-
-Large and giant breed puppies should NOT be fed to maximum appetite during the rapid growth phase. Controlled growth — keeping them lean without underfeeding — significantly reduces the risk of joint problems. Ask your vet what a healthy body condition looks like for your specific breed at each growth stage.
-
-## When to Transition to Adult Food
-
-The timing depends on size:
-- **Toy and small breeds**: around 9–12 months
-- **Medium breeds**: around 12 months
-- **Large breeds**: around 12–18 months
-- **Giant breeds**: around 18–24 months
-
-Transition gradually over 7–10 days by mixing increasing amounts of the new food with the old. Abrupt switches commonly cause digestive upset — loose stools, gas, or vomiting — that has nothing to do with food quality.
-
-## When to Stop Tracking Growth
-
-Once your puppy reaches their expected adult weight and isn't gaining anymore, the puppy phase is over nutritionally. Weight shouldn't be completely ignored after this point — adult dogs can become overweight just as easily as humans — but the rapid growth phase that requires careful monitoring is behind you.
+Merck advises keeping a puppy on a growth diet **until skeletal maturity**, not just until it stops looking taller. That's about **8–12 months for small and medium breeds and 10–16 months for large and giant breeds**. Change foods gradually over several days to avoid an upset stomach.
 
 ## Frequently Asked Questions
 
 **How much should my puppy weigh at 8 weeks?**
-It depends entirely on breed size. Toy breeds (Chihuahua, Pomeranian) typically weigh 1–2.5 lbs at 8 weeks. Small breeds (Beagle, Shih Tzu) weigh 3–5 lbs. Medium breeds (Border Collie, Bulldog) weigh 5–10 lbs. Large breeds (Labrador, German Shepherd) weigh 8–16 lbs. Giant breeds (Great Dane, Mastiff) weigh 10–20 lbs.
+It depends on how big your puppy will be as an adult. For toy and small breeds, a puppy at 8 weeks typically weighs about a third of its adult weight — so a toy breed heading for 5–12 lb is about 1.7–4 lb, and a small breed heading for 12–24 lb is about 4–8 lb. For larger breeds there's no reliable 8-week figure; checking that the weight climbs each week is more useful.
 
-**How do I know if my puppy is at a healthy weight?**
-Use the rib check: run your fingers along your puppy's sides. You should feel the ribs easily with light pressure but they should not be visibly prominent. View from above — there should be a slight waist visible behind the ribs. These physical checks are more reliable than comparing to a chart, since individual variation within breed sizes is significant.
+**How can I estimate my puppy's adult weight?**
+PetMD's veterinarian-written guide gives two rules. For toy and small breeds, multiply the weight at 6 weeks by 4, or the weight at 8 weeks by 3. For medium and large breeds, multiply the weight at 4 months by 2. There's no equivalent rule for giant breeds. The breed and the parents' size are the other good guides; paw size isn't.
 
-**Can puppies be overweight?**
-Yes — and for large and giant breeds, overfeeding during puppyhood is a genuine health risk. Excess weight during rapid growth phases stresses developing joints and growth plates, increasing the risk of orthopedic conditions like hip dysplasia and elbow dysplasia. For small breeds, the main risk of puppy obesity is setting up habits that carry into adulthood.
+**When do puppies stop growing?**
+Toy breeds usually finish at 8–12 months, small breeds at 9–12 months, medium breeds at 12–15 months, large breeds at 15–18 months and giant breeds at 18–24 months. Growth stops when the growth plates near the ends of the bones close, which a vet can confirm on an X-ray.
 
-**When do puppies gain weight the fastest?**
-The fastest growth occurs in the first 6 months, with large breeds growing most rapidly between 3–6 months. After 6 months, growth continues but slows significantly. Giant breeds continue growing until 18–24 months, but the most rapid weight gain is concentrated in the first year.
+**How much weight should a puppy gain each week?**
+According to the Merck Veterinary Manual, puppies gain about 2–4 g a day for each kilogram of their expected adult weight during the first five months. For a puppy heading for 50 lb, that's roughly 0.7–1.4 lb a week. Growth starts to level off after about six months.
 
-**What if my puppy isn't gaining weight?**
-A puppy who fails to gain weight over 7–10 days in the first few months, or who loses weight, should see a veterinarian. Common causes include intestinal parasites (extremely common in puppies), inadequate food quantity, poor-quality food, and underlying illness. Puppies are more vulnerable to rapid deterioration than adult dogs — don't wait it out.
-
-**Is there a puppy growth chart in kg?**
-The tables above are in pounds, but the conversion is straightforward: 1 lb is about 0.45 kg, so a 10 lb puppy is roughly 4.5 kg and a 50 lb puppy about 22.7 kg. To convert any range in the tables, multiply by 0.45. The growth pattern itself does not change with the unit — what matters is that the weight is climbing steadily along the curve for your puppy's breed size.
-
-**How do I track my dog's weight by age?**
-Weigh at the same time of day on the same scale, roughly weekly while they are growing and monthly once they are past their fastest phase, and write it down. The record doesn't need to be anything fancier than a note on your phone with the date and the number. What you are watching for is the shape of the line rather than any single reading — steady climb is normal, a plateau during a growth phase or any loss is worth a vet call.
-
-**What is the weight of a small dog?**
-It depends where you draw the line. Toy breeds are generally under 12 lbs as adults, small breeds roughly 12 to 25 lbs, and medium breeds around 25 to 50 lbs. So a small dog is usually somewhere between about 12 and 25 lbs — a Beagle, a French Bulldog or a Cocker Spaniel sits in that band, while a Chihuahua or Yorkshire Terrier falls into the toy group below it.
-
-*Always consult your veterinarian with concerns about your puppy's growth or nutrition. Individual genetics play a large role, and these charts are averages — not guarantees for any specific dog.*
+**Will feeding a large-breed puppy less make it smaller as an adult?**
+Not if it's fed a complete growth diet. The Merck manual describes a study in which large-breed puppies fed 50–70% of the amount their littermates ate freely reached normal adult height, length and bone and muscle mass; only their body fat was lower. Overfeeding speeds growth, which harms skeletal development.
 
 ## Related Articles
 
-- [How Much Exercise Does a Puppy Need?](/blog/puppy-exercise-5-minute-rule/) — what the research says, and why weight matters more than minutes
+- [How Much Exercise Does a Puppy Need?](/blog/puppy-exercise-5-minute-rule/)
+- [How Much Should I Feed My Dog?](/blog/how-much-to-feed-a-dog/)
+- [How to Tell If Your Dog Is Underweight](/blog/how-to-tell-if-dog-is-underweight/)
+- [Kitten Weight Chart by Age](/blog/kitten-weight-chart-by-breed-size/)
 
-- [How Much Should I Feed My Dog? A Vet-Backed Guide](/blog/how-much-to-feed-a-dog/)
-- [How Long Are Dogs Pregnant? A Week-by-Week Guide](/blog/how-long-are-dogs-pregnant/)
-- [What to Feed a Pregnant Dog: Complete Nutrition Guide by Week](/blog/what-to-feed-pregnant-dog/)
-- [Kitten Weight Chart by Age: What's Normal from Birth to 12 Months?](/blog/kitten-weight-chart-by-breed-size/)
+*This article is for general information. Ask your veterinarian about your puppy's growth, diet and expected adult size.*

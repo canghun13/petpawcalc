@@ -12,7 +12,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Pet Food Calorie Calculator](https://petpawcalc.com/tools/pet-food-calorie-calculator.html): Calculates daily calorie needs for dogs and cats based on weight, age, neuter status, and activity level using the Resting Energy Requirement (RER) formula.
 
-- [Dog Weight Calculator](https://petpawcalc.com/tools/dog-weight-calculator.html): Estimates a puppy's adult weight based on current age and weight, with size-specific maturity timelines. Also helps assess whether an adult dog is at a healthy weight.
+- [Dog Weight Calculator](https://petpawcalc.com/tools/dog-weight-calculator.html): Estimates a puppy's adult weight with PetMD's vet rules (toy/small: 6 weeks ×4 or 8 weeks ×3; medium/large: 4 months ×2), expected weekly gain from the Merck manual's 2–4 g/day per kg of adult weight, and an overweight dog's ideal weight from its body condition score (AAHA: ~10% per point above 5).
 
 - [Annual Pet Cost Calculator](https://petpawcalc.com/tools/annual-pet-cost-calculator.html): Estimates total annual cost of owning a dog or cat, broken down by category: food, vet care, grooming, insurance, supplies, and boarding.
 
@@ -163,16 +163,16 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [How Much Does a Dog Really Cost Per Year?](https://petpawcalc.com/blog/annual-cost-of-owning-a-dog): Full annual cost breakdown by category (food, vet, grooming, insurance, boarding) with ranges by dog size. Includes costs that commonly surprise new owners.
 
-- [How Much Should I Feed My Dog?](https://petpawcalc.com/blog/how-much-to-feed-a-dog): Explains how to calculate the right daily food amount using RER, with adjustments for life stage, activity level, and neuter status. Covers common feeding mistakes.
+- [How Much Should I Feed My Dog?](https://petpawcalc.com/blog/how-much-to-feed-a-dog): Daily calories from resting energy requirement × Merck life-stage multipliers, a 10–90 lb calorie table, adjusting by body condition, treats, free-feeding, and the Labrador POMC mutation.
 
-- [How Much Should a Senior Dog Eat?](https://petpawcalc.com/blog/how-much-should-senior-dog-eat): Covers calorie and protein needs for aging dogs, when to transition to senior food, signs of under- and overfeeding, and the importance of muscle mass monitoring.
+- [How Much Should a Senior Dog Eat?](https://petpawcalc.com/blog/how-much-should-senior-dog-eat): When dogs count as senior by size (VCA), the 12–13% fall in energy needs, a 1.4 × RER starting table, AAHA 2023 guidance on protein, calorie density and fibre, and weight and muscle changes that need a vet.
 
-- [Puppy Weight Chart by Breed Size](https://petpawcalc.com/blog/puppy-weight-chart-by-breed-size): Weight charts by breed size category (toy through giant) from 8 weeks to adulthood. Includes adult weight estimation formula and nutrition guidance for large-breed puppies.
+- [Puppy Weight Chart by Breed Size](https://petpawcalc.com/blog/puppy-weight-chart-by-breed-size): When toy to giant puppies stop growing (PetMD), the vet rules for estimating adult weight at 6–8 weeks or 4 months, expected weekly gain by adult size (Merck), why large-breed puppies shouldn't grow fast, and growth-diet guidance.
 - [Kitten Weight Chart by Age](https://petpawcalc.com/blog/kitten-weight-chart-by-breed-size): Birth-to-12-month weight chart for kittens, the "1 pound per month" rule of thumb, and a comparison of typical domestic-shorthair growth vs. slow-maturing large breeds (Maine Coon, Ragdoll, Norwegian Forest Cat).
 
-- [Why Is My Cat Always Hungry?](https://petpawcalc.com/blog/why-is-my-cat-always-hungry): Explains calorie needs by life stage, common reasons cats seem perpetually hungry (underfeeding, low-satiety food, medical causes), and how to assess whether intake is appropriate.
+- [Why Is My Cat Always Hungry?](https://petpawcalc.com/blog/why-is-my-cat-always-hungry): Checking the amount against RER × Merck multipliers, how cats' needs change with age (AAHA, VCA), medical causes of increased appetite such as hyperthyroidism and diabetes, and telling hunger from habit.
 
-- [How to Tell If Your Dog Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-dog-is-overweight): Three at-home body condition checks (rib test, waist check, profile view). Covers the Body Condition Score (BCS) scale and steps to take if a dog is overweight.
+- [How to Tell If Your Dog Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-dog-is-overweight): The rib, waist and tuck checks, the 9-point body condition scale, ~10% excess weight per point above 5 and 1–2% weekly loss (AAHA 2014), 59% of US dogs overweight (APOP 2022), and the Kealy Labrador lifespan study.
 
 - [The True Cost of Owning a Cat vs Dog](https://petpawcalc.com/blog/true-cost-cat-vs-dog-year-by-year): Year-by-year cost comparison across the full lifetime of a dog vs cat, broken down by category. Includes time cost and commonly underestimated expenses.
 
@@ -183,7 +183,7 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [Cat Litter Training Regression: Why a Trained Cat Suddenly Stops](https://petpawcalc.com/blog/kitten-litter-training-regression): Explains why litter box use is instinctual (not taught) so regression signals a real change, common triggers (moving house, new litter, multi-cat conflict, post-spay/neuter litter texture change), a behavioral/environmental-vs-medical decision table centered on feline idiopathic cystitis (FIC) vs. UTI, and a step-by-step reset plan.
 
-- [How to Tell If Your Dog Is Underweight (and How to Help Them Gain Weight Safely)](https://petpawcalc.com/blog/how-to-tell-if-dog-is-underweight): At-home rib/waist/muscle-tone checks for underweight vs. naturally lean (sighthounds), common causes (underfeeding, dental pain, parasites, illness), and a safe gradual weight-gain plan.
+- [How to Tell If Your Dog Is Underweight (and How to Help Them Gain Weight Safely)](https://petpawcalc.com/blog/how-to-tell-if-dog-is-underweight): At-home rib, spine and muscle checks, underweight versus naturally lean sighthounds, common medical causes, and gradual weight gain for a healthy dog after a vet check.
 
 - [How to Tell If Your Cat Is Underweight or Too Skinny (and When It's Urgent)](https://petpawcalc.com/blog/how-to-tell-if-cat-is-underweight): The WSAVA 9-point body condition descriptions for scores 1–5, the WSAVA muscle condition score (normal to marked loss over spine, shoulder blades, skull and hips) and why a cat can look bony at a normal weight (sarcopenia vs cachexia), why monthly weighing matters (weight loss about 2.5 years before death from cancer, CKD or hyperthyroidism; about 3 years before a CKD diagnosis), common medical causes with links to cost guides, urgent signs and hepatic lipidosis (Cornell), and how to help a cat regain weight.
 
@@ -209,19 +209,19 @@ Interactive, printable checklists at https://petpawcalc.com/checklists/. Each ha
 
 - [Signs of Cat Labor: What to Expect Before, During, and After](https://petpawcalc.com/blog/signs-of-cat-labor/): Pre-labor signs (temperature below 100°F, stops eating, milk 24–48 hours before), stage timings, 10–60 minutes between kittens, normal interrupted labor of 24–36 hours, VCA's call-the-vet list, nest temperatures and postpartum complications.
 
-- [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Healthy weight ranges by breed and sex, how to assess body condition score at home, and what to do if your cat is overweight or underweight.
+- [How Much Should a Cat Weigh?](https://petpawcalc.com/blog/how-much-should-a-cat-weigh): Breed reference weights from APOP, the 8–12 lb domestic shorthair range (PetMD), body condition score 5 as ideal, when large breeds finish growing, and safe weight loss.
 
 - [How Much Does a Cat Vet Visit Cost?](https://petpawcalc.com/blog/how-much-does-a-cat-vet-visit-cost): Detailed cost breakdown for cat vet care — routine exams, vaccines, spay/neuter, bloodwork, dental cleanings, and emergency visits. Includes indoor vs. outdoor cost differences and ways to reduce costs.
 
 - [How to Reduce Vet Costs Without Compromising Your Cat's Care](https://petpawcalc.com/blog/how-to-reduce-vet-costs-for-cats): Practical strategies for lowering lifetime cat vet costs — pet insurance timing (cats are cheaper to insure than dogs), emergency funds, why annual bloodwork matters more since cats hide illness, low-cost vaccine/spay-neuter clinics, and when to use urgent care vs. the ER.
 
-- [How Much Should a Senior Cat Eat?](https://petpawcalc.com/blog/how-much-should-senior-cat-eat): Calorie and protein needs for aging cats by weight, why senior cats often need more protein not less, wet vs. dry food considerations, feeding frequency, and how to monitor body condition in older cats.
+- [How Much Should a Senior Cat Eat?](https://petpawcalc.com/blog/how-much-should-senior-cat-eat): Why cats' energy needs rise again from about 10–11 years, a 1.2 × RER starting table, why healthy seniors need more protein not less (AAHA 2023), meal frequency, water and the weight changes that need a vet.
 
 - [Dog Quality of Life: How to Assess Your Dog's Well-Being](https://petpawcalc.com/blog/dog-quality-of-life-assessment): Explains the HHHHHMM Scale (Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, More good days than bad), how to score each category honestly, how to track trends over time, and what scores below 35 mean in practical terms.
 
 - [Cat Quality of Life: How to Read the Signs Cats Hide, and How to Score Them](https://petpawcalc.com/blog/cat-quality-of-life-assessment/): Behavioral signs of pain in cats (FVMA; arthritis signs in up to 92% of cats), the Feline Grimace Scale (five facial features scored 0–2, ≥4/10 indicates pain), a cat-specific HHHHHMM table, treatable causes of low scores (arthritis, dental pain, kidney dehydration, appetite drugs Mirataz and Elura, hormone disorders, home changes), hepatic lipidosis risk, logging and end-of-life decisions.
 
-- [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Three at-home body condition checks for cats (rib test, waist check, belly check), explains the primordial pouch and how it differs from excess fat, the 1-9 BCS scale, and a critical warning against crash dieting cats due to hepatic lipidosis risk.
+- [How to Tell If Your Cat Is Overweight](https://petpawcalc.com/blog/how-to-tell-if-cat-is-overweight): Rib, waist and belly checks, the primordial pouch, the WSAVA 9-point scale with 5 as ideal, 61% of US cats overweight (APOP 2022), safe loss of 0.5–2% a week (AAHA) and the hepatic lipidosis risk of crash diets.
 
 - [Puppy and Kitten Vaccination Schedule: The Complete Guide](https://petpawcalc.com/blog/puppy-kitten-vaccination-schedule): Week-by-week core vaccine timeline for puppies (DHPP, rabies) and kittens (FVRCP, rabies, FeLV), explains why multiple doses are needed (maternal antibody interference), non-core vaccines by lifestyle, adult booster schedules, and typical costs.
 

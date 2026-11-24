@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "How Much Should I Feed My Dog? A Vet-Backed Guide"
-description: "Overfeeding is the #1 nutrition mistake dog owners make. Here's how to calculate the right daily food amount for your dog's weight, age, and activity level."
+description: "How to estimate your dog's daily calories from body weight with the formula vets use (resting energy × Merck's life-stage multipliers), a calorie table from 10 to 90 lb, and how to adjust the amount by body condition."
 category: Dog Nutrition
 date: 2026-05-10
 read_time: 8
 slug: how-much-to-feed-a-dog
 faqs:
   - q: "How many cups of food should I feed my dog per day?"
-    a: "There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 660–780 calories per day. If your food has 350 kcal/cup, that's about 2 cups per day. If it has 450 kcal/cup, that's about 1.5 cups. Always check the kcal/cup on the food bag, not just the \"feeding guide.\""
+    a: "There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 690–790 calories per day as a starting point. If your food has 350 kcal/cup, that's about 2–2¼ cups per day; at 450 kcal/cup, about 1½–1¾ cups. Always check the kcal/cup on the food bag, not just the \"feeding guide.\""
   - q: "Is it better to feed my dog once or twice a day?"
-    a: "Twice a day is generally better for most dogs. It stabilizes energy levels, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals. Once-daily feeding works for some dogs but twice daily is the standard recommendation."
+    a: "Twice a day is the usual recommendation for adult dogs, and it makes it easier to notice if your dog's appetite changes. Some dogs do well on one meal; ask your vet if your dog has a medical condition that affects meal timing."
   - q: "How do I know if I'm overfeeding my dog?"
     a: "The rib test is the most reliable check: run your fingers along your dog's sides with light pressure. You should feel the ribs easily without pressing hard. If you can't, your dog is likely overweight. A visible waist from above and a slight belly tuck from the side are also indicators of healthy weight."
   - q: "Should I feed my dog more in winter?"
@@ -18,9 +18,10 @@ faqs:
   - q: "My dog always seems hungry — am I underfeeding?"
     a: "Not necessarily. Dogs are opportunistic eaters and will often appear hungry even when fully fed. Check the rib test and body condition score first. If your dog is maintaining a healthy weight on their current diet, hunger signals alone don't indicate underfeeding. If they're losing weight despite eating, or if the body condition check suggests they're thin, increasing portions is appropriate."
 
+last_modified_at: 2026-11-24
 ---
 
-More than half of US dogs are overweight or obese, according to the Association for Pet Obesity Prevention. The most common reason? Owners simply aren't sure how much to feed — and when in doubt, they feed a little more.
+In the Association for Pet Obesity Prevention's 2022 survey, 59% of US dogs were overweight or obese. Feeding the right amount starts with knowing roughly how many calories your dog needs — then checking the result with your hands, not the bag.
 
 Here's how to figure out the right amount for your specific dog.
 
@@ -30,12 +31,12 @@ Here's how to figure out the right amount for your specific dog.
 
 The feeding guides on dog food bags are a starting point, not a prescription. They're usually based on an "average" adult dog and don't account for:
 
-- Whether your dog is spayed or neutered (reduces calorie needs by ~20–30%)
+- Whether your dog is spayed or neutered — the Merck Veterinary Manual's starting multiplier is 1.6 × resting needs for a neutered adult versus 1.8 for an intact one
 - Activity level — a working farm dog and a couch-dwelling apartment dog are completely different
 - Whether your dog is a puppy, adult, or senior
 - Individual metabolism, which varies significantly even within the same breed
 
-Treat the bag as a rough estimate and adjust from there. Most owners who feed to bag instructions are overfeeding by 10–30%.
+Treat the bag as a rough estimate and adjust from there, using your dog's body condition as the check.
 
 ---
 
@@ -47,19 +48,19 @@ The most accurate way to figure out how much to feed is to start with your dog's
 
 RER = 70 × (body weight in kg)^0.75
 
-A 25 lb (11.3 kg) dog has an RER of about 470 calories/day.
+A 25 lb (11.3 kg) dog has an RER of about 430 calories/day.
 
 **Step 2: Apply a multiplier based on life stage and activity**
 
 | Dog Type | Multiplier |
 |----------|-----------|
-| Neutered adult, low activity | 1.4–1.6× RER |
-| Intact adult, moderate activity | 1.6–1.8× RER |
-| Very active / working dog | 2.0–5.0× RER |
-| Puppy (under 4 months) | 3.0× RER |
-| Senior (low activity) | 1.2–1.4× RER |
+| Neutered adult | 1.6 × RER |
+| Intact adult | 1.8 × RER |
+| Obesity-prone adult | 1.4 × RER |
+| Puppy under 4 months | 3 × RER |
+| Puppy over 4 months | 2 × RER |
 
-That same 25 lb neutered adult dog needs roughly 660–750 calories/day.
+Multipliers are from the Merck Veterinary Manual, which notes that the result is only a starting point to adjust from. The AAHA nutrition guidelines use the same RER formula. That same 25 lb neutered adult dog needs roughly 610–690 calories a day (1.4–1.6 × RER).
 
 **Step 3: Check your food label**
 
@@ -75,19 +76,19 @@ Find the kcal/cup (or kcal/kg) on your dog food packaging. Divide your dog's dai
 
 ## Daily Calorie Reference by Dog Size
 
-To skip the math, here's a practical reference for common dog weights. These assume a neutered adult at moderate activity:
+To skip the math, here's the same calculation for common weights, using 1.4–1.6 × RER for a neutered adult:
 
 | Dog Weight | Daily Calories (approx.) |
 |------------|--------------------------|
-| 10 lbs (4.5 kg) | 290–350 kcal |
-| 20 lbs (9 kg) | 490–580 kcal |
-| 30 lbs (13.6 kg) | 660–780 kcal |
-| 40 lbs (18 kg) | 815–960 kcal |
-| 50 lbs (22.7 kg) | 960–1,130 kcal |
-| 70 lbs (31.8 kg) | 1,220–1,440 kcal |
-| 90 lbs (40.8 kg) | 1,460–1,720 kcal |
+| 10 lbs (4.5 kg) | 300–350 kcal |
+| 20 lbs (9.1 kg) | 510–590 kcal |
+| 30 lbs (13.6 kg) | 690–790 kcal |
+| 40 lbs (18.1 kg) | 860–980 kcal |
+| 50 lbs (22.7 kg) | 1,020–1,160 kcal |
+| 70 lbs (31.8 kg) | 1,310–1,500 kcal |
+| 90 lbs (40.8 kg) | 1,580–1,810 kcal |
 
-Adjust down 10–20% for low-activity or overweight dogs, up 20–30% for very active dogs.
+These are starting points. Individual dogs vary a lot, so adjust by body condition over the following weeks. For an overweight dog, the AAHA guidelines base calories on the ideal weight rather than the current one.
 
 ---
 
@@ -99,15 +100,15 @@ You don't need to count calories forever. Once you've established a baseline, us
 - **Waist**: Viewed from above, there should be a visible narrowing behind the ribs
 - **Abdominal tuck**: From the side, the belly should tuck up slightly toward the hindquarters
 
-If your dog is gaining unwanted weight, reduce by 10% and monitor for 2–3 weeks before adjusting again. Small, gradual adjustments are more sustainable than dramatic cuts.
+If your dog is gaining unwanted weight, make a small reduction and recheck in a few weeks. Small, gradual adjustments are easier to stick to than dramatic cuts — and see [How to Tell If Your Dog Is Overweight](/blog/how-to-tell-if-dog-is-overweight/) for the full body condition scale.
 
 ---
 
 ## Puppies and Seniors Need Different Approaches
 
-**Puppies** need more calories per pound than adults — typically 2–3× their adult maintenance needs during rapid growth. They should be fed 3–4 times daily until about 6 months, then transition to twice daily. Use a puppy-specific formula or one labeled "for all life stages."
+**Puppies** need more calories per pound than adults: the Merck manual's starting multipliers are 3 × RER under 4 months and 2 × RER after that. Feed several meals a day while they're young, reducing as they grow. Use a puppy-specific formula or one labeled "for all life stages."
 
-Large and giant breed puppies are an exception: they benefit from controlled growth to protect developing joints. Use a large-breed puppy formula, which has adjusted calcium and phosphorus ratios designed to support steady bone development.
+Large and giant breed puppies need slow, steady growth: the Merck manual notes that overfeeding speeds growth and harms skeletal development. For puppies expected to reach 70 lb (32 kg) or more, Merck advises a growth food labelled "including growth of large size dogs". See [Puppy Weight Chart by Breed Size](/blog/puppy-weight-chart-by-breed-size/) for weekly gain by size.
 
 **Senior dogs** often need fewer calories as activity decreases, but protein needs stay high — and some seniors actually need more calories if they're losing muscle mass. Ask your vet which direction applies to your dog at each annual exam.
 
@@ -115,51 +116,45 @@ Large and giant breed puppies are an exception: they benefit from controlled gro
 
 ## Common Feeding Mistakes and How to Avoid Them
 
-**Following bag instructions too literally**: Feeding guides on dog food bags are typically calibrated for intact dogs at moderate activity. Most household dogs are neutered and less active than average — they need 20–30% fewer calories than the bag suggests.
+**Following bag instructions too literally**: bag guides are a starting point for an average dog. A neutered, less active dog often needs less, so let body condition guide you.
 
 **Not accounting for treats**: Treats can make up a significant portion of daily calories without being counted. A 10-calorie treat given 10 times a day is 100 extra calories — equivalent to 15% of a medium dog's daily intake. Count treats as part of the daily total and reduce meals accordingly.
 
-**Measuring by volume instead of weight**: A "cup" of kibble varies significantly in calorie density depending on the food. High-fat, calorie-dense kibbles can have 500+ kcal/cup; lighter foods 300–350 kcal/cup. For accuracy, measure by calories rather than volume — use the food's calorie density and a kitchen scale.
+**Measuring by volume instead of weight**: calorie density varies widely between foods, so a "cup" of one kibble isn't the same as a cup of another. Check the kcal per cup or per kg on the label, and weigh portions with a kitchen scale for accuracy.
 
-**Not adjusting as the dog ages**: A dog's calorie needs change at every life stage. The amount that was appropriate at age 2 is likely too much by age 8. Annual reassessment is worth building into your routine.
+**Not adjusting as the dog ages**: calorie needs change with age, activity and neutering. VCA notes that a dog's energy needs may fall by about 12–13% with age, so re-check body condition and portions at least once a year.
 
-**Free-feeding**: Leaving food out all day makes it impossible to track intake and monitor appetite changes — one of the earliest signs of illness in dogs. Scheduled meals give you much better visibility into how your dog is actually eating.
+**Free-feeding**: the Merck manual notes that most adult dogs can't be fed free-choice without becoming obese. Scheduled, measured meals also make it easier to notice when your dog's appetite changes.
 
 ---
 
 ## Breed-Specific Considerations
 
-**Labrador Retrievers** are notorious for obesity — many carry a genetic mutation affecting the POMC gene, which disrupts normal fullness signaling. Labs will eat far past satiety if food is available. They need careful portion control and measured meals rather than free-feeding.
+**Labrador Retrievers**: researchers at the University of Cambridge found that about a quarter of Labradors carry a mutation in the POMC gene linked to obesity and stronger food motivation. Measured meals matter even more for these dogs.
 
-**Greyhounds and Sighthounds** have lower body fat and different muscle composition — they often need more calories per pound than other large breeds and should look leaner than most dogs of similar size.
+**Greyhounds and other sighthounds** should look leaner than most breeds at a healthy weight, so judge them by muscle and energy as well as ribs.
 
-**Brachycephalic breeds** (Bulldogs, Pugs, French Bulldogs) have lower exercise tolerance and often need fewer calories than their size suggests.
-
-**Working and sporting breeds** (Border Collies, Huskies, hunting dogs in active use) may need dramatically more — up to 2–5× resting energy requirements on high-activity days.
+**Working and very active dogs** can need considerably more than the household figures above; work out their needs with your vet.
 
 ---
 
 ## How to Transition Between Foods
 
-When you need to change your dog's food, always do it gradually. A sudden switch can cause digestive upset, vomiting, or diarrhea.
-
-A standard transition:
+When you need to change your dog's food, do it gradually, because a sudden switch can upset the stomach. A common approach over about a week:
 - Days 1–2: 75% old food, 25% new food
 - Days 3–4: 50/50
 - Days 5–6: 25% old food, 75% new food
 - Day 7+: 100% new food
-
-Dogs with sensitive stomachs may need an even slower transition — up to 2–3 weeks.
 
 ---
 
 ## Frequently Asked Questions
 
 **How many cups of food should I feed my dog per day?**
-There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 660–780 calories per day. If your food has 350 kcal/cup, that's about 2 cups per day. If it has 450 kcal/cup, that's about 1.5 cups. Always check the kcal/cup on the food bag, not just the "feeding guide."
+There's no universal answer — it depends on the calorie density of your specific food and your dog's size and activity level. A 30 lb neutered adult dog needs roughly 690–790 calories per day as a starting point. If your food has 350 kcal/cup, that's about 2–2¼ cups per day; at 450 kcal/cup, about 1½–1¾ cups. Always check the kcal/cup on the food bag, not just the "feeding guide."
 
 **Is it better to feed my dog once or twice a day?**
-Twice a day is generally better for most dogs. It stabilizes energy levels, reduces bloat risk in large breeds, and prevents the ravenous eating that comes with a 24-hour gap between meals. Once-daily feeding works for some dogs but twice daily is the standard recommendation.
+Twice a day is the usual recommendation for adult dogs, and it makes it easier to notice if your dog's appetite changes. Some dogs do well on one meal; ask your vet if your dog has a medical condition that affects meal timing.
 
 **How do I know if I'm overfeeding my dog?**
 The rib test is the most reliable check: run your fingers along your dog's sides with light pressure. You should feel the ribs easily without pressing hard. If you can't, your dog is likely overweight. A visible waist from above and a slight belly tuck from the side are also indicators of healthy weight.

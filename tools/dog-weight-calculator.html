@@ -2,8 +2,8 @@
 layout: tool
 permalink: /tools/dog-weight-calculator.html
 title: Dog Weight Calculator — Puppy Adult Weight Estimator
-description: Estimate how much your puppy will weigh as an adult, or check if your dog is at a healthy weight. Free and instant.
-last_modified_at: 2026-09-29
+description: Estimate a puppy's adult weight with the vet rules for 6–8 weeks and 4 months, check how much a puppy should gain each week, or estimate an overweight dog's ideal weight from its body condition score.
+last_modified_at: 2026-11-24
 ---
 <script type="application/ld+json">
 {
@@ -11,7 +11,7 @@ last_modified_at: 2026-09-29
   "@type": "WebApplication",
   "name": "Dog Weight Calculator",
   "url": "https://petpawcalc.com/tools/dog-weight-calculator.html",
-  "description": "Estimate your puppy's adult weight based on current age and weight, or check if your adult dog is at a healthy weight.",
+  "description": "Estimate a puppy's adult weight, check expected weekly weight gain, or estimate an adult dog's ideal weight from its body condition score.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -33,66 +33,42 @@ last_modified_at: 2026-09-29
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can it check an adult dog's weight, not just predict a puppy's?",
+      "name": "How does the calculator estimate my puppy's adult weight?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — select \"Check my adult dog's healthy weight range\" above, enter your dog's current weight and size category, and this calculator checks it against the typical healthy weight range for their size, not just a puppy growth projection."
+        "text": "It uses the rules in a veterinarian-written PetMD guide: for toy and small breeds, weight at 6 weeks × 4 or at 8 weeks × 3; for medium and large breeds, weight at 4 months × 2. Outside those ages it tells you when to weigh again rather than guessing."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I estimate my puppy's adult weight?",
+      "name": "Why won't it estimate a giant-breed puppy's adult weight?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Divide your puppy's current weight by their age in weeks, then multiply by the expected maturity age in weeks: 40 for small breeds, 52 for medium, 72 for large, 84 for giant breeds. This is most accurate during the active growth phase."
+        "text": "There's no published rule of thumb for giant breeds, which keep growing until 18–24 months. The breed, the parents' weights and your vet's growth charts are better guides. The weekly-gain check still works for giant puppies if you know roughly how big they'll be."
       }
     },
     {
       "@type": "Question",
-      "name": "When do puppies reach their full adult weight?",
+      "name": "How is the weekly gain range worked out?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Small breeds typically reach adult weight by 8–10 months. Medium breeds by around 12 months. Large breeds by 12–18 months. Giant breeds may continue growing until 18–24 months."
+        "text": "The Merck Veterinary Manual says puppies gain about 2–4 g a day for each kilogram of expected adult weight during the first five months. The calculator multiplies that by your puppy's expected adult weight and by seven days."
       }
     },
     {
       "@type": "Question",
-      "name": "How accurate is the adult weight estimate?",
+      "name": "How does the ideal weight estimate for an adult dog work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is most reliable during the active growth phase and for a puppy whose expected adult size is known. It is least reliable for mixed breeds of unknown parentage, where the size category itself is a guess, and for giant breeds, which keep filling out well past 12 months. Re-running it every few weeks and watching whether the projection holds steady tells you more than any single estimate."
+        "text": "On the 9-point body condition scale, 5 is ideal, and the 2014 AAHA Weight Management Guidelines say each point above 5 represents roughly 10% excess weight. The calculator divides your dog's current weight accordingly. For a dog scoring below 5, it doesn't estimate a target — an underweight dog needs a vet check first."
       }
     },
     {
       "@type": "Question",
-      "name": "How accurate is the healthy weight range for my dog?",
+      "name": "When do puppies stop growing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The range is based on breed size category rather than exact breed, since standards vary within breeds too — two dogs of the same breed can sit at different healthy weights depending on frame. The rib and waist check above settles it: a lean, well-muscled dog can be perfectly healthy above or below the category average."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I tell if my dog is at a healthy weight?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You should be able to feel your dog's ribs easily without pressing hard, but they shouldn't be visibly prominent. From above, your dog should have a visible waist. From the side, the belly should tuck up slightly behind the rib cage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How are dog sizes defined by weight?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Weight is how dog size is usually classified. The usual bands are toy under 12 lbs, small 12–25 lbs, medium 25–50 lbs, large 50–100 lbs and giant over 100 lbs. Those bands matter for more than labelling — they drive growth timelines, medication dosing, food portions and joint-care advice, which is why this calculator asks for breed size rather than treating all dogs the same."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the average dog size at 14 weeks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At 14 weeks there is no single average worth quoting, because breed size dominates everything else: a toy-breed puppy is around 2–4 lbs, a small breed 6–10 lbs, a medium breed 10–20 lbs and a large breed 18–32 lbs. Fourteen weeks sits between the 12-week and 16-week rows on most growth charts, so reading between those two is the practical approach. Our <a href=\"/blog/puppy-weight-chart-by-breed-size/\">Puppy Weight Chart by Breed Size</a> has the full set of rows."
+        "text": "Typically 8–12 months for toy breeds, 9–12 months for small, 12–15 months for medium, 15–18 months for large and 18–24 months for giant breeds, according to PetMD. Growth ends when the growth plates close, which a vet can confirm on an X-ray."
       }
     }
   ]
@@ -102,7 +78,7 @@ last_modified_at: 2026-09-29
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>⚖️ Dog Weight Calculator</h1>
-    <p>Estimate your puppy's adult weight, or check whether your adult dog is within a healthy weight range for their size.</p>
+    <p>Estimate your puppy's adult weight, check how much it should be gaining each week, or estimate an overweight dog's ideal weight.</p>
   </div>
 
   <div class="tool-box">
@@ -110,7 +86,8 @@ last_modified_at: 2026-09-29
       <label for="calc-type">What do you want to calculate?</label>
       <select id="calc-type" onchange="toggleForm()">
         <option value="puppy">Estimate my puppy's adult weight</option>
-        <option value="adult">Check my adult dog's healthy weight range</option>
+        <option value="gain">Check my puppy's weekly weight gain</option>
+        <option value="adult">Estimate my adult dog's ideal weight</option>
       </select>
     </div>
 
@@ -118,22 +95,30 @@ last_modified_at: 2026-09-29
     <div id="puppy-form">
       <div class="form-group">
         <label for="puppy-age">Puppy's Current Age (weeks)</label>
-        <input type="number" id="puppy-age" min="4" max="52" placeholder="e.g. 16">
+        <input type="number" id="puppy-age" min="4" max="52" placeholder="e.g. 8">
       </div>
       <div class="form-group">
         <label for="puppy-weight">Puppy's Current Weight (lbs)</label>
-        <input type="number" id="puppy-weight" min="0.5" max="100" step="0.5" placeholder="e.g. 8">
+        <input type="number" id="puppy-weight" min="0.5" max="100" step="0.1" placeholder="e.g. 3">
       </div>
       <div class="form-group">
         <label for="puppy-size">Expected Adult Size</label>
         <select id="puppy-size">
           <option value="">Select size</option>
-          <option value="toy">Toy (under 12 lbs)</option>
-          <option value="small">Small (12–25 lbs)</option>
-          <option value="medium">Medium (25–50 lbs)</option>
-          <option value="large">Large (50–100 lbs)</option>
+          <option value="toy">Toy (5–12 lbs)</option>
+          <option value="small">Small (12–24 lbs)</option>
+          <option value="medium">Medium (24–59 lbs)</option>
+          <option value="large">Large (59–99 lbs)</option>
           <option value="giant">Giant (100+ lbs)</option>
         </select>
+      </div>
+    </div>
+
+    <!-- Gain form -->
+    <div id="gain-form" style="display:none;">
+      <div class="form-group">
+        <label for="gain-adult">Expected Adult Weight (lbs)</label>
+        <input type="number" id="gain-adult" min="3" max="250" step="1" placeholder="e.g. 65">
       </div>
     </div>
 
@@ -144,14 +129,17 @@ last_modified_at: 2026-09-29
         <input type="number" id="adult-weight" min="1" max="300" step="0.5" placeholder="e.g. 45">
       </div>
       <div class="form-group">
-        <label for="adult-size">Dog's Size Category</label>
-        <select id="adult-size">
-          <option value="">Select size</option>
-          <option value="toy">Toy breed (under 12 lbs ideal)</option>
-          <option value="small">Small breed (12–25 lbs ideal)</option>
-          <option value="medium">Medium breed (25–50 lbs ideal)</option>
-          <option value="large">Large breed (50–100 lbs ideal)</option>
-          <option value="giant">Giant breed (100+ lbs ideal)</option>
+        <label for="adult-bcs">Body Condition Score (1–9)</label>
+        <select id="adult-bcs">
+          <option value="">Select score</option>
+          <option value="2">1–2 — ribs, spine and hip bones easily visible; no fat</option>
+          <option value="3">3 — ribs easily felt, may be visible; obvious waist</option>
+          <option value="4">4 — ribs easily felt with minimal fat; clear waist</option>
+          <option value="5">5 — ideal: ribs felt without excess fat; waist and tuck</option>
+          <option value="6">6 — ribs felt with slight excess fat; waist not prominent</option>
+          <option value="7">7 — ribs hard to feel; fat over back and tail base</option>
+          <option value="8">8 — ribs not felt without firm pressure; no waist</option>
+          <option value="9">9 — heavy fat on chest, spine, neck and legs; distended belly</option>
         </select>
       </div>
     </div>
@@ -165,51 +153,43 @@ last_modified_at: 2026-09-29
   </div>
 
   <div class="disclaimer-box">
-    ⚕️ This tool is for informational purposes only. Always consult your veterinarian for advice on your dog's ideal weight.
+    ⚕️ This tool is for informational purposes only. Always consult your veterinarian for advice on your dog's growth and ideal weight.
   </div>
 
   <div style="margin-top: 40px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">How Puppy Weight Estimates Work</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The puppy adult weight estimate uses a simple growth curve formula: current weight divided by current age in weeks, multiplied by the expected maturity age for the breed size. Smaller breeds mature earlier (around 32–40 weeks); larger breeds continue growing until 18–24 months.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This formula is most accurate between 8 and 16 weeks of age. Very young puppies (under 8 weeks) and puppies already close to adult size will produce less reliable estimates. For mixed breeds, use the size category of the larger parent as your reference point.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">How the Puppy Estimate Works</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Puppies don't grow in a straight line — they grow fastest early and level off after about six months — so dividing weight by age and multiplying up overestimates adult size. This calculator uses the rules of thumb from a veterinarian-written PetMD guide (Sandra C. Mitchell, DVM, 2025) instead: for <strong>toy and small breeds</strong>, weight at 6 weeks × 4 or at 8 weeks × 3; for <strong>medium and large breeds</strong>, weight at 4 months × 2.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Those rules are tied to particular ages, so if your puppy is outside them the calculator tells you when to weigh again. Giant breeds have no equivalent rule. In every case, the breed and the size of the parents are good guides; paw size isn't a reliable one.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Understanding the Healthy Weight Check</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The healthy weight ranges in this tool are based on general size categories, not breed-specific standards. A dog's ideal weight depends on their frame and muscle composition — a lean, muscular dog and a small-framed dog of the same size category may have very different healthy weights.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The most reliable at-home check is the <strong>rib test</strong>: run your fingers along your dog's ribcage with light pressure. You should feel each rib easily without seeing them. If you have to press firmly to feel ribs, your dog may be overweight. If ribs are clearly visible without touching, they may be underweight.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Checking Weekly Gain</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The Merck Veterinary Manual says puppies gain about <strong>2–4 g a day for each kilogram of expected adult weight</strong> during their first five months, and recommends weighing a growing puppy weekly and adjusting food so that it gains a small amount each week. A puppy heading for 50 lbs, for example, typically gains about 0.7–1.4 lbs a week in that period. A puppy that stops gaining or loses weight should see a vet.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Faster isn't better, especially for large breeds. Merck notes that overfeeding speeds growth and harms skeletal development, and that large-breed puppies fed 50–70% of what their littermates ate freely still reached normal adult size — just with less body fat.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Weight and Large Breed Health</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For large and giant breeds, keeping weight in check during puppyhood is especially important. Overfeeding large-breed puppies accelerates bone growth and significantly increases the risk of hip dysplasia and other orthopedic conditions later in life. Large-breed puppy foods are specifically formulated with lower calcium and calorie density to support healthy, steady growth.</p>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">If Your Adult Dog Is Outside the Healthy Range</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A single weigh-in outside the typical range isn't necessarily a problem — some dogs are naturally larger or leaner-framed than average for their breed. What matters more is the trend: steady weight gain or loss over a few months is worth mentioning at your dog's next vet visit, especially if it's unexplained by a diet or activity change you made intentionally.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Estimating an Adult Dog's Ideal Weight</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A size category can't tell you whether a particular dog is overweight — a 55 lb dog may be lean or heavy depending on its frame. Body condition can. On the 9-point scale, <strong>5 is ideal</strong>, and the 2014 AAHA Weight Management Guidelines say each point above 5 represents roughly <strong>10% excess weight</strong>. A dog weighing 60 lbs at a score of 7, for instance, has an estimated ideal weight of about 50 lbs.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">To score your dog, feel the ribs with flat hands, look for a waist from above and a tuck from the side. <a href="/blog/how-to-tell-if-dog-is-overweight/">How to Tell If Your Dog Is Overweight</a> describes each score. AAHA advises basing calories on the ideal weight and aiming for weight loss of about 1–2% of body weight a week, with your vet setting the plan.</p>
 
     <div class="post-cta">
-      <p>See detailed weight charts by breed size → <a href="/blog/puppy-weight-chart-by-breed-size/">Puppy Weight Chart by Breed Size</a></p>
+      <p>Growth timelines and weekly gain tables by size → <a href="/blog/puppy-weight-chart-by-breed-size/">Puppy Weight Chart by Breed Size</a></p>
     </div>
     <div class="post-cta">
-      <p>Weight on the low end? → <a href="/blog/how-to-tell-if-dog-is-underweight/">How to Tell If Your Dog Is Underweight</a></p>
+      <p>Score below 5? → <a href="/blog/how-to-tell-if-dog-is-underweight/">How to Tell If Your Dog Is Underweight</a></p>
     </div>
     <div class="post-cta">
       <p>Older dog moving stiffly? Extra weight makes joint pain worse → <a href="/tools/dog-mobility-arthritis-screening.html">Dog Arthritis Screening Tool</a></p>
     </div>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can it check an adult dog's weight, not just predict a puppy's?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — select "Check my adult dog's healthy weight range" above, enter your dog's current weight and size category, and this calculator checks it against the typical healthy weight range for their size, not just a puppy growth projection.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I estimate my puppy's adult weight?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Divide your puppy's current weight by their age in weeks, then multiply by the expected maturity age in weeks: 40 for small breeds, 52 for medium, 72 for large, 84 for giant breeds. This is most accurate during the active growth phase.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do puppies reach their full adult weight?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Small breeds typically reach adult weight by 8–10 months. Medium breeds by around 12 months. Large breeds by 12–18 months. Giant breeds may continue growing until 18–24 months.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How accurate is the adult weight estimate?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It is most reliable during the active growth phase and for a puppy whose expected adult size is known. It is least reliable for mixed breeds of unknown parentage, where the size category itself is a guess, and for giant breeds, which keep filling out well past 12 months. Re-running it every few weeks and watching whether the projection holds steady tells you more than any single estimate.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How accurate is the healthy weight range for my dog?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The range is based on breed size category rather than exact breed, since standards vary within breeds too — two dogs of the same breed can sit at different healthy weights depending on frame. The rib and waist check above settles it: a lean, well-muscled dog can be perfectly healthy above or below the category average.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How can I tell if my dog is at a healthy weight?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">You should be able to feel your dog's ribs easily without pressing hard, but they shouldn't be visibly prominent. From above, your dog should have a visible waist. From the side, the belly should tuck up slightly behind the rib cage.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How are dog sizes defined by weight?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Weight is how dog size is usually classified. The usual bands are toy under 12 lbs, small 12–25 lbs, medium 25–50 lbs, large 50–100 lbs and giant over 100 lbs. Those bands matter for more than labelling — they drive growth timelines, medication dosing, food portions and joint-care advice, which is why this calculator asks for breed size rather than treating all dogs the same.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is the average dog size at 14 weeks?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">At 14 weeks there is no single average worth quoting, because breed size dominates everything else: a toy-breed puppy is around 2–4 lbs, a small breed 6–10 lbs, a medium breed 10–20 lbs and a large breed 18–32 lbs. Fourteen weeks sits between the 12-week and 16-week rows on most growth charts, so reading between those two is the practical approach. Our <a href="/blog/puppy-weight-chart-by-breed-size/">Puppy Weight Chart by Breed Size</a> has the full set of rows.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How does the calculator estimate my puppy's adult weight?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It uses the rules in a veterinarian-written PetMD guide: for toy and small breeds, weight at 6 weeks × 4 or at 8 weeks × 3; for medium and large breeds, weight at 4 months × 2. Outside those ages it tells you when to weigh again rather than guessing.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why won't it estimate a giant-breed puppy's adult weight?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no published rule of thumb for giant breeds, which keep growing until 18–24 months. The breed, the parents' weights and your vet's growth charts are better guides. The weekly-gain check still works for giant puppies if you know roughly how big they'll be.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How is the weekly gain range worked out?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The Merck Veterinary Manual says puppies gain about 2–4 g a day for each kilogram of expected adult weight during the first five months. The calculator multiplies that by your puppy's expected adult weight and by seven days.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How does the ideal weight estimate for an adult dog work?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">On the 9-point body condition scale, 5 is ideal, and the 2014 AAHA Weight Management Guidelines say each point above 5 represents roughly 10% excess weight. The calculator divides your dog's current weight accordingly. For a dog scoring below 5, it doesn't estimate a target — an underweight dog needs a vet check first.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do puppies stop growing?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Typically 8–12 months for toy breeds, 9–12 months for small, 12–15 months for medium, 15–18 months for large and 18–24 months for giant breeds, according to PetMD. Growth ends when the growth plates close, which a vet can confirm on an X-ray.</p>
   </div>
 </div>
 
@@ -217,9 +197,14 @@ last_modified_at: 2026-09-29
 function toggleForm() {
   const type = document.getElementById('calc-type').value;
   document.getElementById('puppy-form').style.display = type === 'puppy' ? 'block' : 'none';
+  document.getElementById('gain-form').style.display = type === 'gain' ? 'block' : 'none';
   document.getElementById('adult-form').style.display = type === 'adult' ? 'block' : 'none';
   document.getElementById('result').classList.remove('show');
 }
+
+function r1(x) { return Math.round(x * 10) / 10; }
+
+const FINISH = { toy: '8–12 months', small: '9–12 months', medium: '12–15 months', large: '15–18 months', giant: '18–24 months' };
 
 function calculateWeight() {
   const type = document.getElementById('calc-type').value;
@@ -228,50 +213,71 @@ function calculateWeight() {
   const resultDesc = document.getElementById('result-desc');
 
   if (type === 'puppy') {
-    const ageWeeks = parseFloat(document.getElementById('puppy-age').value);
-    const currentWeight = parseFloat(document.getElementById('puppy-weight').value);
+    const age = parseFloat(document.getElementById('puppy-age').value);
+    const w = parseFloat(document.getElementById('puppy-weight').value);
     const size = document.getElementById('puppy-size').value;
+    if (!age || !w || !size) { alert('Please fill in all fields.'); return; }
+    const finish = ` Puppies of this size usually stop growing at ${FINISH[size]}.`;
 
-    if (!ageWeeks || !currentWeight || !size) { alert('Please fill in all fields.'); return; }
+    if (size === 'toy' || size === 'small') {
+      if (age >= 5.5 && age < 7) {
+        resultWeight.textContent = `Estimated adult weight: about ${r1(w * 4)} lbs`;
+        resultDesc.textContent = `Weight at about 6 weeks × 4.${finish} Re-check with the 8-week rule (× 3) in a couple of weeks.`;
+      } else if (age >= 7 && age <= 9) {
+        resultWeight.textContent = `Estimated adult weight: about ${r1(w * 3)} lbs`;
+        resultDesc.textContent = `Weight at about 8 weeks × 3.${finish}`;
+      } else if (age < 5.5) {
+        resultWeight.textContent = 'Too early to estimate';
+        resultDesc.textContent = `The rule for toy and small breeds uses weight at 6 weeks (× 4) or 8 weeks (× 3). Weigh again at 6 weeks.${finish}`;
+      } else {
+        resultWeight.textContent = 'No reliable rule at this age';
+        resultDesc.textContent = `The rule for toy and small breeds uses weight at 6 or 8 weeks. At ${age} weeks, the breed and the parents' size are better guides — or use the weekly-gain check.${finish}`;
+      }
+    } else if (size === 'medium' || size === 'large') {
+      if (age >= 16 && age <= 19) {
+        resultWeight.textContent = `Estimated adult weight: about ${r1(w * 2)} lbs`;
+        resultDesc.textContent = `Weight at about 4 months × 2.${finish}`;
+      } else if (age < 16) {
+        resultWeight.textContent = 'Weigh again at 4 months';
+        resultDesc.textContent = `The rule for medium and large breeds uses weight at 4 months (about 17 weeks) × 2. Your puppy is ${age} weeks old, so weigh again in about ${Math.max(1, Math.round(17 - age))} week(s).${finish}`;
+      } else {
+        resultWeight.textContent = 'No reliable rule at this age';
+        resultDesc.textContent = `The rule for medium and large breeds uses weight at 4 months. At ${age} weeks, the breed and the parents' size are better guides — or ask your vet to plot your puppy on a growth chart.${finish}`;
+      }
+    } else {
+      resultWeight.textContent = 'No published rule for giant breeds';
+      resultDesc.textContent = `Giant breeds keep growing until 18–24 months, and there's no simple puppy-weight rule for them. The breed, the parents' weights and your vet's growth charts are the better guides. The weekly-gain check works if you know roughly how big your puppy will be.`;
+    }
 
-    // Growth completion weeks by size
-    const maturityWeeks = { toy: 32, small: 40, medium: 52, large: 72, giant: 84 };
-    const fullWeeks = maturityWeeks[size];
-    const estimatedAdult = Math.round((currentWeight / ageWeeks) * fullWeeks * 10) / 10;
-
-    resultWeight.textContent = `Estimated adult weight: ${estimatedAdult} lbs`;
-    resultDesc.textContent = `This is an estimate based on current weight at ${ageWeeks} weeks. Genetics and nutrition will also affect final size. Your vet can give a more precise prediction.`;
+  } else if (type === 'gain') {
+    const adultLb = parseFloat(document.getElementById('gain-adult').value);
+    if (!adultLb) { alert('Please enter an expected adult weight.'); return; }
+    const kg = adultLb * 0.4536;
+    const loG = 2 * kg * 7, hiG = 4 * kg * 7;
+    const loLb = loG / 453.6, hiLb = hiG / 453.6;
+    const lbText = hiLb < 0.5
+      ? `about ${r1(loG / 28.35)}–${r1(hiG / 28.35)} oz`
+      : `about ${Math.round(loLb * 100) / 100}–${Math.round(hiLb * 100) / 100} lbs`;
+    resultWeight.textContent = `Typical gain: ${lbText} a week`;
+    resultDesc.textContent = `That's ${Math.round(loG)}–${Math.round(hiG)} g a week, based on the Merck Veterinary Manual's 2–4 g a day per kg of expected adult weight during the first five months. Growth levels off after about six months. Slow, steady gain is the goal; a puppy that stops gaining or loses weight should see a vet.`;
 
   } else {
     const weight = parseFloat(document.getElementById('adult-weight').value);
-    const size = document.getElementById('adult-size').value;
-
-    if (!weight || !size) { alert('Please fill in all fields.'); return; }
-
-    const ranges = {
-      toy:    [4, 12],
-      small:  [12, 25],
-      medium: [25, 50],
-      large:  [50, 100],
-      giant:  [100, 180]
-    };
-
-    const [low, high] = ranges[size];
-    let status, desc;
-
-    if (weight < low) {
-      status = 'Underweight';
-      desc = `Your dog may be underweight for their size category. Consider discussing their diet with your veterinarian.`;
-    } else if (weight > high) {
-      status = 'Overweight';
-      desc = `Your dog may be carrying extra weight for their size. Your vet can recommend a healthy weight loss plan.`;
+    const bcs = parseInt(document.getElementById('adult-bcs').value, 10);
+    if (!weight || !bcs) { alert('Please fill in all fields.'); return; }
+    if (bcs < 5) {
+      resultWeight.textContent = 'Below ideal body condition';
+      resultDesc.textContent = `A score of ${bcs} suggests your dog may be underweight. Unexplained weight loss can be a sign of illness, so see your vet before increasing food; they can set a target weight.`;
+    } else if (bcs === 5) {
+      resultWeight.textContent = `Ideal body condition at ${weight} lbs`;
+      resultDesc.textContent = 'A score of 5 is ideal, so your dog\'s current weight is a reasonable target. Re-check the score every few months.';
     } else {
-      status = 'Healthy Weight ✓';
-      desc = `Your dog appears to be within a healthy weight range for their size category. Keep up the good work!`;
+      const ideal = weight / (1 + 0.1 * (bcs - 5));
+      const loss = weight - ideal;
+      const lo = weight * 0.01, hi = weight * 0.02;
+      resultWeight.textContent = `Estimated ideal weight: about ${Math.round(ideal)} lbs`;
+      resultDesc.textContent = `A score of ${bcs} suggests about ${(bcs - 5) * 10}% excess weight (AAHA: roughly 10% per point above 5), or about ${Math.round(loss)} lbs to lose. At AAHA's suggested 1–2% of body weight a week, that's about ${r1(lo)}–${r1(hi)} lbs a week to start. Ask your vet to confirm the score and set the plan.`;
     }
-
-    resultWeight.textContent = status;
-    resultDesc.textContent = desc;
   }
 
   resultBox.classList.add('show');

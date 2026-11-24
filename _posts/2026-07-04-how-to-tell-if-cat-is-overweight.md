@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Tell If Your Cat Is Overweight (Without a Vet Visit)"
-description: About 60% of US cats are overweight or obese. Here's how to check your cat's body condition at home using the rib test, waist check, and belly tuck — plus what to do about it.
+description: About 61% of US cats are overweight or obese. Here's how to check your cat's body condition at home using the rib test, waist check, and belly tuck — plus what to do about it.
 category: Cat Care
 date: 2026-07-04
 read_time: 9
@@ -14,17 +14,17 @@ faqs:
   - q: "How can I tell if my kitten is overweight?"
     a: "Kittens should feel lean with ribs easily palpable, similar to adult cats, but growth spurts can make weight checks trickier to interpret. Ask your vet to plot your kitten's growth on a curve at each check-up rather than fixating on absolute weight alone."
   - q: "Is the saggy pouch on my cat's belly a sign they're fat?"
-    a: "Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, squishy fat pad (about the size of a kiwi) is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight."
+    a: "Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, soft fat pad is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight."
   - q: "How much weight should my cat lose per week?"
-    a: "No more than 0.5–2% of body weight per week. For a 14 lb cat, that's roughly 1–4 oz weekly. Faster weight loss risks triggering hepatic lipidosis (fatty liver disease), a potentially fatal condition unique to cats that can develop within days of inadequate calorie intake."
+    a: "No more than 0.5–2% of body weight per week. For a 14 lb cat, that's roughly 1–4 oz weekly. Faster weight loss risks triggering hepatic lipidosis (fatty liver disease), a serious liver condition that is almost always preceded by a cat not eating and is much more common in overweight cats."
   - q: "Why does my long-haired cat look fat but feel thin?"
     a: "Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath."
   - q: "Can I just feed my cat less to help them lose weight?"
     a: "Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended."
-last_modified_at: 2026-10-20
+last_modified_at: 2026-11-24
 ---
 
-According to the Association for Pet Obesity Prevention, roughly 60% of domestic cats in the US are classified as overweight or obese. That means most owners looking at an overweight cat think they're looking at a normal one — because most of the cats around them are also carrying extra weight.
+In the Association for Pet Obesity Prevention's 2022 survey, **61% of US cats** were classified as overweight or obese — and the association notes that owners often don't recognize it, because they see their cat every day.
 
 Unlike dogs, cats are harder to read by eye. Coat, body shape, and the natural "primordial pouch" on the belly can all disguise — or mimic — excess weight. Here's how to check accurately at home.
 
@@ -68,7 +68,7 @@ This is the check most affected by a structural feature unique to cats — the p
 
 Almost all cats have a loose flap of skin on their lower belly called the primordial pouch. It swings slightly when they run or jump. This is completely normal anatomy and exists in lean, healthy cats — it is not, by itself, a sign of being overweight.
 
-The distinction that matters: feel *inside* the pouch, between and just in front of the hind legs. In a cat at a healthy weight, you should feel a small amount of squishy fat — roughly the size of a kiwi fruit. If the fat pad feels much larger, or if there's a generalized rounding of the lower belly beyond just the pouch, that points to excess weight. If you can't feel any fat pad at all, your cat may be underweight.
+The distinction that matters: feel *inside* the pouch, between and just in front of the hind legs. In a cat at a healthy weight, you should feel only a small amount of soft fat. If the fat pad feels much larger, or if there's a generalized rounding of the lower belly beyond just the pouch, that points to excess weight. If you can't feel any fat pad at all, your cat may be underweight.
 
 Don't judge weight by the pouch's visual presence alone — many lean, athletic cats have a visible swinging pouch. Judge it by what you feel inside it.
 
@@ -76,13 +76,17 @@ Don't judge weight by the pouch's visual presence alone — many lean, athletic 
 
 ## What a Healthy Body Condition Score Looks Like
 
-Veterinarians use a 1–9 Body Condition Score (BCS) scale for cats, with **4–5 as ideal**.
+Veterinarians use a 1–9 Body Condition Score (BCS) scale for cats, with **5 as ideal**. These descriptions follow the WSAVA cat chart:
 
-- **1–3**: Underweight — ribs, spine, and hip bones easily visible; minimal to no fat cover; severe waist and abdominal tuck
-- **4–5**: Ideal — ribs felt easily with light pressure; visible waist from above; slight abdominal tuck; small fat pad in the primordial pouch
-- **6**: Slightly overweight — ribs felt with slight pressure; waist less defined
-- **7**: Overweight — ribs difficult to feel; waist barely visible from above; rounded belly with a moderate fat pad
-- **8–9**: Obese — ribs not palpable under a thick fat layer; no visible waist; pronounced rounded abdomen; fat deposits on the face, limbs, and lower back
+- **1–3**: Under ideal — ribs easily felt or visible, little or no fat, obvious waist and tuck
+- **4**: Ribs felt with minimal fat covering; noticeable waist; slight belly tuck; no belly fat pad
+- **5 — ideal**: Well-proportioned; waist visible behind the ribs; ribs felt with a slight fat covering; minimal belly fat pad
+- **6**: Ribs felt with slight excess fat; waist and belly fat pad visible but not prominent
+- **7**: Ribs hard to feel under moderate fat; waist hard to see; belly obviously rounded
+- **8**: Ribs hard to feel under excess fat; no waist; fat building up over the lower back
+- **9**: Heavy fat cover everywhere; distended belly; no waist
+
+According to the 2014 AAHA Weight Management Guidelines, each point above 5 represents roughly 10% excess body weight.
 
 Most owners are surprised their cat scores a 6 or 7 when they assumed a 5 — the visual difference between these scores is subtle, but the health implications are not.
 
@@ -106,16 +110,12 @@ Most owners are surprised their cat scores a 6 or 7 when they assumed a 5 — th
 
 ## Why It Matters
 
-Excess weight in cats is linked to a longer list of serious conditions than many owners realize:
+The 2014 AAHA Weight Management Guidelines link excess weight in pets with reduced lifespan and quality of life, and with orthopedic disease, diabetes and other metabolic and endocrine disorders, skin and breathing problems, kidney dysfunction and some cancers. For cats in particular:
 
-- **Diabetes**: Overweight cats are up to four times more likely to develop type 2 diabetes ([what treating it costs](/blog/cat-diabetes-treatment-cost/))
-- **Arthritis**: Extra weight accelerates joint wear, especially in cats over 7
-- **Hepatic lipidosis (fatty liver disease)**: A life-threatening condition that's more likely to develop in obese cats, particularly if they stop eating for any reason
-- **Reduced lifespan**: Overweight cats face a measurably shorter average lifespan than cats at a healthy weight
-- **Lower urinary tract disease**: Obesity is a known risk factor for FLUTD, which causes painful and sometimes dangerous urinary blockages
-- **Reduced mobility and grooming difficulty**: Cats that can't reach certain areas to groom often develop a dull or matted coat as a secondary effect
-
-The good news: even a modest reduction — 10–15% of body weight — measurably reduces these risks and often noticeably improves mobility and energy.
+- **Diabetes**: obesity is a well-recognised risk factor for diabetes in cats ([what treating it costs](/blog/cat-diabetes-treatment-cost/)).
+- **Arthritis**: extra weight adds load to joints, and arthritis is already very common and under-diagnosed in cats.
+- **Hepatic lipidosis (fatty liver disease)**: according to Cornell's Feline Health Center, it's much more common in obese cats and almost always follows a period of not eating.
+- **Grooming difficulty**: a heavy cat may not be able to reach its lower back and hindquarters, leaving a greasy or matted coat there.
 
 ---
 
@@ -127,7 +127,7 @@ The good news: even a modest reduction — 10–15% of body weight — measurabl
 
 **Step 3: Measure food precisely.** Use a kitchen scale or consistent measuring cup. Free-feeding makes portion control and progress tracking impossible — switch to scheduled meals if your cat currently has constant food access.
 
-**Step 4: Cut treats and table scraps.** Treats can represent a surprisingly large share of daily calories for a small animal. A single standard cat treat can be 5–10% of a cat's daily caloric needs.
+**Step 4: Count treats.** A cat's whole daily calorie budget is small, so treats and table scraps add up quickly. Include them in the daily total, or set aside part of the measured food to use as treats.
 
 **Step 5: Add activity gradually.** Puzzle feeders, wand toys, and short daily play sessions (even 5–10 minutes, twice a day) increase activity without requiring the cat to "exercise" in any formal sense. Moving the food bowl to a different room or up a few stairs can also add incidental activity.
 
@@ -139,9 +139,9 @@ The good news: even a modest reduction — 10–15% of body weight — measurabl
 
 This deserves its own section because it's a genuinely dangerous mistake. Unlike dogs, cats that lose weight too rapidly — or who simply stop eating for any reason, including a sudden diet change — are at risk of **hepatic lipidosis (fatty liver disease)**.
 
-When a cat's body breaks down fat reserves faster than the liver can process them, fat accumulates in liver cells and can cause liver failure. This can happen within days of a cat eating significantly less than normal, especially in cats who are already overweight.
+According to Cornell's Feline Health Center, hepatic lipidosis is almost always preceded by a cat refusing food, is much more common in obese cats, and is likely to be fatal without prompt treatment — which usually means feeding through a tube for weeks.
 
-Never withhold food from a cat to force weight loss, and never make dramatic, sudden cuts to their daily intake. Any cat who goes more than 24 hours without eating — whether intentionally restricted or simply refusing food — needs veterinary attention, not patience.
+Never withhold food from a cat to force weight loss, and never make dramatic, sudden cuts to their daily intake. A cat that stops eating — whether on a diet or not — needs prompt veterinary attention, not patience. The AAHA guidelines recommend a slower rate of loss for cats (0.5–2% a week) than for dogs.
 
 ---
 
@@ -189,10 +189,10 @@ Use the three hands-on checks: the rib test (can you feel ribs with light pressu
 Kittens should feel lean with ribs easily palpable, similar to adult cats, but growth spurts can make weight checks trickier to interpret. Rather than fixating on absolute weight, ask your vet to plot your kitten's growth on a curve at each check-up — a kitten tracking well above their expected curve for age and breed may be gaining too fast, which is worth addressing early rather than waiting until adulthood.
 
 **Is the saggy pouch on my cat's belly a sign they're fat?**
-Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, squishy fat pad (about the size of a kiwi) is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight.
+Not necessarily. Almost all cats have a primordial pouch — a normal loose skin flap on the lower belly — regardless of weight. What matters is what you feel *inside* the pouch: a small, soft fat pad is normal. A much larger fat deposit, or a generally rounded belly beyond just the pouch, indicates excess weight.
 
 **How much weight should my cat lose per week?**
-No more than 0.5–2% of body weight per week. For a 14 lb cat, that's roughly 1–4 oz weekly. Faster weight loss risks triggering hepatic lipidosis (fatty liver disease), a potentially fatal condition unique to cats that can develop within days of inadequate calorie intake.
+No more than 0.5–2% of body weight per week. For a 14 lb cat, that's roughly 1–4 oz weekly. Faster weight loss risks triggering hepatic lipidosis (fatty liver disease), a serious liver condition that is almost always preceded by a cat not eating and is much more common in overweight cats.
 
 **Why does my long-haired cat look fat but feel thin?**
 Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath.

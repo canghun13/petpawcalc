@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "How Much Should a Cat Weigh? Healthy Weight by Breed and Sex"
-description: "The average cat weight of 8–10 lbs doesn't apply to most cats. Here's how to find your cat's actual healthy weight based on breed, sex, and body condition."
+description: "Most healthy domestic cats weigh about 8–12 lbs, but breeds range from 5–7 lb Devon Rex females to Maine Coons over 20 lbs. Typical weights by breed and sex, why body condition matters more than the number, and when large breeds finish growing."
 category: Cat Care
 date: 2026-06-12
 read_time: 9
 slug: how-much-should-a-cat-weigh
 faqs:
   - q: "How much should my cat weigh?"
-    a: "It depends on breed, sex, and individual frame — not a universal number. Domestic shorthair females typically weigh 8–10 lbs at a healthy weight; males 10–12 lbs. Siamese cats are lighter (6–10 lbs), while Maine Coons can be healthy at 15–25 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says."
+    a: "It depends on breed, sex, and individual frame — not a universal number. PetMD puts most healthy domestic cats at about 8–12 lbs, typically around 10. Siamese are lighter (about 5–8 lbs for females and 8–12 for males), while Maine Coon males can reach or exceed 20 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says."
   - q: "Is my cat overweight if they weigh 15 lbs?"
     a: "It depends entirely on breed. A 15 lb female domestic shorthair is overweight. A 15 lb male Maine Coon or Ragdoll may be perfectly healthy. Use the BCS physical check rather than scale weight alone — a large-framed cat can weigh 15 lbs and be lean, while a small-framed cat at 12 lbs may be overweight."
   - q: "How can I tell if my cat is fat?"
@@ -16,22 +16,21 @@ faqs:
   - q: "How do I help my cat lose weight safely?"
     a: "Cat weight loss must be gradual — no more than 0.5–2% of body weight per week. Rapid weight loss can trigger hepatic lipidosis (fatty liver disease), which is potentially fatal. Reduce daily calories by 10–20% from maintenance levels, switch to a high-protein wet food (which is more satiating), measure portions precisely, and eliminate high-calorie treats. A vet-supervised weight loss plan is the safest approach for significantly overweight cats."
   - q: "At what age do cats stop growing?"
-    a: "Most domestic cats reach their full adult weight by 12 months. Larger breeds are the exception: Maine Coons grow until 3–5 years, Ragdolls until 3–4 years, Norwegian Forest Cats until about 3 years. Males of most breeds take slightly longer to reach full size than females."
+    a: "Most cats are close to adult size by about a year; PetMD notes growth slows between 6 and 12 months. Some large breeds take much longer: the Association for Pet Obesity Prevention's breed reference notes Ragdolls may take up to four years and Norwegian Forest Cats up to five to reach full maturity."
 
+last_modified_at: 2026-11-24
 ---
 
-"The average cat weighs 8–10 lbs" is a number you'll see everywhere — and it's almost useless in practice.
-
-A healthy Siamese male might weigh 10 lbs and be at ideal weight. A healthy Maine Coon female might weigh 12 lbs and also be at ideal weight. A domestic shorthair at 12 lbs is likely overweight. Same number, three entirely different situations.
+PetMD puts most healthy domestic cats at **about 8–12 lbs, typically around 10**. That's a useful starting point — but breed, sex and frame shift it a lot, and the same number can be healthy for one cat and overweight for another.
 
 Cat weight is breed-specific, sex-specific, and frame-specific. Here's how to think about it correctly.
 
 ## Why "Average Cat Weight" Is Misleading
 
-The 8–10 lb figure comes from surveys of domestic mixed-breed cats. It doesn't account for:
+A single average doesn't account for:
 
-- **Breed size variation**: A Siamese typically weighs 6–10 lbs; a Maine Coon male can weigh up to 25 lbs. Both are healthy. Both fall nowhere near the same "average."
-- **Sex differences**: Male cats of most breeds outweigh females by 2–4 lbs on average. A male domestic shorthair at 12 lbs is likely at healthy weight; a female domestic shorthair at 12 lbs may be overweight.
+- **Breed size variation**: a Siamese female typically weighs about 5–8 lbs; a Maine Coon male can reach or exceed 20 lbs.
+- **Sex differences**: in most breeds in the table below, males are heavier than females.
 - **Frame size**: Even within the same breed, cats vary in skeletal frame. A large-framed cat can be at ideal weight at a number that would classify a small-framed cat as overweight.
 
 This is why veterinarians don't primarily use scale weight to assess a cat's health — they use **Body Condition Score (BCS)**.
@@ -44,28 +43,28 @@ This is why veterinarians don't primarily use scale weight to assess a cat's hea
 
 ## Healthy Weight Ranges by Breed
 
-These are typical healthy adult weight ranges for common breeds. Individual cats may fall slightly outside these ranges and still be healthy — use these as a starting reference, not a verdict.
+These are typical adult weight ranges for common breeds, from the Association for Pet Obesity Prevention's breed reference (which draws on breed registries) and, for domestic shorthairs, PetMD. They describe what adults of each breed usually weigh — **not health targets** for an individual cat, which is why body condition (below) matters more.
 
 | Breed | Female | Male |
 |-------|--------|------|
-| Siamese | 6–8 lbs | 8–10 lbs |
-| Devon Rex | 5–8 lbs | 7–10 lbs |
-| Abyssinian | 6–9 lbs | 8–10 lbs |
-| Domestic Shorthair / Mixed | 8–10 lbs | 10–12 lbs |
-| American Shorthair | 8–12 lbs | 11–15 lbs |
-| Persian | 7–10 lbs | 9–12 lbs |
-| Russian Blue | 7–10 lbs | 10–12 lbs |
-| Scottish Fold | 6–9 lbs | 9–13 lbs |
-| British Shorthair | 9–12 lbs | 12–17 lbs |
-| Norwegian Forest Cat | 9–12 lbs | 12–16 lbs |
+| Domestic shorthair / mixed | About 8–12 lbs, most around 10 | Same range |
+| Siamese | About 5–8 lbs | About 8–12 lbs |
+| Devon Rex | 5–7 lbs | 7–9 lbs |
+| Russian Blue | 5–8 lbs | Rarely over 10 lbs |
+| Sphynx | 7–10 lbs | 8–12 lbs |
+| Scottish Fold | 7–10 lbs | 7–10 lbs |
+| Bengal | 8–12 lbs | 10–15 lbs |
+| Persian | 6–12 lbs | Over 12 lbs |
+| British Shorthair | 7–12 lbs | 9–17 lbs |
+| Norwegian Forest Cat | 8–12 lbs | 12–18 lbs |
 | Ragdoll | 10–15 lbs | 15–20 lbs |
-| Maine Coon | 10–14 lbs | 15–25 lbs |
+| Maine Coon | Usually smaller than males, within 10–20 lbs | Can reach or exceed 20 lbs |
 
-The spread between small and large breeds is enormous — nearly 20 lbs at the extremes. Applying a single "normal weight" across this range is the root of most cat weight misconceptions.
+The spread between small and large breeds is large — more than 10 lbs between a Devon Rex and a big Maine Coon. Applying a single "normal weight" across this range is the root of most cat weight misconceptions.
 
 ## The Body Condition Score: More Reliable Than the Scale
 
-BCS is a hands-on, visual assessment that vets use to evaluate weight independent of absolute numbers. The standard scale runs from 1 (severely underweight) to 9 (severely obese), with **4–5 as ideal**.
+BCS is a hands-on, visual assessment that vets use to evaluate weight independent of absolute numbers. The standard scale runs from 1 (severely underweight) to 9 (severely obese), with **5 as ideal** on the WSAVA chart. According to the 2014 AAHA Weight Management Guidelines, each point above 5 is roughly 10% excess weight.
 
 You can do a basic BCS assessment at home in two minutes:
 
@@ -88,13 +87,13 @@ For senior cats, a muscle condition score (MCS) assessment alongside BCS gives a
 
 ## What Overweight Actually Looks Like in Cats
 
-Approximately 60% of domestic cats in the US are overweight or obese, according to the Association for Pet Obesity Prevention. This means most owners are looking at overweight cats and thinking they look normal — because most cats around them are also overweight.
+In the Association for Pet Obesity Prevention's 2022 survey, 61% of US cats were overweight or obese. This means most owners are looking at overweight cats and thinking they look normal — because most cats around them are also overweight.
 
 Signs your cat may be carrying excess weight:
 
 - **Belly pouch or "primordial pouch" that swings when walking**: Note that cats naturally have a loose skin flap on the lower belly (the primordial pouch) — this is not inherently a sign of obesity. It's the fat deposits *above* this flap that indicate excess weight.
 - **Difficulty grooming the back, base of tail, or hindquarters**: A cat that can no longer comfortably reach certain areas to groom is often limited by abdominal girth.
-- **Decreased activity and reluctance to jump**: While age can cause this too, weight is a common contributing factor in cats under 10.
+- **Decreased activity and reluctance to jump**: this can also be arthritis or age, so it's worth a vet check either way.
 - **Ribs you cannot feel without significant pressure**: This is the clearest indicator.
 - **Labored breathing after mild exertion**: Concerning in any cat, but especially relevant when combined with other weight signs.
 
@@ -116,15 +115,9 @@ A cat that is losing weight without an obvious dietary cause should see a veteri
 
 ## When Cats Reach Their Full Adult Weight
 
-Most domestic cats reach their full adult weight by **12 months**. Larger breeds are the exception:
+Most cats are close to adult size by about **a year**; PetMD notes growth slows between 6 and 12 months. Some large breeds take much longer — the Association for Pet Obesity Prevention's breed reference notes **Ragdolls may take up to four years** and **Norwegian Forest Cats up to five** to reach full maturity. Track a growing kitten with the [kitten weight chart](/blog/kitten-weight-chart-by-breed-size/).
 
-- **Maine Coon**: Can continue growing until 3–5 years
-- **Ragdoll**: Typically reaches full size by 3–4 years
-- **Norwegian Forest Cat**: Full size around 3 years
-
-Males generally take longer to reach full size than females of the same breed.
-
-Spayed and neutered cats tend to have lower metabolic rates than intact cats, which increases obesity risk if feeding isn't adjusted after the procedure. If you recently had your cat spayed or neutered, this is a good time to reassess their daily calorie intake — their needs typically drop by 20–30% post-surgery.
+Spayed and neutered cats need fewer calories than intact cats — the Merck Veterinary Manual's starting multipliers are 1.2 × resting energy needs for a neutered adult versus 1.4 for an intact one — so it's a good time to reassess portions after the surgery.
 
 ## Helping an Overweight Cat Lose Weight Safely
 
@@ -132,7 +125,7 @@ Cat weight loss should always be gradual. Rapid weight loss in cats — even int
 
 Safe weight loss guidelines:
 - Target **0.5–2% of body weight per week** — no more
-- Never restrict food to the point where your cat goes more than 24 hours without eating
+- Never restrict food to the point where your cat stops eating — cats that stop eating are at risk of fatty liver disease (hepatic lipidosis)
 - Increase water intake (switch to wet food, add water to kibble, use a water fountain)
 - Increase activity gradually — puzzle feeders, scheduled play sessions, food-dispensing toys
 
@@ -150,14 +143,14 @@ For healthy adult cats, a weigh-in at each annual vet visit is sufficient. For c
 
 The easiest home method: weigh yourself on a bathroom scale, then weigh yourself holding your cat, and subtract. Most bathroom scales are accurate to within 0.5–1 lb, which is precise enough to track meaningful changes over time.
 
-A 10% change in body weight — in either direction — warrants a vet visit. For a 10 lb cat, that's a 1 lb change. For a 14 lb cat, it's 1.4 lbs. Small numbers, but meaningful signals.
+Unexplained weight change in either direction is worth a vet visit. Keep the numbers in proportion: 1 lb on a 10 lb cat is a tenth of its body weight.
 
 *This article is for informational purposes only. Consult your veterinarian before starting a weight loss program for your cat or if you have concerns about their weight.*
 
 ## Frequently Asked Questions
 
 **How much should my cat weigh?**
-It depends on breed, sex, and individual frame — not a universal number. Domestic shorthair females typically weigh 8–10 lbs at a healthy weight; males 10–12 lbs. Siamese cats are lighter (6–10 lbs), while Maine Coons can be healthy at 15–25 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says.
+It depends on breed, sex, and individual frame — not a universal number. PetMD puts most healthy domestic cats at about 8–12 lbs, typically around 10. Siamese are lighter (about 5–8 lbs for females and 8–12 for males), while Maine Coon males can reach or exceed 20 lbs. Rather than a target number, use the body condition score (BCS) check — if you can feel ribs easily with light pressure, see a slight waist from above, and observe a gentle belly tuck from the side, your cat is likely at a healthy weight regardless of what the scale says.
 
 **Is my cat overweight if they weigh 15 lbs?**
 It depends entirely on breed. A 15 lb female domestic shorthair is overweight. A 15 lb male Maine Coon or Ragdoll may be perfectly healthy. Use the BCS physical check rather than scale weight alone — a large-framed cat can weigh 15 lbs and be lean, while a small-framed cat at 12 lbs may be overweight.
@@ -169,7 +162,7 @@ Run your fingers along your cat's sides with flat palms and light pressure. At a
 Cat weight loss must be gradual — no more than 0.5–2% of body weight per week. Rapid weight loss can trigger hepatic lipidosis (fatty liver disease), which is potentially fatal. Reduce daily calories by 10–20% from maintenance levels, switch to a high-protein wet food (which is more satiating), measure portions precisely, and eliminate high-calorie treats. A vet-supervised weight loss plan is the safest approach for significantly overweight cats.
 
 **At what age do cats stop growing?**
-Most domestic cats reach their full adult weight by 12 months. Larger breeds are the exception: Maine Coons grow until 3–5 years, Ragdolls until 3–4 years, Norwegian Forest Cats until about 3 years. Males of most breeds take slightly longer to reach full size than females.
+Most cats are close to adult size by about a year; PetMD notes growth slows between 6 and 12 months. Some large breeds take much longer: the Association for Pet Obesity Prevention's breed reference notes Ragdolls may take up to four years and Norwegian Forest Cats up to five to reach full maturity.
 
 *This article is for informational purposes only. Consult your veterinarian before starting a weight loss program for your cat or if you have concerns about their weight.*
 

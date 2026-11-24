@@ -8,7 +8,7 @@ read_time: 8
 slug: why-is-my-cat-always-hungry
 faqs:
   - q: "Why does my cat act like it's starving even after eating?"
-    a: "The most common reasons: they finished their food too quickly and satiety signals haven't caught up, their food is low in protein and doesn't satisfy their carnivore biology, their daily calorie allotment is genuinely insufficient for their size or activity level, or they've learned that begging produces food regardless of hunger. Check the calorie math first — underfeeding is more common than owners realize."
+    a: "Common reasons are a daily amount that's genuinely too small for the cat's size and activity, eating very fast, learned begging at certain times, boredom, and medical problems that increase appetite. Start by checking the amount against the cat's estimated calorie needs and its body condition, then see a vet if the hunger is new or comes with weight loss."
   - q: "How do I know if my cat is eating enough?"
     a: "Monitor body weight monthly (weigh yourself holding your cat, then subtract). A cat maintaining stable weight on their current diet is eating enough calories. Pair that with the rib test — you should feel ribs easily with light pressure. Gradual weight loss despite normal eating is a vet issue."
   - q: "Can a cat be hungry all the time due to medical reasons?"
@@ -16,9 +16,8 @@ faqs:
   - q: "Is it normal for cats to beg for food?"
     a: "Some level of food interest is normal, especially around meal times. Constant vocalization for food, food guarding, or begging intensifying significantly beyond what was normal for your cat are worth investigating. Start with the calorie check, then rule out medical causes if the behavior is new or worsening."
   - q: "How many times a day should I feed my cat?"
-    a: "Most adult cats do well with 2 meals per day, though 3–4 smaller meals more closely matches their natural eating pattern and can reduce food-focused behavior. Kittens need 3–4 meals per day. Senior cats often do better with 3 smaller meals due to reduced stomach capacity."
-
-last_modified_at: 2026-10-12
+    a: "Many adult cats do well on two meals a day, but splitting the same amount into three or four smaller meals suits cats' natural pattern of eating little and often and can reduce begging. VCA suggests two to four small meals a day for older cats, and the AAHA senior guidelines note healthy senior cats do best with smaller, more frequent meals."
+last_modified_at: 2026-10-20
 ---
 
 Cats have a reputation for being aloof, but when it comes to food, many owners deal with the opposite problem: a cat that acts like it's starving at all times. Meowing at the bowl, pacing, pawing at you before meals.
@@ -27,32 +26,34 @@ Before assuming your cat is just dramatic, it's worth checking whether they're a
 
 ---
 
-## The Most Common Reason: Not Enough Calories
+## First Check: Is the Amount Right?
 
-This is simpler than most people expect. If your cat is genuinely hungry all the time, the first thing to check is whether their daily food amount matches their actual calorie needs.
+Before assuming your cat is just dramatic, check whether the daily amount matches its needs. Vets estimate this from the **resting energy requirement (RER)**:
 
-Many owners feed based on the bag's recommendation, which is often calibrated for an "average" unspayed/unneutered adult cat. Spayed or neutered cats need about 20–30% fewer calories — but some cats, particularly active indoor/outdoor cats or those with fast metabolisms, actually need more than the bag suggests.
+**RER = 70 × (body weight in kg)^0.75**
 
-The result is a household where one cat is being slightly underfed every day, and they let you know about it constantly.
+The Merck Veterinary Manual then multiplies RER by a life-stage factor:
 
----
+| Cat | Multiplier |
+|---|---|
+| Kitten | 2.5 × RER (or free-choice feeding) |
+| Intact adult | 1.4 × RER |
+| Neutered adult | 1.2 × RER |
+| Obesity-prone adult | 1.0 × RER |
 
-## How Calorie Needs Change by Age
+For a 4.5 kg (10 lb) neutered adult, that's about **260 kcal a day** as a starting point (RER about 215 kcal). Merck stresses this is only a starting point to adjust by body condition. VCA's veterinary nutritionists also caution against relying on a food label's feeding chart for more than a couple of weeks, because it can overestimate.
 
-### Kittens (under 1 year)
-Kittens need roughly **2–3× more calories per pound** than adult cats. They're growing fast, and underfeeding during this stage can affect development. Don't restrict kitten food — feed on demand or use the high end of any feeding guide.
+Then check your cat's food: the calories per cup or per can are on the label. Our [Pet Food Calorie Calculator](/tools/pet-food-calorie-calculator.html) does the arithmetic.
 
-### Young Adults (1–3 years)
-This is when cats are at peak energy and calorie need. An indoor adult cat typically needs **20–30 calories per pound of body weight** per day, adjusted for activity. Outdoor or highly active cats may need more.
+## How Needs Change With Age
 
-### Mature Adults (4–8 years)
-Calorie needs stabilize. This is often when weight creep starts if feeding amounts haven't been adjusted from the high-energy young adult phase. A cat that was fed appropriately at age 2 may be getting 10–20% too many calories by age 6 if nothing has changed.
+| Age | What changes |
+|---|---|
+| Kittens | Need far more per pound than adults while growing; free-choice feeding is an option |
+| Mature cats (about 7–10) | Many gain weight as energy needs fall |
+| Seniors (from about 10–11) | Energy needs start to **rise again**, and many digest protein and fat less well — the 2023 AAHA Senior Care Guidelines report reduced protein digestibility in about 20% of cats over 11 |
 
-### Senior Cats (9–12 years)
-Some senior cats start losing weight and actually need more calories, not fewer. Older cats can lose the ability to absorb nutrients as efficiently — a condition called reduced digestive efficiency — so even with adequate food intake, they may not be getting enough from what they eat.
-
-### Super Senior (13+ years)
-Significant individual variation. Some are overweight, some are underweight. This age group benefits most from regular vet monitoring of body condition and weight. Don't assume a thin senior cat is just "naturally slim" — unexplained weight loss in elderly cats warrants a vet visit.
+So an older cat that seems hungrier may genuinely need more — but it may also be ill, which is why a hungry older cat that's **losing weight** needs a vet. More in [How Much Should a Senior Cat Eat?](/blog/how-much-should-senior-cat-eat/).
 
 <div class="post-cta">
   <h4>Try Our Pet Food Calorie Calculator</h4>
@@ -62,29 +63,15 @@ Significant individual variation. Some are overweight, some are underweight. Thi
 
 ---
 
-## Daily Calorie Reference for Cats
-
-| Life Stage | Daily Calories (per lb of body weight) |
-|------------|----------------------------------------|
-| Kitten (under 1 yr) | 45–55 calories/lb |
-| Young adult (1–3 yrs) | 25–35 calories/lb |
-| Adult (4–8 yrs) | 20–28 calories/lb |
-| Senior (9–12 yrs) | 20–25 calories/lb |
-| Super senior (13+) | Varies — monitor body condition |
-
-For a 10 lb adult cat, that's roughly 200–280 calories per day. Check the caloric density of your cat's food (listed in kcal/cup or kcal/can on the packaging) and do the math — you may find you've been underfeeding by 20–30% every day without realizing it.
-
----
-
 ## Other Reasons Your Cat May Seem Constantly Hungry
 
-**Low-quality food**: Cats are obligate carnivores — they require animal-based protein. Foods high in plant-based fillers (corn, wheat, soy) provide calories but not the protein satiety cats need. A cat eating a low-protein, carb-heavy food may be getting enough calories but still feel unsatisfied. Switching to a higher-protein food often reduces constant begging without changing the total calories fed.
+**The food itself**: cats are obligate carnivores, and VCA considers a high-protein, low-carbohydrate food reasonable for most cats, especially those prone to weight gain. If your cat seems unsatisfied on its current food, ask your vet whether a different formulation would suit it better.
 
-**Eating too fast**: Some cats inhale food so quickly they don't register fullness before the bowl is empty. The stomach sends satiety signals to the brain, but this takes 15–20 minutes — a cat that finishes in 30 seconds may beg again immediately after eating. Slow feeder bowls or puzzle feeders spread out the eating process.
+**Eating too fast**: some cats finish a meal in moments and ask for more. Puzzle feeders and slow-feeder bowls spread a meal out and add some activity.
 
-**Meal timing**: Cats naturally eat 10–20 small meals per day in the wild. Two large meals doesn't match their biology well. Splitting daily calories into 3–4 smaller feedings (or using an automatic feeder) can reduce food-focused behavior.
+**Meal timing**: cats naturally eat many small meals. Splitting the same daily amount into three or four smaller feedings — or using an automatic feeder — can reduce food-focused behavior without adding calories.
 
-**Medical causes**: Hyperthyroidism, diabetes, and intestinal parasites can all cause increased appetite. If your cat's hunger seems sudden or dramatically increased — especially if accompanied by weight loss despite eating more — a vet visit is worth it. This combination is a classic sign of hyperthyroidism, which is common in cats over 10 and highly manageable when caught early.
+**Medical causes**: Hyperthyroidism, diabetes, and intestinal parasites can all cause increased appetite. If your cat's hunger seems sudden or dramatically increased — especially if accompanied by weight loss despite eating more — a vet visit is worth it. This combination is a classic sign of hyperthyroidism, which is common in older cats and treatable.
 
 **Boredom**: Cats sometimes ask for food when they actually want stimulation. Puzzle feeders, interactive toys, or more play time can reduce food-focused behavior. A cat that stops begging when you play with it was probably bored, not hungry.
 
@@ -92,11 +79,9 @@ For a 10 lb adult cat, that's roughly 200–280 calories per day. Check the calo
 
 ## Wet Food vs Dry Food and Hunger
 
-Wet food tends to be more satisfying per calorie for most cats. It has higher moisture content (which contributes to fullness and supports kidney health) and is typically higher in protein relative to carbohydrates.
+Wet food is mostly water, so a cat gets a bigger-looking meal for the same calories, and VCA notes that feeding more canned food increases a cat's water intake.
 
-Many cats that seem perpetually hungry on dry food do noticeably better when wet food is added — even just one wet meal per day. The protein and moisture combination triggers satiety more effectively than kibble alone.
-
-If switching fully to wet food, be aware that the calorie density is lower. A cat that ate half a cup of dry food per day may need 2–3 cans of wet food to get equivalent calories. Check the kcal/can on the packaging and calculate accordingly.
+If you change the mix, recalculate: wet food has far fewer calories per ounce than dry food, so swap by calories, not by volume. The calories per can or per cup are on the label.
 
 ---
 
@@ -106,15 +91,15 @@ Not every cat that meows for food is actually hungry. Cats are highly routine-or
 
 **Check body condition**: Run your fingers along your cat's ribcage. You should feel ribs easily without pressing hard. If you can't, they may be overweight and begging out of habit rather than genuine need. If ribs are very prominent, they may genuinely need more food.
 
-**Track actual intake**: Measure precisely what you're feeding for a week. Many owners are surprised to find they're feeding significantly more or less than they thought.
+**Track actual intake**: weigh or measure exactly what you feed for a week, including treats, and compare it with the calorie estimate above.
 
-**Monitor weight monthly**: A genuinely underfed cat will lose weight over time. A cat that begs constantly but maintains a healthy weight is likely satisfied nutritionally.
+**Monitor weight monthly**: an underfed cat loses weight over time. A cat that begs but holds a steady, healthy weight and body condition is probably getting enough.
 
 ---
 
 ## When to See a Vet
 
-If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's highly manageable when caught early — and the treatment choice makes a big difference to the long-run cost, as our guide to [cat hyperthyroidism treatment cost](/blog/cat-hyperthyroidism-treatment-cost/) explains.
+If your cat's appetite has increased suddenly — especially in an older cat — it's worth a vet visit sooner rather than later. Hyperthyroidism is particularly common in cats over 10 and causes increased appetite, often alongside weight loss despite eating more. It's treatable — and the treatment choice makes a big difference to the long-run cost, as our guide to [cat hyperthyroidism treatment cost](/blog/cat-hyperthyroidism-treatment-cost/) explains.
 
 Other conditions that can increase appetite include [diabetes](/blog/cat-diabetes-treatment-cost/), intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
 
@@ -123,7 +108,7 @@ Other conditions that can increase appetite include [diabetes](/blog/cat-diabete
 ## Frequently Asked Questions
 
 **Why does my cat act like it's starving even after eating?**
-The most common reasons: they finished their food too quickly and satiety signals haven't caught up, their food is low in protein and doesn't satisfy their carnivore biology, their daily calorie allotment is genuinely insufficient for their size or activity level, or they've learned that begging produces food regardless of hunger. Check the calorie math first — underfeeding is more common than owners realize.
+Common reasons are a daily amount that's genuinely too small for the cat's size and activity, eating very fast, learned begging at certain times, boredom, and medical problems that increase appetite. Start by checking the amount against the cat's estimated calorie needs and its body condition, then see a vet if the hunger is new or comes with weight loss.
 
 **How do I know if my cat is eating enough?**
 Monitor body weight monthly (weigh yourself holding your cat, then subtract). A cat maintaining stable weight on their current diet is eating enough calories. Pair that with the rib test — you should feel ribs easily with light pressure. Gradual weight loss despite normal eating is a vet issue.
@@ -135,7 +120,7 @@ Yes. Hyperthyroidism, diabetes, intestinal parasites, and inflammatory bowel dis
 Some level of food interest is normal, especially around meal times. Constant vocalization for food, food guarding, or begging intensifying significantly beyond what was normal for your cat are worth investigating. Start with the calorie check, then rule out medical causes if the behavior is new or worsening.
 
 **How many times a day should I feed my cat?**
-Most adult cats do well with 2 meals per day, though 3–4 smaller meals more closely matches their natural eating pattern and can reduce food-focused behavior. Kittens need 3–4 meals per day. Senior cats often do better with 3 smaller meals due to reduced stomach capacity.
+Many adult cats do well on two meals a day, but splitting the same amount into three or four smaller meals suits cats' natural pattern of eating little and often and can reduce begging. VCA suggests two to four small meals a day for older cats, and the AAHA senior guidelines note healthy senior cats do best with smaller, more frequent meals.
 
 ## Related Articles
 

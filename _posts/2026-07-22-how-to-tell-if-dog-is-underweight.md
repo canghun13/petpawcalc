@@ -14,23 +14,17 @@ faqs:
   - q: "What causes a dog to be underweight?"
     a: "Common causes include underfeeding (often from following outdated bag guidelines or misjudging portion size), a sudden increase in activity without a matching increase in food, dental pain that makes eating uncomfortable, intestinal parasites, and underlying illness such as diabetes, kidney disease, thyroid disease, or cancer — especially if the weight loss was sudden or the dog seems otherwise unwell."
   - q: "How do I help my underweight dog gain weight safely?"
-    a: "Start with a vet visit to rule out a medical cause, since feeding more won't fix an underlying illness. Once medical causes are ruled out, gradually increase daily calories (roughly 10-20% above current maintenance to start), split meals into 3-4 smaller portions to make eating easier, and consider a calorie-dense food if your vet approves. Avoid a sudden, large increase in food — it can cause digestive upset and doesn't help muscle gain any faster than a steady increase does."
-  - q: "How long does it take for an underweight dog to gain weight?"
-    a: "With a consistent, appropriate calorie increase and no underlying medical issue, most dogs show visible improvement within 3-4 weeks and reach a healthy body condition within 2-3 months. Weigh weekly rather than daily to track a real trend, since day-to-day weight can fluctuate with hydration and stomach contents."
+    a: "Start with a vet visit to rule out a medical cause, since feeding more won't fix an underlying illness. Then increase calories gradually under your vet's guidance, split the food into three or four smaller meals, consider a more calorie-dense food if your vet suggests one, and weigh weekly so you can see the trend."
   - q: "Are some dog breeds naturally underweight-looking?"
     a: "Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass."
   - q: "How do I tell if a puppy is underweight?"
     a: "Use the same rib-and-waist check as an adult dog, with one important difference: a healthy growing puppy is naturally leaner than a healthy adult, and slightly visible ribs on a lanky 5-month-old is often normal rather than a red flag. The more reliable signal is the growth curve, not the silhouette — weigh weekly and confirm the number is still climbing, and compare against a breed-size growth chart rather than other puppies at the park. A puppy who has stopped gaining or is losing weight needs a vet quickly; puppies have very little reserve, and intestinal parasites — the most common cause — are easily treated once diagnosed."
   - q: "How can you tell if a greyhound is underweight?"
     a: "Judge muscle and energy rather than bone, because visible ribs are normal for the breed. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds — they simply look leaner at a healthy body condition than a Labrador does."
-  - q: "How do I check a long-haired dog's weight?"
-    a: "Use your hands rather than your eyes, because thick and double coats can hide one to two points of body condition. Press firmly enough to reach the ribcage through the fur: ribs that feel like your knuckles with a closed fist mean too thin, while ribs that feel like the back of your flat hand are about right. Check the spine and hips the same way. When what you see and what you feel disagree, trust your hands."
-  - q: "What does it mean if my dog is slightly underweight?"
-    a: "A slightly underweight dog has ribs that are easy to feel with almost no fat covering and possibly faintly visible, a pronounced waist, but intact muscle and normal behaviour — roughly a 3 on the 9-point body condition scale where 4 to 5 is ideal. That is worth correcting with a vet-guided increase in calories and a recheck in a few weeks. It is a different situation from a dog whose spine, ribs and hip bones are all prominent alongside visible muscle loss, which needs to be seen rather than simply fed more."
-last_modified_at: 2026-10-20
+last_modified_at: 2026-11-24
 ---
 
-Most dog-weight content out there is about the opposite problem — helping an overweight dog slim down. But being underweight carries its own real risks: reduced energy, a weaker immune system, and in many cases, it's the first visible sign of an underlying illness rather than just "not eating enough." Here's how to tell the difference between a naturally lean dog and one that actually needs to gain weight, and how to help safely.
+Most advice about dog weight is about the opposite problem. But an underweight dog matters too: weight loss is often the first visible sign of an illness rather than simply "not eating enough." Here's how to tell the difference between a naturally lean dog and one that actually needs to gain weight, and how to help safely.
 
 ## The At-Home Check
 
@@ -47,11 +41,11 @@ Some breeds are built lean and get mistaken for underweight constantly. Greyhoun
 
 The difference comes down to muscle and energy, not just how much bone shows. A naturally lean dog has firm muscle tone and normal energy levels. A genuinely underweight dog — of any breed — tends to have soft or reduced muscle on top of the visible bones, along with lower energy than usual.
 
-So how can you tell if a Greyhound is underweight, given that visible ribs are the breed's normal state? The usual guidance is that the last two or three ribs showing is expected in a fit sighthound, along with a pronounced tuck-up. What is *not* expected is flat, wasted muscle through the thighs, shoulders and chest, a hollow look between the hip bones, a dull coat, or lethargy. A lean sighthound is bright and springy; an underweight one is flat. If every rib is countable from across the room and the spine and hips have gone sharp, that is past breed-normal regardless of pedigree.
+For a sighthound, where visible ribs are normal, the usual guidance is that the last two or three ribs showing is expected in a fit sighthound, along with a pronounced tuck-up. What is *not* expected is flat, wasted muscle through the thighs, shoulders and chest, a hollow look between the hip bones, a dull coat, or lethargy. A lean sighthound is bright and springy; an underweight one is flat. If every rib is countable from across the room and the spine and hips have gone sharp, that is past breed-normal regardless of pedigree.
 
 ### Coat Length Changes What You Can See — Not What You Can Feel
 
-The opposite problem applies to heavily coated dogs. How to tell if a long haired dog is underweight is a genuinely harder question, because thick or double coats can visually hide a meaningful amount of body condition — commonly described as concealing one to two points on the 9-point body condition scale. A Husky, Samoyed, Golden Retriever, Chow, or Bernese can be well under condition and still look round and healthy in photographs.
+Heavily coated dogs have the opposite problem: a thick or double coat can hide a lot of weight loss. A Husky, Samoyed, Golden Retriever, Chow or Bernese can be under condition and still look round in photographs.
 
 The fix is simple: **when sight and touch disagree, trust your hands.** This is the standard look-feel-look approach used in veterinary body condition scoring. Run your fingertips firmly enough to get through the coat to the ribcage. The widely used comparison is your own hand:
 
@@ -63,7 +57,7 @@ Do the same along the spine and over the hip bones. On a long-coated dog, bathin
 
 ### What "Slightly Underweight" Actually Means
 
-A slightly underweight dog is one where the ribs are easy to feel with almost no fat cover and may be faintly visible, the waist is pronounced, but muscle is still present and the dog is behaving normally. That is roughly a 3 on the 9-point scale, against an ideal of 4 to 5. It is worth correcting, but it is a feeding-and-recheck situation rather than an emergency — quite different from a dog whose spine, ribs and hips all stand out with visible muscle loss, which warrants a prompt vet visit rather than extra kibble.
+A slightly underweight dog is one where the ribs are easy to feel with almost no fat cover and may be faintly visible, the waist is pronounced, but muscle is still present and the dog is behaving normally. On the 9-point scale used on Purina's chart, a score of 3 describes ribs easily felt and possibly visible with no palpable fat, visible tops of the lumbar vertebrae and becoming-prominent pelvic bones; 4–5 is ideal. It is worth correcting, but it is a feeding-and-recheck situation rather than an emergency — quite different from a dog whose spine, ribs and hips all stand out with visible muscle loss, which warrants a prompt vet visit rather than extra kibble.
 
 <div class="post-cta">
   <h4>Check Against Breed-Specific Ranges</h4>
@@ -88,11 +82,11 @@ Sudden, unexplained weight loss — especially with any of the illness signs abo
 
 Once your vet has ruled out a medical cause, gaining weight safely is a matter of a steady, moderate calorie increase — not a sudden jump.
 
-1. **Increase daily calories gradually** — start around 10-20% above your dog's current maintenance calories, not a huge jump all at once.
+1. **Increase daily calories gradually**, with a target your vet sets — not a huge jump all at once.
 2. **Split meals into 3-4 smaller portions** rather than 1-2 large ones — easier to digest and often more appealing to a dog who hasn't been eating much.
 3. **Consider a calorie-dense food**, with your vet's input — some prescription or performance-formula foods pack more calories per cup, which helps without requiring huge portions.
 4. **Weigh weekly, not daily** — day-to-day weight naturally fluctuates with hydration and stomach contents, so weekly checks give a much clearer trend.
-5. **Expect visible improvement in 3-4 weeks**, with a full return to healthy body condition typically taking 2-3 months for a moderate case.
+5. **Recheck with your vet** if your dog isn't gaining as expected after a few weeks.
 
 *This article is for informational purposes only. Sudden or unexplained weight loss should always be evaluated by a veterinarian before starting a weight-gain plan at home.*
 
@@ -108,10 +102,7 @@ A faint hint of the last rib or two can be normal, especially in naturally lean 
 Common causes include underfeeding (often from following outdated bag guidelines or misjudging portion size), a sudden increase in activity without a matching increase in food, dental pain that makes eating uncomfortable, intestinal parasites, and underlying illness such as diabetes, kidney disease, thyroid disease, or cancer — especially if the weight loss was sudden or the dog seems otherwise unwell.
 
 **How do I help my underweight dog gain weight safely?**
-Start with a vet visit to rule out a medical cause, since feeding more won't fix an underlying illness. Once medical causes are ruled out, gradually increase daily calories (roughly 10-20% above current maintenance to start), split meals into 3-4 smaller portions to make eating easier, and consider a calorie-dense food if your vet approves. Avoid a sudden, large increase in food — it can cause digestive upset and doesn't help muscle gain any faster than a steady increase does.
-
-**How long does it take for an underweight dog to gain weight?**
-With a consistent, appropriate calorie increase and no underlying medical issue, most dogs show visible improvement within 3-4 weeks and reach a healthy body condition within 2-3 months. Weigh weekly rather than daily to track a real trend, since day-to-day weight can fluctuate with hydration and stomach contents.
+Start with a vet visit to rule out a medical cause, since feeding more won't fix an underlying illness. Then increase calories gradually under your vet's guidance, split the food into three or four smaller meals, consider a more calorie-dense food if your vet suggests one, and weigh weekly so you can see the trend.
 
 **Are some dog breeds naturally underweight-looking?**
 Yes. Sighthounds (Greyhounds, Whippets, Salukis, Italian Greyhounds) have a naturally lean build with minimal body fat and visible musculature that can look underweight to someone used to a stockier breed. The key difference is muscle tone — a naturally lean dog still has good muscle definition and energy, while a truly underweight dog often looks gaunt with visible bone and reduced muscle mass.
@@ -121,12 +112,6 @@ Use the same rib-and-waist check as an adult dog, with one important difference:
 
 **How can you tell if a greyhound is underweight?**
 Judge muscle and energy rather than bone, because visible ribs are normal for the breed. A fit sighthound shows the last two or three ribs and a pronounced tuck-up, but still has firm muscle through the thighs, shoulders and chest, a glossy coat and normal bursts of energy. An underweight one has flat or wasted muscle, sharp hips and spine, a dull coat and low energy. The same reasoning applies to Whippets, Salukis and Italian Greyhounds — they simply look leaner at a healthy body condition than a Labrador does.
-
-**How do I check a long-haired dog's weight?**
-Use your hands rather than your eyes, because thick and double coats can hide one to two points of body condition. Press firmly enough to reach the ribcage through the fur: ribs that feel like your knuckles with a closed fist mean too thin, while ribs that feel like the back of your flat hand are about right. Check the spine and hips the same way. When what you see and what you feel disagree, trust your hands.
-
-**What does it mean if my dog is slightly underweight?**
-A slightly underweight dog has ribs that are easy to feel with almost no fat covering and possibly faintly visible, a pronounced waist, but intact muscle and normal behaviour — roughly a 3 on the 9-point body condition scale where 4 to 5 is ideal. That is worth correcting with a vet-guided increase in calories and a recheck in a few weeks. It is a different situation from a dog whose spine, ribs and hip bones are all prominent alongside visible muscle loss, which needs to be seen rather than simply fed more.
 
 ## Related Articles
 
