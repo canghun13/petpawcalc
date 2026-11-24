@@ -1,93 +1,101 @@
 ---
 layout: post
 title: "Puppy and Kitten Vaccination Schedule: The Complete Guide"
-description: A week-by-week breakdown of core and non-core vaccines for puppies and kittens, why the timing matters, adult booster schedules, and typical costs.
+description: "The schedules from the AAHA canine and AAHA/AAFP feline vaccination guidelines: puppies get at least three core doses between 6 and 16 weeks, kittens a dose every 3–4 weeks until 16–20 weeks, then boosters and a 3-year adult interval. Leptospirosis, Bordetella, FeLV and rabies, and what each shot costs."
 category: Pet Health
 date: 2026-07-10
-read_time: 12
+read_time: 7
 slug: puppy-kitten-vaccination-schedule
 faqs:
   - q: "What is the correct vaccination schedule for a puppy?"
-    a: "Puppies typically start DHPP at 6–8 weeks, with follow-up doses every 3–4 weeks until at least 16 weeks old. Rabies is usually given once between 12–16 weeks, timing set by state law. Non-core vaccines like Bordetella or leptospirosis are added based on lifestyle."
+    a: "The 2022 AAHA Canine Vaccination Guidelines recommend at least three doses of a distemper–adenovirus–parvovirus combination vaccine between 6 and 16 weeks of age, 2–4 weeks apart, then a booster within a year of the last puppy dose and every 3 years after that. Rabies is given as required by local law, and leptospirosis as two doses 2–4 weeks apart from 12 weeks."
   - q: "What is the correct vaccination schedule for a kitten?"
-    a: "Kittens typically start FVRCP at 6–8 weeks, with follow-up doses every 3–4 weeks until at least 16 weeks old. Rabies is usually given once between 12–16 weeks. FeLV is often recommended for kittens regardless of planned lifestyle, since future exposure isn't always predictable at that age."
+    a: "The 2020 AAHA/AAFP Feline Vaccination Guidelines recommend the FVRCP vaccine from no earlier than 6 weeks, every 3–4 weeks until 16–20 weeks of age, with a booster considered at 6 months rather than 1 year, then every 3 years. FeLV can start as early as 8 weeks, as two doses 3–4 weeks apart, with a booster 12 months later."
   - q: "Why do puppies and kittens need so many vaccine doses?"
-    a: "Maternal antibodies passed through nursing protect newborns for a few weeks, but fade unpredictably somewhere between 6 and 16 weeks. A vaccine given while maternal antibodies are still active can be neutralized before it takes effect. Multiple doses spaced 3–4 weeks apart guarantee at least one dose lands after that window closes."
+    a: "Antibodies from the mother protect young animals for a time but can also block a vaccine from working. Nobody knows exactly when they fade in an individual puppy or kitten, so the guidelines repeat doses every few weeks until an age by which maternal antibodies should no longer interfere — 16 weeks for puppies, 16–20 weeks for kittens."
   - q: "What happens if I miss a vaccine appointment?"
-    a: "A short delay (days to a couple weeks) usually isn't a major setback — your vet will simply continue the series from where it left off. Longer gaps may require restarting part of the series, since the goal is consistent coverage during the vulnerable early weeks, not just hitting a fixed number of doses."
-  - q: "How much do puppy and kitten vaccines cost in total?"
-    a: "A full puppy or kitten vaccine series (3–4 visits including core vaccines) typically costs $200–$400 total when bundled with wellness exams, or $75–$150 per visit if priced separately. Non-core vaccines and FeLV testing add $20–$50 per addition."
+    a: "Call your vet to reschedule as soon as you can. Whether doses need repeating depends on the vaccine, the gap and your pet's age, so your vet will decide how to continue. Until the series is finished, a young puppy or kitten isn't fully protected."
+  - q: "How much do puppy and kitten vaccines cost?"
+    a: "In a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony, average prices were $42 for a dog's DHPP vaccine, $35 for rabies, $34 for leptospirosis and $39 for Bordetella; for cats, $34 for FVRCP, $31 for rabies and $33 for FeLV. Exam fees are usually extra."
+last_modified_at: 2026-11-24
 ---
 
-Every puppy and kitten needs a series of vaccines, not a single shot — and the spacing between doses matters as much as the vaccines themselves. Here's how the schedule actually works, why it's structured the way it is, and what to expect at each stage.
+Puppies and kittens need a series of vaccines, not a single shot, and the spacing matters as much as the vaccines themselves. The schedules below come from the 2022 AAHA Canine Vaccination Guidelines (with their 2024 update) and the 2020 AAHA/AAFP Feline Vaccination Guidelines — the references most US vets work from. Your vet may adjust them for your pet's health, lifestyle and local law.
 
 ## Why One Shot Isn't Enough
 
-Newborn puppies and kittens get temporary immunity from their mother through colostrum, the first milk produced after birth. That protection is real, but it fades unpredictably — somewhere between 6 and 16 weeks depending on the individual animal, how much colostrum they received, and their mother's own antibody levels.
+Young animals get antibodies from their mother that protect them for a while, but those same antibodies can stop a vaccine from working. They fade at different ages in different animals, and there's no simple way to know when. So the guidelines repeat the core vaccine every few weeks until an age by which maternal antibodies should no longer interfere: **16 weeks for puppies** and **16–20 weeks for kittens**. That last dose is the one that matters most.
 
-This creates a problem: a vaccine given too early can be neutralized by leftover maternal antibodies before the immune system has a chance to respond and build its own protection. But there's no reliable way to test exactly when a specific puppy or kitten's maternal immunity has faded enough for a vaccine to work.
+## Puppy Schedule
 
-The solution vets use is a series of doses spaced 3–4 weeks apart, starting at 6–8 weeks and continuing until at least 16 weeks old. This guarantees that at least one dose in the series lands after maternal antibodies have dropped low enough for the vaccine to take hold — even though nobody knows in advance exactly when that window opens for an individual animal.
+From the AAHA guidelines:
 
-## The Core Vaccine Timeline
+| Vaccine | Puppy series | Booster | Adults |
+|---|---|---|---|
+| **Distemper, adenovirus-2, parvovirus** (± parainfluenza) — core | At least 3 doses between 6 and 16 weeks, 2–4 weeks apart | One dose within 1 year of the last puppy dose | Every 3 years |
+| **Rabies** — core | As required by law | As required by law | As required by law |
+| **Leptospirosis** | 2 doses, 2–4 weeks apart, from 12 weeks | One dose within 1 year | Every year |
+| **Bordetella** (kennel cough) | Injectable: 2 doses 2–4 weeks apart; intranasal or oral: 1 dose | — | Every year |
+| **Canine influenza** | 2 doses, 2–4 weeks apart | One dose within 1 year | Every year |
+| **Lyme disease** | 2 doses, 2–4 weeks apart | One dose within 1 year | Every year |
 
-**6–8 weeks**: First dose of the core combination vaccine — DHPP for puppies (distemper, hepatitis/adenovirus, parvovirus, parainfluenza) or FVRCP for kittens (rhinotracheitis, calicivirus, panleukopenia).
+AAHA classes leptospirosis as a lifestyle (noncore) vaccine but considers most dogs in North America at risk, and it may be treated as core where the disease is common. Bordetella, influenza and Lyme vaccines are recommended based on where your dog lives and what it does — boarding, daycare and dog parks for Bordetella and influenza, tick areas for Lyme. AAHA recommends reviewing a dog's vaccine needs at least once a year.
 
-**9–11 weeks**: Second dose of the core combination vaccine.
+## Kitten Schedule
 
-**12–14 weeks**: Third dose of the core combination vaccine. This is also the typical window for the first rabies vaccine, though exact timing depends on state and local law.
+From the AAHA/AAFP feline guidelines:
 
-**15–16 weeks**: Fourth and final dose of the core combination vaccine. Veterinary guidelines specifically emphasize this dose — even if all earlier doses were given on schedule, skipping the 16-week dose can leave a real gap in protection, since it's the one most likely to land after maternal antibodies have fully cleared.
+| Vaccine | Kitten series | Booster | Adults |
+|---|---|---|---|
+| **FVRCP** (panleukopenia, herpesvirus, calicivirus) — core | From no earlier than 6 weeks, every 3–4 weeks until 16–20 weeks | Consider at 6 months rather than 1 year | Every 3 years (intranasal versions yearly) |
+| **Rabies** — core | Follow the vaccine label and local law | Follow label and local law | 3-year vaccine where the law permits |
+| **FeLV** (feline leukemia) | From as early as 8 weeks: 2 doses, 3–4 weeks apart | 12 months after the last dose | Yearly or every 2–3 years, depending on exposure and vaccine |
 
-**12 months**: A booster of the core vaccines, typically one year after the initial series completes. After this booster, many vets move to an extended 3-year schedule for healthy adult dogs and cats.
+The 6-month FVRCP booster is there to close the gap if maternal antibodies blocked the last kitten dose. FeLV vaccination is generally recommended for kittens because their future lifestyle and exposure aren't yet known; how often an adult needs it depends on whether it goes outdoors or lives with cats of unknown status. Our [Cat Vaccination Schedule Calculator](/tools/cat-vaccination-schedule-calculator.html) turns these intervals into dates.
 
-## Non-Core Vaccines: Added Based on Lifestyle
+## What Each Vaccine Costs
 
-Non-core vaccines aren't automatic — they're added based on a puppy or kitten's actual or expected exposure risk, not just species or age alone.
+Average US prices from a 2025–2026 study of veterinary practices across all 50 states, run for CareCredit by Synchrony:
 
-**For dogs**: Bordetella (kennel cough) matters for puppies who'll attend daycare, boarding, or puppy classes. Leptospirosis matters for dogs with exposure to standing water, wildlife, or rural areas. Canine influenza matters for dogs in high-density social settings like dog parks or group training classes.
+| Vaccine | Dogs | Cats |
+|---|---|---|
+| DHPP / FVRCP | $42 | $34 |
+| Rabies (one-year) | $35 | $31 |
+| Leptospirosis | $34 | — |
+| Bordetella | $39 | $34 |
+| Canine influenza | $53 | — |
+| FeLV | — | $33 |
 
-**For cats**: FeLV (feline leukemia) sits in an unusual spot — it's often recommended for all kittens regardless of planned lifestyle, since a kitten's future as strictly indoor-only isn't always guaranteed at 8 weeks old, and exposure history before adoption is frequently unknown. It typically becomes optional for adult cats once lifestyle (strictly indoor, no exposure to unknown-status cats) is established.
+A routine exam averages $56–$129 for a dog and $57–$130 for a cat in the same study, and is usually charged at each visit. A puppy getting three core doses, two leptospirosis doses and a rabies shot would spend roughly $230 on the vaccines alone at these averages, before exams. Shelters and low-cost clinics often charge less. See [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/) for the other items vets commonly add at these visits, such as fecal tests and deworming.
 
-## What a Typical Visit Actually Looks Like
+## Adult Boosters and Titer Tests
 
-Each vaccine visit isn't just the injection. Vets use these early visits to run a physical exam, check for congenital issues, discuss deworming (puppies and kittens are frequently born with intestinal parasites from their mother), and start a weight-tracking baseline. This is also when owners typically ask about spay/neuter timing, microchipping, and flea/tick prevention — many vets bundle a microchip implant into one of these visits since the puppy or kitten is already there.
+After the first-year booster, core vaccines for healthy adults move to **every 3 years** in both sets of guidelines. Rabies follows local law, which may require a 1- or 3-year vaccine. Lifestyle vaccines such as leptospirosis, Bordetella, influenza and Lyme are yearly.
 
-## Typical Cost Breakdown
-
-A single vaccine visit, including the exam fee, typically runs $75–$150. Across a full puppy or kitten series (3–4 visits), total cost is commonly $200–$400 if bundled as a wellness package, sometimes more if deworming, microchipping, or fecal testing are added at the same visits. Rabies alone typically costs $15–$30. Non-core vaccines like Bordetella or FeLV add $20–$45 per dose.
-
-Shelters and low-cost clinics often offer the full series at a reduced bundled rate, which can be worth checking if cost is a concern — the vaccines themselves are typically the same protocols used at full-service clinics.
-
-## Adult Booster Schedules
-
-Once the initial series and one-year booster are complete, core vaccine schedules typically extend to every 3 years for healthy adult dogs and cats, based on research showing extended duration of immunity. Rabies boosters follow local law, which varies by jurisdiction and vaccine type — often 1 or 3 years. Non-core vaccines are usually reassessed annually since lifestyle and exposure risk can change year to year — a dog that starts going to daycare, for instance, may newly need Bordetella even if they didn't before.
-
-Some vets offer titer testing — a blood test measuring existing antibody levels — as an alternative to automatically re-vaccinating on schedule. It's not appropriate for every vaccine (and isn't a substitute for legally required rabies boosters), so it's worth a specific conversation with your vet rather than assuming it applies universally.
+Some vets offer antibody titer tests as a way to check immunity to some core vaccines instead of revaccinating on a fixed schedule. They don't replace a legally required rabies vaccine, so ask your vet which vaccines a titer can be used for.
 
 ## Frequently Asked Questions
 
 **What is the correct vaccination schedule for a puppy?**
-Puppies typically start DHPP at 6–8 weeks, with follow-up doses every 3–4 weeks until at least 16 weeks old. Rabies is usually given once between 12–16 weeks, timing set by state law. Non-core vaccines like Bordetella or leptospirosis are added based on lifestyle.
+The 2022 AAHA Canine Vaccination Guidelines recommend at least three doses of a distemper–adenovirus–parvovirus combination vaccine between 6 and 16 weeks of age, 2–4 weeks apart, then a booster within a year of the last puppy dose and every 3 years after that. Rabies is given as required by local law, and leptospirosis as two doses 2–4 weeks apart from 12 weeks.
 
 **What is the correct vaccination schedule for a kitten?**
-Kittens typically start FVRCP at 6–8 weeks, with follow-up doses every 3–4 weeks until at least 16 weeks old. Rabies is usually given once between 12–16 weeks. FeLV is often recommended for kittens regardless of planned lifestyle, since future exposure isn't always predictable at that age.
+The 2020 AAHA/AAFP Feline Vaccination Guidelines recommend the FVRCP vaccine from no earlier than 6 weeks, every 3–4 weeks until 16–20 weeks of age, with a booster considered at 6 months rather than 1 year, then every 3 years. FeLV can start as early as 8 weeks, as two doses 3–4 weeks apart, with a booster 12 months later.
 
 **Why do puppies and kittens need so many vaccine doses?**
-Maternal antibodies passed through nursing protect newborns for a few weeks, but fade unpredictably somewhere between 6 and 16 weeks. A vaccine given while maternal antibodies are still active can be neutralized before it takes effect. Multiple doses spaced 3–4 weeks apart guarantee at least one dose lands after that window closes.
+Antibodies from the mother protect young animals for a time but can also block a vaccine from working. Nobody knows exactly when they fade in an individual puppy or kitten, so the guidelines repeat doses every few weeks until an age by which maternal antibodies should no longer interfere — 16 weeks for puppies, 16–20 weeks for kittens.
 
 **What happens if I miss a vaccine appointment?**
-A short delay (days to a couple weeks) usually isn't a major setback — your vet will simply continue the series from where it left off. Longer gaps may require restarting part of the series, since the goal is consistent coverage during the vulnerable early weeks, not just hitting a fixed number of doses.
+Call your vet to reschedule as soon as you can. Whether doses need repeating depends on the vaccine, the gap and your pet's age, so your vet will decide how to continue. Until the series is finished, a young puppy or kitten isn't fully protected.
 
-**How much do puppy and kitten vaccines cost in total?**
-A full puppy or kitten vaccine series (3–4 visits including core vaccines) typically costs $200–$400 total when bundled with wellness exams, or $75–$150 per visit if priced separately. Non-core vaccines and FeLV testing add $20–$50 per addition.
+**How much do puppy and kitten vaccines cost?**
+In a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony, average prices were $42 for a dog's DHPP vaccine, $35 for rabies, $34 for leptospirosis and $39 for Bordetella; for cats, $34 for FVRCP, $31 for rabies and $33 for FeLV. Exam fees are usually extra.
 
 ## Related Articles
 
-- [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
+- [How Often Should You Take Your Dog to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/)
+- [How Often Should Cats Go to the Vet?](/blog/how-often-vet-visits-cat/)
 - [How Much Does a Vet Visit Cost?](/blog/how-much-does-a-vet-visit-cost/)
-- [How to Reduce Vet Costs Without Compromising Your Dog's Care](/blog/how-to-reduce-vet-costs-for-dogs/)
+- [Annual Cost of Owning a Dog](/blog/annual-cost-of-owning-a-dog/)
 
----
-
-*This article is for informational purposes only and is not a substitute for professional veterinary advice. Vaccine schedules vary by region, individual health, and local law — always confirm your pet's specific schedule with your veterinarian.*
+*This article is for general information. Vaccine schedules vary with your pet's health, lifestyle and local law — confirm your pet's schedule with your veterinarian.*
