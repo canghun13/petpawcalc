@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Cat Introduction Timeline — Step-by-Step Guide to Bringing a New Cat Home
-description: Enter your introduction start date, resident cat details, and new cat type to get a step-by-step timeline for introducing cats — with signs to move forward and signs to slow down at every stage. Free and instant.
+description: "Plan a new cat's introduction to your resident cats: dated preparation, how many litter boxes and bowls you need, and the FelineVMA's step-by-step criteria for when to move on."
 permalink: /tools/cat-introduction-timeline.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ permalink: /tools/cat-introduction-timeline.html
   "@type": "WebApplication",
   "name": "Cat Introduction Timeline",
   "url": "https://petpawcalc.com/tools/cat-introduction-timeline.html",
-  "description": "Enter an introduction start date and cat details to get a step-by-step timeline for introducing a new cat to a resident cat, with signs to progress or slow down at each stage.",
+  "description": "Plans a cat introduction from the arrival date and current step: preparation dates, resources per cat plus one, and the Feline Veterinary Medical Association's criteria for moving to the next step.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -35,15 +36,7 @@ permalink: /tools/cat-introduction-timeline.html
       "name": "How long does it take to introduce two cats?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There's no universal timeline — some cats tolerate each other within days, while full introductions commonly take 2-4 weeks. If you're asking how long does it take for cats to get used to each other, or how long does it take cats to get used to each other, a genuine friendship can take anywhere from a few weeks to 6-12 months to develop. Age, temperament, prior social history, and available space all affect the pace, and rushing is the most common cause of introductions failing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it easier to introduce a kitten to an adult cat than two adult cats?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Often, yes. Many adult cats perceive a kitten as less of a threat since kittens haven't developed a strong sense of territory yet, and some adult cats even take on a parental role. That said, an especially energetic kitten can wear out a senior or lower-energy resident cat, so the same gradual process still matters."
+        "text": "The Feline Veterinary Medical Association says introductions can take a few days to a few months, sometimes longer, and UC Davis gives the same range. Don't move to the next step until every cat is comfortable with the current one."
       }
     },
     {
@@ -51,15 +44,15 @@ permalink: /tools/cat-introduction-timeline.html
       "name": "What are signs the introduction is going well?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eating, drinking, and using the litter box normally throughout the process; approaching a scent item or the barrier with curiosity rather than fear; relaxed body language (no flattened ears, puffed tail, or crouching) during visual contact; and a general trend toward less tension over repeated sessions at the same stage."
+        "text": "Every cat eats, drinks and uses its litter box normally, explores confidently, and reacts calmly to the other cat's scent, sounds and, later, sight. Each session should be a little less tense than the last."
       }
     },
     {
       "@type": "Question",
-      "name": "What are warning signs that mean I should slow down or go back a step?",
+      "name": "What are warning signs that mean I should slow down?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Refusing to eat near the door or barrier, continuous hissing or growling rather than a brief initial reaction, urinating or defecating outside the litter box, pacing or hiding constantly, or any actual fighting. Any of these mean returning to the last stage where both cats were calm, rather than pushing forward."
+        "text": "The FelineVMA lists urinating or defecating outside the litter box, avoiding the other cat's scent, growling, hissing or pacing, and other changes in normal behaviour. If any cat becomes uncomfortable, stop and go back to the last calm step for a few more days."
       }
     },
     {
@@ -67,15 +60,15 @@ permalink: /tools/cat-introduction-timeline.html
       "name": "What if my cats fight during the introduction?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Separate them safely without grabbing at the cats directly, check both for bites or scratches (cat bites can develop into painful abscesses and may need a vet's attention), and go back to the last stage where they were both calm — often scent exchange or feeding near a closed door — rather than trying visual contact again right away."
+        "text": "Don't pick them up. Put a cushion or toy between them to break eye contact, then separate them into different rooms. UC Davis advises restarting the introduction from the beginning if aggression occurs, and talking to your vet if progress stalls."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need multiple litter boxes when introducing a new cat?",
+      "name": "How many litter boxes do I need when adding a cat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — the standard guidance is one litter box per cat plus one extra, placed in separate locations rather than clustered together, and each cat should have their own box during the early stages of introduction specifically. A single shared box during this period is a common trigger for litter box avoidance."
+        "text": "One per cat plus one, according to the FelineVMA — and the same for food bowls, water bowls, high-sided beds and scratching posts — spread around the home rather than side by side. Too few or crowded resources are the most common cause of tension."
       }
     }
   ]
@@ -85,58 +78,45 @@ permalink: /tools/cat-introduction-timeline.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🐈‍⬛ Cat Introduction Timeline</h1>
-    <p>Enter your start date and a few details to get a step-by-step timeline — with the signs that mean you're ready for the next stage, and the signs that mean it's time to slow down.</p>
+    <p>Enter the new cat's arrival date and where you are in the process. You get the dated preparation steps, how many of each resource your household needs, and the Feline Veterinary Medical Association's criteria for moving to the next step.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label>Introduction Start Date</label>
+      <label>New cat's arrival date</label>
       <div style="display: flex; gap: 8px;">
-        <select id="cit-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Month</option>
-          <option value="0">January</option><option value="1">February</option>
-          <option value="2">March</option><option value="3">April</option>
-          <option value="4">May</option><option value="5">June</option>
-          <option value="6">July</option><option value="7">August</option>
-          <option value="8">September</option><option value="9">October</option>
-          <option value="10">November</option><option value="11">December</option>
-        </select>
-        <select id="cit-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Day</option>
-          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
-        </select>
-        <select id="cit-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Year</option>
-          <option value="2025">2025</option>
-          <option value="2026">2026</option>
-          <option value="2027">2027</option>
-        </select>
+        <select id="cit-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="cit-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="cit-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
       </div>
     </div>
     <div class="form-group">
-      <label for="cit-new-cat-type">New Cat</label>
-      <select id="cit-new-cat-type">
-        <option value="kitten">Kitten</option>
-        <option value="adult">Adult cat</option>
+      <label for="cit-new">New cats arriving</label>
+      <select id="cit-new">
+        <option value="1">One cat</option>
+        <option value="bonded">Two cats who already get along</option>
+        <option value="unbonded">Two cats who don't know each other</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="cit-resident-age">Resident Cat's Age Group</label>
-      <select id="cit-resident-age">
-        <option value="adult">Adult</option>
-        <option value="kitten">Kitten/young cat</option>
-        <option value="senior">Senior</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="cit-resident-count">How Many Resident Cats?</label>
+      <label for="cit-resident-count">Cats already living with you</label>
       <select id="cit-resident-count">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3 or more</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4 or more</option>
       </select>
     </div>
-    <button class="btn-calculate" onclick="calculateCatIntro()">Show My Timeline →</button>
+    <div class="form-group">
+      <label for="cit-step">Where are you now?</label>
+      <select id="cit-step">
+        <option value="-1">Not started — the cat hasn't arrived yet</option>
+        <option value="0">1. Transition room</option>
+        <option value="1">2. Scent swapping</option>
+        <option value="2">3. Play on either side of a closed door</option>
+        <option value="3">4. Supervised exploration</option>
+        <option value="4">5. Seeing each other through a barrier</option>
+        <option value="5">6. Supervised time together</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateCatIntro()">Show My Plan →</button>
 
     <div class="result-box" id="cit-result">
       <div class="print-header">
@@ -146,120 +126,57 @@ permalink: /tools/cat-introduction-timeline.html
       <h3 id="cit-result-title"></h3>
       <p id="cit-result-note" style="margin-top: 4px; font-size: 0.88rem;"></p>
       <div id="cit-timeline" style="margin-top: 16px;"></div>
-      <div style="margin-top: 16px; padding: 12px 14px; background: #FFF7F3; border: 1.5px solid var(--orange); border-radius: var(--radius); font-size: 0.85rem; color: var(--brown); line-height: 1.6;">
-        ⚠️ <strong>These are typical ranges, not a fixed schedule.</strong> Move at your cats' pace, not the calendar's — going faster than a cat is ready for is the single most common reason introductions fail.
-      </div>
       <button class="pdf-btn" id="cit-pdf-btn" onclick="doPrintCit('cit-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This tool provides general behavioral guidance and is not a substitute for advice from your veterinarian or a certified cat behaviorist, especially if introductions aren't progressing or result in fighting.
+    ⚕️ There's no fixed schedule for cat introductions — the FelineVMA says they can take a few days to a few months. If introductions stall or cats fight, talk to your veterinarian.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Kitten Introduction vs. Adult Cat Introduction</h2>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);"></th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Kitten joining an adult cat</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Two adult cats</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Typical pace</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Often faster — a kitten hasn't developed a strong sense of territory yet and is usually seen as less of a threat</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Usually slower and more cautious, especially between two confident or territorial cats</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Main risk</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">An energetic kitten overwhelming or annoying the resident cat with constant play attempts</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Territorial conflict and resource competition between two established personalities</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">What helps</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Tiring the kitten out with play before resident-cat time; giving the resident cat easy retreat options</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Extra patience at the visual-contact stage; duplicate resources (bowls, boxes, perches) from day one</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Time to full friendship</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Can happen in weeks, sometimes faster</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Peaceful coexistence often comes first; genuine friendship can take 6-12 months, if it happens at all</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Before the New Cat Arrives</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Health first.</strong> All cats should have seen a vet recently, and the new cat should be tested for common contagious diseases (FelineVMA).</li>
+      <li><strong>Resources:</strong> one litter box, food bowl, water bowl, high-sided bed and scratching post per cat, plus one extra of each, spread around the home and out of each other's sight.</li>
+      <li><strong>A transition room</strong> that can be latched shut, with everything the new cat needs.</li>
+      <li><strong>Pheromone diffusers:</strong> the FelineVMA suggests plugging one in the main living area and one in the transition room 24–48 hours before arrival.</li>
+      <li><strong>Know what each cat loves</strong> — treats and games — to use as rewards later.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Smooth Signs vs. Warning Signs</h2>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Signs you can move to the next stage</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Signs to slow down or go back a stage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Eating, drinking, and using the litter box normally</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Refusing to eat near the door/barrier, or eating less overall</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Curious rather than fearful reaction to a scent item or the barrier</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Continuous hissing, growling, or swatting rather than a brief initial reaction that fades</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Relaxed body language (ears up, tail loose, no crouching)</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Urinating/defecating outside the litter box, pacing, or hiding constantly</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Less tension each time you repeat a stage</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Any actual fighting, lunging, or prolonged standoff at the barrier</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Steps, and When to Move On</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">These follow the FelineVMA's step-by-step guide. Stay at each step until every cat is comfortable.</p>
+    <ol style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li style="margin-bottom:8px;"><strong>Transition room.</strong> Bring the new cat in a towel-covered carrier straight to a quiet, latched room with its own food, water, litter box, perches, hiding spots and scratching surfaces. Let it come out on its own. <em>Move on when:</em> It stops hiding constantly and explores confidently — a few days or longer.</li>
+      <li style="margin-bottom:8px;"><strong>Scent swapping.</strong> Swap bedding or soft toys between the cats daily. After a few calm days, rub a soft cloth on each cat's cheeks and chin and leave it where the others can smell it. <em>Move on when:</em> No cat shows tension toward the other's scent: no hissing, growling, pacing, avoiding the item or toileting outside the box.</li>
+      <li style="margin-bottom:8px;"><strong>Play on either side of a closed door.</strong> Tie two toys together with string and play with one cat on each side of the door, 5–20 minutes at a time. <em>Move on when:</em> All cats play calmly by the door. If a cat hisses or paws at the door, stop and add a barrier.</li>
+      <li style="margin-bottom:8px;"><strong>Supervised exploration.</strong> Shut the resident cats in a favourite room with treats, and let the new cat explore the common areas briefly, a little longer each day. Then swap back and let the residents choose whether to come out. <em>Move on when:</em> The new cat explores calmly, and the residents return to their spaces without stress.</li>
+      <li style="margin-bottom:8px;"><strong>Seeing each other through a barrier.</strong> Short sessions through a screen, glass door or tall gate, or with one cat in a partly covered carrier. Pair them with play or treats. <em>Move on when:</em> Everyone stays relaxed. If any cat becomes uncomfortable, stop and go back to the door and exploration steps for a few more days.</li>
+      <li style="margin-bottom:8px;"><strong>Supervised time together.</strong> Short visits in a large room, on harnesses and leashes or with one cat in a partly covered carrier, rewarding calm behaviour. Keep a cushion or towel handy to block a stare. <em>Move on when:</em> Repeat over several days, gradually longer, until the cats share space without tension.</li>
+    </ol>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">If Hissing, Howling, or Litter Box Avoidance Shows Up</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A little hissing at first scent or sight of a new cat is a normal reaction, not a failure — it should fade with repeated calm exposure. It's a real warning sign when the reaction stays intense, or when you notice new litter box avoidance, howling, or growling that doesn't settle down over several sessions at the same stage.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The fix is almost always the same: <strong>go back to the last stage where both cats were calm</strong> — often scent exchange or feeding near a closed door — and stay there longer before trying to advance again. Don't skip ahead to "just try visual contact once more and see" after a setback; that's how a single bad interaction turns into a lasting negative association.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If litter box avoidance specifically becomes a pattern rather than a one-off, it's worth reading through our dedicated guide on the topic, since the fix depends on whether it's this introduction stress or a separate medical cause. → <a href="/blog/kitten-litter-training-regression/">Read: Cat Litter Training Regression — Why a Trained Cat Suddenly Stops</a></p>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">One Litter Box Rule to Keep in Mind</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Give each cat their own separate litter box from day one of the introduction — shared boxes too early are a common trigger for avoidance. The general n+1 rule (one box per cat, plus one extra, in separate locations) matters even more during an introduction than it does long-term. For age-specific litter setup guidance for a kitten specifically, see the <a href="/tools/kitten-litter-training-timeline.html">Kitten Litter Training Timeline</a>.</p>
-
-    <div class="post-cta">
-      <p>Just brought a kitten home? → <a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a></p>
-    </div>
-
-    <div class="post-cta">
-      <p>Introducing a new dog instead? → <a href="/tools/dog-introduction-timeline.html">Dog Introduction Timeline</a></p>
-    </div>
-
-    <div class="post-cta">
-      <p>New cat stressed about carriers or vet visits? → <a href="/tools/cat-carrier-training-planner.html">Cat Carrier Training Planner</a></p>
-    </div>
-
-    <div class="post-cta">
-      <p>Introducing a kitten specifically? Build broader socialization skills too → <a href="/checklists/kitten-socialization-checklist.html">Kitten Socialization Checklist</a></p>
-    </div>
-
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Managing Tension</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Check the resources first.</strong> The FelineVMA calls too few or visually crowded resources the most common cause of tension.</li>
+      <li><strong>Burn off energy:</strong> at least two play sessions a day, of at least 5 minutes each, for high-energy cats.</li>
+      <li><strong>Never pick up cats mid-standoff.</strong> Break eye contact with a cushion or toy, then redirect them into separate play or rooms.</li>
+      <li><strong>Block staring</strong> with furniture, or give cats shelves and other vertical space.</li>
+      <li><strong>If aggression happens,</strong> UC Davis advises going back to the beginning, and talking to your vet if progress stalls.</li>
+    </ul>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Bringing Home Two Cats</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats who are already bonded can share a transition room and work through the steps together. Unbonded cats each need their own room and should be introduced separately — to the residents and to each other — or brought home at different times (FelineVMA).</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: Feline Veterinary Medical Association, <em>Step-by-Step Guide: How to Introduce a New Cat to Other Cats in Your Home</em>; UC Davis Veterinary Medicine, <em>Introducing Your New Cat to Your Other Household Cats</em>. Full list on our <a href="/sources.html">sources page</a>.</p>
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does it take to introduce two cats?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no universal timeline — some cats tolerate each other within days, while full introductions commonly take 2-4 weeks. If you're asking how long does it take for cats to get used to each other, or how long does it take cats to get used to each other, a genuine friendship can take anywhere from a few weeks to 6-12 months to develop. Age, temperament, prior social history, and available space all affect the pace, and rushing is the most common cause of introductions failing.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is it easier to introduce a kitten to an adult cat than two adult cats?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often, yes. Many adult cats perceive a kitten as less of a threat since kittens haven't developed a strong sense of territory yet, and some adult cats even take on a parental role. That said, an especially energetic kitten can wear out a senior or lower-energy resident cat, so the same gradual process still matters.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The Feline Veterinary Medical Association says introductions can take a few days to a few months, sometimes longer, and UC Davis gives the same range. Don't move to the next step until every cat is comfortable with the current one.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are signs the introduction is going well?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Eating, drinking, and using the litter box normally throughout the process; approaching a scent item or the barrier with curiosity rather than fear; relaxed body language (no flattened ears, puffed tail, or crouching) during visual contact; and a general trend toward less tension over repeated sessions at the same stage.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are warning signs that mean I should slow down or go back a step?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Refusing to eat near the door or barrier, continuous hissing or growling rather than a brief initial reaction, urinating or defecating outside the litter box, pacing or hiding constantly, or any actual fighting. Any of these mean returning to the last stage where both cats were calm, rather than pushing forward.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Every cat eats, drinks and uses its litter box normally, explores confidently, and reacts calmly to the other cat's scent, sounds and, later, sight. Each session should be a little less tense than the last.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are warning signs that mean I should slow down?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The FelineVMA lists urinating or defecating outside the litter box, avoiding the other cat's scent, growling, hissing or pacing, and other changes in normal behaviour. If any cat becomes uncomfortable, stop and go back to the last calm step for a few more days.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if my cats fight during the introduction?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Separate them safely without grabbing at the cats directly, check both for bites or scratches (cat bites can develop into painful abscesses and may need a vet's attention), and go back to the last stage where they were both calm — often scent exchange or feeding near a closed door — rather than trying visual contact again right away.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do I need multiple litter boxes when introducing a new cat?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Yes — the standard guidance is one litter box per cat plus one extra, placed in separate locations rather than clustered together, and each cat should have their own box during the early stages of introduction specifically. A single shared box during this period is a common trigger for litter box avoidance.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Don't pick them up. Put a cushion or toy between them to break eye contact, then separate them into different rooms. UC Davis advises restarting the introduction from the beginning if aggression occurs, and talking to your vet if progress stalls.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How many litter boxes do I need when adding a cat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">One per cat plus one, according to the FelineVMA — and the same for food bowls, water bowls, high-sided beds and scratching posts — spread around the home rather than side by side. Too few or crowded resources are the most common cause of tension.</p>
   </div>
 </div>
 
@@ -316,90 +233,75 @@ function doPrintCit(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-
-function addDaysCit(date, days) {
-  const d = new Date(date);
-  d.setDate(d.getDate() + days);
-  return d;
-}
-
-function fmtDateCit(d) {
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-}
-
-// Ranges are typical starting windows for each stage, in days from the introduction start date.
-// Kitten introductions commonly move faster; adult-adult introductions are typically more cautious.
-const PACE = {
-  kitten: {
-    label: "Kitten joining an adult cat",
-    stages: [
-      { name: "Separate Room", range: [0, 7], desc: "Own litter box, food, water, and hiding spot in a dedicated room. No visual contact yet.", forward: "Eating, drinking, and using the litter box normally; not hiding constantly.", back: "Not eating, hiding constantly beyond a week — check for illness/stress with your vet." },
-      { name: "Scent Exchange", range: [2, 8], desc: "Swap bedding/towels between the cats, or gently rub a cloth on each cat's cheeks and let the other smell it.", forward: "Curious, calm reaction to the other cat's scent — brief initial hissing is normal and should fade.", back: "Continuous hissing/growling at the scent item, or new litter box avoidance." },
-      { name: "Feeding Near the Door", range: [3, 9], desc: "Feed both cats on opposite sides of a closed door, gradually moving bowls closer over sessions.", forward: "Both cats eat calmly close to the door without stress.", back: "Refusing to eat, or growling/pacing at the door." },
-      { name: "Site Swapping", range: [5, 12], desc: "Let each cat explore the other's space alone (crate the kitten or confine the resident cat elsewhere) to build familiarity without face-to-face risk.", forward: "Calm exploration, no excessive marking or stress signs in either space.", back: "Signs of stress (hiding, avoiding areas, litter box issues) in either cat's own space." },
-      { name: "Visual Contact", range: [7, 16], desc: "Use a screen door, baby gate, or cracked door so the cats can see each other without physical contact. Pair it with treats or calm play on each side.", forward: "Relaxed body language, curiosity rather than fear, no prolonged hissing.", back: "Continuous hissing/growling/swatting at the barrier — go back to scent exchange or feeding near the door." },
-      { name: "Supervised Face-to-Face", range: [10, 21], desc: "Short, supervised sessions in open space, with an escape route for both cats. Don't force closeness or pick them up to bring them together.", forward: "Relaxed proximity, mutual tolerance, gradually increasing comfort over repeated short sessions.", back: "Any fighting, lunging, or injury — separate safely and return to the last calm stage." }
-    ]
-  },
-  adult: {
-    label: "Two adult cats",
-    stages: [
-      { name: "Separate Room", range: [0, 14], desc: "Own litter box, food, water, and hiding spot in a dedicated room. No visual contact yet.", forward: "Eating, drinking, and using the litter box normally; not hiding constantly.", back: "Not eating, hiding constantly beyond a week or two — check for illness/stress with your vet." },
-      { name: "Scent Exchange", range: [3, 14], desc: "Swap bedding/towels between the cats, or gently rub a cloth on each cat's cheeks and let the other smell it.", forward: "Curious, calm reaction to the other cat's scent — brief initial hissing is normal and should fade.", back: "Continuous hissing/growling at the scent item, or new litter box avoidance." },
-      { name: "Feeding Near the Door", range: [5, 16], desc: "Feed both cats on opposite sides of a closed door, gradually moving bowls closer over sessions.", forward: "Both cats eat calmly close to the door without stress.", back: "Refusing to eat, or growling/pacing at the door." },
-      { name: "Site Swapping", range: [8, 20], desc: "Let each cat explore the other's space alone (confine the other cat elsewhere) to build familiarity without face-to-face risk.", forward: "Calm exploration, no excessive marking or stress signs in either space.", back: "Signs of stress (hiding, avoiding areas, litter box issues) in either cat's own space." },
-      { name: "Visual Contact", range: [12, 28], desc: "Use a tall baby gate, screen door, or cracked door so the cats can see each other without physical contact. Pair it with treats or calm play on each side.", forward: "Relaxed body language, curiosity rather than fear, no prolonged hissing.", back: "Continuous hissing/growling/swatting at the barrier — go back to scent exchange or feeding near the door." },
-      { name: "Supervised Face-to-Face", range: [18, 42], desc: "Short, supervised sessions in open space, with an escape route for both cats. Don't force closeness.", forward: "Relaxed proximity, mutual tolerance, gradually increasing comfort over repeated short sessions. Peaceful coexistence often arrives before genuine friendship — that can take 6-12 months, if it happens at all.", back: "Any fighting, lunging, or injury — separate safely and return to the last calm stage." }
-    ]
-  }
-};
-
+(function () {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const t = new Date();
+  document.getElementById('cit-month').innerHTML = months.map((m, i) => `<option value="${i}"${i === t.getMonth() ? ' selected' : ''}>${m}</option>`).join('');
+  let d = ''; for (let i = 1; i <= 31; i++) d += `<option value="${i}"${i === t.getDate() ? ' selected' : ''}>${i}</option>`;
+  document.getElementById('cit-day').innerHTML = d;
+  let y = ''; for (let i = t.getFullYear() - 1; i <= t.getFullYear() + 1; i++) y += `<option value="${i}"${i === t.getFullYear() ? ' selected' : ''}>${i}</option>`;
+  document.getElementById('cit-year').innerHTML = y;
+})();
+const CIT_STEPS = [
+ {
+  "name": "Transition room",
+  "desc": "Bring the new cat in a towel-covered carrier straight to a quiet, latched room with its own food, water, litter box, perches, hiding spots and scratching surfaces. Let it come out on its own.",
+  "next": "It stops hiding constantly and explores confidently — a few days or longer."
+ },
+ {
+  "name": "Scent swapping",
+  "desc": "Swap bedding or soft toys between the cats daily. After a few calm days, rub a soft cloth on each cat's cheeks and chin and leave it where the others can smell it.",
+  "next": "No cat shows tension toward the other's scent: no hissing, growling, pacing, avoiding the item or toileting outside the box."
+ },
+ {
+  "name": "Play on either side of a closed door",
+  "desc": "Tie two toys together with string and play with one cat on each side of the door, 5–20 minutes at a time.",
+  "next": "All cats play calmly by the door. If a cat hisses or paws at the door, stop and add a barrier."
+ },
+ {
+  "name": "Supervised exploration",
+  "desc": "Shut the resident cats in a favourite room with treats, and let the new cat explore the common areas briefly, a little longer each day. Then swap back and let the residents choose whether to come out.",
+  "next": "The new cat explores calmly, and the residents return to their spaces without stress."
+ },
+ {
+  "name": "Seeing each other through a barrier",
+  "desc": "Short sessions through a screen, glass door or tall gate, or with one cat in a partly covered carrier. Pair them with play or treats.",
+  "next": "Everyone stays relaxed. If any cat becomes uncomfortable, stop and go back to the door and exploration steps for a few more days."
+ },
+ {
+  "name": "Supervised time together",
+  "desc": "Short visits in a large room, on harnesses and leashes or with one cat in a partly covered carrier, rewarding calm behaviour. Keep a cushion or towel handy to block a stare.",
+  "next": "Repeat over several days, gradually longer, until the cats share space without tension."
+ }
+];
+function addDaysCit(date, days) { const d = new Date(date); d.setDate(d.getDate() + days); return d; }
+function fmtDateCit(d) { return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
 function calculateCatIntro() {
-  const month = document.getElementById('cit-month').value;
-  const day = document.getElementById('cit-day').value;
-  const year = document.getElementById('cit-year').value;
-  const newCatType = document.getElementById('cit-new-cat-type').value;
-  const residentAge = document.getElementById('cit-resident-age').value;
-  const residentCount = document.getElementById('cit-resident-count').value;
-
-  if (!month || !day || !year) {
-    alert('Please enter the introduction start date.');
-    return;
+  const arrival = new Date(+document.getElementById('cit-year').value, +document.getElementById('cit-month').value, +document.getElementById('cit-day').value);
+  const nw = document.getElementById('cit-new').value;
+  const residents = +document.getElementById('cit-resident-count').value;
+  const step = +document.getElementById('cit-step').value;
+  const newCount = nw === '1' ? 1 : 2;
+  const total = residents + newCount;
+  const each = total + 1;
+  document.getElementById('cit-result-title').textContent = step < 0 ? 'Getting ready' : `Step ${step + 1}: ${CIT_STEPS[step].name}`;
+  document.getElementById('cit-result-note').textContent = 'Introductions can take a few days to a few months (FelineVMA). Move on only when every cat is comfortable.';
+  const box = (title, body) => `<div style="background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 12px;"><div style="font-weight: 600; color: var(--brown); font-size: 0.92rem; margin-bottom: 4px;">${title}</div><div style="color: var(--brown-mid); font-size: 0.86rem; line-height: 1.6;">${body}</div></div>`;
+  let html = '';
+  html += box(`Resources for ${total} cats`, `${each} litter boxes, ${each} food bowls, ${each} water bowls, ${each} high-sided beds and ${each} scratching posts — one per cat plus one, spread out of each other's sight.`);
+  if (step < 0) {
+    html += box(`By ${fmtDateCit(addDaysCit(arrival, -2))}`, 'Plug in a feline pheromone diffuser in the main living area and one in the transition room, 24–48 hours before arrival. Make sure all cats have had a recent vet check and the new cat has been tested for common contagious diseases.');
+    html += box(`${fmtDateCit(arrival)} — arrival`, 'Carry the new cat in a towel-covered carrier straight to the transition room and let it come out on its own.');
+  } else {
+    html += box('What to do now', CIT_STEPS[step].desc);
+    html += box('Move on when', CIT_STEPS[step].next);
+    if (step + 1 < CIT_STEPS.length) html += box(`Next: ${CIT_STEPS[step + 1].name}`, CIT_STEPS[step + 1].desc);
+    else html += box('After this', 'Daily group play once the cats are comfortable together. Never force interaction, and keep climbing and resting spots available for any cat that avoids the others.');
+    html += box('If tension appears', 'Stop, separate the cats calmly without picking them up, and go back to the last step where everyone was calm for a few more days.');
   }
-
-  const startDate = new Date(parseInt(year), parseInt(month), parseInt(day));
-  const pace = PACE[newCatType];
-
-  document.getElementById('cit-result-title').textContent = `Timeline: ${pace.label}`;
-
-  let note = "Every cat moves at their own pace — treat these as typical windows, not deadlines.";
-  if (residentAge === 'senior') {
-    note += " Senior resident cats sometimes need extra time, especially at the visual-contact and face-to-face stages — don't rush on their account.";
-  } else if (residentAge === 'kitten') {
-    note += " A young resident cat may adapt quickly, but can also tire out fast during an energetic introduction — watch for signs they need a break.";
-  }
-  if (parseInt(residentCount) >= 2) {
-    note += " With multiple resident cats already in the home, make sure every cat (not just the newcomer) has their own litter box, food station, and retreat space from day one.";
-  }
-  document.getElementById('cit-result-note').textContent = note;
-
-  const tl = document.getElementById('cit-timeline');
-  tl.innerHTML = pace.stages.map((stage, i) => {
-    const earliestDate = addDaysCit(startDate, stage.range[0]);
-    const latestDate = addDaysCit(startDate, stage.range[1]);
-    return `
-      <div style="display: flex; gap: 14px; margin-bottom: 16px;">
-        <div style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--cream-dark); color: var(--brown); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; margin-top: 2px;">${i + 1}</div>
-        <div style="flex: 1; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 14px 18px;">
-          <div style="font-weight: 600; color: var(--brown); font-size: 0.95rem;">${stage.name}</div>
-          <div style="font-size: 0.8rem; color: var(--brown-light); margin-bottom: 6px;">Typically starts around ${fmtDateCit(earliestDate)} – ${fmtDateCit(latestDate)} (day ${stage.range[0]}–${stage.range[1]})</div>
-          <p style="color: var(--brown-mid); font-size: 0.87rem; line-height: 1.55; margin-bottom: 6px;">${stage.desc}</p>
-          <p style="color: #2f7d4f; font-size: 0.83rem; line-height: 1.5; margin-bottom: 4px;"><strong>Move forward when:</strong> ${stage.forward}</p>
-          <p style="color: var(--orange); font-size: 0.83rem; line-height: 1.5;"><strong>Go back a stage if:</strong> ${stage.back}</p>
-        </div>
-      </div>`;
-  }).join('');
-
+  if (nw === 'unbonded') html += box('Two unbonded new cats', 'Each needs its own transition room and should be introduced separately — to the residents and to each other — or brought home at different times.');
+  if (nw === 'bonded') html += box('A bonded pair', 'They can share a transition room and work through the steps together.');
+  document.getElementById('cit-timeline').innerHTML = html;
   document.getElementById('cit-result').classList.add('show');
   document.getElementById('cit-pdf-btn').style.display = 'block';
   document.getElementById('cit-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });

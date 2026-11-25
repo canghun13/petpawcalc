@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Dog Introduction Timeline — Step-by-Step Guide to Bringing a New Dog Home
-description: Enter your introduction start date, resident dog details, and new dog type to get a step-by-step timeline for introducing dogs — with signs to move forward and signs to slow down at every stage. Free and instant.
+description: "Plan a new dog's introduction to your dog with the ASPCA's steps — neutral ground, parallel walks, separate resources — and see the earliest date they could be left alone together."
 permalink: /tools/dog-introduction-timeline.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ permalink: /tools/dog-introduction-timeline.html
   "@type": "WebApplication",
   "name": "Dog Introduction Timeline",
   "url": "https://petpawcalc.com/tools/dog-introduction-timeline.html",
-  "description": "Enter an introduction start date and dog details to get a step-by-step timeline for introducing a new dog to a resident dog, with signs to progress or slow down at each stage.",
+  "description": "Plans a dog-to-dog introduction from the ASPCA's guide and gives the earliest date the dogs could be left alone together under its rule of one week without tense interactions.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -32,10 +33,10 @@ permalink: /tools/dog-introduction-timeline.html
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why can't I just introduce two dogs at home?",
+      "name": "Where should two dogs meet for the first time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The resident dog's home and yard are their territory, and introducing an unfamiliar dog there is one of the most common triggers for a defensive or aggressive reaction. Meeting first on neutral ground - somewhere neither dog has claimed, like a park or a quiet street - removes that territorial trigger and gives both dogs a fair first impression of each other."
+        "text": "On neutral ground. The ASPCA advises an open area such as a park rather than the home or yard, where the resident dog may feel territorial, with one person handling each dog on a loose leash. Introduce multiple resident dogs to the newcomer one at a time."
       }
     },
     {
@@ -43,39 +44,31 @@ permalink: /tools/dog-introduction-timeline.html
       "name": "How long does it take to introduce two dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There's no universal timeline. Some dogs settle into a comfortable routine within a week or two, especially puppy-to-adult introductions, while two confident adult dogs can take several weeks of gradual, supervised contact before unsupervised time together is appropriate. Dogs with a resource-guarding history need longer, sometimes 2-4 weeks of structured separation before full introduction resumes."
+        "text": "There's no fixed timeline. The ASPCA's benchmark is that dogs shouldn't be left alone together until they've gone at least one week with no tense or negative interactions — and some dogs need longer."
       }
     },
     {
       "@type": "Question",
-      "name": "Why do dogs meet side by side instead of face to face?",
+      "name": "Why walk the dogs side by side?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A head-on approach with direct eye contact reads as confrontational in dog body language, while walking parallel to each other is a naturally lower-tension way for two dogs to share space. Starting with a parallel walk - at a distance where both dogs can relax - and only allowing a brief angled sniff before returning to walking side by side keeps the whole interaction calmer."
+        "text": "The ASPCA suggests keeping the first greeting brief and then walking the dogs together in parallel, which takes pressure off them. Purdue's Canine Welfare Science guide adds walking them in the same direction far enough apart that neither is fixated on the other."
       }
     },
     {
       "@type": "Question",
-      "name": "Which dog should enter the house first?",
+      "name": "Which dog should go into the house first?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The resident dog should go in first. It's their established territory, and letting them enter ahead of the newcomer respects that while reducing the sense that a stranger is invading their space uninvited."
+        "text": "The ASPCA suggests bringing the new dog in first on a leash to explore, after checking that no food or toys are left out, then bringing the resident dog in on a leash once the newcomer is relaxed, and letting the resident dog off leash first."
       }
     },
     {
       "@type": "Question",
-      "name": "What if the dogs get into a fight during introduction?",
+      "name": "What if the dogs fight during the introduction?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Separate them safely without reaching between them, check both dogs for injuries, and give them at least 24 hours of complete separation before trying again. When you resume, go back to the parallel walk stage at a greater distance than before rather than picking up where you left off - restarting further back rebuilds calm associations instead of reinforcing the tension from the fight."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I introduce dogs myself if one has a history of aggression?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No - if either dog has a known history of aggression toward other dogs, don't attempt the introduction alone. A certified professional dog trainer or behaviorist can assess each dog's thresholds, start at a much greater distance, and build a customized plan, which is much safer than guessing at what a dog with a bite history needs."
+        "text": "Interrupt it without putting your hands between them, get veterinary care if needed, and separate the dogs. The ASPCA advises keeping them completely apart with crates or secure gates and getting help from a behavior professional before trying again."
       }
     }
   ]
@@ -85,58 +78,47 @@ permalink: /tools/dog-introduction-timeline.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🐕‍🦺 Dog Introduction Timeline</h1>
-    <p>Enter your start date and a few details to get a step-by-step timeline — with the signs that mean you're ready for the next stage, and the signs that mean it's time to slow down.</p>
+    <p>Enter the date the dogs first meet and the date of any tense moment since. You get the ASPCA's introduction steps and the earliest date the dogs could be left alone together under its one-week rule.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label>Introduction Start Date</label>
+      <label>Date of the first meeting</label>
       <div style="display: flex; gap: 8px;">
-        <select id="dit-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Month</option>
-          <option value="0">January</option><option value="1">February</option>
-          <option value="2">March</option><option value="3">April</option>
-          <option value="4">May</option><option value="5">June</option>
-          <option value="6">July</option><option value="7">August</option>
-          <option value="8">September</option><option value="9">October</option>
-          <option value="10">November</option><option value="11">December</option>
-        </select>
-        <select id="dit-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Day</option>
-          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
-        </select>
-        <select id="dit-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Year</option>
-          <option value="2025">2025</option>
-          <option value="2026">2026</option>
-          <option value="2027">2027</option>
-        </select>
+        <select id="dit-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="dit-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="dit-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
       </div>
     </div>
     <div class="form-group">
-      <label for="dit-new-dog-type">New Dog</label>
+      <label>Most recent tense moment (growl, stiffening, snap) — leave as the meeting date if none</label>
+      <div style="display: flex; gap: 8px;">
+        <select id="dit-tense-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="dit-tense-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="dit-tense-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="dit-new-dog-type">New dog</label>
       <select id="dit-new-dog-type">
-        <option value="puppy">Puppy</option>
         <option value="adult">Adult dog</option>
+        <option value="puppy">Puppy</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="dit-resident-age">Resident Dog's Age Group</label>
-      <select id="dit-resident-age">
-        <option value="adult">Adult</option>
-        <option value="puppy">Puppy/young dog</option>
-        <option value="senior">Senior</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="dit-resident-count">How Many Resident Dogs?</label>
+      <label for="dit-resident-count">Dogs already living with you</label>
       <select id="dit-resident-count">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3 or more</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3 or more</option>
       </select>
     </div>
-    <button class="btn-calculate" onclick="calculateDogIntro()">Show My Timeline →</button>
+    <div class="form-group">
+      <label for="dit-history">Has either dog fought with other dogs before?</label>
+      <select id="dit-history">
+        <option value="no">No</option>
+        <option value="yes">Yes, or not sure</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateDogIntro()">Show My Plan →</button>
 
     <div class="result-box" id="dit-result">
       <div class="print-header">
@@ -146,111 +128,58 @@ permalink: /tools/dog-introduction-timeline.html
       <h3 id="dit-result-title"></h3>
       <p id="dit-result-note" style="margin-top: 4px; font-size: 0.88rem;"></p>
       <div id="dit-timeline" style="margin-top: 16px;"></div>
-      <div style="margin-top: 16px; padding: 12px 14px; background: #FFF7F3; border: 1.5px solid var(--orange); border-radius: var(--radius); font-size: 0.85rem; color: var(--brown); line-height: 1.6;">
-        ⚠️ <strong>These are typical ranges, not a fixed schedule.</strong> Move at your dogs' pace, not the calendar's — going faster than a dog is ready for is the single most common reason introductions fail.
-      </div>
       <button class="pdf-btn" id="dit-pdf-btn" onclick="doPrintDit('dit-date')">🖨️ Save as PDF</button>
     </div>
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This tool provides general behavioral guidance and is not a substitute for advice from your veterinarian or a certified dog trainer/behaviorist, especially if introductions aren't progressing or result in fighting.
+    ⚕️ If either dog has a history of fighting, the ASPCA recommends consulting a veterinary behaviorist or certified professional dog trainer before introducing them.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Puppy Introduction vs. Adult Dog Introduction</h2>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);"></th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Puppy joining an adult dog</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Two adult dogs</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Typical pace</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Often faster — many adult dogs tolerate puppy energy more readily, and some take on a parental role</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Usually slower and more cautious, especially between two confident or territorial dogs</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Main risk</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">A relentless puppy overwhelming or annoying the resident dog with nonstop play attempts</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Territorial conflict and resource competition between two established personalities</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">What helps</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Tiring the puppy out with play before resident-dog time; giving the resident dog easy retreat options and breaks</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Extra patience at the parallel-walk stage; duplicate resources (bowls, beds, toys) from day one</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Time to comfortable coexistence</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Can happen within a week or two</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Often several weeks of gradual, supervised contact before unsupervised time is appropriate</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Before the First Meeting</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Put away anything the resident dog might guard — food bowls, bones, chews, toys and beds — and clear narrow, crowded spaces (ASPCA).</li>
+      <li>Line up one helper per dog.</li>
+      <li>Choose neutral ground, such as a park, rather than your home or yard.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Smooth Signs vs. Warning Signs</h2>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Signs you can move to the next stage</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Signs to slow down or go back a stage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Loose, relaxed body language and a play-bow during interaction</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Stiff posture, prolonged staring, or raised hackles that don't settle</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Both dogs walking calmly and largely ignoring each other on a parallel walk</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Pulling hard toward the other dog, or refusing to walk at all near them</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">A brief, mutual sniff followed by returning to a relaxed walk</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Growling, snapping, or guarding behavior around food, toys, or beds</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Indifference toward each other by the first few days indoors</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Any actual fighting, or one dog consistently avoiding/hiding from the other</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The First Meeting</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Keep leashes loose during the greeting sniff — tension on the leash can cause scuffles.</li>
+      <li>Keep the first interactions brief, then walk the dogs together in parallel (ASPCA), in the same direction and far enough apart that neither is fixated on the other (Purdue). Swapping sides lets each sniff where the other walked.</li>
+      <li>If both stay relaxed, let them move closer.</li>
+      <li>With several resident dogs, introduce each one to the newcomer separately first.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Warning signs:</strong> raised hackles, growling, showing teeth, prolonged staring and snapping. Call the dogs apart early by luring each away with a high-value treat rather than pulling on the leash, and keep your own body language relaxed (ASPCA). Minor pushing, growling or standing over the shoulders during play is usually fine.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">If Resource Guarding or a Fight Shows Up</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Guarding food, toys, beds, or even a person is one of the most common friction points between two dogs, and it's a reason to slow down rather than push through. If you notice stiffening, growling, or snapping around a resource, <strong>separate the dogs structurally for 2-4 weeks</strong> — feed, sleep, and store toys in fully separate spaces — before reintroducing supervised time together, and remove high-value items entirely during that period rather than testing whether the guarding has resolved.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If an actual fight happens, separate the dogs safely without reaching between them, check both for injuries, and give them <strong>at least 24 hours of complete separation</strong>. When you resume, don't pick up where you left off — go back to the parallel walk stage at a greater distance than before, and progress more slowly than the first attempt.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">If either dog has a known history of aggression toward other dogs, don't attempt the introduction alone. A certified professional trainer or behaviorist can assess both dogs' thresholds and build a plan starting from a much greater distance than a typical introduction would use.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Bringing the New Dog Home</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Walk home together.</li>
+      <li>Bring the new dog in first on a leash to explore, after checking no food or toys are out. Bring the resident dog in on a leash once the newcomer is relaxed, and let the resident dog off leash first (ASPCA).</li>
+      <li>Each dog gets its own food bowl, crate, bed and toys. Feed far apart or in separate crates; never crate the dogs together, and avoid small spaces such as cars until they're fully comfortable.</li>
+      <li>Supervise every interaction, and watch for flashpoints in the first few weeks: arrivals, guests, yard trips, walks, meals and play.</li>
+      <li>Keep routines the same, and give each dog one-on-one time with you.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>The one-week rule:</strong> the ASPCA says not to leave the dogs alone together until they've had no tense or negative interactions for at least one week — some dogs need longer.</p>
 
-    <div class="post-cta">
-      <p>Introducing a new cat instead? → <a href="/tools/cat-introduction-timeline.html">Cat Introduction Timeline</a></p>
-    </div>
-    <div class="post-cta">
-      <p>Just brought a puppy home? → <a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a></p>
-    </div>
-    <div class="post-cta">
-      <p>Starting the critical socialization window too? → <a href="/checklists/puppy-socialization-checklist.html">Puppy Socialization Checklist</a></p>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Puppies and Adult Dogs</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A puppy will often lie down or roll over at the first meeting, and a well-socialized adult will investigate, then play or ignore it (ASPCA). Purdue's guide says a soft growl or grumble from the adult is an acceptable correction as long as there's no contact that hurts the puppy. Give the adult regular breaks, make sure the puppy gets enough exercise, and use a gate or crate when you can't supervise. Don't hold a small puppy up for the resident dog to greet — stand with your feet apart so the puppy can retreat between them.</p>
 
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">If the Dogs Fight</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Don't let them "fight it out." Interrupt it without putting your hands between them — the ASPCA lists a loud noise, water, an air horn or citronella spray, or carefully separating them by the leash or hind ends. Get veterinary care if needed and separate them for several hours. Then keep them completely apart with crates or secure gates and get help from a behavior professional before trying again.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: ASPCA, <em>Introducing Dogs to Each Other</em>; Purdue University Center for Canine Welfare Science, <em>Introducing Dogs to Other Dogs</em>. Full list on our <a href="/sources.html">sources page</a>.</p>
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why can't I just introduce two dogs at home?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The resident dog's home and yard are their territory, and introducing an unfamiliar dog there is one of the most common triggers for a defensive or aggressive reaction. Meeting first on neutral ground - somewhere neither dog has claimed, like a park or a quiet street - removes that territorial trigger and gives both dogs a fair first impression of each other.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Where should two dogs meet for the first time?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">On neutral ground. The ASPCA advises an open area such as a park rather than the home or yard, where the resident dog may feel territorial, with one person handling each dog on a loose leash. Introduce multiple resident dogs to the newcomer one at a time.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does it take to introduce two dogs?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no universal timeline. Some dogs settle into a comfortable routine within a week or two, especially puppy-to-adult introductions, while two confident adult dogs can take several weeks of gradual, supervised contact before unsupervised time together is appropriate. Dogs with a resource-guarding history need longer, sometimes 2-4 weeks of structured separation before full introduction resumes.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why do dogs meet side by side instead of face to face?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A head-on approach with direct eye contact reads as confrontational in dog body language, while walking parallel to each other is a naturally lower-tension way for two dogs to share space. Starting with a parallel walk - at a distance where both dogs can relax - and only allowing a brief angled sniff before returning to walking side by side keeps the whole interaction calmer.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Which dog should enter the house first?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The resident dog should go in first. It's their established territory, and letting them enter ahead of the newcomer respects that while reducing the sense that a stranger is invading their space uninvited.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if the dogs get into a fight during introduction?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Separate them safely without reaching between them, check both dogs for injuries, and give them at least 24 hours of complete separation before trying again. When you resume, go back to the parallel walk stage at a greater distance than before rather than picking up where you left off - restarting further back rebuilds calm associations instead of reinforcing the tension from the fight.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I introduce dogs myself if one has a history of aggression?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">No - if either dog has a known history of aggression toward other dogs, don't attempt the introduction alone. A certified professional dog trainer or behaviorist can assess each dog's thresholds, start at a much greater distance, and build a customized plan, which is much safer than guessing at what a dog with a bite history needs.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no fixed timeline. The ASPCA's benchmark is that dogs shouldn't be left alone together until they've gone at least one week with no tense or negative interactions — and some dogs need longer.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why walk the dogs side by side?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The ASPCA suggests keeping the first greeting brief and then walking the dogs together in parallel, which takes pressure off them. Purdue's Canine Welfare Science guide adds walking them in the same direction far enough apart that neither is fixated on the other.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Which dog should go into the house first?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The ASPCA suggests bringing the new dog in first on a leash to explore, after checking that no food or toys are left out, then bringing the resident dog in on a leash once the newcomer is relaxed, and letting the resident dog off leash first.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if the dogs fight during the introduction?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Interrupt it without putting your hands between them, get veterinary care if needed, and separate the dogs. The ASPCA advises keeping them completely apart with crates or secure gates and getting help from a behavior professional before trying again.</p>
   </div>
 </div>
 
@@ -307,90 +236,38 @@ function doPrintDit(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-
-function addDaysDit(date, days) {
-  const d = new Date(date);
-  d.setDate(d.getDate() + days);
-  return d;
-}
-
-function fmtDateDit(d) {
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-}
-
-// Ranges are typical starting windows for each stage, in days from the introduction start date.
-// Puppy introductions commonly move faster; adult-adult introductions are typically more cautious.
-const DOG_PACE = {
-  puppy: {
-    label: "Puppy joining an adult dog",
-    stages: [
-      { name: "Neutral Territory First Meeting", range: [0, 1], desc: "Both dogs on loose leashes, each handled by a separate person, in an unfamiliar open space like a park - never the resident dog's home or yard.", forward: "Both dogs are calm on a loose leash, showing curiosity rather than tension.", back: "Either dog is stiff, growling, or lunging - end the session and try again another day at a greater distance." },
-      { name: "Parallel Walk", range: [0, 3], desc: "Walk side by side with handlers between the dogs, starting around 20-30 feet apart and slowly closing the gap as both dogs relax.", forward: "Both dogs are walking calmly, largely ignoring each other rather than fixating.", back: "Pulling toward the other dog or refusing to walk - lengthen the distance again." },
-      { name: "Angled Approach & Brief Sniff", range: [1, 5], desc: "Let the dogs approach at an angle (never head-on) for a brief sniff, then redirect back into a side-by-side walk.", forward: "A calm, mutual sniff followed by an easy return to walking together.", back: "Stiff posture, growling, or snapping during the sniff - return to the parallel walk stage." },
-      { name: "Walk Home Together", range: [1, 7], desc: "Walk both dogs home together, then let the resident dog enter the house first, followed by the newcomer.", forward: "Both dogs stay relaxed on the walk home and at the door.", back: "Tension resurfaces near the home - do another neutral-territory session before trying again." },
-      { name: "Indoor Supervised Interaction", range: [1, 10], desc: "Supervise all interactions indoors. Feed and set up sleeping areas separately for at least the first week to avoid resource conflict.", forward: "Relaxed indifference or friendly interest by the first few days indoors.", back: "Guarding around food, toys, or beds - separate structurally for 2-4 weeks before trying again." },
-      { name: "Gradual Unsupervised Time", range: [7, 21], desc: "Start with short unsupervised periods in a safe, puppy-proofed space and extend gradually as trust builds.", forward: "Calm, comfortable coexistence during supervised time with no lingering tension.", back: "Any resource guarding or tension under supervision - unsupervised time isn't appropriate yet." }
-    ]
-  },
-  adult: {
-    label: "Two adult dogs",
-    stages: [
-      { name: "Neutral Territory First Meeting", range: [0, 1], desc: "Both dogs on loose leashes, each handled by a separate person, in an unfamiliar open space like a park - never the resident dog's home or yard.", forward: "Both dogs are calm on a loose leash, showing curiosity rather than tension.", back: "Either dog is stiff, growling, or lunging - end the session and try again another day at a greater distance." },
-      { name: "Parallel Walk", range: [0, 6], desc: "Walk side by side with handlers between the dogs, starting around 30-40 feet apart and slowly closing the gap over multiple sessions as both dogs relax.", forward: "Both dogs are walking calmly across repeated sessions, largely ignoring each other.", back: "Persistent pulling or fixation on the other dog - lengthen the distance and add more sessions." },
-      { name: "Angled Approach & Brief Sniff", range: [4, 12], desc: "Let the dogs approach at an angle (never head-on) for a brief sniff, then redirect back into a side-by-side walk.", forward: "A calm, mutual sniff followed by an easy return to walking together, repeated successfully more than once.", back: "Stiff posture, growling, or snapping during the sniff - return to the parallel walk stage at a greater distance." },
-      { name: "Walk Home Together", range: [7, 16], desc: "Walk both dogs home together, then let the resident dog enter the house first, followed by the newcomer.", forward: "Both dogs stay relaxed on the walk home and at the door across more than one attempt.", back: "Tension resurfaces near the home - do more neutral-territory sessions before trying again." },
-      { name: "Indoor Supervised Interaction", range: [10, 24], desc: "Supervise all interactions indoors. Feed and set up sleeping areas in fully separate spaces - plan for 1-2 weeks minimum, longer (2-4 weeks) for a dog with a resource-guarding history.", forward: "Relaxed indifference or friendly interest during supervised time, with no guarding around resources.", back: "Guarding around food, toys, or beds - separate structurally for 2-4 weeks before reintroducing supervised time." },
-      { name: "Gradual Unsupervised Time", range: [21, 45], desc: "Start with short unsupervised periods in a safe space and extend gradually as trust builds over repeated calm sessions.", forward: "Consistently calm, comfortable coexistence during supervised time with no lingering tension.", back: "Any resource guarding or tension under supervision - unsupervised time isn't appropriate yet." }
-    ]
-  }
-};
-
+(function () {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const t = new Date();
+  ['dit', 'dit-tense'].forEach(p => {
+    document.getElementById(p + '-month').innerHTML = months.map((m, i) => `<option value="${i}"${i === t.getMonth() ? ' selected' : ''}>${m}</option>`).join('');
+    let d = ''; for (let i = 1; i <= 31; i++) d += `<option value="${i}"${i === t.getDate() ? ' selected' : ''}>${i}</option>`;
+    document.getElementById(p + '-day').innerHTML = d;
+    let y = ''; for (let i = t.getFullYear() - 1; i <= t.getFullYear() + 1; i++) y += `<option value="${i}"${i === t.getFullYear() ? ' selected' : ''}>${i}</option>`;
+    document.getElementById(p + '-year').innerHTML = y;
+  });
+})();
+function readDate(p) { return new Date(+document.getElementById(p + '-year').value, +document.getElementById(p + '-month').value, +document.getElementById(p + '-day').value); }
+function addDaysDit(date, days) { const d = new Date(date); d.setDate(d.getDate() + days); return d; }
+function fmtDateDit(d) { return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
 function calculateDogIntro() {
-  const month = document.getElementById('dit-month').value;
-  const day = document.getElementById('dit-day').value;
-  const year = document.getElementById('dit-year').value;
-  const newDogType = document.getElementById('dit-new-dog-type').value;
-  const residentAge = document.getElementById('dit-resident-age').value;
-  const residentCount = document.getElementById('dit-resident-count').value;
-
-  if (!month || !day || !year) {
-    alert('Please enter the introduction start date.');
-    return;
-  }
-
-  const startDate = new Date(parseInt(year), parseInt(month), parseInt(day));
-  const pace = DOG_PACE[newDogType];
-
-  document.getElementById('dit-result-title').textContent = `Timeline: ${pace.label}`;
-
-  let note = "Every dog moves at their own pace - treat these as typical windows, not deadlines.";
-  if (residentAge === 'senior') {
-    note += " Senior resident dogs sometimes need extra time and more frequent breaks - watch for signs they're tired rather than tense.";
-  } else if (residentAge === 'puppy') {
-    note += " A young resident dog may adapt quickly, but can also get overstimulated fast during an energetic introduction - watch for signs they need a break.";
-  }
-  if (parseInt(residentCount) >= 2) {
-    note += " With multiple resident dogs already in the home, make sure every dog (not just the newcomer) has their own bowl, bed, and toys from day one.";
-  }
-  document.getElementById('dit-result-note').textContent = note;
-
-  const tl = document.getElementById('dit-timeline');
-  tl.innerHTML = pace.stages.map((stage, i) => {
-    const earliestDate = addDaysDit(startDate, stage.range[0]);
-    const latestDate = addDaysDit(startDate, stage.range[1]);
-    return `
-      <div style="display: flex; gap: 14px; margin-bottom: 16px;">
-        <div style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--cream-dark); color: var(--brown); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; margin-top: 2px;">${i + 1}</div>
-        <div style="flex: 1; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 14px 18px;">
-          <div style="font-weight: 600; color: var(--brown); font-size: 0.95rem;">${stage.name}</div>
-          <div style="font-size: 0.8rem; color: var(--brown-light); margin-bottom: 6px;">Typically starts around ${fmtDateDit(earliestDate)} - ${fmtDateDit(latestDate)} (day ${stage.range[0]}-${stage.range[1]})</div>
-          <p style="color: var(--brown-mid); font-size: 0.87rem; line-height: 1.55; margin-bottom: 6px;">${stage.desc}</p>
-          <p style="color: #2f7d4f; font-size: 0.83rem; line-height: 1.5; margin-bottom: 4px;"><strong>Move forward when:</strong> ${stage.forward}</p>
-          <p style="color: var(--orange); font-size: 0.83rem; line-height: 1.5;"><strong>Go back a stage if:</strong> ${stage.back}</p>
-        </div>
-      </div>`;
-  }).join('');
-
+  const meet = readDate('dit');
+  let tense = readDate('dit-tense');
+  if (tense < meet) tense = meet;
+  const puppy = document.getElementById('dit-new-dog-type').value === 'puppy';
+  const residents = +document.getElementById('dit-resident-count').value;
+  const history = document.getElementById('dit-history').value === 'yes';
+  const box = (title, body, warn) => `<div style="background: ${warn ? '#FFF7F3' : 'var(--white)'}; border: 1.5px solid ${warn ? 'var(--orange)' : 'var(--border)'}; border-radius: var(--radius); padding: 12px 16px; margin-bottom: 12px;"><div style="font-weight: 600; color: var(--brown); font-size: 0.92rem; margin-bottom: 4px;">${title}</div><div style="color: var(--brown-mid); font-size: 0.86rem; line-height: 1.6;">${body}</div></div>`;
+  let html = '';
+  if (history) html += box('Get professional help first', 'With a history of fighting, the ASPCA recommends consulting a veterinary behaviorist or certified professional dog trainer before the introduction.', true);
+  html += box(`${fmtDateDit(meet)} — first meeting`, `Neutral ground, one helper per dog, loose leashes, a brief greeting, then a parallel walk.${residents > 1 ? ' Introduce each resident dog to the newcomer separately first.' : ''} Put away food, chews, toys and beds at home beforehand.`);
+  html += box('Every day until then', 'Supervise all interactions. Separate food bowls, crates and beds; feed far apart or in separate crates; never crate the dogs together.' + (puppy ? ' Give the adult dog breaks from the puppy, and gate or crate the puppy when you can\'t watch.' : ''));
+  const alone = addDaysDit(tense, 7);
+  html += box(`Earliest unsupervised time: ${fmtDateDit(alone)}`, `That's one week after ${tense.getTime() === meet.getTime() ? 'the first meeting' : 'the last tense moment'}, under the ASPCA's rule of no tense or negative interactions for at least one week. Any new tense moment restarts the week — enter its date above and recalculate. Some dogs need longer.`);
+  html += box('If they fight', 'Interrupt without putting your hands between them, separate them, and get a behavior professional\'s help before trying again.');
+  document.getElementById('dit-result-title').textContent = puppy ? 'Puppy joining your dog' + (residents > 1 ? 's' : '') : 'New adult dog';
+  document.getElementById('dit-result-note').textContent = 'Based on the ASPCA\'s introduction guide. Move at your dogs\' pace, not the calendar\'s.';
+  document.getElementById('dit-timeline').innerHTML = html;
   document.getElementById('dit-result').classList.add('show');
   document.getElementById('dit-pdf-btn').style.display = 'block';
   document.getElementById('dit-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });

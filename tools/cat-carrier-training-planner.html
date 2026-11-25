@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Cat Carrier Training Planner — Reverse-Calculated Countdown to Vet Day
-description: Enter your vet appointment date and your cat's current carrier reaction to get a reverse-calculated countdown plan for a calmer carrier experience and vet visit. Free and instant.
+description: "Enter your cat's vet appointment date for a countdown built on the AAFP's six carrier training steps, plus carrier choice, pheromone timing on the day and how to bring your cat home calmly."
 permalink: /tools/cat-carrier-training-planner.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ permalink: /tools/cat-carrier-training-planner.html
   "@type": "WebApplication",
   "name": "Cat Carrier Training Planner",
   "url": "https://petpawcalc.com/tools/cat-carrier-training-planner.html",
-  "description": "Enter a vet appointment date and a cat's current carrier reaction to get a reverse-calculated countdown plan for carrier desensitization before the visit.",
+  "description": "Builds a countdown to a cat's vet visit from the AAFP's six carrier training steps, with carrier advice, pheromone timing and bringing the cat home.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -35,47 +36,39 @@ permalink: /tools/cat-carrier-training-planner.html
       "name": "Why does my cat panic as soon as they see the carrier?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most cats, the carrier only ever appears right before something stressful — a car ride and a vet visit — so they've learned to associate it with that outcome rather than with anything neutral. Keeping the carrier out permanently as ordinary furniture, instead of stored away until the next appointment, is the single biggest change that breaks this association over time."
+        "text": "Often because the carrier only appears before a car ride and a vet visit. The AAFP suggests keeping it out where your cat likes to spend time, with a familiar blanket and treats, and VCA suggests leaving it out all the time so your cat can nap and eat in it."
       }
     },
     {
       "@type": "Question",
-      "name": "Does the type of carrier matter for reducing stress?",
+      "name": "Does the type of carrier matter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — a top-loading carrier, or one where the top half detaches, is generally easier on a stressed cat than a front-loading design. It lets you lift your cat in and out from above rather than dragging them out through a small front door, and if the top is removable, your vet may even be able to examine your cat while they stay in the familiar bottom half."
+        "text": "Yes. The AAFP recommends a hard plastic carrier with a top that comes off, so the vet can examine your cat while it stays in the bottom half. Soft carriers need a large top opening and ideally two end doors. Avoid backpack-style carriers, and never travel with only a harness and leash."
       }
     },
     {
       "@type": "Question",
-      "name": "How far in advance should I use Feliway or other calming pheromones before a vet visit?",
+      "name": "How far in advance should I use a calming pheromone spray?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Spray it inside the carrier at least 15-30 minutes before you plan to put your cat inside, not right as you're loading them in. The product is alcohol-based, and that carrier scent needs time to evaporate before the calming pheromone signal is active — using it too close to departure means your cat is exposed to the alcohol smell instead of the intended effect."
+        "text": "The AAFP says calming pheromone products can be sprayed on blankets 15 minutes to 4 hours before travel, keeping your cat away while you spray. VCA says to spray 15 minutes before your cat goes into the carrier."
       }
     },
     {
       "@type": "Question",
-      "name": "What if my vet appointment is in a few days and there's no time for full carrier training?",
+      "name": "What if the vet visit is only a few days away?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Do what you can: spray pheromone spray inside the carrier at least 15-30 minutes ahead, place a familiar-smelling blanket or piece of your clothing inside, and consider calling your vet ahead of time to ask about a pre-visit anti-anxiety medication if your cat has a history of extreme carrier stress. These are stopgaps for one visit, not a substitute for building lasting comfort with the carrier afterward."
+        "text": "Leave the carrier out now with a familiar blanket and treats, and work through as many of the AAFP's six steps as your cat is comfortable with. If your cat is very stressed, ask your vet about medication before the visit — the AAFP says gabapentin is the one most commonly used."
       }
     },
     {
       "@type": "Question",
-      "name": "Can my own stress make my cat more anxious about the carrier or vet visit?",
+      "name": "How do I bring my cat home to my other cats after the vet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — cats are sensitive to their owner's emotional state, and a tense, rushed approach to loading the carrier can add to your cat's stress on top of whatever they're already feeling. Staying calm, moving slowly and predictably, and not showing frustration if a session doesn't go well all help keep sessions from escalating."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Fear Free certified veterinary clinic?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fear Free is a certification program that trains veterinary staff in specific low-stress handling techniques — gentle restraint, treat-based distraction, pheromone diffusers, and adjusted lighting among them. If carrier and vet visits are consistently difficult for your cat, asking whether a nearby clinic is Fear Free certified, or has cat-only appointment hours, can make a meaningful difference beyond what carrier training alone accomplishes."
+        "text": "The AAFP suggests keeping the returning cat in the closed carrier at first and watching the other cats' reactions. If there's hissing, give it a separate room with food, water, litter and a bed, swap bedding, and allow contact slowly after a few hours — longer after surgery, as your vet advises."
       }
     }
   ]
@@ -85,47 +78,32 @@ permalink: /tools/cat-carrier-training-planner.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🐱 Cat Carrier Training Planner</h1>
-    <p>Enter your appointment date and your cat's current carrier reaction to get a reverse-calculated countdown — what to do and when, working backward from vet day.</p>
+    <p>Enter your vet appointment date to get a countdown built on the American Association of Feline Practitioners' carrier training steps — what to start now, what to do on the day, and how to bring your cat home calmly.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label>Vet Appointment (or Target) Date</label>
+      <label>Vet appointment date</label>
       <div style="display: flex; gap: 8px;">
-        <select id="cct-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Month</option>
-          <option value="0">January</option><option value="1">February</option>
-          <option value="2">March</option><option value="3">April</option>
-          <option value="4">May</option><option value="5">June</option>
-          <option value="6">July</option><option value="7">August</option>
-          <option value="8">September</option><option value="9">October</option>
-          <option value="10">November</option><option value="11">December</option>
-        </select>
-        <select id="cct-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Day</option>
-          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
-        </select>
-        <select id="cct-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
-          <option value="">Year</option>
-          <option value="2025">2025</option>
-          <option value="2026">2026</option>
-          <option value="2027">2027</option>
-        </select>
+        <select id="cct-month" style="flex:2; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="cct-day" style="flex:1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
+        <select id="cct-year" style="flex:1.5; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);"></select>
       </div>
     </div>
     <div class="form-group">
-      <label for="cct-reaction">Current Carrier Reaction</label>
+      <label for="cct-reaction">How does your cat react to the carrier now?</label>
       <select id="cct-reaction">
-        <option value="none">No reaction / mild curiosity</option>
-        <option value="wary" selected>Wary — hides or resists but no full panic</option>
-        <option value="panics">Panics — bolts, scratches, or fights hard</option>
+        <option value="none">Calm, or curious</option>
+        <option value="wary" selected>Wary — hides or resists</option>
+        <option value="panics">Panics — bolts, scratches or fights</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="cct-carrier-type">Carrier Type</label>
+      <label for="cct-carrier-type">Your carrier</label>
       <select id="cct-carrier-type">
-        <option value="top">Top-loading or removable-top</option>
-        <option value="front">Front-loading only</option>
+        <option value="top">Hard carrier with a removable top</option>
+        <option value="front">Front door only</option>
+        <option value="soft">Soft carrier</option>
       </select>
     </div>
     <button class="btn-calculate" onclick="calculateCarrierPlan()">Show My Countdown Plan →</button>
@@ -143,78 +121,54 @@ permalink: /tools/cat-carrier-training-planner.html
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This tool provides general behavioral guidance and is not a substitute for advice from your veterinarian, especially for cats with a history of extreme carrier stress. Medications mentioned below are prescription options to discuss with your vet, not instructions for use.
+    ⚕️ Ask your veterinarian before using any calming medication or supplement. If your cat vomits or drools on car trips, ask about an anti-nausea medication.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why the Carrier Type Matters</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A top-loading carrier, or one with a top half that detaches, is generally much easier on a stressed cat than a standard front-loading design. Instead of dragging a bracing, resistant cat out through a small front opening, you can lift them out from above with far less struggle. If the top is removable, some vets can even examine your cat while they stay curled in the familiar bottom half — worth asking about if your cat finds handling especially stressful.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Right Carrier</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>The AAFP recommends a <strong>hard plastic carrier with a top that comes off</strong>, so the vet can examine your cat in the bottom half. VCA adds that removing the top lets you reach your cat while it stays where it feels secure.</li>
+      <li>Soft carriers need a large top opening and one or, better, two end doors that don't collapse when open.</li>
+      <li>Avoid backpack-style carriers, and never travel with only a harness and leash.</li>
+      <li>Each cat needs its own carrier, even cats that get along.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Dog Car Desensitization vs. Cat Carrier Training</h2>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);"></th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Dogs (car)</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Cats (carrier)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Main trigger</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Often the vehicle and motion itself</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Usually the carrier appearing at all, before the car is even involved</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Physical component</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">True motion sickness is common, especially in puppies</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Rare — carrier stress in cats is almost always anxiety-driven, not motion-related</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Typical timeline</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Weeks to months, ongoing process</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Can meaningfully improve in as little as 2 weeks of consistent short sessions</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Make the Carrier Ordinary</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Keep the carrier where your cat likes to spend time — not in the garage or a closet — with a familiar blanket and some treats inside (AAFP). VCA suggests leaving it out all the time so your cat naps and eats in it.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Short on Time? Quick Fallbacks for a Sudden Appointment</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If your appointment is only a day or two away, full desensitization isn't realistic — but a few things still help:</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Spray pheromone spray inside the carrier at least 15-30 minutes ahead of loading.</strong> The product is alcohol-based, and that scent needs time to evaporate before the calming effect is active.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Add a familiar-smelling blanket or a worn piece of your clothing</strong> to the carrier for a comforting, recognizable scent.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Call your vet ahead of time</strong> if your cat has a history of extreme carrier or handling stress — some vets can prescribe a pre-visit anti-anxiety medication for cats who need it. These are stopgaps to get through one visit, not a substitute for building lasting comfort with the carrier once things settle down.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The AAFP's Six Training Steps</h2>
+    <ol style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Encourage your cat to lie on a security blanket.</li>
+      <li>Put the blanket in the bottom of the carrier.</li>
+      <li>Add the top and encourage calm behaviour.</li>
+      <li>Encourage your cat to stay inside with the door closed.</li>
+      <li>Gradually increase the time in the closed carrier.</li>
+      <li>Lift the carrier from the bottom — never just by the handle — and help your cat get used to being carried.</li>
+    </ol>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Spend enough time on each step before moving to the next. The AAFP's Cat Friendly site has videos of each step.</p>
 
-    <div class="post-cta">
-      <p>Traveling with a dog instead? → <a href="/tools/dog-car-anxiety-desensitization-planner.html">Dog Car Anxiety Desensitization Planner</a></p>
-    </div>
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Due for a wellness exam? → <a href="/tools/cat-vet-visit-scheduler.html">Cat Vet Visit Scheduler</a></p>
-    </div>
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Bringing home a second cat? → <a href="/tools/cat-introduction-timeline.html">Cat Introduction Timeline</a></p>
-    </div>
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Just brought a kitten home? → <a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a></p>
-    </div>
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Building broader socialization skills too? → <a href="/checklists/kitten-socialization-checklist.html">Kitten Socialization Checklist</a></p>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">On the Day</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Spray a calming pheromone on the blanket 15 minutes to 4 hours before travel, with your cat out of the room (AAFP).</li>
+      <li>Ideally your cat walks in by itself for a treat or toy. If not, place it in gently and calmly; VCA suggests removing the top, laying your cat on its blanket and putting the top back on.</li>
+      <li>Cover the carrier with a towel before carrying it to the car, and secure it on the floor between the front and back seats.</li>
+      <li>Keep the car ventilated and quiet, and don't open the carrier during the trip, even if your cat cries.</li>
+    </ul>
 
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Bringing Your Cat Home</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Keep the returning cat in the closed carrier at first and watch how the other cats react. If there's hissing, give it a separate room with food, water, a litter box and a bed, and swap bedding between the cats. Allow contact slowly after a few hours — longer after surgery, as your vet advises (AAFP).</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: American Association of Feline Practitioners, <em>Getting Your Cat to the Veterinarian</em>; VCA Hospitals, <em>Preparing Your Cat for a Trip to the Veterinarian</em>. Full list on our <a href="/sources.html">sources page</a>.</p>
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my cat panic as soon as they see the carrier?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">For most cats, the carrier only ever appears right before something stressful — a car ride and a vet visit — so they've learned to associate it with that outcome rather than with anything neutral. Keeping the carrier out permanently as ordinary furniture, instead of stored away until the next appointment, is the single biggest change that breaks this association over time.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does the type of carrier matter for reducing stress?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — a top-loading carrier, or one where the top half detaches, is generally easier on a stressed cat than a front-loading design. It lets you lift your cat in and out from above rather than dragging them out through a small front door, and if the top is removable, your vet may even be able to examine your cat while they stay in the familiar bottom half.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How far in advance should I use Feliway or other calming pheromones before a vet visit?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Spray it inside the carrier at least 15-30 minutes before you plan to put your cat inside, not right as you're loading them in. The product is alcohol-based, and that carrier scent needs time to evaporate before the calming pheromone signal is active — using it too close to departure means your cat is exposed to the alcohol smell instead of the intended effect.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if my vet appointment is in a few days and there's no time for full carrier training?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Do what you can: spray pheromone spray inside the carrier at least 15-30 minutes ahead, place a familiar-smelling blanket or piece of your clothing inside, and consider calling your vet ahead of time to ask about a pre-visit anti-anxiety medication if your cat has a history of extreme carrier stress. These are stopgaps for one visit, not a substitute for building lasting comfort with the carrier afterward.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can my own stress make my cat more anxious about the carrier or vet visit?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes — cats are sensitive to their owner's emotional state, and a tense, rushed approach to loading the carrier can add to your cat's stress on top of whatever they're already feeling. Staying calm, moving slowly and predictably, and not showing frustration if a session doesn't go well all help keep sessions from escalating.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is a Fear Free certified veterinary clinic?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Fear Free is a certification program that trains veterinary staff in specific low-stress handling techniques — gentle restraint, treat-based distraction, pheromone diffusers, and adjusted lighting among them. If carrier and vet visits are consistently difficult for your cat, asking whether a nearby clinic is Fear Free certified, or has cat-only appointment hours, can make a meaningful difference beyond what carrier training alone accomplishes.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often because the carrier only appears before a car ride and a vet visit. The AAFP suggests keeping it out where your cat likes to spend time, with a familiar blanket and treats, and VCA suggests leaving it out all the time so your cat can nap and eat in it.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does the type of carrier matter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes. The AAFP recommends a hard plastic carrier with a top that comes off, so the vet can examine your cat while it stays in the bottom half. Soft carriers need a large top opening and ideally two end doors. Avoid backpack-style carriers, and never travel with only a harness and leash.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How far in advance should I use a calming pheromone spray?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The AAFP says calming pheromone products can be sprayed on blankets 15 minutes to 4 hours before travel, keeping your cat away while you spray. VCA says to spray 15 minutes before your cat goes into the carrier.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What if the vet visit is only a few days away?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Leave the carrier out now with a familiar blanket and treats, and work through as many of the AAFP's six steps as your cat is comfortable with. If your cat is very stressed, ask your vet about medication before the visit — the AAFP says gabapentin is the one most commonly used.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I bring my cat home to my other cats after the vet?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The AAFP suggests keeping the returning cat in the closed carrier at first and watching the other cats' reactions. If there's hissing, give it a separate room with food, water, litter and a bed, swap bedding, and allow contact slowly after a few hours — longer after surgery, as your vet advises.</p>
   </div>
 </div>
 
@@ -271,72 +225,36 @@ function doPrintCct(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-
-function subtractDaysCct(date, days) {
-  const d = new Date(date);
-  d.setDate(d.getDate() - days);
-  return d;
-}
-
-function fmtDateCct(d) {
-  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-}
-
-// Offsets are days before the appointment date, at the "wary" baseline (multiplier 1.0).
-const CCT_BASE_STAGES = [
-  { name: "Make the Carrier Furniture", offsetDays: 14, desc: "Leave the carrier out permanently in a room your cat spends time in, doors and zippers open, with a soft blanket inside. It should stop looking like a rare, ominous object." },
-  { name: "Feed Meals In or Near the Carrier", offsetDays: 11, desc: "Start placing food bowls right next to the carrier, then gradually just inside the doorway, so the carrier becomes associated with something good." },
-  { name: "Reward Voluntary Entry", offsetDays: 8, desc: "Toss treats or toys just inside the carrier and calmly praise or reward any voluntary entry — never push or force your cat in at this stage." },
-  { name: "Close the Door Briefly", offsetDays: 5, desc: "Once your cat enters calmly and comfortably, close the door for a few seconds at a time, rewarding calm behavior before opening it again." },
-  { name: "Lift and Carry a Few Steps", offsetDays: 3, desc: "With the door closed, lift the carrier and carry it a short distance around the house, then set it down and let your cat back out calmly." },
-  { name: "Into the Car, Engine Off", offsetDays: 2, desc: "Carry your cat in the carrier out to the car and sit for a few minutes without starting the engine, then head back inside." },
-  { name: "Short Practice Drive", offsetDays: 1, desc: "If time allows, take one short practice drive (a few minutes) before the actual appointment, ending with your cat safely back home and rewarded." }
-];
-
-const CCT_MULTIPLIER = { none: 0.4, wary: 1.0, panics: 1.8 };
-
+(function () {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const t = new Date(); const a = new Date(t); a.setDate(a.getDate() + 14);
+  document.getElementById('cct-month').innerHTML = months.map((m, i) => `<option value="${i}"${i === a.getMonth() ? ' selected' : ''}>${m}</option>`).join('');
+  let d = ''; for (let i = 1; i <= 31; i++) d += `<option value="${i}"${i === a.getDate() ? ' selected' : ''}>${i}</option>`;
+  document.getElementById('cct-day').innerHTML = d;
+  let y = ''; for (let i = t.getFullYear(); i <= t.getFullYear() + 1; i++) y += `<option value="${i}"${i === a.getFullYear() ? ' selected' : ''}>${i}</option>`;
+  document.getElementById('cct-year').innerHTML = y;
+})();
+function fmtDateCct(d) { return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }); }
 function calculateCarrierPlan() {
-  const month = document.getElementById('cct-month').value;
-  const day = document.getElementById('cct-day').value;
-  const year = document.getElementById('cct-year').value;
+  const appt = new Date(+document.getElementById('cct-year').value, +document.getElementById('cct-month').value, +document.getElementById('cct-day').value);
   const reaction = document.getElementById('cct-reaction').value;
-  const carrierType = document.getElementById('cct-carrier-type').value;
-
-  if (!month || !day || !year) {
-    alert('Please enter your vet appointment or target date.');
-    return;
-  }
-
-  const appointmentDate = new Date(parseInt(year), parseInt(month), parseInt(day));
-  const multiplier = CCT_MULTIPLIER[reaction];
-
-  const reactionLabel = reaction === 'none' ? 'Quick Prep Plan' : reaction === 'panics' ? 'Extended Plan for a Fearful Cat' : 'Standard 2-Week Plan';
-  document.getElementById('cct-result-title').textContent = reactionLabel;
-
-  let note = "These are typical windows — go slower if your cat shows any stress signs at a stage, faster if they're consistently relaxed.";
-  if (carrierType === 'front') {
-    note += " Since you have a front-loading carrier, consider a top-loading or removable-top style if carrier stress is significant — it makes several of these stages meaningfully easier.";
-  }
-  if (reaction === 'panics') {
-    note += " With a history of panic, consider starting well before this appointment next time, and ask your vet about a pre-visit anti-anxiety option for this one.";
-  }
-  document.getElementById('cct-result-note').textContent = note;
-
-  const tl = document.getElementById('cct-timeline');
-  tl.innerHTML = CCT_BASE_STAGES.map((stage, i) => {
-    const offsetDay = Math.max(0, Math.round(stage.offsetDays * multiplier));
-    const date = subtractDaysCct(appointmentDate, offsetDay);
-    return `
-      <div style="display: flex; gap: 14px; margin-bottom: 16px;">
-        <div style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--cream-dark); color: var(--brown); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; margin-top: 2px;">${i + 1}</div>
-        <div style="flex: 1; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 14px 18px;">
-          <div style="font-weight: 600; color: var(--brown); font-size: 0.95rem;">${stage.name}</div>
-          <div style="font-size: 0.8rem; color: var(--brown-light); margin-bottom: 6px;">Around ${fmtDateCct(date)} (${offsetDay === 0 ? 'day of' : offsetDay + ' day' + (offsetDay > 1 ? 's' : '') + ' before'})</div>
-          <p style="color: var(--brown-mid); font-size: 0.87rem; line-height: 1.55;">${stage.desc}</p>
-        </div>
-      </div>`;
-  }).join('');
-
+  const type = document.getElementById('cct-carrier-type').value;
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const days = Math.round((appt - today) / 86400000);
+  if (days < 0) { alert('That appointment date has already passed.'); return; }
+  const box = (title, body, hl) => `<div style="background: ${hl ? '#FFF7F3' : 'var(--white)'}; border: 1.5px solid ${hl ? 'var(--orange)' : 'var(--border)'}; border-radius: var(--radius); padding: 12px 16px; margin-bottom: 12px;"><div style="font-weight: 600; color: var(--brown); font-size: 0.92rem; margin-bottom: 4px;">${title}</div><div style="color: var(--brown-mid); font-size: 0.86rem; line-height: 1.6;">${body}</div></div>`;
+  let html = '';
+  if (type === 'front') html += box('Consider a different carrier', 'The AAFP recommends a hard carrier with a removable top, so your cat can be examined in the bottom half instead of being pulled out through the door.', true);
+  if (type === 'soft') html += box('Check your soft carrier', 'The AAFP says soft carriers need a large top opening and ideally two end doors that don\'t collapse when open. Avoid backpack styles.', true);
+  html += box(`Today (${fmtDateCct(today)})`, 'Put the carrier where your cat likes to spend time, with a familiar blanket and a few treats inside, and leave it there for good.');
+  html += box(`From now until ${fmtDateCct(appt)} — ${days} day${days === 1 ? '' : 's'}`, 'Work through the AAFP\'s six steps at your cat\'s pace: lie on a security blanket → blanket in the carrier base → add the top → stay in with the door closed → longer in the closed carrier → being lifted and carried from the bottom. Spend enough time on each step before moving on.');
+  if (reaction === 'panics') html += box('When you book, ask about medication', 'With a cat that panics, ask your vet about medication before travel. The AAFP says gabapentin is the one most commonly used to reduce stress.', true);
+  else if (reaction === 'wary') html += box('If your cat is still stressed', 'Ask your vet about medication before travel — the AAFP says gabapentin is most commonly used.');
+  html += box(`${fmtDateCct(appt)} — vet day`, 'Spray a calming pheromone on the blanket 15 minutes to 4 hours before you leave. Let your cat walk in, or place it in gently; cover the carrier with a towel, secure it on the car floor between the front and back seats, and keep the car quiet.');
+  html += box('Back home', 'Keep your cat in the closed carrier at first and watch the other cats. If there\'s hissing, use a separate room and swap bedding; allow contact after a few hours, or longer after surgery.');
+  document.getElementById('cct-result-title').textContent = `${days} day${days === 1 ? '' : 's'} until the visit`;
+  document.getElementById('cct-result-note').textContent = 'Based on the AAFP\'s guide to getting your cat to the vet. There\'s no fixed time per step — go at your cat\'s pace.';
+  document.getElementById('cct-timeline').innerHTML = html;
   document.getElementById('cct-result').classList.add('show');
   document.getElementById('cct-pdf-btn').style.display = 'block';
   document.getElementById('cct-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
