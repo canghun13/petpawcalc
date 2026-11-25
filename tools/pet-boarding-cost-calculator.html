@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Pet Boarding Cost Calculator — Kennel, Pet Hotel & Sitter Rates
-description: Estimate what boarding your dog or cat will actually cost by facility type, length of stay, and add-ons like daycare, grooming, or medication. Free and instant.
+description: Estimate the cost of a trip away for your dog or cat — boarding in a sitter's home, a house sitter, drop-in visits or a kennel quote — using Rover's national average rates or your own, plus extras and holiday surcharges.
 permalink: /tools/pet-boarding-cost-calculator.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ permalink: /tools/pet-boarding-cost-calculator.html
   "@type": "WebApplication",
   "name": "Pet Boarding Cost Calculator",
   "url": "https://petpawcalc.com/tools/pet-boarding-cost-calculator.html",
-  "description": "Estimate the total cost of boarding a dog or cat based on facility type, number of nights, and common add-ons.",
+  "description": "Estimate the total cost of boarding, house sitting or drop-in visits for a dog or cat, using national average rates or your own quotes.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -35,23 +36,15 @@ permalink: /tools/pet-boarding-cost-calculator.html
       "name": "How much does dog boarding cost per night?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A basic kennel runs $25-$60/night, a pet hotel with private suites $55-$150/night, a luxury resort $100-$200+/night, and an in-home sitter (staying at your place or theirs) $45-$120/night. Add-ons like daycare, extra walks, grooming, or medication administration typically add $10-$40/day on top of the base rate."
+        "text": "On Rover, the national average for boarding a dog in a sitter's home was $49.01 a night as of September 2025, and for a house sitter staying in your home $55.45 a night. Kennels and pet hotels set their own prices, which vary widely by area and by the type of room, so get a written quote."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does cat boarding cost?",
+      "name": "Is a drop-in sitter cheaper than boarding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cat boarding is generally cheaper than dog boarding: a standard cattery or kennel runs $20-$45/night, and a luxury cat boarding suite $45-$60+/night. An in-home cat sitter who visits once or twice daily (rather than overnight boarding) often costs less overall for cats, since most cats do better staying in their own territory."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a pet sitter cheaper than boarding?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the visit frequency. A drop-in sitter visiting once or twice a day ($20-$35/visit) is usually cheaper than overnight boarding for cats or low-maintenance pets. An overnight in-home sitter who stays at your house costs about the same as mid-tier boarding ($45-$120/night) but avoids the stress of a new environment, which many pet parents consider worth the similar price."
+        "text": "Often, if your pet only needs one or two visits a day. Rover's national average for a drop-in visit was $21.80 as of September 2025, so two visits a day comes to about $44 — a little less than its average for overnight boarding. Pets that need company overnight, medication or several walks a day may need boarding or a house sitter instead."
       }
     },
     {
@@ -59,23 +52,7 @@ permalink: /tools/pet-boarding-cost-calculator.html
       "name": "Do boarding facilities require vaccinations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, virtually all US boarding facilities require proof of core vaccines — rabies and DHPP for dogs (plus bordetella/kennel cough at most facilities), and rabies and FVRCP for cats — usually completed at least a week before check-in. Check your pet's status with the vaccination schedule calculator before booking to avoid a last-minute vet visit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does boarding cost more during holidays?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Demand spikes around major holidays (Thanksgiving, Christmas/New Year, July 4th, spring break) while facility capacity stays fixed, so most boarding facilities charge a holiday premium — typically 15-30% above standard rates — and popular facilities book up weeks in advance. Booking early is the most reliable way to avoid both the premium and being turned away."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much do kennels charge for administering medication?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most boarding facilities charge a medication administration fee on top of the nightly rate, commonly a few dollars per dose or per day, with insulin injections and other more involved treatments priced higher. Some facilities decline pets needing complex medical care altogether, and others require a veterinary practice rather than a boarding kennel. Ask before booking rather than at drop-off, bring medication in its original labelled packaging, and confirm in writing what happens if a dose is missed."
+        "text": "Most do. Kennels and boarding facilities commonly ask for proof of rabies and core vaccines, and many dog facilities also ask for Bordetella (kennel cough), which the AAHA guidelines recommend based on a dog's exposure to other dogs. Ask each facility for its list well before you book, because some vaccines need time to take effect."
       }
     },
     {
@@ -83,7 +60,7 @@ permalink: /tools/pet-boarding-cost-calculator.html
       "name": "How do boarding facilities count days — by night or by calendar day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This is the most common source of surprise on a boarding bill, and practice varies. Some kennels charge per night, some per calendar day regardless of the hour, and many apply a late-pickup fee past a set checkout time. A stay from Sunday morning to Tuesday afternoon can therefore be billed as two nights or as three days depending on the facility. Ask specifically how days are counted and what the checkout deadline is — those two questions resolve most disputed invoices."
+        "text": "Practice varies. Some charge per night, some per calendar day regardless of the hour, and some add a fee for late pickup. The same stay can therefore be billed as two nights or three days. Ask how days are counted and what the checkout time is before you book."
       }
     }
   ]
@@ -93,45 +70,46 @@ permalink: /tools/pet-boarding-cost-calculator.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🧳 Pet Boarding Cost Calculator</h1>
-    <p>Estimate what boarding your dog or cat will actually cost, based on facility type, length of stay, and common add-ons.</p>
+    <p>Work out what your trip away will cost your pet's care. Use Rover's national average rates as a starting point, or enter the quote you've been given.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label for="pb-species">Pet Type</label>
-      <select id="pb-species">
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
+      <label for="pb-option">Type of care</label>
+      <select id="pb-option" onchange="pbToggle()">
+        <option value="boarding">Boarding in a sitter's home (Rover average $49.01/night)</option>
+        <option value="house">House sitter in your home (Rover average $55.45/night)</option>
+        <option value="dropin">Drop-in visits (Rover average $21.80/visit)</option>
+        <option value="custom">Kennel, pet hotel or other quote</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="pb-facility">Facility Type</label>
-      <select id="pb-facility">
-        <option value="kennel">Basic kennel</option>
-        <option value="hotel">Pet hotel (private suite)</option>
-        <option value="luxury">Luxury resort</option>
-        <option value="sitter">In-home sitter (overnight)</option>
-      </select>
+      <label for="pb-nights">Number of nights away</label>
+      <input type="number" id="pb-nights" min="1" max="90" step="1" placeholder="e.g. 7">
+    </div>
+    <div class="form-group" id="pb-visits-group" style="display:none;">
+      <label for="pb-visits">Visits per day</label>
+      <input type="number" id="pb-visits" min="1" max="4" step="1" value="2">
     </div>
     <div class="form-group">
-      <label for="pb-nights">Number of Nights</label>
-      <input type="number" id="pb-nights" min="1" max="60" step="1" placeholder="e.g. 7">
+      <label for="pb-rate">Rate per night or per visit ($) — leave as is to use the average</label>
+      <input type="number" id="pb-rate" min="0" step="0.01" value="49.01">
     </div>
     <div class="form-group">
-      <label for="pb-addons">Add-ons (optional)</label>
-      <select id="pb-addons">
-        <option value="0">None</option>
-        <option value="15">Daily daycare / extra playtime (~$15/day)</option>
-        <option value="10">Medication administration (~$10/day)</option>
-        <option value="35">Daycare + medication + grooming before pickup</option>
-      </select>
+      <label for="pb-pets">Number of pets</label>
+      <input type="number" id="pb-pets" min="1" max="6" step="1" value="1">
     </div>
     <div class="form-group">
-      <label for="pb-holiday">Travel Dates</label>
-      <select id="pb-holiday">
-        <option value="no">Regular dates</option>
-        <option value="yes">Major holiday (Thanksgiving, Christmas/New Year, July 4th, spring break)</option>
-      </select>
+      <label for="pb-extra-pet">Extra-pet rate, % of the first pet's rate</label>
+      <input type="number" id="pb-extra-pet" min="0" max="100" step="5" value="100">
+    </div>
+    <div class="form-group">
+      <label for="pb-addons">Extras per day ($) — medication, extra walks, playtime</label>
+      <input type="number" id="pb-addons" min="0" step="1" value="0">
+    </div>
+    <div class="form-group">
+      <label for="pb-holiday">Holiday surcharge (%) — if your quote includes one</label>
+      <input type="number" id="pb-holiday" min="0" max="100" step="1" value="0">
     </div>
     <button class="btn-calculate" onclick="calculateBoarding()">Estimate Total Cost →</button>
 
@@ -147,25 +125,35 @@ permalink: /tools/pet-boarding-cost-calculator.html
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ Rates vary significantly by region and individual facility — treat this as a planning estimate, and always confirm the exact quote and vaccination requirements directly with the facility before booking.
+    ⚕️ Average rates are national figures and local prices vary widely. Confirm the exact quote, how days are counted and the vaccination requirements with the provider before booking.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Boarding Options Compared</h2>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What the Averages Are</h2>
     <div class="table-wrapper">
       <table>
         <thead>
-          <tr><th>Option</th><th>Typical rate</th><th>Best for</th></tr>
+          <tr><th>Option</th><th>National average</th><th>Source</th></tr>
         </thead>
         <tbody>
-          <tr><td>Basic kennel</td><td>$25–$60/night (dog), $20–$45/night (cat)</td><td>Budget-conscious, social pets who don't mind a group setting</td></tr>
-          <tr><td>Pet hotel</td><td>$55–$150/night</td><td>Private suites, webcams, more individual attention</td></tr>
-          <tr><td>Luxury resort</td><td>$100–$200+/night</td><td>Pools, spa add-ons, premium everything</td></tr>
-          <tr><td>In-home sitter</td><td>$45–$120/night</td><td>Anxious, senior, or multi-pet households; avoids new-environment stress</td></tr>
+          <tr><td>Boarding in a sitter's home</td><td>$49.01 per night</td><td>Rover, Sept 2025</td></tr>
+          <tr><td>House sitting in your home</td><td>$55.45 per night</td><td>Rover, Sept 2025</td></tr>
+          <tr><td>Drop-in visit</td><td>$21.80 per visit</td><td>Rover, Sept 2025</td></tr>
+          <tr><td>Kennel or boarding facility</td><td>No current national average; the ASPCA's 2021 cost table used $25 a day</td><td>ASPCA (2021)</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For cats specifically, a drop-in sitter who visits once or twice daily is often the better (and cheaper) option over any overnight boarding — most cats are more comfortable staying in their own territory than adjusting to a new one for a short trip.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Rover's figures come from bookings on its own platform, so they describe independent sitters rather than commercial kennels or pet hotels, whose prices depend on the facility and the room. Rates are usually higher in large cities and at busy times. For those, enter the quote you're given.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For many cats, staying at home with visits is less disruptive than a move to an unfamiliar place; pets that need company overnight, several walks a day or regular medication may be better suited to boarding or a house sitter.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Before You Book</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 24px; padding-left: 20px;">
+      <li><strong>Vaccines.</strong> Ask for the provider's list early. Many dog facilities ask for Bordetella, which the AAHA vaccination guidelines recommend for dogs that mix with other dogs; some vaccines need time to take effect.</li>
+      <li><strong>How days are counted</strong> — per night or per calendar day — and the checkout time.</li>
+      <li><strong>Medication.</strong> Whether they can give it, what it costs, and what happens if a dose is missed. Bring it in its original labelled packaging.</li>
+      <li><strong>Holiday dates.</strong> Whether a surcharge applies and how far ahead you need to book.</li>
+      <li><strong>Emergencies.</strong> Which vet they use and how they'll reach you.</li>
+    </ul>
 
     <div class="post-cta">
       <p>Make sure vaccines are current before boarding → <a href="/tools/dog-vaccination-schedule-calculator.html">Dog Vaccination Schedule Calculator</a> · <a href="/tools/cat-vaccination-schedule-calculator.html">Cat Vaccination Schedule Calculator</a></p>
@@ -176,21 +164,13 @@ permalink: /tools/pet-boarding-cost-calculator.html
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does dog boarding cost per night?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A basic kennel runs $25-$60/night, a pet hotel with private suites $55-$150/night, a luxury resort $100-$200+/night, and an in-home sitter (staying at your place or theirs) $45-$120/night. Add-ons like daycare, extra walks, grooming, or medication administration typically add $10-$40/day on top of the base rate.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does cat boarding cost?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat boarding is generally cheaper than dog boarding: a standard cattery or kennel runs $20-$45/night, and a luxury cat boarding suite $45-$60+/night. An in-home cat sitter who visits once or twice daily (rather than overnight boarding) often costs less overall for cats, since most cats do better staying in their own territory.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is a pet sitter cheaper than boarding?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on the visit frequency. A drop-in sitter visiting once or twice a day ($20-$35/visit) is usually cheaper than overnight boarding for cats or low-maintenance pets. An overnight in-home sitter who stays at your house costs about the same as mid-tier boarding ($45-$120/night) but avoids the stress of a new environment, which many pet parents consider worth the similar price.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">On Rover, the national average for boarding a dog in a sitter's home was $49.01 a night as of September 2025, and for a house sitter staying in your home $55.45 a night. Kennels and pet hotels set their own prices, which vary widely by area and by the type of room, so get a written quote.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is a drop-in sitter cheaper than boarding?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often, if your pet only needs one or two visits a day. Rover's national average for a drop-in visit was $21.80 as of September 2025, so two visits a day comes to about $44 — a little less than its average for overnight boarding. Pets that need company overnight, medication or several walks a day may need boarding or a house sitter instead.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do boarding facilities require vaccinations?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, virtually all US boarding facilities require proof of core vaccines — rabies and DHPP for dogs (plus bordetella/kennel cough at most facilities), and rabies and FVRCP for cats — usually completed at least a week before check-in. Check your pet's status with the vaccination schedule calculator before booking to avoid a last-minute vet visit.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does boarding cost more during holidays?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Demand spikes around major holidays (Thanksgiving, Christmas/New Year, July 4th, spring break) while facility capacity stays fixed, so most boarding facilities charge a holiday premium — typically 15-30% above standard rates — and popular facilities book up weeks in advance. Booking early is the most reliable way to avoid both the premium and being turned away.</p>
-
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much do kennels charge for administering medication?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most boarding facilities charge a medication administration fee on top of the nightly rate, commonly a few dollars per dose or per day, with insulin injections and other more involved treatments priced higher. Some facilities decline pets needing complex medical care altogether, and others require a veterinary practice rather than a boarding kennel. Ask before booking rather than at drop-off, bring medication in its original labelled packaging, and confirm in writing what happens if a dose is missed.</p>
-
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most do. Kennels and boarding facilities commonly ask for proof of rabies and core vaccines, and many dog facilities also ask for Bordetella (kennel cough), which the AAHA guidelines recommend based on a dog's exposure to other dogs. Ask each facility for its list well before you book, because some vaccines need time to take effect.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do boarding facilities count days — by night or by calendar day?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the most common source of surprise on a boarding bill, and practice varies. Some kennels charge per night, some per calendar day regardless of the hour, and many apply a late-pickup fee past a set checkout time. A stay from Sunday morning to Tuesday afternoon can therefore be billed as two nights or as three days depending on the facility. Ask specifically how days are counted and what the checkout deadline is — those two questions resolve most disputed invoices.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Practice varies. Some charge per night, some per calendar day regardless of the hour, and some add a fee for late pickup. The same stay can therefore be billed as two nights or three days. Ask how days are counted and what the checkout time is before you book.</p>
   </div>
 </div>
 
@@ -221,25 +201,19 @@ permalink: /tools/pet-boarding-cost-calculator.html
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
-
 @media print {
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
   .post-cta, .disclaimer-box, .no-print        { display: none !important; }
-  .tool-box {
-    box-shadow: none !important; border: none !important;
-    background: none !important; padding: 0 !important; margin: 0 !important;
-  }
+  .tool-box { box-shadow: none !important; border: none !important; background: none !important; padding: 0 !important; margin: 0 !important; }
   .result-box  { box-shadow: none !important; }
   .print-header { display: flex !important; }
   html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
   body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
   .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
   .result-box { page-break-inside: avoid; }
+  .form-group, select, label, input { display: none !important; }
 }
-</style>
-<style>
-@media print { .form-group, select, label, input { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
@@ -248,52 +222,53 @@ function doPrint(dateId) {
   window.print();
 }
 
-const pbRates = {
-  dog: { kennel: [25,60], hotel: [55,150], luxury: [100,200], sitter: [45,120] },
-  cat: { kennel: [20,45], hotel: [35,60],  luxury: [45,60],   sitter: [30,65] }
-};
+// Rover national averages, September 2025 (rover.com/dog-sitting-rates)
+const PB_DEFAULT = { boarding: 49.01, house: 55.45, dropin: 21.80, custom: 0 };
+const PB_LABEL = { boarding: "Boarding in a sitter's home", house: 'House sitter in your home', dropin: 'Drop-in visits', custom: 'Your quote' };
 
-const pbFacilityLabels = {
-  kennel: 'Basic kennel', hotel: 'Pet hotel', luxury: 'Luxury resort', sitter: 'In-home sitter'
-};
+function pbToggle() {
+  const opt = document.getElementById('pb-option').value;
+  document.getElementById('pb-visits-group').style.display = opt === 'dropin' ? 'block' : 'none';
+  document.getElementById('pb-rate').value = PB_DEFAULT[opt] || '';
+}
+
+function pbRow(a, b) {
+  return `<div style="display:flex; justify-content:space-between; gap:12px; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${a}</span><span style="text-align:right;">${b}</span></div>`;
+}
 
 function calculateBoarding() {
-  const species = document.getElementById('pb-species').value;
-  const facility = document.getElementById('pb-facility').value;
-  const nights = parseInt(document.getElementById('pb-nights').value);
-  const addonPerDay = parseFloat(document.getElementById('pb-addons').value);
-  const holiday = document.getElementById('pb-holiday').value === 'yes';
+  const opt = document.getElementById('pb-option').value;
+  const nights = parseInt(document.getElementById('pb-nights').value, 10);
+  const rate = parseFloat(document.getElementById('pb-rate').value);
+  const pets = Math.max(1, parseInt(document.getElementById('pb-pets').value, 10) || 1);
+  const extraPct = Math.max(0, parseFloat(document.getElementById('pb-extra-pet').value) || 0) / 100;
+  const addons = Math.max(0, parseFloat(document.getElementById('pb-addons').value) || 0);
+  const holidayPct = Math.max(0, parseFloat(document.getElementById('pb-holiday').value) || 0) / 100;
 
-  if (!nights || nights <= 0) {
-    alert('Please enter the number of nights.');
-    return;
+  if (!nights || nights <= 0) { alert('Please enter the number of nights.'); return; }
+  if (!rate || rate <= 0) { alert('Please enter a rate (or your quote).'); return; }
+
+  let units = nights, unitLabel = 'nights';
+  if (opt === 'dropin') {
+    const v = Math.max(1, parseInt(document.getElementById('pb-visits').value, 10) || 1);
+    units = nights * v; unitLabel = `visits (${v} a day)`;
   }
+  const petFactor = 1 + (pets - 1) * extraPct;
+  const base = rate * units * petFactor;
+  const holiday = base * holidayPct;
+  const extras = addons * nights;
+  const total = base + holiday + extras;
 
-  const [rateLow, rateHigh] = pbRates[species][facility];
-  const holidayMult = holiday ? 1.225 : 1; // midpoint of 15-30%
-
-  const baseLow = rateLow * nights * holidayMult;
-  const baseHigh = rateHigh * nights * holidayMult;
-  const addonTotal = addonPerDay * nights;
-
-  const totalLow = Math.round(baseLow + addonTotal);
-  const totalHigh = Math.round(baseHigh + addonTotal);
-
-  document.getElementById('pb-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()} total`;
-
-  let breakdown = `
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Facility type</span><span>${pbFacilityLabels[facility]}</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Base rate range</span><span>$${rateLow}–$${rateHigh}/night</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Nights</span><span>${nights}</span></div>
-  `;
-  if (addonPerDay > 0) {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Add-ons total</span><span>~$${Math.round(addonTotal)}</span></div>`;
-  }
-  if (holiday) {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Holiday premium</span><span>+~22%</span></div>`;
-  }
-  breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0;"><span>Per night average</span><span>~$${Math.round((totalLow+totalHigh)/2/nights)}</span></div>`;
-  document.getElementById('pb-result-breakdown').innerHTML = breakdown;
+  document.getElementById('pb-result-total').textContent = `About $${Math.round(total).toLocaleString()} total`;
+  let html = pbRow('Type of care', PB_LABEL[opt]);
+  html += pbRow('Rate', `$${rate.toFixed(2)} × ${units} ${unitLabel}`);
+  if (pets > 1) html += pbRow('Pets', `${pets} (extra pets at ${Math.round(extraPct * 100)}%)`);
+  html += pbRow('Care subtotal', `$${Math.round(base).toLocaleString()}`);
+  if (holiday > 0) html += pbRow('Holiday surcharge', `+$${Math.round(holiday).toLocaleString()}`);
+  if (extras > 0) html += pbRow('Extras', `$${Math.round(extras).toLocaleString()}`);
+  html += pbRow('Per night', `about $${Math.round(total / nights).toLocaleString()}`);
+  if (opt !== 'custom') html += `<p style="margin-top:10px;">Default rates are Rover's national averages as of September 2025; replace them with a local quote for a closer figure.</p>`;
+  document.getElementById('pb-result-breakdown').innerHTML = html;
 
   document.getElementById('pb-result').classList.add('show');
   document.getElementById('pb-pdf-btn').style.display = 'block';

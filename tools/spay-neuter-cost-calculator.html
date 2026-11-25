@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Spay/Neuter Cost Calculator — Dog & Cat Surgery Cost Estimate
-description: Estimate the total cost of spaying or neutering your dog or cat, including surgery, pre-surgical bloodwork, pain medication, and optional extras. Free and instant.
+description: Estimate the cost of spaying or neutering your dog or cat from national average prices (Synchrony 2025–26 study), plus pre-surgical bloodwork and a microchip, or price your own quote — and see what to ask a clinic before booking.
 permalink: /tools/spay-neuter-cost-calculator.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -35,7 +36,7 @@ permalink: /tools/spay-neuter-cost-calculator.html
       "name": "How much does it cost to spay or neuter a dog?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At a private veterinary clinic, spaying a dog typically costs $200–$700 and neutering costs $150–$450, with large breeds costing more due to increased anesthesia and surgical time. Low-cost clinics and shelters often charge $50–$150 for either procedure."
+        "text": "In a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony, spaying a small or medium dog over 6 months old averaged $455 and neutering $487. Larger dogs usually cost more, as do dogs in heat and retained testicles. Shelters and humane societies often offer reduced-fee surgery; prices are set locally."
       }
     },
     {
@@ -43,7 +44,7 @@ permalink: /tools/spay-neuter-cost-calculator.html
       "name": "How much does it cost to spay or neuter a cat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At a private veterinary clinic, spaying a cat typically costs $200–$400 and neutering costs $100–$250. Low-cost clinics and community programs frequently offer both procedures for $30–$100, sometimes less through subsidized voucher programs."
+        "text": "Synchrony's 2025–26 averages for cats over 6 months were $353 for a spay and $262 for a neuter. Low-cost clinics, shelters and trap-neuter-return programs for community cats usually charge much less; the ASPCA points owners to the SpayUSA directory to find them."
       }
     },
     {
@@ -101,17 +102,20 @@ permalink: /tools/spay-neuter-cost-calculator.html
     <div id="sn-common-form" style="display:none;">
       <div class="form-group">
         <label for="sn-clinic-type">Clinic Type</label>
-        <select id="sn-clinic-type">
+        <select id="sn-clinic-type" onchange="snClinicToggle()">
           <option value="private">Private veterinary clinic</option>
-          <option value="lowcost">Low-cost / shelter-affiliated clinic</option>
+          <option value="lowcost">Low-cost / shelter clinic — I have a quote</option>
         </select>
+      </div>
+      <div class="form-group" id="sn-quote-group" style="display:none;">
+        <label for="sn-quote">Clinic's quoted price ($)</label>
+        <input type="number" id="sn-quote" min="0" step="1" placeholder="e.g. 120">
       </div>
       <div class="form-group">
         <label for="sn-extras">Add-ons (select all that apply)</label>
-        <select id="sn-extras" multiple style="height: 90px;">
+        <select id="sn-extras" multiple style="height: 64px;">
           <option value="bloodwork">Pre-surgical bloodwork</option>
           <option value="microchip">Microchip during surgery</option>
-          <option value="ecollar">E-collar / recovery cone</option>
         </select>
         <p style="font-size: 0.8rem; color: var(--brown-mid); margin-top: 6px;">Hold Ctrl/Cmd to select more than one.</p>
       </div>
@@ -136,45 +140,44 @@ permalink: /tools/spay-neuter-cost-calculator.html
 
   <div class="no-print" style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Spay Costs More Than Neuter</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Spaying (ovariohysterectomy) is abdominal surgery — the vet accesses and removes the ovaries, fallopian tubes, and uterus through an incision into the abdominal cavity. It requires more surgical time, more anesthesia, and a longer recovery. Neutering (castration) is simpler because the testicles are externally accessible, making the procedure faster with less invasive access. This difference in complexity is the main reason spay surgery consistently costs more than neuter surgery across nearly every clinic and region.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For dogs specifically, size adds another cost factor on top of the sex difference: larger dogs need more anesthesia by body weight and longer surgical time, so a spay for a 90 lb dog costs meaningfully more than the same procedure for a 15 lb dog.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Spaying (ovariohysterectomy) is abdominal surgery — the vet accesses and removes the ovaries, fallopian tubes, and uterus through an incision into the abdominal cavity. It requires more surgical time, more anesthesia, and a longer recovery. Neutering (castration) is simpler because the testicles are externally accessible, making the procedure faster with less invasive access. This is why a spay is usually the more involved procedure.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">For dogs, size matters too: larger dogs need more anesthetic and longer surgery, and clinics often price by weight. That's why the Synchrony averages — $455 to spay and $487 to neuter a small or medium dog, $353 and $262 for a cat — are best read as a starting point for larger dogs. In dogs the spay and neuter averages are close; in cats the neuter is clearly cheaper.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Private Clinic vs. Low-Cost Clinic</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Low-cost and shelter-affiliated clinics can charge a fraction of private clinic prices — often 50-70% less — by using high-volume scheduling, streamlined processes, and nonprofit subsidies. They use the same surgical techniques and anesthesia protocols as full-service vets, but typically don't offer 24-hour monitoring or advanced diagnostics for complicated cases, and may have longer wait times for an appointment.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Organizations like the ASPCA, local humane societies, and Friends of Animals offer vouchers or fixed low-price certificates that can bring costs down further — often based on income eligibility or simply available to any pet owner in the service area.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Low-cost and shelter-affiliated clinics often charge much less than private practices, typically by working at high volume and with nonprofit support. Ask what's included — some don't offer extras such as IV fluids or overnight care — and expect longer waits for an appointment.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Local humane societies, county programs and some national charities offer vouchers or fixed-price certificates; some are limited by income or residency.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How to Actually Find a Low-Cost Clinic</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">"Look for a low-cost clinic" is advice people hear constantly without being told where to look. Three places cover most of the country:</p>
     <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
-      <li><strong>SpayUSA</strong>, operated by North Shore Animal League America, maintains a national directory of reduced-cost programs searchable by state. The ASPCA points people to it rather than running its own national list.</li>
+      <li><strong>SpayUSA</strong>, run by North Shore Animal League America, keeps a national directory of reduced-cost programs. The ASPCA's low-cost spay/neuter page points owners to it rather than running its own nationwide search.</li>
       <li><strong>Your county animal services office.</strong> Many counties run voucher programs that are not advertised beyond their own website — residency and sometimes income criteria apply, and availability is often limited to a set number per month.</li>
       <li><strong>Your local humane society or SPCA.</strong> These run the highest-volume clinics in most areas, and their pricing is usually published.</li>
     </ul>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Two practical notes. First, <strong>book earlier than you think you need to</strong> — nonprofit clinics commonly run weeks or months out, and some explicitly ask owners who can afford a private vet to use one instead so the appointments go to people who need them. Second, <strong>vaccination status can make you ineligible.</strong> Most programs require proof of current rabies vaccination, and some will turn you away at the door without the certificate, so sort that out before booking rather than on the day.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Two practical notes: <strong>book early</strong>, because nonprofit clinics can be booked up weeks ahead, and <strong>check the paperwork they need</strong> — many ask for proof of rabies vaccination — before the day.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Ask What the Quoted Price Includes</h2>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This single question explains most of the gap between the number people are quoted and the number on the invoice. Clinics differ in what falls inside the base fee, and the same headline price can mean quite different things.</p>
     <div class="table-wrapper">
       <table>
         <thead>
-          <tr><th>Item</th><th>Usually included?</th><th>Typical add-on cost</th></tr>
+          <tr><th>Item</th><th>Ask whether it's included</th></tr>
         </thead>
         <tbody>
-          <tr><td>Pre-surgical exam, anesthesia, the surgery itself</td><td>Yes, essentially always</td><td>—</td></tr>
-          <tr><td>Pain medication given on the day</td><td>Usually</td><td>—</td></tr>
-          <tr><td>Take-home pain medication</td><td>Varies a lot</td><td>$10–$20</td></tr>
-          <tr><td>E-collar (cone)</td><td>Varies</td><td>~$15</td></tr>
-          <tr><td>Microchipping</td><td>Sometimes bundled at low-cost clinics</td><td>Varies</td></tr>
-          <tr><td>Pre-anesthetic bloodwork</td><td>Rarely in the base fee</td><td>$60–$100</td></tr>
-          <tr><td>IV catheter and fluids</td><td>Rarely at low-cost clinics</td><td>~$45</td></tr>
+          <tr><td>Pre-surgical exam, anesthesia and the surgery</td><td>The core of every quote</td></tr>
+          <tr><td>Pain medication on the day and to take home</td><td>Often split — ask about both</td></tr>
+          <tr><td>E-collar (cone) or recovery suit</td><td>Varies by clinic</td></tr>
+          <tr><td>Microchip</td><td>Sometimes bundled; PetMD's price guide puts placement at $20–$75</td></tr>
+          <tr><td>Pre-anesthetic bloodwork</td><td>Often extra; a chemistry panel averages $164 (dog) or $144 (cat) in Synchrony's study</td></tr>
+          <tr><td>IV catheter and fluids</td><td>Varies, especially at low-cost clinics</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px; margin-top: 16px;">Bloodwork is the one worth understanding rather than just declining. Many clinics <strong>require</strong> it above a certain age — commonly around 6 years for dogs and 8 for cats — and where it is required it cannot be waived. If your pet is in that bracket, budget for it from the start rather than being surprised at drop-off.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px; margin-top: 16px;">Bloodwork is the one worth understanding rather than just declining. Some clinics <strong>require</strong> it for older pets, so ask whether it applies to yours and budget for it from the start.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Ask for an <strong>itemised estimate in writing</strong> before you agree. It takes a minute on the phone and it is the only reliable way to compare two clinics, because a $250 quote that excludes bloodwork, the cone and take-home medication is not cheaper than a $350 quote that includes all three.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What Can Add to the Cost</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Pre-surgical bloodwork ($50–$120) is often recommended, especially for pets over 5 years old, to confirm it's safe to administer anesthesia. Retained testicles (cryptorchidism) in male dogs and cats require a more invasive, more expensive surgery similar in cost to a spay, since the vet has to locate and remove testicles that haven't descended normally. A pet in heat or pregnant at the time of surgery typically incurs additional fees due to increased surgical complexity and bleeding risk.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Pre-surgical bloodwork is often recommended, especially for older pets, to check that anesthesia is safe. Retained testicles (cryptorchidism) need a more involved surgery, because the vet may have to search the abdomen for a testicle that hasn't descended. A pet in heat or pregnant at the time of surgery typically incurs additional fees due to increased surgical complexity and bleeding risk.</p>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Many vets combine spay/neuter with other procedures at the same visit — most commonly microchipping, since the pet is already under anesthesia and it eliminates a separate injection later.</p>
 
     <div class="post-cta">
@@ -199,9 +202,9 @@ permalink: /tools/spay-neuter-cost-calculator.html
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does it cost to spay or neuter a dog?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">At a private veterinary clinic, spaying a dog typically costs $200–$700 and neutering costs $150–$450, with large breeds costing more due to increased anesthesia and surgical time. Low-cost clinics and shelters often charge $50–$150 for either procedure.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">In a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony, spaying a small or medium dog over 6 months old averaged $455 and neutering $487. Larger dogs usually cost more, as do dogs in heat and retained testicles. Shelters and humane societies often offer reduced-fee surgery; prices are set locally.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does it cost to spay or neuter a cat?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">At a private veterinary clinic, spaying a cat typically costs $200–$400 and neutering costs $100–$250. Low-cost clinics and community programs frequently offer both procedures for $30–$100, sometimes less through subsidized voucher programs.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Synchrony's 2025–26 averages for cats over 6 months were $353 for a spay and $262 for a neuter. Low-cost clinics, shelters and trap-neuter-return programs for community cats usually charge much less; the ASPCA points owners to the SpayUSA directory to find them.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is spay/neuter surgery covered by pet insurance?</h3>
     <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Standard accident-and-illness pet insurance plans typically do not cover spay/neuter surgery, since it's considered elective preventive care rather than an accident or illness. Some insurers offer it as part of an optional wellness add-on for an extra monthly fee.</p>
   </div>
@@ -271,53 +274,45 @@ function toggleSnSpecies() {
   document.getElementById('sn-result').style.display = 'none';
 }
 
+function snClinicToggle() {
+  document.getElementById('sn-quote-group').style.display =
+    document.getElementById('sn-clinic-type').value === 'lowcost' ? 'block' : 'none';
+}
+
+// Synchrony 2025-26 national averages (pets over 6 months); PetMD microchip range
+const SN_AVG = { dog: { spay: 455, neuter: 487 }, cat: { spay: 353, neuter: 262 } };
+const SN_BLOOD = { dog: 164, cat: 144 };
+
+function snRow(a, b) {
+  return `<div style="display:flex; justify-content:space-between; gap:12px; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${a}</span><span style="text-align:right;">${b}</span></div>`;
+}
+
 function calculateSpayNeuter() {
   const species = document.getElementById('sn-species').value;
   const clinicType = document.getElementById('sn-clinic-type').value;
   const extras = Array.from(document.getElementById('sn-extras').selectedOptions).map(o => o.value);
+  const sex = document.getElementById(species === 'dog' ? 'sn-dog-sex' : 'sn-cat-sex').value;
+  const weight = parseFloat(document.getElementById('sn-dog-weight').value);
+  const label = `${species === 'dog' ? 'Dog' : 'Cat'} ${sex === 'spay' ? 'spay' : 'neuter'}`;
 
-  let low, high, procedureLabel;
-
-  if (species === 'dog') {
-    const sex = document.getElementById('sn-dog-sex').value;
-    const weight = parseFloat(document.getElementById('sn-dog-weight').value) || 45;
-    const sizeMultiplier = weight < 25 ? 1 : weight < 50 ? 1.15 : weight < 90 ? 1.35 : 1.6;
-
-    if (clinicType === 'private') {
-      if (sex === 'spay') { low = 200 * sizeMultiplier; high = 700 * sizeMultiplier; }
-      else { low = 150 * sizeMultiplier; high = 450 * sizeMultiplier; }
-    } else {
-      if (sex === 'spay') { low = 50; high = 150 * sizeMultiplier; }
-      else { low = 30; high = 100 * sizeMultiplier; }
-    }
-    procedureLabel = `Dog ${sex === 'spay' ? 'Spay' : 'Neuter'}`;
+  let surgery, note = '';
+  if (clinicType === 'lowcost') {
+    surgery = parseFloat(document.getElementById('sn-quote').value);
+    if (!surgery || surgery <= 0) { alert("Please enter the clinic's quoted price."); return; }
+    note = 'Your quote';
   } else {
-    const sex = document.getElementById('sn-cat-sex').value;
-    if (clinicType === 'private') {
-      if (sex === 'spay') { low = 200; high = 400; }
-      else { low = 100; high = 250; }
-    } else {
-      low = 30; high = 100;
-    }
-    procedureLabel = `Cat ${sex === 'spay' ? 'Spay' : 'Neuter'}`;
+    surgery = SN_AVG[species][sex];
+    note = 'National average, Synchrony 2025–26';
+    if (species === 'dog' && weight >= 50) note += ' (for small/medium dogs — expect more for a large dog)';
   }
 
-  let extrasLow = 0, extrasHigh = 0;
-  const extraLines = [];
-  if (extras.includes('bloodwork')) { extrasLow += 50; extrasHigh += 120; extraLines.push(['Pre-surgical bloodwork', '$50–$120']); }
-  if (extras.includes('microchip')) { extrasLow += 35; extrasHigh += 60; extraLines.push(['Microchip', '$35–$60']); }
-  if (extras.includes('ecollar')) { extrasLow += 10; extrasHigh += 25; extraLines.push(['E-collar', '$10–$25']); }
+  let lo = surgery, hi = surgery, html = snRow(`${label} — ${note}`, `$${Math.round(surgery)}`);
+  if (extras.includes('bloodwork')) { lo += SN_BLOOD[species]; hi += SN_BLOOD[species]; html += snRow('Pre-surgical chemistry panel (Synchrony average)', `$${SN_BLOOD[species]}`); }
+  if (extras.includes('microchip')) { lo += 20; hi += 75; html += snRow('Microchip (PetMD range)', '$20–$75'); }
 
-  const totalLow = Math.round(low + extrasLow);
-  const totalHigh = Math.round(high + extrasHigh);
-
-  document.getElementById('sn-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
-
-  let breakdown = `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${procedureLabel} surgery${clinicType === 'lowcost' ? ' (low-cost clinic)' : ''}</span><span>$${Math.round(low)}–$${Math.round(high)}</span></div>`;
-  extraLines.forEach(([label, range]) => {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${label}</span><span>${range}</span></div>`;
-  });
-  document.getElementById('sn-result-breakdown').innerHTML = breakdown;
+  document.getElementById('sn-result-total').textContent = lo === hi ? `About $${Math.round(lo).toLocaleString()}` : `About $${Math.round(lo).toLocaleString()}–$${Math.round(hi).toLocaleString()}`;
+  html += `<p style="margin-top:10px;">Ask whether take-home pain medication, a cone and IV fluids are included — they're often what separates two quotes.</p>`;
+  document.getElementById('sn-result-breakdown').innerHTML = html;
 
   document.getElementById('sn-result').style.display = 'block';
   document.getElementById('sn-result').classList.add('show');

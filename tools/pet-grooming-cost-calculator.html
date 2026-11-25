@@ -1,30 +1,10 @@
 ---
 layout: tool
 title: Pet Grooming Cost Calculator — Dog & Cat Annual Grooming Budget
-description: Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you get them professionally groomed. Free and instant.
+description: Turn a groomer's quote or a national retailer's base prices for baths, nail trims and ear cleaning into a yearly grooming budget for your dog or cat, plus home grooming supplies. Includes AKC coat-care advice.
 permalink: /tools/pet-grooming-cost-calculator.html
+last_modified_at: 2026-11-25
 ---
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Pet Grooming Cost Calculator",
-  "url": "https://petpawcalc.com/tools/pet-grooming-cost-calculator.html",
-  "description": "Estimate a dog or cat's annual grooming cost based on size, coat type, and professional grooming frequency.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "All",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "PetPawCalc",
-    "url": "https://petpawcalc.com"
-  }
-}
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,15 +15,7 @@ permalink: /tools/pet-grooming-cost-calculator.html
       "name": "How much does dog grooming cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A single professional grooming session typically costs $40–$80 for small dogs, $50–$110 for medium dogs, $65–$150 for large dogs, and $80–$220 for giant breeds, depending on coat type and service level. Long or curly coats (Poodles, Doodles) can add 20–40% to these prices."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does cat grooming cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Professional cat grooming typically costs $30–$70 per session for short-haired cats and $50–$100 for long-haired breeds, since most cats need grooming far less often than dogs — many short-haired cats never need a professional groomer at all."
+        "text": "It depends on size, coat, condition and the shop, so a local quote is the only reliable figure. As a reference, CareCredit's November 2025 guide lists base prices at a national retail chain of about $30 for a bath and $12 each for a nail trim, ear cleaning, teeth brushing or anal gland expression. A full haircut for a long or curly coat costs more and is priced by the groomer."
       }
     },
     {
@@ -51,7 +23,15 @@ permalink: /tools/pet-grooming-cost-calculator.html
       "name": "How often should I get my dog professionally groomed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Short-coated dogs typically need professional grooming every 8–12 weeks. Medium coats do well every 6–8 weeks. Long, curly, or double coats — especially Poodles, Doodles, and similar breeds — often need grooming every 4–6 weeks to prevent matting."
+        "text": "There's no single interval. The American Kennel Club says it depends on how well the coat is kept up at home, the coat type and the climate; dogs with unbrushed coats or in humid areas may need more frequent visits. It recommends brushing double-coated dogs at least once a week and bathing only when a dog is dirty or smelly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I shave my double-coated dog in summer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no. The AKC advises against shaving a double coat unless tangles and buildup stop the skin from drying. Shaving doesn't stop shedding, can damage the topcoat, and raises the risk of skin problems and sunburn; the undercoat insulates against both cold and heat. Regular brushing is the better way to manage it."
       }
     }
   ]
@@ -61,55 +41,50 @@ permalink: /tools/pet-grooming-cost-calculator.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>✂️ Pet Grooming Cost Calculator</h1>
-    <p>Estimate your dog or cat's annual grooming cost based on size, coat type, and how often you use a professional groomer.</p>
+    <p>Grooming prices vary too much by coat, size and shop for a national average to mean much. Enter your groomer's quote — or build a basic visit from a national chain's base prices — and see what it adds up to over a year.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label for="gc-species">What pet do you have?</label>
-      <select id="gc-species" onchange="toggleGcSpecies()">
-        <option value="">Select a pet</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
+      <label for="gc-mode">How do you want to price a visit?</label>
+      <select id="gc-mode" onchange="gcToggle()">
+        <option value="quote">I have a groomer's quote</option>
+        <option value="build">Build a basic visit from base prices</option>
       </select>
     </div>
-
-    <div id="gc-form" style="display:none;">
-      <div class="form-group" id="gc-size-group">
-        <label for="gc-size">Size</label>
-        <select id="gc-size">
-          <option value="small">Small (under 25 lbs)</option>
-          <option value="medium">Medium (25–50 lbs)</option>
-          <option value="large">Large (50–90 lbs)</option>
-          <option value="giant">Giant (90+ lbs)</option>
-        </select>
-      </div>
-
+    <div id="gc-quote-group">
       <div class="form-group">
-        <label for="gc-coat">Coat Type</label>
-        <select id="gc-coat">
-          <option value="short">Short / smooth</option>
-          <option value="medium">Medium length</option>
-          <option value="long">Long or silky</option>
-          <option value="curly">Curly or double coat (Poodle, Doodle, etc.)</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="gc-frequency">Professional Grooming Frequency</label>
-        <select id="gc-frequency">
-          <option value="4">Every 4 weeks (13x/year)</option>
-          <option value="6">Every 6 weeks (9x/year)</option>
-          <option value="8">Every 8 weeks (6.5x/year)</option>
-          <option value="12">Every 12 weeks (4x/year)</option>
-          <option value="0">Rarely/never — home grooming only</option>
-        </select>
+        <label for="gc-quote">Price per visit, including tip ($)</label>
+        <input type="number" id="gc-quote" min="0" step="1" placeholder="e.g. 85">
       </div>
     </div>
+    <div id="gc-build-group" style="display:none;">
+      <p style="font-size: 0.88rem; color: var(--brown-mid); margin-bottom: 10px;">Base prices at a national retail chain, from CareCredit's November 2025 grooming cost guide. Haircuts aren't included because they're priced by the groomer.</p>
+      <div class="form-group"><label><input type="checkbox" id="gc-bath" checked> Bath, conditioner and blow-dry ($30)</label></div>
+      <div class="form-group"><label><input type="checkbox" id="gc-nails" checked> Nail trim ($12)</label></div>
+      <div class="form-group"><label><input type="checkbox" id="gc-ears"> Ear cleaning ($12)</label></div>
+      <div class="form-group"><label><input type="checkbox" id="gc-teeth"> Teeth brushing ($12)</label></div>
+      <div class="form-group"><label><input type="checkbox" id="gc-glands"> Anal gland expression ($12)</label></div>
+      <div class="form-group"><label><input type="checkbox" id="gc-demat"> Dematting ($10 and up)</label></div>
+    </div>
+    <div class="form-group">
+      <label for="gc-frequency">How often</label>
+      <select id="gc-frequency">
+        <option value="4">Every 4 weeks (13 visits a year)</option>
+        <option value="6" selected>Every 6 weeks (about 9)</option>
+        <option value="8">Every 8 weeks (6–7)</option>
+        <option value="12">Every 12 weeks (4)</option>
+        <option value="26">Twice a year</option>
+        <option value="0">Never — home grooming only</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="gc-supplies">Home grooming supplies per year ($)</label>
+      <input type="number" id="gc-supplies" min="0" step="1" value="28">
+    </div>
+    <button class="btn-calculate" onclick="calculateGrooming()">Estimate Annual Cost →</button>
 
-    <button class="btn-calculate" id="gc-btn" onclick="calculateGrooming()" style="display:none;">Estimate Annual Cost →</button>
-
-    <div class="result-box" id="gc-result" style="display:none;">
+    <div class="result-box" id="gc-result">
       <div class="print-header">
         <span class="print-logo">🐾 PetPawCalc</span>
         <span class="print-date" id="gc-date"></span>
@@ -121,47 +96,37 @@ permalink: /tools/pet-grooming-cost-calculator.html
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This calculator provides general cost estimates based on national averages. Actual pricing varies significantly by location, individual groomer, and your pet's specific coat condition and temperament.
+    ⚕️ Base prices are one national chain's published starting prices and change over time; your groomer's prices may be higher or lower. Ask for a quote that lists what's included.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Coat Type Matters More Than Size</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Size affects grooming cost, but coat type usually drives the bigger swing. A large short-coated dog like a Labrador is often cheaper to groom than a much smaller long-coated dog like a Shih Tzu, because coat maintenance — detangling, scissor work, de-matting — takes far more time than a quick bath and brush-out on a short coat. Curly and double coats (Poodles, Doodles, Huskies) are the most labor-intensive category, since they mat easily and require specific tools and techniques to groom safely.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Matting specifically can add a real surcharge on top of the base price — light matting around ears or armpits might add $15–$25, while heavy pelted matting requiring a full shave-down can add $35–$50 or more, since it takes significantly longer and is harder on the groomer's equipment.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Where the Numbers Come From</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The base prices are from CareCredit's November 2025 guide to dog grooming costs, which lists starting prices at a national retail chain with in-store salons: about <strong>$30 for a bath</strong>, <strong>$12 each</strong> for a nail trim, ear cleaning, teeth brushing or anal gland expression, $10 for dematting and $22 and up for applying flea and tick treatment. The guide notes that larger dogs usually cost more to groom than small dogs with similar coats, because they take more time and product, and that location matters too.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The default for home supplies, $28 a year, is the ASPCA's 2021 figure for grooming supplies; its first-year table adds $40 for a dog's grooming tools and $20 for a cat's. Replace either with what you actually spend.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Shop vs. Mobile Grooming</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Mobile grooming — where a groomer comes to you in a self-contained van — typically costs 20–60% more than the same service at a shop, since the groomer owns and operates expensive equipment and loses time driving between appointments. It's often worth the premium for senior or anxious pets who find car rides and shared waiting areas stressful, or for multi-pet households where the time savings offset the higher per-visit cost.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Why Two Quotes Can Differ</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Coat condition.</strong> A matted coat takes much longer and may have to be clipped short so the skin can dry, which the AKC notes groomers sometimes need to do.</li>
+      <li><strong>What's included.</strong> Nails, ears, teeth and anal glands are sometimes bundled and sometimes charged separately.</li>
+      <li><strong>Size and handling.</strong> Bigger dogs take more time and product; a dog that's hard to handle may need a longer appointment.</li>
+      <li><strong>Style.</strong> A hand-scissored breed trim takes more time and skill than a short all-over clip.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Professional Grooming vs. DIY</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">At-home grooming supplies (shampoo, slicker brush, nail clippers, de-shedding tools) typically cost $120–$360 per year depending on coat type, which is meaningfully cheaper than professional visits over a full year. The trade-off is time, skill, and the risk of injury from nail trims or matting removal done incorrectly — many owners land on a hybrid approach: professional grooming every 8–12 weeks paired with home maintenance brushing in between.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Skipping grooming entirely to save money often backfires financially — severe matting, overgrown nails, and untreated skin issues from poor coat maintenance frequently cost more in vet bills than consistent grooming would have cost in the first place.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Home Care That Keeps Visits Simple</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">For double-coated dogs, the American Kennel Club recommends brushing <strong>at least once a week</strong> with a slicker brush followed by a comb, brushing the hair rather than the skin, and bathing only when the dog is dirty or smelly, because overbathing strips natural oils. Mats form when the undercoat isn't brushed, and in humid climates they hold moisture against the skin.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Shaving a double coat</strong> is generally not advised, according to the AKC, unless tangles stop the skin from drying: it doesn't stop shedding, can damage the topcoat, and raises the risk of skin problems and sunburn, because the undercoat insulates against heat as well as cold.</p>
 
     <div class="post-cta">
       <p>Want the full annual cost picture across everything? → <a href="/tools/annual-pet-cost-calculator.html">Try the Annual Pet Cost Calculator</a></p>
     </div>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Two Quotes for the Same Dog Differ by $40</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Grooming is priced per job rather than per item, so the same request means different work at different shops. What moves a quote:</p>
-    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
-      <li><strong>Coat condition on arrival.</strong> The big one. A matted coat cannot be brushed out safely so it has to be clipped short, and it takes far longer. Most groomers charge a de-matting surcharge by the quarter hour; a badly matted dog can double the bill.</li>
-      <li><strong>What is included.</strong> Nails, ears, teeth, anal glands and de-shedding treatments are sometimes bundled and sometimes charged separately. Ask which.</li>
-      <li><strong>Handling.</strong> A dog who cannot be handled safely needs two people or a longer appointment, and some shops price that in.</li>
-      <li><strong>Styling.</strong> A hand-scissored breed trim takes real skill and time; a short all-over clip does not.</li>
-      <li><strong>Frequency.</strong> Regular clients cost less per visit because there is less to undo. Groomed every six weeks is cheaper per appointment than twice a year.</li>
-    </ul>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Brushing Economics Nobody Mentions</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">For a double-coated or curly-coated dog, brushing between appointments is the cheapest thing you can do, and the saving is not marginal. Matting is what converts a routine groom into a long surcharged one, and matting is entirely a function of how often the coat is brushed.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A few minutes several times a week on a Doodle, Spaniel or Collie is the difference between a standard visit and a de-matting bill — and between the coat you asked for and a shave-down. Groomers clip matted coats short because the alternative is pulling on skin. It is a welfare decision rather than a shortcut, and owners are often upset by a result that was decided weeks earlier at home.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">One thing worth knowing before asking for a summer shave: <strong>double coats should not be clipped short.</strong> The coat insulates in both directions, and in some dogs shaving changes how it regrows permanently. Brushing out the dead undercoat is what actually cools a double-coated dog.</p>
-
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does dog grooming cost?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A single professional grooming session typically costs $40–$80 for small dogs, $50–$110 for medium dogs, $65–$150 for large dogs, and $80–$220 for giant breeds, depending on coat type and service level. Long or curly coats (Poodles, Doodles) can add 20–40% to these prices.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does cat grooming cost?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Professional cat grooming typically costs $30–$70 per session for short-haired cats and $50–$100 for long-haired breeds, since most cats need grooming far less often than dogs — many short-haired cats never need a professional groomer at all.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on size, coat, condition and the shop, so a local quote is the only reliable figure. As a reference, CareCredit's November 2025 guide lists base prices at a national retail chain of about $30 for a bath and $12 each for a nail trim, ear cleaning, teeth brushing or anal gland expression. A full haircut for a long or curly coat costs more and is priced by the groomer.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I get my dog professionally groomed?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Short-coated dogs typically need professional grooming every 8–12 weeks. Medium coats do well every 6–8 weeks. Long, curly, or double coats — especially Poodles, Doodles, and similar breeds — often need grooming every 4–6 weeks to prevent matting.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no single interval. The American Kennel Club says it depends on how well the coat is kept up at home, the coat type and the climate; dogs with unbrushed coats or in humid areas may need more frequent visits. It recommends brushing double-coated dogs at least once a week and bathing only when a dog is dirty or smelly.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I shave my double-coated dog in summer?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Generally no. The AKC advises against shaving a double coat unless tangles and buildup stop the skin from drying. Shaving doesn't stop shedding, can damage the topcoat, and raises the risk of skin problems and sunburn; the undercoat insulates against both cold and heat. Regular brushing is the better way to manage it.</p>
   </div>
 </div>
 
@@ -192,25 +157,21 @@ permalink: /tools/pet-grooming-cost-calculator.html
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
-
+#gc-build-group .form-group { margin-bottom: 8px; }
+#gc-build-group label { font-weight: 400; }
 @media print {
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
   .post-cta, .disclaimer-box, .no-print        { display: none !important; }
-  .tool-box {
-    box-shadow: none !important; border: none !important;
-    background: none !important; padding: 0 !important; margin: 0 !important;
-  }
+  .tool-box { box-shadow: none !important; border: none !important; background: none !important; padding: 0 !important; margin: 0 !important; }
   .result-box  { box-shadow: none !important; }
   .print-header { display: flex !important; }
   html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
   body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
   .tool-page { padding: 32px 48px !important; margin: 0 !important; height: auto !important; }
   .result-box { page-break-inside: avoid; }
+  .form-group, select, label, input, #gc-build-group p { display: none !important; }
 }
-</style>
-<style>
-@media print { .form-group, select, label { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
@@ -218,65 +179,52 @@ function doPrint(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-</script>
-<script>
-function toggleGcSpecies() {
-  const species = document.getElementById('gc-species').value;
-  document.getElementById('gc-form').style.display = species ? 'block' : 'none';
-  document.getElementById('gc-size-group').style.display = species === 'dog' ? 'block' : 'none';
-  document.getElementById('gc-btn').style.display = species ? 'block' : 'none';
-  document.getElementById('gc-result').style.display = 'none';
+function gcToggle() {
+  const build = document.getElementById('gc-mode').value === 'build';
+  document.getElementById('gc-build-group').style.display = build ? 'block' : 'none';
+  document.getElementById('gc-quote-group').style.display = build ? 'none' : 'block';
+}
+// Base prices: CareCredit dog grooming cost guide (Nov 2025), national retail chain
+const GC_ITEMS = [['gc-bath', 'Bath', 30], ['gc-nails', 'Nail trim', 12], ['gc-ears', 'Ear cleaning', 12],
+                  ['gc-teeth', 'Teeth brushing', 12], ['gc-glands', 'Anal glands', 12], ['gc-demat', 'Dematting', 10]];
+
+function gcRow(a, b) {
+  return `<div style="display:flex; justify-content:space-between; gap:12px; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${a}</span><span style="text-align:right;">${b}</span></div>`;
 }
 
 function calculateGrooming() {
-  const species = document.getElementById('gc-species').value;
-  const size = document.getElementById('gc-size').value;
-  const coat = document.getElementById('gc-coat').value;
-  const freqWeeks = parseInt(document.getElementById('gc-frequency').value);
+  const mode = document.getElementById('gc-mode').value;
+  const weeks = parseInt(document.getElementById('gc-frequency').value, 10);
+  const visits = weeks > 0 ? Math.round(52 / weeks * 10) / 10 : 0;
+  const supplies = Math.max(0, parseFloat(document.getElementById('gc-supplies').value) || 0);
 
-  const visitsPerYear = freqWeeks > 0 ? Math.round((52 / freqWeeks) * 10) / 10 : 0;
-
-  let baseLow, baseHigh;
-  if (species === 'dog') {
-    const sizeRanges = {
-      small:  [40, 80],
-      medium: [50, 110],
-      large:  [65, 150],
-      giant:  [80, 220],
-    };
-    [baseLow, baseHigh] = sizeRanges[size];
+  let perVisit = 0, detail = '';
+  if (mode === 'quote') {
+    perVisit = parseFloat(document.getElementById('gc-quote').value);
+    if (weeks > 0 && (!perVisit || perVisit <= 0)) { alert("Please enter your groomer's price per visit."); return; }
+    perVisit = perVisit || 0;
+    detail = 'Your quote';
   } else {
-    baseLow = 30; baseHigh = 70;
+    const chosen = GC_ITEMS.filter(i => document.getElementById(i[0]).checked);
+    perVisit = chosen.reduce((s, i) => s + i[2], 0);
+    detail = chosen.map(i => `${i[1]} $${i[2]}`).join(' + ') || 'No services selected';
   }
 
-  const coatMultiplier = { short: 1, medium: 1.15, long: 1.35, curly: 1.5 };
-  const mult = coatMultiplier[coat];
-  const visitLow = Math.round(baseLow * mult);
-  const visitHigh = Math.round(baseHigh * mult);
-
-  const annualLow = Math.round(visitLow * visitsPerYear);
-  const annualHigh = Math.round(visitHigh * visitsPerYear);
-
-  const supplyCosts = { short: 120, medium: 180, long: 300, curly: 280 };
-  const supplyCost = supplyCosts[coat];
-
-  const totalLow = annualLow + (freqWeeks === 0 ? supplyCost : Math.round(supplyCost * 0.4));
-  const totalHigh = annualHigh + (freqWeeks === 0 ? supplyCost * 1.5 : Math.round(supplyCost * 0.6));
-
-  document.getElementById('gc-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()} per year`;
-
-  let breakdown = '';
-  if (freqWeeks > 0) {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Professional grooming (${visitsPerYear}x/year, $${visitLow}–$${visitHigh}/visit)</span><span>$${annualLow.toLocaleString()}–$${annualHigh.toLocaleString()}</span></div>`;
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Home maintenance supplies</span><span>$${Math.round(supplyCost*0.4)}–$${Math.round(supplyCost*0.6)}</span></div>`;
+  const pro = perVisit * visits;
+  const total = pro + supplies;
+  document.getElementById('gc-result-total').textContent = `About $${Math.round(total).toLocaleString()} a year`;
+  let html = '';
+  if (weeks > 0) {
+    html += gcRow('Per visit', `$${perVisit.toFixed(0)} (${detail})`);
+    html += gcRow('Visits a year', visits);
+    html += gcRow('Professional grooming', `$${Math.round(pro).toLocaleString()}`);
   } else {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Home grooming supplies only</span><span>$${supplyCost}–$${Math.round(supplyCost*1.5)}</span></div>`;
+    html += gcRow('Professional grooming', 'None');
   }
-  document.getElementById('gc-result-breakdown').innerHTML = breakdown;
-
-  document.getElementById('gc-result').style.display = 'block';
+  html += gcRow('Home supplies', `$${Math.round(supplies).toLocaleString()}`);
+  if (mode === 'build') html += `<p style="margin-top:10px;">Base prices are a national chain's starting prices (CareCredit, Nov 2025) and don't include a haircut. Long or curly coats that need clipping or scissoring cost more.</p>`;
+  document.getElementById('gc-result-breakdown').innerHTML = html;
   document.getElementById('gc-result').classList.add('show');
   document.getElementById('gc-pdf-btn').style.display = 'block';
-  document.getElementById('gc-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 </script>

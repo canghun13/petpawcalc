@@ -2,7 +2,8 @@
 layout: tool
 permalink: /tools/annual-pet-cost-calculator.html
 title: Annual Pet Cost Calculator — How Much Does a Pet Cost Per Year?
-description: Estimate the full yearly cost of owning a dog or cat — food, vet bills, grooming, insurance, and more. Free and instant.
+description: Build a yearly budget for a dog or cat from sourced US prices — vet visits and vaccines, parasite prevention, insurance, supplies, boarding — plus your own food and grooming costs. Every line shows where its number comes from.
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   "@type": "WebApplication",
   "name": "Annual Pet Cost Calculator",
   "url": "https://petpawcalc.com/tools/annual-pet-cost-calculator.html",
-  "description": "Estimate the total yearly cost of owning a dog or cat, broken down by food, vet care, grooming, insurance, supplies, and boarding.",
+  "description": "Estimate the yearly cost of a dog or cat from sourced US prices for vet care, parasite prevention, insurance, supplies and boarding, plus your own food and grooming costs.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -35,7 +36,7 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
       "name": "How much does it cost to own a dog per year?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Annual dog ownership costs typically range from $1,250 to $6,000+ depending on size, location, and health. Key categories include food ($400–$1,200), routine vet care ($300–$700), pet insurance ($300–$800), grooming ($50–$900), and supplies ($200–$400)."
+        "text": "Rover's 2026 cost of pet ownership report puts a medium-sized dog at about $145–$505 a month, and a senior dog at about $2,475–$5,200 a year. The ASPCA's cost table, last updated in 2021, has a typical year at $1,391. Size, age, insurance and services such as boarding and grooming account for most of the difference."
       }
     },
     {
@@ -43,15 +44,15 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
       "name": "How much does it cost to own a cat per year?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Annual cat ownership costs typically range from $800 to $3,000+. Cats generally cost less than dogs. Key costs include food ($300–$600), vet care ($200–$500), pet insurance ($200–$500), and litter ($150–$300)."
+        "text": "Rover's 2026 report puts a medium-sized cat at about $70–$305 a month and a senior cat at about $2,255–$4,740 a year. The ASPCA's 2021 table has a typical year at $1,149, with insurance, food, routine care and litter as the largest lines."
       }
     },
     {
       "@type": "Question",
-      "name": "What pet costs do first-time owners underestimate most?",
+      "name": "Where do the calculator's numbers come from?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Emergency vet bills, dental cleanings ($300–$800+ each), boarding costs for owners who travel, and end-of-life care are the expenses that most commonly catch new pet owners off guard."
+        "text": "Vet prices are national averages from a 2025–2026 study run for CareCredit by Synchrony, with PetMD's ranges for tests it doesn't list; parasite prevention uses Chewy prices checked in November 2026; insurance uses NAPHIA's 2025 average premiums; supplies and the default boarding rate use the ASPCA's 2021 cost table. Food and grooming depend so much on the pet and product that you enter your own figures."
       }
     }
   ]
@@ -61,48 +62,72 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>💰 Annual Pet Cost Calculator</h1>
-    <p>Wondering how much your pet really costs per year? Enter your situation below for a personalized estimate covering all the major expenses.</p>
+    <p>Build a yearly budget line by line. The calculator fills in sourced US averages where they exist and asks you for the costs that depend on your own choices.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label for="pet-type">Pet Type</label>
-      <select id="pet-type">
-        <option value="">Select pet</option>
+      <label for="pet-type">Pet</label>
+      <select id="pet-type" onchange="toggleSize()">
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
       </select>
     </div>
-    <div class="form-group">
-      <label for="pet-size">Size</label>
+    <div class="form-group" id="size-group">
+      <label for="pet-size">Dog's weight</label>
       <select id="pet-size">
-        <option value="">Select size</option>
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
+        <option value="small">11–22 lbs</option>
+        <option value="medium" selected>22–44 lbs</option>
+        <option value="large">44–88 lbs</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="pet-age-stage">Life Stage</label>
+      <label for="pet-age-stage">Life stage</label>
       <select id="pet-age-stage">
-        <option value="young">Young (under 3 years)</option>
-        <option value="adult">Adult (3–8 years)</option>
-        <option value="senior">Senior (8+ years)</option>
+        <option value="adult">Adult</option>
+        <option value="senior">Senior (twice-yearly checkups)</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="has-insurance">Do you have pet insurance?</label>
-      <select id="has-insurance">
+      <label for="food">Food spend per month ($)</label>
+      <input type="number" id="food" min="0" step="1" placeholder="e.g. 45">
+    </div>
+    <div class="form-group">
+      <label for="prevention">Parasite prevention</label>
+      <select id="prevention">
+        <option value="yes">Yes — monthly combination product</option>
+        <option value="no">None / vet says not needed</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="insurance">Pet insurance</label>
+      <select id="insurance">
+        <option value="none">None</option>
+        <option value="accident">Accident only</option>
+        <option value="ai">Accident and illness</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="groom-visits">Professional grooming visits per year</label>
+      <input type="number" id="groom-visits" min="0" step="1" value="0">
+    </div>
+    <div class="form-group">
+      <label for="groom-price">Price per grooming visit ($)</label>
+      <input type="number" id="groom-price" min="0" step="1" value="0">
+    </div>
+    <div class="form-group">
+      <label for="board-nights">Boarding nights per year</label>
+      <input type="number" id="board-nights" min="0" step="1" value="0">
+    </div>
+    <div class="form-group">
+      <label for="board-rate">Boarding rate per night ($)</label>
+      <input type="number" id="board-rate" min="0" step="1" value="25">
+    </div>
+    <div class="form-group">
+      <label for="dental">Dental cleaning this year?</label>
+      <select id="dental">
         <option value="no">No</option>
         <option value="yes">Yes</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="grooming">Grooming needs</label>
-      <select id="grooming">
-        <option value="low">Low (short coat, minimal grooming)</option>
-        <option value="medium">Medium (occasional professional grooming)</option>
-        <option value="high">High (regular professional grooming needed)</option>
       </select>
     </div>
     <button class="btn-calculate" onclick="calculateCost()">Estimate Annual Cost →</button>
@@ -119,94 +144,47 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   </div>
 
   <div class="disclaimer-box">
-    ⚕️ These are average estimates based on US national data. Actual costs vary by location, breed, and individual pet needs.
+    ⚕️ Averages are US national figures from the sources named; your local prices may be higher or lower. Emergencies are not included.
   </div>
 
   <div class="no-print" style="margin-top: 40px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">What Drives Pet Costs Up (and Down)</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Size</strong> is the single biggest cost driver for dogs. A large dog eats two to three times as much as a small dog, and many preventive medications (heartworm, flea/tick) are dosed by weight. Over a 12-year lifespan, the food cost difference between a 15 lb dog and a 90 lb dog can exceed $10,000.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Location</strong> affects veterinary costs significantly. Routine visits in major metro areas often run 40–60% higher than the same care in rural or mid-size markets. If you're budgeting carefully, it's worth calling a few local vets to get a sense of exam fees and vaccine costs in your area.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px;">Where Each Number Comes From</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
+      <li><strong>Routine vet care</strong> uses national averages from a 2025–2026 study of veterinary practices run for CareCredit by Synchrony: an exam ($56–$129 for dogs, $57–$130 for cats; the calculator uses the midpoint), the vaccines typically due in a year, and for seniors a chemistry panel, a blood count for dogs and a second exam. PetMD's veterinarian-written price guide supplies the heartworm test ($20–$75), fecal exam ($25–$50) and urinalysis ($20–$60), at their midpoints. PetMD recommends yearly checkups for adults and six-monthly checkups for seniors.</li>
+      <li><strong>Parasite prevention</strong> is a year of Simparica Trio for dogs (fleas, ticks, heartworm and some intestinal worms) or Revolution Plus for cats, at Chewy prices checked in November 2026. See <a href="/blog/flea-tick-prevention-cost/">Flea and Tick Prevention Cost</a> for cheaper and different options.</li>
+      <li><strong>Insurance</strong> uses the North American Pet Health Insurance Association's 2025 average premiums: $836 (dogs) and $435 (cats) for accident and illness, $190 and $112 for accident only.</li>
+      <li><strong>Supplies</strong> are the ASPCA's 2021 figures for treats, toys and a license, plus litter for cats ($150). The <strong>default boarding rate</strong> of $25 a night is also the ASPCA's 2021 figure and is low for many areas — replace it with your local price.</li>
+      <li><strong>Dental cleaning</strong>, if selected, is Synchrony's average: $379 for a dog, $395 for a cat, before X-rays or extractions.</li>
+      <li><strong>Food and grooming</strong> vary too much by size, coat and product for an average to mean much, so enter what you spend. The ASPCA's 2021 table used $300 a year for dog food and $225 for cat food.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">The Emergency Vet Problem</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This calculator covers predictable annual costs — the expenses you can plan for. What it doesn't include is the cost of an emergency: a swallowed toy, a broken leg, a sudden illness. These can run $1,500–$8,000+ with little warning and zero predictability.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most financial advisors who specialize in pet costs recommend either pet insurance (which covers these events) or a dedicated emergency fund of $2,000–$5,000 per pet. Having neither means facing these situations without a plan — which is when difficult decisions get made for financial rather than medical reasons.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">What the Survey Figures Say</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Rover's 2026 cost of pet ownership report puts a medium-sized dog at about <strong>$145–$505 a month</strong> and a medium-sized cat at about <strong>$70–$305</strong>, with median lifetime costs of $39,350 and $32,527. It found small-breed adult dogs cost about 63% less a year than large and giant breeds, and that senior years cost the most: about $2,475–$5,200 a year for a dog and $2,255–$4,740 for a cat. In its survey, 83% of owners had noticed pet costs rising over the past year.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">First-Year vs. Ongoing Costs</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The first year of pet ownership is significantly more expensive than subsequent years due to one-time costs: spay/neuter, initial vet visits, vaccines, and setup supplies (crate, bed, bowls, litter box). These typically add $500–$1,500 to year-one costs for both dogs and cats. After that, annual costs stabilize at the ranges shown above.</p>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Lifetime Cost Perspective</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Multiplying this calculator's annual estimate by your pet's expected lifespan (10–13 years for most dog breeds, 13–17 years for cats) gives a rough lifetime cost — but it will understate the true total. Costs tend to be lower in the middle years and rise again significantly in the senior years due to increased vet visits, bloodwork, and age-related treatment. Budgeting for a gradual increase rather than a flat annual number is more realistic over a pet's full lifetime.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">What This Doesn't Include</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Emergencies and illness. Approximate costs at emergency hospitals, compiled by Preventive Vet, include $100–$200 for the emergency exam, $600–$1,700 for one to two days in hospital and $1,500–$5,000 for emergency surgery. Insurance, savings or both are the usual ways to plan for these — see <a href="/blog/how-to-reduce-vet-costs-for-dogs/">How to Reduce Vet Costs for Dogs</a> and <a href="/blog/how-to-reduce-vet-costs-for-cats/">for Cats</a>.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The first year also costs more than later ones because of one-time items. The ASPCA's 2021 table puts a dog's first year at $3,221 and a cat's at $1,904, including spay or neuter, the initial vaccine series and equipment — and spay and neuter prices have risen since (Synchrony's averages are $455–$487 for a small or medium dog and $262–$353 for a cat).</p>
 
     <div class="post-cta">
-      <p>See the full year-by-year breakdown → <a href="/blog/true-cost-cat-vs-dog-year-by-year/">The True Cost of Owning a Cat vs Dog</a></p>
+      <p>See the full breakdown → <a href="/blog/annual-cost-of-owning-a-dog/">How Much Does a Dog Cost Per Year?</a> · <a href="/blog/true-cost-cat-vs-dog-year-by-year/">Cat vs Dog Cost</a></p>
     </div>
-
     <div class="post-cta" style="margin-top: 16px;">
       <p>Planning a spay/neuter or dental cleaning? → <a href="/tools/spay-neuter-cost-calculator.html">Spay/Neuter Cost Calculator</a> · <a href="/tools/dental-cleaning-cost-calculator.html">Dental Cleaning Cost Calculator</a></p>
     </div>
-
     <div class="post-cta" style="margin-top: 16px;">
-      <p>Just scheduled a spay/neuter? → <a href="/tools/spay-neuter-recovery-timeline.html">Get a recovery calendar</a></p>
+      <p>Insurance questions? → <a href="/tools/pet-insurance-cost-estimator.html">Pet Insurance Cost Estimator</a> · <a href="/tools/pet-insurance-claim-calculator.html">Pet Insurance Claim Calculator</a></p>
     </div>
-
     <div class="post-cta" style="margin-top: 16px;">
-      <p>Have a pet insurance policy? → <a href="/tools/pet-insurance-waiting-period-tracker.html">See when your coverage actually starts</a></p>
+      <p>Traveling soon? → <a href="/tools/pet-boarding-cost-calculator.html">Pet Boarding Cost Calculator</a> · Grooming → <a href="/tools/pet-grooming-cost-calculator.html">Pet Grooming Cost Calculator</a></p>
     </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Filing a claim, or wondering about deductible types? → <a href="/tools/pet-insurance-claim-calculator.html">Pet Insurance Claim Calculator</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Curious about grooming costs specifically? → <a href="/tools/pet-grooming-cost-calculator.html">Pet Grooming Cost Calculator</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Don't forget flea and tick prevention in your annual budget → <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Prevention Cost Calculator</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Just brought a new pet home? → <a href="/checklists/new-puppy-checklist.html">New Puppy Checklist</a> · <a href="/checklists/new-kitten-checklist.html">New Kitten Checklist</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Ready for the unexpected? → <a href="/checklists/pet-emergency-kit-checklist.html">Pet Emergency Kit Checklist</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Traveling soon? → <a href="/tools/pet-boarding-cost-calculator.html">Pet Boarding Cost Calculator</a></p>
-    </div>
-
-    <div class="post-cta" style="margin-top: 16px;">
-      <p>Want a closer look at parasite prevention costs specifically? → <a href="/tools/flea-tick-prevention-cost-calculator.html">Flea & Tick Cost Calculator</a> · <a href="/tools/heartworm-prevention-cost-calculator.html">Heartworm Prevention Cost Calculator</a></p>
-    </div>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Costs People Forget to Budget For</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most annual estimates cover food, routine vet care and preventives, then get blown apart by something entirely predictable. These are the lines usually missing:</p>
-    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
-      <li><strong>Dental work.</strong> Not an emergency, not optional either. A routine cleaning under anaesthesia runs several hundred dollars and most pets need one periodically from middle age. Budgeting nothing here is the most common gap.</li>
-      <li><strong>Boarding or pet sitting.</strong> If you travel at all this is a real annual line — a week of boarding can cost more than a month of food.</li>
-      <li><strong>Prescription diets.</strong> A pet who develops a urinary, kidney or gastrointestinal condition may move onto a therapeutic diet costing two to three times the old food, permanently.</li>
-      <li><strong>Preventives getting more expensive with weight.</strong> Flea, tick and heartworm products are weight-banded, so a growing puppy crosses bands and the same product costs more.</li>
-      <li><strong>Treatment, not just prevention.</strong> Fleas that get established cost considerably more to eliminate than a year of prevention would have.</li>
-    </ul>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Cost Curve Is Not Flat</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Knowing the shape of lifetime spending is more useful than knowing one annual number. It is front-loaded, drops to a long plateau, then climbs again — usually more steeply than owners expect.</p>
-    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 16px; padding-left: 20px;">
-      <li><strong>Year one is the most expensive year</strong> other than one with a crisis in it: vaccine series, spay or neuter, initial equipment, often training.</li>
-      <li><strong>Adulthood is the cheap plateau.</strong> Food, preventives, one annual exam. This is the period people base their mental estimate on, which is why later numbers feel like a shock.</li>
-      <li><strong>Senior years turn the curve up.</strong> Twice-yearly exams, bloodwork monitoring, dental work, arthritis management, often a prescription diet. A senior pet realistically costs two to three times what the same animal cost at five.</li>
-    </ul>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This matters for a decision made early and regretted later. Insurance premiums are cheapest when a pet is young and healthy — exactly when it feels least necessary — and anything diagnosed before you enrol is excluded as pre-existing. Waiting until the costs arrive means waiting until the cover no longer applies to them.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does it cost to own a dog per year?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Annual dog ownership costs typically range from $1,250 to $6,000+ depending on size, location, and health. Key categories include food ($400–$1,200), routine vet care ($300–$700), pet insurance ($300–$800), grooming ($50–$900), and supplies ($200–$400).</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Rover's 2026 cost of pet ownership report puts a medium-sized dog at about $145–$505 a month, and a senior dog at about $2,475–$5,200 a year. The ASPCA's cost table, last updated in 2021, has a typical year at $1,391. Size, age, insurance and services such as boarding and grooming account for most of the difference.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does it cost to own a cat per year?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Annual cat ownership costs typically range from $800 to $3,000+. Cats generally cost less than dogs. Key costs include food ($300–$600), vet care ($200–$500), pet insurance ($200–$500), and litter ($150–$300).</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What pet costs do first-time owners underestimate most?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Emergency vet bills, dental cleanings ($300–$800+ each), boarding costs for owners who travel, and end-of-life care are the expenses that most commonly catch new pet owners off guard.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Rover's 2026 report puts a medium-sized cat at about $70–$305 a month and a senior cat at about $2,255–$4,740 a year. The ASPCA's 2021 table has a typical year at $1,149, with insurance, food, routine care and litter as the largest lines.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Where do the calculator's numbers come from?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Vet prices are national averages from a 2025–2026 study run for CareCredit by Synchrony, with PetMD's ranges for tests it doesn't list; parasite prevention uses Chewy prices checked in November 2026; insurance uses NAPHIA's 2025 average premiums; supplies and the default boarding rate use the ASPCA's 2021 cost table. Food and grooming depend so much on the pet and product that you enter your own figures.</p>
   </div>
 </div>
 
@@ -237,32 +215,20 @@ description: Estimate the full yearly cost of owning a dog or cat — food, vet 
   transition: all 0.15s ease;
 }
 .pdf-btn:hover { background: var(--orange); color: white; }
+.cost-src { display: block; font-size: 0.78rem; opacity: 0.8; }
 @media print {
   .site-header, .site-footer, .nav-mobile      { display: none !important; }
   .tool-page-header, .pdf-btn, .btn-calculate  { display: none !important; }
   .post-cta, .disclaimer-box, .no-print        { display: none !important; }
-  .tool-box {
-    box-shadow: none !important; border: none !important;
-    background: none !important; margin: 0 !important;
-  }
+  .tool-box { box-shadow: none !important; border: none !important; background: none !important; margin: 0 !important; }
   .result-box  { margin:0 !important;box-shadow: none !important; }
   .print-header { display: flex !important; }
-
-  /* 빈 페이지 원인 제거 - 외부 래퍼 패딩/마진 초기화 */
   html, body { height: auto !important; padding: 0 !important; margin: 0 !important; }
   body, main, .main-content, .page-wrapper { padding: 0 !important; margin: 0 !important; }
   .tool-page { max-width:none !important; margin: 0 !important; padding:0 !important; height: auto !important; }
-  /* 섹션 간격 축소 */
-  #agenda-section, #schedule-section,
-  #cat-agenda-section, #cat-schedule-section,
-  #breakdown-section { margin-top: 20px !important; }
-  /* 페이지 안에서 잘리지 않게 */
-  .result-box, #breakdown-section > div { page-break-inside: avoid; }
-
+  .result-box { page-break-inside: avoid; }
+  .form-group, select, label { display: none !important; }
 }
-</style>
-<style>
-@media print { .form-group, select, label { display: none !important; } }
 </style>
 <script>
 function doPrint(dateId) {
@@ -270,64 +236,67 @@ function doPrint(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-</script>
-<script>
+function toggleSize() {
+  document.getElementById('size-group').style.display =
+    document.getElementById('pet-type').value === 'dog' ? 'block' : 'none';
+}
+
+// Sourced inputs (see "Where Each Number Comes From")
+const EXAM = { dog: (56 + 129) / 2, cat: (57 + 130) / 2 };                 // Synchrony 2025-26
+const VACCINES = { dog: 35 + 34 + 39 + 42 / 3, cat: 31 + 34 / 3 };          // rabies, lepto, Bordetella, DHPP/3 | rabies, FVRCP/3
+const HW_TEST = (20 + 75) / 2, FECAL = (25 + 50) / 2, URINALYSIS = (20 + 60) / 2;   // PetMD ranges
+const SENIOR_BLOOD = { dog: 164 + 104, cat: 144 };                          // chemistry (+ CBC for dogs), Synchrony
+const PREVENT = { dog: { small: 188.98 * 2, medium: 228.13 * 2, large: 234.77 * 2 }, cat: 154.40 * 2 }; // Chewy Nov 2026
+const INSURE = { dog: { accident: 190, ai: 836 }, cat: { accident: 112, ai: 435 } };   // NAPHIA 2025
+const SUPPLIES = { dog: 60 + 37 + 15, cat: 36 + 22 + 15 + 150 };            // ASPCA 2021
+const DENTAL = { dog: 379, cat: 395 };                                       // Synchrony
+
+function row(label, amount, src) {
+  return `<tr><td style="padding: 6px 0; border-bottom: 1px solid var(--border);">${label}<span class="cost-src">${src}</span></td><td style="text-align:right; padding: 6px 0; border-bottom: 1px solid var(--border); vertical-align: top;">$${Math.round(amount).toLocaleString()}</td></tr>`;
+}
+
 function calculateCost() {
-  const petType  = document.getElementById('pet-type').value;
-  const size     = document.getElementById('pet-size').value;
-  const stage    = document.getElementById('pet-age-stage').value;
-  const insured  = document.getElementById('has-insurance').value;
-  const grooming = document.getElementById('grooming').value;
+  const pet = document.getElementById('pet-type').value;
+  const size = document.getElementById('pet-size').value;
+  const senior = document.getElementById('pet-age-stage').value === 'senior';
+  const food = parseFloat(document.getElementById('food').value);
+  if (isNaN(food)) { alert('Please enter your monthly food spend (use 0 to leave it out).'); return; }
 
-  if (!petType || !size) { alert('Please select your pet type and size.'); return; }
+  const rows = [];
+  let total = 0;
+  function add(label, amount, src) { if (amount > 0) { rows.push(row(label, amount, src)); total += amount; } }
 
-  // Base food costs per year
-  const foodCosts = {
-    dog: { small: 400, medium: 700, large: 1000 },
-    cat: { small: 350, medium: 400, large: 450 }
-  };
+  add('🍖 Food', food * 12, 'Your figure × 12');
 
-  // Base vet costs (routine)
-  const vetBase = {
-    young:  { dog: 400, cat: 300 },
-    adult:  { dog: 500, cat: 350 },
-    senior: { dog: 900, cat: 700 }
-  };
+  let vet = EXAM[pet] * (senior ? 2 : 1) + VACCINES[pet] + FECAL;
+  if (pet === 'dog') vet += HW_TEST;
+  if (senior) vet += SENIOR_BLOOD[pet] + URINALYSIS;
+  add('🏥 Routine vet care', vet, senior ? 'Two exams, typical vaccines, tests and senior bloodwork — Synchrony, PetMD' : 'Exam, typical vaccines and tests — Synchrony, PetMD');
 
-  // Grooming costs per year
-  const groomCosts = { low: 50, medium: 250, high: 600 };
+  if (document.getElementById('prevention').value === 'yes') {
+    const p = pet === 'dog' ? PREVENT.dog[size] : PREVENT.cat;
+    add('🐜 Parasite prevention', p, pet === 'dog' ? 'Simparica Trio, 12 months — Chewy, Nov 2026' : 'Revolution Plus (5.6–11 lb), 12 months — Chewy, Nov 2026');
+  }
 
-  // Supplies, toys, bedding
-  const supplyCosts = { dog: 300, cat: 200 };
+  const ins = document.getElementById('insurance').value;
+  if (ins !== 'none') add('🛡️ Insurance', INSURE[pet][ins], ins === 'ai' ? 'Average accident-and-illness premium — NAPHIA 2025' : 'Average accident-only premium — NAPHIA 2025');
 
-  // Insurance or vet emergency fund estimate
-  const insuranceCosts = {
-    yes: { dog: 600, cat: 400 },
-    no:  { dog: 0,   cat: 0 }
-  };
+  add(pet === 'cat' ? '🧸 Treats, toys, license, litter' : '🧸 Treats, toys, license', SUPPLIES[pet], 'ASPCA (2021)');
 
-  const food      = (foodCosts[petType] || foodCosts.dog)[size] || 600;
-  const vet       = (vetBase[stage] || vetBase.adult)[petType] || 500;
-  const groom     = groomCosts[grooming] || 150;
-  const supplies  = supplyCosts[petType] || 250;
-  const insurance = (insuranceCosts[insured] || insuranceCosts.no)[petType] || 0;
+  const gv = parseFloat(document.getElementById('groom-visits').value) || 0;
+  const gp = parseFloat(document.getElementById('groom-price').value) || 0;
+  add('✂️ Professional grooming', gv * gp, `${gv} visits × $${gp}`);
 
-  const total = food + vet + groom + supplies + insurance;
-  const low   = Math.round(total * 0.85);
-  const high  = Math.round(total * 1.2);
+  const bn = parseFloat(document.getElementById('board-nights').value) || 0;
+  const br = parseFloat(document.getElementById('board-rate').value) || 0;
+  add('🏠 Boarding', bn * br, `${bn} nights × $${br}`);
 
-  document.getElementById('result-total').textContent = `$${low.toLocaleString()} – $${high.toLocaleString()} per year`;
+  if (document.getElementById('dental').value === 'yes') add('🦷 Dental cleaning', DENTAL[pet], 'Average routine cleaning, before X-rays or extractions — Synchrony');
 
-  document.getElementById('result-breakdown').innerHTML = `
-    <table style="width:100%; border-collapse: collapse;">
-      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🍖 Food</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${food.toLocaleString()}</td></tr>
-      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🏥 Veterinary care</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${vet.toLocaleString()}</td></tr>
-      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">✂️ Grooming</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${groom.toLocaleString()}</td></tr>
-      <tr><td style="padding: 5px 0; border-bottom: 1px solid var(--border);">🧸 Supplies & toys</td><td style="text-align:right; padding: 5px 0; border-bottom: 1px solid var(--border);">~$${supplies.toLocaleString()}</td></tr>
-      ${insurance > 0 ? `<tr><td style="padding: 5px 0;">🛡️ Pet insurance</td><td style="text-align:right; padding: 5px 0;">~$${insurance.toLocaleString()}</td></tr>` : ''}
-    </table>
-  `;
-
+  document.getElementById('result-total').textContent = `About $${Math.round(total).toLocaleString()} a year (≈ $${Math.round(total / 12).toLocaleString()} a month)`;
+  document.getElementById('result-breakdown').innerHTML =
+    `<table style="width:100%; border-collapse: collapse;">${rows.join('')}</table>
+     <p style="margin-top: 10px;">Not included: emergencies and illness. Preventive Vet's ranges put an emergency exam at $100–$200 and one to two days in hospital at $600–$1,700.</p>`;
   document.getElementById('result').classList.add('show');
   document.getElementById('pdf-btn').style.display = 'block';
 }

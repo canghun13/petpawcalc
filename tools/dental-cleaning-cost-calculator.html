@@ -1,7 +1,8 @@
 ---
 layout: tool
 title: Dog & Cat Dental Cleaning Cost Calculator
-description: Estimate the total cost of a professional dental cleaning for your dog or cat, including anesthesia, bloodwork, and potential tooth extractions. Free and instant.
+description: Estimate a dog or cat dental cleaning bill from national average prices (Synchrony 2025–26) — the cleaning, pre-anesthetic bloodwork, dental X-rays and extractions — and see why the final bill often exceeds the estimate.
+last_modified_at: 2026-11-25
 permalink: /tools/dental-cleaning-cost-calculator.html
 ---
 <script type="application/ld+json">
@@ -35,7 +36,7 @@ permalink: /tools/dental-cleaning-cost-calculator.html
       "name": "How much does dog teeth cleaning cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A routine dog dental cleaning under anesthesia typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth."
+        "text": "A routine dental cleaning averages $379 for a dog in a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony. Pre-anesthetic bloodwork (a chemistry panel averages $164), dental X-rays and any extractions are usually billed on top, which is why the final bill is often higher than the estimate."
       }
     },
     {
@@ -43,7 +44,7 @@ permalink: /tools/dental-cleaning-cost-calculator.html
       "name": "How much does cat teeth cleaning cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A routine cat dental cleaning under anesthesia typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs."
+        "text": "A routine cleaning averages $395 for a cat in Synchrony's study, with dental X-rays at $133 and extractions at $99 per tooth. Cats are prone to tooth resorption, which usually means extractions, so ask for X-rays and extractions to be quoted separately."
       }
     },
     {
@@ -51,7 +52,7 @@ permalink: /tools/dental-cleaning-cost-calculator.html
       "name": "Is anesthesia-free dental cleaning a cheaper alternative?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anesthesia-free cleanings ($150–$350) only remove visible surface tartar and cannot clean below the gumline, where most periodontal disease actually lives. The AVMA, AAHA, and American Veterinary Dental College all oppose anesthesia-free cleaning as a substitute for a proper anesthetic dental, since it's cosmetic rather than medically effective."
+        "text": "Not for your pet's dental health. The American Veterinary Dental College says cleaning under the gumline is impossible in an awake dog or cat and that scraping visible tartar is purely cosmetic; it also notes that dental procedures by anyone other than a licensed veterinarian or supervised technician are unlicensed practice in the US and Canada."
       }
     },
     {
@@ -59,7 +60,7 @@ permalink: /tools/dental-cleaning-cost-calculator.html
       "name": "How often should I brush my dog or cat's teeth at home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Daily brushing is considered the gold standard by veterinary dental organizations, but brushing every other day still provides real benefit — consistency matters more than perfection. A pet brushed three times a week is in meaningfully better shape than one brushed only occasionally or never, and regular brushing can extend the interval between professional cleanings even though it doesn't replace them."
+        "text": "Daily, or at least every other day, according to the Merck Veterinary Manual, which calls it the most effective home care for periodontal health. Only the outer surfaces of the teeth usually need brushing, and gauze can be used for pets that won't accept a brush. Use a pet toothpaste, not a human one."
       }
     },
     {
@@ -67,7 +68,7 @@ permalink: /tools/dental-cleaning-cost-calculator.html
       "name": "What does the VOHC seal on a dental product mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Veterinary Oral Health Council (VOHC) awards its seal only to dental chews, diets, water additives, and other products that have been shown through data submitted to VOHC's review process to reduce plaque or tartar buildup by at least 20%. Thousands of products claim dental benefits, but only a relatively small number — roughly a few dozen for dogs and cats combined — currently carry the VOHC seal, so it's a useful shortcut when comparing home-care products."
+        "text": "The Veterinary Oral Health Council gives its seal to dental chews, diets, water additives and other products that show a statistically significant reduction in plaque or tartar — at least 15% in each of two trials and 20% on average across them, under VOHC's trial protocol. It's a useful way to sort products with evidence behind them from marketing claims."
       }
     }
   ]
@@ -92,23 +93,24 @@ permalink: /tools/dental-cleaning-cost-calculator.html
 
     <div id="dc-form" style="display:none;">
       <div class="form-group">
-        <label for="dc-severity">Dental Condition (based on your vet's exam or grading)</label>
-        <select id="dc-severity">
-          <option value="mild">Mild — routine cleaning, no extractions expected</option>
-          <option value="moderate">Moderate — a few extractions likely</option>
-          <option value="severe">Severe — multiple extractions expected</option>
+        <label for="dc-xrays">Dental X-rays</label>
+        <select id="dc-xrays">
+          <option value="yes">Include (recommended for every dental patient)</option>
+          <option value="no">Already included in my clinic's cleaning price</option>
         </select>
       </div>
-
-      <div class="form-group" id="dc-teeth-group" style="display:none;">
-        <label for="dc-teeth-count">Estimated Number of Teeth Needing Extraction</label>
-        <input type="number" id="dc-teeth-count" min="1" max="20" step="1" placeholder="e.g. 3">
+      <div class="form-group">
+        <label for="dc-teeth-count">Teeth expected to need extraction (0 if unknown)</label>
+        <input type="number" id="dc-teeth-count" min="0" max="30" step="1" value="0">
       </div>
-
+      <div class="form-group">
+        <label for="dc-extract-price">Price per extraction ($)</label>
+        <input type="number" id="dc-extract-price" min="0" step="1" value="99">
+      </div>
       <div class="form-group">
         <label for="dc-bloodwork">Include pre-anesthetic bloodwork?</label>
         <select id="dc-bloodwork">
-          <option value="yes">Yes (recommended, especially age 5+)</option>
+          <option value="yes">Yes</option>
           <option value="no">No / already have recent results</option>
         </select>
       </div>
@@ -132,20 +134,21 @@ permalink: /tools/dental-cleaning-cost-calculator.html
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Extractions Drive the Final Bill</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A quoted "dental cleaning" price almost always assumes a routine cleaning with no extractions. In practice, dogs and cats with any meaningful dental disease often need one or more teeth removed once the vet can see below the gumline under anesthesia — something that isn't fully visible during a regular awake exam. Simple extractions run $150–$350 per tooth; more complex surgical extractions (multi-rooted teeth requiring bone removal) can run $300–$500 or more per tooth.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">This is why a $400 quote can become a $1,500+ final bill on the day of surgery — the estimate typically doesn't include extractions because the exact number isn't known until the vet is looking at dental X-rays with your pet already under anesthesia. Ask your vet to quote X-rays and likely extractions as a separate line item upfront so you aren't caught off guard.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Where the Numbers Come From</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">National averages from a 2025–2026 study of veterinary practices across all 50 states, run for CareCredit by Synchrony: a routine cleaning averages <strong>$379 for a dog and $395 for a cat</strong>, and a chemistry panel — the usual pre-anesthetic blood test — $164 and $144. For cats, the study also lists dental X-rays at <strong>$133</strong> and extractions at <strong>$99 per tooth</strong>; it doesn't give those figures for dogs, so the calculator uses the cat figures as a default you can change. Dog extractions of large, multi-rooted teeth are often priced higher, so replace them with your clinic's estimate if you have one.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Anesthesia Is Required</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A dog or cat's tooth is roughly 60% below the gumline, which is where most periodontal disease actually develops. Cleaning that area requires scaling and probing that no animal will tolerate while awake — anesthesia isn't optional padding on the bill, it's what makes a real cleaning possible at all. "Anesthesia-free" cleanings can only address visible surface tartar above the gumline and are considered cosmetic rather than medically effective by every major veterinary dental body (AVMA, AAHA, AVDC).</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Pre-anesthetic bloodwork exists to confirm it's safe to put your pet under — checking organ function before administering anesthesia drugs. It's often optional for young healthy pets but strongly recommended starting around age 5, when hidden organ issues become more common and more relevant to anesthesia risk.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Extractions Drive the Final Bill</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A quoted cleaning price usually assumes no extractions, because nobody knows how many teeth are affected until the pet is under anesthesia and the X-rays are taken. The 2019 AAHA Dental Care Guidelines strongly recommend full-mouth X-rays for every dental patient, according to the Merck Veterinary Manual — they're how problems below the gumline, such as tooth resorption in cats, are found. Ask your vet to quote X-rays and likely extractions as separate lines, based on what they can see at the awake exam.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How Often Is a Dental Cleaning Needed?</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Most dogs and cats benefit from their first professional cleaning around 2–3 years of age, then every 1–3 years afterward depending on how quickly tartar builds up. Small breed dogs (Yorkies, Chihuahuas, Dachshunds) often need cleanings more frequently — sometimes annually — because their teeth are more crowded, which traps more plaque. Consistent at-home brushing can meaningfully extend the interval between professional cleanings, though it doesn't eliminate the need for them entirely.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why Anesthesia Is Part of a Real Cleaning</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The American Veterinary Dental College says cleaning inside the gum pocket — where periodontal disease is active — is impossible in an awake dog or cat, that removing visible tartar alone is "purely cosmetic", and that anesthesia with a breathing tube prevents pain and protects the airway. The Merck Veterinary Manual likewise notes that cleaning an awake animal improves how the teeth look but not periodontal health.</p>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How Often Is a Cleaning Needed?</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">There's no fixed interval; it depends on what your vet finds at checkups. Periodontal disease starts early — the Merck Veterinary Manual says up to 80% of dogs and 70% of cats have some by age 2 — and toy breeds are at higher risk.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Home Care Between Cleanings</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Daily brushing is the gold standard recommended by veterinary dental organizations, but every-other-day brushing still delivers real protection — the goal is consistency, not perfection. A pet brushed three times a week is in dramatically better shape than one brushed twice a year or never, since brushing physically disrupts plaque before it hardens into tartar.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">When shopping for dental chews, diets, or water additives, look for the <strong>VOHC (Veterinary Oral Health Council) seal</strong>. Thousands of products claim dental benefits, but only products that submit data showing at least a 20% reduction in plaque or tartar earn the seal — it's a useful shortcut for sorting real benefit from marketing claims. Avoid anything hard enough that it wouldn't bend or dent slightly under firm thumbnail pressure, since overly hard chews (bones, antlers, hooves) are a common cause of fractured teeth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">According to the Merck Veterinary Manual, brushing <strong>daily or at least every other day</strong> appears to be the most effective home care; in most pets only the outer surfaces of the teeth need brushing, and pets that won't accept a brush can have their teeth wiped with gauze. Firm, fibrous chews can help, but hard items such as bones and hooves can crack teeth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Products that meet the Veterinary Oral Health Council's standard carry its seal. To earn it, a product has to show a statistically significant reduction in plaque or tartar of at least 15% in each of two trials and 20% on average across them, according to VOHC's trial protocol.</p>
 
     <div class="post-cta">
       <p>Want the full breakdown of extraction pricing and anesthesia? → <a href="/blog/dog-cat-dental-cleaning-cost/">Read: Dog & Cat Dental Cleaning Cost — What to Expect</a></p>
@@ -161,15 +164,15 @@ permalink: /tools/dental-cleaning-cost-calculator.html
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does dog teeth cleaning cost?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A routine dog dental cleaning under anesthesia typically costs $300–$700 at a private veterinary clinic. Pre-anesthetic bloodwork adds $50–$120, and tooth extractions — common in dogs with dental disease — add $150–$500 per tooth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A routine dental cleaning averages $379 for a dog in a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony. Pre-anesthetic bloodwork (a chemistry panel averages $164), dental X-rays and any extractions are usually billed on top, which is why the final bill is often higher than the estimate.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does cat teeth cleaning cost?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A routine cat dental cleaning under anesthesia typically costs $300–$600 at a private veterinary clinic, with bloodwork and extractions as separate add-on costs similar to dogs.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A routine cleaning averages $395 for a cat in Synchrony's study, with dental X-rays at $133 and extractions at $99 per tooth. Cats are prone to tooth resorption, which usually means extractions, so ask for X-rays and extractions to be quoted separately.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is anesthesia-free dental cleaning a cheaper alternative?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Anesthesia-free cleanings ($150–$350) only remove visible surface tartar and cannot clean below the gumline, where most periodontal disease actually lives. The AVMA, AAHA, and American Veterinary Dental College all oppose anesthesia-free cleaning as a substitute for a proper anesthetic dental, since it's cosmetic rather than medically effective.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not for your pet's dental health. The American Veterinary Dental College says cleaning under the gumline is impossible in an awake dog or cat and that scraping visible tartar is purely cosmetic; it also notes that dental procedures by anyone other than a licensed veterinarian or supervised technician are unlicensed practice in the US and Canada.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I brush my dog or cat's teeth at home?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Daily brushing is considered the gold standard by veterinary dental organizations, but brushing every other day still provides real benefit — consistency matters more than perfection. A pet brushed three times a week is in meaningfully better shape than one brushed only occasionally or never, and regular brushing can extend the interval between professional cleanings even though it doesn't replace them.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Daily, or at least every other day, according to the Merck Veterinary Manual, which calls it the most effective home care for periodontal health. Only the outer surfaces of the teeth usually need brushing, and gauze can be used for pets that won't accept a brush. Use a pet toothpaste, not a human one.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What does the VOHC seal on a dental product mean?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The Veterinary Oral Health Council (VOHC) awards its seal only to dental chews, diets, water additives, and other products that have been shown through data submitted to VOHC's review process to reduce plaque or tartar buildup by at least 20%. Thousands of products claim dental benefits, but only a relatively small number — roughly a few dozen for dogs and cats combined — currently carry the VOHC seal, so it's a useful shortcut when comparing home-care products.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The Veterinary Oral Health Council gives its seal to dental chews, diets, water additives and other products that show a statistically significant reduction in plaque or tartar — at least 15% in each of two trials and 20% on average across them, under VOHC's trial protocol. It's a useful way to sort products with evidence behind them from marketing claims.</p>
   </div>
 </div>
 
@@ -235,44 +238,26 @@ function toggleDcSpecies() {
   document.getElementById('dc-result').style.display = 'none';
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('dc-severity').addEventListener('change', function() {
-    document.getElementById('dc-teeth-group').style.display = this.value === 'mild' ? 'none' : 'block';
-  });
-});
-
 function calculateDental() {
   const species = document.getElementById('dc-species').value;
-  const severity = document.getElementById('dc-severity').value;
-  const teethCount = parseInt(document.getElementById('dc-teeth-count').value) || (severity === 'moderate' ? 3 : severity === 'severe' ? 8 : 0);
-  const bloodwork = document.getElementById('dc-bloodwork').value;
+  const teeth = Math.max(0, parseInt(document.getElementById('dc-teeth-count').value, 10) || 0);
+  const perTooth = Math.max(0, parseFloat(document.getElementById('dc-extract-price').value) || 0);
+  const xrays = document.getElementById('dc-xrays').value === 'yes';
+  const blood = document.getElementById('dc-bloodwork').value === 'yes';
+  // Synchrony 2025-26 national averages
+  const CLEAN = { dog: 379, cat: 395 }, CHEM = { dog: 164, cat: 144 }, XRAY = 133;
 
-  let baseLow, baseHigh;
-  if (species === 'dog') { baseLow = 300; baseHigh = 700; }
-  else { baseLow = 300; baseHigh = 600; }
+  const rows = [];
+  let total = CLEAN[species];
+  rows.push([`Routine cleaning (${species}) — Synchrony average`, CLEAN[species]]);
+  if (blood) { total += CHEM[species]; rows.push(['Chemistry panel before anesthesia — Synchrony average', CHEM[species]]); }
+  if (xrays) { total += XRAY; rows.push([species === 'cat' ? 'Dental X-rays — Synchrony average' : 'Dental X-rays — Synchrony cat average, as a guide', XRAY]); }
+  if (teeth > 0) { total += teeth * perTooth; rows.push([`Extractions: ${teeth} × $${perTooth}`, teeth * perTooth]); }
 
-  let extractLow = 0, extractHigh = 0;
-  if (severity !== 'mild' && teethCount > 0) {
-    extractLow = teethCount * 150;
-    extractHigh = teethCount * (severity === 'severe' ? 500 : 350);
-  }
-
-  let bloodLow = 0, bloodHigh = 0;
-  if (bloodwork === 'yes') { bloodLow = 50; bloodHigh = 120; }
-
-  const totalLow = baseLow + extractLow + bloodLow;
-  const totalHigh = baseHigh + extractHigh + bloodHigh;
-
-  document.getElementById('dc-result-total').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
-
-  let breakdown = `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Base cleaning (${species === 'dog' ? 'dog' : 'cat'})</span><span>$${baseLow}–$${baseHigh}</span></div>`;
-  if (bloodwork === 'yes') {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Pre-anesthetic bloodwork</span><span>$${bloodLow}–$${bloodHigh}</span></div>`;
-  }
-  if (severity !== 'mild' && teethCount > 0) {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Extractions (${teethCount} teeth est.)</span><span>$${extractLow.toLocaleString()}–$${extractHigh.toLocaleString()}</span></div>`;
-  }
-  document.getElementById('dc-result-breakdown').innerHTML = breakdown;
+  document.getElementById('dc-result-total').textContent = `About $${Math.round(total).toLocaleString()}`;
+  let html = rows.map(r => `<div style="display:flex; justify-content:space-between; gap:12px; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>${r[0]}</span><span>$${Math.round(r[1]).toLocaleString()}</span></div>`).join('');
+  html += `<p style="margin-top:10px;">${teeth === 0 ? 'No extractions are included. If X-rays show teeth that need to come out, each one adds to the bill. ' : ''}Prices vary widely by region and clinic — ask for an itemised written estimate.</p>`;
+  document.getElementById('dc-result-breakdown').innerHTML = html;
 
   document.getElementById('dc-result').style.display = 'block';
   document.getElementById('dc-result').classList.add('show');
