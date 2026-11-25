@@ -316,18 +316,18 @@ function calculateVaxSchedule() {
   if (isPuppy) {
     let status, note;
     if (totalWeeks < 6) {
-      status = 'upcoming'; note = 'First DHPP dose typically starts at 6–8 weeks.';
+      status = 'upcoming'; note = 'AAHA: at least three doses between 6 and 16 weeks, 2–4 weeks apart.';
     } else if (totalWeeks < 16) {
-      status = 'due'; note = 'Puppies need a DHPP dose every 3–4 weeks until at least 16 weeks old.';
+      status = 'due'; note = 'AAHA: a dose every 2–4 weeks until 16 weeks (at least three doses in total).';
     } else {
-      status = 'due'; note = 'The 16-week dose is the most important — it\'s given after maternal antibodies have faded enough for the vaccine to work.';
+      status = 'due'; note = 'The series runs to 16 weeks because maternal antibodies can block earlier doses (AAHA). A booster follows within a year of the last puppy dose.';
     }
-    vaxItems.push({ name: 'DHPP (Distemper, Hepatitis, Parvovirus, Parainfluenza)', core: true, status, note, cost: '$20–$40 per dose' });
+    vaxItems.push({ name: 'DHPP (Distemper, Hepatitis, Parvovirus, Parainfluenza)', core: true, status, note, cost: '$42 per dose (national average)' });
 
     if (totalWeeks < 12) {
-      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'First rabies shot typically given at 12–16 weeks, timing varies by state law.', cost: '$15–$30' });
+      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'AAHA: given as required by law — your state sets the age.', cost: '$35 (national average)' });
     } else {
-      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'First rabies shot is typically due now (12–16 week window) — check your state\'s legal requirement.', cost: '$15–$30' });
+      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'Given as required by law — ask your vet when your state requires the first dose.', cost: '$35 (national average)' });
     }
   } else {
     // adult/senior logic
@@ -335,25 +335,25 @@ function calculateVaxSchedule() {
     if (lastCore === 'none') {
       dhppStatus = 'due'; dhppNote = 'No record of a core series — start the puppy-style catch-up series with your vet.';
     } else if (lastCore === 'lt1') {
-      dhppStatus = 'ok'; dhppNote = 'Given within the last year — likely still covered. Many vets move to a 3-year schedule after the first adult booster.';
+      dhppStatus = 'ok'; dhppNote = 'Given within the last year. After the first-year booster, AAHA recommends core vaccines every 3 years.';
     } else if (lastCore === '1to2') {
-      dhppStatus = 'ok'; dhppNote = 'Likely still within a 3-year core schedule, but confirm with your vet\'s specific protocol.';
+      dhppStatus = 'ok'; dhppNote = 'Likely still within AAHA\'s 3-year interval — confirm with your vet.';
     } else {
-      dhppStatus = 'due'; dhppNote = 'More than 2 years — due for a booster, or ask your vet about titer testing to check existing immunity first.';
+      dhppStatus = 'due'; dhppNote = 'Approaching or past the 3-year interval — ask your vet whether a booster is due, or whether a titer test is an option.';
     }
-    vaxItems.push({ name: 'DHPP (core)', core: true, status: dhppStatus, note: dhppNote, cost: '$20–$40' });
-    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Required by law in most states — interval is 1 or 3 years depending on your local requirement and vaccine type.', cost: '$15–$30' });
+    vaxItems.push({ name: 'DHPP (core)', core: true, status: dhppStatus, note: dhppNote, cost: '$42 (national average)' });
+    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Follows local law, which may require a 1- or 3-year vaccine.', cost: '$35 (national average)' });
   }
 
   // Non-core based on lifestyle
   if (lifestyle.includes('boarding')) {
-    vaxItems.push({ name: 'Bordetella (kennel cough)', core: false, status: 'recommended', note: 'Recommended for dogs in boarding, daycare, or grooming settings — often required by these facilities.', cost: '$20–$35' });
+    vaxItems.push({ name: 'Bordetella (kennel cough)', core: false, status: 'recommended', note: 'AAHA bases it on lifestyle — boarding, daycare and dog parks. Yearly; injectable needs 2 doses 2–4 weeks apart at first.', cost: '$39 (national average)' });
   }
   if (lifestyle.includes('outdoor')) {
-    vaxItems.push({ name: 'Leptospirosis', core: false, status: 'recommended', note: 'Recommended for dogs exposed to standing water, wildlife, or rural/wooded areas.', cost: '$20–$30' });
+    vaxItems.push({ name: 'Leptospirosis', core: false, status: 'recommended', note: 'AAHA considers most dogs in North America at risk. Two doses 2–4 weeks apart from 12 weeks, then yearly.', cost: '$34 (national average)' });
   }
   if (lifestyle.includes('dogpark') || lifestyle.includes('boarding')) {
-    vaxItems.push({ name: 'Canine Influenza', core: false, status: 'consider', note: 'Worth discussing if your dog is frequently around unfamiliar dogs in group settings.', cost: '$25–$40' });
+    vaxItems.push({ name: 'Canine Influenza', core: false, status: 'consider', note: 'AAHA bases it on lifestyle, such as boarding, daycare and dog parks. Two doses 2–4 weeks apart, then yearly.', cost: '$53 (national average)' });
   }
   if (lifestyle.length === 0 || lifestyle.includes('none')) {
     vaxItems.push({ name: 'Non-core vaccines', core: false, status: 'ok', note: 'Based on a mostly indoor lifestyle with limited other-dog contact, additional non-core vaccines may not be necessary — confirm with your vet.', cost: '—' });
@@ -387,7 +387,7 @@ function calculateVaxSchedule() {
       <div>
         <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${v.name} ${v.core ? '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(core)</span>' : '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(non-core)</span>'}</div>
         <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">${v.note}</div>
-        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Typical cost: ${v.cost}</div>
+        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Average cost: ${v.cost}</div>
       </div>
       <div style="flex-shrink:0; font-weight:700; color:${s.color}; font-size:0.85rem; white-space:nowrap;">${s.label}</div>
     </div>

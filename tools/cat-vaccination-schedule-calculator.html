@@ -304,43 +304,43 @@ function calculateCatVaxSchedule() {
   if (isKitten) {
     let status, note;
     if (totalWeeks < 6) {
-      status = 'upcoming'; note = 'First FVRCP dose typically starts at 6–8 weeks.';
+      status = 'upcoming'; note = 'AAHA/AAFP: from no earlier than 6 weeks, every 3–4 weeks until 16–20 weeks.';
     } else if (totalWeeks < 16) {
-      status = 'due'; note = 'Kittens need an FVRCP dose every 3–4 weeks until at least 16 weeks old.';
+      status = 'due'; note = 'AAHA/AAFP: a dose every 3–4 weeks until 16–20 weeks of age.';
     } else {
-      status = 'due'; note = 'The 16-week dose is the most important — it\'s given after maternal antibodies have faded enough for the vaccine to work.';
+      status = 'due'; note = 'The series runs to 16–20 weeks because maternal antibodies can block earlier doses; a booster is considered at 6 months (AAHA/AAFP).';
     }
-    vaxItems.push({ name: 'FVRCP (Rhinotracheitis, Calicivirus, Panleukopenia)', core: true, status, note, cost: '$20–$40 per dose' });
+    vaxItems.push({ name: 'FVRCP (Rhinotracheitis, Calicivirus, Panleukopenia)', core: true, status, note, cost: '$34 per dose (national average)' });
 
     if (totalWeeks < 12) {
-      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'First rabies shot typically given at 12–16 weeks, timing varies by state/local law.', cost: '$15–$30' });
+      vaxItems.push({ name: 'Rabies', core: true, status: 'upcoming', note: 'AAHA/AAFP: follow the vaccine label and local law.', cost: '$31 (national average)' });
     } else {
-      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'First rabies shot is typically due now (12–16 week window) — check your local legal requirement.', cost: '$15–$30' });
+      vaxItems.push({ name: 'Rabies', core: true, status: 'due', note: 'Follow the vaccine label and local law — ask your vet.', cost: '$31 (national average)' });
     }
 
     if (lifestyle !== 'indoor') {
-      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: true, status: totalWeeks < 8 ? 'upcoming' : 'due', note: 'Recommended for kittens with any outdoor access or unknown exposure history — an initial series plus a one-year booster.', cost: '$25–$45 per dose' });
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: true, status: totalWeeks < 8 ? 'upcoming' : 'due', note: 'AAHA/AAFP: generally recommended for kittens — 2 doses 3–4 weeks apart from as early as 8 weeks, booster 12 months later.', cost: '$33 per dose (national average)' });
     } else {
-      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'Often still given to kittens even if indoor-only, since future lifestyle isn\'t always predictable at this age. Discuss with your vet.', cost: '$25–$45 per dose' });
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'AAHA/AAFP generally recommend it for kittens because their future lifestyle isn\'t known yet — 2 doses 3–4 weeks apart, booster 12 months later.', cost: '$33 per dose (national average)' });
     }
   } else {
     let fvrcpStatus, fvrcpNote;
     if (lastCore === 'none') {
       fvrcpStatus = 'due'; fvrcpNote = 'No record of a core series — start the kitten-style catch-up series with your vet.';
     } else if (lastCore === 'lt1') {
-      fvrcpStatus = 'ok'; fvrcpNote = 'Given within the last year — likely still covered. Many vets move to a 3-year schedule after the first adult booster.';
+      fvrcpStatus = 'ok'; fvrcpNote = 'Given within the last year. After the first-year booster, AAHA/AAFP recommend core vaccines every 3 years for most adults.';
     } else if (lastCore === '1to2') {
-      fvrcpStatus = 'ok'; fvrcpNote = 'Likely still within a 3-year core schedule, but confirm with your vet\'s specific protocol.';
+      fvrcpStatus = 'ok'; fvrcpNote = 'Likely still within the 3-year interval — confirm with your vet.';
     } else {
-      fvrcpStatus = 'due'; fvrcpNote = 'More than 2 years — due for a booster.';
+      fvrcpStatus = 'due'; fvrcpNote = 'Approaching or past the 3-year interval — ask your vet whether a booster is due.';
     }
-    vaxItems.push({ name: 'FVRCP (core)', core: true, status: fvrcpStatus, note: fvrcpNote, cost: '$20–$40' });
-    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Required by law in most areas — interval is 1 or 3 years depending on your local requirement and vaccine type.', cost: '$15–$30' });
+    vaxItems.push({ name: 'FVRCP (core)', core: true, status: fvrcpStatus, note: fvrcpNote, cost: '$34 (national average)' });
+    vaxItems.push({ name: 'Rabies (core)', core: true, status: (lastCore === 'gt2' || lastCore === 'none') ? 'due' : 'ok', note: 'Follows the vaccine label and local law; a 3-year vaccine where the law permits.', cost: '$31 (national average)' });
 
     if (lifestyle === 'outdoor') {
-      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'recommended', note: 'Recommended for cats with outdoor access — annual or every-other-year booster depending on ongoing exposure.', cost: '$25–$45' });
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'recommended', note: 'For adults it depends on exposure — yearly or every 2–3 years, depending on exposure and vaccine (AAHA/AAFP).', cost: '$33 (national average)' });
     } else if (lifestyle === 'indoor_multi') {
-      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'Worth discussing if any housemate cats have unknown or FeLV-positive status.', cost: '$25–$45' });
+      vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'consider', note: 'Worth discussing if any housemate cats go outdoors or have unknown FeLV status.', cost: '$33 (national average)' });
     } else {
       vaxItems.push({ name: 'FeLV (Feline Leukemia)', core: false, status: 'ok', note: 'Strictly indoor adult cats with no FeLV-positive housemates typically don\'t need ongoing FeLV boosters — confirm with your vet.', cost: '—' });
     }
@@ -374,7 +374,7 @@ function calculateCatVaxSchedule() {
       <div>
         <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${v.name} ${v.core ? '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(core)</span>' : '<span style="font-size:0.72rem; color:var(--brown-mid); font-weight:500;">(non-core)</span>'}</div>
         <div style="font-size: 0.88rem; color: var(--brown-mid); line-height: 1.6;">${v.note}</div>
-        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Typical cost: ${v.cost}</div>
+        <div style="font-size: 0.82rem; color: var(--brown-mid); margin-top: 6px;">Average cost: ${v.cost}</div>
       </div>
       <div style="flex-shrink:0; font-weight:700; color:${s.color}; font-size:0.85rem; white-space:nowrap;">${s.label}</div>
     </div>
