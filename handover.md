@@ -3530,3 +3530,18 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
   - **4묶음 8개 완료(3548d24, 1c64bf8)**: 접종(AAHA 2022 견·AAHA/AAFP 2020 묘), 진료주기 개/고양이(PetMD·AAHA/AAFP 생애단계), 개 나이(PetMD 크기별 규칙, Cell Systems 연구 연도 2019→**2020 정정**), 개 QoL(Villalobos 0–10·>35, AAHA 통증), 배변 퇴행(Ballantyne DACVB), 리터 퇴행(FelineVMA·Cornell), 변 차트(Purina 점수·PetMD·Merck AHDS·CDC). Dog Age Calculator 표를 PetMD 규칙 중간값으로 맞춤. 개 저체중 FAQ 2개(그레이하운드·퍼피 쿼리형) 정리·출처 보강.
   - **남은 것(다음 세션)**: 출처 없는 **도구 페이지** 점검 — annual-pet-cost-calculator, pet-boarding/grooming-cost-calculator, flea-tick-prevention-cost-calculator(가격이 포스트 Chewy 값과 다를 수 있음), cat-vaccination-schedule-calculator(FeLV 비용 등), pet-insurance-cost-estimator, dog/cat vet visit scheduler. 고양이 QoL 포스트는 "1 to 10", 개 QoL은 원표 기준 "0–10"으로 표기 차이(원 출처 자체가 혼용).
   - 애드센스 재신청: 이번 수정분이 재크롤된 뒤(최소 1–2주) 권장.
+
+### 세션 BQ (11/25) — 출처 없는 도구 페이지 수정 (사용자 지시: "나머지 전부 진행해")
+
+**완료·배포**
+- **T1 비용 도구 9개(2cf312d)**: annual-pet-cost, boarding, grooming, flea-tick, insurance estimator/claim, spay-neuter cost, dental cost, heartworm — 임의 배수·직선식 제거, Synchrony·Rover·ASPCA·NAPHIA·Chewy·CareCredit 가격표 또는 사용자 견적 입력으로 교체.
+- **T2 건강·번식 도구(2d600d3, b6ffe7f, 380fac4, fdbfec2)**:
+  - 개 임신(Cornell 63일·교배일 ±7/배란일 ±1–2, 견종크기 보정 삭제), 고양이 임신(VCA 63–65일·60–67 정상·71일), 개/고양이 발정(Cornell·VCA — 크기별 주기표·12°F 단계 등 임의값 삭제, 사용자 주기 입력), 이갈이(AKC·VCA — "중성화 때 유치 발치" 권고는 VCA와 정반대라 정정), 더위(NWS 열지수·AVMA 차량온도·Hall 2020·Beard 2024·RVC 냉각 — 임의 패널티 점수·산책시간 삭제), 추위(NWS 체감온도·Cornell·AVMA·Anchorage AACC 툴 — Tufts 임계값 미확인으로 삭제).
+  - 수면 호흡수(VCA·Scansen — CEG 출처 표기 정정), 수유(NKC·Maddie's 기반 27ml/100g·ASPCA 2배 한도·Pasadena/Kitten Lady 간격·강아지는 VCA kcal÷라벨 kcal/ml로 분리), QoL 2개(HHHHHMM 0–10점·Villalobos >35, 52점 단계 삭제).
+  - pet-weight(BCS 기반 AAHA 10%/점으로 전환, 임의 크기별 범위 삭제), 배변훈련(AKC 월+1·Ballantyne 2–3시간, 크기별 완성시기표 삭제), 리터(Kitten Lady·PetMD·FelineVMA), 중성화 회복(ASPCA 지침 전체 — 콘 기간·종이 모래 미확인 삭제), 진료 스케줄러 2개(PetMD — 강아지 간격 3개월 버그 수정, 만성질환 3개월 삭제), 귀 재발(Lundberg 2025·Picco — 24%/절반 수치 정정), 제외식이(Olivry 2015 8주 양종, 고양이 12주·GI 4주 삭제, Mueller 2017 혈액/타액검사).
+- **T3 행동·플래너 8개(abaf8ca)**: 고양이 합사(FelineVMA·UC Davis, 기간 창 삭제·단계 기준), 개 합사(ASPCA 1주 규칙), 차 불안(VCA), 캐리어(AAFP 6단계), 신생아 준비(PetMD·AKC·ASPCA), 해외 이동(USDA APHIS EU·영국·일본 실제 요건, 3단계 가상 티어 삭제), 분리불안(ASPCA·Bain 2025), 보험 대기기간(NAIC 모델법: 사고 대기 금지·질병/정형 30일 상한·검진 면제).
+- **접종 계산기 2개(9a1ef23)**: 비용을 Synchrony 평균으로, 일정 문구를 AAHA/AAFP로. 키튼 나이 추정기 백신 FAQ 정정.
+- 모든 변경분: sources.html 항목, llms.txt, index·tools/index 소개문 갱신. QA ALL CLEAN, 렌더·JS 테스트 통과.
+
+**남음 (WebFetch 월 한도 — 14:10 KST 이후 재개)**
+- 접종 계산기 2개 본문의 CAPC 구충 일정 확인, cat-urinary-emergency-checker, dog-mobility-arthritis-screening, pet-diarrhea-triage, raw-feeding, titer-test, pet-food-calorie, neuter-timing-by-breed-size.
