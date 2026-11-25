@@ -36,7 +36,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Cat Heat Cycle Calculator](https://petpawcalc.com/tools/cat-heat-cycle-calculator.html): Estimates when a cat's heat ends and the next begins if she isn't mated, from VCA averages (heat about 7 days, range 1–21; whole cycle 1–6 weeks, average about 3). Notes seasonal versus year-round cycling for indoor cats.
 
-- [Pet Weight Calculator](https://petpawcalc.com/tools/pet-weight-calculator.html): Combined dog and cat weight checker. Lets users select species, then checks current weight against breed-typical ranges, plus an interactive 3-point Body Condition Score (BCS) self-check (ribs, waist, belly tuck). Links to the dedicated Dog Weight Calculator and Cat Weight Calculator for more detail.
+- [Pet Weight Calculator](https://petpawcalc.com/tools/pet-weight-calculator.html): Dog or cat body-condition weight check: the user picks a 1–9 body condition score (WSAVA/Purina descriptions) and gets an estimated ideal weight using AAHA's roughly 10% per point above 5, plus AAHA's weekly weight-loss pace (1–2% for dogs, 0.5–2% for cats). Links to the separate dog and cat weight calculators.
 
 - [Dog Vaccination Schedule Calculator](https://petpawcalc.com/tools/dog-vaccination-schedule-calculator.html): Enter a dog's age and lifestyle (boarding/daycare, dog parks, outdoor/rural exposure) to get a personalized vaccine status list — core vaccines (DHPP, rabies) and lifestyle-driven non-core vaccines (Bordetella, leptospirosis, canine influenza) — flagged as due, upcoming, recommended, or up to date, with typical cost ranges per vaccine. Also includes a CAPC-based deworming schedule calculator (same age input) covering the every-2-week puppy phase, monthly phase, and quarterly adult maintenance — dates/intervals only, no dosage information.
 
@@ -50,9 +50,9 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Flea & Tick Prevention Cost Calculator](https://petpawcalc.com/tools/flea-tick-prevention-cost-calculator.html): Yearly cost of Seresto, Frontline Plus, NexGard and Simparica Trio for a dog's weight band, or Seresto, Frontline Plus and Revolution Plus for cats, at Chewy prices checked November 2026.
 
-- [Puppy Potty Training Calculator](https://petpawcalc.com/tools/puppy-potty-training-calculator.html): Enter a puppy's age, expected adult size, and training method (crate/pad/mixed) to get bladder-hold time (daytime and overnight), a full daily potty-break schedule, and an expected housetraining timeline by breed size (toy/small vs medium vs large/giant).
+- [Puppy Potty Training Calculator](https://petpawcalc.com/tools/puppy-potty-training-calculator.html): Maximum hold time from the AKC's month-plus-one rule, a daytime break interval (every 2–3 hours while house training, per veterinary behaviorist Kelly Ballantyne) and a daily trigger checklist (waking, meals, play, confinement, bedtime). Covers Ballantyne's steps, crates and pads, and medical causes first.
 
-- [Kitten Litter Training Timeline](https://petpawcalc.com/tools/kitten-litter-training-timeline.html): Enter a kitten's age in weeks and household cat count to get age-specific guidance — litter box size, clumping vs. non-clumping litter safety, and box count using the n+1 rule — plus troubleshooting for kittens not using the box.
+- [Kitten Litter Training Timeline](https://petpawcalc.com/tools/kitten-litter-training-timeline.html): Box, litter and setup by kitten age from Kitten Lady, PetMD and the Feline Veterinary Medical Association: a box from about 3–4 weeks, non-clumping litter until about 8–10 weeks or 2–3 months, about 1.5× body length, one box per cat plus one.
 
 - [Raw Feeding Calculator](https://petpawcalc.com/tools/raw-feeding-calculator.html): Enter a dog or cat's weight, life stage, and raw feeding model (80/10/10 Prey Model Raw or 70/10/10+10% BARF for dogs) to get daily portions split into muscle meat, bone, and organ, plus an estimated monthly and annual cost based on meat price per pound.
 
@@ -60,7 +60,7 @@ PetPawCalc is a free tool-first resource. Every calculator is designed to give p
 
 - [Titer Test vs. Revaccination Cost Calculator](https://petpawcalc.com/tools/titer-test-vs-revaccination-calculator.html): Select species, years to compare, titer testing frequency, and number of pets to compare the total cost of standard core-vaccine revaccination against titer testing, showing both the best-case (all titers stay positive) and a scenario where one booster is still eventually needed.
 
-- [Spay/Neuter Recovery Timeline Calculator](https://petpawcalc.com/tools/spay-neuter-recovery-timeline.html): Enter surgery date, species, sex, and age group to get a personalized recovery calendar with actual dates for daily incision checks, litter change window (cats), cone removal, and activity restriction. Includes a normal-vs-call-the-vet incision comparison table and a cone-vs-recovery-suit comparison table.
+- [Spay/Neuter Recovery Timeline](https://petpawcalc.com/tools/spay-neuter-recovery-timeline.html): Dated recovery calendar from the ASPCA Spay/Neuter Alliance's aftercare instructions: half meal on day 0, appetite within 24 hours, 7–10 days of rest, no baths for 10 days, twice-daily incision checks with what's normal for each sex and species, the 10-day recheck if skin stitches were used, and the 30-day fertility window after neutering.
 
 - [Pet Insurance Waiting Period Tracker](https://petpawcalc.com/tools/pet-insurance-waiting-period-tracker.html): Enter a policy's effective date and its accident/illness/orthopedic waiting periods to see the exact calendar dates each coverage type begins. Covers the pre-existing-condition trap (symptoms during the waiting period can be excluded permanently) and explains that switching insurers resets all waiting periods.
 

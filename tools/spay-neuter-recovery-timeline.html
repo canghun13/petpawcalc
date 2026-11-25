@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Spay/Neuter Recovery Timeline — Cone, Incision Check & Activity Calendar
-description: Enter your dog or cat's surgery date to get a personalized recovery calendar with actual dates — when the cone typically comes off, when activity restrictions lift, and daily incision-check reminders. Free and instant.
+description: Enter your dog's or cat's surgery date to get a dated recovery calendar based on the ASPCA's aftercare instructions — rest, incision checks, the no-bath period and the 10-day recheck.
 permalink: /tools/spay-neuter-recovery-timeline.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -32,42 +33,42 @@ permalink: /tools/spay-neuter-recovery-timeline.html
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How long does a dog or cat need to wear the cone after spay/neuter?",
+      "name": "How long should my pet rest after a spay or neuter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most vets recommend keeping the cone (E-collar) on for the full recovery window rather than removing it once the incision looks closed — typically 10-14 days for dogs and 7-14 days for cats depending on the procedure. A spay (abdominal surgery) generally needs the cone longer than a neuter."
+        "text": "The ASPCA's aftercare instructions call for limiting running, jumping and play for 7–10 days, confining your pet when you can't supervise, carrying small pets on stairs and using a leash for bathroom trips."
       }
     },
     {
       "@type": "Question",
-      "name": "Why can't I take the cone off once the incision looks healed?",
+      "name": "When can my pet have a bath after surgery?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The visible skin can close by around day 7 while the tissue underneath is still healing for another week or more. A few minutes of licking at that stage can reopen the incision or introduce bacteria, even though it looked fine moments earlier. The cone is protecting healing you can't see, not just the surface."
+        "text": "Not for 10 days, according to the ASPCA, and no ointments either: wet skin glue dissolves too quickly."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does my male cat need a special litter after neutering?",
+      "name": "Does my pet need a cone after a spay or neuter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cat neuters usually leave a small, open scrotal incision without external sutures, so standard clumping or dusty litter can stick to the wound or irritate it. Vets commonly recommend shredded paper or non-clumping pellets for about 5-14 days after surgery, until the incision has closed."
+        "text": "Use an e-collar if your pet licks or chews at the incision, the ASPCA says, and put it straight back on after meals. If your pet can still reach the incision, get a larger collar or call the clinic."
       }
     },
     {
       "@type": "Question",
-      "name": "Is spay recovery longer than neuter recovery?",
+      "name": "When do stitches come out?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, for both dogs and cats. Spaying is abdominal surgery (removing the ovaries and typically the uterus) while neutering only requires accessing the externally located testicles, so spay recovery generally involves a longer activity restriction and sometimes a longer cone period."
+        "text": "Often they don't need to. The ASPCA notes females have internal stitches that dissolve plus skin glue, and male cats have no stitches. If skin stitches or staples were used, they come out at a recheck at about 10 days."
       }
     },
     {
       "@type": "Question",
-      "name": "What's normal vs. what needs a vet call after spay/neuter surgery?",
+      "name": "What's normal and what needs a call after surgery?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mild swelling, slight redness, or a small amount of bruising in the first few days is normal and usually improves daily. Call your vet if you see pus or discharge, a foul odor, the incision separating or gaping open, swelling that keeps growing rather than shrinking, or your pet seems lethargic, won't eat, or is in obvious pain."
+        "text": "Mild redness and swelling that settles within several days is normal, and male dogs can have slight drainage for up to three days. Call the clinic for pale gums, lethargy over 24 hours, loss of appetite, vomiting or diarrhea, discharge or bleeding from the incision, trouble urinating, or labored breathing."
       }
     }
   ]
@@ -77,7 +78,7 @@ permalink: /tools/spay-neuter-recovery-timeline.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🩹 Spay/Neuter Recovery Timeline</h1>
-    <p>Enter your pet's surgery date to get a personalized recovery calendar — actual dates for daily incision checks, when the cone typically comes off, and when activity restrictions usually lift.</p>
+    <p>Enter your pet's surgery date to get a dated recovery calendar based on the ASPCA's aftercare instructions — rest, twice-daily incision checks, the no-bath period and the 10-day recheck.</p>
   </div>
 
   <div class="tool-box">
@@ -120,14 +121,6 @@ permalink: /tools/spay-neuter-recovery-timeline.html
         <option value="neuter">Neuter (male)</option>
       </select>
     </div>
-    <div class="form-group">
-      <label for="srt-age">Age Group</label>
-      <select id="srt-age">
-        <option value="young">Puppy/kitten (under 1 year)</option>
-        <option value="adult">Adult</option>
-        <option value="senior">Senior</option>
-      </select>
-    </div>
     <button class="btn-calculate" onclick="calculateRecoveryTimeline()">Get My Recovery Calendar →</button>
 
     <div class="result-box" id="srt-result">
@@ -143,84 +136,42 @@ permalink: /tools/spay-neuter-recovery-timeline.html
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This calendar shows commonly cited recovery windows, not a diagnosis or a substitute for your vet's specific discharge instructions. Your vet's guidance for your individual pet always takes priority over these general estimates.
+    ⚕️ This calendar follows the ASPCA Spay/Neuter Alliance's general aftercare instructions. Your own clinic's discharge instructions come first, especially after a more complex surgery (pregnancy, uterine infection or retained testicles).
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Normal vs. Call the Vet: Incision Checklist</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Check the incision once or twice a day during the recovery window. Most of what you'll see is completely normal — here's how to tell the difference from something that needs a call.</p>
-    <div class="table-wrapper" style="margin-bottom: 24px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Normal (keep monitoring)</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Call your vet</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Slight redness or pink color along the incision line</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Pus, cloudy, or foul-smelling discharge</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Mild swelling or bruising that improves day by day</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Swelling that keeps growing instead of shrinking</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Small scab or dried discharge right at the incision edge</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">The incision edges separating or gaping open</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Reduced appetite or low energy for the first 24-48 hours</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Not eating or drinking beyond 48 hours, or visible pain/crying</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">A little grogginess the evening of surgery</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Vomiting, diarrhea, or a swollen belly beyond the surgery site</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The ASPCA's Recovery Rules</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Rest for 7–10 days.</strong> No running, jumping on or off furniture, rough play or long walks. Confine your pet when you can't supervise, carry small pets on stairs, and use a leash for bathroom trips. Keep cats in a quiet room with food, water and a clean litter box.</li>
+      <li><strong>No baths or ointments for 10 days</strong> — wet skin glue dissolves too quickly.</li>
+      <li><strong>Check the incision at least twice a day.</strong></li>
+      <li><strong>Food:</strong> a half-size meal when you get home, then the normal evening meal. Appetite should return within 24 hours. Puppies and kittens may have an extra meal during the day.</li>
+      <li><strong>Licking:</strong> stop any licking or chewing at the incision with an e-collar, and put it straight back on after meals.</li>
+      <li><strong>Stitches:</strong> females have internal stitches that dissolve and skin glue; male cats have no stitches. If skin stitches or staples were used, they come out at a recheck at about 10 days.</li>
+      <li><strong>Pain medication:</strong> call the clinic if your pet seems in pain. Never give human medication — it can be fatal.</li>
+    </ul>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Why You Can't Take the Cone Off Early</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">This is the single most common recovery mistake. The visible skin often looks closed by around day 7, but the tissue layers underneath are still knitting together for a week or more beyond that. A few minutes of licking at day 7 — when everything looks fine — can reopen the incision or introduce bacteria that wasn't a risk the day before.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Licking is also not the soothing behavior it looks like — it actively delays healing and is one of the most common causes of a reopened incision or infection requiring a second vet visit. Keep the cone on for the full window your vet recommends, even on days the incision looks perfect.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What the Incision Should Look Like</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li><strong>Females (dogs and cats):</strong> one incision in the middle of the belly, with no drainage or odor and minimal redness and swelling.</li>
+      <li><strong>Male dogs:</strong> one incision on the scrotum; a small amount of drainage can continue for up to three days.</li>
+      <li><strong>Male cats:</strong> two small incisions, one on each side of the scrotum. He may still look as if he has testicles; the swelling should go down gradually.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Mild redness and swelling should settle within several days, and bumps or bruises should shrink. In females, a little blood in the urine is normal in the first 24 hours.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Cone vs. Recovery Suit</h2>
-    <div class="table-wrapper" style="margin-bottom: 16px;">
-    <table style="width:100%; border-collapse: collapse;">
-      <thead>
-        <tr style="background: var(--cream-dark);">
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);"></th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Cone (E-collar)</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Recovery suit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Protection</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Most reliable — physically blocks reaching the incision</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Good for most pets, but a determined licker can sometimes still reach through fabric</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Airflow to incision</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Full airflow — nothing touches the site</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Less airflow, which can be a problem in humid climates or if the incision needs to stay dry</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Comfort/stress</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Bumps into doorways and furniture; some pets adjust within a day or two</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Usually less stressful and easier to eat/drink/navigate in</td>
-        </tr>
-        <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Best for</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Persistent lickers, or any time the incision needs guaranteed protection</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Calmer pets, or as a supplement when the cone comes off briefly for meals (with supervision)</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Ask your vet before switching to a suit instead of a cone — for some incision locations and some pets, the cone is the only option that reliably works.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Call the Clinic Right Away If You See</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>pale gums, depression or unsteady walking</li>
+      <li>loss of appetite or drinking less, or lethargy lasting more than 24 hours</li>
+      <li>vomiting or diarrhea</li>
+      <li>discharge or bleeding from the incision</li>
+      <li>trouble urinating or defecating, or blood in the urine that continues or appears later</li>
+      <li>labored breathing</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Keeping Pets Apart</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The ASPCA notes that a newly neutered male can still get an unspayed female pregnant for up to 30 days, and that spayed females should be kept away from unneutered males for seven days. Pets coming home from the clinic may smell different to housemates, so keep them apart for a few days if there's any tension.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Source: ASPCA Spay/Neuter Alliance, <em>After Surgery Instructions</em>. Full list on our <a href="/sources.html">sources page</a>.</p>
 
     <div class="post-cta">
       <p>Not sure what the surgery itself will cost? → <a href="/tools/spay-neuter-cost-calculator.html">Try the Spay/Neuter Cost Calculator</a></p>
@@ -236,16 +187,16 @@ permalink: /tools/spay-neuter-recovery-timeline.html
     </div>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does a dog or cat need to wear the cone after spay/neuter?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most vets recommend keeping the cone (E-collar) on for the full recovery window rather than removing it once the incision looks closed — typically 10-14 days for dogs and 7-14 days for cats depending on the procedure. A spay (abdominal surgery) generally needs the cone longer than a neuter.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why can't I take the cone off once the incision looks healed?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The visible skin can close by around day 7 while the tissue underneath is still healing for another week or more. A few minutes of licking at that stage can reopen the incision or introduce bacteria, even though it looked fine moments earlier. The cone is protecting healing you can't see, not just the surface.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does my male cat need a special litter after neutering?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat neuters usually leave a small, open scrotal incision without external sutures, so standard clumping or dusty litter can stick to the wound or irritate it. Vets commonly recommend shredded paper or non-clumping pellets for about 5-14 days after surgery, until the incision has closed.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is spay recovery longer than neuter recovery?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes, for both dogs and cats. Spaying is abdominal surgery (removing the ovaries and typically the uterus) while neutering only requires accessing the externally located testicles, so spay recovery generally involves a longer activity restriction and sometimes a longer cone period.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What's normal vs. what needs a vet call after spay/neuter surgery?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Mild swelling, slight redness, or a small amount of bruising in the first few days is normal and usually improves daily. Call your vet if you see pus or discharge, a foul odor, the incision separating or gaping open, swelling that keeps growing rather than shrinking, or your pet seems lethargic, won't eat, or is in obvious pain.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long should my pet rest after a spay or neuter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The ASPCA's aftercare instructions call for limiting running, jumping and play for 7–10 days, confining your pet when you can't supervise, carrying small pets on stairs and using a leash for bathroom trips.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When can my pet have a bath after surgery?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not for 10 days, according to the ASPCA, and no ointments either: wet skin glue dissolves too quickly.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does my pet need a cone after a spay or neuter?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Use an e-collar if your pet licks or chews at the incision, the ASPCA says, and put it straight back on after meals. If your pet can still reach the incision, get a larger collar or call the clinic.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do stitches come out?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Often they don't need to. The ASPCA notes females have internal stitches that dissolve plus skin glue, and male cats have no stitches. If skin stitches or staples were used, they come out at a recheck at about 10 days.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What's normal and what needs a call after surgery?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Mild redness and swelling that settles within several days is normal, and male dogs can have slight drainage for up to three days. Call the clinic for pale gums, lethargy over 24 hours, loss of appetite, vomiting or diarrhea, discharge or bleeding from the incision, trouble urinating, or labored breathing.</p>
   </div>
 </div>
 
@@ -303,41 +254,13 @@ function doPrintSrt(dateId) {
   window.print();
 }
 
+// All windows from the ASPCA Spay/Neuter Alliance after-surgery instructions.
 const RECOVERY_PROFILES = {
-  dog_neuter: {
-    label: "Dog Neuter",
-    incisionCheckEndDay: 10,
-    coneRange: [10, 14],
-    activityRange: [10, 14],
-    litterRange: null,
-    note: "Neuter is less invasive than spay — the testicles are externally accessible, so recovery is generally faster."
-  },
-  dog_spay: {
-    label: "Dog Spay",
-    incisionCheckEndDay: 14,
-    coneRange: [14, 14],
-    activityRange: [14, 21],
-    litterRange: null,
-    note: "Spay is abdominal surgery, so expect a longer, stricter recovery than a neuter."
-  },
-  cat_neuter: {
-    label: "Cat Neuter",
-    incisionCheckEndDay: 7,
-    coneRange: [7, 10],
-    activityRange: [7, 10],
-    litterRange: [5, 14],
-    note: "Usually the simplest of the four procedures — a small scrotal incision, often with no external sutures."
-  },
-  cat_spay: {
-    label: "Cat Spay",
-    incisionCheckEndDay: 10,
-    coneRange: [10, 14],
-    activityRange: [10, 14],
-    litterRange: [5, 14],
-    note: "More involved than a neuter (abdominal surgery), but generally a faster recovery than a dog spay."
-  }
+  dog_neuter: { label: "Dog Neuter", incision: "One incision on the scrotum; a small amount of drainage can continue for up to 3 days." },
+  dog_spay:   { label: "Dog Spay",   incision: "One incision in the middle of the belly: no drainage or odor, minimal redness and swelling. Internal stitches dissolve; skin glue seals the incision." },
+  cat_neuter: { label: "Cat Neuter", incision: "Two small incisions, one on each side of the scrotum, with no stitches. He may still look as if he has testicles; swelling should go down gradually." },
+  cat_spay:   { label: "Cat Spay",   incision: "One incision in the middle of the belly: no drainage or odor, minimal redness and swelling. Internal stitches dissolve; skin glue seals the incision." }
 };
-
 function addDays(date, days) {
   const d = new Date(date);
   d.setDate(d.getDate() + days);
@@ -348,46 +271,53 @@ function fmtDate(d) {
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
-function buildTimelineItems(surgeryDate, profile) {
+function buildTimelineItems(surgeryDate, profile, sex) {
   const items = [];
-
   items.push({
-    label: "Day 0 — Surgery Day",
+    label: "Day 0 — Coming home",
     dateLabel: fmtDate(surgeryDate),
-    desc: "Expect grogginess from anesthesia. Offer water first, then a small meal (about half the normal portion) that evening if your vet approves.",
+    desc: "Offer a half-size meal when you get home, then the normal evening meal. Keep water available. Start checking the incision at least twice a day.",
     startDay: 0, endDay: 0
   });
-
   items.push({
-    label: `Days 1–${profile.incisionCheckEndDay} — Daily Incision Checks`,
-    dateLabel: `${fmtDate(addDays(surgeryDate, 1))} – ${fmtDate(addDays(surgeryDate, profile.incisionCheckEndDay))}`,
-    desc: "Look at the incision once or twice a day. See the comparison table below for what's normal vs. what needs a vet call.",
-    startDay: 1, endDay: profile.incisionCheckEndDay
+    label: "Day 1 — Appetite back",
+    dateLabel: fmtDate(addDays(surgeryDate, 1)),
+    desc: "Appetite should return within 24 hours. Lethargy lasting over 24 hours, vomiting or diarrhea is not normal — call the clinic." + (sex === 'spay' ? " A little blood in the urine is normal in the first 24 hours only." : ""),
+    startDay: 1, endDay: 1
   });
-
-  if (profile.litterRange) {
+  items.push({
+    label: "Days 0–10 — Rest and incision checks",
+    dateLabel: `${fmtDate(surgeryDate)} – ${fmtDate(addDays(surgeryDate, 10))}`,
+    desc: "Limit activity for 7–10 days: no running, jumping or rough play, leash for bathroom trips, confinement when unsupervised. " + profile.incision,
+    startDay: 0, endDay: 10
+  });
+  items.push({
+    label: "Days 0–10 — No baths or ointments",
+    dateLabel: `Until ${fmtDate(addDays(surgeryDate, 10))}`,
+    desc: "Wet skin glue dissolves too quickly. Use an e-collar if your pet licks or chews at the incision.",
+    startDay: 0, endDay: 10
+  });
+  items.push({
+    label: "Day 10 — Recheck if skin stitches were used",
+    dateLabel: fmtDate(addDays(surgeryDate, 10)),
+    desc: "Most pets have no external stitches unless you were told otherwise. If skin stitches or staples were used, they come out at a recheck at about 10 days.",
+    startDay: 10, endDay: 10
+  });
+  if (sex === 'neuter') {
     items.push({
-      label: `Days 1–${profile.litterRange[1]} (typically ${profile.litterRange[0]}–${profile.litterRange[1]} days) — Use Shredded Paper or Non-Clumping Litter`,
-      dateLabel: `Until around ${fmtDate(addDays(surgeryDate, profile.litterRange[0]))} – ${fmtDate(addDays(surgeryDate, profile.litterRange[1]))}`,
-      desc: "Protects the incision from litter dust and granules. Transition back to your regular litter gradually once your vet confirms the incision has closed.",
-      startDay: 1, endDay: profile.litterRange[1]
+      label: "Until Day 30 — Still fertile",
+      dateLabel: `Until ${fmtDate(addDays(surgeryDate, 30))}`,
+      desc: "A newly neutered male can still get an unspayed female pregnant for up to 30 days.",
+      startDay: 0, endDay: 30
+    });
+  } else {
+    items.push({
+      label: "Days 0–7 — Keep away from intact males",
+      dateLabel: `Until ${fmtDate(addDays(surgeryDate, 7))}`,
+      desc: "The ASPCA advises keeping spayed females away from unneutered males for seven days.",
+      startDay: 0, endDay: 7
     });
   }
-
-  items.push({
-    label: `Around Day ${profile.coneRange[0]}${profile.coneRange[1] !== profile.coneRange[0] ? '–' + profile.coneRange[1] : ''} — Cone Likely Comes Off`,
-    dateLabel: `${fmtDate(addDays(surgeryDate, profile.coneRange[0]))}${profile.coneRange[1] !== profile.coneRange[0] ? ' – ' + fmtDate(addDays(surgeryDate, profile.coneRange[1])) : ''} (confirm with your vet first)`,
-    desc: "Don't remove the cone early just because the incision looks closed — see 'Why You Can't Take the Cone Off Early' below.",
-    startDay: profile.coneRange[0], endDay: profile.coneRange[1]
-  });
-
-  items.push({
-    label: `Around Day ${profile.activityRange[0]}${profile.activityRange[1] !== profile.activityRange[0] ? '–' + profile.activityRange[1] : ''} — Activity Restrictions Typically Lift`,
-    dateLabel: `${fmtDate(addDays(surgeryDate, profile.activityRange[0]))}${profile.activityRange[1] !== profile.activityRange[0] ? ' – ' + fmtDate(addDays(surgeryDate, profile.activityRange[1])) : ''} (confirm with your vet first)`,
-    desc: "Running, jumping, and stairs can typically resume once your vet clears it — usually around this window, longer for spays.",
-    startDay: profile.activityRange[0], endDay: profile.activityRange[1]
-  });
-
   return items;
 }
 
@@ -397,7 +327,6 @@ function calculateRecoveryTimeline() {
   const year = document.getElementById('srt-year').value;
   const species = document.getElementById('srt-species').value;
   const sex = document.getElementById('srt-sex').value;
-  const ageGroup = document.getElementById('srt-age').value;
 
   if (!month || !day || !year || !species) {
     alert('Please enter the surgery date and select a species.');
@@ -410,15 +339,9 @@ function calculateRecoveryTimeline() {
 
   document.getElementById('srt-result-title').textContent = `${profile.label} Recovery Calendar`;
 
-  let ageNote = "";
-  if (ageGroup === 'young') {
-    ageNote = " Puppies and kittens often bounce back quickly but are also the hardest to keep calm — extra supervision during the activity restriction window matters more than the exact day count.";
-  } else if (ageGroup === 'senior') {
-    ageNote = " Senior pets or those with other health conditions sometimes need a longer recovery — ask your vet whether to extend these windows for your pet specifically.";
-  }
-  document.getElementById('srt-result-note').textContent = profile.note + ageNote;
+  document.getElementById('srt-result-note').textContent = 'Based on the ASPCA Spay/Neuter Alliance\'s aftercare instructions. Follow your own clinic\'s instructions where they differ.';
 
-  const items = buildTimelineItems(surgeryDate, profile);
+  const items = buildTimelineItems(surgeryDate, profile, sex);
   const today = new Date();
   today.setHours(0,0,0,0);
   const daysSince = Math.floor((today - surgeryDate) / (1000 * 60 * 60 * 24));
