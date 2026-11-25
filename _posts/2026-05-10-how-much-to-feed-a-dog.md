@@ -18,7 +18,7 @@ faqs:
   - q: "My dog always seems hungry — am I underfeeding?"
     a: "Not necessarily. Dogs are opportunistic eaters and will often appear hungry even when fully fed. Check the rib test and body condition score first. If your dog is maintaining a healthy weight on their current diet, hunger signals alone don't indicate underfeeding. If they're losing weight despite eating, or if the body condition check suggests they're thin, increasing portions is appropriate."
 
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 In the Association for Pet Obesity Prevention's 2022 survey, 59% of US dogs were overweight or obese. Feeding the right amount starts with knowing roughly how many calories your dog needs — then checking the result with your hands, not the bag.
@@ -147,6 +147,20 @@ When you need to change your dog's food, do it gradually, because a sudden switc
 - Day 7+: 100% new food
 
 ---
+
+## Worked Example: A 50 lb Neutered Dog
+
+Take a 50 lb (22.7 kg) neutered adult at a healthy weight, eating a food whose label says 380 kcal per cup (check your own bag, as foods vary widely):
+
+| Step | Result |
+|---|---|
+| RER = 70 × 22.7^0.75 | about 727 kcal |
+| Typical neutered adult (1.4–1.6 × RER) | about 1,020–1,160 kcal, or 2.7–3.1 cups |
+| Inactive or weight-gain-prone (Merck: 1.4 × RER) | about 1,020 kcal, or 2.7 cups |
+| Inactive or weight-gain-prone (2021 AAHA guidelines: 1.0–1.2 × RER) | about 730–870 kcal, or 1.9–2.3 cups |
+| Overweight, ideal weight 42 lb (AAHA: 1.0 × RER at ideal weight) | about 640 kcal, or 1.7 cups |
+
+The two references agree for a typical neutered dog but part ways for a dog that gains weight easily: Merck's starting point is 1.4 × RER, while the 2021 AAHA guidelines suggest 1.0–1.2. For this dog that is a difference of roughly half a cup to almost a cup a day. Neither figure is a prescription. Start in the range, weigh your dog every two to four weeks, and move the portion until the body condition holds steady at the ideal.
 
 ## Frequently Asked Questions
 

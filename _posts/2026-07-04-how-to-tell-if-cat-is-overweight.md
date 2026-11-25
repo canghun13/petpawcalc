@@ -21,7 +21,7 @@ faqs:
     a: "Coat volume can make long-haired breeds (Persians, Maine Coons, Ragdolls) appear heavier than they are visually. Always rely on the hands-on rib, waist, and belly checks for these breeds rather than visual assessment alone — part the fur and feel the actual body shape underneath."
   - q: "Can I just feed my cat less to help them lose weight?"
     a: "Not safely without guidance. Cats that eat significantly less than normal — even briefly — are at risk of hepatic lipidosis, a serious liver condition. Weight loss needs to be gradual and managed with an appropriate calorie target, not achieved by withholding food. A vet visit before starting any reduction plan is strongly recommended."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 In the Association for Pet Obesity Prevention's 2022 survey, **61% of US cats** were classified as overweight or obese — and the association notes that owners often don't recognize it, because they see their cat every day.
@@ -123,7 +123,7 @@ The 2014 AAHA Weight Management Guidelines link excess weight in pets with reduc
 
 **Step 1: Confirm with your vet first.** Before starting any weight loss plan, a vet visit rules out medical causes and establishes a safe target weight and rate of loss. This matters more for cats than for dogs — see the warning below.
 
-**Step 2: Switch to a higher-protein, controlled-calorie diet.** Cats are obligate carnivores and lose weight more successfully on high-protein, moderate-fat, lower-carbohydrate diets. Wet food is often more effective than dry for weight loss — it's more satiating per calorie and increases water intake.
+**Step 2: Switch to a higher-protein, controlled-calorie diet.** Ask your vet whether a therapeutic weight-loss diet suits your cat. Simply feeding less of an ordinary food also cuts protein, vitamins and minerals along with calories, which weight-loss diets are formulated to avoid.
 
 **Step 3: Measure food precisely.** Use a kitchen scale or consistent measuring cup. Free-feeding makes portion control and progress tracking impossible — switch to scheduled meals if your cat currently has constant food access.
 
@@ -176,6 +176,18 @@ Your vet can confirm your at-home BCS assessment, rule out underlying conditions
 </div>
 
 ---
+
+## Worked Example: A 14 lb Cat Scoring 7
+
+| Step | Result |
+|---|---|
+| Excess weight (about 10% per point above 5) | about 20% |
+| Estimated ideal weight (14 ÷ 1.2) | about 11.7 lbs |
+| Starting calories (2021 AAHA: 0.8 × RER at the ideal weight) | about 195 kcal a day |
+| Safe rate (0.5–2% of body weight a week) | about 1–4.5 oz a week |
+| Time to lose about 2.3 lbs | very roughly 2 to 8 months |
+
+A typical neutered adult at that ideal weight would get about 290–340 kcal (1.2–1.4 × RER), so the weight-loss figure is a real cut. It is still a measured starting point rather than a crash diet, and the 0.5–2% weekly rate is the check: faster loss than that means the portion should go back up, which matters for the fatty liver risk below. Your vet should confirm the score and the target before you start.
 
 ## Frequently Asked Questions
 

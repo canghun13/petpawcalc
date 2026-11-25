@@ -17,7 +17,7 @@ faqs:
     a: "Young kittens should gain weight every day — the ASPCA's chart works on roughly half an ounce (about 14 g) a day. A kitten that stops gaining or loses weight should see a vet promptly, because young kittens have little reserve. Intestinal parasites, not getting enough food and illness are among the causes a vet will check."
   - q: "Can a kitten be overweight?"
     a: "Yes. VCA notes that eating more calories than needed for growth leads to excess body fat and can cause obesity by adulthood, and that free-feeding raises the risk. Measured portions, split into three or four small meals, make intake easier to control."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 "My kitten weighs 3 pounds — is that normal?" It depends on age, and a little on breed. In the first two months kittens follow a fairly predictable curve; after that the most useful checks are a simple rule of thumb, a steady upward trend and the kitten's body condition.
@@ -106,6 +106,12 @@ VCA recommends **portion feeding** rather than leaving food out, because free-fe
   <p>Check your cat's weight against typical adult weights for its breed and sex, or estimate an ideal weight from body condition.</p>
   <a href="/tools/cat-weight-calculator.html">Use the Cat Weight Calculator →</a>
 </div>
+
+## What the Chart Implies Per Day
+
+The ASPCA ranges step up by about 105 g (3.7 oz) each week from week 2 to week 8. That works out to roughly **15 g (half an ounce) a day**. The ASPCA's rule for after 8 weeks, about a pound a month, is roughly the same daily rate: 454 g over 30 days is also about 15 g a day.
+
+The two sources were written separately, but they describe one steady pace of growth for an average kitten through the first four months. A kitten that is gaining far less than about 100 g a week in that period is falling behind the chart, even if its weight is still inside one of the weekly ranges.
 
 ## Frequently Asked Questions
 

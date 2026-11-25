@@ -17,7 +17,7 @@ faqs:
     a: "Some bloody discharge is normal around the birth and for several days afterward, but fresh blood flowing from the vulva for more than 10 minutes is a reason to call the vet. See a vet if discharge continues beyond a week after the birth."
   - q: "Is it normal for kittens to come hours apart?"
     a: "Kittens usually arrive 10 minutes to an hour apart, and VCA notes Persians and Himalayans may rest an hour or more between kittens. A longer pause without straining can be interrupted labor, but if she was straining hard and stopped, or seems unwell, call your vet."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Most cats give birth without any help, and many prefer to be left alone. What helps is knowing which signs are normal — including a few that look alarming but aren't — and the short list that means call the vet. The figures below are from VCA Hospitals' guides to pregnancy and queening in cats, written by veterinarians.
@@ -74,6 +74,18 @@ The Merck Veterinary Manual adds that dark green or foul-smelling discharge **be
 - **Complications to watch for:** uterine infection (metritis) usually appears **within 3 days** of birth; milk fever (eclampsia) usually **3–5 weeks** after. Fever, lethargy, poor appetite, trembling or wobbliness need a vet.
 
 If a kitten is rejected or the mother can't nurse, our [bottle feeding calculator](/tools/orphaned-kitten-puppy-bottle-feeding-calculator.html) covers formula amounts, and [What to Feed a Pregnant Cat](/blog/what-to-feed-pregnant-cat/) explains her own needs while nursing.
+
+## How Long a Whole Litter Can Take
+
+For a litter of four kittens (three gaps between them), the normal ranges above add up like this:
+
+| Part of labor | Low end | High end |
+|---|---|---|
+| Pushing, about 5–30 minutes per kitten | about 20 minutes | about 2 hours |
+| Gaps, 10 minutes to 1 hour on average | about 30 minutes | about 3 hours |
+| Total | under 1 hour | about 5 hours |
+
+A longer total is not automatically a problem: some cats pause labor for a long time before carrying on, and Persians and Himalayans may rest an hour or more between kittens. Note the time of each birth, and count placentas if you can. The clear-cut warning signs are the ones listed below, especially 20 minutes of intense straining without a kitten.
 
 ## Frequently Asked Questions
 

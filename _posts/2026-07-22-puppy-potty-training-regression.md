@@ -17,7 +17,7 @@ faqs:
     a: "No. Ballantyne advises against verbal or physical punishment, which can cause fear, anxiety and aggression and doesn't teach the puppy where to go. If you catch an accident happening, interrupt it calmly — a clap or whistle — and take the puppy straight outside, then reward it for finishing there."
   - q: "Can teething cause potty training regression?"
     a: "It may play a part. According to the American Kennel Club, baby teeth fall out and adult teeth come in from about 12–16 weeks, with all adult teeth in by about 6 months, so teething overlaps with the age when many puppies first slip. It's also worth checking whether the break schedule has kept up as your puppy has grown."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Your puppy was doing well, and now there are puddles again. Usually nothing has gone badly wrong: the puppy's routine, body or surroundings have changed faster than its habits. But a sudden change can also be a medical problem, so the first step is working out which you're dealing with.
@@ -74,6 +74,23 @@ Ballantyne's house-training steps:
 ## What Regression Doesn't Mean
 
 It doesn't mean your puppy is stubborn, that you've failed, or that you need a different method. It means the structure needs to come back for a while. If accidents continue despite a consistent reset, or if any medical signs appear, see your vet and consider a veterinary behaviorist or a certified trainer.
+
+## Worked Example: One Day of the Reset Plan
+
+Here is how Ballantyne's schedule might look for a puppy who wakes at 7:00 and eats at 7:30 and 17:30 (shift the times to your own day):
+
+| Time | Trip outside because |
+|---|---|
+| 7:00 | Waking up |
+| 7:40–7:45 | 10–15 minutes after breakfast |
+| 10:00 | 2–3 hours since the last trip |
+| 12:30 | 2–3 hours since the last trip, and after a nap |
+| 15:00 | 2–3 hours since the last trip |
+| 17:40–17:45 | 10–15 minutes after dinner |
+| After play | Within 10–15 minutes of any play session |
+| Before bed | Before confinement for the night |
+
+That is eight or more supervised trips a day, which is the reason the plan works and also the reason owners drift away from it. For the finish line, count eight weeks from the last accident. If the last accident was on 1 August, house training can be called complete from 26 September at the earliest, and any accident before then restarts the count.
 
 ## Frequently Asked Questions
 

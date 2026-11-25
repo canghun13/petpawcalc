@@ -15,7 +15,7 @@ faqs:
     a: "In the ASPCA's annual table, insurance ($348), food ($225), routine medical care ($160) and litter ($150) are the largest lines. Veterinary costs rise in the senior years — Rover estimates $2,255–$4,740 a year for a senior cat — because conditions such as kidney disease and hyperthyroidism need ongoing tests and treatment."
   - q: "How much should I budget per month for a cat?"
     a: "Rover's 2026 figure for a medium-sized cat is about $70–$305 a month. The low end covers food, litter and routine care; the high end adds insurance, pet sitting and other services. Senior cats cost more, so budget for more frequent checkups and bloodwork as your cat ages."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Cats usually cost less than dogs, but the gap is smaller than many people expect, and it depends heavily on the size of the dog. This comparison uses Rover's 2026 cost of pet ownership report, the ASPCA's annual cost table, insurance premiums from the North American Pet Health Insurance Association (NAPHIA), and a 2025–26 national study of veterinary prices run for CareCredit by Synchrony.
@@ -90,6 +90,23 @@ Emergency prices depend on the problem more than the species. Synchrony's averag
 - **Dog size.** Food, many medicines and preventives scale with weight, which is why Rover found small dogs cost about 63% less a year than large and giant breeds.
 - **Services you pay for.** Dog walking, daycare and boarding are often what push a dog's monthly cost to the top of Rover's range.
 - **Insurance.** At NAPHIA's averages, insuring a dog costs about $400 a year more than insuring a cat.
+
+## Where the Yearly Gap Comes From
+
+In the ASPCA's stable-year budget the dog costs $242 more than the cat. Taking the categories one by one:
+
+| Category | Dog minus cat |
+|---|---|
+| Health insurance | +$168 |
+| Food | +$75 |
+| Routine medical care | +$65 |
+| Preventive medication | +$45 |
+| Treats and toys | +$39 |
+| Litter | −$150 |
+| License, grooming supplies, boarding | $0 |
+| **Net difference** | **+$242** |
+
+Insurance is the biggest single reason dogs cost more each year, and litter is the one item that runs the other way: it cancels out most of the dog's extra food and routine care. The gap over a lifetime, about $6,800 in Rover's 2026 medians, is larger than these yearly figures alone would suggest, partly because Rover's estimates cover the whole of a pet's life, including its first and senior years, with costs at 2026 prices.
 
 ## Frequently Asked Questions
 

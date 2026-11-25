@@ -17,7 +17,7 @@ faqs:
     a: "According to the Merck Veterinary Manual, puppies gain about 2–4 g a day for each kilogram of their expected adult weight during the first five months. For a puppy heading for 50 lb, that's roughly 0.7–1.4 lb a week. Growth starts to level off after about six months."
   - q: "Will feeding a large-breed puppy less make it smaller as an adult?"
     a: "Not if it's fed a complete growth diet. The Merck manual describes a study in which large-breed puppies fed 50–70% of the amount their littermates ate freely reached normal adult height, length and bone and muscle mass; only their body fat was lower. Overfeeding speeds growth, which harms skeletal development."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 A Chihuahua and a Great Dane are both puppies at 12 weeks, but one is close to finished and the other has more than a year of growing left. That's why a single "normal weight" for a given age doesn't exist — the useful questions are how big your puppy is heading to be, when it will get there, and whether it's gaining steadily on the way.
@@ -97,6 +97,19 @@ PetMD notes that joint problems of the elbows, shoulders and hips mainly affect 
 ## When to Switch to Adult Food
 
 Merck advises keeping a puppy on a growth diet **until skeletal maturity**, not just until it stops looking taller. That's about **8–12 months for small and medium breeds and 10–16 months for large and giant breeds**. Change foods gradually over several days to avoid an upset stomach.
+
+## Checking the Two Rules Against Each Other
+
+PetMD's "4 months × 2" rule and Merck's weekly gain figures can be compared directly. For a puppy heading for a 50 lb (22.7 kg) adult weight:
+
+| Rule | What it implies at 4 months |
+|---|---|
+| PetMD: adult weight ≈ weight at 4 months × 2 | about 25 lb |
+| Merck: 2–4 g a day per kg of adult weight, over about 122 days (not counting birth weight) | about 12–24 lb |
+
+The PetMD rule sits at the top of the range implied by Merck's gain rate. In practice that means a puppy gaining at the slow end of Merck's range can look small at 4 months, and doubling its weight would underestimate its adult size. It is one more reason to follow the trend of weekly weigh-ins rather than a single reading.
+
+The two sources also use different milestones for the end of growth. PetMD puts the end of growth for a medium dog at 12–15 months, while Merck's advice to switch to adult food at skeletal maturity gives 8–12 months for small and medium breeds. Your vet can tell you which applies to your puppy.
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,7 @@ faqs:
     a: "Dark red to black, odorless discharge (lochia) is normal and heavy for the first few days. Cornell says it usually lasts about 3 weeks and can continue for up to 8. Contact your vet if it smells bad or increases."
   - q: "Is it normal for a dog to eat the placentas?"
     a: "Yes. Placentas usually pass with or shortly after each puppy, often two puppies then two placentas, and most mothers eat them. Because of that, a 'retained placenta' is rarely a concern in dogs, according to Cornell."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Most dogs whelp without help. What owners need is a clear picture of what's normal at each stage — and a short list of signs that mean the vet should hear from you now, not in the morning.
@@ -81,6 +81,18 @@ Difficult birth (dystocia) affects about 5% of pregnancies overall, according to
 - clean towels, a digital thermometer and a notebook to log times,
 - your vet's number and the nearest emergency clinic's number,
 - a way to get there quickly if needed.
+
+## How Long a Whole Litter Can Take
+
+The per-puppy rules and the total-time rule fit together like this for a litter of eight (seven gaps between puppies):
+
+| Gap between each puppy | Time spent in gaps alone |
+|---|---|
+| 30 minutes (Merck: usual) | about 3½ hours |
+| 60 minutes (Merck: usual) | about 7 hours |
+| 2 hours every time (Cornell: upper limit of normal) | about 14 hours |
+
+With pushing time added, a litter of eight with typical gaps is broadly in line with Merck's ideal of about 7–9 hours. If every gap ran to the two-hour limit, the whole birth would take well past that, even though no single gap broke the rule. That is why it helps to note the time each puppy arrives: a pattern of long gaps, or a total heading towards 24 hours, is worth a call even before any single rule is broken. An X-ray count tells you when the last puppy is out.
 
 ## Frequently Asked Questions
 

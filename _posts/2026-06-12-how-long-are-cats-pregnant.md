@@ -17,7 +17,7 @@ faqs:
     a: "More than you might expect, and from early on, because kittens grow throughout pregnancy. VCA notes food intake may rise by about 50% during pregnancy and may reach more than double her usual amount by the end of nursing. A kitten or growth formula is recommended."
   - q: "How do I know when my cat will give birth?"
     a: "Nesting usually starts in the final week. In the last 24 hours her rectal temperature typically falls below 100°F and she usually stops eating; milk may appear 24–48 hours before labor."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 A cat's pregnancy is short — **about 63–65 days on average** — and a lot of it goes unnoticed. If you've just realized your cat might be pregnant, she may already be a third of the way through.
@@ -70,6 +70,22 @@ Unlike dogs, cats gain weight **steadily from early pregnancy**, so their needs 
 VCA recommends a vet check for the mother and kittens **within 24 hours** of delivery. Some bloody discharge is normal for several days; see a vet if it continues **beyond a week**. Infection of the uterus (metritis) usually shows up within 3 days of birth, and milk fever (eclampsia) usually 3–5 weeks after, so watch for fever, lethargy, poor appetite, trembling or wobbliness in those windows.
 
 Cats can come back into heat and become pregnant again while nursing, so plan for spaying once the kittens are weaned if you don't want another litter.
+
+## Worked Example: A Mating on 1 March
+
+Using the same sources, a cat mated on 1 March would follow roughly this calendar:
+
+| Day after mating | Date | What it means |
+|---|---|---|
+| About 14 | 15 March | Implantation (Merck) |
+| 16–20 | 17–21 March | Nipples may "pink up" (PetMD) |
+| 21–28 | 22–29 March | Vet exam and ultrasound can usually confirm (VCA) |
+| About 45 | 15 April | Skeletons visible on X-ray |
+| 60–67 | 30 April – 7 May | Normal range for birth (VCA) |
+| 63–65 | 3–5 May | When most cats give birth |
+| Past 71 | After 11 May | Call your vet |
+
+Because so much of the first month passes without visible signs, many owners only notice the pregnancy around the pinking-up stage, by which time a third of it has gone. Our [Cat Pregnancy Calculator](/tools/cat-pregnancy-calculator.html) does the counting.
 
 ## Frequently Asked Questions
 

@@ -15,7 +15,7 @@ faqs:
     a: "It depends on size. PetMD's guide puts it at about 7 for medium-sized dogs, a year or two earlier for large and giant breeds, and about 9–10 for small dogs. VCA's veterinary nutritionists describe seniors as dogs in the last 25% of their expected lifespan — about 10–11 for small breeds and 5–8 for large and giant breeds."
   - q: "What did the DNA study of dog aging find?"
     a: "A 2020 study in Cell Systems compared age-related DNA methylation in 104 dogs, mostly Labrador Retrievers, with data from 320 people. It produced the formula human age ≈ 16 × ln(dog age) + 31, under which a 1-year-old dog is about 31, a 4-year-old about 53, and a 12-year-old Labrador about 70. Because it was based mainly on one breed, it may not fit smaller or larger dogs."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 If someone tells you your 3-year-old dog is "21 in human years", they're using a rule that doesn't match how dogs develop. Dogs grow up very quickly in their first two years, then age at a pace that depends heavily on their size.
@@ -92,6 +92,19 @@ PetMD recommends checkups **every six months** once a dog is a senior — see [H
 ## Aging and the Brain
 
 Cognitive dysfunction — sometimes called dog dementia — becomes more common with age. In one owner survey of dogs aged 8 and older, about 14% had signs consistent with it but fewer than 2% had been diagnosed; other research puts it at about 28% of dogs aged 11–12 and 68% of dogs aged 15–16. Disorientation, changed sleep patterns and forgotten house-training are worth raising with your vet. [Dog Dementia: Signs and Treatment Cost](/blog/dog-dementia-signs-treatment-cost/) covers what helps.
+
+## One Dog, Three Methods
+
+The methods above give different answers for the same dog, and the gap is widest in the first two years. Here they are side by side for a Labrador, the breed the DNA study was mostly based on:
+
+| Labrador's age | 7x rule | PetMD size rule (large) | DNA-study formula |
+|---|---|---|---|
+| 1 | 7 | 15 | 31 |
+| 2 | 14 | 24 | 42 |
+| 8 | 56 | 54–60 | 64 |
+| 12 | 84 | 74–84 | 71 |
+
+At age 1 the three answers range from 7 to 31. By age 8 they sit within about 10 years of each other, and by 12 the DNA formula gives the *youngest* answer. The formula is a curve, so it races ahead early and slows later, while the size rule adds a fixed amount each year. Neither is wrong as such. They measure different things: the size rule tracks development and life stage, the formula tracks chemical changes in DNA. For practical decisions such as when to start senior checkups, the size rule and your vet's view of your dog are the better guide.
 
 ## Frequently Asked Questions
 

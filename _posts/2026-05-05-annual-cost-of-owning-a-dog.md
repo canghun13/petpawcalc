@@ -17,7 +17,7 @@ faqs:
     a: "Enough to cover at least an emergency exam and a short hospital stay. Preventive Vet's emergency price ranges put an ER exam at $100–$200 and one to two days in hospital at $600–$1,700; emergency surgery commonly costs $1,500–$5,000. If you have insurance, the fund also covers the deductible and the bill until you're reimbursed."
   - q: "How much does a dog cost over its lifetime?"
     a: "Rover's 2026 report estimates a median lifetime cost of $39,350 for a medium-sized dog. That includes the higher-cost first year and senior years, so the figure for a small, healthy dog will be lower and for a large breed with health problems higher."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 A dog's yearly cost depends far more on size, age and what you choose to pay for than on any single "average". Survey figures give a useful frame, though, and national price averages show where the money goes. This guide uses three: Rover's 2026 cost of pet ownership report, the ASPCA's annual cost table, and a 2025–26 national study of veterinary prices run for CareCredit by Synchrony.
@@ -125,6 +125,22 @@ Current spay and neuter prices are higher: Synchrony's averages are $455 for spa
 ## Keeping Costs Down
 
 The ASPCA's suggestions include comparing fees for preventive care between practices, discussing which vaccines your dog actually needs, brushing teeth at home with a pet toothpaste, using parasite products exactly as directed, trimming nails and brushing at home, and buying insurance while your dog is young and healthy. [How to Reduce Vet Costs for Dogs](/blog/how-to-reduce-vet-costs-for-dogs/) goes through each.
+
+## Checking the ASPCA Figure Against Today's Prices
+
+The ASPCA's $225 for routine medical care uses 2021 figures. Building the same year from the 2025–26 averages and ranges above gives a useful cross-check for a healthy adult dog:
+
+| Item | Cost this year |
+|---|---|
+| Routine exam | $56–$129 |
+| Rabies (one-year vaccine) | $35 |
+| Leptospirosis (yearly) | $34 |
+| DHPP ($42 every three years, spread over three) | about $14 |
+| Heartworm test (PetMD range) | $20–$75 |
+| Fecal exam (PetMD range) | $25–$50 |
+| **Total** | **about $185–$340** |
+
+The ASPCA's $225 falls inside that range but towards the lower end, and the range leaves out Bordetella, influenza and Lyme vaccines, which add $39–$53 each if your dog needs them. Using a three-year rabies vaccine where your state allows it lowers the total a little. The point of the check is that a budget built on older averages can come in low, so add a margin to the yearly figure.
 
 ## Frequently Asked Questions
 

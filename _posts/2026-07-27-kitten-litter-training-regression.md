@@ -17,7 +17,7 @@ faqs:
     a: "One per cat plus one extra, according to the Feline Veterinary Medical Association, placed in different locations rather than side by side, with one on each level of a multi-level home. Socially bonded cats may share more readily, but separate locations stop one cat from blocking another's access."
   - q: "Should I punish my cat for going outside the box?"
     a: "No. The Feline Veterinary Medical Association says punishment can make a cat more defensive, cause other problems, damage your bond and push the soiling into hidden places. Clean the area thoroughly instead and fix what's putting the cat off the box."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 When a cat that has used its box reliably for months or years starts going elsewhere, it hasn't forgotten. Something has changed — in its body, its box or its household — and finding out what is the whole job. This guide follows the Feline Veterinary Medical Association's (FelineVMA) client guidance on house soiling and Cornell's Feline Health Center on urinary disease.
@@ -78,6 +78,20 @@ The FelineVMA's advice for accidents:
 ## Don't Punish
 
 The FelineVMA is clear that cats should **never be punished** for house soiling: it can make a cat more defensive, create other problems, damage your relationship and push soiling into hidden places. Fixing the cause takes time and often several changes at once, so see your vet early and work through it together.
+
+## Worked Example: Three Cats in a Two-Storey Home
+
+Applying the FelineVMA guidance above to a household with three cats on two floors:
+
+| Question | Answer |
+|---|---|
+| How many boxes? | Four: one per cat plus one |
+| Where? | At least one on each floor, spaced apart, away from food and water |
+| How big? | For a cat measuring about 18 inches from nose to base of tail, a box about 27 inches long (1.5 times) |
+| How often to scoop? | At least daily, so four boxes means four scoops a day |
+| How often to wash? | Every one to four weeks, with soap and hot water |
+
+Keep the boxes spread out rather than lined up together, as FelineVMA advises. If one cat is older, put the box with the lowest entry on the floor that cat uses most. A setup like this is usually the first thing to fix before looking for other causes of accidents.
 
 ## Frequently Asked Questions
 

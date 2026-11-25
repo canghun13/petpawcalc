@@ -17,7 +17,7 @@ faqs:
     a: "Some level of food interest is normal, especially around meal times. Constant vocalization for food, food guarding, or begging intensifying significantly beyond what was normal for your cat are worth investigating. Start with the calorie check, then rule out medical causes if the behavior is new or worsening."
   - q: "How many times a day should I feed my cat?"
     a: "Many adult cats do well on two meals a day, but splitting the same amount into three or four smaller meals suits cats' natural pattern of eating little and often and can reduce begging. VCA suggests two to four small meals a day for older cats, and the AAHA senior guidelines note healthy senior cats do best with smaller, more frequent meals."
-last_modified_at: 2026-10-20
+last_modified_at: 2026-11-25
 ---
 
 Cats have a reputation for being aloof, but when it comes to food, many owners deal with the opposite problem: a cat that acts like it's starving at all times. Meowing at the bowl, pacing, pawing at you before meals.
@@ -104,6 +104,12 @@ If your cat's appetite has increased suddenly — especially in an older cat —
 Other conditions that can increase appetite include [diabetes](/blog/cat-diabetes-treatment-cost/), intestinal parasites, and malabsorption disorders. A simple blood panel and fecal test can rule out the most common culprits quickly.
 
 ---
+
+## Worked Example: How Small Measuring Errors Add Up
+
+A 10 lb (4.5 kg) neutered adult cat has an RER of about 218 kcal. At Merck's 1.2 × RER that is about 260 kcal a day; the 2021 AAHA guidelines give a range of 1.2–1.4, or about 260–305 kcal.
+
+If the cat eats a dry food labelled 400 kcal per cup (check your own bag), that daily total is only about two-thirds to three-quarters of a cup. An extra quarter cup adds about 100 kcal, a third or more of the whole day's needs. A cat fed "a scoop" from a large scoop can be overfed and still act hungry, which is why measuring by weight on a kitchen scale is worth the effort.
 
 ## Frequently Asked Questions
 

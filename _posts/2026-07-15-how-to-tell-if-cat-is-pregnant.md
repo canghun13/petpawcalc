@@ -17,7 +17,7 @@ faqs:
     a: "It's rare. Pseudopregnancy can happen after a cat ovulates without conceiving, and affected cats may show mammary development and even produce milk without carrying kittens. Because the signs overlap with real pregnancy, a vet exam is the way to tell the difference."
   - q: "How long is a cat pregnant?"
     a: "On average about 63–65 days, or a little over two months, divided into three trimesters of roughly 20 days each. Our Cat Pregnancy Calculator works out a due date from the mating date."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Cats don't make pregnancy easy to spot. There's no single test you can buy, the early changes are small, and a cat carrying one or two kittens may look almost normal until late on. If your cat isn't spayed and has been outdoors or near an intact male, the most useful thing you can do is know **what changes in each third of the pregnancy** — and when a vet can give you a definite answer.
@@ -71,6 +71,19 @@ In the final days, many cats look for a quiet, enclosed spot and may become rest
 ## If the Pregnancy Wasn't Planned
 
 Talk to your vet early. Spaying during pregnancy ends the pregnancy; your vet can explain the options and costs for your cat — see [Spay and Neuter Cost and Timing](/blog/spay-neuter-cost-and-timing/). If you plan to let her deliver, a vet check confirms she's healthy, up to date on parasite control that's safe in pregnancy, and gives you a plan for the birth.
+
+## If You've Just Noticed Pinking Up
+
+Pinking up at around days 16–20 is often the first sign owners see. Counting forward from that point, using the methods above:
+
+| From pinking up | Roughly day | What to do |
+|---|---|---|
+| Now | 16–20 | Book a vet appointment for the following week or two |
+| About a week later | 21–28 | Ultrasound can show heartbeats; Merck notes ultrasound can miss a pregnancy before day 21 and works best from about day 25 to 35 |
+| About 3½–4 weeks later | 42–45 | X-ray can count the kittens |
+| About 6 weeks later | 60–67 | The normal range for the birth (VCA) |
+
+So by the time the first sign appears, the birth is often only about six weeks away. That is the reason to switch her onto a kitten food and set up a nesting area early rather than waiting for the belly to show.
 
 ## Frequently Asked Questions
 

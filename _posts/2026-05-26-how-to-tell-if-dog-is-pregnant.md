@@ -21,7 +21,7 @@ faqs:
     a: "Yes, especially with a small litter. A relaxin test can also be falsely negative with a very small litter, so if pregnancy is possible and the result is negative, an ultrasound after day 28 is the better check."
   - q: "What should I do if I think my dog is pregnant?"
     a: "Book a vet visit to confirm it and to check her health, ask before giving any medication or supplement, and keep her food the same for the first two thirds of pregnancy. If the pregnancy wasn't planned, ask your vet about the options early."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 If your dog has been near an intact male during her heat, you'll want to know quickly whether she's pregnant. The honest answer is that **you usually can't tell at home in the first month** — and the signs that do appear later can also be caused by a false pregnancy, which is extremely common in dogs.
@@ -69,6 +69,20 @@ Timings are from the Merck Veterinary Manual and VCA Hospitals. The Merck manual
 - **Keep her food the same** for the first two thirds of pregnancy; VCA advises increasing gradually after about week 6 — see [What to Feed a Pregnant Dog](/blog/what-to-feed-pregnant-dog/).
 - **If the pregnancy wasn't planned**, ask your vet about the options early.
 - **If it's a false pregnancy** and you're not breeding her, VCA recommends spaying to prevent future episodes, ideally once the signs have settled. Costs and timing are in [Spay and Neuter Cost and Timing](/blog/spay-neuter-cost-and-timing/).
+
+## Which Test, When
+
+The confirmation methods above overlap, so the best choice depends on how many days have passed since mating:
+
+| Days since mating | What can work | What it can't do yet |
+|---|---|---|
+| Under 21 | Nothing reliable | Even ultrasound may miss it |
+| 21–27 | Palpation in a relaxed dog; early ultrasound; relaxin from about day 22–27 | A negative result isn't final; repeat later |
+| 28–41 | Ultrasound (now reliable); relaxin test | Counting puppies accurately |
+| 42–54 | Ultrasound; X-ray begins to show skeletons | A firm count; palpation is harder after days 35–38 |
+| 55 onward | X-ray for the puppy count | — |
+
+A false pregnancy typically shows up 4–9 weeks after a heat, which falls in the same weeks as many of the visible signs of a real one. A relaxin test or an ultrasound from about four weeks after mating is what tells them apart, because relaxin comes from the placenta and stays negative in a false pregnancy.
 
 ## Frequently Asked Questions
 

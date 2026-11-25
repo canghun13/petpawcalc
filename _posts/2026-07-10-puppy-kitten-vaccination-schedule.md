@@ -17,7 +17,7 @@ faqs:
     a: "Call your vet to reschedule as soon as you can. Whether doses need repeating depends on the vaccine, the gap and your pet's age, so your vet will decide how to continue. Until the series is finished, a young puppy or kitten isn't fully protected."
   - q: "How much do puppy and kitten vaccines cost?"
     a: "In a 2025–2026 national study of veterinary prices run for CareCredit by Synchrony, average prices were $42 for a dog's DHPP vaccine, $35 for rabies, $34 for leptospirosis and $39 for Bordetella; for cats, $34 for FVRCP, $31 for rabies and $33 for FeLV. Exam fees are usually extra."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Puppies and kittens need a series of vaccines, not a single shot, and the spacing matters as much as the vaccines themselves. The schedules below come from the 2022 AAHA Canine Vaccination Guidelines (with their 2024 update) and the 2020 AAHA/AAFP Feline Vaccination Guidelines — the references most US vets work from. Your vet may adjust them for your pet's health, lifestyle and local law.
@@ -73,6 +73,19 @@ A routine exam averages $56–$129 for a dog and $57–$130 for a cat in the sam
 After the first-year booster, core vaccines for healthy adults move to **every 3 years** in both sets of guidelines. Rabies follows local law, which may require a 1- or 3-year vaccine. Lifestyle vaccines such as leptospirosis, Bordetella, influenza and Lyme are yearly.
 
 Some vets offer antibody titer tests as a way to check immunity to some core vaccines instead of revaccinating on a fixed schedule. They don't replace a legally required rabies vaccine, so ask your vet which vaccines a titer can be used for.
+
+## Worked Example: A Puppy's First Year
+
+One way the AAHA schedule can play out for a puppy first seen at 8 weeks, at the average prices above (your vet's timing and prices may differ):
+
+| Visit | Vaccines | Vaccines cost | Exam |
+|---|---|---|---|
+| 8 weeks | DHPP | $42 | $56–$129 |
+| 12 weeks | DHPP, leptospirosis | $76 | $56–$129 |
+| 16 weeks | DHPP, leptospirosis, rabies (by local law) | $111 | $56–$129 |
+| **Puppy series total** | | **$229** | **$168–$387** |
+
+So the series comes to roughly $400–$615 with exams, before any lifestyle vaccines. About a year after the 16-week visit, the DHPP and leptospirosis boosters add $76 plus an exam. After that DHPP drops to every three years while leptospirosis stays yearly, which is why adult vaccine costs are lower than the first year. The [Dog Vaccination Schedule Calculator](/tools/dog-vaccination-schedule-calculator.html) shows which doses are due for your puppy.
 
 ## Frequently Asked Questions
 

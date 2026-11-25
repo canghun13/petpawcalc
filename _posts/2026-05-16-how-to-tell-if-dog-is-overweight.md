@@ -17,7 +17,7 @@ faqs:
     a: "It can. In a lifelong study of 48 Labrador Retrievers, dogs fed 25% less than their pair-mates stayed lean and lived a median of 1.8 years longer — 13 years versus 11.2 — and developed signs of chronic disease later."
   - q: "Can an overweight dog lose weight just from exercise?"
     a: "Rarely. Reducing calories is the main lever; exercise helps preserve muscle and supports the plan. The AAHA guidelines suggest a veterinary rehabilitation practitioner can design an exercise plan for dogs that need one."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Most overweight dogs live with owners who think they're fine. In the Association for Pet Obesity Prevention's 2022 survey, **59% of US dogs** were classified as overweight or obese, and the association notes that owners often normalize their dog's weight because they see it every day.
@@ -46,7 +46,7 @@ The 9-point scale is used by the WSAVA and on Purina's body condition chart. Key
 | 8 | Ribs not felt without significant pressure; heavy fat deposits; no waist, no tuck |
 | 9 | Massive fat deposits over chest, spine and tail base; fat on neck and legs; obvious distended belly |
 
-According to the 2014 AAHA Weight Management Guidelines, **each point above 5 represents roughly 10% excess weight**. A Labrador scoring 8 at 45 kg is about 30% overweight, with an ideal weight of around 32 kg. Thin dogs are covered in [How to Tell If Your Dog Is Underweight](/blog/how-to-tell-if-dog-is-underweight/).
+According to the 2014 AAHA Weight Management Guidelines, **each point above 5 represents roughly 10% excess weight**. A Labrador scoring 8 at 45 kg is about 30% overweight, with an ideal weight of around 35 kg (45 ÷ 1.3). Thin dogs are covered in [How to Tell If Your Dog Is Underweight](/blog/how-to-tell-if-dog-is-underweight/).
 
 **Breed matters.** Sighthounds such as Greyhounds and Whippets are naturally lean, so a body that looks "right" by Labrador standards may be overweight for them. Use the rib check as your main guide for any breed.
 
@@ -65,6 +65,20 @@ The clearest evidence on lifespan comes from a lifelong study of **48 Labrador R
 - **Add activity gradually**, especially for heavy or arthritic dogs.
 
 Owner follow-through is the biggest factor: the AAHA guidelines note that failure to reach and keep weight off is common, and owner nonadherence is a major reason. Small, consistent changes the whole household sticks to work better than drastic ones.
+
+## Worked Example: From Score to Plan
+
+A 60 lb dog that scores 7 out of 9:
+
+| Step | Result |
+|---|---|
+| Excess weight (about 10% per point above 5) | about 20% |
+| Estimated ideal weight (60 ÷ 1.2) | about 50 lb |
+| Starting calories (2021 AAHA: 1.0 × RER at the ideal weight) | about 730 kcal a day |
+| Safe rate (1–2% of body weight a week) | about 0.6–1.2 lb a week |
+| Time to lose 10 lb at that rate | very roughly 8–17 weeks |
+
+The estimate of ideal weight is only as good as the score, which is why AAHA recommends a vet confirm it. The plan also slows as the dog gets lighter, because 1–2% of a smaller weight is less. Rechecking every two weeks, as AAHA advises, lets you adjust the portion before progress stalls.
 
 ## Frequently Asked Questions
 

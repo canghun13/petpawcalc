@@ -15,7 +15,7 @@ faqs:
     a: "Not if they're healthy. The 2023 AAHA Senior Care Guidelines say senior dogs may benefit from a mild increase in protein content and quality to help preserve muscle. Protein is only adjusted for specific diseases, and that's a decision for your vet."
   - q: "When is a dog considered senior?"
     a: "In the last 25% of its expected lifespan. VCA puts that at about 5–8 years for large and giant breeds and about 10–11 years for small breeds, which is why a Great Dane and a Chihuahua become 'senior' years apart."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 The feeding guide on the bag was written for an average adult dog. By the time your dog is a senior, its activity, muscle and metabolism have changed — and so has the right amount of food. The goal isn't "feed less because they're old"; it's feeding to keep a healthy body and muscle condition as those needs shift.
@@ -80,6 +80,18 @@ See your vet if your senior:
 - has trouble eating, drops food or chews on one side.
 
 Unexplained weight loss in an older dog should be checked by a vet before you simply feed more. VCA notes vets often recommend **twice-yearly** checkups for senior dogs — see [How Often Should Dogs Go to the Vet?](/blog/how-often-vet-visits-dog-cost-by-age/).
+
+## Why Our Calculator Gives a Slightly Lower Range
+
+The table above uses a single figure, 1.4 × RER. Our [Pet Food Calorie Calculator](/tools/pet-food-calorie-calculator.html) works it out a different way: it takes the 2021 AAHA range for a neutered adult (1.4–1.6 × RER) and lowers it by 12% to reflect VCA's estimate that needs fall about 12–13% with age. For a 50 lb neutered senior:
+
+| Method | Daily calories |
+|---|---|
+| Single starting point in this article (1.4 × RER) | about 1,020 kcal |
+| Calculator, neutered senior (1.4–1.6 × RER, minus 12%) | about 900–1,020 kcal |
+| Calculator, inactive senior (1.0–1.2 × RER, minus 12%) | about 640–770 kcal |
+
+The single figure sits at the top of the calculator's range, so the two agree for an active senior and differ by up to about 120 kcal for a quieter one. For an inactive senior the gap is larger still. These are all starting points: a senior that is losing muscle may need the higher figure or more, and one gaining fat needs less.
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,7 @@ faqs:
     a: "No, not unless your vet specifically advises it. When she's eating a complete and balanced diet for growth and reproduction, the Merck manual says calcium and other supplements are rarely necessary and may be harmful. Ask your vet before giving any supplement."
   - q: "Should I feed smaller meals as her pregnancy goes on?"
     a: "Yes. As the puppies take up space in the last weeks, smaller, more frequent meals are easier for her. VCA recommends increasing the amount gradually from about week 6 using this approach."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 The most common mistake with a pregnant dog isn't feeding too little — it's feeding too much, too early. Puppies grow very little in the first two thirds of pregnancy. The time to feed more is the last three weeks, and especially once the puppies are born.
@@ -62,6 +62,19 @@ Signs of milk fever (eclampsia) after the birth — restlessness, panting, tremb
 ## Before Labor
 
 Many dogs eat less or refuse food in the day before whelping, which is normal on its own. [Signs of Dog Labor](/blog/signs-of-dog-labor/) covers the other signs, including the temperature drop.
+
+## Worked Example: A Dog Who Normally Eats 1,000 kcal
+
+If your dog's normal maintenance intake is 1,000 kcal a day (work out your own with the [Pet Food Calorie Calculator](/tools/pet-food-calorie-calculator.html)), the ranges above look like this:
+
+| Stage | Daily calories |
+|---|---|
+| Weeks 1–6 | about 1,000 kcal (no change) |
+| Week 6 to birth (Merck: at least 20–30% more) | about 1,200–1,300 kcal or more |
+| Last three weeks (VCA: up to about 1.5 times) | up to about 1,500 kcal |
+| Nursing (Merck: 2–4 times maintenance) | about 2,000–4,000 kcal, free-choice |
+
+The two pregnancy figures are not in conflict: Merck's is a minimum for the last third, and VCA's is where intake can end up by the final weeks. The biggest jump comes after the birth, not before it. A large litter sits at the top of the nursing range, which is why free-choice feeding is recommended then rather than a fixed portion.
 
 ## Frequently Asked Questions
 

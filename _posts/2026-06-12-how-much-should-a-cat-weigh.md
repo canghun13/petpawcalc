@@ -18,7 +18,7 @@ faqs:
   - q: "At what age do cats stop growing?"
     a: "Most cats are close to adult size by about a year; PetMD notes growth slows between 6 and 12 months. Some large breeds take much longer: the Association for Pet Obesity Prevention's breed reference notes Ragdolls may take up to four years and Norwegian Forest Cats up to five to reach full maturity."
 
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 PetMD puts most healthy domestic cats at **about 8–12 lbs, typically around 10**. That's a useful starting point — but breed, sex and frame shift it a lot, and the same number can be healthy for one cat and overweight for another.
@@ -146,6 +146,17 @@ The easiest home method: weigh yourself on a bathroom scale, then weigh yourself
 Unexplained weight change in either direction is worth a vet visit. Keep the numbers in proportion: 1 lb on a 10 lb cat is a tenth of its body weight.
 
 *This article is for informational purposes only. Consult your veterinarian before starting a weight loss program for your cat or if you have concerns about their weight.*
+
+## Worked Example: Same Weight, Different Answers
+
+The breed table and the body condition score work together. Two 15 lb cats:
+
+| Cat | Breed range | Body condition score | What it suggests |
+|---|---|---|---|
+| Male Ragdoll | 15–20 lbs | 5 (ideal) | A healthy weight for this cat |
+| Domestic shorthair | About 8–12 lbs | 7 | About 20% over; estimated ideal about 12.5 lbs (15 ÷ 1.2) |
+
+The breed range tells you whether a number is plausible, and the score tells you whether this particular cat is carrying too much. A 2.5 lb loss for the second cat at a safe 0.5–2% a week would take very roughly 2 to 8 months, which is why your vet should set the target.
 
 ## Frequently Asked Questions
 

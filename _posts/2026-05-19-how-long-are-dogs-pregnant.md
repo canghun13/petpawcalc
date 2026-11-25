@@ -17,7 +17,7 @@ faqs:
     a: "Her rectal temperature often drops below 99°F within 24 hours of birth (normal is about 100–102.5°F), though the dip lasts only about 8 hours and is easy to miss. Nesting, restlessness and panting usually start 6–12 hours before the first puppy."
   - q: "When should I call the vet during whelping?"
     a: "If more than 2 hours pass between puppies, if she has strong contractions for more than 30 minutes without a puppy, if there's dark green or foul-smelling discharge before the first puppy, if labor hasn't started within 24–36 hours of the temperature drop, or if pregnancy goes beyond 70 days from a known breeding date."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 The short answer is **about 63 days** — a little over nine weeks. The longer answer depends on what you're counting from, and that's why many owners find their dog "late" or "early" when she's actually right on time.
@@ -81,6 +81,21 @@ Dystocia (difficult birth) affects about 5% of pregnancies overall, according to
 ## After the Birth
 
 Some discharge (lochia) is normal after whelping — Cornell says it usually lasts about **3 weeks** and can continue for up to 8. Contact your vet if it smells bad or increases.
+
+## Worked Example: A Mating on 1 March
+
+Here is how the figures above turn into dates when the only thing you know is a mating date of 1 March (count from your own date the same way):
+
+| Day after mating | Date | What it means |
+|---|---|---|
+| About 18 | 19 March | Implantation (Merck) |
+| 28 | 29 March | Ultrasound becomes reliable |
+| About 42 | 12 April | Start increasing food (VCA); skeletons start to show on X-ray |
+| 55 | 25 April | X-ray now gives the best puppy count |
+| 56–70 | 26 April – 10 May | Expected birth window (63 ± 7 days, Cornell) |
+| Past 70 | After 10 May | Call your vet |
+
+Notice that the "call the vet" day is the last day of the normal window. A dog at day 68 is still on time, which is why so many owners worry unnecessarily. With two matings on 1 and 3 March, VCA's 63–65 days after the later one points to 5–7 May. If your vet timed ovulation with progesterone tests, the window shrinks to a few days around day 63 from ovulation. Our [Dog Pregnancy Calculator](/tools/dog-pregnancy-calculator.html) works out the same dates for you.
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,7 @@ faqs:
     a: "Usually, yes, for the first three to four weeks after birth, when milk production climbs toward its peak. VCA's veterinary nutritionists make an exception for a mother nursing only one or two kittens, where free-choice feeding can raise the risk of mastitis. Her food needs are highest around weaning, at about 6–7 weeks."
   - q: "Does a pregnant cat need supplements?"
     a: "Not if she's eating a complete and balanced kitten or growth food. The Merck Veterinary Manual says supplementing an already balanced diet is unnecessary and should be discouraged. Ask your vet before adding anything, including calcium."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Feeding a pregnant cat isn't the same as feeding a pregnant dog, and a lot of advice online treats them as if it were. The key difference is timing: **kittens grow steadily from early in pregnancy**, so a queen's food needs start rising soon after conception rather than waiting for the last few weeks.
@@ -77,6 +77,19 @@ Call your vet if your pregnant or nursing cat:
 - seems **weak, wobbly or twitchy** after giving birth.
 
 A cat that stops eating is always worth a call, pregnant or not.
+
+## Worked Example: A Cat Who Normally Eats 250 kcal
+
+For a cat whose normal intake is about 250 kcal a day:
+
+| Stage | What the sources say | Daily calories |
+|---|---|---|
+| Last third of pregnancy | Intake up about 25% on average (Merck) | about 310 kcal |
+| Last third of pregnancy | Energy needs up to 40% above maintenance (Merck) | up to about 350 kcal |
+| Pregnancy overall | Intake may rise by about 50% (VCA) | about 375 kcal |
+| Nursing | 2–3 times normal intake (Merck) | about 500–750 kcal |
+
+The figures differ partly because they measure different things: an average increase in what cats eat, an upper estimate of energy needs, and a general guide across the pregnancy. Rather than picking one, meal-feed her during pregnancy as VCA recommends and weigh her weekly. Steady gain without getting fat means the amount is right. During nursing, free-choice feeding takes the guesswork out, except with a very small litter.
 
 ## Frequently Asked Questions
 

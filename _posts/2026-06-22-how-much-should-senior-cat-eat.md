@@ -17,7 +17,7 @@ faqs:
     a: "Smaller, more frequent meals suit most healthy senior cats, according to the AAHA guidelines. VCA suggests dividing the daily amount into two, three or four small meals."
   - q: "Why is my senior cat always hungry?"
     a: "A bigger appetite in an older cat, especially with weight loss, can be a sign of hyperthyroidism, diabetes or intestinal disease. It's worth a vet visit with bloodwork rather than simply feeding more."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Feeding an older cat isn't just "less food for a less active cat." Cats are unusual: their energy needs **fall through middle age, then rise again** in later years, and many older cats digest protein and fat less efficiently. A cat that's fed less because it's "getting old" can end up losing muscle it can't afford to lose.
@@ -77,6 +77,17 @@ Weigh your cat monthly — a baby scale works, or weigh yourself holding the cat
 - drops food, chews on one side or eats less.
 
 VCA recommends **twice-yearly** checkups for senior cats. More on recognising thin cats and muscle loss is in [How to Tell If Your Cat Is Underweight](/blog/how-to-tell-if-cat-is-underweight/).
+
+## Two References, Two Starting Points
+
+The Merck figure above is a single number. The 2021 AAHA Nutrition and Weight Management Guidelines give a range instead. For a 10 lb (4.5 kg) cat with an RER of about 218 kcal:
+
+| Cat | Merck | 2021 AAHA guidelines |
+|---|---|---|
+| Neutered adult | 1.2 × RER: about 260 kcal | 1.2–1.4 × RER: about 260–305 kcal |
+| Obesity-prone or inactive | 1.0 × RER: about 220 kcal | 1.0 × RER: about 220 kcal |
+
+Merck's figure is the bottom of AAHA's range. Given how needs change with age, the low end tends to suit a 7–10-year-old that is gaining weight, while an older senior holding its weight poorly may need the upper end or more. Weighing monthly shows which way your cat is going.
 
 ## Frequently Asked Questions
 
