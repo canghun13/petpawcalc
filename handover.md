@@ -3545,3 +3545,9 @@ BH에서 웹 도구 사용 한도로 못 한 것 처리:
 
 **남음 (WebFetch 월 한도 — 14:10 KST 이후 재개)**
 - 접종 계산기 2개 본문의 CAPC 구충 일정 확인, cat-urinary-emergency-checker, dog-mobility-arthritis-screening, pet-diarrhea-triage, raw-feeding, titer-test, pet-food-calorie, neuter-timing-by-breed-size.
+
+**BQ 이어서 (11/25 14:30 이후) — T4 완료(091b75d 외)**
+- 접종 계산기 2개: CAPC 구충(양종 2주 시작·2개월까지 2주마다·6개월까지 매월·이후 분기, 분변검사 첫해 4회·성체 2회), Merck 회충(강아지 태반감염 주경로·고양이는 태반감염 없음). llms.txt의 "고양이 ~3주 시작" 정정.
+- 고양이 요로 응급(AVMA·Cornell FLUTD), 개 관절 스크리닝(Wright 2022 JSAP 500마리·민감도 88.2%·특이도 70.5%, AAHA tier 주장·6–18% 삭제), 고양이 관절(Enomoto 2020·NC State — 출처 줄 추가), 설사 트리아지(VCA 금식 기본 아님·GI 처방식, PetMD 하루 이상, Cornell MDR1 로페라미드), 칼로리(AAHA 2021 Box 1 계수·시니어견 ×0.88 VCA), 생식(AAHA kcal÷사용자 kcal/lb·가격, 80/10/10은 관행 표기, AVMA·FDA 15/196 살모넬라·32/196 리스테리아), 항체가(CAVIDS $60/$31·3년/1년 재검·렙토 등 항체가 불가), 중성화 시기(Hart 2020 35견종·혼종 5체중군·2024 5견종 실제 수치로 전 항목 교체 — 셸티 요실금 방향 반대로 적혀 있던 것 정정, 도베르만 암 추세·초대형 "12개월 넘게" 문구 미확인 삭제).
+- 고양이 나이 계산기: "메인쿤도 같은 속도" 미확인 주장 → AAHA/AAFP 단일 환산표 설명으로.
+- 남은 도구 페이지는 모두 본문 인라인 출처 있음(출처 줄 형식은 일부만). 애드센스 재신청: 재크롤 1–2주 후, 핵심 페이지 색인 요청, 커버리지 "크롤링됨-색인 안 됨" 추이로 판단.
