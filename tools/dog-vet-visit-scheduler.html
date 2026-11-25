@@ -2,7 +2,8 @@
 layout: tool
 permalink: /tools/dog-vet-visit-scheduler.html
 title: Dog Vet Visit Scheduler — When Is My Dog's Next Checkup?
-description: Enter your dog's age, size, and last vet visit to get a personalized checkup schedule — with what to discuss at each visit. Free, instant results.
+description: Enter your dog's age, size and last vet visit to see when the next checkup is due, using PetMD's visit schedule — every 3–4 weeks for puppies, yearly for adults, every six months for seniors.
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -35,7 +36,7 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
       "name": "How often should I take my dog to the vet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on your dog's age. Puppies under 1 year need visits every 3–4 weeks for their vaccine series. Healthy adult dogs (1–7 years) need an annual wellness exam. Senior dogs (7+ for large breeds, 10+ for small breeds) benefit from checkups every 6 months. Dogs with chronic conditions may need more frequent visits."
+        "text": "A veterinarian-written PetMD guide recommends every 3–4 weeks for puppies from 6–8 weeks until 16–20 weeks, about a year after the last puppy visit, then once a year for adults and every six months for seniors. A dog that seems unwell should be seen whatever the schedule."
       }
     },
     {
@@ -43,7 +44,7 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
       "name": "What happens at a dog's annual wellness exam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A standard annual wellness exam includes a full physical checkup (weight, temperature, heart, lungs, teeth, eyes, ears, skin), rotating vaccines, heartworm test, and parasite prevention review. For dogs over 7, bloodwork is typically recommended to establish baseline organ function values."
+        "text": "A nose-to-tail exam including weight and body condition, heart and lungs, eyes, ears, skin, joints and teeth; whichever vaccines are due; and usually a heartworm test and a review of parasite prevention. A fecal test is often included, and older dogs typically have bloodwork."
       }
     },
     {
@@ -51,7 +52,7 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
       "name": "At what age should dogs start getting checkups every 6 months?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Large and giant breeds are generally considered senior at 7–8 years, at which point twice-yearly checkups become worthwhile. Small breeds typically move to 6-month visits around 10–11 years. However, dogs with health conditions may benefit from more frequent visits at any age."
+        "text": "When they become seniors. PetMD puts that at about 7 for medium dogs, a year or two earlier for large and giant breeds, and about 9–10 for small dogs."
       }
     }
   ]
@@ -144,29 +145,27 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This scheduler provides general guidelines based on your dog's life stage. Individual health needs vary. Always follow your veterinarian's specific recommendations for your dog.
+    ⚕️ This follows a general schedule for healthy dogs. A dog with a chronic condition should be seen as often as your vet advises, and any dog that seems unwell should be seen whatever the date.
   </div>
 
-  <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Why Vet Visit Frequency Changes With Age</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A healthy 3-year-old dog and a healthy 9-year-old dog have very different needs from their veterinarian — even if neither is showing any symptoms. The reason is simple: the pace of change in an aging dog's body accelerates significantly after a certain point, and problems caught early cost less to treat and cause less suffering.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Annual exams during the adult years aren't just about vaccines. They establish baseline values — organ function, weight, heart and lung sounds — that become critical reference points when something changes later. A vet who sees a gradual upward trend in kidney values over three years can intervene far earlier than one seeing the same dog for the first time in crisis.</p>
+  <div style="margin-top: 48px;">
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">The Schedule This Tool Uses</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The dates come from a veterinarian-written PetMD guide (Jennifer Coates, DVM, 2025):</p>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 16px;">
+      <li><strong>Puppies:</strong> every 3–4 weeks from 6–8 weeks until 16–20 weeks old, following the vaccine series. The 2022 AAHA Canine Vaccination Guidelines call for at least three core doses between 6 and 16 weeks, 2–4 weeks apart.</li>
+      <li><strong>First booster:</strong> about a year after the last puppy visit.</li>
+      <li><strong>Adults:</strong> once a year.</li>
+      <li><strong>Seniors:</strong> every six months.</li>
+    </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">When "senior" starts depends on size. PetMD puts it at about 7 for medium dogs, a year or two earlier for large and giant breeds, and about 9–10 for small dogs. The calculator uses 9 for small, 7 for medium and 6 for large and giant dogs.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Vet Visit Frequency by Life Stage</h2>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Puppy (0–12 months)</strong>: Every 3–4 weeks until the primary vaccine series is complete, typically at 16 weeks. Then a visit around 6 months for spay/neuter discussion and a final puppy wellness check. More visits than any other life stage — but front-loaded by design.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Young Adult (1–3 years)</strong>: Annual wellness exam. This is the lowest-need phase for most dogs. Vaccines rotate on 1 or 3-year schedules. Dental health, weight, and parasite prevention are the main focus.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Adult (3–7 years)</strong>: Annual wellness exam. Bloodwork becomes more worthwhile as a baseline check. For large breeds, joint health conversation becomes relevant in the later part of this window.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Mature/Senior (7+ for large breeds, 10+ for small breeds)</strong>: Every 6 months. Semi-annual exams allow earlier detection of the conditions most common in older dogs — kidney disease, hypothyroidism, heart disease, dental disease, arthritis, and cognitive changes. Bloodwork at every visit becomes standard.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Dogs with chronic conditions</strong>: Frequency is set by the condition and the vet managing it. Diabetes, Cushing's disease, heart disease, and kidney disease typically require visits every 3–4 months for monitoring and medication adjustment.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">What Each Visit Covers</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A yearly exam includes weight and body condition, heart and lungs, eyes, ears, skin, joints and teeth; whichever vaccines are due; and usually a heartworm test, a review of parasite prevention and often a fecal test. Periodontal disease starts early — the Merck Veterinary Manual says up to 80% of dogs have some by age 2 — so the teeth are checked every time.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Senior visits usually add bloodwork, a urinalysis and often a blood pressure check, because conditions such as kidney disease, hypothyroidism, diabetes and Cushing's disease become more common with age and are easier to manage when found early.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How to Get the Most Out of Each Visit</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Vet appointments move quickly. The owners who get the most value from them come prepared with a short list of observations and questions. Changes in appetite, water intake, energy level, sleep, bathroom habits, or behavior are all worth mentioning — even if they seem minor. These details often add context that changes what the vet looks for.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">It also helps to know what vaccines are due and when heartworm and flea/tick prevention was last given. Many clinics will have this on file, but having it yourself means you can ask informed questions about timing and whether the schedule makes sense for your dog's lifestyle.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Bring a short list of changes since the last visit: appetite, water intake, energy, sleep, bathroom habits and behavior. It also helps to know which vaccines are due and when heartworm and flea and tick prevention were last given.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: PetMD (Coates, 2025); 2022 AAHA Canine Vaccination Guidelines; Merck Veterinary Manual. Costs for each visit are in <a href="/blog/how-often-vet-visits-dog-cost-by-age/">How Often Should You Take Your Dog to the Vet?</a> Full list on our <a href="/sources.html">sources page</a>.</p>
 
     <div class="post-cta">
       <p>Want a full cost breakdown by life stage? → <a href="/blog/how-often-vet-visits-dog-cost-by-age/">Read our vet visit cost guide by age</a></p>
@@ -202,11 +201,11 @@ description: Enter your dog's age, size, and last vet visit to get a personalize
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often should I take my dog to the vet?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on your dog's age. Puppies under 1 year need visits every 3–4 weeks for their vaccine series. Healthy adult dogs (1–7 years) need an annual wellness exam. Senior dogs (7+ for large breeds, 10+ for small breeds) benefit from checkups every 6 months. Dogs with chronic conditions may need more frequent visits.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A veterinarian-written PetMD guide recommends every 3–4 weeks for puppies from 6–8 weeks until 16–20 weeks, about a year after the last puppy visit, then once a year for adults and every six months for seniors. A dog that seems unwell should be seen whatever the schedule.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What happens at a dog's annual wellness exam?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A standard annual wellness exam includes a full physical checkup (weight, temperature, heart, lungs, teeth, eyes, ears, skin), rotating vaccines, heartworm test, and parasite prevention review. For dogs over 7, bloodwork is typically recommended to establish baseline organ function values.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A nose-to-tail exam including weight and body condition, heart and lungs, eyes, ears, skin, joints and teeth; whichever vaccines are due; and usually a heartworm test and a review of parasite prevention. A fecal test is often included, and older dogs typically have bloodwork.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">At what age should dogs start getting checkups every 6 months?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Large and giant breeds are generally considered senior at 7–8 years, at which point twice-yearly checkups become worthwhile. Small breeds typically move to 6-month visits around 10–11 years. However, dogs with health conditions may benefit from more frequent visits at any age.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">When they become seniors. PetMD puts that at about 7 for medium dogs, a year or two earlier for large and giant breeds, and about 9–10 for small dogs.</p>
   </div>
 </div>
 
@@ -284,48 +283,41 @@ function addMonths(date, months) {
   return result;
 }
 
+// PetMD (Coates, 2025): puppies every 3–4 weeks until 16–20 weeks; adults yearly; seniors every 6 months.
+// Senior from about 9–10 (small), 7 (medium), a year or two earlier for large and giant breeds.
 function getLifeStage(totalMonths, size) {
-  const seniorAge = (size === 'large' || size === 'giant') ? 84 : 120; // months
-  if (totalMonths < 12) return 'puppy';
-  if (totalMonths < 36) return 'young_adult';
+  const seniorAge = size === 'small' ? 108 : size === 'medium' ? 84 : 72; // months
+  if (totalMonths < 5) return 'puppy';
   if (totalMonths < seniorAge) return 'adult';
   return 'senior';
 }
-
 function getVisitInterval(stage, healthStatus) {
-  if (healthStatus === 'chronic') return 3;
   switch(stage) {
-    case 'puppy': return 3;
-    case 'young_adult': return 12;
+    case 'puppy': return 1;
     case 'adult': return 12;
     case 'senior': return 6;
   }
 }
-
 function getAgendaItems(stage, size, healthStatus) {
   const base = [
-    { icon: '⚖️', title: 'Weight & Body Condition', desc: 'Ask your vet to score body condition (1–9 scale) and confirm current food amount is appropriate.' },
-    { icon: '🦷', title: 'Dental Health', desc: 'Ask about the current dental grade and whether a professional cleaning is recommended this year.' },
-    { icon: '💉', title: 'Vaccines Due', desc: 'Confirm which vaccines are due or coming up — DHPP, rabies, bordetella, and leptospirosis rotate on different schedules.' },
+    { icon: '⚖️', title: 'Weight & Body Condition', desc: 'Ask your vet to score body condition on the 1–9 scale and confirm the food amount.' },
+    { icon: '🦷', title: 'Dental Health', desc: 'The Merck Veterinary Manual says up to 80% of dogs have some periodontal disease by age 2. Ask whether a cleaning is due.' },
+    { icon: '💉', title: 'Vaccines Due', desc: 'Core vaccines are every 3 years after the first-year booster; lifestyle vaccines such as leptospirosis and Bordetella are yearly if your dog needs them. Rabies follows local law.' },
     { icon: '🦟', title: 'Parasite Prevention', desc: 'Review heartworm, flea, and tick prevention — confirm the current products are appropriate for your dog\'s weight and lifestyle.' },
   ];
 
   if (stage === 'puppy') {
-    base.push({ icon: '✂️', title: 'Spay/Neuter Timing', desc: 'Discuss the recommended age for spaying or neutering based on your dog\'s size and breed. Timing recommendations have evolved — especially for large breeds.' });
-    base.push({ icon: '🧠', title: 'Socialization & Behavior', desc: 'Mention any behaviors you\'re seeing that seem unusual. The socialization window closes around 16 weeks — discuss how to use it well.' });
+    base.push({ icon: '✂️', title: 'Spay/Neuter Timing', desc: 'AAHA\'s guidance varies by expected adult size — ask what your vet recommends for your dog.' });
+    base.push({ icon: '🪱', title: 'Deworming & Fecal Check', desc: 'Puppy visits are also when deworming and early checks happen.' });
   }
-
-  if (stage === 'adult' || stage === 'young_adult') {
-    base.push({ icon: '🩸', title: 'Baseline Bloodwork', desc: 'Even in healthy adults, a baseline chemistry panel is worth running every 2–3 years. Values taken now are the reference point when something changes later.' });
+  if (stage === 'adult') {
+    base.push({ icon: '🩸', title: 'Heartworm Test', desc: 'Usually part of the yearly visit, along with a review of prevention.' });
   }
-
   if (stage === 'senior') {
-    base.push({ icon: '🩸', title: 'Full Bloodwork Panel', desc: 'Senior panels include kidney and liver function, thyroid levels, and blood cell counts. Ask to see the numbers and keep a copy — trends over visits matter.' });
-    base.push({ icon: '🦴', title: 'Joint Health & Mobility', desc: 'Mention any changes in how your dog gets up, navigates stairs, or moves after rest. Early arthritis management is significantly more effective than late intervention.' });
-    base.push({ icon: '🧠', title: 'Cognitive Changes', desc: 'Nighttime restlessness, disorientation, changed sleep patterns, or reduced responsiveness can be signs of canine cognitive dysfunction. Worth raising even if subtle.' });
-    base.push({ icon: '❤️', title: 'Heart & Lung Check', desc: 'Ask your vet to listen carefully and tell you what they\'re hearing. Some breeds are predisposed to heart disease — knowing your baseline matters.' });
+    base.push({ icon: '🩸', title: 'Bloodwork & Urinalysis', desc: 'Senior visits usually add bloodwork, a urinalysis and often a blood pressure check, to catch kidney disease, hypothyroidism, diabetes and Cushing\'s disease early.' });
+    base.push({ icon: '🦴', title: 'Joints & Mobility', desc: 'Mention changes in getting up, stairs or moving after rest.' });
+    base.push({ icon: '🧠', title: 'Behavior Changes', desc: 'Night-time restlessness, disorientation or changed sleep are worth raising, even if subtle.' });
   }
-
   if (healthStatus === 'chronic') {
     base.push({ icon: '📋', title: 'Condition Monitoring', desc: 'Bring a log of any changes in symptoms, appetite, water intake, or medication response since the last visit. Specific observations help more than general impressions.' });
   }
@@ -374,13 +366,12 @@ function calculateVetSchedule() {
   }
 
   const stageLabels = {
-    puppy: 'Puppy — visits every 3–4 weeks until vaccines are complete',
-    young_adult: 'Young Adult — annual wellness exam recommended',
-    adult: 'Adult — annual wellness exam recommended',
-    senior: 'Senior — checkup every 6 months recommended'
+    puppy: 'Puppy — visits every 3–4 weeks until about 16–20 weeks',
+    adult: 'Adult — yearly checkup (the first booster is about a year after the last puppy visit)',
+    senior: 'Senior — checkup every 6 months'
   };
 
-  const chronicNote = healthStatus === 'chronic' ? ' (every 3 months for dogs with chronic conditions)' : '';
+  const chronicNote = healthStatus === 'chronic' ? '. With a chronic condition, follow the recheck schedule your vet sets — this date is the routine checkup only.' : '';
 
   document.getElementById('result-next').textContent = `Next visit: ${formatDate(nextVisit)}`;
   document.getElementById('result-status').textContent = stageLabels[stage] + chronicNote;
@@ -407,14 +398,20 @@ function calculateVetSchedule() {
 
   // Schedule timeline — next 3 visits
   const scheduleItems = [];
+  let runDate = new Date(nextVisit), runAge = totalMonths, prevStage = null;
   for (let i = 0; i < 3; i++) {
-    const visitDate = addMonths(nextVisit, intervalMonths * i);
-    const visitStage = getLifeStage(totalMonths + (intervalMonths * i), size);
+    if (i > 0) {
+      let step = getVisitInterval(getLifeStage(runAge, size), healthStatus);
+      if (prevStage === 'puppy' && getLifeStage((runAge + step), size) !== 'puppy') step = 12; // first booster about a year after the last puppy visit
+      runDate = addMonths(runDate, step); runAge += step;
+    }
+    const visitDate = new Date(runDate);
+    const visitStage = getLifeStage(runAge, size);
+    prevStage = visitStage;
     const visitLabels = {
-      puppy: 'Puppy wellness + vaccines',
-      young_adult: 'Annual wellness exam',
-      adult: 'Annual wellness exam',
-      senior: 'Semi-annual senior exam'
+      puppy: 'Puppy visit + vaccines',
+      adult: 'Yearly checkup',
+      senior: 'Six-monthly senior checkup'
     };
     scheduleItems.push({ date: visitDate, label: visitLabels[visitStage] });
   }
