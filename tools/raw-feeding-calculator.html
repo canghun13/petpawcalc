@@ -1,8 +1,9 @@
 ---
 layout: tool
 title: Raw Feeding Calculator — Portions (80/10/10) + Monthly Cost Estimate
-description: Calculate your dog or cat's daily raw food portions (muscle meat, bone, organ) using the 80/10/10 model, plus an estimated monthly and annual cost based on meat prices. Free and instant.
+description: "Estimate your dog's or cat's daily raw food amount from its calorie needs and your food's calories per pound, see the cost at your price, and read the AVMA's and FDA's safety advice first."
 permalink: /tools/raw-feeding-calculator.html
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ permalink: /tools/raw-feeding-calculator.html
   "@type": "WebApplication",
   "name": "Raw Feeding Calculator",
   "url": "https://petpawcalc.com/tools/raw-feeding-calculator.html",
-  "description": "Calculate daily raw food portions for dogs and cats using the 80/10/10 model (muscle meat, bone, organ), plus an estimated monthly and annual cost.",
+  "description": "Estimates a dog's or cat's daily raw food amount from AAHA calorie guidelines and the food's calories per pound, with cost at the user's price and the AVMA's and FDA's safety positions.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -32,18 +33,18 @@ permalink: /tools/raw-feeding-calculator.html
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the 80/10/10 raw feeding ratio?",
+      "name": "How much raw food should my pet eat a day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "80/10/10 means 80% muscle meat, 10% raw edible bone, and 10% organ (split evenly between liver and another secreting organ like kidney or spleen). It's the standard ratio for Prey Model Raw (PMR) feeding, designed to mirror the proportions of a whole prey animal. Cats should stick to a strict 80/10/10 with no plant matter; some dog feeders use a 70/10/10 + 10% vegetable variation (BARF) instead."
+        "text": "It depends on calories, not a fixed percentage of body weight. This calculator estimates daily calories with the 2021 AAHA guidelines (70 × kg^0.75, times a life-stage factor) and divides by the calories per pound of your raw food, from the label or recipe."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does raw feeding cost per month?",
+      "name": "What is the 80/10/10 raw feeding ratio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends heavily on meat sourcing, but for a mid-size dog eating 2-3% of body weight daily, budget roughly $60-$150/month using grocery-store meat prices, or $100-$250+/month using premium raw food brands or specialty cuts. Buying whole cuts in bulk from a butcher or co-op is typically the cheapest way to feed raw long-term."
+        "text": "A raw-feeding convention — about 80% muscle meat, 10% edible bone and 10% organ — that the calculator can split your daily amount into. It isn't a veterinary standard, and following it doesn't by itself make a diet complete and balanced."
       }
     },
     {
@@ -51,23 +52,23 @@ permalink: /tools/raw-feeding-calculator.html
       "name": "Is raw feeding safe for dogs and cats?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Raw diets carry real risks that commercial food doesn't: bacterial contamination (Salmonella, E. coli, Listeria) that can affect both the pet and household members handling the food, and the risk of nutritional imbalance if the diet isn't properly formulated over time. The FDA and AVMA both caution against raw diets, particularly in households with young children, elderly members, or anyone immunocompromised. If you choose to feed raw, work with a veterinary nutritionist to confirm the diet is complete and balanced, not just the right ratio."
+        "text": "The AVMA discourages feeding any raw or undercooked animal-source protein to dogs and cats because of the risk to pets and people. In an FDA study of 196 raw pet food samples, 15 tested positive for Salmonella and 32 for Listeria monocytogenes, while other pet food types had almost none."
       }
     },
     {
       "@type": "Question",
-      "name": "How much raw food should I feed daily as a percentage of body weight?",
+      "name": "How should I handle raw pet food?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult dogs and cats at a healthy weight typically eat 2-3% of body weight per day, split into 1-2 meals. Growing puppies and kittens need considerably more — often 5-10% of body weight — to fuel development. Very active or working dogs may need up to 3-4%, while a dog on a weight-loss plan may need less than 2%. Adjust based on body condition, not just the starting percentage."
+        "text": "The FDA advises washing hands with soap and water for at least 20 seconds, disinfecting bowls, utensils and surfaces, keeping raw food frozen until use and thawing it in the fridge or microwave, refrigerating or discarding leftovers promptly, and not letting your pet lick your face after eating."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I feed my cat the same raw diet ratio as my dog?",
+      "name": "How much does raw feeding cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Cats are obligate carnivores with stricter nutritional needs than dogs — they require taurine, arachidonic acid, and preformed vitamin A that come from animal tissue, and they cannot digest plant matter meaningfully. Never add the vegetable component some dog raw diets (BARF-style) include to a cat's diet; cats should stay at a strict 80/10/10 animal-only ratio."
+        "text": "Enter what you actually pay per pound and the calculator works out the daily, monthly and yearly cost from your pet's estimated calorie needs."
       }
     }
   ]
@@ -77,47 +78,47 @@ permalink: /tools/raw-feeding-calculator.html
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🥩 Raw Feeding Calculator</h1>
-    <p>Get your dog or cat's daily raw food portions using the 80/10/10 model, plus an estimated monthly and annual cost.</p>
+    <p>Estimate how much raw food your dog or cat needs each day from its calorie needs (using the 2021 AAHA guidelines) and your food's calories per pound — plus what it costs at your price. Read the safety section first: the AVMA discourages raw feeding.</p>
   </div>
 
   <div class="tool-box">
     <div class="form-group">
-      <label for="rf-species">Pet Type</label>
-      <select id="rf-species" onchange="toggleRfSpecies()">
-        <option value="">Select a pet</option>
+      <label for="rf-species">Pet</label>
+      <select id="rf-species">
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
       </select>
     </div>
-
-    <div id="rf-form" style="display:none;">
-      <div class="form-group">
-        <label for="rf-weight">Current Weight (lbs)</label>
-        <input type="number" id="rf-weight" min="1" max="200" step="0.5" placeholder="e.g. 45">
-      </div>
-      <div class="form-group">
-        <label for="rf-stage">Life Stage</label>
-        <select id="rf-stage">
-          <option value="adult">Adult (maintenance)</option>
-          <option value="growing">Puppy / Kitten (still growing)</option>
-          <option value="active">Very active / working</option>
-          <option value="weightloss">Weight loss goal</option>
-        </select>
-      </div>
-      <div class="form-group" id="rf-model-group">
-        <label for="rf-model">Raw Model</label>
-        <select id="rf-model">
-          <option value="pmr">80/10/10 Prey Model Raw (no plant matter)</option>
-          <option value="barf">70/10/10 + 10% vegetables (BARF-style, dogs only)</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="rf-cost">Meat Cost ($ per lb, your typical price)</label>
-        <input type="number" id="rf-cost" min="0.5" max="20" step="0.25" value="3.50">
-      </div>
+    <div class="form-group">
+      <label for="rf-weight">Weight (lbs) — use the ideal weight if your pet needs to lose weight</label>
+      <input type="number" id="rf-weight" min="1" max="200" step="0.5" placeholder="e.g. 45" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
     </div>
-
-    <button class="btn-calculate" id="rf-btn" onclick="calculateRawFeeding()" style="display:none;">Calculate Portions & Cost →</button>
+    <div class="form-group">
+      <label for="rf-stage">Life stage</label>
+      <select id="rf-stage">
+        <option value="neutered">Neutered adult</option>
+        <option value="intact">Intact adult</option>
+        <option value="inactive">Inactive or gains weight easily</option>
+        <option value="growing">Growing (puppy 4 months+ / kitten)</option>
+        <option value="weightloss">Weight loss (enter ideal weight above)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="rf-kcal">Calories per pound of your raw food (from the label or recipe)</label>
+      <input type="number" id="rf-kcal" min="200" max="3000" step="10" placeholder="e.g. 700" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="rf-cost">Price per pound ($)</label>
+      <input type="number" id="rf-cost" min="0.25" max="40" step="0.25" placeholder="e.g. 4.50" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; background: var(--white); color: var(--brown);">
+    </div>
+    <div class="form-group">
+      <label for="rf-model">Split the amount by</label>
+      <select id="rf-model">
+        <option value="none">Don't split</option>
+        <option value="pmr">80% muscle meat / 10% bone / 10% organ</option>
+      </select>
+    </div>
+    <button class="btn-calculate" onclick="calculateRawFeeding()">Calculate →</button>
 
     <div class="result-box" id="rf-result">
       <div class="print-header">
@@ -131,67 +132,43 @@ permalink: /tools/raw-feeding-calculator.html
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ Raw diets carry real risks: bacterial contamination (Salmonella, E. coli, Listeria) for both pets and the humans handling their food, and nutritional imbalance if not properly formulated. The FDA and AVMA advise caution, especially in households with children, elderly members, or anyone immunocompromised. This calculator gives ratio and cost estimates only — work with a veterinary nutritionist to confirm any homemade diet is complete and balanced long-term.
+    ⚕️ The AVMA discourages feeding raw or undercooked animal-source protein to dogs and cats, and the FDA warns raw pet food can carry Salmonella and Listeria that affect both pets and people. Talk to your vet before switching.
   </div>
 
   <div class="no-print" style="margin-top: 48px;">
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Prey Model Raw (PMR) vs. BARF</h2>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr><th>Model</th><th>Ratio</th><th>Includes plants?</th><th>Best for</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Prey Model Raw (PMR)</td><td>80% meat / 10% bone / 10% organ (5% liver, 5% other)</td><td>No</td><td>Cats (required), dogs following a strict ancestral-diet approach</td></tr>
-          <tr><td>BARF</td><td>70% meat / 10% bone / 10% organ / 10% vegetables</td><td>Yes</td><td>Dogs only — never feed the vegetable component to a cat</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What the Veterinary Bodies Say</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The American Veterinary Medical Association's policy is that it <strong>discourages feeding any raw or undercooked animal-source protein</strong> to cats and dogs, and supports diets processed in ways that reduce or eliminate the risk of illness from pathogens. It also notes that apparently healthy dogs and cats can carry these organisms without showing illness.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The FDA's Center for Veterinary Medicine tested 196 raw pet food samples in 2010–2012: 15 were positive for <em>Salmonella</em> and 32 for <em>Listeria monocytogenes</em>. Among other types of pet food, one dry cat food sample tested positive for <em>Salmonella</em> and none for <em>Listeria</em>.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Raw Feeding Cost vs. Commercial Food</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Raw feeding is usually more expensive than mid-range kibble but can land close to premium fresh-food subscription services, depending on how you source meat:</p>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr><th>Sourcing method</th><th>Typical cost (45 lb dog, monthly)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Grocery-store cuts, buying in bulk</td><td>$60–$100</td></tr>
-          <tr><td>Butcher / co-op bulk buying</td><td>$50–$90</td></tr>
-          <tr><td>Premium commercial raw brand</td><td>$150–$300+</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Buying whole cuts in bulk and portioning them yourself is consistently the cheapest way to feed raw long-term — pre-made raw brands charge a significant premium for convenience and food-safety processing.</p>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Transitioning to Raw Safely</h2>
-    <ul style="color: var(--brown-mid); line-height: 1.8; margin-bottom: 24px; padding-left: 20px;">
-      <li><strong>Days 1–3:</strong> Replace about 25% of current food with raw, keeping one protein source (chicken is the most common starting point).</li>
-      <li><strong>Days 4–6:</strong> Move to roughly 50% raw.</li>
-      <li><strong>Days 7–9:</strong> Move to roughly 75% raw.</li>
-      <li><strong>Day 10+:</strong> Fully raw, if stool consistency has stayed normal throughout.</li>
-      <li><strong>Watch for loose stool</strong> — if it happens, slow the transition and temporarily reduce the bone portion, since too much bone too fast is the most common early issue.</li>
-      <li><strong>Practice strict food safety:</strong> use dedicated cutting boards and utensils, wash hands and surfaces thoroughly, and freeze wild-sourced game for at least 3 weeks before feeding to reduce parasite risk.</li>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">If You Do Feed Raw: FDA Handling Advice</h2>
+    <ul style="color: var(--brown-mid); line-height: 1.8; padding-left: 20px; margin-bottom: 24px;">
+      <li>Wash hands with soap and water for at least 20 seconds after handling raw food or anything it touched.</li>
+      <li>Clean and disinfect bowls, utensils, cutting boards and counters (the FDA suggests 1 tablespoon of bleach per quart of water).</li>
+      <li>Keep raw food frozen until you use it, and thaw it in the fridge or microwave, not on the counter.</li>
+      <li>Keep it away from other food, and refrigerate or throw out leftovers promptly.</li>
+      <li>Don't let your pet lick your face, especially after it eats.</li>
     </ul>
 
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How the Amount Is Worked Out</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Rather than a fixed percentage of body weight, the calculator estimates calories with the 2021 AAHA Nutrition and Weight Management Guidelines — RER = 70 × (weight in kg)<sup>0.75</sup>, times AAHA's life-stage factor (for example 1.4–1.6 for a neutered adult dog, 1.2–1.4 for a neutered adult cat, 1.0 × RER at ideal weight for a dog losing weight and 0.8 for a cat) — and divides by your food's calories per pound. Raw foods vary a lot in calories, so the label figure matters.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>About 80/10/10:</strong> the split option uses a common raw-feeding convention of 80% muscle meat, 10% bone and 10% organ. It's not a veterinary standard, and no ratio on its own makes a homemade diet complete and balanced — ask your vet about a properly formulated recipe.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: AVMA policy, <em>Raw or Undercooked Animal-Source Protein in Cat and Dog Diets</em>; FDA, <em>Get the Facts! Raw Pet Food Diets Can Be Dangerous to You and Your Pet</em>; 2021 AAHA Nutrition and Weight Management Guidelines. Full list on our <a href="/sources.html">sources page</a>.</p>
+
     <div class="post-cta">
-      <p>Want the full daily calorie picture too? → <a href="/tools/pet-food-calorie-calculator.html">Try the Pet Food Calorie Calculator</a></p>
-    </div>
-    <div class="post-cta">
-      <p>Comparing costs across your pet's whole year? → <a href="/tools/annual-pet-cost-calculator.html">Use the Annual Pet Cost Calculator</a></p>
+      <p>Feeding commercial food instead? → <a href="/tools/pet-food-calorie-calculator.html">Pet Food Calorie Calculator</a></p>
     </div>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much raw food should my pet eat a day?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on calories, not a fixed percentage of body weight. This calculator estimates daily calories with the 2021 AAHA guidelines (70 × kg^0.75, times a life-stage factor) and divides by the calories per pound of your raw food, from the label or recipe.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What is the 80/10/10 raw feeding ratio?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">80/10/10 means 80% muscle meat, 10% raw edible bone, and 10% organ (split evenly between liver and another secreting organ like kidney or spleen). It's the standard ratio for Prey Model Raw (PMR) feeding, designed to mirror the proportions of a whole prey animal. Cats should stick to a strict 80/10/10 with no plant matter; some dog feeders use a 70/10/10 + 10% vegetable variation (BARF) instead.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does raw feeding cost per month?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends heavily on meat sourcing, but for a mid-size dog eating 2-3% of body weight daily, budget roughly $60-$150/month using grocery-store meat prices, or $100-$250+/month using premium raw food brands or specialty cuts. Buying whole cuts in bulk from a butcher or co-op is typically the cheapest way to feed raw long-term.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A raw-feeding convention — about 80% muscle meat, 10% edible bone and 10% organ — that the calculator can split your daily amount into. It isn't a veterinary standard, and following it doesn't by itself make a diet complete and balanced.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is raw feeding safe for dogs and cats?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Raw diets carry real risks that commercial food doesn't: bacterial contamination (Salmonella, E. coli, Listeria) that can affect both the pet and household members handling the food, and the risk of nutritional imbalance if the diet isn't properly formulated over time. The FDA and AVMA both caution against raw diets, particularly in households with young children, elderly members, or anyone immunocompromised. If you choose to feed raw, work with a veterinary nutritionist to confirm the diet is complete and balanced, not just the right ratio.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much raw food should I feed daily as a percentage of body weight?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Adult dogs and cats at a healthy weight typically eat 2-3% of body weight per day, split into 1-2 meals. Growing puppies and kittens need considerably more — often 5-10% of body weight — to fuel development. Very active or working dogs may need up to 3-4%, while a dog on a weight-loss plan may need less than 2%. Adjust based on body condition, not just the starting percentage.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Can I feed my cat the same raw diet ratio as my dog?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">No. Cats are obligate carnivores with stricter nutritional needs than dogs — they require taurine, arachidonic acid, and preformed vitamin A that come from animal tissue, and they cannot digest plant matter meaningfully. Never add the vegetable component some dog raw diets (BARF-style) include to a cat's diet; cats should stay at a strict 80/10/10 animal-only ratio.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The AVMA discourages feeding any raw or undercooked animal-source protein to dogs and cats because of the risk to pets and people. In an FDA study of 196 raw pet food samples, 15 tested positive for Salmonella and 32 for Listeria monocytogenes, while other pet food types had almost none.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How should I handle raw pet food?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The FDA advises washing hands with soap and water for at least 20 seconds, disinfecting bowls, utensils and surfaces, keeping raw food frozen until use and thawing it in the fridge or microwave, refrigerating or discarding leftovers promptly, and not letting your pet lick your face after eating.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How much does raw feeding cost?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Enter what you actually pay per pound and the calculator works out the daily, monthly and yearly cost from your pet's estimated calorie needs.</p>
   </div>
 </div>
 
@@ -248,78 +225,39 @@ function doPrint(dateId) {
     new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
   window.print();
 }
-
-function toggleRfSpecies() {
-  const species = document.getElementById('rf-species').value;
-  document.getElementById('rf-form').style.display = species ? 'block' : 'none';
-  document.getElementById('rf-btn').style.display = species ? 'block' : 'none';
-  document.getElementById('rf-result').classList.remove('show');
-  document.getElementById('rf-model-group').style.display = species === 'dog' ? 'block' : 'none';
-  if (species === 'cat') document.getElementById('rf-model').value = 'pmr';
-}
-
-const rfPctByStage = {
-  adult: 0.025,
-  growing: 0.08,
-  active: 0.035,
-  weightloss: 0.018
+// AAHA 2021 Box 1 life-stage factors
+const RF_FACTORS = {
+  dog: { neutered: [1.4, 1.6], intact: [1.6, 1.8], inactive: [1.0, 1.2], growing: [2.0, 2.0], weightloss: [1.0, 1.0] },
+  cat: { neutered: [1.2, 1.4], intact: [1.4, 1.6], inactive: [1.0, 1.0], growing: [2.5, 2.5], weightloss: [0.8, 0.8] }
 };
-
 function calculateRawFeeding() {
-  const species = document.getElementById('rf-species').value;
-  const weightLb = parseFloat(document.getElementById('rf-weight').value);
+  const sp = document.getElementById('rf-species').value;
+  const lb = parseFloat(document.getElementById('rf-weight').value);
   const stage = document.getElementById('rf-stage').value;
-  const model = species === 'cat' ? 'pmr' : document.getElementById('rf-model').value;
-  const costPerLb = parseFloat(document.getElementById('rf-cost').value) || 3.5;
-
-  if (!weightLb || weightLb <= 0) {
-    alert("Please enter your pet's weight.");
-    return;
+  const kcalLb = parseFloat(document.getElementById('rf-kcal').value);
+  const price = parseFloat(document.getElementById('rf-cost').value);
+  const model = document.getElementById('rf-model').value;
+  if (!lb || lb <= 0 || !kcalLb || kcalLb <= 0) { alert('Please enter the weight and your food\'s calories per pound.'); return; }
+  const rer = 70 * Math.pow(lb * 0.453592, 0.75);
+  const f = RF_FACTORS[sp][stage];
+  const kLo = rer * f[0], kHi = rer * f[1];
+  const lbLo = kLo / kcalLb, lbHi = kHi / kcalLb;
+  const oz = x => (x * 16).toFixed(1);
+  const range = (a, b, fn) => Math.abs(a - b) < 0.001 ? fn(a) : `${fn(a)}–${fn(b)}`;
+  document.getElementById('rf-result-total').textContent = `About ${range(lbLo, lbHi, oz)} oz a day`;
+  let html = `<div style="padding: 8px 0; border-bottom: 1px solid var(--border);">Calories: ${range(kLo, kHi, x => Math.round(x))} kcal a day (RER ${Math.round(rer)} × AAHA factor ${f[0] === f[1] ? f[0] : f[0] + '–' + f[1]})</div>`;
+  html += `<div style="padding: 8px 0; border-bottom: 1px solid var(--border);">At ${kcalLb} kcal per lb: ${range(lbLo, lbHi, x => x.toFixed(2))} lb (${range(lbLo * 453.6, lbHi * 453.6, x => Math.round(x))} g) a day</div>`;
+  if (model === 'pmr') {
+    const mid = (lbLo + lbHi) / 2;
+    html += `<div style="padding: 8px 0; border-bottom: 1px solid var(--border);">80/10/10 split (midpoint): muscle meat ${oz(mid * 0.8)} oz · bone ${oz(mid * 0.1)} oz · organ ${oz(mid * 0.1)} oz — a convention, not a guarantee of a balanced diet</div>`;
   }
-
-  const pct = rfPctByStage[stage];
-  const dailyLb = weightLb * pct;
-  const dailyOz = dailyLb * 16;
-
-  let meatPct, bonePct, organPct, vegPct;
-  if (model === 'barf') {
-    meatPct = 0.70; bonePct = 0.10; organPct = 0.10; vegPct = 0.10;
-  } else {
-    meatPct = 0.80; bonePct = 0.10; organPct = 0.10; vegPct = 0;
+  if (price > 0) {
+    const d = x => '$' + x.toFixed(2);
+    html += `<div style="padding: 8px 0; border-bottom: 1px solid var(--border);">Cost at $${price.toFixed(2)}/lb: ${range(lbLo * price, lbHi * price, d)} a day · ${range(lbLo * price * 30.4, lbHi * price * 30.4, x => '$' + Math.round(x))} a month · ${range(lbLo * price * 365, lbHi * price * 365, x => '$' + Math.round(x))} a year</div>`;
   }
-
-  const meatOz = dailyOz * meatPct;
-  const boneOz = dailyOz * bonePct;
-  const organOz = dailyOz * organPct;
-  const liverOz = organOz / 2;
-  const otherOrganOz = organOz / 2;
-  const vegOz = dailyOz * vegPct;
-
-  const monthlyLb = dailyLb * 30;
-  const monthlyCost = monthlyLb * costPerLb;
-  const annualCost = monthlyCost * 12;
-
-  document.getElementById('rf-result-total').textContent =
-    `${dailyOz.toFixed(1)} oz/day  ·  ~$${Math.round(monthlyCost)}/month`;
-
-  let breakdown = `
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Muscle meat</span><span>${meatOz.toFixed(1)} oz</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Raw edible bone</span><span>${boneOz.toFixed(1)} oz</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Liver</span><span>${liverOz.toFixed(1)} oz</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Other organ (kidney/spleen)</span><span>${otherOrganOz.toFixed(1)} oz</span></div>
-  `;
-  if (model === 'barf') {
-    breakdown += `<div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Vegetables</span><span>${vegOz.toFixed(1)} oz</span></div>`;
-  }
-  breakdown += `
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Daily feeding rate</span><span>${(pct*100).toFixed(1)}% of body weight</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid var(--border);"><span>Monthly cost estimate</span><span>~$${Math.round(monthlyCost)}</span></div>
-    <div style="display:flex; justify-content:space-between; padding: 6px 0;"><span>Annual cost estimate</span><span>~$${Math.round(annualCost).toLocaleString()}</span></div>
-  `;
-  document.getElementById('rf-result-breakdown').innerHTML = breakdown;
-
+  html += `<p style="margin-top: 10px; line-height: 1.6;">Adjust by weight and body condition. ${sp === 'cat' && stage === 'weightloss' ? 'Never cut a cat\'s food sharply — cats that stop eating can develop hepatic lipidosis. ' : ''}The AVMA discourages raw feeding; follow the FDA\'s handling advice below if you go ahead.</p>`;
+  document.getElementById('rf-result-breakdown').innerHTML = html;
   document.getElementById('rf-result').classList.add('show');
   document.getElementById('rf-pdf-btn').style.display = 'block';
-  document.getElementById('rf-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 </script>
