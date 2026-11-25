@@ -17,7 +17,7 @@ faqs:
     a: "By 5 months. A veterinary task force recommended spaying and neutering cats by 5 months of age in 2016, a standard since endorsed by the AVMA, AAHA, AAFP and the Association of Shelter Veterinarians. Cats can become pregnant as early as 4 months old."
   - q: "How long is recovery after a spay or neuter?"
     a: "The ASPCA's aftercare instructions call for limiting running, jumping and play for 7–10 days, no baths for 10 days, and checking the incision at least twice a day. Skin stitches or staples, if used, come out at a recheck at about 10 days."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 Spay and neuter surgery is one of the most common procedures in veterinary practice, but both the price and the right timing vary more than many owners expect — especially for dogs, where the recommended age depends on expected adult size.
@@ -55,6 +55,19 @@ The 2019 AAHA Canine Life Stage Guidelines recommend timing based on projected a
 | 45 lb or more | After growth stops, about 9–15 months | After growth stops, about 5–15 months, using clinical judgment |
 
 The later timing for larger dogs reflects research — including studies of veterinary records at UC Davis — linking early neutering in bigger dogs with a higher risk of some joint disorders. Our [Neuter Timing by Breed and Size](/tools/neuter-timing-by-breed-size.html) tool summarises those findings. The trade-off for females is that each heat brings the chance of pregnancy and, over the years, conditions such as pyometra: in a large Swedish study of insured dogs, about a quarter of unspayed females developed it by age 10 (see [Pyometra in Dogs](/blog/pyometra-in-dogs-cost/)). It's a decision worth discussing with your vet for your dog's breed.
+
+## When the Weight Rule and the Breed Data Point Different Ways
+
+AAHA's guideline is built on projected weight, while the UC Davis studies looked breed by breed. For most dogs the two agree, but not for all. Some examples from the UC Davis findings ([Hart and colleagues, 2020](https://doi.org/10.3389/fvets.2020.00388)):
+
+| Dog | AAHA timing | What the breed study found |
+|---|---|---|
+| German Shepherd, male (large) | After growth stops, about 9–15 months | Joint disorders 6% if intact, 19% if neutered before 6 months, 18% at 6–11 months and 9% at 1–2 years. Waiting fits the data. |
+| Golden Retriever, female (large) | After growth stops, about 5–15 months | Cancer 5% if intact, 11–17% if spayed before 1 year and 14% if spayed at 1 year or later. Waiting within the window didn't remove the increase. |
+| Doberman, female (large) | After growth stops, about 5–15 months | Urinary incontinence was a significant risk when spaying at any age up to 2 years (25% before 6 months, 19% at 1–2 years). |
+| Boston Terrier, male (small) | About 6 months | Cancer 5% if intact, 10–12% if neutered before 1 year. The small-dog rule and the breed finding don't line up. |
+
+None of these figures make the decision on their own. Each heat brings a chance of pregnancy and, over the years, a risk of pyometra, which the breed studies don't weigh. They are the kind of breed-specific detail worth raising with your vet when the general weight rule is the starting point. Our [Neuter Timing by Breed and Size](/tools/neuter-timing-by-breed-size.html) tool lists the findings for 16 breeds and five weight groups.
 
 ## When to Do It: Cats
 

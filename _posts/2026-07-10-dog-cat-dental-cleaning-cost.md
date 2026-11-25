@@ -17,7 +17,7 @@ faqs:
     a: "There's no fixed interval — it depends on what your vet finds at checkups. Periodontal disease starts early: the Merck Veterinary Manual says up to 80% of dogs and 70% of cats have some by age 2, and toy breeds are at higher risk. Daily or every-other-day brushing at home is the most effective way to slow it."
   - q: "Does pet insurance cover dental cleaning?"
     a: "Most accident-and-illness policies don't cover routine cleanings, which count as preventive care. Some cover dental treatment for an accident or diagnosed disease, such as an extraction for a broken tooth, and some wellness plans include a cleaning allowance. Check the policy wording for dental illness and exclusions."
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 ---
 
 A dental cleaning estimate is rarely the final bill. The reason isn't upselling: much of a pet's dental disease sits below the gumline, and nobody can see how many teeth are affected until the pet is under anesthesia and the X-rays are taken.
@@ -71,6 +71,21 @@ The ASPCA adds: use a pet toothpaste, never a human one. Without a change in hom
 ## Does Pet Insurance Help?
 
 Most accident-and-illness policies don't cover routine cleanings, treating them as preventive care. Some cover dental treatment that results from an accident or a diagnosed disease — an extraction for a broken tooth, for example — and some wellness plans include a cleaning allowance. Read the policy's dental section before assuming either way.
+
+## Worked Example: From a Cleaning Quote to the Final Bill
+
+For a cat, the Synchrony averages above can be added up the way a real visit usually goes. Here is a cat that turns out to need two teeth removed:
+
+| Item | Average |
+|---|---|
+| Dental consultation | $74 |
+| Chemistry panel before anesthesia | $144 |
+| Routine dental cleaning | $395 |
+| Dental X-rays | $133 |
+| Two extractions ($99 each) | $198 |
+| **Total** | **about $944** |
+
+The cleaning on its own is well under half of that total. Without the extractions, the same visit comes to about $746; each extra tooth adds about $99 at the average price, and more for a complex surgical extraction. That gap is the reason to ask for the X-rays and possible extractions to be quoted as separate lines before the day.
 
 ## Frequently Asked Questions
 
