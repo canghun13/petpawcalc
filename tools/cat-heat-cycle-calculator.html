@@ -2,7 +2,8 @@
 layout: tool
 permalink: /tools/cat-heat-cycle-calculator.html
 title: Cat Heat Cycle Calculator — Predict Next Heat & Fertile Window
-description: Enter your cat's last heat date to predict her next heat cycle, fertile window, and each stage of the feline estrous cycle. Free, instant results.
+description: Enter the first day of your cat's last heat to estimate when she'll come back into heat if she isn't mated, using VCA's averages for heat length and the gap between heats.
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -10,7 +11,7 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
   "@type": "WebApplication",
   "name": "Cat Heat Cycle Calculator",
   "url": "https://petpawcalc.com/tools/cat-heat-cycle-calculator.html",
-  "description": "Predict your cat's next heat date, fertile window, and each stage of her estrous cycle based on her last heat date.",
+  "description": "Estimates when a cat's heat ends and when the next one is likely if she isn't mated, from VCA averages.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -35,7 +36,7 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
       "name": "How often do cats go into heat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Unspayed cats go into heat every 2–3 weeks during breeding season (typically February through October in the Northern Hemisphere). Indoor cats exposed to artificial light may cycle year-round. If a cat does not mate, she will return to heat within 1–3 weeks after the current cycle ends."
+        "text": "During the breeding season, about every three weeks on average if she isn't mated; VCA Hospitals gives a whole cycle of about one to six weeks. In the Northern Hemisphere cats usually cycle from January to late fall, and indoor cats may cycle year-round."
       }
     },
     {
@@ -43,23 +44,23 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
       "name": "How long does a cat stay in heat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The estrus phase — when a cat is actively in heat and receptive to mating — typically lasts 3 to 14 days, with an average of about 7 days. The full cycle including the quiet period between heats runs approximately 2–3 weeks total."
+        "text": "About 7 days on average, with a range of 1 to 21 days, according to VCA. If she isn't mated, a non-receptive break of about 7 days (2–19) follows before the next heat."
       }
     },
     {
       "@type": "Question",
-      "name": "Do cats bleed when they are in heat?",
+      "name": "When do cats have their first heat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Unlike dogs, cats do not typically bleed during their heat cycle. If you notice vaginal bleeding in your cat, contact your veterinarian — it may indicate a health issue unrelated to a normal heat cycle."
+        "text": "Typically around six months of age, according to VCA, though it varies with daylight hours. VCA says spaying is best done before the first heat."
       }
     },
     {
       "@type": "Question",
-      "name": "Is there a cat heat cycle chart?",
+      "name": "Why does mating end a cat's heat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The dated output above is a cat heat cycle chart built around your own cat's dates rather than a generic one. Queens cycle seasonally and can come into heat every 2 to 3 weeks during the breeding season, with each heat typically lasting under a week if mating does not occur. Because cats are induced ovulators, mating triggers ovulation — which is why cat heat cycle days and mating success are so closely linked, and why an unspayed indoor queen can cycle repeatedly through much of the year."
+        "text": "Cats are induced ovulators. VCA notes most need three to four matings within 24 hours to ovulate, and once ovulation happens she goes out of heat within a day or two."
       }
     }
   ]
@@ -69,7 +70,7 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
 <div class="tool-page">
   <div class="tool-page-header">
     <h1>🌡️ Cat Heat Cycle Calculator</h1>
-    <p>Enter your cat's last heat date to estimate when her next heat will begin, her fertile window, and each stage of her cycle.</p>
+    <p>Enter the first day of your cat's last heat. If she isn't mated, the calculator estimates when this heat should end and when the next one is likely to start.</p>
   </div>
 
   <div class="tool-box">
@@ -102,7 +103,6 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
     <div class="form-group">
       <label for="cat-lifestyle">Cat's Living Situation</label>
       <select id="cat-lifestyle">
-        <option value="">Select lifestyle</option>
         <option value="indoor">Primarily indoor</option>
         <option value="outdoor">Outdoor or indoor/outdoor</option>
       </select>
@@ -125,44 +125,32 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This calculator provides estimates based on average feline cycle lengths. Individual cats vary — especially indoor cats with artificial lighting, who may cycle year-round. Consult your veterinarian for accurate cycle tracking or if you have breeding goals.
+    ⚕️ Dates use VCA Hospitals' averages; individual cats vary widely, and the estimate only applies if she isn't mated. Talk to your veterinarian about spaying or breeding.
   </div>
 
   <div style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How the Cat Heat Cycle Works</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Female cats (called queens) are seasonally polyestrous — meaning they cycle repeatedly throughout the breeding season rather than having a single heat per year. In the Northern Hemisphere, breeding season typically runs from February through October, driven by daylight hours. Indoor cats exposed to consistent artificial light may cycle year-round with no seasonal pause.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">One key difference from dogs: cats are <strong>induced ovulators</strong>. They only release eggs if mating occurs — without mating, a cat will return to heat within 1–3 weeks rather than progressing through a post-ovulation phase. This means an unspayed cat can go into heat dozens of times per year if she never mates.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats are seasonally polyestrous: they come into heat again and again during the breeding season. VCA Hospitals says that in the Northern Hemisphere cats usually cycle from January to late fall, while cats in tropical regions or those kept mainly indoors may cycle year-round.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Cats are also <strong>induced ovulators</strong>. According to VCA, most need three to four matings within 24 hours to ovulate, and once ovulation happens she goes out of heat within a day or two. If she isn't mated, she goes out of heat, has a short non-receptive break, and then comes back into heat.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">The Four Stages of the Feline Estrous Cycle</h2>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Proestrus (1–2 days)</strong>: A brief lead-in phase. Estrogen begins rising. Your cat may become slightly more affectionate or vocal. Male cats may show interest, but she is not yet receptive to mating. Most owners don't notice this phase because it's subtle and short.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Estrus (3–14 days, average ~7 days)</strong>: The active heat phase. This is when the dramatic behavioral changes appear — loud yowling, rolling on the floor, raising the hindquarters when touched along the back ("lordosis"), increased affection, and attempts to escape outdoors. The cat is fully receptive to mating during this window. Ovulation only occurs if mating takes place.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Interestrus (1–3 weeks)</strong>: If the cat did not mate, she enters a quiet phase between heat cycles. Hormones drop, behavior returns to normal, and then the cycle restarts. This is the gap this calculator uses to estimate the next heat start date.</p>
-
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Anestrus</strong>: The seasonal rest phase. For outdoor cats, this typically occurs in late fall through early winter as daylight hours shorten. Indoor cats under artificial lighting may skip anestrus entirely and cycle continuously throughout the year.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How Long Each Part Lasts</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>Heat (estrus)</strong>: about 7 days on average, with a range of 1 to 21 days (VCA). This is when she is receptive to mating.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 12px;"><strong>The break between heats</strong>: if she isn't mated, about 7 days on average, with a range of 2 to 19 days (VCA).</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>The whole cycle</strong>: about one to six weeks, averaging about three weeks (VCA). That three-week average is what the calculator uses for the next start date, with the shortest and longest typical gaps shown as a range.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">Signs Your Cat Is in Heat</h2>
     <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
-      <li>Loud, persistent yowling or crying — often at night</li>
-      <li>Rolling on the floor repeatedly</li>
-      <li>Raising the hindquarters and treading with back feet when touched near the back or tail</li>
-      <li>Increased affection and rubbing against people or furniture</li>
-      <li>Restlessness, pacing, or attempts to escape outdoors</li>
-      <li>Loss of appetite (some cats)</li>
-      <li>Excessive grooming of the genital area</li>
+      <li>Being more affectionate and demanding attention</li>
+      <li>Rolling on the floor</li>
+      <li>Raising her rear end when stroked along the back</li>
+      <li>More vocalizing</li>
+      <li>Urinating more often, or spraying urine on vertical surfaces</li>
     </ul>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Note: cats do <strong>not</strong> typically bleed during heat. If you notice vaginal bleeding, contact your vet — it is not a normal sign of estrus in cats.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">How to Manage Heat If You're Not Breeding</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The only permanent solution is spaying. Cats spayed before their first heat have a significantly lower risk of mammary cancer and are not at risk for pyometra (a life-threatening uterine infection that is common in older intact females). Most vets recommend spaying at or before 6 months of age, before the first heat cycle begins.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">If your cat is currently in heat and not yet spayed, keep her strictly indoors — even brief outdoor access can result in unplanned pregnancy. A single mating can be sufficient for conception. Cats can also become pregnant on their very first heat cycle, so waiting for "the right time" carries real risk.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Short-term strategies to reduce heat behavior — extra play sessions, a heating pad, calming pheromone diffusers — can help manage discomfort, but they will not stop the cycle or prevent pregnancy if she encounters a male.</p>
-
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">At What Age Do Cats First Go Into Heat?</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most cats experience their first heat between 5 and 9 months of age, though some breeds — particularly Siamese and other Oriental breeds — can cycle as early as 4 months. The first heat is triggered by reaching a certain body weight combined with seasonal daylight cues.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Because the first heat can happen before 6 months — earlier than many owners expect — early spay appointments are important if you're not planning to breed. A cat can become pregnant on her very first heat, even as a kitten herself.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">If You're Not Planning to Breed</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">VCA says puberty, and so the first heat, typically comes at around six months of age, and that spaying is best done before the first heat — most vets recommend about six months. Many vets now recommend spaying by five months ("fix by five"), and Swedish insurance data found pyometra, a serious uterine infection, in about 2.2% of unspayed cats by age 13.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Until she is spayed, keep her indoors and away from intact males during every heat.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: VCA Hospitals (estrous cycles in cats); dvm360 (fix by five); Swedish insurance data on feline pyometra. Full list on our <a href="/sources.html">sources page</a>.</p>
 
     <div class="post-cta">
       <p>If mating occurred, use our <a href="/tools/cat-pregnancy-calculator.html">Cat Pregnancy Calculator</a> to estimate your cat's due date and track each week of gestation.</p>
@@ -170,14 +158,13 @@ description: Enter your cat's last heat date to predict her next heat cycle, fer
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How often do cats go into heat?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Unspayed cats go into heat every 2–3 weeks during breeding season (typically February through October in the Northern Hemisphere). Indoor cats exposed to artificial light may cycle year-round. If a cat does not mate, she will return to heat within 1–3 weeks after the current cycle ends.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">During the breeding season, about every three weeks on average if she isn't mated; VCA Hospitals gives a whole cycle of about one to six weeks. In the Northern Hemisphere cats usually cycle from January to late fall, and indoor cats may cycle year-round.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long does a cat stay in heat?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The estrus phase — when a cat is actively in heat and receptive to mating — typically lasts 3 to 14 days, with an average of about 7 days. The full cycle including the quiet period between heats runs approximately 2–3 weeks total.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Do cats bleed when they are in heat?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">No. Unlike dogs, cats do not typically bleed during their heat cycle. If you notice vaginal bleeding in your cat, contact your veterinarian — it may indicate a health issue unrelated to a normal heat cycle.</p>
-
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Is there a cat heat cycle chart?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The dated output above is a cat heat cycle chart built around your own cat's dates rather than a generic one. Queens cycle seasonally and can come into heat every 2 to 3 weeks during the breeding season, with each heat typically lasting under a week if mating does not occur. Because cats are induced ovulators, mating triggers ovulation — which is why cat heat cycle days and mating success are so closely linked, and why an unspayed indoor queen can cycle repeatedly through much of the year.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">About 7 days on average, with a range of 1 to 21 days, according to VCA. If she isn't mated, a non-receptive break of about 7 days (2–19) follows before the next heat.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When do cats have their first heat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Typically around six months of age, according to VCA, though it varies with daylight hours. VCA says spaying is best done before the first heat.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Why does mating end a cat's heat?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cats are induced ovulators. VCA notes most need three to four matings within 24 hours to ovulate, and once ovulation happens she goes out of heat within a day or two.</p>
   </div>
 </div>
 
@@ -199,81 +186,47 @@ function calculateCatHeat() {
   const year = document.getElementById('heat-year').value;
   const lifestyle = document.getElementById('cat-lifestyle').value;
 
-  if (month === '' || !day || !year || !lifestyle) {
-    alert('Please fill in all fields.');
+  if (month === '' || !day || !year) {
+    alert('Please enter the first day of her last heat.');
     return;
   }
 
   const lastHeat = new Date(parseInt(year), parseInt(month), parseInt(day));
+  // VCA averages: heat about 7 days (1–21); break about 7 days (2–19); whole cycle 1–6 weeks, average about 3 weeks.
+  const heatEnd = addDays(lastHeat, 7);
+  const nextHeat = addDays(lastHeat, 21);
+  const nextEarly = addDays(lastHeat, 7);
+  const nextLate = addDays(lastHeat, 42);
 
-  // Estrus duration: average 7 days
-  const estrusDays = 7;
-  // Interestrus (gap between heats if no mating): 1–3 weeks, average ~14 days
-  const interestrus = 14;
-  // Total cycle: estrus + interestrus = ~21 days
-  const cycleLength = estrusDays + interestrus;
-
-  // Next heat start
-  const nextHeat = addDays(lastHeat, cycleLength);
-
-  // Proestrus: 1–2 days before estrus
-  const proestrusStart = addDays(nextHeat, -2);
-
-  // Estrus (fertile window): next heat start through ~7 days
-  const fertileStart = nextHeat;
-  const fertileEnd = addDays(nextHeat, estrusDays - 1);
-
-  // Heat ends
-  const heatEnd = addDays(nextHeat, estrusDays);
-
-  // Note for indoor vs outdoor
   const noteText = lifestyle === 'indoor'
-    ? 'Indoor cats under artificial light may cycle year-round without a seasonal break — cycles can repeat every 2–3 weeks continuously.'
-    : 'Outdoor cats typically pause cycling in late fall through winter as daylight hours decrease.';
+    ? 'Cats kept mainly indoors may cycle year-round (VCA).'
+    : 'In the Northern Hemisphere cats usually cycle from January to late fall (VCA), so a heat due in winter may not come until the new season.';
 
-  document.getElementById('result-next-heat').textContent = `Next heat estimated: ${formatDate(nextHeat)}`;
-  document.getElementById('result-fertile').textContent = `Fertile window (estrus): ${formatDate(fertileStart)} – ${formatDate(fertileEnd)}`;
-  document.getElementById('result-heat-end').textContent = `Heat cycle ends approximately: ${formatDate(heatEnd)}`;
+  document.getElementById('result-next-heat').textContent = `Next heat most likely around: ${formatDate(nextHeat)}`;
+  document.getElementById('result-fertile').textContent = `This heat should end around ${formatDate(heatEnd)} (heat averages 7 days; range 1–21)`;
+  document.getElementById('result-heat-end').textContent = `Typical range for the next heat: ${formatDate(nextEarly)} – ${formatDate(nextLate)} (cycle 1–6 weeks)`;
   document.getElementById('result-note').textContent = noteText;
 
   document.getElementById('result').style.display = 'block';
   document.getElementById('result').classList.add('show');
 
-  // Stage timeline
   const stages = [
-    {
-      name: 'Proestrus',
-      emoji: '🔵',
-      start: proestrusStart,
-      end: addDays(nextHeat, -1),
-      desc: 'Brief lead-in phase (1–2 days). Your cat may become slightly more affectionate. Not yet receptive to mating, but male cats may show interest.'
-    },
-    {
-      name: 'Estrus (Fertile Window)',
-      emoji: '🔴',
-      start: fertileStart,
-      end: fertileEnd,
-      desc: 'Active heat phase (avg. 7 days). Loud yowling, rolling, lordosis posture, and escape attempts are common. Ovulation only occurs if mating takes place.'
-    },
-    {
-      name: 'Interestrus / Heat Ends',
-      emoji: '🟢',
-      start: heatEnd,
-      end: null,
-      desc: 'Heat behavior stops. If no mating occurred, your cat will return to heat in approximately 1–3 weeks. If mating occurred, she may be pregnant — use the Cat Pregnancy Calculator.'
-    }
+    { name: 'Heat (estrus)', emoji: '🔴', range: `${formatDate(lastHeat)} – about ${formatDate(heatEnd)}`,
+      desc: 'Receptive to mating. Rolling, vocalizing and raising her rear when stroked are common.' },
+    { name: 'Break between heats', emoji: '🟢', range: `about ${formatDate(heatEnd)} – ${formatDate(nextHeat)}`,
+      desc: 'If she isn\'t mated, she is non-receptive for about 7 days on average (2–19).' },
+    { name: 'Next heat', emoji: '🔴', range: `around ${formatDate(nextHeat)}`,
+      desc: 'If she was mated during the last heat, she may be pregnant instead — see the Cat Pregnancy Calculator.' }
   ];
 
   const timelineEl = document.getElementById('stages-timeline');
   timelineEl.innerHTML = stages.map(s => `
-    <div style="display: flex; gap: 16px; margin-bottom: 20px; padding: 16px; background: var(--cream); border-radius: var(--radius); border-left: 3px solid var(--orange);">
-      <div style="font-size: 1.4rem; flex-shrink: 0; margin-top: 2px;">${s.emoji}</div>
-      <div>
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+      <div style="font-size: 1.4rem; flex-shrink: 0;">${s.emoji}</div>
+      <div style="flex: 1; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 14px 18px;">
         <div style="font-weight: 600; color: var(--brown); margin-bottom: 4px;">${s.name}</div>
-        <div style="font-size: 0.88rem; color: var(--orange); font-weight: 500; margin-bottom: 6px;">
-          ${s.end ? `${formatDate(s.start)} – ${formatDate(s.end)}` : `~${formatDate(s.start)}`}
-        </div>
-        <div style="font-size: 0.9rem; color: var(--brown-mid); line-height: 1.6;">${s.desc}</div>
+        <div style="font-size: 0.82rem; color: var(--brown-light); margin-bottom: 6px;">${s.range}</div>
+        <div style="color: var(--brown-mid); font-size: 0.88rem; line-height: 1.6;">${s.desc}</div>
       </div>
     </div>
   `).join('');

@@ -3,7 +3,7 @@ layout: tool
 permalink: /tools/cat-pregnancy-calculator.html
 title: Cat Pregnancy Calculator — Due Date & Week-by-Week Timeline
 description: Enter your cat's mating date to get her estimated due date, delivery window, and a complete week-by-week pregnancy guide. Free, instant results.
-last_modified_at: 2026-09-29
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -11,7 +11,7 @@ last_modified_at: 2026-09-29
   "@type": "WebApplication",
   "name": "Cat Pregnancy Calculator",
   "url": "https://petpawcalc.com/tools/cat-pregnancy-calculator.html",
-  "description": "Calculate your cat's estimated due date and week-by-week pregnancy guide based on mating date.",
+  "description": "Counts 63–65 days from mating and shows VCA's normal 60–67-day range with a week-by-week pregnancy guide.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -36,7 +36,7 @@ last_modified_at: 2026-09-29
       "name": "How long are cats pregnant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days. Most cats deliver between day 63 and day 67."
+        "text": "About 63–65 days on average. VCA Hospitals gives a normal range of about 60–67 days and notes that most cats give birth between days 63 and 65, though some go as long as 71 days."
       }
     },
     {
@@ -44,7 +44,7 @@ last_modified_at: 2026-09-29
       "name": "How do I calculate my cat's due date?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Count about 63–65 days from the mating date; most cats deliver between day 63 and day 67. Cats are induced ovulators — mating itself triggers ovulation — so the mating date is a closer anchor for a cat than it is for a dog. It is still a window rather than a guaranteed day. If the cat had access to a tom over several days, count from the first and the last possible date and treat everything in between as the window. A vet can narrow it with ultrasound after day 20 or X-ray after day 42."
+        "text": "Count 63–65 days from the mating date. Cats ovulate in response to mating, so the mating date is a good starting point. If she had access to a tom over several days, count from the first and last possible dates. If you don't know the date, a vet can estimate it by ultrasound or X-ray."
       }
     },
     {
@@ -52,7 +52,7 @@ last_modified_at: 2026-09-29
       "name": "What are the signs that a cat is about to give birth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Within 24–48 hours of labor, most cats become restless, stop eating, and begin intense nesting behavior. They may vocalize more than usual and seek a quiet, enclosed space. Active contractions signal that birth is imminent."
+        "text": "Nesting usually starts in the final week. Milk may appear 24–48 hours before labor. In the last 24 hours her rectal temperature typically falls below 100°F (37.8°C) and she usually stops eating."
       }
     },
     {
@@ -60,7 +60,7 @@ last_modified_at: 2026-09-29
       "name": "How can I confirm my cat is pregnant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ultrasound from around day 21 is the most reliable early confirmation and can detect heartbeats. A vet can sometimes feel the developing kittens by abdominal palpation from about day 17–25, but it is less reliable and is not something to attempt at home. An X-ray after day 42, once the kitten skeletons have calcified, is the only reliable way to count kittens before birth."
+        "text": "A vet may feel the developing kittens at about two and a half weeks. Heartbeats can be seen on ultrasound at about three to four weeks, though Merck notes scans before day 21 can miss a pregnancy. X-rays show the skeletons from about day 45 and are the usual way to count kittens."
       }
     }
   ]
@@ -98,14 +98,6 @@ last_modified_at: 2026-09-29
         </select>
       </div>
     </div>
-    <div class="form-group">
-      <label for="breed-type">Breed Type</label>
-      <select id="breed-type">
-        <option value="">Select type</option>
-        <option value="domestic">Domestic / Mixed</option>
-        <option value="purebred">Purebred (e.g. Siamese, Persian, Maine Coon)</option>
-      </select>
-    </div>
     <button class="btn-calculate" onclick="calculatePregnancy()">Calculate Due Date →</button>
 
     <div class="result-box" id="result">
@@ -122,69 +114,65 @@ last_modified_at: 2026-09-29
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This calculator provides estimates based on average feline gestation (63–65 days). Actual delivery may vary by ±5 days. Always work with your veterinarian for accurate pregnancy monitoring and prenatal care.
+    ⚕️ The due date counts 63–65 days from mating, the average VCA Hospitals gives for cats, inside a normal range of about 60–67 days. Some cats go as long as 71 days. Work with your veterinarian for prenatal care.
   </div>
 
   <!-- Info section -->
   <div style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How Long Are Cats Pregnant?</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days — cats have a wider natural variation than dogs. Most cats deliver between day 63 and day 67. If your cat hasn't delivered by day 70, contact your veterinarian.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The pregnancy is divided into roughly three stages. The first three weeks involve embryo development with few visible signs. Weeks four through six bring noticeable physical changes. The final weeks are focused on growth, nesting, and preparation for birth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">VCA Hospitals gives cat gestation as about 60–67 days, averaging 63–65, and notes that most cats give birth between days 63 and 65, with some going as long as 71 days. Because cats ovulate in response to mating, the mating date is a good starting point for the count. If the pregnancy goes past about 71 days from a known mating date, call your vet.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">PetMD divides a cat's pregnancy into three trimesters of about 20 days each. Embryos implant at about day 14, according to the Merck Veterinary Manual.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Signs Your Cat May Be Pregnant</h2>
-    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
-      <li>Nipple enlargement and pinking ("pinking up") around weeks 2–3</li>
-      <li>Mild nausea or reduced appetite in early weeks</li>
-      <li>Increased affection and vocalization</li>
-      <li>Visible belly rounding by week 4–5</li>
-      <li>Weight gain of 2–4 lbs over the pregnancy</li>
-      <li>Active nesting behavior in the final week</li>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 16px;">
+      <li>"Pinking up" — pinker, more prominent nipples — around days 16–20</li>
+      <li>A slight increase in appetite in the first few weeks</li>
+      <li>A growing belly, usually from the second trimester</li>
+      <li>Nesting in the final week</li>
     </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">False pregnancy is rare in cats, but PetMD notes an affected cat can still develop mammary tissue and even produce milk, so a vet exam is the way to be sure.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Pregnancy Confirmation and Diagnosis: Methods Compared</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Unlike dogs, false pregnancy is uncommon in cats — so visible signs like pinking up are more trustworthy on their own. Still, if you want a definite check (or an exact litter count for whelping planning), here's how the diagnostic options compare:</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Timings are from PetMD and the Merck Veterinary Manual.</p>
     <div class="table-wrapper" style="margin-bottom: 24px;">
     <table style="width:100%; border-collapse: collapse;">
       <thead>
         <tr style="background: var(--cream-dark);">
           <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Method</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Earliest reliable timing</th>
-          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Accuracy</th>
+          <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">Timing</th>
           <th style="text-align:left; padding: 10px 12px; border: 1px solid var(--border);">What it tells you</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Abdominal palpation</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 17–25</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Moderate — depends on the vet's experience; not recommended to try at home as it can harm early embryos</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Rough sense of pregnancy, not a reliable count</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Gentle abdominal palpation by a vet</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">About 2½ weeks</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Can detect the developing kittens; needs a relaxed cat and an experienced hand</td>
         </tr>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Ultrasound</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 21+</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">High — the most reliable early confirmation, and can detect fetal heartbeats</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Confirms pregnancy and viability (not an exact kitten count)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Heartbeats at about 3–4 weeks</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Confirms live kittens and estimates how far along she is; Merck notes scans before day 21 can miss a pregnancy</td>
         </tr>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">X-ray</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 42+ (skeletons must be calcified)</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">High for counting — the only reliable way to count kittens</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Exact kitten count, useful for delivery planning</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">From about day 45 (6 weeks)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Kittens' skeletons are visible once calcified; the usual way to count them</td>
         </tr>
       </tbody>
     </table>
     </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">In practice, most vets confirm with ultrasound around week 4 and follow up with an X-ray after day 42 to get an exact count — knowing the number of kittens in advance helps you recognize when delivery is complete.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Knowing how many kittens to expect tells you when the birth is finished.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What to Prepare</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Around week 6, set up a <strong>kittening box</strong> — a quiet, warm, private space lined with clean towels or newspaper. Introduce your cat to it early so she explores it on her own terms before labor begins.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Schedule a vet visit around week 4 for ultrasound confirmation and kitten count. An X-ray after day 42 gives a more accurate litter size count and helps you know when all kittens have been delivered.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7;">Switch to a high-quality kitten food or an "all life stages" formula from week 4 onward. This supports the rapid growth of kittens in the final weeks and sustains your cat through nursing.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Food:</strong> kittens grow throughout pregnancy, so a cat's needs rise from early on — unlike a dog's. VCA recommends a kitten or growth food, ideally one that has passed an AAFCO feeding trial for gestation and lactation or all life stages. Merck notes intake typically rises about 25% on average in the last third, and VCA recommends several small meals in the last trimester.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;"><strong>Nesting box:</strong> VCA suggests a quiet box with low sides, lined with several layers of disposable absorbent material, introduced before the final week.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;"><strong>Signs labor is close:</strong> milk may appear 24–48 hours before labor; in the last 24 hours her rectal temperature typically falls below 100°F (37.8°C) and she usually stops eating.</p>
 
-    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When to Call the Vet Immediately</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Strong contractions for more than 30 minutes without a kitten delivered, more than 2–3 hours between kittens with visible straining, dark green or bloody discharge before labor begins, or a temperature drop below 99°F that doesn't lead to labor within 24 hours are all reasons to call your vet right away.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Cats are usually independent birthers and rarely need assistance, but first-time mothers and cats carrying an unusually large or small litter (confirmed by the week 7–8 X-ray) benefit from having an emergency plan in place before labor starts.</p>
+    <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">When to Call the Vet</h2>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">According to VCA, get help for 20 minutes of intense straining without a kitten, a kitten or fluid bubble at the vulva that isn't delivered within a few minutes, fresh blood from the vulva for more than 10 minutes, a rectal temperature above 103°F, sudden lethargy, or labor that stops and doesn't restart within a few hours of the first kittens or for 24 hours or more. Merck adds dark green or foul-smelling discharge before the first kitten.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Kittens usually arrive 10 minutes to an hour apart. Some cats deliver a few kittens, rest for 24–36 hours while nursing them, and then deliver the rest — VCA describes this interrupted labor as normal. The difference that matters is whether she is straining.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: VCA Hospitals (pregnancy and queening in cats, feeding pregnant cats); PetMD (cat pregnancy); Merck Veterinary Manual. Full list on our <a href="/sources.html">sources page</a>.</p>
   </div>
 
   <!-- CTA to blog -->
@@ -203,108 +191,78 @@ last_modified_at: 2026-09-29
   <div style="margin-top: 28px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long are cats pregnant?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Cat pregnancy (gestation) lasts an average of 63–65 days from the mating date. The normal range is 58–72 days. Most cats deliver between day 63 and day 67.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">About 63–65 days on average. VCA Hospitals gives a normal range of about 60–67 days and notes that most cats give birth between days 63 and 65, though some go as long as 71 days.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I calculate my cat's due date?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Count about 63–65 days from the mating date; most cats deliver between day 63 and day 67. Cats are induced ovulators — mating itself triggers ovulation — so the mating date is a closer anchor for a cat than it is for a dog. It is still a window rather than a guaranteed day. If the cat had access to a tom over several days, count from the first and the last possible date and treat everything in between as the window. A vet can narrow it with ultrasound after day 20 or X-ray after day 42.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Count 63–65 days from the mating date. Cats ovulate in response to mating, so the mating date is a good starting point. If she had access to a tom over several days, count from the first and last possible dates. If you don't know the date, a vet can estimate it by ultrasound or X-ray.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs that a cat is about to give birth?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Within 24–48 hours of labor, most cats become restless, stop eating, and begin intense nesting behavior. They may vocalize more than usual and seek a quiet, enclosed space. Active contractions signal that birth is imminent.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Nesting usually starts in the final week. Milk may appear 24–48 hours before labor. In the last 24 hours her rectal temperature typically falls below 100°F (37.8°C) and she usually stops eating.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How can I confirm my cat is pregnant?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Ultrasound from around day 21 is the most reliable early confirmation and can detect heartbeats. A vet can sometimes feel the developing kittens by abdominal palpation from about day 17–25, but it is less reliable and is not something to attempt at home. An X-ray after day 42, once the kitten skeletons have calcified, is the only reliable way to count kittens before birth.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">A vet may feel the developing kittens at about two and a half weeks. Heartbeats can be seen on ultrasound at about three to four weeks, though Merck notes scans before day 21 can miss a pregnancy. X-rays show the skeletons from about day 45 and are the usual way to count kittens.</p>
   </div>
 </div>
 
 <script>
 const weeks = [
-  {
-    week: 1,
-    title: "Week 1 — Fertilization",
-    desc: "Fertilization occurs within 24–48 hours of mating. Embryos begin dividing as they travel to the uterus. No outward signs yet — your cat will behave completely normally.",
-    care: "Continue normal feeding and routine. No changes needed at this stage."
-  },
-  {
-    week: 2,
-    title: "Week 2 — Implantation",
-    desc: "Embryos implant in the uterine lining. Some cats show mild nausea or slight appetite changes. Still no visible physical signs.",
-    care: "If she seems off her food, offer smaller meals more frequently. Keep fresh water available."
-  },
-  {
-    week: 3,
-    title: "Week 3 — Pinking Up",
-    desc: "Nipples enlarge and turn a deeper pink — this 'pinking up' is one of the earliest reliable signs of pregnancy. A relaxin hormone blood test can confirm pregnancy from around day 21.",
-    care: "Book a vet appointment for around week 4. A vet can confirm pregnancy and give you a preliminary kitten count via ultrasound."
-  },
-  {
-    week: 4,
-    title: "Week 4 — Ultrasound Window",
-    desc: "Kittens' organs begin forming rapidly. Ultrasound can now confirm pregnancy and detect heartbeats. Your cat's belly may begin to look slightly fuller. Appetite typically increases.",
-    care: "Begin transitioning to a high-quality kitten food or 'all life stages' formula. Increase portion sizes gradually."
-  },
-  {
-    week: 5,
-    title: "Week 5 — Visible Growth",
-    desc: "Kittens are growing fast and developing distinct features. Your cat's belly is now clearly rounder. She may tire more easily and sleep more than usual.",
-    care: "Feed 3 small meals a day rather than 2 larger ones. Avoid rough play or situations that put pressure on her abdomen."
-  },
-  {
-    week: 6,
-    title: "Week 6 — Set Up the Kittening Box",
-    desc: "Kittens are developing fur and their skeletons are visible on X-ray. Your cat's abdomen is noticeably enlarged and she may begin showing early nesting interest.",
-    care: "Set up the kittening box and introduce your cat to it. An X-ray now gives an accurate kitten count — important for knowing when delivery is complete."
-  },
-  {
-    week: 7,
-    title: "Week 7 — Kittens Nearly Ready",
-    desc: "Kittens are almost fully formed. You may be able to feel or see movement through your cat's belly wall. Nesting behavior typically intensifies this week.",
-    care: "Keep the kittening area warm, quiet, and private. Restrict outdoor access if she's an indoor/outdoor cat."
-  },
-  {
-    week: 8,
-    title: "Week 8 — Final Preparations",
-    desc: "Kittens are fully developed and moving into birth position. Your cat may become restless, vocal, or seek out secluded spots. Milk may begin to appear in the nipples.",
-    care: "Stay close but give her space. Watch for nesting, panting, and refusal to eat — these signal that labor is approaching within 24–48 hours."
-  },
-  {
-    week: 9,
-    title: "Week 9 — Birth",
-    desc: "Labor can begin any day from day 58 onward. Most cats deliver between day 63 and 67. Active contractions and straining mean kittens are on the way.",
-    care: "Stay calm and nearby. Most deliveries proceed without intervention. Have your vet's number ready and contact them immediately if more than 2 hours pass between kittens, or if your cat strains hard for over 30 minutes without delivering."
-  }
+  { week: 1, title: "Week 1 — Mating",
+    desc: "Cats ovulate in response to mating. No outward signs.",
+    care: "Switch gradually to a kitten or growth food if your vet agrees (VCA)." },
+  { week: 2, title: "Week 2 — Implantation",
+    desc: "Embryos implant at about day 14 (Merck). Appetite may rise slightly.",
+    care: "Meal-feed so you can see how much she eats." },
+  { week: 3, title: "Week 3 — Pinking up",
+    desc: "Nipples turn pinker and more prominent around days 16–20. A vet may feel the kittens at about 2½ weeks.",
+    care: "Book a vet check 3–4 weeks after mating." },
+  { week: 4, title: "Week 4 — Heartbeats on ultrasound",
+    desc: "Kittens' heartbeats can be seen on ultrasound at about 3–4 weeks.",
+    care: "Keep weighing her; she should gain steadily." },
+  { week: 5, title: "Week 5 — Second trimester",
+    desc: "Her belly usually starts to fill out.",
+    care: "Keep her on kitten or growth food." },
+  { week: 6, title: "Week 6 — Third trimester begins",
+    desc: "Kittens' skeletons become visible on X-ray from about day 45.",
+    care: "Ask about an X-ray to count the kittens. Set up the nesting box." },
+  { week: 7, title: "Week 7 — Late pregnancy",
+    desc: "Food intake typically rises about 25% in the last third (Merck).",
+    care: "Offer several small meals as the kittens take up space (VCA)." },
+  { week: 8, title: "Week 8 — Nesting",
+    desc: "Nesting usually starts in the final week. Milk may appear 24–48 hours before labor.",
+    care: "Keep the nest quiet and private." },
+  { week: 9, title: "Week 9 — Queening",
+    desc: "Most cats give birth between days 63 and 65. In the last 24 hours her temperature typically falls below 100°F and she stops eating.",
+    care: "Call your vet for 20 minutes of intense straining without a kitten, fresh bleeding over 10 minutes or a temperature above 103°F." }
 ];
 
 function calculatePregnancy() {
   const month = document.getElementById('mating-month').value;
   const day = document.getElementById('mating-day').value;
   const year = document.getElementById('mating-year').value;
-  const breed = document.getElementById('breed-type').value;
-
-  if (!month || !day || !year || !breed) {
-    alert('Please enter the mating date and select breed type.');
+  if (!month || !day || !year) {
+    alert('Please enter the mating date.');
     return;
   }
 
   const mating = new Date(parseInt(year), parseInt(month), parseInt(day));
-  const gestationDays = breed === 'purebred' ? 65 : 63;
-  const due = new Date(mating);
-  due.setDate(due.getDate() + gestationDays);
+  const due = new Date(mating); due.setDate(due.getDate() + 63);
+  const due2 = new Date(mating); due2.setDate(due2.getDate() + 65);
 
-  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 58);
-  const latest = new Date(mating); latest.setDate(latest.getDate() + 70);
+  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 60);
+  const latest = new Date(mating); latest.setDate(latest.getDate() + 67);
 
   const fmt = d => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
   const today = new Date();
   const daysPregnant = Math.floor((today - mating) / (1000 * 60 * 60 * 24));
-  const currentWeek = Math.ceil(daysPregnant / 7);
+  const currentWeek = Math.floor(daysPregnant / 7) + 1;
 
-  document.getElementById('result-main').textContent = `Estimated due date: ${fmt(due)}`;
-  document.getElementById('result-window').textContent = `Delivery window: ${fmt(earliest)} – ${fmt(latest)}`;
+  document.getElementById('result-main').textContent = `Most likely: ${fmt(due)} – ${fmt(due2)} (days 63–65)`;
+  document.getElementById('result-window').textContent = `Normal range: ${fmt(earliest)} – ${fmt(latest)} (days 60–67); call your vet if she hasn't given birth by day 71`;
 
   if (daysPregnant >= 0 && currentWeek <= 9) {
     document.getElementById('result-week').textContent = `Currently in Week ${currentWeek} of pregnancy (Day ${daysPregnant})`;
   } else if (daysPregnant < 0) {
     document.getElementById('result-week').textContent = `Mating date is in the future — ${Math.abs(daysPregnant)} days to go.`;
   } else {
-    document.getElementById('result-week').textContent = `Due date has passed — congratulations on your new kittens! 🐾`;
+    document.getElementById('result-week').textContent = daysPregnant > 71 ? `Day ${daysPregnant} from mating — past 71 days, call your vet if she hasn't given birth.` : (daysPregnant <= 67 ? `Day ${daysPregnant} — inside the normal range.` : `Day ${daysPregnant} — past the usual range, though VCA notes some cats go as long as 71 days.`);
   }
 
   document.getElementById('result').classList.add('show');

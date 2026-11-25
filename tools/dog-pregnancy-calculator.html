@@ -3,7 +3,7 @@ layout: tool
 permalink: /tools/dog-pregnancy-calculator.html
 title: Dog Pregnancy Calculator — Due Date & Week-by-Week Timeline
 description: Enter your dog's mating date to get her estimated due date, delivery window, and a complete week-by-week pregnancy guide. Free, instant results.
-last_modified_at: 2026-09-29
+last_modified_at: 2026-11-25
 ---
 <script type="application/ld+json">
 {
@@ -11,7 +11,7 @@ last_modified_at: 2026-09-29
   "@type": "WebApplication",
   "name": "Dog Pregnancy Calculator",
   "url": "https://petpawcalc.com/tools/dog-pregnancy-calculator.html",
-  "description": "Calculate your dog's estimated due date and week-by-week pregnancy guide based on mating date.",
+  "description": "Counts 63 days from a mating date or a progesterone-timed ovulation date and shows Cornell's normal window with a week-by-week pregnancy guide.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "offers": {
@@ -36,7 +36,7 @@ last_modified_at: 2026-09-29
       "name": "How long are dogs pregnant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 63 days from ovulation. Because mating rarely falls exactly on the day of ovulation, the range from a given mating date is roughly 58 to 68 days — which is why any calculator, this one included, gives a window rather than a single date. If you need precision, for example to plan a C-section, progesterone timing at your vet's office is far more accurate than counting from a mating date."
+        "text": "About 63 days from ovulation, according to Cornell's Riney Canine Health Center. From a mating date the window is 63 days give or take 7, because mating isn't the same as conception. If your vet timed ovulation with progesterone tests, it narrows to 63 days give or take 1–2."
       }
     },
     {
@@ -44,7 +44,7 @@ last_modified_at: 2026-09-29
       "name": "How do I calculate my dog's due date?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enter the breeding date above and the tool counts forward for you. By hand, count about 63 days from the mating date and treat several days either side as normal. If there were several matings, count from the first and the last and treat everything in between as the window. An ultrasound or progesterone timing from your vet narrows it further."
+        "text": "Count 63 days forward from the date. From a mating date, treat 7 days either side as normal; from a progesterone-timed ovulation date, 1–2 days. With two matings, VCA suggests expecting puppies 63–65 days after the later one."
       }
     },
     {
@@ -52,7 +52,7 @@ last_modified_at: 2026-09-29
       "name": "What are the signs that a dog is about to give birth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Within 24–48 hours of labor, most dogs become restless, stop eating, and may pant or seek isolation. A rectal temperature drop below 100°F (37.8°C) is a reliable sign that labor is typically within 12–24 hours."
+        "text": "Her rectal temperature often drops below 99°F within 24 hours of birth (normal is about 100–102.5°F), though the dip lasts only about 8 hours and is easy to miss. Nesting, restlessness and panting usually start 6–12 hours before the first puppy."
       }
     },
     {
@@ -60,23 +60,23 @@ last_modified_at: 2026-09-29
       "name": "When can a vet confirm a dog is pregnant, and how?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the method. Abdominal palpation can work roughly days 21–35, while the fetal swellings are still distinct enough to feel. A relaxin blood test is generally reliable from about day 22–25 and also rules out a false pregnancy, which can otherwise look very similar. Ultrasound from around day 25–28 confirms pregnancy and shows heartbeats but does not give a reliable puppy count. An X-ray from about day 45–55, once the skeletons have mineralized, is the most accurate way to count puppies before whelping."
+        "text": "An ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28. A relaxin blood test works after about day 22–27. Palpation can sometimes find the swellings around day 21–28 in a relaxed dog. X-rays show the skeletons from about day 42–45 and give the best puppy count after day 55."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the early signs a dog is pregnant?",
+      "name": "Should I feed my pregnant dog more?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The early signs are subtle and easy to miss. In the first 2–3 weeks some dogs eat a little less or have a brief bout of nausea, seem lower on energy, or become clingier. Nipple enlargement and darkening usually appears around week 3–4. The changes most owners notice — visible abdominal swelling and clear weight gain — generally do not show until week 5 onward, which is why early signs alone are not a reliable way to confirm a pregnancy."
+        "text": "Not in the first two thirds of pregnancy. VCA's guidance is to keep her intake the same for about the first 6 weeks after mating, then increase it gradually with smaller, more frequent meals, up to about 1.5 times her normal amount in the last three weeks."
       }
     },
     {
       "@type": "Question",
-      "name": "Does the calculator show the pregnancy week by week?",
+      "name": "When should I call the vet during whelping?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Enter the breeding date and the dated results lay out the whole pregnancy week by week, naming what is happening developmentally in each week and what you should be doing, from confirmation scans through to setting up the whelping box."
+        "text": "Call if more than 2 hours pass between puppies, she has strong contractions for more than 30 minutes without a puppy, there's dark green or foul-smelling discharge before the first puppy, whelping hasn't started within 24–36 hours of the temperature drop, or the pregnancy goes past 70 days from a known breeding date."
       }
     }
   ]
@@ -115,13 +115,10 @@ last_modified_at: 2026-09-29
       </div>
     </div>
     <div class="form-group">
-      <label for="breed-size">Breed Size</label>
-      <select id="breed-size">
-        <option value="">Select size</option>
-        <option value="small">Small (under 20 lbs)</option>
-        <option value="medium">Medium (20–50 lbs)</option>
-        <option value="large">Large (50–90 lbs)</option>
-        <option value="giant">Giant (over 90 lbs)</option>
+      <label for="date-type">This date is</label>
+      <select id="date-type">
+        <option value="mating">The mating date (first mating if there were several)</option>
+        <option value="ovulation">The ovulation date from vet progesterone testing</option>
       </select>
     </div>
     <button class="btn-calculate" onclick="calculatePregnancy()">Calculate Due Date →</button>
@@ -140,26 +137,25 @@ last_modified_at: 2026-09-29
   </div>
 
   <div class="disclaimer-box" style="margin-top: 40px;">
-    ⚕️ This calculator provides estimates based on average canine gestation (63 days). Actual delivery may vary by ±5 days. Always work with your veterinarian for accurate pregnancy monitoring.
+    ⚕️ The due date counts 63 days forward. From a mating date the normal window is 63 days give or take 7; from an ovulation date confirmed by progesterone testing it is 63 days give or take 1–2 (Cornell Riney Canine Health Center). Work with your veterinarian for monitoring and whelping plans.
   </div>
 
   <!-- Info section -->
   <div style="margin-top: 48px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">How Long Are Dogs Pregnant?</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Dog pregnancy (gestation) lasts an average of 63 days from the mating date, though the normal range is 58–68 days. Smaller breeds tend to deliver a little earlier; giant breeds a little later.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">The pregnancy is divided into three trimesters of roughly 21 days each. Each trimester brings visible changes — from early behavioral shifts to a noticeably rounded belly by week 5, and active nesting behavior in the final weeks.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">According to Cornell's Riney Canine Health Center, dogs are pregnant for about 63 days from ovulation. Mating isn't the same as conception: sperm can survive for days and the eggs need 2–3 days to mature after ovulation, so from a mating date Cornell gives 63 days give or take 7. If your vet timed ovulation with progesterone blood tests, the window narrows to 63 days give or take 1–2. With two matings, VCA suggests expecting puppies 63–65 days after the later one.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Very little is visible in the first month. Weight and belly size usually start to rise in the second month, and mammary development and nesting come in the last weeks.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Signs Your Dog May Be Pregnant</h2>
-    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 24px;">
-      <li>Decreased appetite or mild nausea in weeks 1–3</li>
-      <li>Nipple enlargement and darkening (week 3–4)</li>
-      <li>Increased affection or clinginess</li>
-      <li>Visible belly rounding by week 5</li>
-      <li>Nesting behavior and restlessness in the final week</li>
+    <ul style="color: var(--brown-mid); line-height: 1.9; padding-left: 20px; margin-bottom: 16px;">
+      <li>First month: usually nothing you can rely on</li>
+      <li>Second month: weight starts to rise and the belly may begin to fill out</li>
+      <li>Last weeks: clearly larger belly, mammary development, sometimes milk; nesting and restlessness in the final days</li>
     </ul>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A false pregnancy after a heat can produce almost the same signs — VCA notes that most intact females show some of them — so only a vet test confirms a real pregnancy.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">Pregnancy Confirmation and Diagnosis: Methods Compared</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Physical signs alone are not a reliable pregnancy check — a false pregnancy (pseudopregnancy) can produce nearly identical symptoms without any puppies. If you need a real confirmation rather than a guess, here's how the main diagnostic methods compare:</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Here's how the main ways a vet confirms pregnancy compare. Timings are from the Merck Veterinary Manual and VCA Hospitals.</p>
     <div class="table-wrapper" style="margin-bottom: 24px;">
     <table style="width:100%; border-collapse: collapse;">
       <thead>
@@ -173,40 +169,42 @@ last_modified_at: 2026-09-29
       <tbody>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Relaxin blood test</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 21–25</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">High — relaxin is only produced during true pregnancy, so this rules out pseudopregnancy</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">After about day 22–27</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Can be falsely negative if done too early or with a very small litter; relaxin is not produced in a false pregnancy</td>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Pregnant or not (not litter size)</td>
         </tr>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Abdominal palpation</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 21–28</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Moderate — depends heavily on the vet's experience and the dog's size/tension</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Around day 21–28</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Depends on a relaxed dog; less reliable after days 35–38</td>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Rough sense of pregnancy, not a reliable count</td>
         </tr>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">Ultrasound</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 25–35</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">High — the most reliable early confirmation, and can detect fetal heartbeats</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Confirms pregnancy and viability (not an exact puppy count)</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">From about 3 weeks; reliable after day 28</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">VCA's preferred method for confirming pregnancy</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Confirms pregnancy; counting puppies is difficult</td>
         </tr>
         <tr>
           <td style="padding: 10px 12px; border: 1px solid var(--border);">X-ray</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Day 45+ (skeletons must be calcified)</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">High for counting — the only reliable way to count puppies</td>
-          <td style="padding: 10px 12px; border: 1px solid var(--border);">Exact puppy count, useful for whelping planning</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">From about day 42–45; best after day 55</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">Skeletons must have mineralized first</td>
+          <td style="padding: 10px 12px; border: 1px solid var(--border);">The most accurate puppy count, useful for knowing when whelping is finished</td>
         </tr>
       </tbody>
     </table>
     </div>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">In practice, most vets confirm with ultrasound around week 4 and follow up with an X-ray around week 7 to get an exact count — knowing the number of puppies in advance helps you recognize when delivery is complete.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">A common plan is an ultrasound after day 28 to confirm, then an X-ray after day 55 for the count.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px;">What to Prepare</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Around week 7, set up a <strong>whelping box</strong> — a quiet, warm, easy-to-clean space where your dog can give birth. Introduce her to it early so she feels comfortable.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7;">Schedule vet checkups at week 4 (ultrasound to confirm pregnancy) and week 7–8 (X-ray to count puppies). Have your vet's emergency number ready for the final week.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;">Set up a <strong>whelping area</strong> — quiet, warm and easy to clean — in the last few weeks so she is used to it before labor.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 8px;"><strong>Feeding:</strong> VCA's guidance is to keep her intake the same for about the first 6 weeks after mating, then increase it gradually with smaller, more frequent meals, up to about 1.5 times her normal amount in the last three weeks. VCA recommends a diet with an AAFCO statement for "gestation and lactation" or "all life stages".</p>
+    <p style="color: var(--brown-mid); line-height: 1.7;"><strong>Temperature:</strong> normal rectal temperature is about 100–102.5°F. Cornell notes it can fall below 99°F within 24 hours of birth, but the dip lasts only about 8 hours, so twice-daily checks in the last week can miss it.</p>
 
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 16px; margin-top: 28px;">When to Call the Vet Immediately</h2>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Most canine pregnancies proceed without complications, but certain signs warrant an immediate call: green or bloody discharge before labor begins, active straining for more than 30 minutes without a puppy delivered, more than 2–4 hours between puppies with visible distress, or a temperature drop below 99°F that doesn't lead to labor within 24 hours.</p>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">First-time mothers and small-breed dogs (especially brachycephalic breeds like French Bulldogs) have a higher likelihood of needing veterinary assistance during delivery. If your dog falls into either category, discuss a delivery plan with your vet well before the due date.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Based on Cornell and the Merck Veterinary Manual, call your vet if more than 2 hours pass between puppies, she has strong contractions for more than 30 minutes without producing a puppy, there's dark green or foul-smelling discharge before the first puppy, whelping hasn't started within 24–36 hours of the temperature drop, the pregnancy goes beyond 70 days from a known breeding date, or she seems very unwell, weak or in severe pain.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 24px;">Merck puts difficult birth (dystocia) at about 5% of pregnancies overall, but it is far more common in some breeds, especially flat-faced and short-legged breeds such as Bulldogs, Pugs, Boston Terriers and Chihuahuas. For those breeds, make a plan with your vet well before the due date.</p>
+    <p style="color: var(--brown-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px;">Sources: Cornell Riney Canine Health Center (pregnancy and whelping); Merck Veterinary Manual (pregnancy diagnosis, dystocia); VCA Hospitals (pregnancy, feeding, false pregnancy). Full list on our <a href="/sources.html">sources page</a>.</p>
   </div>
 
   <!-- CTA to blog post -->
@@ -218,113 +216,86 @@ last_modified_at: 2026-09-29
   <div style="margin-top: 28px;">
     <h2 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--brown); margin-bottom: 12px; margin-top: 28px;">Frequently Asked Questions</h2>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How long are dogs pregnant?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">About 63 days from ovulation. Because mating rarely falls exactly on the day of ovulation, the range from a given mating date is roughly 58 to 68 days — which is why any calculator, this one included, gives a window rather than a single date. If you need precision, for example to plan a C-section, progesterone timing at your vet's office is far more accurate than counting from a mating date.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">About 63 days from ovulation, according to Cornell's Riney Canine Health Center. From a mating date the window is 63 days give or take 7, because mating isn't the same as conception. If your vet timed ovulation with progesterone tests, it narrows to 63 days give or take 1–2.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">How do I calculate my dog's due date?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Enter the breeding date above and the tool counts forward for you. By hand, count about 63 days from the mating date and treat several days either side as normal. If there were several matings, count from the first and the last and treat everything in between as the window. An ultrasound or progesterone timing from your vet narrows it further.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Count 63 days forward from the date. From a mating date, treat 7 days either side as normal; from a progesterone-timed ovulation date, 1–2 days. With two matings, VCA suggests expecting puppies 63–65 days after the later one.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the signs that a dog is about to give birth?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Within 24–48 hours of labor, most dogs become restless, stop eating, and may pant or seek isolation. A rectal temperature drop below 100°F (37.8°C) is a reliable sign that labor is typically within 12–24 hours.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Her rectal temperature often drops below 99°F within 24 hours of birth (normal is about 100–102.5°F), though the dip lasts only about 8 hours and is easy to miss. Nesting, restlessness and panting usually start 6–12 hours before the first puppy.</p>
     <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When can a vet confirm a dog is pregnant, and how?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">It depends on the method. Abdominal palpation can work roughly days 21–35, while the fetal swellings are still distinct enough to feel. A relaxin blood test is generally reliable from about day 22–25 and also rules out a false pregnancy, which can otherwise look very similar. Ultrasound from around day 25–28 confirms pregnancy and shows heartbeats but does not give a reliable puppy count. An X-ray from about day 45–55, once the skeletons have mineralized, is the most accurate way to count puppies before whelping.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">What are the early signs a dog is pregnant?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">The early signs are subtle and easy to miss. In the first 2–3 weeks some dogs eat a little less or have a brief bout of nausea, seem lower on energy, or become clingier. Nipple enlargement and darkening usually appears around week 3–4. The changes most owners notice — visible abdominal swelling and clear weight gain — generally do not show until week 5 onward, which is why early signs alone are not a reliable way to confirm a pregnancy.</p>
-    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Does the calculator show the pregnancy week by week?</h3>
-    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Yes. Enter the breeding date and the dated results lay out the whole pregnancy week by week, naming what is happening developmentally in each week and what you should be doing, from confirmation scans through to setting up the whelping box.</p>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">An ultrasound may detect pregnancy from about 3 weeks after mating and is reliable after day 28. A relaxin blood test works after about day 22–27. Palpation can sometimes find the swellings around day 21–28 in a relaxed dog. X-rays show the skeletons from about day 42–45 and give the best puppy count after day 55.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">Should I feed my pregnant dog more?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Not in the first two thirds of pregnancy. VCA's guidance is to keep her intake the same for about the first 6 weeks after mating, then increase it gradually with smaller, more frequent meals, up to about 1.5 times her normal amount in the last three weeks.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.05rem; color: var(--brown); margin-bottom: 8px; margin-top: 18px;">When should I call the vet during whelping?</h3>
+    <p style="color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px;">Call if more than 2 hours pass between puppies, she has strong contractions for more than 30 minutes without a puppy, there's dark green or foul-smelling discharge before the first puppy, whelping hasn't started within 24–36 hours of the temperature drop, or the pregnancy goes past 70 days from a known breeding date.</p>
   </div>
 </div>
 
 <script>
 const weeks = [
-  {
-    week: 1,
-    title: "Week 1 — Fertilization",
-    desc: "Fertilization occurs. Embryos begin dividing as they travel toward the uterus. No outward signs yet.",
-    care: "Continue normal feeding and exercise. No changes needed."
-  },
-  {
-    week: 2,
-    title: "Week 2 — Embryo Development",
-    desc: "Embryos implant in the uterine lining. Cells continue to divide and differentiate.",
-    care: "Some dogs show mild nausea or reduced appetite. Keep meals consistent."
-  },
-  {
-    week: 3,
-    title: "Week 3 — Implantation",
-    desc: "Embryos are now fully implanted. Nipples may start to enlarge and darken. Your dog may seem more affectionate.",
-    care: "A vet can detect pregnancy via blood test (relaxin hormone) from around day 21."
-  },
-  {
-    week: 4,
-    title: "Week 4 — Organ Formation",
-    desc: "Puppies' organs begin forming. A vet can confirm pregnancy via ultrasound and may be able to count fetuses. Belly may start to look slightly fuller.",
-    care: "Schedule your first vet visit this week. Begin transitioning to a high-quality pregnancy/puppy food if your vet recommends it."
-  },
-  {
-    week: 5,
-    title: "Week 5 — Rapid Growth",
-    desc: "Puppies grow rapidly and develop distinct features. Your dog's belly is now visibly rounder. Appetite increases significantly.",
-    care: "Increase food portions gradually (up to 1.5x normal by end of pregnancy). Fresh water always available."
-  },
-  {
-    week: 6,
-    title: "Week 6 — Puppies Taking Shape",
-    desc: "Puppies' coats and claws begin forming. Your dog's abdomen is noticeably enlarged. She may tire more easily.",
-    care: "Switch to several smaller meals per day rather than one large one. Limit strenuous exercise."
-  },
-  {
-    week: 7,
-    title: "Week 7 — Set Up the Whelping Box",
-    desc: "Puppies are nearly fully formed. You may feel movement in your dog's belly. Nesting behavior may start.",
-    care: "Set up the whelping box now and show it to your dog. Schedule an X-ray to count the puppies — this helps you know when delivery is complete."
-  },
-  {
-    week: 8,
-    title: "Week 8 — Final Preparations",
-    desc: "Puppies are fully developed and beginning to move into birth position. Your dog may be restless and seek out quiet spots.",
-    care: "Keep the whelping area warm and private. Watch for nesting, panting, and refusal to eat — signs labor is approaching."
-  },
-  {
-    week: 9,
-    title: "Week 9 — Birth",
-    desc: "Labor can begin any day from day 58 onward. A temperature drop below 99°F (37.2°C) typically means labor within 24 hours.",
-    care: "Take your dog's temperature twice daily. Have your vet's emergency number ready. Stay calm — most deliveries go smoothly."
-  }
+  { week: 1, title: "Week 1 — Mating and fertilization",
+    desc: "Eggs need 2–3 days to mature after ovulation before they can be fertilized. No outward signs.",
+    care: "Normal food and exercise." },
+  { week: 2, title: "Week 2 — Embryos travel to the uterus",
+    desc: "Nothing visible yet.",
+    care: "Normal food and exercise." },
+  { week: 3, title: "Week 3 — Implantation",
+    desc: "Embryos implant at about day 18 (Merck). An ultrasound may pick up the pregnancy from about 3 weeks.",
+    care: "Food stays the same." },
+  { week: 4, title: "Week 4 — Confirmation window",
+    desc: "Swellings can sometimes be felt around day 21–28; a relaxin blood test works after about day 22–27; ultrasound is reliable after day 28.",
+    care: "Book a confirmation visit. Food still stays the same." },
+  { week: 5, title: "Week 5 — Skeletons begin to calcify",
+    desc: "The puppies' skeletons start to calcify from about day 28. Weight may start to rise.",
+    care: "Food stays the same until about week 6." },
+  { week: 6, title: "Week 6 — Start increasing food",
+    desc: "Her belly is becoming clearly bigger.",
+    care: "From about 6 weeks after mating, increase food gradually with smaller, more frequent meals (VCA)." },
+  { week: 7, title: "Week 7 — Skeletons visible on X-ray",
+    desc: "Skeletons become visible on X-ray at about day 42–45.",
+    care: "Set up the whelping area so she gets used to it." },
+  { week: 8, title: "Week 8 — Count the puppies",
+    desc: "An X-ray after day 55 gives the best puppy count. Nesting may begin.",
+    care: "Get the X-ray count, start checking her temperature twice a day, and keep your vet's emergency number handy." },
+  { week: 9, title: "Week 9 — Whelping",
+    desc: "Her temperature can drop below 99°F within 24 hours of birth. Nesting, restlessness and panting usually start 6–12 hours before the first puppy.",
+    care: "Up to 2 hours between puppies is normal (Cornell). Call your vet if it goes longer or she strains for 30 minutes without a puppy." }
 ];
 
 function calculatePregnancy() {
   const month = document.getElementById('mating-month').value;
   const day = document.getElementById('mating-day').value;
   const year = document.getElementById('mating-year').value;
-  const size = document.getElementById('breed-size').value;
+  const type = document.getElementById('date-type').value;
 
-  if (!month || !day || !year || !size) {
-    alert('Please enter the mating date and select breed size.');
+  if (!month || !day || !year) {
+    alert('Please enter the date.');
     return;
   }
 
   const mating = new Date(parseInt(year), parseInt(month), parseInt(day));
-  const gestationDays = { small: 62, medium: 63, large: 64, giant: 65 }[size];
+  const spread = type === 'ovulation' ? 2 : 7;
   const due = new Date(mating);
-  due.setDate(due.getDate() + gestationDays);
+  due.setDate(due.getDate() + 63);
 
-  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 58);
-  const latest = new Date(mating); latest.setDate(latest.getDate() + 68);
+  const earliest = new Date(mating); earliest.setDate(earliest.getDate() + 63 - spread);
+  const latest = new Date(mating); latest.setDate(latest.getDate() + 63 + spread);
 
   const fmt = d => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
   // Current week
   const today = new Date();
   const daysPregnant = Math.floor((today - mating) / (1000 * 60 * 60 * 24));
-  const currentWeek = Math.ceil(daysPregnant / 7);
+  const currentWeek = Math.floor(daysPregnant / 7) + 1;
 
   document.getElementById('result-main').textContent = `Estimated due date: ${fmt(due)}`;
-  document.getElementById('result-window').textContent = `Delivery window: ${fmt(earliest)} – ${fmt(latest)}`;
+  document.getElementById('result-window').textContent = `Normal window: ${fmt(earliest)} – ${fmt(latest)} (63 ± ${spread} days)`;
 
   if (daysPregnant >= 0 && currentWeek <= 9) {
     document.getElementById('result-week').textContent = `Currently in Week ${currentWeek} of pregnancy (Day ${daysPregnant})`;
   } else if (daysPregnant < 0) {
     document.getElementById('result-week').textContent = `Mating date is in the future — ${Math.abs(daysPregnant)} days to go.`;
   } else {
-    document.getElementById('result-week').textContent = `Due date has passed — congratulations on the new puppies! 🐾`;
+    document.getElementById('result-week').textContent = (daysPregnant <= 63 + spread) ? `Day ${daysPregnant} — still inside the normal window.` : ((type === 'mating' && daysPregnant > 70) ? `Day ${daysPregnant} from mating — past 70 days, call your vet if she hasn't whelped.` : `Day ${daysPregnant} — past the normal window; check with your vet if she hasn't whelped.`);
   }
 
   document.getElementById('result').classList.add('show');
